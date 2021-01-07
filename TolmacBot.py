@@ -4,7 +4,6 @@ from telebot.types import Message
 from telebot import types
 from postgres import Database
 
-# TOKEN = '839076133:AAFdjIQ1Bn9KvPoZ6smhrh7uoICEeqJc3f4' # ТОКЕН СКИНУ
 bot = telebot.TeleBot(os.environ.get('TOKEN'))
 
 markup_menu = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -41,7 +40,7 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['send_to_all'])
 def send_to_all(message):
-    if message.chat.id == 50438813: # здесь можно поставить свой telegram id, чтоб случайно команда не попала в третьи руки
+    if message.chat.id == 50438813:
         keys = types.ReplyKeyboardMarkup(True, False)
         keys.row('Отмена')
         all_users = db.get_all()
@@ -38727,26 +38726,9 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 
     else:
         bot.send_message(message.chat.id, hesbisey)
-
-# команда консоли, для обновления бота
-# cd /Users/royalnagiyev/PycharmProjects/projectoglu
-# git init
-# heroku git:remote -a tolmacbot
-# git add .
-# git commit -am "make it better"
-# git push heroku master --force
-
+#если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
-# спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êêf
-# шаблон для добавления слова
-# elif message.text.lower() == "&&&" \
-    #             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "&&&"\
-    #             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "&&&"\
-    #             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "&&&"\
-    #             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "&&&"\
-    #             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "&&&"\
-    #             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "&&&":
-    #         bot.send_message(message.chat.id, '''&&&''', reply_markup=markup_menu)
+# спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
 
 bot.polling()
