@@ -9,7 +9,7 @@ bot = telebot.TeleBot(os.environ.get('TOKEN'))
 markup_menu = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
 markup_menu.row('Alphabets Алфавиты Abeceler').add('help', 'donate')
 
-# db = Database('postgresql://localhost/postgres') #!!!!!!!!!!!!!!!!!!!
+# db = Database('postgresql://localhost/postgres') #!!!!!!!!!!!!!!!!
 db = Database(os.environ.get('DATABASE_URL'))  # !!!!!!!!!!!!!!!!!!!
 
 hesbisey = '''🇬🇧 Nothing found, write other word. You can ask author to add this word, you can also write me your suggestions and comments if you notice a mistake @sibirli
