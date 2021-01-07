@@ -9161,7 +9161,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ı love u" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "i love u" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ıloveu" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "я тебя люблю" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "я люблю тебя" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seni seviyorum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seviyorum seni" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iloveu":
@@ -34237,6 +34237,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "монастырь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "manastır" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "manastir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "молельня" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "религиозное сооружение" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "место богослужения" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "templum":
