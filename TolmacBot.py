@@ -24537,7 +24537,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇰🇬 Qırğızça: flamingo
 🏴 Uyghurche: flamingo
 🏴 Tatarça:	qızılqaz
-🏴 Başqortsa: flamingo
+🏴 Başqortsa: kömrömoron
 🏴 Çovaşla:	flamingo
 🏴 Qaraqalpaqsha: flamingo
 🏴 Qırımtatarca: qızılqanat
@@ -24546,7 +24546,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Noğayşa: flamingo
 🏴 Sıbırca: qısıl qanatlı qoş
 🏴 Salırça: ot-tırna
-🏴 Gagauzça: flamingo
+🏴 Gagauzça: flamingo, flaman kuşu
 🏴 Urumça: flamingo
 🏴 Qarayçe: flamingo
 🏴 Qırımçahça: flamingo
