@@ -17,7 +17,7 @@
     "TOKEN": {
       "description": "Chat with Telegram's @BotFather to retrieve your token",
       "required": true,
-      "value":"839076133:AAFdjIQ1Bn9KvPoZ6smhrh7uoICEeqJc3f4"
+      "value":"tokentokentoken"
     }
   }
 }
