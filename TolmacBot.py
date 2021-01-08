@@ -24515,7 +24515,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦩" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flamingo" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flamingo" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фламинго" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flaman kuşu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flamankuşu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "краснокрыл" \
@@ -38724,6 +38724,49 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Şor:	işçi çalı
 🏴 Soyıt:	çaalım (caalım)
 🏴 Tofa:	çaalım''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pocket" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карман" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cep" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кармашек" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карманы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кармашки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карманный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "корман":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	pocket
+🇷🇺 Русский:	карман [karman]
+🇭🇺 Magyar: zseb
+🇹🇷 Türkçe:	cep
+🇦🇿 Türkcə:	cib
+🇹🇲 Türkmen:	jübi
+🇺🇿 Oʻzbek:	choʻntak
+🇰🇿 Qazaq:	qalta
+🇰🇬 Qırğız:	çöntök
+🏴 Uyghur:	yanchuq
+🏴 Tatarça:	kesä
+🏴 Başqort:	keþä
+🏴 Çovaşla:	kösye
+🏴 Qaraqalpaq:	qalta
+🏴 Qırımtatar:	cep
+🏴 Qumuq:	kise
+🏴 Alança:	xurjun
+🏴 Noğay:	kise
+🏴 Sıbırca:	kesä
+🏴 Salırça:	yancux
+🏴 Gagauz:	cöp (cep)
+🏴 Urumça:	ceb (cöp)
+🏴 Qarayçe:	cep (ceb)
+🏴 Qırımçah:	ceb
+🏴 Saqalī:	siep
+🏴 Dolgan:	ünür
+🏴 Tıvalap:	karmak
+🏴 Altay:	cançıq
+🏴 Xakas:	izep
+🏴 Şor:	izep
+🏴 Soyıt:	harmaan
+🏴 Tofa:	harmaan''', reply_markup=markup_menu)
+# RUSRUS???
+#sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
