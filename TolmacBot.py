@@ -38725,6 +38725,62 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	çaalım (caalım)
 🏴 Tofa:	çaalım''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to kill" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kill" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kill!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to slay" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "slay" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "slay!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "öldür!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "öldür" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "öldürmek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "убей!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "убей" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "убий!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "убий" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "убить" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "убивай!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "убивай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "убивать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "murder!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to murder" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "katletmek":
+        bot.send_message(message.chat.id, '''
+🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰇𐰠𐰼 (𐰇𐰠𐰇𐰼)
+🐺 Old Turkic (bef. XV c.):	ölür (ölürt, ölüt)
+🇬🇧 English:	kill!
+🇷🇺 Русский:	убей! убивай!
+🇭🇺 Magyar: ölni
+🇹🇷 Türkçe:	öldür
+🇦🇿 Türkcə:	öldür
+🇹🇲 Türkmen:	öldür
+🇺🇿 Oʻzbek:	oʻldir
+🇰🇿 Qazaq:	öltir
+🇰🇬 Qırğız:	öltür
+🏴 Uyghur:	öltür
+🏴 Tatarça:	üter
+🏴 Başqort:	ülter
+🏴 Çovaşla:	völer
+🏴 Qaraqalpaq:	óltir
+🏴 Qırımtatar:	öldür
+🏴 Qumuq:	öltür
+🏴 Alança:	öltür
+🏴 Noğay:	öltir
+🏴 Sıbırca:	ülter
+🏴 Salırça:	ültür
+🏴 Gagauz:	öldür
+🏴 Urumça:	öldür
+🏴 Qarayçe:	öltür
+🏴 Qırımçah:	öldır
+🏴 Saqalī:	ölör
+🏴 Dolgan:	ölör
+🏴 Tıvalap:	ölür
+🏴 Altay:	öltür
+🏴 Xakas:	ödir
+🏴 Şor:	ödür
+🏴 Soyıt:	ölîr
+🏴 Tofa:	ölür''', reply_markup=markup_menu)
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pocket" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карман" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cep" \
