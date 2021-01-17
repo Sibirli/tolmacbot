@@ -821,7 +821,7 @@ Tofalap: ıtalaar''', reply_markup=markup_menu)
 🏴 Çovaşla: Ermeni
 🏴 Qaraqalpaqsha: Ármeniya
 🏴 Qırımtatarca: Ermenistan
-🏴 Qumuqça: Ermenistan, Armeniya
+🏴 Qumuqça: Ermenistan
 🏴 Qaraçay-Malqar: Ermen, Ermeniya
 🏴 Noğayşa: Ermelistan, Armeniya
 🏴 Sıbırca: Ärmänestan
@@ -834,11 +834,11 @@ Tofalap: ıtalaar''', reply_markup=markup_menu)
 🏴 Altaylap: Armeniya
 🏴 Şor: Armeniya
 🏴 Urumça: Ermänistan (Ermenistan)
-🏴 Karajče: Ėrmienistan
+🏴 Qarayçe: Ermenistan
 🏴 Qrımçahça: Ermenistan
 🏴 Soyot: Armenîya
 🏴 Tofalap: Armenîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.lower() == "армен" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "армян" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "арменин" \
@@ -1793,11 +1793,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Gruziya
 🏴 Şor: Gruziya
 🏴 Urumça: Gürcüstan (Gürcistan)
-🏴 Karajče: Giurdžistan
+🏴 Qarayçe: Gürcistan
 🏴 Qrımçahça: Gürcistan
 🏴 Soyot: Gruzîya
 🏴 Tofalap: Gruzîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "да" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yes" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeah" \
@@ -2675,11 +2675,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Qazaxstan
 🏴 Şor: Kazaxstan
 🏴 Urumça: Xazaxstan
-🏴 Karajče: Kazakstan
+🏴 Qarayçe: Qazaqstan
 🏴 Qrımçahça: Qazahistan
 🏴 Soyot: Kazaxstan
 🏴 Tofalap: Kazaxstan''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "как" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "how" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nasıl" \
@@ -3455,7 +3455,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçah: Letuva, Litvaniye
 🏴 Soyot: Litva
 🏴 Tofalap: Litva''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "литература" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "литра" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "literature" \
@@ -5082,7 +5082,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçah: Esav
 🏴 Soyot: Polşa
 🏴 Tofalap: Polşa''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oruç" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "говенье" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "говение" \
@@ -5438,11 +5438,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: Aresey
 🏴 Şor: Qazaq çeri, Orusiya, Rossiya
 🏴 Urumça: Uruset
-🏴 Karaj: Rusija
+🏴 Qarayçe: Rusiya
 🏴 Qrımçahça: Rusye
 🏴 Soyot: Rossîya
 🏴 Tofalap: Orusîya, Rossîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рот" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mouth" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ağız" \
@@ -6669,11 +6669,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: ???
 🏴 Şor: ???
 🏴 Urumça: Türkiya
-🏴 Karajče: Turkija
+🏴 Qarayçe: Turkiya
 🏴 Qrımçahça: Türkiya
 🏴 Soyot: ???
 🏴 Tofalap: ???''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ты" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "you" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sen":
@@ -7839,7 +7839,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: Yaponi
 🏴 Qaraqalpaqsha: Yaponiya
 🏴 Qırımtatarca: Yaponiya
-🏴 Qumuqça: Yaponiya, Yapon (archaism)
+🏴 Qumuqça: Yaponya, Yapon (archaism)
 🏴 Qaraçay-Malqar: Yapon
 🏴 Noğayşa: Yaponiya
 🏴 Sıbırca: Yamar il, Nippon el
@@ -7852,11 +7852,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Yaponiya
 🏴 Şor: Yaponiya
 🏴 Urumça: Yaponiya
-🏴 Karajče: Japonija
+🏴 Qarayçe: Yaponiya
 🏴 Qrımçahça: Yaponiya (Japonya)
 🏴 Soyot: Yapon, Yaponîya
 🏴 Tofalap: Yaponîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "интернет" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "internet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ınternet" \
@@ -8939,11 +8939,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Latviya
 🏴 Şor: Latviya
 🏴 Urumça: Latviya
-🏴 Karajče: Latvija
+🏴 Qarayçe: Latviya
 🏴 Qrımçahça: Letonya
 🏴 Soyot: Latvîya
 🏴 Tofalap: Latvîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nine" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "9" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "девять" \
@@ -10903,7 +10903,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: Germani
 🏴 Qaraqalpaqsha: Germaniya
 🏴 Qırımtatarca: Almaniya
-🏴 Qumuqça: Germaniya, Almaniya
+🏴 Qumuqça: Germaniya, Almanya
 🏴 Qaraçay-Malqar: Germaniya, Alman
 🏴 Noğayşa: Germaniya, Almaniya
 🏴 Sıbırca: Alman, Kirman
@@ -10916,11 +10916,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Germaniya
 🏴 Şor: Germaniya
 🏴 Urumça: Almaniya, Germaniya
-🏴 Karajče: Germanija, Niemic Jeri
+🏴 Qarayçe: Germaniya, Nemis Yeri
 🏴 Qrımçahça: Germaniya
 🏴 Soyot: Germanîya
 🏴 Tofalap: Germanîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "немец" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "немецкий" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "немка" \
@@ -11049,11 +11049,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Frantsiya
 🏴 Şor: Frantsiya
 🏴 Urumça: Fransa
-🏴 Karajče: Francija
+🏴 Qarayçe: Fransa
 🏴 Qrımçahça: Frantsiya
 🏴 Soyot: Frantsiya
 🏴 Tofalap: Frantsiya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "француз" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "французский" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "французкий" \
@@ -11320,11 +11320,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Angliya
 🏴 Şor: Angliya
 🏴 Urumça: Angliya
-🏴 Karajče: Anglija
+🏴 Qarayçe: Angliya
 🏴 Qrımçahça: İngiltere
 🏴 Soyot: Anglîya
 🏴 Tofalap: Anglîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "англичанин" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "англичанка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ангийский" \
@@ -11431,11 +11431,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: İndiya
 🏴 Şor: İndiya
 🏴 Urumça: İndiya
-🏴 Karajče: Hindistan
+🏴 Qarayçe: Hindistan
 🏴 Qrımçahça: İndistan
 🏴 Soyot: Enedheg, Îndîya
 🏴 Tofalap: Îndîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "индиец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хинди" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hind" \
@@ -11562,7 +11562,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: İtali
 🏴 Qaraqalpaqsha: Italiya
 🏴 Qırımtatarca: İtaliya
-🏴 Qumuqça: İtaliya
+🏴 Qumuqça: İtalya
 🏴 Qaraçay-Malqar: İtaliya
 🏴 Noğayşa: İtaliya
 🏴 Sıbırca: İtaliya
@@ -11575,11 +11575,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: İtaliya
 🏴 Şor: İtaliya
 🏴 Urumça: İtaliya
-🏴 Karajče: Italija
+🏴 Qarayçe: Italiya
 🏴 Qrımçahça: İtaliya
 🏴 Soyot: İtali, Îtalîya
 🏴 Tofalap: Îtalîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "итальянец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "итальянка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "итальянский" \
@@ -11733,7 +11733,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: Avstrali
 🏴 Qaraqalpaqsha: Avstraliya
 🏴 Qırımtatarca: Avstraliya
-🏴 Qumuqça: Avstraliya
+🏴 Qumuqça: Avstralya
 🏴 Qaraçay-Malqar: Avstraliya
 🏴 Noğayşa: Avstraliya
 🏴 Sıbırca: Awstraliya
@@ -11746,11 +11746,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Avstraliya
 🏴 Şor: Avstraliya
 🏴 Urumça: Avstraliya
-🏴 Karajče: Australija
+🏴 Qarayçe: Australiya
 🏴 Qrımçahça: Avstraliya
 🏴 Soyot: Avstrali, Avstralîya
 🏴 Tofalap: Avstralîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "australian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "australıan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "avstraliyan" \
@@ -11879,11 +11879,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Qırğıstan
 🏴 Şor: Qırğıstan
 🏴 Urumça: Xırğızıtan
-🏴 Karajče: Kyrgyzstan
+🏴 Qarayçe: Qırgızstan
 🏴 Qrımçahça: Qırğızıstan
 🏴 Soyot: Hirgis ulıs, Kırgızstan
 🏴 Tofalap: Kırgızstan''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kyrgyz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kyrghyz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kirghiz" \
@@ -12233,7 +12233,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: Şvetsi
 🏴 Qaraqalpaqsha: Shvetsiya
 🏴 Qırımtatarca: İsveç
-🏴 Qumuqça: Şvetsiya
+🏴 Qumuqça: Şvetsya
 🏴 Qaraçay-Malqar: Şvetsiya
 🏴 Noğayşa: Şvetsiya
 🏴 Sıbırca: Şveciä
@@ -12246,11 +12246,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Şvetsiya
 🏴 Şor: Şvetsiya
 🏴 Urumça: İsveç
-🏴 Karajče: Švedija
+🏴 Qarayçe: Şvediya
 🏴 Qrımçahça: İsveç
 🏴 Soyot: Şvesi, Şvetsîya
 🏴 Tofalap: Şvetsîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "швед" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шведка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "isvecli" \
@@ -12386,11 +12386,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Palestina
 🏴 Şor: Palestina
 🏴 Urumça: Fälästin (Filistin)
-🏴 Karajče: Pelešet
+🏴 Qarayçe: Peleşet
 🏴 Qrımçahça: Filistin
 🏴 Soyot: Palestin, Palestîna
 🏴 Tofalap: Palestîna''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "palestinian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палестинец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палестинка" \
@@ -12608,7 +12608,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: Dani
 🏴 Qaraqalpaqsha: Daniya
 🏴 Qırımtatarca: Danimarka, Danimarqa {arch.}
-🏴 Qumuqça: Daniya
+🏴 Qumuqça: Danya
 🏴 Qaraçay-Malqar: Daniya
 🏴 Noğayşa: Daniya
 🏴 Sıbırca: Daniya
@@ -12621,11 +12621,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Daniya
 🏴 Şor: Daniya
 🏴 Urumça: Daniya
-🏴 Karajče: Danija
+🏴 Qarayçe: Daniya
 🏴 Qrımçahça: Danimarka
 🏴 Soyot: Dani, Danîya
 🏴 Tofalap: Danîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "датчанин" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "датчанка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "данский" \
@@ -13668,11 +13668,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Belgiya
 🏴 Şor: Belgiya
 🏴 Urumça: Belgiya
-🏴 Karajče: Belgija
+🏴 Qarayçe: Belgiya
 🏴 Qrımçahça: Belçika
 🏴 Soyot: Belgi, Belgîya
 🏴 Tofalap: Belgîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "belgian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бельгиец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бельгийка" \
@@ -13992,7 +13992,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: Şveytsari
 🏴 Qaraqalpaqsha: Shveytsariya
 🏴 Qırımtatarca: İsviçre
-🏴 Qumuqça: Şveytsariya
+🏴 Qumuqça: Şveytsarya
 🏴 Qaraçay-Malqar: Şveytsariya
 🏴 Noğayşa: Şveytsariya
 🏴 Sıbırca: Şveytsariya
@@ -14005,11 +14005,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Şveytsariya
 🏴 Şor: Şveytsariya
 🏴 Urumça: Şveytsariya
-🏴 Karajče: Šveicarija
+🏴 Qarayçe: Şveytsariya
 🏴 Qrımçahça: İsviçre
 🏴 Soyot: Şveytsarîya
 🏴 Tofalap: Şveytsarîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "эчпочмак" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "очпочмак" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "эщпощмак" \
@@ -15833,7 +15833,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: Monxuli
 🏴 Qaraqalpaqsha: Mongoliya
 🏴 Qırımtatarca: Moğolistan
-🏴 Qumuqça: Mongoliya
+🏴 Qumuqça: Mongolya
 🏴 Qaraçay-Malqar: Monğol
 🏴 Noğayşa: Moŋılstan
 🏴 Sıbırca: Moñqorstan
@@ -15846,11 +15846,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Moñol
 🏴 Şor: Mool
 🏴 Urumça: Moğolistan
-🏴 Karajče: Mongolija
+🏴 Qarayçe: Mongoliya
 🏴 Qrımçahça: Mongolistan
 🏴 Soyot: Mongol Ulıs
 🏴 Tofalap: Mongol Ulus''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "monghol" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "monggol" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "монгол" \
@@ -15991,11 +15991,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: İran
 🏴 Şor: İran
 🏴 Urumça: İran
-🏴 Karajče: Iran
+🏴 Qarayçe: İran
 🏴 Qrımçahça: İran
 🏴 Soyot: Îran
 🏴 Tofalap: Îran''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afghanistan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afghanıstan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afganistan" \
@@ -16010,10 +16010,13 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afghan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afgan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afghani" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇦🇫" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afganistani" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afganıstanı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afghanistani":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Afghanistan
+        bot.send_message(message.chat.id, '''🇦🇫 Afġānistān
+
+🇬🇧 English: Afghanistan
 🇷🇺 Русский: Афганистан [Afganistan]
 🇹🇷 Türkçe: Afganistan
 🇦🇿 Türkcə: Əfqanıstan
@@ -16040,11 +16043,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Afganistan
 🏴 Şor: Afganistan
 🏴 Urumça: Afganistan
-🏴 Karajče: Afganistan
+🏴 Qaeayçe: Afganistan
 🏴 Qrımçahça: Afğanistan
 🏴 Soyot: Afganîstan
 🏴 Tofalap: Afganîstan''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "болгария" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "болгаристан" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "булгария" \
@@ -16057,6 +16060,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bolgarıstan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulgaria" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bolgaria" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇧🇬" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bolgariya" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulgariya":
         bot.send_message(message.chat.id, '''🇧🇬 Balgariya
@@ -16082,7 +16086,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: Bulgariya, Bolcaliya
 🏴 Gagauzça: Bulgariya
 🏴 Urumça: Bulğaristan
-🏴 Karajče: Bulgarija
+🏴 Qarayçe: Bulgariya
 🏴 Qrımçahça: Bulğaristan
 🏴 Saqalí: Bolgariya
 🏴 Dulgan-Hakalí: Bolgariya
@@ -16092,7 +16096,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Bolgariya
 🏴 Soyot: Bolgarîya
 🏴 Tofalap: Bolgarîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulgarian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulğar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bolğar" \
@@ -16186,11 +16190,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: İzrail
 🏴 Şor: İzrail
 🏴 Urumça: İsrail
-🏴 Karajče: Jisraelʻ (Israjelʻ)
+🏴 Qarayçe: Yisrayel
 🏴 Qrımçahça: Srel (İsrael)
 🏴 Soyot: Îzraîl
 🏴 Tofalap: Îzraîl''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jew" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jewish" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "juden" \
@@ -16337,11 +16341,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Vengriya
 🏴 Şor: Vengriya
 🏴 Urumça: Ungariya, Macaristan
-🏴 Karajče: Madžaristan
+🏴 Qarayçe: Macaristan
 🏴 Qrımçahça: Macaristan
 🏴 Soyot: Vengrîya
 🏴 Tofalap: Vengrîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hungarian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hungar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vengr" \
@@ -17337,7 +17341,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "элада":
         bot.send_message(message.chat.id, '''🇬🇷 Ellaða
 
-‎🇬🇧 English: Greece, Hellas
+🇬🇧 English: Greece, Hellas
 🇷🇺 Русский: Греция [Gretsiya]
 🇹🇷 Türkçe: Yunanistan
 🇦🇿 Türkcə: Yunanıstan, Rum {arch.}
@@ -17358,7 +17362,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: Rom, Şila
 🏴 Gagauzça: Yunanistan
 🏴 Urumça: Urum
-🏴 Karajče: Grecija
+🏴 Qarayçe: ???
 🏴 Qrımçahça: Yunanistan, Gretsiya
 🏴 Saqalí: Gretsiya
 🏴 Dulgan-Hakalí: Gretsiya
@@ -17368,7 +17372,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Gretsiya
 🏴 Soyot: Gretsîya
 🏴 Tofalap: Gretsîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "greek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hellene" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hellen" \
@@ -19055,7 +19059,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Tatarstan
 🏴 Soyot: Tatarstan
 🏴 Tofalap: Tatarstan''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "татар" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatarian" \
@@ -19175,7 +19179,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: Dağıstan (Dacisitan)
 🏴 Gagauzça: Dagıstan
 🏴 Urumça: Dağıstan
-🏴 Karajče: Dahystan
+🏴 Qarayçe: Dağıstan
 🏴 Qırımçahça: Dağıstan
 🏴 Saqalí: Dagestán
 🏴 Dulgan-Hakalí: Dagestán
@@ -19185,7 +19189,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Dagestan
 🏴 Soyot: Dagestan
 🏴 Tofalap: Dagestan''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ногай" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ногаец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ногаи" \
@@ -19307,7 +19311,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Çuvaşiya
 🏴 Soyot: Çuvaşîya
 🏴 Tofalap: Çuvaşîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "whip" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "knout" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nagaika" \
@@ -19583,7 +19587,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Türkmenistan
 🏴 Soyot: Türkmenistan
 🏴 Tofalap: Türkmenistan''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "türkmen" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "türkmeni" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "turkmen" \
@@ -19775,7 +19779,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Başkortostan
 🏴 Soyot: Başkortostan
 🏴 Tofalap: Başkortostan''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bashkir" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bashkort" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bashqort" \
@@ -20192,7 +20196,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Uzbekistan
 🏴 Soyot: Uzbekîstan
 🏴 Tofalap: Uzbekîstan''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uzbek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uzbeg" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "usbek" \
@@ -20649,7 +20653,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Albaniya
 🏴 Soyot: Albanîya
 🏴 Tofalap: Albanîya''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alban" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "albanian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arnavut" \
@@ -20845,7 +20849,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: Tadjikistan
 🏴 Soyot: Tadjikîstan
 🏴 Tofalap: Tadjikîstan''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tajik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tacik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tadjik" \
@@ -28024,7 +28028,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇬🇧 English: lemon 🍋
 🇷🇺 Русский:	лимон [limon]
 🇹🇷 Türkçe: limon, limu (ilimon, ilmon) {arch.}, suluzırtlak {dial.}, cıcık {dial.}, zıvrak {dial.}
-🇦🇿 Türkcə: limon, lumu (limu) {arch.}, ulmu (ilmun, ilmon) {dial.}
+🇦🇿 Türkcə: limon, lumu {arch.}, ulmu (lumu, ilmun, ilmon) {dial.}
 🇹🇲 Türkmençe: leýmun
 🇺🇿 Oʻzbekcha: limon, limu (limun) {arch.}
 🏴 Tatarça:	limon, limun {arch.}
@@ -38780,6 +38784,59 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Şor:	ödür
 🏴 Soyıt:	ölîr
 🏴 Tofa:	ölür''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orthodoxy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eastern orthodoxy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eastern orthodoxy church" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "православие" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pravoslaviye" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ortodoks dini" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ortodoksluk" \
+    or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ortodoks inancı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рпц" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rum-ortodoks" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rum ortodoks":
+            bot.send_message(message.chat.id, '''🇬🇧 English: Orthodoxy (Eastern Orthodoxy Church)
+🇷🇺 Русский:	православие [pravoslaviye]
+🇹🇷 Türkçe:	ortodoks dini
+🇦🇿 Türkcə:	pravoslavlıq, ortadosluq {arch.}
+🇹🇲 Türkmen:	prawoslawiýe
+🏴 Uyghur:	prawoslawiye
+🏴 Tatarça:	prawaslawlıq 
+🏴 Çovaşla:	pravoslavi
+🏴 Qaraqalpaq:	pravoslavlıq
+🏴 Qırımtatar:	ortodokslıq
+🏴 Salırça:	ceŋcyao
+🏴 Gagauz:	ortodoksluk
+🏴 Urumça:	ortodoksos
+🏴 Qarayçe:	yavan dini
+🏴 Qırımçah: ortodokslıq
+🏴 Saqalī:	könö qacağalláq iteğecer
+🇺🇿🇰🇿🇰🇬🏴: pravoslaviye''', reply_markup=markup_menu)
+    
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orthodox" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eastern orthodox" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "православный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ortodoks" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pravoslav" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orthodox christian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eastern orthodox christian":
+            bot.send_message(message.chat.id, '''🇬🇧 English:	orthodox
+🇷🇺 Русский: православный [pravoslavnyy]
+🇹🇷 Türkçe:	ortodoks
+🇦🇿 Türkcə:	pravoslav, ortados {arch.}
+🇹🇲 Türkmen:	prawoslaw
+🏴 Uyghur:	prawoslaw
+🏴 Tatarça:	prawaslaw
+🏴 Çovaşla:	pravoslavi
+🏴 Qırımtatar:	ortodoks
+🏴 Salırça:	ceŋcyao kişi
+🏴 Gagauz:	ortodoks
+🏴 Urumça:	ortodoks
+🏴 Qarayçe:	yavan
+🏴 Qırımçah: ortodoks
+🏴 Saqalī:	barıslábınay, köpö eteğecerdéq
+🇺🇿🇰🇿🇰🇬🏴: pravoslav /  pravoslaviye  ~ ''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pocket" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карман" \
