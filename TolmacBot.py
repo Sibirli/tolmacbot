@@ -38817,6 +38817,8 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orthodox" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eastern orthodox" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "православный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "православная" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "православное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ortodoks" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pravoslav" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orthodox christian" \
@@ -38879,7 +38881,48 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	harmaan
 🏴 Tofa:	harmaan''', reply_markup=markup_menu)
 # RUSRUS???
-#sytrus tofrus
+# sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "answer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "response" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "reply" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ответ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yanıt" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cevap" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cevab" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cavap":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yanut, yanığ
+🇬🇧 English:	answer, response, reply
+🇷🇺 Русский:	ответ
+🇹🇷 Türkçe:	yanıt, cevap
+🇦🇿 Türkcə:	cavab
+🇹🇲 Türkmen:	jogap, gaýtargy
+🇺🇿 Oʻzbek:	javob
+🇰🇿 Qazaq:	jawap
+🇰🇬 Qırğız:	joop
+🏴 Uyghur:	jawab
+🏴 Tatarça:	cawap
+🏴 Başqort:	yawap
+🏴 Çovaşla:	xurav, yavap
+🏴 Qaraqalpaq:	juwap
+🏴 Qırımtatar:	cevap
+🏴 Qumuq:	cawap
+🏴 Alança:	juwab
+🏴 Noğay:	yawap
+🏴 Sıbırca:	cawap
+🏴 Salırça:	cavap, yanıt
+🏴 Gagauz:	cuvap
+🏴 Urumça:	cevap (cevab, cuğap, coğap)
+🏴 Qarayçe:	qaruv
+🏴 Qırımçah:	cevap (coğap)
+🏴 Saqalī:	qoruy, qarda
+🏴 Dolgan:	kardarí
+🏴 Tıvalap:	xarıı
+🏴 Altay:	qaruu
+🏴 Xakas:	nandırığ
+🏴 Şor:	nandırış
+🏴 Soyıt:	harıı (haruu)
+🏴 Tofa:	nândırı soot, uturu soot''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
