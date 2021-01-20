@@ -38924,11 +38924,55 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	harıı (haruu)
 🏴 Tofa:	nândırı soot, uturu soot''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yas" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mourning" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "траур" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "matem" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "траурный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "traur" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trauer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yaslılık":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yas
+🇬🇧 English:	mourning 
+🇷🇺 Русский:	траур
+🇭🇺 Magyar: gyász
+🇹🇷 Türkçe:	yas, matem
+🇦🇿 Türkcə:	yas, matəm, əza
+🇹🇲 Türkmen:	ýas, matam
+🇺🇿 Oʻzbek:	motam, aza
+🇰🇿 Qazaq:	aza, qara
+🇰🇬 Qırğız:	aza
+🏴 Uyghur:	haza, matem
+🏴 Tatarça:	matäm
+🏴 Başqort:	matäm
+🏴 Çovaşla:	xurlanu
+🏴 Qaraqalpaq:	aza, matam
+🏴 Qırımtatar:	yas, matem
+🏴 Qumuq:	yas
+🏴 Alança:	qara
+🏴 Noğay:	qara
+🏴 Sıbırca:	yas
+🏴 Salırça:	yas
+🏴 Gagauz:	yas
+🏴 Urumça:	yas
+🏴 Qarayçe:	yas, ödür
+🏴 Qırımçah:	yas, avel
+🏴 Saqalī:	saná, sanárhı
+🏴 Dolgan:	haná
+🏴 Tıvalap:	kajııdal
+🏴 Altay:	al-sağışqa tüjer
+🏴 Xakas:	xomzınıs, çobağ
+🏴 Şor:	???
+🏴 Soyıt:	???
+🏴 Tofa:	???''', reply_markup=markup_menu)
+# RUSRUS??? shorrus sytrus tofrus
+# cameo
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-
+#tags country cameo
 bot.polling()
