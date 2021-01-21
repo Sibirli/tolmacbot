@@ -38924,6 +38924,64 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	harıı (haruu)
 🏴 Tofa:	nândırı soot, uturu soot''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jail" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "prison" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тюрьма" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "turma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cezaevi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hapishane" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "zindan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mahpushane" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mahbushane" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hapis" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ceza evi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "острог" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тюрма" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тюряга" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тюремный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "türme" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gaol" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "penitentiary" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "detention center" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "correction center" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lock-up" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "remand center" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "темница" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зиндан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "correctional facility":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qınlıq (qıyınlıq), tünäk
+🇬🇧 English:	prison, jail
+🇷🇺 Русский:	тюрьма [tyurma]
+🇹🇷 Türkçe:	cezaevi, hapishane, zindan, mahpushane, hapis
+🇦🇿 Türkcə:	türmə, həbsxana, dustaqxana, zindan
+🇹🇲 Türkmen:	türme, tussaghana
+🇺🇿 Oʻzbek:	turma, qamoqxona
+🇰🇿 Qazaq:	türme, abaqtı
+🇰🇬 Qırğız:	türmö, abaq
+🏴 Uyghur:	türme, qamaqxana
+🏴 Tatarça:	törmä, zindan
+🏴 Başqort:	törmä, zindan
+🏴 Çovaşla:	törme, kasamat
+🏴 Qaraqalpaq:	túrme, qamaqxana
+🏴 Qırımtatar:	türme, apishane
+🏴 Qumuq:	türme, tusnaq
+🏴 Alança:	türme, tutmaq üy
+🏴 Noğay:	türme, tutnaq
+🏴 Sıbırca:	törmä, sintan
+🏴 Salırça:	kiş behliğusi ornı, paafoŋ
+🏴 Gagauz:	kapan, zından
+🏴 Urumça:	türmä, zindan
+🏴 Qarayçe:	zından, hapusxane
+🏴 Qırımçah:	zından, apus
+🏴 Saqalī:	türme, qáyí
+🏴 Dolgan:	türme
+🏴 Tıvalap:	qara-bajıŋ
+🏴 Altay:	türme (cöörme)
+🏴 Xakas:	xarib
+🏴 Şor:	türbe
+🏴 Soyıt:	tüürme
+🏴 Tofa:	tüürme''', reply_markup=markup_menu)
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yas" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mourning" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "траур" \
