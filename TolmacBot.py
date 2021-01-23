@@ -38982,6 +38982,43 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	tüürme
 🏴 Tofa:	tüürme''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "meeting" \
+            or message.text.replace('İ', 'i').text.replace(' ', '').lower().replace('ё', 'е') == "встреча " \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toplantı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "görüşme" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "encounter":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	meeting
+🇷🇺 Русский:	встреча
+🇹🇷 Türkçe:	toplantı, görüşme
+🇦🇿 Türkcə:	görüş, yığıncaq
+🇹🇲 Türkmen:	duşuşyk, ýygnak
+🇺🇿 Oʻzbek:	uchrashuv
+🇰🇿 Qazaq:	jıynalıs
+🇰🇬 Qırğız:	jıyın
+🏴 Uyghur:	yighin
+🏴 Tatarça:	cıyılış
+🏴 Başqort:	osraşıw
+🏴 Çovaşla:	töl pulu, kurnocu
+🏴 Qaraqalpaq:	ushırasıw
+🏴 Qırımtatar:	körüşüv, körüşme
+🏴 Qumuq:	yoluğuw
+🏴 Alança:	tübew, joluğuw
+🏴 Noğay:	yolığıs
+🏴 Sıbırca:	yulığıw
+🏴 Salırça:	yığın
+🏴 Gagauz:	görüş, buluşmak
+🏴 Urumça:	görüş
+🏴 Qarayçe:	toplanma, iştırılmax
+🏴 Qırımçah:	körışme
+🏴 Saqalī:	körsű
+🏴 Dolgan:	körsühe
+🏴 Tıvalap:	ujurajırı
+🏴 Altay:	tuştaju
+🏴 Xakas:	toğazığ
+🏴 Şor:	toğajış
+🏴 Soyıt:	bolcağ, colığış
+🏴 Tofa:	bolcağ, colığış''', reply_markup=markup_menu)
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yas" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mourning" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "траур" \
