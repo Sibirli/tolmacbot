@@ -38983,9 +38983,11 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Tofa:	tüürme''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "meeting" \
-            or message.text.replace('İ', 'i').text.replace(' ', '').lower().replace('ё', 'е') == "встреча " \
+            or message.text.replace('İ', 'i').text.replace(' ', '').lower().replace('ё', 'е') == "встреча" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toplantı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "görüşme" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "митинг" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "miting" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "encounter":
         bot.send_message(message.chat.id, '''🇬🇧 English:	meeting
 🇷🇺 Русский:	встреча
