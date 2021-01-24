@@ -39021,6 +39021,33 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	bolcağ, colığış
 🏴 Tofa:	bolcağ, colığış''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cyprus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kipr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kipros" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kibris" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kıbrıs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kipris" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kıprıs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kibriz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kıbrız" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kipriz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kıprız" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇨🇾" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кипр":
+        bot.send_message(message.chat.id, '''🇹🇷🇨🇾 Kıbrıs, Kipros
+
+🇬🇧 English:	Cyprus
+🇷🇺 Русский:	Кипр [Kipr]
+🇹🇷 Türkçe:	Kıbrıs
+🇦🇿 Türkcə:	Kipr, Qıbrıs (قبرس)
+🇺🇿 Oʻzbek:	Kipr, Qibris
+🏴 Uyghur:	Siprus
+🏴 Başqort:	Kipr, Qıprıþ
+🏴 Qırımtatar:	Qıbrız
+🏴 Gagauz:	Kipra
+🏴 Qırımçah:	Qıbrız
+🇹🇲🇰🇿🇰🇬🏴: Kipr ???''', reply_markup=markup_menu)
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yas" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mourning" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "траур" \
