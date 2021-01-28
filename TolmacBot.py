@@ -14964,11 +14964,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Yegipet
 🏴 Şor: Yegipet
 🏴 Urumça: Misir
-🏴 Karajče: Misir (Mysyr, Micri)
+🏴 Qarayçe: Misir (Mısır, Mitsri)
 🏴 Qrımçahça: Mısır
 🏴 Soyot: Yegîpet
 🏴 Tofalap: Yegîpet''', reply_markup=markup_menu)
-
+#country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "maize" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "corn" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🌽" \
@@ -33347,7 +33347,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qaraqalpaq:	maldas
 🏴 Qırımtatar:	bağdaş
 🏴 Qumuq:	???
-🏴 Alança:	???
+🏴 Alança: bağdaş
 🏴 Noğay:	maldas
 🏴 Sıbır:	pağdaş
 🏴 Salır:	mandaş
@@ -39048,6 +39048,60 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Qırımçah:	Qıbrız
 🇹🇲🇰🇿🇰🇬🏴: Kipr ???''', reply_markup=markup_menu)
 #country
+    
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "philosophy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "философия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filosofiya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "felsefe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "philosophia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filozofi":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	fälsäfä
+🇬🇧 English:	philosophy
+🇷🇺 Русский:	философия [filosofiya]
+🇹🇷 Türkçe:	felsefe
+🇦🇿 Türkcə:	fəlsəfə
+🇹🇲 Türkmen:	pelsepe
+🇺🇿 Oʻzbek:	falsafa
+🇰🇿 Qazaq:	pälsapa
+🏴 Uyghur:	pelsepe
+🏴 Tatarça:	fälsäfä
+🏴 Başqort:	fälsäfä
+🏴 Çovaşla:	
+🏴 Qaraqalpaq:	
+🏴 Qırımtatar:	felsefe
+🏴 Qumuq:	falsafa
+🏴 Alança:	
+🏴 Noğay:	
+🏴 Sıbırca:	
+🏴 Salırça:	filsef
+🇰🇬🏴: filosofiya''', reply_markup=markup_menu)
+# RUSRUS??? kgrus cvrus qqrus krcrus nogrus
+# styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+        elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "philosopher" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "философ" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filosof" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "feylesof" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filozof" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "felsefeci":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	fälyäsuf (fäylasuf)
+🇬🇧 English:	philosopher
+🇷🇺 Русский:	философ [filosof]
+🇹🇷 Türkçe:	feylesof, filozof
+🇦🇿 Türkcə:	fəlsəfə alimi
+🇹🇲 Türkmen:	pelsepeçi
+🇺🇿 Oʻzbek:	faylasuf
+🇰🇿 Qazaq:	pälsapaşı
+🏴 Uyghur:	pelsepichi
+🏴 Tatarça:	fälsäfäçe
+🏴 Başqort:	fälsäfäse
+🏴 Qırımtatar:	felsefeci
+🏴 Qumuq:	falsafa alimi
+🏴 Salırça:	filsef kiş
+🇰🇬🏴: filosof ''', reply_markup=markup_menu)
+# RUSRUS??? kgrus cvrus qqrus krcrus nogrus
+# styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yas" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mourning" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "траур" \
