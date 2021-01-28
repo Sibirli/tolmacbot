@@ -39078,12 +39078,12 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 # RUSRUS??? kgrus cvrus qqrus krcrus nogrus
 # styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
-        elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "philosopher" \
-             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "философ" \
-             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filosof" \
-             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "feylesof" \
-             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filozof" \
-             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "felsefeci":
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "philosopher" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "философ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filosof" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "felsefeci" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filozof" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "feylesof":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	fälyäsuf (fäylasuf)
 🇬🇧 English:	philosopher
 🇷🇺 Русский:	философ [filosof]
@@ -39098,9 +39098,10 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Qırımtatar:	felsefeci
 🏴 Qumuq:	falsafa alimi
 🏴 Salırça:	filsef kiş
-🇰🇬🏴: filosof ''', reply_markup=markup_menu)
+🇰🇬🏴: filosof''', reply_markup=markup_menu)
 # RUSRUS??? kgrus cvrus qqrus krcrus nogrus
 # styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yas" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mourning" \
