@@ -39066,13 +39066,8 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Uyghur:	pelsepe
 🏴 Tatarça:	fälsäfä
 🏴 Başqort:	fälsäfä
-🏴 Çovaşla:	
-🏴 Qaraqalpaq:	
 🏴 Qırımtatar:	felsefe
 🏴 Qumuq:	falsafa
-🏴 Alança:	
-🏴 Noğay:	
-🏴 Sıbırca:	
 🏴 Salırça:	filsef
 🇰🇬🏴: filosofiya''', reply_markup=markup_menu)
 # RUSRUS??? kgrus cvrus qqrus krcrus nogrus
