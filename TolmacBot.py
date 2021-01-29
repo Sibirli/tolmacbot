@@ -39142,6 +39142,48 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 # RUSRUS??? shorrus sytrus tofrus
 # cameo
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "street" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "улица" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "уличный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sokak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oram" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stret":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	oram
+🇬🇧 English:	street
+🇷🇺 Русский:	улица [ulitsa]
+🇹🇷 Türkçe:	sokak
+🇦🇿 Türkcə:	küçə
+🇹🇲 Türkmen:	köçe
+🇺🇿 Oʻzbek:	koʻcha
+🇰🇿 Qazaq:	köşe
+🇰🇬 Qırğız:	köçö
+🏴 Uyghur:	kocha
+🏴 Tatarça:	uram
+🏴 Başqort:	uram
+🏴 Çovaşla:	uram
+🏴 Qaraqalpaq:	kóshe
+🏴 Qırımtatar:	soqaq
+🏴 Qumuq:	oram
+🏴 Alança:	oram
+🏴 Noğay:	oram
+🏴 Sıbırca:	uram
+🏴 Salırça:	???
+🏴 Gagauz:	sokak
+🏴 Urumça:	soxax
+🏴 Qarayçe:	oram
+🏴 Qırımçah:	soqaq
+🏴 Saqalī:	???
+🏴 Dolgan:	???
+🏴 Tıvalap:	kudumçu
+🏴 Altay:	orom
+🏴 Xakas:	oram
+🏴 Şor:	oram
+🏴 Soyıt:	???
+🏴 Tofa:	???''', reply_markup=markup_menu)
+# RUSRUS???
+#  slrcn sahrus dlgrus sytrus tofrus
+
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
