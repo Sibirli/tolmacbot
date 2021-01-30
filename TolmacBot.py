@@ -39182,7 +39182,27 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Tofa:	???''', reply_markup=markup_menu)
 # RUSRUS???
 #  slrcn sahrus dlgrus sytrus tofrus
-
+    
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "биржа" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "birja" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "borsa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bursa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "exchange" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sermaye piyasası değişimi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "piyasa değişimi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trading exchange" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bourse":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	exchange, bourse
+🇷🇺 Русский:	биржа [birja]
+🇹🇷 Türkçe:	borsa
+🇦🇿 Türkcə:	birja, bursa {arch.}
+🇹🇲 Türkmen:	birža, tolaý
+🏴 Uyghur:	bazar
+🏴 Qumuq:	borsa
+🏴 Gagauz:	borsa
+🏴 Saqalī:	bîrse''', reply_markup=markup_menu)
+#RUSRUS??? uzrus kzrus kgrus ttrus barus cvrus qqrus crhrus krcrus nogrus
+# styrus slrcn uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
