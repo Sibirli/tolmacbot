@@ -39200,9 +39200,46 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Uyghur:	bazar
 🏴 Qumuq:	borsa
 🏴 Gagauz:	borsa
-🏴 Saqalī:	bîrse''', reply_markup=markup_menu)
+🏴 Saqalī:	bîrse
+🇺🇿🇰🇿🇰🇬🏴: birja''', reply_markup=markup_menu)
 #RUSRUS??? uzrus kzrus kgrus ttrus barus cvrus qqrus crhrus krcrus nogrus
 # styrus slrcn uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "leader" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lider" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лидер" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "önder":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	leader
+🇷🇺 Русский:	лидер [lider]
+🇹🇷 Türkçe:	önder
+🇦🇿 Türkcə:	öndər, yolgörsədən
+🇹🇲 Türkmen:	ýolbaşçy, başlyk
+🇺🇿 Oʻzbek:	yoʻlboshchi
+🇰🇿 Qazaq:	kösbasşı
+🇰🇬 Qırğız:	jol başçı
+🏴 Uyghur:	yolbashchi
+🏴 Tatarça:	yulbaşçı
+🏴 Başqort:	yulbaşsı
+🏴 Çovaşla:	yertücö, puclox
+🏴 Qaraqalpaq:	jolbasshı
+🏴 Qırımtatar:	yolbaşçı
+🏴 Qumuq:	yolbaşçı
+🏴 Alança:	jol başçı
+🏴 Noğay:	yolbasşı
+🏴 Sıbırca:	paşlıq, qulawız
+🏴 Salırça:	yol başlağuci, başlıx
+🏴 Gagauz:	önder
+🏴 Urumça:	ağa, beg
+🏴 Qarayçe:	ağa, keçindirivçi
+🏴 Qırımçah:	yolbaşçı
+🏴 Saqalī:	basqan
+🏴 Dolgan:	hirgit
+🏴 Tıvalap:	udurtukçu
+🏴 Altay:	ulu başçı
+🏴 Xakas:	ustağcı
+🏴 Şor:	pajaçı
+🏴 Soyıt:	başqarığşı
+🏴 Tofa:	başqarığşı''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
