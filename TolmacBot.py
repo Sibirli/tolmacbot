@@ -25657,7 +25657,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lutridae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "порешня" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lutra vulgaris":
-        bot.send_message(message.chat.id, '''🇬🇧 English: otter 🦦
+        bot.send_message(message.chat.id, '''See also "beaver". См. также "бобр". Ayrıca bknz "kunduz"
+
+🇬🇧 English: otter 🦦
 🇷🇺 Русский:	выдра
 🇹🇷 Türkçe: su samuru
 🇦🇿 Türkcə: çay samuru
@@ -25675,7 +25677,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança: qunduz
 🏴 Noğayşa:	qundız
 🏴 Sıbırca:	qama, qamnaw
-🏴 Salırça:	su borsux
+🏴 Salırça:	???
 🏴 Gagauzça: su samuru
 🏴 Urumça: su samuru
 🏴 Qarayçe: suv samuru
@@ -25688,6 +25690,55 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	qandus
 🏴 Soyot: hundus
 🏴 Tofalap: hundus''', reply_markup=markup_menu)
+# RUSRUS???
+# slrcn
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qunduz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beaver" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "выдра" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kunduz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобры" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобриный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобровый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобер" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "castor":
+        bot.send_message(message.chat.id, '''See also "otter". См. также "выдра". Ayrıca bknz "su samuru"
+
+🐺 Old Turkic (bef. XV c.):	qunduz
+🇬🇧 English:	beaver
+🇷🇺 Русский:	бобр
+🇹🇷 Türkçe:	kunduz
+🇦🇿 Türkcə:	qunduz
+🇹🇲 Türkmen:	samyr
+🇺🇿 Oʻzbek:	qunduz
+🇰🇿 Qazaq:	qundız
+🇰🇬 Qırğız:	qunu, kemçet
+🏴 Uyghur:	qunduz
+🏴 Tatarça:	qondız
+🏴 Başqort:	qondoð
+🏴 Çovaşla:	xontor
+🏴 Qaraqalpaq:	qundız
+🏴 Qırımtatar:	qunduz
+🏴 Qumuq:	xunduz
+🏴 Alança:	qunduz
+🏴 Noğay:	qundız
+🏴 Sıbırca:	qontos
+🏴 Salırça:	???
+🏴 Gagauz:	kunduz
+🏴 Urumça:	xunduz
+🏴 Qarayçe:	qundız
+🏴 Qırımçah:	qundız
+🏴 Saqalī:	???
+🏴 Dolgan:	???
+🏴 Tıvalap:	kundus
+🏴 Altay:	qumdus
+🏴 Xakas:	kamçat, xundus
+🏴 Şor:	qumdus, sıbıldıŋ
+🏴 Soyıt:	hundus
+🏴 Tofa:	hundus''', reply_markup=markup_menu)
+# RUSRUS???
+# slrcn sahrus dlgrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sable" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "соболь" \
