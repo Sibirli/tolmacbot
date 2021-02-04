@@ -663,7 +663,7 @@ Xakastap: algebra
 Altaylap: algebra
 Şor: algebra
 Urumça: algebra
-Karajče: algebra
+Qarayçe: algebra
 Qrımçahça: algebra
 Soyot: algebra
 Tofalap: algebra''', reply_markup=markup_menu)
@@ -3160,7 +3160,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: krokodil
 🏴 Şor: krokodil
 🏴 Urumça: krakadil
-🏴 Karajče: krokodil
+🏴 Qarayçe: krokodil
 🏴 Qrımçahça: timsah
 🏴 Soyot: krokodîl
 🏴 Tofalap: krokodîl''', reply_markup=markup_menu)
@@ -13956,11 +13956,13 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: skorpion
 🏴 Şor: skorpion
 🏴 Urumça: skarpion
-🏴 Karajče: skorpion
+🏴 Qarayçe: skorpion
 🏴 Qrımçahça: çayan, aqrep
 🏴 Soyot: skorpîon
 🏴 Tofalap: skorpîon''', reply_markup=markup_menu)
-
+#animal
+# RUSRUS??? cvrus
+# slrcn gagrus uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "switzerland" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "swiss" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "switz" \
@@ -14055,7 +14057,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: üçtoluq (üçtolıq)
 🏴 Şor: üştoluq
 🏴 Urumça: üçköşe (~lik)
-🏴 Karajče: üč miujiuš (ic mivis)
+🏴 Qarayçe: üç müyüş (iç mivis)
 🏴 Qrımçahça: uçköşe (~lık)
 🏴 Soyot: üş-bulıñ
 🏴 Tofalap: üş-buluñ''', reply_markup=markup_menu)
@@ -14104,11 +14106,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: slavyan
 🏴 Şor: slavyan
 🏴 Urumça: slav, xazax {east slav}
-🏴 Karajče: slav
+🏴 Qarayçe: slav
 🏴 Qrımçahça: slav
 🏴 Soyot: slavyan
 🏴 Tofalap: slavyan''', reply_markup=markup_menu)
-
+#nation
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bayram" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bairam" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "feast" \
@@ -14154,7 +14156,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: bayram
 🏴 Şor: payram
 🏴 Urumça: yortu, bayram
-🏴 Karajče: chydž, bajram
+🏴 Qarayçe: xıc, bayram
 🏴 Qrımçahça: bayram (baryam)
 🏴 Soyot: bayır, ulığ-hün
 🏴 Tofalap: uluğ-hün''', reply_markup=markup_menu)
@@ -14201,11 +14203,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: sad
 🏴 Şor: sad
 🏴 Urumça: bağ, baxça
-🏴 Karajče: bah, bachča
+🏴 Qarayçe: bağ, baxça
 🏴 Qrımçahça: bağ, bağça
 🏴 Soyot: sad
 🏴 Tofalap: saat''', reply_markup=markup_menu)
-
+# RUSRUS???
+# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "никях" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "никах" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "свадба" \
@@ -14255,7 +14258,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: I. toy II. alıjar
 🏴 Şor: I. toy II. alışqan
 🏴 Urumça: I. dügün, toy II. dügün teskeresi
-🏴 Karajče: I. diugiun, toy II. chuppa
+🏴 Qarayçe: I. dügün, toy II. xuppa
 🏴 Qrımçahça: I. dugun, toy II. nikâh, hupa
 🏴 Soyot: I. toy II. gerlelge
 🏴 Tofalap: I. toy II. gerlelge''', reply_markup=markup_menu)
@@ -14305,7 +14308,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇰🇬 Qırğızça: dolma {<🇷🇺<🇦🇿???}, oromo
 🏴 Uyghurche: ???
 🏴 Tatarça: tulma
-🏴 Başqortsa: ???
+🏴 Başqortsa: tulma
 🏴 Çovaşla: ???
 🏴 Qaraqalpaqsha: ???
 🏴 Qırımtatarca: dolma, sarma
@@ -14322,11 +14325,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: ???
 🏴 Şor: ???
 🏴 Urumça: dolma, sarma (sarmax)
-🏴 Karajče: dolma, sarma
+🏴 Qarayçe: dolma, sarma
 🏴 Qrımçahça: tolma, sarma
 🏴 Soyot: ???
 🏴 Tofalap: ???''', reply_markup=markup_menu)
-
+# RUSRUS??? kzrus ugrus ugcn cvrus qqrus nogrus
+# styrus slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дефективный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дефектность" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "деффектный" \
@@ -14383,7 +14387,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: cek, tutaq, cedikpes
 🏴 Şor: qoptaş
 🏴 Urumça: kem, eksiklik, maana
-🏴 Karajče: kusur, ėksiklik
+🏴 Qarayçe: kusur, eksiklik
 🏴 Qrımçahça: qusur, eksıklık
 🏴 Soyot: dutuu, ürääşkin
 🏴 Tofalap: dutuu, ürääşkin''', reply_markup=markup_menu)
@@ -14440,11 +14444,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Türkistan
 🏴 Şor: Türkistan
 🏴 Urumça: Türkistan
-🏴 Karajče: Turkistan
+🏴 Qarayçe: Turkistan
 🏴 Qrımçahça: Türkistan
 🏴 Soyot: Türkistan
 🏴 Tofalap: Türkistan''', reply_markup=markup_menu)
-
+#geo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "east turkistan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eastern turkistan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "east-turkistan" \
@@ -14507,7 +14511,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: Mizrah Türkistan
 🏴 Soyot: Cöön Türkistan
 🏴 Tofalap: Buruŋğaarıkîî Türkistan''', reply_markup=markup_menu)
-
+#geo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "coffee" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "koffee" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kofe" \
@@ -14550,6 +14554,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: qave
 🏴 Soyot: kofe, borgol
 🏴 Tofalap: kofe, borgol''', reply_markup=markup_menu)
+# RUSRUS??? kgrus cvrus qqrus nogrus
+#slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tea" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чай" \
@@ -33495,11 +33501,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla:	mital
 🏴 Alança:	maydal
 🏴 Salır:	şüncan
+🏴 Gagauz: midaliye
 🏴 Saqalí:	metél
 🏴 Tofa: metaal
 🇰🇿🇰🇬🏴: medal''', reply_markup=markup_menu)
 # RUSRUS??? kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
-# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus khakrus altrus shorrus sytrus tofrus
+# styrus slrcn uumrus kdrrus jctrus sahrus dlgrus tyvrus khakrus altrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏆" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trophy" \
@@ -33687,7 +33694,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇬🇧 English: ticket 🎫🎟
 🇷🇺 Русский:	билет [bilet]
 🇹🇷 Türkçe:	bilet, tezkere {arch.}
-🇦🇿 Türkcə:	bilet, təzkərə {arch.}
+🇦🇿 Türkcə:	bilet, təzkirə
 🇺🇿 Oʻzbek:	chipta
 🇰🇿 Qazaq:	şıpta
 🇰🇬 Qırğız:	çıpta
@@ -33697,7 +33704,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay:	emeş
 🏴 Şor:	emeş
 🇹🇲🏴: bilet''', reply_markup=markup_menu)
-# RUSRUS??? azrus tkrus ugrus ugcn ttrus barus qqrus crhrus kumrus krcrus nogrus
+# RUSRUS??? tkrus ugrus ugcn ttrus barus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus dlgrus tyvrus khakrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🤹" \
@@ -34914,12 +34921,13 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança:	ulow
 🏴 Noğay:	kölik
 🏴 Salırça:	çiçı
+🏴 Gagauz: taşıyıcılar
 🏴 Saqalí:	kölö
 🏴 Soyıt:	ulağ
 🏴 Tofa:	ulağ
 🏴: transport ???''', reply_markup=markup_menu)
 # RUSRUS??? ugcn ttrus barus cvrus
-# styrus slrcn gagrus uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus
+# styrus slrcn uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полиция" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "polis" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "police" \
@@ -39120,9 +39128,10 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Qırımtatar:	felsefe
 🏴 Qumuq:	falsafa
 🏴 Salırça:	filsef
+🏴 Gagauz:	felsefe
 🇰🇬🏴: filosofiya''', reply_markup=markup_menu)
 # RUSRUS??? kgrus cvrus qqrus krcrus nogrus
-# styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# styrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "philosopher" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "философ" \
@@ -39144,9 +39153,10 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Qırımtatar:	felsefeci
 🏴 Qumuq:	falsafa alimi
 🏴 Salırça:	filsef kiş
+🏴 Gagauz:	felsefi
 🇰🇬🏴: filosof''', reply_markup=markup_menu)
 # RUSRUS??? kgrus cvrus qqrus krcrus nogrus
-# styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# styrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yas" \
@@ -39292,11 +39302,54 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	başqarığşı
 🏴 Tofa:	başqarığşı''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "psychology" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "психология" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "psikoloji" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ruhbilimi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ruhbilim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "psychological" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "psychologia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "psikolojik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ruh bilimi":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	psychology
+🇷🇺 Русский:	психология [psikhologiya]
+🇹🇷 Türkçe:	psikoloji, ruh bilimi
+🇦🇿 Türkcə:	psixologiya, elmi-ruh
+🇹🇲 Türkmen:	psihologiýa, ylmy ruh
+🇺🇿 Oʻzbek:	psixologiya, ruhshunoslik
+🇰🇿 Qazaq:	psixologiya, jantanıw
+🇰🇬 Qırğız:	psixologiya, sezim tanuu
+🏴 Uyghur:	psixologiye
+🏴 Tatarça:	pesixalugiä
+🏴 Başqort:	psixologiya
+🏴 Çovaşla:	psixologi
+🏴 Qaraqalpaq:	psixologiya
+🏴 Qırımtatar:	ruhiyat, ilmruh {arch.}
+🏴 Qumuq:	psixologiya, ilmu ruh
+🏴 Alança:	psixologiya
+🏴 Noğay:	psixologiya
+🏴 Sıbırca:	psixologiya
+🏴 Salırça:	goŋnı
+🏴 Gagauz:	psihologiye, ruhbilimi
+🏴 Urumça:	psixologiya
+🏴 Qarayçe:	psixologiya
+🏴 Qırımçah:	ruhiyat
+🏴 Saqalī:	psiqologiya
+🏴 Dolgan:	psiqologiya
+🏴 Tıvalap:	psixologiya
+🏴 Altay:	psixologiya
+🏴 Xakas:	psixologiya
+🏴 Şor:	psixologiya
+🏴 Soyıt:	psixologiya
+🏴 Tofa:	psixologiya''', reply_markup=markup_menu)
+# RUSRUS??? ugrus ugcn ttrus barus cvrus qqrus krcrus nogrus
+# styrus slrcn uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-#tags country cameo
+#tags country cameo geo nation animal
 bot.polling()
