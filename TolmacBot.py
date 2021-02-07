@@ -39345,6 +39345,59 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 # RUSRUS??? ugrus ugcn ttrus barus cvrus qqrus krcrus nogrus
 # styrus slrcn uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "digit" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numerical digit" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "number" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numerus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numero" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цифра" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "число" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "номер" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rakam" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sayı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numara" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цифровой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "номерной" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numeral" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cifra" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цифры" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыфры" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыфра" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numerial" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "числовой":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	I. digit (numerical digit) II. number {numerus} III. number {numero}
+🇷🇺 Русский:	I. цифра II. число III. номер
+🇹🇷 Türkçe:	I. rakam II. sayı III. numara
+🇦🇿 Türkcə:	I. rəqəm II. say, ədəd {math.} III. nömrə
+🇹🇲 Türkmen:	I. sifr II. san III. nomer
+🇺🇿 Oʻzbek:	I. raqam II. son III. nomer
+🇰🇿 Qazaq:	I. tsıfr II. san III. nömir
+🇰🇬 Qırğız:	I. tsıfra II. san III. nomer
+🏴 Uyghur:	I. reqem II. san III. nomur
+🏴 Tatarça:	I. tsıfr II. san III. nomer
+🏴 Başqort:	I. tsıfr II. han III. nomer
+🏴 Çovaşla:	I. çıxvor II. hisep III. nomer
+🏴 Qaraqalpaq:	I. tsıfr II. san III. nomer
+🏴 Qırımtatar:	I. raqam II. sayı, san III. nomera
+🏴 Qumuq:	I. tsıfra II. sanaw III. nömür
+🏴 Alança:	I. tarx II. san III. nomer
+🏴 Noğay:	I. tsıfra II. san III. nomer
+🏴 Sıbırca:	I. cıfra II. san III. isäp
+🏴 Salırça:	I. sanax II. san III. fanxo
+🏴 Gagauz:	I. țifra II. sayı III. numer
+🏴 Urumça:	I. tsıfra II. sayı III. nomer
+🏴 Qarayçe:	I. sanbelgi II. san III. numer
+🏴 Qırımçah:	I. raqam II. sayı, san III. nomera
+🏴 Saqalī:	I. síppara II. aqsán III. nüömer
+🏴 Dolgan:	I. síppara II. aksán III. nuomer
+🏴 Tıvalap:	I. çuragay II. san III. dugaar
+🏴 Altay:	I. tsıfra II. too III. nomer
+🏴 Xakas:	I. tsıfra II. san III. nomer
+🏴 Şor:	I. sançı II. san III. nomer
+🏴 Soyıt:	I. tsıfra II. san III. duğaar
+🏴 Tofa:	I. tsıfra II. san III. duğaar''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
