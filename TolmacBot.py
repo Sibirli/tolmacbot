@@ -271,16 +271,15 @@ def help(message):
 @bot.message_handler(commands=['donate'])
 def donate(message):
     bot.send_message(message.chat.id, '''🌐 PayPal: royalnagiyev@gmail.com
-💸 Yandex.Money: 41001451353877
-💱 Qiwi: +994513006640
+💸 Yoo.Money: 41001451353877
 💳 Tinkoff Bank card (Russia, MasterCard): 5536 9138 7198 8115
 💳 Перевод по номеру: +7 912 816 65 15
-💳 Vostochny Bank card (Russia, Мир): 2200 7103 1254 6607 
 💎 Free TON: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
 💎 Etherium: 0x6943dD749Bb2B46d6B21275Fa9570cBd6A00d450
+💎 Bitcoin: 31juvN9wFoJLtihN4iFqHN2QZNxrZqErLF
 
 My referral links:
-Chatex neobank: https://t.me/Chatex_bot?start=r_150763''')
+Chatex crypto neobank: https://t.me/Chatex_bot?start=r_150763''')
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
@@ -477,16 +476,15 @@ E e = [e], [ɛ] (at the beginning of the word, and after T, D)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "donate":
         bot.send_message(message.chat.id, '''🌐 PayPal: royalnagiyev@gmail.com
-💸 Yandex.Money: 41001451353877
-💱 Qiwi: +994513006640
+💸 Yoo.Money: 41001451353877
 💳 Tinkoff Bank card (Russia, MasterCard): 5536 9138 7198 8115
 💳 Перевод по номеру: +7 912 816 65 15
-💳 Vostochny Bank card (Russia, Мир): 2200 7103 1254 6607 
 💎 Free TON: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
 💎 Etherium: 0x6943dD749Bb2B46d6B21275Fa9570cBd6A00d450
+💎 Bitcoin: 31juvN9wFoJLtihN4iFqHN2QZNxrZqErLF
 
 My referral links:
-Chatex neobank: https://t.me/Chatex_bot?start=r_150763''')
+Chatex crypto neobank: https://t.me/Chatex_bot?start=r_150763''')
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "привет" \
         or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hello"\
@@ -39398,6 +39396,54 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	I. tsıfra II. san III. duğaar
 🏴 Tofa:	I. tsıfra II. san III. duğaar''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lynx" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рысь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vaşak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lynxes" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bobcat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bob cat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рысиха" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рысиный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lynx lynx" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lynx rufus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lynx pardinus":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): üşek
+🇬🇧 English:	lynx
+🇷🇺 Русский:	рысь
+🇰🇷 Hangug-eo: seulasoni
+🇭🇺 Magyar: hiúz
+🇲🇳 Mongol: şilüüsen (şilüüs)
+🇹🇷 Türkçe:	vaşak
+🇦🇿 Türkcə:	vaşaq, yazıpişiyi, maşax {dial.}
+🇹🇲 Türkmen:	gum pişigi, geçigaplaň
+🇺🇿 Oʻzbek:	silovsin
+🇰🇿 Qazaq:	silewsin
+🇰🇬 Qırğız:	sülöösün
+🏴 Uyghur:	süleysün
+🏴 Tatarça:	seläwsen
+🏴 Başqort:	heläwhen
+🏴 Çovaşla:	sülevöc
+🏴 Qaraqalpaq:	silewsin
+🏴 Qırımtatar:	vaşaq
+🏴 Qumuq:	silewsün, selewçan
+🏴 Alança:	sülewsün, jaz kiştik
+🏴 Noğay:	malmısıq (balmısıq)
+🏴 Sıbırca:	seläwsen
+🏴 Salırça:	şiliysün
+🏴 Gagauz:	vaşak
+🏴 Urumça:	vaşax
+🏴 Qarayçe:	vaşax
+🏴 Qırımçah:	vaşaq
+🏴 Saqalī:	űs, beder
+🏴 Dolgan:	űs, tibde
+🏴 Tıvalap:	üs, aldı
+🏴 Altay:	üs, şülüzin
+🏴 Xakas:	üs
+🏴 Şor:	üs
+🏴 Soyıt:	üs
+🏴 Tofa:	üs''', reply_markup=markup_menu)
+# cameo animal 
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
