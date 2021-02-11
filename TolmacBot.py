@@ -15,15 +15,15 @@ db = Database(os.environ.get('DATABASE_URL'))  # !!!!!!!!!!!!!!!!!!!
 hesbisey = '''🇬🇧 Nothing found, write other word. You can ask author to add this word, you can also write me your suggestions and comments if you notice a mistake @sibirli
 Our channel: @tolmacchannel
 Our chat: @tolmacchat
-Donate: https://telegra.ph/Donate-TolmacBot-05-03
+Donate: https://t.me/TolmacChannel/364
 🇷🇺 Ничего не найдено, введите другое слово. Еще Вы можете попросить автора добавить это слово, также можете написать мне свои предложения и замечания если заметили ошибку @sibirli
 Наш канал: @tolmacchannel
 Наш чат: @tolmacchat
-Поддержать финансово: https://telegra.ph/Donate-TolmacBot-05-03
+Поддержать финансово: https://t.me/TolmacChannel/364
 🇹🇷 Hiçbirşey bulunamadı, başka bir kelime yazın. Bot yaratıcısından bu kelime eklemesini isteyebilirsiniz, ayrıca teklif ve hata hakkında bana yazabilirsiniz @sibirli
 Kanal: @tolmacchannel
 Sohbet: @tolmacchat
-Yatırım: https://telegra.ph/Donate-TolmacBot-05-03'''
+Yatırım: https://t.me/TolmacChannel/364'''
 
 
 # send_message
@@ -37379,7 +37379,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🇷🇺 Русский:	здание
 🇹🇷 Türkçe:	bina, yapı
 🇦🇿 Türkcə:	bina, tikili
-🇹🇲 Türkmen:	buna, ymarat
+🇹🇲 Türkmen:	bina, ymarat
 🇺🇿 Oʻzbek:	bino, imorat
 🇰🇿 Qazaq:	ğıymarat
 🇰🇬 Qırğız:	imarat
@@ -39343,7 +39343,6 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 # RUSRUS??? ugrus ugcn ttrus barus cvrus qqrus krcrus nogrus
 # styrus slrcn uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
-
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "digit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numerical digit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "number" \
@@ -39363,11 +39362,12 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыфры" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыфра" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numerial" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "san" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "числовой":
         bot.send_message(message.chat.id, '''🇬🇧 English:	I. digit (numerical digit) II. number {numerus} III. number {numero}
 🇷🇺 Русский:	I. цифра II. число III. номер
 🇹🇷 Türkçe:	I. rakam II. sayı III. numara
-🇦🇿 Türkcə:	I. rəqəm II. say, ədəd {math.} III. nömrə
+🇦🇿 Türkcə:	I. rəqəm II. say, ədəd {math.}, san III. nömrə
 🇹🇲 Türkmen:	I. sifr II. san III. nomer
 🇺🇿 Oʻzbek:	I. raqam II. son III. nomer
 🇰🇿 Qazaq:	I. tsıfr II. san III. nömir
@@ -39395,6 +39395,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Şor:	I. sançı II. san III. nomer
 🏴 Soyıt:	I. tsıfra II. san III. duğaar
 🏴 Tofa:	I. tsıfra II. san III. duğaar''', reply_markup=markup_menu)
+
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lynx" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рысь" \
@@ -39443,7 +39444,57 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Şor:	üs
 🏴 Soyıt:	üs
 🏴 Tofa:	üs''', reply_markup=markup_menu)
-# cameo animal 
+# cameo animal
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arctic fox" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "white fox" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "polar fox" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "snow fox" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "песец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kutup tilkisi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vulpes lagopus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alopex lagopus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полярная лиса" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полярная лисица" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полярный лис" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "арктическая лиса" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "арктическая лисица" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "арктический лис" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ak tilki" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beyaz tilki":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	arctic fox, white fox, polar fox, snow fox
+🇷🇺 Русский:	песец
+🇹🇷 Türkçe:	kutup tilkisi
+🇦🇿 Türkcə:	qütb tülküsü
+🇹🇲 Türkmen:	ak tilki
+🇺🇿 Oʻzbek:	shimol tulkisi
+🇰🇿 Qazaq:	aq tülki
+🇰🇬 Qırğız:	aq tülkü
+🏴 Uyghur:	aq tülke
+🏴 Tatarça:	aq tölke
+🏴 Başqort:	aq tölkö
+🏴 Çovaşla:	curcör tilli
+🏴 Qaraqalpaq:	aq túlki
+🏴 Qırımtatar:	aq tilki
+🏴 Qumuq:	aq tülkü
+🏴 Alança:	aq tülkü
+🏴 Noğay:	polyar tülkisi
+🏴 Sıbırca:	aq tölgö
+🏴 Salırça:	ax tülüğü
+🏴 Gagauz:	poyraz tilkisi
+🏴 Urumça:	demirxazıx tülküsü
+🏴 Qarayçe:	qutub tülküsü
+🏴 Qırımçah:	ah tılkı
+🏴 Saqalī:	kırsa
+🏴 Dolgan:	kırsa
+🏴 Tıvalap:	ak dilgi
+🏴 Altay:	aq tülkü
+🏴 Xakas:	ax tülgü
+🏴 Şor:	püdre
+🏴 Soyıt:	aq-dilgî
+🏴 Tofa:	aq-dilgî''', reply_markup=markup_menu)
+# animal
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
