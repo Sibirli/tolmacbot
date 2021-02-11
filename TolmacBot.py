@@ -39494,6 +39494,54 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	aq-dilgî
 🏴 Tofa:	aq-dilgî''', reply_markup=markup_menu)
 # animal
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crow" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "raven" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ворона" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ворон" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karga" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kuzgun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "corvus corax" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "corvus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "воронье" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "corbie":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qarğa, quzğun
+🇬🇧 English:	crow, raven
+🇷🇺 Русский:	ворона, ворон
+🇰🇷 Hangug-eo: galgamagwi
+🇭🇺 Magyar: varjú, holló
+🇲🇳 Mongol: kheree
+🇪🇪 Eesti: kaaren
+🇫🇮 Suomea: kaarne
+🇹🇷 Türkçe:	karga, kuzgun
+🇦🇿 Türkcə:	qarğa, quzğun
+🇹🇲 Türkmen:	garga, zag
+🇺🇿 Oʻzbek:	qargʻa, quzgʻun
+🇰🇿 Qazaq:	qarğa, quzğın
+🇰🇬 Qırğız:	qarğa, quzğun
+🏴 Uyghur:	qargha, quzghun
+🏴 Tatarça:	qarğa, qozğın
+🏴 Başqort:	qarğa, qoðğon
+🏴 Çovaşla:	coxan
+🏴 Qaraqalpaq:	ǵarǵa, quzǵın
+🏴 Qırımtatar:	qarğa, quzğun
+🏴 Qumuq:	qarğa, quzğun
+🏴 Alança:	qarğa, quzğun
+🏴 Noğay:	qarğa, quzğın
+🏴 Sıbırca:	qarğa, qosqon
+🏴 Salırça:	qarğa, quzğun
+🏴 Gagauz:	garga, kuzgun
+🏴 Urumça:	ğarğa, xuzğun
+🏴 Qarayçe:	qarğa, quzğun
+🏴 Qırımçah:	qarğa, quzğun
+🏴 Saqalī:	suor, qargıya {arch.}
+🏴 Dolgan:	huor, kargıya {arch.}
+🏴 Tıvalap:	kaargan, kuskun
+🏴 Altay:	qarğaa, qusqun
+🏴 Xakas:	xarğa, xusxun
+🏴 Şor:	qarğa, qusqun
+🏴 Soyıt:	qarğan, qusqın
+🏴 Tofa:	qaarğan, qusqun''', reply_markup=markup_menu)
+# cameo animal
 
     else:
         bot.send_message(message.chat.id, hesbisey)
