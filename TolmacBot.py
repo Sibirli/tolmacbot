@@ -39494,6 +39494,8 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	aq-dilgî
 🏴 Tofa:	aq-dilgî''', reply_markup=markup_menu)
 # animal
+
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crow" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "raven" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ворона" \
@@ -39542,6 +39544,52 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	qarğan, qusqın
 🏴 Tofa:	qaarğan, qusqun''', reply_markup=markup_menu)
 # cameo animal
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moose" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "elk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лось" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sığın" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alces" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sığın geyiği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taçboynuzlu geyik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сохатый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alces alces":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	moose, elk
+🇷🇺 Русский:	лось [los]
+🇲🇳 Mongol: khandagay
+🇹🇷 Türkçe:	sığın, mus
+🇦🇿 Türkcə:	sığın
+🇹🇲 Türkmen:	los
+🇺🇿 Oʻzbek:	bug'u
+🇰🇿 Qazaq:	suwın, bulan
+🇰🇬 Qırğız:	bağış
+🏴 Uyghur:	qandaghay
+🏴 Tatarça:	poşı
+🏴 Başqort:	mışı
+🏴 Çovaşla:	poşı
+🏴 Qaraqalpaq:	los
+🏴 Qırımtatar:	mus
+🏴 Qumuq:	bulan
+🏴 Alança:	qandağay
+🏴 Noğay:	kerekşin (terekşin), bulan
+🏴 Sıbırca:	tös sıyır, aŋ
+🏴 Salırça:	milu
+🏴 Gagauz:	los
+🏴 Urumça:	los
+🏴 Qarayçe:	los
+🏴 Qırımçah:	los
+🏴 Saqalī:	tayaq
+🏴 Dolgan:	tańak, tuokî
+🏴 Tıvalap:	buur
+🏴 Altay:	bulan
+🏴 Xakas:	pulan
+🏴 Şor:	pulan
+🏴 Soyıt:	uluğ-aŋ, buur ♂, îniğ ♀, das (tas) {2 yo}, toş {1 yo}
+🏴 Tofa:	uluğ-aŋ, buur ♂, îniğ ♀, das (tas) {2 yo}, toş {1 yo}''', reply_markup=markup_menu)
+# cameo animal
+# RUSRUS??? tkrus qqrus
+# slrcn gagrus uumrus kdrrus jctrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
