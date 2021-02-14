@@ -39591,6 +39591,52 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 # RUSRUS??? tkrus qqrus
 # slrcn gagrus uumrus kdrrus jctrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saiga" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saigak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сайга" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сайгак" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sayga" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saygak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bozkır antilopu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маргач" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saiga tatarica":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	soqaq
+🇬🇧 English:	saiga
+🇷🇺 Русский:	сайга, сайгак [sayga/saygak]
+🇲🇳 Mongol: bökhön
+🇹🇷 Türkçe:	sayga, bozkır antilopu
+🇦🇿 Türkcə:	sayğaq
+🇹🇲 Türkmen:	saýgak
+🇺🇿 Oʻzbek:	oqquyruq
+🇰🇿 Qazaq:	aqböken
+🇰🇬 Qırğız:	bökön
+🏴 Uyghur:	qangsharliq böken
+🏴 Tatarça:	sayğaq, qır käcäse
+🏴 Başqort:	sayğaq
+🏴 Çovaşla:	xör-kaçaka
+🏴 Qaraqalpaq:	sayǵaq
+🏴 Qırımtatar:	sayğa
+🏴 Qumuq:	sayğaq
+🏴 Alança:	sayğaq
+🏴 Noğay:	aq böken
+🏴 Sıbırca:	sayğaq
+🏴 Salırça:	sayga
+🏴 Gagauz:	sayga/saygak
+🏴 Urumça:	sayga/saygak
+🏴 Qarayçe:	sayga/saygak
+🏴 Qırımçah:	sayga/saygak
+🏴 Saqalī:	sayga/saygak
+🏴 Dolgan:	sayga/saygak
+🏴 Tıvalap:	çeeren
+🏴 Altay:	sar-kiyik, aq-kiyik
+🏴 Xakas:	sayga/saygak
+🏴 Şor:	sayga/saygak
+🏴 Soyıt:	sayga/saygak
+🏴 Tofa:	sayga/saygak''', reply_markup=markup_menu)
+# cameo animal
+# RUSRUS???
+# gagrus uumrus kdrrus jctrus sahrus dlgrus khakrus shorrus sytrus tofrus
+    
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
