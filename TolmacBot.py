@@ -39600,7 +39600,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bozkır antilopu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маргач" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saiga tatarica":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	soqaq
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	suqaq (soqaq)
 🇬🇧 English:	saiga
 🇷🇺 Русский:	сайга, сайгак [sayga/saygak]
 🇲🇳 Mongol: bökhön
@@ -39636,7 +39636,24 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 # cameo animal
 # RUSRUS???
 # gagrus uumrus kdrrus jctrus sahrus dlgrus khakrus shorrus sytrus tofrus
-    
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pony" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "poni" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pone" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пони" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "midilli" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "midili" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ponaidh":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	pony
+🇷🇺 Русский:	пони [poni]
+🇹🇷 Türkçe:	midilli
+🇺🇿 Oʻzbek:	to'pichoq ot, toti ot
+🏴 Uyghur:	tuti at
+🏴 Alança:	mıjıq at
+🇰🇿🇰🇬🇦🇿🇹🇲🏴: poni''', reply_markup=markup_menu)
+# RUSRUS??? azrus tkrus kzrus kgrus ttrus barus cvrus qqrus crhrus kumrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
