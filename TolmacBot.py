@@ -24315,7 +24315,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇰🇬 Qırğızça: begemot
 🏴 Uyghurche: su éti‎, seqenqur
 🏴 Tatarça:	su sıyırı ♀, su ügeze ♂
-🏴 Başqortsa: hıw hıyırı ♀, hıw üseðe ♂
+🏴 Başqortsa: hıw hıyırı ♀, hıw ügeðe ♂
 🏴 Çovaşla: begemot
 🏴 Qaraqalpaqsha: begemot
 🏴 Qırımtatarca: suv ayğırı
@@ -24336,6 +24336,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	begemot
 🏴 Soyot: begemot
 🏴 Tofalap: begemot''', reply_markup=markup_menu)
+#animal
+# RUSRUS??? kgrus cvrus qqrus krcrus
+#jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "deportation" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "exile" \
@@ -39594,6 +39597,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saiga" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saigak" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сайга" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сугак" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сайгак" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sayga" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saygak" \
@@ -39615,7 +39619,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Başqort:	sayğaq
 🏴 Çovaşla:	xör-kaçaka
 🏴 Qaraqalpaq:	sayǵaq
-🏴 Qırımtatar:	sayğa
+🏴 Qırımtatar:	sayğaq
 🏴 Qumuq:	sayğaq
 🏴 Alança:	sayğaq
 🏴 Noğay:	aq böken
@@ -39653,6 +39657,69 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🇰🇿🇰🇬🇦🇿🇹🇲🏴: poni''', reply_markup=markup_menu)
 # RUSRUS??? azrus tkrus kzrus kgrus ttrus barus cvrus qqrus crhrus kumrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+#animal
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caliph" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khalifa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "халиф" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khalif" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "halife" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "halif" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "califa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khalifah" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "халифа" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "calipha" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калиф" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "calif":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	caliph, khalifa
+🇷🇺 Русский:	халиф [khalif]
+🇹🇷 Türkçe:	halife
+🇦🇿 Türkcə:	xəlifə
+🇹🇲 Türkmen:	halypa
+🇺🇿 Oʻzbek:	xalifa
+🇰🇿 Qazaq:	qalıypa
+🇰🇬 Qırğız:	qalıypa
+🏴 Uyghur:	xelipe
+🏴 Tatarça:	xälifä
+🏴 Başqort:	xälifä
+🏴 Qaraqalpaq:	xaliyfa
+🏴 Qırımtatar:	halife
+🏴 Qumuq:	xalipa
+🏴 Alança:	xalifa
+🏴 Noğay:	xälife
+🏴 Sıbırca:	xälifä
+🏴 Salırça:	xalife
+🏴 Gagauz:	halife
+🏴: xalif ???''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caliphate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "халифат" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khalifat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "halifelik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hilâfet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hilafet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khalifate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khilafah":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	caliphate
+🇷🇺 Русский:	халифат [khalifat]
+🇹🇷 Türkçe:	halifelik, hilâfet
+🇦🇿 Türkcə:	xilafət, xəlifəlik
+🇹🇲 Türkmen:	halypalyk
+🇺🇿 Oʻzbek:	xalifalik
+🇰🇿 Qazaq:	qalıypalıq
+🇰🇬 Qırğız:	qalıypalıq
+🏴 Uyghur:	xelipilik
+🏴 Tatarça:	xälifälek
+🏴 Başqort:	xälifälek
+🏴 Qaraqalpaq:	xaliyfat
+🏴 Qırımtatar:	halifelik, hilâfet
+🏴 Qumuq:	xalipat
+🏴 Alança:	xalifat
+🏴 Noğay:	xiläfet
+🏴 Sıbırca:	xälifälek
+🏴 Salırça:	xilafet
+🏴 Gagauz:	halifelih
+🏴: xalifat ???''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
