@@ -39737,9 +39737,12 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "blooddrinker" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "blood drinker" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кровопиец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧛‍♂️" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧛‍♀️" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧛" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "упыр":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	içkäk
-🇬🇧 English:	vampire
+🇬🇧 English:	vampire 🧛
 🇷🇺 Русский:	вампир, кровопийца
 🇹🇷 Türkçe:	vampir, kan içici
 🇦🇿 Türkcə:	qaniçən
