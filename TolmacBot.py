@@ -39718,8 +39718,60 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Noğay:	xiläfet
 🏴 Sıbırca:	xälifälek
 🏴 Salırça:	xilafet
-🏴 Gagauz:	halifelih
+🏴 Gagauz:	halifelik
 🏴: xalifat ???''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vampire" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вампир" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кровопийца" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vampir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kan içici" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaniçici" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khalifate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wąpierz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wapierz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кровопийца" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "упырь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vampyr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bloodsucker" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "blooddrinker" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "blood drinker" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кровопиец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "упыр":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	içkäk
+🇬🇧 English:	vampire
+🇷🇺 Русский:	вампир, кровопийца
+🇹🇷 Türkçe:	vampir, kan içici
+🇦🇿 Türkcə:	qaniçən
+🇹🇲 Türkmen:	ganhor
+🇺🇿 Oʻzbek:	qonxoʻr
+🇰🇿 Qazaq:	qanişer, qansorğış
+🇰🇬 Qırğız:	qaniçer, qanqor
+🏴 Uyghur:	qanicher, qanxor
+🏴 Tatarça:	ubır, qaneçkeç
+🏴 Başqort:	ubır, mäskäy
+🏴 Çovaşla:	yunöcen
+🏴 Qaraqalpaq:	qanxor
+🏴 Qırımtatar:	qan içici, qanhor
+🏴 Qumuq:	qaniçiwçü
+🏴 Alança:	qan içiwçü
+🏴 Noğay:	obır, qanişer
+🏴 Sıbırca:	mäckäy, qan eckec
+🏴 Salırça:	qanğuci
+🏴 Gagauz:	???
+🏴 Urumça:	???
+🏴 Qarayçe:	???
+🏴 Qırımçah:	???
+🏴 Saqalī:	qánı úláççı
+🏴 Dolgan:	???
+🏴 Tıvalap:	xansorar
+🏴 Altay:	qan içeeçi
+🏴 Xakas:	xan isçeŋ
+🏴 Şor:	???
+🏴 Soyıt:	???
+🏴 Tofa:	???''', reply_markup=markup_menu)
+# RUSRUS???
+# gagrus uumrus kdrrus jctrus dlgrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
