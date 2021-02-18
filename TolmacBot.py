@@ -8533,7 +8533,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kanâat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kanaat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "расчетливость" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "экономичный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "расчетливость" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "экономность" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ekonomik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бережливость":
         bot.send_message(message.chat.id, '''🇬🇧 English: saving
 🇷🇺 Русский: экономия [ekonomiya]
@@ -39775,6 +39778,32 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Tofa:	???''', reply_markup=markup_menu)
 # RUSRUS???
 # gagrus uumrus kdrrus jctrus dlgrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "economy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "economics" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "economic" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "экономика" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ekonomika" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ekonomi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iktisat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iktisadiyat":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	I. economy II. economics
+🇷🇺 Русский:	экономика [ekonomika]
+🇹🇷 Türkçe:	ekonomi, iktisat, iktisadiyat
+🇦🇿 Türkcə:	iqtisadiyyat
+🇹🇲 Türkmen:	ykdysadyýet
+🇺🇿 Oʻzbek:	iqtisodiyot
+🏴 Uyghur:	iqtisad
+🏴 Tatarça:	iqtisad
+🏴 Başqort:	iqtisad
+🏴 Qırımtatar:	iqtisat, iqtisadiyat
+🏴 Qumuq:	iqtisat
+🏴 Sıbırca:	iqtisat
+🏴 Salırça:	sebe, ciŋci
+🏴 Qırımçah:	iqtisat, iqtisadiyat
+🇰🇿🇰🇬🏴: ekonomika''', reply_markup=markup_menu)
+#RUSRUS??? kzrus kgrus cvrus qqrus krcrus nogrus
+# slrcn gagrus uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
