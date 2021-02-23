@@ -5910,6 +5910,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dictionary":
         bot.send_message(message.chat.id, '''🇬🇧 English: dictionary, wordbook
 🇷🇺 Русский: словарь, словник (словник в значении "список слов" в большинство тюркских языков является переводов словосочетания "список слов", не требует специального слова)
+🇪🇪 Eesti: sõnastik
 🇹🇷 Türkçe: sözlük, lügât (archaism)
 🇦🇿 Türkcə: lüğət, sözlük
 🇹🇲 Türkmençe: sözlük, lugat (archaism), kamus (archaism)
@@ -5939,7 +5940,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: sözlık, luğat
 🏴 Soyot: söstik
 🏴 Tofalap: soottarı''', reply_markup=markup_menu)
-
+# cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dog" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "doggy" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bitch" \
@@ -18725,6 +18726,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): söz (soð), sav (sab), til
 🇬🇧 English: word
 🇷🇺 Русский: слово [slovo]
+🇪🇪 Eesti: sõna
+🇭🇺 Magyar: szó
 🇹🇷 Türkçe: söz
 🇦🇿 Türkcə: söz
 🇹🇲 Türkmençe: söz
@@ -18754,7 +18757,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: sös
 🏴 Soyot: sös
 🏴 Tofalap: soot''', reply_markup=markup_menu)
-
+# cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alcohol" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alkohol" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alkol" \
@@ -21554,7 +21557,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грибы":
         bot.send_message(message.chat.id, '''🇬🇧 English: mushroom 🍄
 🇷🇺 Русский: гриб
-🇹🇷 Türkçe: mantar
+🇭🇺 Magyar: gomba
+🇹🇷 Türkçe: mantar, göbelek {dial.}
 🇦🇿 Türkcə: göbələk, kövələk {dial.}, quzuqarnı {dial.}, quzuqulağı {dial.}, suqu (soqo, suqi) {dial.}
 🇹🇲 Türkmençe: kömelek
 🇺🇿 Oʻzbekcha: zamburugʻ, qoʻziqorin
@@ -21583,6 +21587,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: meşke 
 🏴 Soyot: çekpä (cekpä)
 🏴 Tofalap: çekpe''', reply_markup=markup_menu)
+# cameo
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pharmacy" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "community pharmacy" \
@@ -39805,6 +39810,39 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 #RUSRUS??? kzrus kgrus cvrus qqrus krcrus nogrus
 # slrcn gagrus uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portugal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portugalia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portugaliya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portekiz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "португалия":
+        bot.send_message(message.chat.id, '''🇵🇹 Portugal
+
+🇬🇧 English:	Portugal 
+🇷🇺 Русский:	Португалия [Portugaliya]
+🇹🇷 Türkçe:	Portekiz
+🇦🇿 Türkcə:	Portəgiz
+🇹🇲 Türkmen:	Portugaliýa
+🇺🇿🇰🇿🇰🇬🏴: Portugaliya
+🏴 Salırça:	Putoya''', reply_markup=markup_menu)
+# RUSRUS??? tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+#  country
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portuguese" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "португалец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "португальский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portuguesa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "португальская":
+        bot.send_message(message.chat.id, '''🇬🇧 English: Portuguese 
+🇷🇺 Русский:	португалец, португальский
+🇹🇷 Türkçe:	Portekiz
+🇦🇿 Türkcə:	portəgiz
+🇹🇲🇺🇿🇰🇿🇰🇬🏴: portugal
+🏴 Salırça:	Putoya''', reply_markup=markup_menu)
+# RUSRUS??? tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+#  nation
+    
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
