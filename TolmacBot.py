@@ -1805,11 +1805,14 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🐺 Old Turkic: evät (emät, yemät), yah
 🇬🇧 English: yes
 🇷🇺 Русский: да
+🇪🇪 Eesti: jah
+🇰🇷 Hangug-eo: ye
+🇯🇵 Nihongo: hai
 🇹🇷 Türkçe: evet
 🇦🇿 Türkcə: hə
 🇹🇲 Türkmençe: hawa
 🇺🇿 Oʻzbekcha: ha
-🇰🇿 Qazaqşa: iyä, ja {dial.}
+🇰🇿 Qazaqşa: iyä
 🇰🇬 Qırğızça: ooba
 🏴 Uyghurche: he
 🏴 Tatarça: äye
@@ -1834,7 +1837,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçah: e
 🏴 Soyot: şêêŋ
 🏴 Tofalap: şêêŋ''', reply_markup=markup_menu)
-
+# cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "2" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iki" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "two" \
@@ -39814,6 +39817,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portugalia" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portugaliya" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portekiz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇵🇹" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "португалия":
         bot.send_message(message.chat.id, '''🇵🇹 Portugal
 
@@ -39842,7 +39846,66 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 # RUSRUS??? tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 #  nation
-    
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "netherlands" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "netherland" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "holland" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нидерланды" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇳🇱" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голландия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hollanda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "felemenk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "the netherlands" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голандия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "holanda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "holand" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nederland":
+        bot.send_message(message.chat.id, '''🇳🇱 Nederland
+
+🇬🇧 English:	Netherlands, Holland
+🇷🇺 Русский:	Нидерланды, Голландия
+🇹🇷 Türkçe:	Hollanda, Felemenk {arch.}
+🇦🇿 Türkcə:	Niderland, Fələməng {arch.}
+🇹🇲 Türkmen:	Niderlandiýa
+🇺🇿 Oʻzbek:	Niderlandlar
+🇰🇿 Qazaq:	Niderland
+🇰🇬 Qırğız:	Niderlanddar
+🏴 Uyghur:	Gollandiye
+🏴 Tatarça:	Niderlandlar
+🏴 Başqort:	Niderlandtar
+🏴 Çovaşla:	Kollanti
+🏴 Qaraqalpaq:	Niderland
+🏴 Qırımtatar:	Felemenk
+🏴 Salırça:	Holan
+🏴: Niderland / Gollandiya''', reply_markup=markup_menu)
+#  country
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dutch" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нидерландец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нидерландка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нидерландский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голландец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голландский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фламандский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фламандец":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Dutch
+🇷🇺 Русский:	нидерландец, голландец, фламандский
+🇹🇷 Türkçe:	Felemenk
+🇦🇿 Türkcə:	fələməng
+🇹🇲 Türkmen:	niderland
+🇺🇿 Oʻzbek:	niderland
+🇰🇿 Qazaq:	niderland
+🇰🇬 Qırğız:	niderland
+🏴 Uyghur:	Golland
+🏴 Tatarça:	niderland
+🏴 Başqort:	niderland
+🏴 Çovaşla:	kollanti
+🏴 Qaraqalpaq:	niderland
+🏴 Qırımtatar:	felemenk
+🏴 Salırça:	Holan
+🏴: niderland / golland''', reply_markup=markup_menu)
+#  nation
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
