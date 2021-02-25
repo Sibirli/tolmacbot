@@ -39906,6 +39906,29 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴: niderland / golland''', reply_markup=markup_menu)
 #  nation
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oman" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оман" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "umman" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uman" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "omani" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "umman sultanlığı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "султанат оман" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇴🇲" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sultanate of oman":
+        bot.send_message(message.chat.id, '''🇴🇲 Uman
+
+🇬🇧 English:	Oman
+🇷🇺 Русский:	Оман [Oman]
+🇹🇷 Türkçe:	Umman
+🇦🇿 Türkcə:	Ümman	
+🇺🇿 Oʻzbek:	Ummon
+🏴 Tatarça:	Ğoman
+🏴 Qırımtatar:	Umman
+🏴 Salırça:	Āman
+🏴 Qırımçah:	Umman
+🇹🇲🇰🇿🇰🇬🏴: Oman''', reply_markup=markup_menu)
+#  country
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
