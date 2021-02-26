@@ -39929,6 +39929,46 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🇹🇲🇰🇿🇰🇬🏴: Oman''', reply_markup=markup_menu)
 #  country
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "justice" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "справедливость" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adalet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adâlet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "justise" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "justiz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "правосудие":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	könülük (könilik)
+🇬🇧 English:	justice
+🇷🇺 Русский:	справедливость
+🇹🇷 Türkçe:	adalet
+🇦🇿 Türkcə:	ədalət
+🇹🇲 Türkmen:	adalat
+🇺🇿 Oʻzbek:	adolat, haqqoniyat
+🇰🇿 Qazaq:	ädilet
+🇰🇬 Qırğız:	adilet
+🏴 Uyghur:	adalet, heqqaniyet
+🏴 Tatarça:	ğadellek, ğädälät
+🏴 Başqort:	ğäðellek
+🏴 Çovaşla:	töröslöx, tivöclöx
+🏴 Qaraqalpaq:	ádillik
+🏴 Qırımtatar:	adalet
+🏴 Qumuq:	tüzlük, adillik
+🏴 Alança:	tüzlük, jan basmaw
+🏴 Noğay:	tüzlik, durıslıq
+🏴 Sıbırca:	tuğırılıq
+🏴 Salırça:	heqaniyet
+🏴 Gagauz:	dooruluk
+🏴 Urumça:	doğrulux, adalet
+🏴 Qarayçe:	könülük (könilik), rastlıx
+🏴 Qırımçah:	doğrılıq, adillıq
+🏴 Saqalī:	kırcık
+🏴 Dolgan:	kirdik
+🏴 Tıvalap:	çöptüg
+🏴 Altay:	çın
+🏴 Xakas:	sın
+🏴 Şor:	şın
+🏴 Soyıt:	şın
+🏴 Tofa:	şın''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
