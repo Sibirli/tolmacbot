@@ -39929,6 +39929,59 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🇹🇲🇰🇿🇰🇬🏴: Oman''', reply_markup=markup_menu)
 #  country
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romanian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ruman" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rumyn" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "румын" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "румынский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "румынка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rumen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rumanian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "româna" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romen":
+        bot.send_message(message.chat.id, '''🇬🇧 English: Romanian
+🇷🇺 Русский:	румын [rumyn]
+🇹🇷 Türkçe:	Rumen (Romen)
+🇦🇿 Türkcə:	rumın (romın, roman)
+🇹🇲 Türkmen:	rumyn
+🇺🇿 Oʻzbek:	rumin
+🏴 Uyghur:	Rumin
+🏴 Qırımtatar:	romen
+🏴 Salırça:	Romaniya kişi
+🏴 Gagauz:	romın
+🏴 Urumça:	rumin
+🏴 Qarayçe:	rumun
+🏴 Qırımçah:	romen
+🇰🇿🇰🇬🏴: rumın''', reply_markup=markup_menu)
+#  nation
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romania" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rumania" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "румыния" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ruminia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rumynia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romanya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "românia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romaniya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇷🇴":
+        bot.send_message(message.chat.id, '''🇷🇴 România
+
+🇬🇧 English:	Romania
+🇷🇺 Русский:	Румыния [Rumyniya]
+🇹🇷 Türkçe:	Romanya
+🇦🇿 Türkcə:	Rumıniya, Romıniya, Romaniya
+🇹🇲 Türkmen:	Rumyniýa
+🇺🇿 Oʻzbek:	Ruminiya
+🏴 Uyghur:	Ruminiye
+🏴 Çovaşla:	Rumıni
+🏴 Qırımtatar:	Romaniya
+🏴 Salırça:	Romaniya
+🏴 Gagauz:	Romıniya
+🏴 Qarayçe:	Rumuniya
+🏴 Qırımçah:	Romaniya
+🇰🇿🇰🇬🏴: Rumıniya''', reply_markup=markup_menu)
+#  country
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "justice" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "справедливость" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adalet" \
