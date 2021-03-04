@@ -7787,19 +7787,19 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇬🇧 English: japanese
 🇷🇺 Русский: японец, японка, японский (-ая, -ое)
 🇹🇷 Türkçe: japon
-🇦🇿 Türkcə: yapon, japoni (archaism), japonlu (archaism)
+🇦🇿 Türkcə: yapon, japon {arch.}
 🇹🇲 Türkmençe: ýapon
 🇺🇿 Oʻzbekcha: yapon
 🇰🇿 Qazaqşa: japon
-🇰🇬 Qırğızça: japon (yapon)
+🇰🇬 Qırğızça: japon
 🏴 Uyghurche: yapon
 🏴 Tatarça: yapun
 🏴 Başqortsa: yapon
 🏴 Çovaşla: yappun (yappon, yapon)
 🏴 Qaraqalpaqsha: yapon
 🏴 Qırımtatarca: yapon
-🏴 Qumuqça: yaponlu, yapon
-🏴 Qaraçay-Malqar: yaponlu
+🏴 Qumuqça: yapon
+🏴 Qaraçay-Malqar: yapon
 🏴 Noğayşa: yapon
 🏴 Sıbırca: yamar, nippon
 🏴 Gagauzça: yapon
@@ -7808,13 +7808,14 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tıvalap: yapon
 🏴 Salırça: ribun, ribun kişi
 🏴 Xakastap: yapon
-🏴 Altaylap: yapon
+🏴 Altaylap: copon
 🏴 Şor: yapon
 🏴 Urumça: yapon
-🏴 Karajče: japon
+🏴 Qarayçe: yapon
 🏴 Qrımçahça: yapon (japon)
 🏴 Soyot: yapon
 🏴 Tofalap: yapon''', reply_markup=markup_menu)
+#nation
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "japan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nippon" \
@@ -7834,24 +7835,24 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇹🇲 Türkmençe: Ýaponiýa
 🇺🇿 Oʻzbekcha: Yaponiya
 🇰🇿 Qazaqşa: Japoniya
-🇰🇬 Qırğızça: Japoniya (Yaponiya)
+🇰🇬 Qırğızça: Japoniya
 🏴 Uyghurche: Yaponiye
 🏴 Tatarça: Yapunstan, Yapuniä
 🏴 Başqortsa: Yaponiya
 🏴 Çovaşla: Yaponi
 🏴 Qaraqalpaqsha: Yaponiya
 🏴 Qırımtatarca: Yaponiya
-🏴 Qumuqça: Yaponya, Yapon (archaism)
+🏴 Qumuqça: Yapon
 🏴 Qaraçay-Malqar: Yapon
 🏴 Noğayşa: Yaponiya
-🏴 Sıbırca: Yamar il, Nippon el
+🏴 Sıbırca: Yamar, Nippon
 🏴 Gagauzça: Yaponiya
-🏴 Saqalí: Joppuon
-🏴 Dulgan-Hakalí: Joppuon
+🏴 Saqalí: Coppuon
+🏴 Dulgan-Hakalí: Coppuon
 🏴 Tıvalap: Yaponiya
 🏴 Salırça: Ribun
 🏴 Xakastap: Yaponîya
-🏴 Altaylap: Yaponiya
+🏴 Altaylap: Copon
 🏴 Şor: Yaponiya
 🏴 Urumça: Yaponiya
 🏴 Qarayçe: Yaponiya
@@ -39980,6 +39981,32 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Qarayçe:	Rumuniya
 🏴 Qırımçah:	Romaniya
 🇰🇿🇰🇬🏴: Rumıniya''', reply_markup=markup_menu)
+#  country
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "urdun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ürdün" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jordan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jordania" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иордан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иордания" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иорданский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iordaniya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇯🇴":
+        bot.send_message(message.chat.id, '''🇯🇴 al-Urdun
+
+🇬🇧 English:	Jordania, Jordan
+🇷🇺 Русский:	Иордания [Iordaniya]
+🇹🇷 Türkçe:	Ürdün
+🇦🇿 Türkcə:	Ürdün
+🇹🇲 Türkmen:	Iordaniýa
+🇺🇿 Oʻzbek:	Iordaniya
+🏴 Uyghur:	Iordaniye
+🏴 Tatarça:	Ürdün
+🏴 Çovaşla:	İordani
+🏴 Qırımtatar:	Ürdün
+🏴 Salırça:	Yüedan
+🏴 Qarayçe:	Yarden
+🇰🇿🇰🇬🏴: İordaniya''', reply_markup=markup_menu)
 #  country
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "justice" \
