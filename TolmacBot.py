@@ -40049,6 +40049,48 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	şın
 🏴 Tofa:	şın''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🗿" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "idol" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идол" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fetish" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fetiş" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кумир" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "божок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "graven image" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "истукан":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): burxan, but
+🇬🇧 English:	idol (fetish) 🗿
+🇷🇺 Русский:	идол [idol]
+🇹🇷 Türkçe:	put, idol
+🇦🇿 Türkcə:	büt
+🇹🇲 Türkmen:	but
+🇺🇿 Oʻzbek:	but
+🇰🇿 Qazaq:	put
+🇰🇬 Qırğız:	büt
+🏴 Uyghur:	but
+🏴 Tatarça:	pot
+🏴 Başqort:	bot
+🏴 Çovaşla:	yöröx
+🏴 Qaraqalpaq:	but
+🏴 Qırımtatar:	put
+🏴 Qumuq:	but
+🏴 Alança:	jor
+🏴 Noğay:	but
+🏴 Sıbırca:	pot
+🏴 Salırça:	to
+🏴 Gagauz:	tayfe taşı
+🏴 Urumça:	but
+🏴 Qarayçe:	abax, ıstorlap, puşmax
+🏴 Qırımçah:	but, abaq
+🏴 Saqalī:	emeget
+🏴 Dolgan:	hemekén
+🏴 Tıvalap:	eeren
+🏴 Altay:	körmöjök, çalu
+🏴 Xakas:	salığ
+🏴 Şor:	som
+🏴 Soyıt:	eerän
+🏴 Tofa:	eeren''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
