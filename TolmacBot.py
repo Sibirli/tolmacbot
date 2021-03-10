@@ -3048,20 +3048,19 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "крест" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cross" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "haç" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "put" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "istavroz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salip" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хач" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хачик" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "херасе" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ни хера себе" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ıstavroz":
-        bot.send_message(message.chat.id, '''
-🇬🇧 English: cross
+        bot.send_message(message.chat.id, '''🇬🇧 English: cross
 🇷🇺 Русский: крест [krest]
-🇹🇷 Türkçe: haç, put, salip, ıstavroz
+🇹🇷 Türkçe: haç, salip, ıstavroz
 🇦🇿 Türkcə: xaç, səlib
 🇹🇲 Türkmençe: haç, atanak
-🇺🇿 Oʻzbekcha: xoch, but, salib
+🇺🇿 Oʻzbekcha: xoch, salib
 🇰🇿 Qazaqşa: kires
 🇰🇬 Qırğızça: krest, çırım
 🏴 Uyghurche: chapras
@@ -3071,7 +3070,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qaraqalpaqsha: atanaq
 🏴 Qırımtatarca: haç
 🏴 Qumuqça: xaç
-🏴 Qaraçay-Malqar: gâwur qaç, jor, krest
+🏴 Qaraçay-Malqar: qaç, jor
 🏴 Noğayşa: qaç
 🏴 Sıbırca: täre, qac (qacı)
 🏴 Gagauzça: stavroz
@@ -3083,7 +3082,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: krest
 🏴 Dolgan: krest
 🏴 Urumça: xaç, stavroz
-🏴 Karaj: chač
+🏴 Qarayçe: xaç
 🏴 Qrımçahça: haç (ğaç)
 🏴 Soyot: herääsê
 🏴 Tofalap: herääsê''', reply_markup=markup_menu)
@@ -8086,8 +8085,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇬🇧 English: doll
 🇷🇺 Русский: кукла [kukla]
 🇹🇷 Türkçe: bebek (oyuncak bebek), kukla
-🇦🇿 Türkcə: kukla, gəlincik (usually female doll), gəlin (usually female doll), digin (archaism), müqəvva (archaism), qolçax (qolcaq) (dialect), bəbə (dialect), şonqubəbə (dialect), ələmxortdadi (dialect)
-🇹🇲 Türkmençe: gurjak, oýnatgy aýal (only female doll)
+🇦🇿 Türkcə: qolcaq, gəlincik/gəlin {female doll}
+🇹🇲 Türkmençe: gurjak, oýnatgy aýal {female doll}
 🇺🇿 Oʻzbekcha: qo'g'irchok
 🇰🇿 Qazaqşa: quwırşaq
 🇰🇬 Qırğızça: quurçaq
@@ -8104,7 +8103,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Gagauzça: kukla
 🏴 Saqalí: kúkula, kokúkka
 🏴 Dulgan-Hakalí: kúkla
-🏴 Tıvalap: kukla, oynaar-kıs (female doll)
+🏴 Tıvalap: kukla, oynaar-kıs {female doll}
 🏴 Salırça: vava
 🏴 Xakastap: köklö, axpıyax
 🏴 Altaylap: naaday, buubay, küükle
@@ -25636,7 +25635,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇷🇺 Русский: куница
 🇲🇳 Mongol: suusar
 🇹🇷 Türkçe: sansar
-🇦🇿 Türkcə: su samuru, dələ
+🇦🇿 Türkcə: su samuru, dələ, sovsar {dial.}
 🇹🇲 Türkmençe: samyr
 🇺🇿 Oʻzbekcha: savsar
 🇰🇿 Qazaqşa:	suwsar
@@ -40056,6 +40055,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fetiş" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кумир" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "божок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "put" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "graven image" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "истукан":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): burxan, but
@@ -40090,6 +40090,37 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Şor:	som
 🏴 Soyıt:	eerän
 🏴 Tofa:	eeren''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "theater" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "theatre" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "teatr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "театр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tiyatro" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tiatro" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tiatr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "theatrical" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "театральный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "playhouse":
+        bot.send_message(message.chat.id, '''🐺 Classic Turkic:	räqsxana, oyun evi
+🇬🇧 English:	theatre (theater)
+🇷🇺 Русский:	театр [teatr]
+🇹🇷 Türkçe:	tiyatro
+🇦🇿 Türkcə:	teatr, tiyatro (tiyatr) {arch. + dial.}
+🇹🇲 Türkmen:	teatr, týatyr {arch.}
+🇰🇿 Qazaq:	tiyätir
+🏴 Uyghur:	tiyatir
+🏴 Tatarça:	räqısxanä
+🏴 Çovaşla:	teattor
+🏴 Qırımtatar:	tiyatir, oyun evi
+🏴 Salırça:	oyun yeri
+🏴 Gagauz:	teatru
+🏴 Urumça:	tyatır
+🏴 Qarayçe:	tiyatir
+🏴 Saqalī:	tiyétir
+🏴 Dolgan:	tiyétir
+🇺🇿🇰🇬🏴: teatr''', reply_markup=markup_menu)
+# RUSRUS??? uzrus kgrus barus qqrus kumrus krcrus nogrus
+# styrus slrcn jctrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
