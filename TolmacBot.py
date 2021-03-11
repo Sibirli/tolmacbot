@@ -40101,7 +40101,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "theatrical" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "театральный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "playhouse":
-        bot.send_message(message.chat.id, '''🐺 Classic Turkic:	räqsxana, oyun evi
+        bot.send_message(message.chat.id, '''👳‍ Classic Turkic:	räqsxana, oyun evi
 🇬🇧 English:	theatre (theater)
 🇷🇺 Русский:	театр [teatr]
 🇹🇷 Türkçe:	tiyatro
@@ -40121,6 +40121,64 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🇺🇿🇰🇬🏴: teatr''', reply_markup=markup_menu)
 # RUSRUS??? uzrus kgrus barus qqrus kumrus krcrus nogrus
 # styrus slrcn jctrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kolbasa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sausage" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bumbar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колбаса" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sucuk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sosis" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salami" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колбаска" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колбасы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kielbasa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sausages" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "суджук" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "суджух" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sujuk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sujukh" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sudjuk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sujuq" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сосиска" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сарделька" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сосиски" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сардельки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колбасный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кровянка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sudjuq":
+        bot.send_message(message.chat.id, '''In all post-soviet Turkic languages the term "Kolbasa" is used for describing an ordinary store sausage.
+Other types of traditional or national sausages are listed below:
+
+🐺 Old Turkic (bef. XV c.):	soqtu, soxta, soğut, suçuq
+🇬🇧 English:	sausage
+🇷🇺 Русский:	колбаса [kolbasa]
+🇹🇷 Türkçe:	sucuk, salam, sosis
+🇦🇿 Türkcə:	sucuq
+🇹🇲 Türkmen:	şöhlat
+🇺🇿 Oʻzbek:	qazi, hasip {boiled s.}
+🇰🇿 Qazaq:	şujıq, qazı 🐎
+🇰🇬 Qırğız:	çuçuq, qazı 🐎
+🏴 Uyghur:	qézi 🐎, hésip, chujuq
+🏴 Tatarça:	qazı 🐎, qazılıq 🐎, tutırma {liver s.}
+🏴 Başqort:	qaðı 🐎, qaðılıq 🐎, tutırma {liver s.}
+🏴 Çovaşla:	kolpassi, xas 🐎
+🏴 Qaraqalpaq:	qazı 🐎
+🏴 Qırımtatar:	sucuq, qazı 🐎
+🏴 Qumuq:	içek, soqta {liver s.}
+🏴 Alança:	qıyma, soxta {liver s.}
+🏴 Noğay:	qıyma, qazı 🐎, qazılıq 🐎
+🏴 Sıbırca:	qası, qansuxta
+🏴 Gagauz:	sucuk, bumbar
+🏴 Urumça:	sırma, sucux, soxta {blood s.}
+🏴 Qarayçe:	qıyma, sucuq
+🏴 Qırımçah:	sucuq (sucyuk)
+🏴 Saqalī:	qalbahı, bísastáq qán {blood s.}
+🏴 Altay:	çuçuq, qaazı 🐎, qan {blood s.}
+🏴 Xakas:	xıyma {khakas s.}, xara xan {blood s.}, ax xan {blood plasma s.}, sımay xan {s. from liquid blood}, tîris xan {deoxygenated blood s.}, xosxanax xan {s. in large intestine}, xotı xan {cecum s.}, çoçıx xan {s. in rectum}
+🏴 Soyıt:	şıvay 🐎 {blood s.}, hıyma {minced meat in the gut}
+🏴 Tofa:	şıbay {blood s.}''', reply_markup=markup_menu)
+#RUSRUS???
+# slrcn dlgrus tyvrus shorrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
