@@ -40180,6 +40180,68 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS???
 # slrcn dlgrus tyvrus shorrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qaymaq" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaymak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kajmak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qajmaq" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cream" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milk foam" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milky sediment" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milk clots" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milk clot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milky sediments" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milky foam" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milk sediment" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milky clots" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milky clot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milk sediments" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сливки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "крем" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "молочная пенка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пенка молока" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "молочный осадок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "осадок молока" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сгусток молока" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сгустки молока" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "молочный сгусток" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каймак" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sütün kaymağı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "südün kaymağı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "krem" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "krema":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qayaq (qańaq)
+🇬🇧 English:	cream, milk foam, milky sediment, milk clots, kaymak, kajmak, qaymaq
+🇷🇺 Русский:	сливки, крем, пенка молока, молочный осадок, сгусток молока, каймак
+🇹🇷 Türkçe:	kaymak
+🇦🇿 Türkcə:	qaymaq
+🇹🇲 Türkmen:	gaýmak
+🇺🇿 Oʻzbek:	qaymoq
+🇰🇿 Qazaq:	qaymaq
+🇰🇬 Qırğız:	qaymaq
+🏴 Uyghur:	qaymaq
+🏴 Tatarça:	qaymaq
+🏴 Başqort:	qaymaq
+🏴 Çovaşla:	xoyma
+🏴 Qaraqalpaq:	qaymaq
+🏴 Qırımtatar:	qaymaq
+🏴 Qumuq:	qaymaq
+🏴 Alança:	qaymaq
+🏴 Noğay:	qaymaq
+🏴 Sıbırca:	qaymaq
+🏴 Salırça:	gaymax
+🏴 Gagauz:	kaymak
+🏴 Urumça:	ğaymax
+🏴 Qarayçe:	qaymax
+🏴 Qırımçah:	qaymaq
+🏴 Saqalī:	qoymoq, üreme
+🏴 Dolgan:	üreme
+🏴 Tıvalap:	öreme
+🏴 Altay:	qaymaq, örömö
+🏴 Xakas:	xaymax
+🏴 Şor:	qaymaq
+🏴 Soyıt:	cööhäy
+🏴 Tofa:	öreme''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
