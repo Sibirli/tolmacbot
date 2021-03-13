@@ -40242,6 +40242,58 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	cööhäy
 🏴 Tofa:	öreme''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "töşek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "döşek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "matres" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mattres" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mattress" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "matress" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bedding" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beding" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "matras" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "matrac" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "матрас" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тюфяк" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "подстилка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сенник" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "матрац" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "матрасный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "матрацный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şilte":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	töşäk
+🇬🇧 English:	mattress, bedding, mat
+🇷🇺 Русский:	матрас [matras], тюфяк [tyufyak], мат [mat]
+🇹🇷 Türkçe:	döşek
+🇦🇿 Türkcə:	döşək
+🇹🇲 Türkmen:	düşek
+🇺🇿 Oʻzbek:	doʻshak
+🇰🇿 Qazaq:	tösek
+🇰🇬 Qırğız:	töşök
+🏴 Uyghur:	töshek
+🏴 Tatarça:	tüşäk
+🏴 Başqort:	tüşäk
+🏴 Çovaşla:	tüşek
+🏴 Qaraqalpaq:	tósek
+🏴 Qırımtatar:	töşek
+🏴 Qumuq:	töşek
+🏴 Alança:	töşek
+🏴 Noğay:	tösek
+🏴 Sıbırca:	tüşäk
+🏴 Salırça:	tüsek
+🏴 Gagauz:	döşek
+🏴 Urumça:	döşäk
+🏴 Qarayçe:	töşäk
+🏴 Qırımçah:	töşek
+🏴 Saqalī:	tüppék
+🏴 Dolgan:	tűpék
+🏴 Tıvalap:	döjek
+🏴 Altay:	töjök
+🏴 Xakas:	tözek
+🏴 Şor:	töjek
+🏴 Soyıt:	töşäk
+🏴 Tofa:	töhek''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
