@@ -40294,6 +40294,38 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	töşäk
 🏴 Tofa:	töhek''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pastirma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pastrami" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бастурма" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "basturma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pastırma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bastırma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "basdırma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "борц" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пастрома" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пастрами" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pastirma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pastourma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "basterma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пастрама" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pastrama" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "басдырма":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	pastirma, pastrami
+🇷🇺 Русский:	бастурма [basturma]
+🇹🇷 Türkçe:	pastırma
+🇦🇿 Türkcə:	basdırma
+🇺🇿 Oʻzbek:	bostirma
+🇰🇬 Qırğız:	böstürmöö
+🏴 Çovaşla:	pustarma
+🏴 Qırımtatar:	bastırma
+🏴 Gagauz:	pastırma
+🏴 Urumça:	bastırma
+🏴 Qarayçe:	bastırma
+🏴 Qırımçah:	bastırma
+🇹🇲🇰🇿🏴: ???''', reply_markup=markup_menu)
+# RUSRUS???  tkrus  kzrus  ugrus ugcn ttrus barus qqrus  kumrus krcrus nogrus
+# styrus slrcn  sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
