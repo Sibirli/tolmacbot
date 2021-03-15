@@ -40315,6 +40315,7 @@ Other types of traditional or national sausages are listed below:
 🇹🇷 Türkçe:	pastırma
 🇦🇿 Türkcə:	basdırma
 🇺🇿 Oʻzbek:	bostirma
+🇰🇿 Qazaqşa: bastırma
 🇰🇬 Qırğız:	böstürmöö
 🏴 Çovaşla:	pustarma
 🏴 Qırımtatar:	bastırma
@@ -40323,8 +40324,56 @@ Other types of traditional or national sausages are listed below:
 🏴 Qarayçe:	bastırma
 🏴 Qırımçah:	bastırma
 🇹🇲🇰🇿🏴: ???''', reply_markup=markup_menu)
-# RUSRUS???  tkrus  kzrus  ugrus ugcn ttrus barus qqrus  kumrus krcrus nogrus
+# RUSRUS???  tkrus  ugrus ugcn ttrus barus qqrus  kumrus krcrus nogrus
 # styrus slrcn  sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göçer oba" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göçeroba" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göçoba" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göç oba" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nomad" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "migrant" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочевник" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "переселенец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göçebe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köçer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочари" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nomade" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nomadic" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочевой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "номад":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	göçer oba
+🇬🇧 English:	nomad, migrant
+🇷🇺 Русский:	кочевник, переселенец
+🇹🇷 Türkçe:	göçebe
+🇦🇿 Türkcə:	köçəri, köşkün {dial.}
+🇹🇲 Türkmen:	çarwa
+🇺🇿 Oʻzbek:	koʻchmanchi
+🇰🇿 Qazaq:	köşpendi
+🇰🇬 Qırğız:	köçmön
+🏴 Uyghur:	köchmen
+🏴 Tatarça:	küçmäçe
+🏴 Başqort:	küskense
+🏴 Çovaşla:	kucavco
+🏴 Qaraqalpaq:	kóshpeli
+🏴 Qırımtatar:	köçebe
+🏴 Qumuq:	göçüwçü
+🏴 Alança:	köçgünçü
+🏴 Noğay:	köşpeli
+🏴 Sıbırca:	küçmänle
+🏴 Salırça:	ciilaça otquci
+🏴 Gagauz:	göçmen
+🏴 Urumça:	köçüvcü
+🏴 Qarayçe:	köçär
+🏴 Qırımçah:	köçer
+🏴 Saqalī:	köhöççü
+🏴 Dolgan:	kös kihi
+🏴 Tıvalap:	köşkün
+🏴 Altay:	köçkün
+🏴 Xakas:	köskin
+🏴 Şor:	köşkün
+🏴 Soyıt:	köşkîn
+🏴 Tofa:	köşkün''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
