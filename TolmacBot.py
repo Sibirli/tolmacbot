@@ -13152,7 +13152,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Noğayşa: alat, qural {musical instrument}
 🏴 Sıbırca: qoral, şay
 🏴 Gagauzça: avadannık, tertip, takım
-🏴 Saqalí: tuttar sep
+🏴 Saqalí: sep
 🏴 Dulgan-Hakalí: hep
 🏴 Tıvalap: xereksel
 🏴 Salırça: alet, laxcı {weapon}
@@ -21147,9 +21147,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kılıç" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kiliç" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мечной" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🗡" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⚔" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⚔️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "svord":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qılıç
-🇬🇧 English: sword
+🇬🇧 English: sword 🗡 ⚔️
 🇷🇺 Русский: меч
 🇹🇷 Türkçe: kılıç
 🇦🇿 Türkcə: qılınc, kılış {dial.}
@@ -40374,6 +40377,59 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	köşkün
 🏴 Soyıt:	köşkîn
 🏴 Tofa:	köşkün''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yarrak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yarrah" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yarrag" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yarrağ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yarak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yarah" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yarag" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yarağ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "weapon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оружие" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вооружение" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оружейный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "silah" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "savut" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "silâh" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arms" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "weaponry":
+        bot.send_message(message.chat.id, '''See also: tool; Ayrıca bknz: alet; См. также: инструмент
+        
+🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖𐰺𐰴
+🐺 Old Turkic (bef. XV c.):	tolum, yaraq
+🇬🇧 English:	weapon 🔫 🗡 🏹 ⚔️
+🇷🇺 Русский:	оружие
+🇹🇷 Türkçe:	silah, savut, yarak {arch.}
+🇦🇿 Türkcə:	silah, yaraq
+🇹🇲 Türkmen:	ýarag
+🇺🇿 Oʻzbek:	qurol, yarogʻ
+🇰🇿 Qazaq:	jaraq, qarıw
+🇰🇬 Qırğız:	qural, jaraq
+🏴 Uyghur:	qoral, yaragh
+🏴 Tatarça:	qoral
+🏴 Başqort:	qoral
+🏴 Çovaşla:	xöcpoşal, koral
+🏴 Qaraqalpaq:	qural, jaraq
+🏴 Qırımtatar:	silâ, savut {arch.}
+🏴 Qumuq:	sawut
+🏴 Alança:	sawut
+🏴 Noğay:	sawıt
+🏴 Sıbırca:	yarağ, tağay
+🏴 Salırça:	laxca, poo
+🏴 Gagauz:	siläh (silaf)
+🏴 Urumça:	savut, sila (sılah)
+🏴 Qarayçe:	savut (sağıt), yasan
+🏴 Qırımçah:	sağıt, silâ
+🏴 Saqalī:	sep
+🏴 Dolgan:	haa
+🏴 Tıvalap:	çepsek
+🏴 Altay:	cepsel
+🏴 Xakas:	tîrig
+🏴 Şor:	tibel
+🏴 Soyıt:	çepsäk (cepsäk)
+🏴 Tofa:	boo''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
