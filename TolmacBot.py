@@ -40431,6 +40431,57 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	çepsäk (cepsäk)
 🏴 Tofa:	boo''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rifle" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "riffle" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shotgun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shot gun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "винтовка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ружье" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ружейный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tüfek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "düfek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tüfenk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tüfeng" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "обрез" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дробовик" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rifled gun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "scattergun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fowling piece" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пищаль" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стрелковый":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	rifle, shotgun
+🇷🇺 Русский:	винтовка, ружье
+🇲🇳 Mongol: buu
+🇹🇷 Türkçe:	tüfek
+🇦🇿 Türkcə:	tüfəng
+🇹🇲 Türkmen:	tüpeň
+🇺🇿 Oʻzbek:	miltiq
+🇰🇿 Qazaq:	mıltıq
+🇰🇬 Qırğız:	mıltıq
+🏴 Uyghur:	miltiq
+🏴 Tatarça:	mıltıq
+🏴 Başqort:	mıltıq
+🏴 Çovaşla:	poşal (пищаль)
+🏴 Qaraqalpaq:	mıltıq
+🏴 Qırımtatar:	tüfek, mıltıq
+🏴 Qumuq:	tübek
+🏴 Alança:	mıltıq
+🏴 Noğay:	mıltıq
+🏴 Sıbırca:	mıltıq
+🏴 Salırça:	poo
+🏴 Gagauz:	tüfek
+🏴 Urumça:	tüfek
+🏴 Qarayçe:	tüfek
+🏴 Qırımçah:	tufenk
+🏴 Saqalī:	sá
+🏴 Dolgan:	há
+🏴 Tıvalap:	boo
+🏴 Altay:	mıltıq
+🏴 Xakas:	mıltıx
+🏴 Şor:	mıltıq
+🏴 Soyıt:	boo
+🏴 Tofa:	boo''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
