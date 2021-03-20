@@ -40482,6 +40482,74 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	boo
 🏴 Tofa:	boo''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köç" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köç!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köçmek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göç" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göç!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göçmek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "migrate!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "migrate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to migrate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "immigrate!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "immigrate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to immigrate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "emigrate!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "emigrate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to emigrate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочуй!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочуй" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочевать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "переселяйся!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "переселяйся" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "переселяться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "переселиться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "переселение" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочевание" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "переезжать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "перекочёвывать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "эмигрировать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иммигрировать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "переезжай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "перекочёвывай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "эмигрируй" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иммигрируй" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "relocate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to relocate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочевка":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	köç
+🇬🇧 English:	migrate! 
+🇷🇺 Русский:	кочуй! переселяйся! переселение!
+🇹🇷 Türkçe:	göç
+🇦🇿 Türkcə:	köç
+🇹🇲 Türkmen:	göç
+🇺🇿 Oʻzbek:	koʻch
+🇰🇿 Qazaq:	köş
+🇰🇬 Qırğız:	köç
+🏴 Uyghur:	köch
+🏴 Tatarça:	küç
+🏴 Başqort:	küs
+🏴 Çovaşla:	kuc
+🏴 Qaraqalpaq:	kósh
+🏴 Qırımtatar:	köç
+🏴 Qumuq:	göç
+🏴 Alança:	köç
+🏴 Noğay:	köş
+🏴 Sıbırca:	küç
+🏴 Salırça:	köç
+🏴 Gagauz:	göç
+🏴 Urumça:	köç
+🏴 Qarayçe:	köç
+🏴 Qırımçah:	köç
+🏴 Saqalī:	kös
+🏴 Dolgan:	kös
+🏴 Tıvalap:	köş
+🏴 Altay:	köç
+🏴 Xakas:	kös
+🏴 Şor:	köş
+🏴 Soyıt:	köş
+🏴 Tofa:	köş''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
