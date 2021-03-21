@@ -40482,6 +40482,30 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	boo
 🏴 Tofa:	boo''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baklava" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baqlava" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пахлава" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paxlava" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pakhlava" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pahlava" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бахлава" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "похлава":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	baqlağu
+🇬🇧 English:	baklava
+🇷🇺 Русский:	пахлава
+🇹🇷 Türkçe:	baklava
+🇦🇿 Türkcə:	paxlava
+🏴 Tatarça:	päxläwä
+🏴 Qırımtatar: baqlava
+🏴 Qumuq:	paxlawa
+🏴 Gagauz:	baklava
+🏴 Urumça:	paxlava
+🏴 Qarayçe:	baqlava
+🏴 Qırımçah:	baqlava
+🇹🇲🇺🇿🇰🇿🇰🇬🏴: paxlava (<-🇷🇺<-🇦🇿)''', reply_markup=markup_menu)
+# RUSRUS??? tkrus uzrus kzrus kgrus ugrus ugcn barus cvrus qqrus krcrus nogrus
+# styrus slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köç" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köç!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köçmek" \
@@ -40516,6 +40540,10 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иммигрируй" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "relocate" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to relocate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nomadize" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to nomadize" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nomadise" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to nomadise" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочевка":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	köç
 🇬🇧 English:	migrate! 
