@@ -40578,6 +40578,47 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	köş
 🏴 Tofa:	köş''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "renk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "reng" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "color" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colour" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цвет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цвета" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tüs":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	öŋ
+🇬🇧 English:	color
+🇷🇺 Русский:	цвет
+🇲🇳 Mongol: öŋö
+🇹🇷 Türkçe:	renk
+🇦🇿 Türkcə:	rəng
+🇹🇲 Türkmen:	reňk
+🇺🇿 Oʻzbek:	rang, tus
+🇰🇿 Qazaq:	tüs, reŋ, öŋ
+🇰🇬 Qırğız:	tüs, öŋ
+🏴 Uyghur:	reng, tüs
+🏴 Tatarça:	tös
+🏴 Başqort:	töþ
+🏴 Çovaşla:	tös
+🏴 Qaraqalpaq:	tús, reń
+🏴 Qırımtatar:	tüs, renk
+🏴 Qumuq:	tüs, renk
+🏴 Alança:	bet, boyaw
+🏴 Noğay:	tüs
+🏴 Sıbırca:	tös
+🏴 Salırça:	boyax
+🏴 Gagauz:	renk
+🏴 Urumça:	tüs, iräng
+🏴 Qarayçe:	tüs, reng
+🏴 Qırımçah:	tüs, renk
+🏴 Saqalī:	öŋ
+🏴 Dolgan:	öŋ
+🏴 Tıvalap:	öŋ
+🏴 Altay:	öŋ
+🏴 Xakas:	öŋ
+🏴 Şor:	öŋ
+🏴 Soyıt:	öŋ
+🏴 Tofa:	öŋ''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
