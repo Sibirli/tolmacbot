@@ -2017,6 +2017,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰆𐰔𐰣
 🇬🇧 English: long
 🇷🇺 Русский: длинный (-ая, -ое)
+🇭🇺 Magyar: hosszú
 🇹🇷 Türkçe: uzun
 🇦🇿 Türkcə: uzun
 🇹🇲 Türkmençe: uzyn
@@ -2046,7 +2047,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: uzun
 🏴 Soyot: uzun (uzın)
 🏴 Tofalap: uzun''', reply_markup=markup_menu)
-
+#cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иной" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иная" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иное" \
@@ -3841,6 +3842,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🐺 Old Turkic: yağ, öz
 🇬🇧 English: oil 🛢️, butter 🧈
 🇷🇺 Русский: жир, масло
+🇭🇺 Magyar: háj
 🇹🇷 Türkçe: yağ
 🇦🇿 Türkcə: yağ
 🇹🇲 Türkmençe: ýag
@@ -3894,7 +3896,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇺🇿 Oʻzbekcha: mashina
 🇰🇿 Qazaqşa: mäşiyne (maşıyna)
 🇰🇬 Qırğızça: maşına
-🏴 Uyghurche: mashina
+🏴 Uyghurche: harva
 🏴 Tatarça: maşına
 🏴 Başqortsa: maşına
 🏴 Çovaşla: maşşina
@@ -3908,7 +3910,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Saqalí: massína
 🏴 Dulgan-Hakalí: massína
 🏴 Tıvalap: çıççan, maşina (maşına)
-🏴 Salırça: çiçı (çizı, çiçe)
+🏴 Salırça: harva
 🏴 Xakastap: maşına
 🏴 Altaylap: maşına
 🏴 Şor: maşına
@@ -6985,6 +6987,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇬🇧 English: fruit
 🇷🇺 Русский: фрукт [frukt], плод [plod]
 🇲🇳 Mongol: jims
+🇭🇺 Magyar: gyümölcs
 🇹🇷 Türkçe: yemiş, meyve
 🇦🇿 Türkcə: meyvə, yemiş (dialect, meaning may vary, "muskmelon" in standart language)
 🇹🇲 Türkmençe: iýmiş, miwe
@@ -7014,7 +7017,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: yemış, meyva
 🏴 Soyot: hat (soft fruit)
 🏴 Tofalap: qat (soft fruit)''', reply_markup=markup_menu)
-
+#cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "химия" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chemistry" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kimya" \
@@ -7569,7 +7572,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: men
 🏴 Soyot: men
 🏴 Tofalap: men''', reply_markup=markup_menu)
-
+#cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "apple" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "яблоко" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alma" \
@@ -12083,6 +12086,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🐺 Old Turkic (bef. 13th c.): qar
 🇬🇧 English: snow
 🇷🇺 Русский: снег
+🇭🇺 Magyar: hó
 🇹🇷 Türkçe: kar
 🇦🇿 Türkcə: qar
 🇹🇲 Türkmençe: gar
@@ -12112,7 +12116,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: qar
 🏴 Soyot: qar
 🏴 Tofalap: qar''', reply_markup=markup_menu)
-
+#cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дочь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "доча" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дочка" \
@@ -25698,7 +25702,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança: qunduz
 🏴 Noğayşa:	qundız
 🏴 Sıbırca:	qama, qamnaw
-🏴 Salırça:	???
+🏴 Salırça:	qama
 🏴 Gagauzça: su samuru
 🏴 Urumça: su samuru
 🏴 Qarayçe: suv samuru
@@ -25712,7 +25716,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Soyot: hundus
 🏴 Tofalap: hundus''', reply_markup=markup_menu)
 # RUSRUS???
-# slrcn
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qunduz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beaver" \
@@ -25745,7 +25748,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança:	qunduz
 🏴 Noğay:	qundız
 🏴 Sıbırca:	qontos
-🏴 Salırça:	???
+🏴 Salırça:	qunduz
 🏴 Gagauz:	kunduz
 🏴 Urumça:	xunduz
 🏴 Qarayçe:	qundız
@@ -25759,7 +25762,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Soyıt:	hundus
 🏴 Tofa:	hundus''', reply_markup=markup_menu)
 # RUSRUS???
-# slrcn sahrus dlgrus
+# sahrus dlgrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sable" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "соболь" \
@@ -26693,7 +26696,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	iş
 🏴 Soyot: îş
 🏴 Tofalap: îş''', reply_markup=markup_menu)
-
+#cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "drink" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "a drink" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "the drink" \
@@ -28363,6 +28366,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "puff out":
         bot.send_message(message.chat.id, '''🇬🇧 English: I. blow! {expel air through pursed lips} 🌬 II. blow! {about wind}
 🇷🇺 Русский:	I. дуй! {о воздухе изо рта} II. вей! дуй! {о ветре}
+🇭🇺 Magyar: fúj
 🇹🇷 Türkçe: I. üfür, üfle II. es
 🇦🇿 Türkcə: I. üfür, üflə II. əs
 🇹🇲 Türkmençe: I. üfle II. ös
@@ -28392,7 +28396,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	I. übür II. sabır
 🏴 Soyot: I. ür II. es
 🏴 Tofalap: I. ür II. qadı''', reply_markup=markup_menu)
-
+#cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⛄️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "☃️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "☃" \
@@ -29977,7 +29981,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	iygis
 🏴 Soyıt: îhîs
 🏴 Tofa: îhîs''', reply_markup=markup_menu)
-
+#cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oğlan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мальчик" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "парень" \
@@ -32935,6 +32939,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qaz
 🇬🇧 English:	dig!
 🇷🇺 Русский:	копай!
+🇭🇺 Magyar: ás
 🇹🇷 Türkçe:	kaz
 🇦🇿 Türkcə:	qaz
 🇹🇲 Türkmen:	gaz
@@ -32964,7 +32969,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	qas
 🏴 Soyıt:	qas
 🏴 Tofa:	qas''', reply_markup=markup_menu)
-
+#cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "laugh!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "laugh" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to laugh" \
@@ -33246,6 +33251,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yüz
 🇬🇧 English:	swim! 🏊
 🇷🇺 Русский:	плавай!
+🇭🇺 Magyar: ússz!
 🇹🇷 Türkçe:	yüz!
 🇦🇿 Türkcə:	üz
 🇹🇲 Türkmen:	ýüz
@@ -33275,7 +33281,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	çüs
 🏴 Soyıt:	eştir
 🏴 Tofa:	eştir''', reply_markup=markup_menu)
-
+#cameo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🛶" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚢" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⛵️" \
@@ -33484,7 +33490,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qumuq: ayaqmaşin, şaytan arba, tetik {dial.}
 🏴 Alança:	şaytan arba
 🏴 Noğay:	tetik
-🏴 Salır:	zişinçı
+🏴 Salır:	zişinçe
 🏴 Gagauz:	biçikleta, lisapet {dial.}
 🏴 Urumça:	velisaped, şeytan araba
 🏴 Saqalí:	belisipiet
@@ -33713,8 +33719,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇺🇿 Oʻzbek:	chipta
 🇰🇿 Qazaq:	şıpta
 🇰🇬 Qırğız:	çıpta
+🏴 Uyghur: bélet
 🏴 Çovaşla:	yarlok
-🏴 Salır:	pio
+🏴 Salır:	belät
 🏴 Saqalí:	belie suruk
 🏴 Altay:	emeş
 🏴 Şor:	emeş
@@ -33980,7 +33987,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança:	muzıka
 🏴 Noğay:	saz
 🏴 Sıbır:	köy
-🏴 Salır:	yinyüe
+🏴 Salır:	saz
 🏴 Gagauz:	çalgı
 🏴 Urumça:	çalğı
 🏴 Qarayçe:	çalğı
@@ -33994,7 +34001,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Soyıt:	muzıka
 🏴 Tofa:	hobus''', reply_markup=markup_menu)
 # RUSRUS??? kgrus ttrus barus kumrus krcrus
-# slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus
+# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vukuf" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "knowledge" \
@@ -34070,7 +34077,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança:	baş-tüp
 🏴 Noğay:	bilim
 🏴 Sıbır:	mäğlümät
-🏴 Salır:	şinşi
+🏴 Salır:	bilim
 🏴 Gagauz:	bilgi
 🏴 Urumça:	bilgi
 🏴 Qarayçe:	bilüv
@@ -34083,7 +34090,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	tiles
 🏴 Soyıt:	bîlgi
 🏴 Tofa:	bîlgi''', reply_markup=markup_menu)
-#slrcn
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "drum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥁" \
@@ -34700,7 +34706,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança:	çögüç
 🏴 Noğay:	şökiş
 🏴 Sıbırca:	cügec
-🏴 Salırça:	toxmax {+ mallet}
+🏴 Salırça:	balğa
 🏴 Gagauz:	çekiç
 🏴 Urumça:	çäküç (çokuç)
 🏴 Qarayçe:	çöküç (çekiç)
@@ -34713,7 +34719,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	masqa
 🏴 Soyıt:	alağa (alaha), baltı
 🏴 Tofa:	alağa''', reply_markup=markup_menu)
-# RUSRUS??? slrcn
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🎻" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "violin" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "скрипка" \
@@ -34848,7 +34854,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança:	şahmat, sadra {arch.}
 🏴 Noğay:	şatraş
 🏴 Sıbırca:	şahmat, sätränc {arch.}
-🏴 Salırça:	şaŋçi
+🏴 Salırça:	şahmat, çi
 🏴 Gagauz:	şahmata, satranç
 🏴 Urumça:	santıraç
 🏴 Qarayçe:	santıraç
@@ -34862,7 +34868,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Soyıt:	şaxmat
 🏴 Tofa:	peeşke (пешка)''', reply_markup=markup_menu)
 # RUSRUS??? cvrus qqrus  kumrus
-# styrus slrcn sahrus dlgrus altrus khakrus shorrus sytrus tofrus
+# styrus sahrus dlgrus altrus khakrus shorrus sytrus tofrus
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "AAAA" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altun" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altın" \
@@ -37144,7 +37150,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Alança:	çarx, töŋerçek
 🏴 Noğay:	tegerşik
 🏴 Sıbırca:	tüŋkäläk
-🏴 Salırça:	gulu
+🏴 Salırça:	çax
 🏴 Gagauz:	tekerlek
 🏴 Urumça:	täkir, köpçek
 🏴 Qarayçe:	teger, küpçek
@@ -37158,7 +37164,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	tırıqqı
 🏴 Tofa:	tırıqqı''', reply_markup=markup_menu)
 # RUSRUS???
-#  slrcn sahrus dlgrus
+# sahrus dlgrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⛲" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fountain" \
@@ -37591,7 +37597,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Alança:	tüken
 🏴 Noğay:	tüken
 🏴 Sıbırca:	kibet
-🏴 Salırça:	puzi, den
+🏴 Salırça:	puzi, dien
 🏴 Gagauz:	tükän
 🏴 Urumça:	tükân
 🏴 Qarayçe:	kebit, tükân
@@ -37867,14 +37873,14 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Çovaşla:	vöri cölen
 🏴 Qumuq:	uçağan yulduz
 🏴 Alança:	uçxan julduz
-🏴 Salırça:	lüşin
+🏴 Salırça:	axgan yulduz
 🏴 Gagauz:	uçar yıldız
 🏴 Saqalí:	sındís
 🏴 Tıvalap:	çügürgen sıldıs
 🏴 Xakas:	tîkpe
 🇰🇬🏴: meteor''', reply_markup=markup_menu)
 # RUSRUS??? kgrus qqrus crhrus nogrus
-# styrus slrcn uumrus kdrrus jctrus dlgrus altrus shorrus sytrus tofrus
+# styrus uumrus kdrrus jctrus dlgrus altrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🌆" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "twilight" \
@@ -38035,7 +38041,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Alança:	qoy jol
 🏴 Noğay:	äji-yol
 🏴 Sıbırca:	???
-🏴 Salırça:	???
+🏴 Salırça:	yulduz özün
 🏴 Gagauz:	saman yolu, araba yolu
 🏴 Urumça:	araba yolu
 🏴 Qarayçe:	???
@@ -38049,7 +38055,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	qar oruu, deeri oruu
 🏴 Tofa:	qar oorhası''', reply_markup=markup_menu)
 # RUSRUS???
-# styrus slrcn kdrrus jctrus dlgrus
+# styrus kdrrus jctrus dlgrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "watch" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "clock" \
@@ -39344,7 +39350,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Alança:	psixologiya
 🏴 Noğay:	psixologiya
 🏴 Sıbırca:	psixologiya
-🏴 Salırça:	goŋnı
+🏴 Salırça:	rohiy halät
 🏴 Gagauz:	psihologiye, ruhbilimi
 🏴 Urumça:	psixologiya
 🏴 Qarayçe:	psixologiya
@@ -39358,7 +39364,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	psixologiya
 🏴 Tofa:	psixologiya''', reply_markup=markup_menu)
 # RUSRUS??? ugrus ugcn ttrus barus cvrus qqrus krcrus nogrus
-# styrus slrcn uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# styrus uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "digit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numerical digit" \
@@ -39810,11 +39816,11 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Qırımtatar:	iqtisat, iqtisadiyat
 🏴 Qumuq:	iqtisat
 🏴 Sıbırca:	iqtisat
-🏴 Salırça:	sebe, ciŋci
+🏴 Salırça:	iqtisat
 🏴 Qırımçah:	iqtisat, iqtisadiyat
 🇰🇿🇰🇬🏴: ekonomika''', reply_markup=markup_menu)
 #RUSRUS??? kzrus kgrus cvrus qqrus krcrus nogrus
-# slrcn gagrus uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# gagrus uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portugal" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portugalia" \
@@ -40618,6 +40624,55 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	öŋ
 🏴 Soyıt:	öŋ
 🏴 Tofa:	öŋ''', reply_markup=markup_menu)
+#cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kapkan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "капкан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ловушка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "западня" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "силок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "силки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kapan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tuzak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trap" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trapping" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "duzak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ловчая петля":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qapqan (qapğan), tuzaq
+🇬🇧 English:	trap, trapping
+🇷🇺 Русский:	капкан [kapkan], ловушка, западня
+🇭🇺 Magyar: csapda
+🇲🇳 Mongol: khavkha
+🇹🇷 Türkçe:	kapan, tuzak
+🇦🇿 Türkcə:	tələ, duzaq
+🇹🇲 Türkmen:	gapan, duzak
+🇺🇿 Oʻzbek:	qopqon, tuzoq
+🇰🇿 Qazaq:	qaqpan, tuzaq
+🇰🇬 Qırğız:	qapqan, tuzaq
+🏴 Uyghur:	qapqan, tuzaq
+🏴 Tatarça:	qapqın, tozaq
+🏴 Başqort:	qapqan, toðaq
+🏴 Çovaşla:	kapkon, tapo
+🏴 Qaraqalpaq:	qaqpan, duzaq
+🏴 Qırımtatar:	qapqan, tuzaq
+🏴 Qumuq:	qapğun, tuzaq
+🏴 Alança:	qabxan, tuzaq
+🏴 Noğay:	qapqan, tuzaq
+🏴 Sıbırca:	qapqan, tosaq
+🏴 Salırça:	duzax
+🏴 Gagauz:	kapan
+🏴 Urumça:	xapxan, tuzax
+🏴 Qarayçe:	qapqan, tuzax
+🏴 Qırımçah:	qapqan, tuzaq
+🏴 Saqalī:	qapkán, tuhaq
+🏴 Dolgan:	kapkán, tuhak
+🏴 Tıvalap:	kakpa, duzak
+🏴 Altay:	qapqan, tuzaq
+🏴 Xakas:	xaxpan, tuzax
+🏴 Şor:	qapqı, tuzaq
+🏴 Soyıt:	qaqpa, duzaq
+🏴 Tofa:	qapqaan, tuzaq''', reply_markup=markup_menu)
+#cameo
 
     else:
         bot.send_message(message.chat.id, hesbisey)
