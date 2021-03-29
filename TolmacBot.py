@@ -40674,6 +40674,53 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa:	qapqaan, tuzaq''', reply_markup=markup_menu)
 #cameo
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "executioner" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палач" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cellat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cellad" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каратель" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "headsman" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hangman" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cellât" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cellâd" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "головорез" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палаческий" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карательный":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yarğan
+🇬🇧 English:	executioner
+🇷🇺 Русский:	палач
+🇹🇷 Türkçe:	cellat
+🇦🇿 Türkcə:	cəllad, başkəsən
+🇹🇲 Türkmen:	jellat
+🇺🇿 Oʻzbek:	jallod
+🇰🇿 Qazaq:	jendet, baskeser
+🇰🇬 Qırğız:	jeldet, baş keser
+🏴 Uyghur:	jallat, kallikéser
+🏴 Tatarça:	cällad
+🏴 Başqort:	yällät
+🏴 Çovaşla:	xöneken, puckasan
+🏴 Qaraqalpaq:	jállat
+🏴 Qırımtatar:	cellât
+🏴 Qumuq:	callat, başgesiwçü
+🏴 Alança:	jaldat
+🏴 Noğay:	yallat
+🏴 Sıbırca:	jallat, paşkisär
+🏴 Salırça:	???
+🏴 Gagauz:	cellat
+🏴 Urumça:	cellat
+🏴 Qarayçe:	cellat, qasapçı
+🏴 Qırımçah:	cellat
+🏴 Saqalī:	tahıyáççı
+🏴 Dolgan:	???
+🏴 Tıvalap:	şaajılakçı, nogaandık
+🏴 Altay:	???
+🏴 Xakas:	???
+🏴 Şor:	moğatçı, üretçi
+🏴 Soyıt:	???
+🏴 Tofa:	???''', reply_markup=markup_menu)
+#RUSRUS???
+# slrcn dlgrus altrus khakrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
