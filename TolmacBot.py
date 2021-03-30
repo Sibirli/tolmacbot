@@ -40721,6 +40721,55 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS???
 # slrcn dlgrus altrus khakrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "needle" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spoke" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stinger" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "игла" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иголка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "спица" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "жало" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iğne" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "İğne" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ığne" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "needdle" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "neddle" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sewing needle" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sew needle" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "igne":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yignä (yiŋnä)
+🇬🇧 English:	needle, spoke, stinger, pin
+🇷🇺 Русский:	игла, иголка, спица, жало
+🇹🇷 Türkçe:	iğne
+🇦🇿 Türkcə:	iynə
+🇹🇲 Türkmen:	iňňe
+🇺🇿 Oʻzbek:	igna
+🇰🇿 Qazaq:	iyne
+🇰🇬 Qırğız:	iyne
+🏴 Uyghur:	yingne
+🏴 Tatarça:	inä
+🏴 Başqort:	enä
+🏴 Çovaşla:	yöp
+🏴 Qaraqalpaq:	iyne
+🏴 Qırımtatar:	ine
+🏴 Qumuq:	ine
+🏴 Alança:	iyne
+🏴 Noğay:	iyne
+🏴 Sıbırca:	enä
+🏴 Salırça:	yiğne
+🏴 Gagauz:	iinä
+🏴 Urumça:	ignä
+🏴 Qarayçe:	ine
+🏴 Qırımçah:	yıne
+🏴 Saqalī:	inne
+🏴 Dolgan:	inne
+🏴 Tıvalap:	ine
+🏴 Altay:	iyne
+🏴 Xakas:	iŋe
+🏴 Şor:	inge
+🏴 Soyıt:	înnä
+🏴 Tofa:	îyne''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
