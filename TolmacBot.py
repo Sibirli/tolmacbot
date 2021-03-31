@@ -40770,6 +40770,61 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	înnä
 🏴 Tofa:	îyne''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tikmek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dikmek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dik!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sew" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sew!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to sew" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to sew up" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шить" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шей" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шей!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пришивать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сшивать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зашивать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прошивать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stitch" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to stitch" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stitch!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вышивать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пришей" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сшей" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зашей":
+        bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱅𐰃𐰚
+🐺 Old Turkic (bef. XV c.):	tik
+🇬🇧 English:	sew!
+🇷🇺 Русский:	шей!
+🇹🇷 Türkçe:	dik!
+🇦🇿 Türkcə:	tik
+🇹🇲 Türkmen:	tik
+🇺🇿 Oʻzbek:	tik
+🇰🇿 Qazaq:	tik
+🇰🇬 Qırğız:	tik
+🏴 Uyghur:	tik
+🏴 Tatarça:	tek
+🏴 Başqort:	tek
+🏴 Çovaşla:	cöle
+🏴 Qaraqalpaq:	tik
+🏴 Qırımtatar:	tik
+🏴 Qumuq:	tik
+🏴 Alança:	tik
+🏴 Noğay:	tik
+🏴 Sıbırca:	tek
+🏴 Salırça:	tih
+🏴 Gagauz:	dik
+🏴 Urumça:	tik
+🏴 Qarayçe:	tik
+🏴 Qırımçah:	tık
+🏴 Saqalī:	tik
+🏴 Dolgan:	tik
+🏴 Tıvalap:	daara
+🏴 Altay:	köktö
+🏴 Xakas:	tik
+🏴 Şor:	tik
+🏴 Soyıt:	daara
+🏴 Tofa:	daara''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
