@@ -28752,7 +28752,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança: xarbız
 🏴 Noğayşa:	qarbız
 🏴 Sıbırca:	qarbıs
-🏴 Salırça:	şiqó
+🏴 Salırça:	tavuz
 🏴 Gagauzça: karpuz
 🏴 Urumça:	xarpuz
 🏴 Qarayçe:	xarpuz
@@ -34967,7 +34967,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇺🇿 Oʻzbek:	politsiya, mirshab {arch.}
 🏴 Uyghur:	saqchi
 🏴 Çovaşla:	politsi
-🏴 Qaraqalpaq:	
 🏴 Qırımtatar:	polis
 🏴 Alança:	mırtazaq
 🏴 Noğay:	mırtazaq
@@ -40824,6 +40823,39 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	tik
 🏴 Soyıt:	daara
 🏴 Tofa:	daara''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pharaoh" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фараон" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "faraon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "firavun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fıravun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "firaun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pharao" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "farao" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "faro" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "faraoh":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	pharaoh
+🇷🇺 Русский:	фараон [faraon]
+🇹🇷 Türkçe:	firavun
+🇦🇿 Türkcə:	firon
+🇹🇲 Türkmen:	pyrgun
+🇺🇿 Oʻzbek:	firʼavn
+🇰🇿 Qazaq:	perğawın
+🏴 Uyghur:	firewn
+🏴 Tatarça:	firğäwen
+🏴 Başqort:	firğäwen
+🏴 Qaraqalpaq:	firaun
+🏴 Qırımtatar:	firavun
+🏴 Qumuq:	pirʻawun
+🏴 Alança:	fırğawun (pırğawun)
+🏴 Noğay:	firğawın
+🏴 Sıbırca:	firğäwen
+🏴 Qarayçe:	paro
+🏴 Qırımçah:	paro
+🇰🇬🏴: faraon ???''', reply_markup=markup_menu)
+# RUSRUS??? kgrus cvrus
+# slrcn gagrus uumrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
 
     else:
         bot.send_message(message.chat.id, hesbisey)
