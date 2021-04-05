@@ -40844,6 +40844,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Uyghur:	firewn
 🏴 Tatarça:	firğäwen
 🏴 Başqort:	firğäwen
+🏴 Çovaşla:	xvoravun
 🏴 Qaraqalpaq:	firaun
 🏴 Qırımtatar:	firavun
 🏴 Qumuq:	pirʻawun
@@ -40853,7 +40854,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Qarayçe:	paro
 🏴 Qırımçah:	paro
 🇰🇬🏴: faraon ???''', reply_markup=markup_menu)
-# RUSRUS??? kgrus cvrus
+# RUSRUS??? kgrus
 # slrcn gagrus uumrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
 
@@ -40962,7 +40963,47 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	pek
 🏴 Soyıt:	aşşâq
 🏴 Tofa:	aşnâq (aşınâq)''', reply_markup=markup_menu)
-
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "esquire️" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "effendy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "effendi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "monsieur" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "efendi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "эфенди" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "efendy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "афанди" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "афенди" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afendi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "эсквайр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сквайр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сэр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сир" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dominus":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	äfändi
+🇬🇧 English:	esquire, sir, effendy (effendi), monsieur
+🇷🇺 Русский:	эфенди
+🇹🇷 Türkçe:	efendi
+🇦🇿 Türkcə:	əfəndi
+🇹🇲 Türkmen:	ependi
+🇺🇿 Oʻzbek:	afandi
+🇰🇿 Qazaq:	äpendi
+🇰🇬 Qırğız:	apendi
+🏴 Uyghur:	ependi
+🏴 Tatarça:	äfände
+🏴 Başqort:	äfände
+🏴 Çovaşla:	???
+🏴 Qaraqalpaq:	ápende
+🏴 Qırımtatar:	efendi
+🏴 Qumuq:	efendi
+🏴 Alança:	afendi
+🏴 Noğay:	äpendi
+🏴 Sıbırca:	äfände
+🏴 Salırça:	äpändi
+🏴 Gagauz:	efendi
+🏴 Urumça:	efendi
+🏴 Qarayçe:	efendi
+🏴 Qırımçah:	efendi''', reply_markup=markup_menu)
+#cvrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
