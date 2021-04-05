@@ -40857,6 +40857,113 @@ Other types of traditional or national sausages are listed below:
 # slrcn gagrus uumrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lady" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧕" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дама" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "леди" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hanım" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bayan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hanımefendi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hanım efendi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "leydi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "missus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "missis" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "госпожа" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сударыня" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мадам" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "madam" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "madame" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "барышня" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "барыня" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мисс" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "миссис" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ledi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ханум" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ханым" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khanum" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khanim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hanum":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	lady 🧕
+🇷🇺 Русский:	дама, леди
+🇹🇷 Türkçe:	hanım, bayan
+🇦🇿 Türkcə:	xanım
+🇹🇲 Türkmen:	hanym
+🇺🇿 Oʻzbek:	xonim
+🇰🇿 Qazaq:	qatın
+🇰🇬 Qırğız:	xanım, ayım
+🏴 Uyghur:	xanim
+🏴 Tatarça:	xanım, bikä
+🏴 Başqort:	xanım, bikä
+🏴 Çovaşla:	pike
+🏴 Qaraqalpaq:	xanum
+🏴 Qırımtatar:	hanım
+🏴 Qumuq:	xanım
+🏴 Alança:	biyçe
+🏴 Noğay:	pişe
+🏴 Sıbırca:	qanım
+🏴 Salırça:	t'et'e
+🏴 Gagauz:	hanım
+🏴 Urumça:	axız
+🏴 Qarayçe:	xanım
+🏴 Qırımçah:	hatın
+🏴 Saqalī:	qotun
+🏴 Dolgan:	katun
+🏴 Tıvalap:	xereejen
+🏴 Altay:	abaqay
+🏴 Xakas:	xadın
+🏴 Şor:	abaqqay
+🏴 Soyıt:	qaday
+🏴 Tofa:	hodeêm''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👳‍♂️" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👳‍♂" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👳‍" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gentlemen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "господин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "джентльмен" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lord" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "джентельмен" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "барин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beyefendi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bey efendi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mister" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мистер" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "centilmen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сударь":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	gentlemen 👳‍♂️
+🇷🇺 Русский:	господин, джентльмен
+🇹🇷 Türkçe:	bey, bay
+🇦🇿 Türkcə:	bəy 🧭⬆️, ağa 🧭⬇️
+🇹🇲 Türkmen:	aga
+🇺🇿 Oʻzbek:	afandi
+🇰🇿 Qazaq:	mırza
+🇰🇬 Qırğız:	mırza
+🏴 Uyghur:	ependi
+🏴 Tatarça:	äfände
+🏴 Başqort:	äfände
+🏴 Çovaşla:	ulput
+🏴 Qaraqalpaq:	mırza
+🏴 Qırımtatar:	efendi
+🏴 Qumuq:	efendi
+🏴 Alança:	biy
+🏴 Noğay:	äpendi
+🏴 Sıbırca:	äfände
+🏴 Salırça:	peg
+🏴 Gagauz:	bey
+🏴 Urumça:	ağa
+🏴 Qarayçe:	ağa
+🏴 Qırımçah:	ağa
+🏴 Saqalī:	toyon
+🏴 Dolgan:	toyon
+🏴 Tıvalap:	deergi
+🏴 Altay:	biy
+🏴 Xakas:	pîg
+🏴 Şor:	pek
+🏴 Soyıt:	aşşâq
+🏴 Tofa:	aşnâq (aşınâq)''', reply_markup=markup_menu)
+
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
