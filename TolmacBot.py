@@ -40963,6 +40963,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	pek
 🏴 Soyıt:	aşşâq
 🏴 Tofa:	aşnâq (aşınâq)''', reply_markup=markup_menu)
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "esquire️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sir" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "effendy" \
@@ -41004,6 +41005,102 @@ Other types of traditional or national sausages are listed below:
 🏴 Qarayçe:	efendi
 🏴 Qırımçah:	efendi''', reply_markup=markup_menu)
 #cvrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚬" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cigarette" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сигарета" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sigareta" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sigara" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сигареты" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сигарет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сигара" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сига" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сигаретка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cigaret" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cigar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cigare" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cigarro" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sigaret" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сигаретта":
+        bot.send_message(message.chat.id, '''See also: tobacco, smoke; Ayrıca bknz: tütün; См. также: табак, дым
+
+🇬🇧 English:	cigarette 🚬
+🇷🇺 Русский:	сигарета [sigareta]
+🇹🇷 Türkçe:	sigara
+🇦🇿 Türkcə:	siqaret, siqar {arch.}, jığaret {arch.}
+🇹🇲 Türkmen:	çilim
+🇰🇿 Qazaq:	şılım
+🇰🇬 Qırğız:	çılım
+🏴 Uyghur:	tamaka, sigarit
+🏴 Çovaşla:	cixaret
+🏴 Qırımtatar:	sigar
+🏴 Alança:	sigaret, tütün
+🏴 Noğay:	särke (сигарка), tämeke
+🏴 Sıbırca:	tämäke
+🏴 Salırça:	tamaka
+🏴 Gagauz:	tütün, ţıgara
+🏴 Urumça:	tütün
+🏴 Qarayçe:	tütün, içedogon
+🏴 Qırımçah:	çubuq
+🏴 Altay:	taŋqı
+🏴 Xakas:	tamxı
+🏴 Tofa:	tamıhı
+🇺🇿🏴: sigaret''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tütün" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tobacco" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "smoke" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "табак" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tabak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дым" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чад" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tütsü" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tabacum" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дымовой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fumes" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "smokes" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "курево" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tabac" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tobac" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tobak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тобак" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "табака" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дымок":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tütün
+🇬🇧 English:	I. tobacco II. smoke
+🇷🇺 Русский:	I. табак [tabak] II. дым, чад
+🇭🇺 Magyar: I. dohány II. füst
+🇲🇳 Mongol: I. tamkhi II. utaa
+🇹🇷 Türkçe:	I. tütün II. duman, tütsü
+🇦🇿 Türkcə:	I. tütün II. tüstü
+🇹🇲 Türkmen:	I. temmäki II. tüsse
+🇺🇿 Oʻzbek:	I. tamaki II. tutun
+🇰🇿 Qazaq:	I. tämeke II. tütin
+🇰🇬 Qırğız:	I. tameke II. tütün
+🏴 Uyghur:	I. tamaka II. tütün
+🏴 Tatarça:	I. tämäke II. töten
+🏴 Başqort:	I. tämäke II. tötön
+🏴 Çovaşla:	I. tapak II. tötöm
+🏴 Qaraqalpaq:	I. temeki II. tútin
+🏴 Qırımtatar:	tütün
+🏴 Qumuq:	I. tamakü II. tütün
+🏴 Alança:	tütün
+🏴 Noğay:	I. tämeke II. tütin
+🏴 Sıbırca:	I. tämäke II. tötön
+🏴 Salırça:	I. tamaka II. tüdün
+🏴 Gagauz:	tütün
+🏴 Urumça:	tütün
+🏴 Qarayçe:	tütün, tütsü {II}
+🏴 Qırımçah:	tütun
+🏴 Saqalī:	I. tabáq II. buruo
+🏴 Dolgan:	I. tabák II. buruo
+🏴 Tıvalap:	I. taakpı II. ış
+🏴 Altay:	I. taŋqı II. ış
+🏴 Xakas:	I. tamxı II. tüdün
+🏴 Şor:	I. tapqı II. tüdün
+🏴 Soyıt:	I. tamhı II. ış
+🏴 Tofa:	I. tamıhı II. ış''', reply_markup=markup_menu)
+#cameo
 
     else:
         bot.send_message(message.chat.id, hesbisey)
