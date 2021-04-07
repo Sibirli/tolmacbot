@@ -41029,7 +41029,7 @@ Other types of traditional or national sausages are listed below:
 🇹🇷 Türkçe:	sigara
 🇦🇿 Türkcə:	siqaret, siqar {arch.}, jığaret {arch.}
 🇹🇲 Türkmen:	çilim
-🇰🇿 Qazaq:	şılım
+🇰🇿 Qazaq:	temeki, şılım
 🇰🇬 Qırğız:	çılım
 🏴 Uyghur:	tamaka, sigarit
 🏴 Çovaşla:	cixaret
@@ -41075,8 +41075,8 @@ Other types of traditional or national sausages are listed below:
 🇦🇿 Türkcə:	I. tütün II. tüstü
 🇹🇲 Türkmen:	I. temmäki II. tüsse
 🇺🇿 Oʻzbek:	I. tamaki II. tutun
-🇰🇿 Qazaq:	I. tämeke II. tütin
-🇰🇬 Qırğız:	I. tameke II. tütün
+🇰🇿 Qazaq:	I. temeki II. tütin
+🇰🇬 Qırğız:	I. tameki II. tütün
 🏴 Uyghur:	I. tamaka II. tütün
 🏴 Tatarça:	I. tämäke II. töten
 🏴 Başqort:	I. tämäke II. tötön
@@ -41100,6 +41100,25 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	I. tapqı II. tüdün
 🏴 Soyıt:	I. tamhı II. ış
 🏴 Tofa:	I. tamıhı II. ış''', reply_markup=markup_menu)
+#cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "admiral" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amiral" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "адмирал" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "admiraal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oramiral" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "адмиральский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amir al-bahr":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	admiral
+🇷🇺 Русский:	адмирал [admiral]
+🇭🇺 Magyar: tengernagy
+🇹🇷 Türkçe:	amiral
+* 🇹🇷 Ottoman Turkish: deŋizbeyi, qapudan-paşa (kaptan-paşa), donanma qaputanı
+🇦🇿 Türkcə:	admiral
+* 🇦🇿 Old Turcomani: dəŋizbəyi (deŋiz-begi), dəryabəyi, donanma qomandanı
+🇹🇲 Türkmen:	admiral, deňizbegi
+🏴 Qumuq:	amiral
+🇺🇿🇰🇿🇰🇬🏴: admiral (← 🇷🇺admiral ← 🇳🇱admiraal ← 🇫🇷amiral ← 🇧🇭amir al-bahr)''', reply_markup=markup_menu)
 #cameo
 
     else:
