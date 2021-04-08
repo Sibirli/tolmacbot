@@ -41072,7 +41072,7 @@ Other types of traditional or national sausages are listed below:
 🇭🇺 Magyar: I. dohány II. füst
 🇲🇳 Mongol: I. tamkhi II. utaa
 🇹🇷 Türkçe:	I. tütün II. duman, tütsü
-🇦🇿 Türkcə:	I. tütün II. tüstü
+🇦🇿 Türkcə:	I. tütün, tənbəki II. tüstü
 🇹🇲 Türkmen:	I. temmäki II. tüsse
 🇺🇿 Oʻzbek:	I. tamaki II. tutun
 🇰🇿 Qazaq:	I. temeki II. tütin
@@ -41120,6 +41120,50 @@ Other types of traditional or national sausages are listed below:
 🏴 Qumuq:	amiral
 🇺🇿🇰🇿🇰🇬🏴: admiral (← 🇷🇺admiral ← 🇳🇱admiraal ← 🇫🇷amiral ← 🇧🇭amir al-bahr)''', reply_markup=markup_menu)
 #cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "water pipe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "smoking device" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "smoking pipe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trapa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "water caltrop" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "курительная трубка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çilim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чилим" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chilim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рогульник" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "водяной орех" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pipo":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	water pipe, a pipe with a long mouthpiece in which smoke is inhaled through water, smoking device (trapa, water caltrop)
+🇷🇺 Русский:	курительная трубка, чилим {род кальяна} (рогульник, водяной орех, чертов орех, водяной каштан)
+🇹🇷 Türkçe:	pipo
+🇦🇿 Türkcə:	tənbəki çubuğu
+🇹🇲 Türkmen:	çilim
+🇺🇿 Oʻzbek:	chilim
+🇰🇿 Qazaq:	şılım
+🇰🇬 Qırğız:	çılım
+🏴 Uyghur:	chilim
+🏴 Tatarça:	çelem
+🏴 Başqort:	selem
+🏴 Çovaşla:	çölöm
+🏴 Qaraqalpaq:	shılım
+🏴 Qırımtatar:	çilim
+🏴 Qumuq:	ülle
+🏴 Alança:	ülle
+🏴 Noğay:	şilim
+🏴 Sıbırca:	çelem
+🏴 Salırça:	tamaka quğu
+🏴 Gagauz:	lülä
+🏴 Urumça:	üle
+🏴 Qarayçe:	çubuq
+🏴 Qırımçah:	çubuq
+🏴 Saqalī:	qamsa
+🏴 Dolgan:	ŋáŋsa
+🏴 Tıvalap:	daŋza
+🏴 Altay:	çilim qaŋza
+🏴 Xakas:	xaŋza
+🏴 Şor:	qaŋza
+🏴 Soyıt:	daŋsa
+🏴 Tofa:	daŋza''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
