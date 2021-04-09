@@ -41165,6 +41165,48 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	daŋsa
 🏴 Tofa:	daŋza''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cockroach" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "таракан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tarakan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hamam böceği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прусак" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "blattodea" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "blattellablattella" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hamamböceği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cock roach":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	cockroach
+🇷🇺 Русский:	таракан [tarakan]
+🇹🇷 Türkçe:	hamam böceği
+🇦🇿 Türkcə:	yüyürük (yüyrük)
+🇹🇲 Türkmen:	saçakçy
+🇺🇿 Oʻzbek:	suvaraq
+🇰🇿 Qazaq:	taraqan
+🇰🇬 Qırğız:	taraqan
+🏴 Uyghur:	taraqan
+🏴 Tatarça:	taraqan
+🏴 Başqort:	taraqan
+🏴 Çovaşla:	tarakkan
+🏴 Qaraqalpaq:	nangórek
+🏴 Qırımtatar:	fırın böcegi
+🏴 Qumuq:	üy qoñuzaq
+🏴 Alança:	taraqan
+🏴 Noğay:	taraqan
+🏴 Sıbırca:	täräkän
+🏴 Salırça:	caŋlaŋ
+🏴 Gagauz:	malak
+🏴 Urumça:	taraqan
+🏴 Qarayçe:	taraqan
+🏴 Qırımçah:	taraqan
+🏴 Saqalī:	taraqán
+🏴 Dolgan:	tarakán
+🏴 Tıvalap:	tarakan
+🏴 Altay:	taraqan
+🏴 Xakas:	taraqan
+🏴 Şor:	taraqan (taraken)
+🏴 Soyıt:	taraqan
+🏴 Tofa:	taraqan''', reply_markup=markup_menu)
+# slrcn
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
