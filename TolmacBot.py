@@ -41173,13 +41173,14 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "blattodea" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "blattellablattella" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hamamböceği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🪳" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cock roach":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	cockroach
+        bot.send_message(message.chat.id, '''🇬🇧 English:	cockroach 🪳
 🇷🇺 Русский:	таракан [tarakan]
 🇹🇷 Türkçe:	hamam böceği
 🇦🇿 Türkcə:	yüyürük (yüyrük)
 🇹🇲 Türkmen:	saçakçy
-🇺🇿 Oʻzbek:	suvaraq
+🇺🇿 Oʻzbek:	suvarak
 🇰🇿 Qazaq:	taraqan
 🇰🇬 Qırğız:	taraqan
 🏴 Uyghur:	taraqan
@@ -41206,6 +41207,55 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	taraqan
 🏴 Tofa:	taraqan''', reply_markup=markup_menu)
 # slrcn
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beads" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bead" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "четки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tespih" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "субха" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rosary" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tasbih" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tesbih" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "misbaha" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мисбаха" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "misbahah" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chaplet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тасбих" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тесбих" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "prayerbeads" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📿" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "prayer beads":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	prayer beads 📿
+🇷🇺 Русский:	чётки
+🇹🇷 Türkçe:	tespih
+🇦🇿 Türkcə:	təsbeh [təspehʲ]
+🇹🇲 Türkmen:	tesbi
+🇺🇿 Oʻzbek:	tasbeh
+🇰🇿 Qazaq:	täspi (desbi)
+🇰🇬 Qırğız:	tespe
+🏴 Uyghur:	teswi
+🏴 Tatarça:	disbe
+🏴 Başqort:	tiþbe
+🏴 Çovaşla:	şorca
+🏴 Qaraqalpaq:	täspi
+🏴 Qırımtatar:	tespi
+🏴 Qumuq:	tasbih, zuwhan
+🏴 Alança:	mınçaq (mınçaqla)
+🏴 Noğay:	däspe
+🏴 Sıbırca:	taspeq
+🏴 Salırça:	tesbiha
+🏴 Gagauz:	testi
+🏴 Urumça:	tespe
+🏴 Qarayçe:	tesbe
+🏴 Qırımçah:	tespi
+🏴 Saqalī:	ağırıa (áğar bıa)
+🏴 Dolgan:	oguruo
+🏴 Tıvalap:	erege
+🏴 Altay:	ereken
+🏴 Xakas:	moncıx
+🏴 Şor:	munçuq
+🏴 Soyıt:	erhî
+🏴 Tofa:	erhî''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
