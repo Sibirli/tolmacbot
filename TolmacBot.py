@@ -41257,6 +41257,191 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	erhî
 🏴 Tofa:	erhî''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🛢" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "petroleum" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crude oil" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нефть" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "neft" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нафта" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "naft" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "petrol" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yer yağı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeryağı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nafta" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fuel oil" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "naphta" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нефтяной" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "naphtha":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qara yağ
+🇬🇧 English:	petroleum, oil (crude oil) 🛢
+🇷🇺 Русский:	нефть [neft]
+🇹🇷 Türkçe:	petrol, neft, yer yağı
+🇦🇿 Türkcə:	neft, nöyüt (nəvit)
+🇹🇲 Türkmen:	nebit, ýer ýagy
+🇺🇿 Oʻzbek:	neft, qoramoy {+ mazut}
+🇰🇿 Qazaq:	munay
+🇰🇬 Qırğız:	munay
+🏴 Uyghur:	néfit
+🏴 Tatarça:	neft, qaramay, cir mayı
+🏴 Başqort:	neft, yer mayı
+🏴 Çovaşla:	nexto, cör cavo
+🏴 Qaraqalpaq:	munay
+🏴 Qırımtatar:	neft, cermay
+🏴 Qumuq:	nap
+🏴 Alança:	neft
+🏴 Noğay:	napt
+🏴 Sıbırca:	neft
+🏴 Salırça:	daşyağ
+🏴 Gagauz:	petrol, nafta
+🏴 Urumça:	näft
+🏴 Qarayçe:	nafta
+🏴 Qırımçah:	neft
+🏴 Saqalī:	niep
+🏴 Dolgan:	niep
+🏴 Tıvalap:	neft
+🏴 Altay:	neft
+🏴 Xakas:	neft
+🏴 Şor:	neft
+🏴 Soyıt:	neft
+🏴 Tofa:	neft''', reply_markup=markup_menu)
+# RUSRUS??? ugrus kumrus krcrus nogrus
+# styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paganism" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "heathenism" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "язычество" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paganizm" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "putperestlik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идолопоклонничество" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идолопоклонство" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "паганизм":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	paganism, heathenism
+🇷🇺 Русский:	язычество
+🇹🇷 Türkçe:	paganizm, putperestlik
+🇦🇿 Türkcə:	bütpərəstlik
+🇹🇲 Türkmen:	butparazlyk, mejüsilik
+🇺🇿 Oʻzbek:	majusiy
+🇰🇿 Qazaq:	putqa tabınıwşılıq
+🇰🇬 Qırğız:	butparastıq, butqa tabınuuçuluq
+🏴 Uyghur:	gheyriy din, budperezlik
+🏴 Tatarça:	mäcüsilek, potqa tabınıw
+🏴 Başqort:	mäjüsilek, botqa tabınıwsılıq
+🏴 Çovaşla:	ır-xayar tönö
+🏴 Qaraqalpaq:	butqa sıyınıwşılıq
+🏴 Qırımtatar:	putperestlik
+🏴 Qumuq:	butpereslik
+🏴 Alança:	mejisuwluq
+🏴 Noğay:	yayillik
+🏴 Sıbırca:	ırım tin
+🏴 Salırça:	gunçancuyi
+🏴 Gagauz:	tayfe dini
+🏴 Urumça:	butperestlik
+🏴 Qarayçe:	ıstorlapçılıx
+🏴 Qırımçah:	putperestlik
+🏴 Saqalī:	???
+🏴 Dolgan:	???
+🏴 Tıvalap:	???
+🏴 Altay:	???
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Soyıt:	???
+🏴 Tofa:	???''', reply_markup=markup_menu)
+# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pagan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "heathen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "язычник" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paganist" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "putperest" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идолопоклонник" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "паганист" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pagani":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	pagan, heathen
+🇷🇺 Русский:	язычник
+🇹🇷 Türkçe:	putperest
+🇦🇿 Türkcə:	bütpərəst
+🇹🇲 Türkmen:	butparaz, mejüsi
+🇺🇿 Oʻzbek:	majusiylik
+🇰🇿 Qazaq:	putqa tabınıwşı
+🇰🇬 Qırğız:	butparas, butqa tabınuuçu
+🏴 Uyghur:	budperez
+🏴 Tatarça:	mäcüsi, potqa tabınıwçı
+🏴 Başqort:	mäjüsi, botqa tabınıwsılıq
+🏴 Çovaşla:	köletkesene
+🏴 Qaraqalpaq:	butqa sıyınıwşı
+🏴 Qırımtatar:	putperest
+🏴 Qumuq:	butperes
+🏴 Alança:	mejisuw
+🏴 Noğay:	yayil
+🏴 Sıbırca:	ırım tinne
+🏴 Salırça:	kafir
+🏴 Gagauz:	tayfe adamı
+🏴 Urumça:	butperest
+🏴 Qarayçe:	abax inanuvçu
+🏴 Qırımçah:	putperest
+🏴 Saqalī:	???
+🏴 Dolgan:	???
+🏴 Tıvalap:	???
+🏴 Altay:	???
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Soyıt:	???
+🏴 Tofa:	???''', reply_markup=markup_menu)
+# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pagan temple" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "heathen temple" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "языческий храм" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "храм язычников" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paganist tapınağı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "putperest tapınağı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "храм идолопоклонников" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "капище" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "puthâne" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идолище" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поганище" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "паганище" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "joss-house" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "putperest mabedi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "putperest mâbedi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pagan tapınağı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pagan mabedi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pagan mâbedi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "puthane" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кумирня":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	heathen temple, pagan temple
+🇷🇺 Русский:	языческий храм, капище, кумирня
+🇹🇷 Türkçe:	putperest tapınağı
+🇦🇿 Türkcə:	bütxana
+🇹🇲 Türkmen:	buthana
+🇺🇿 Oʻzbek:	butxona
+🇰🇿 Qazaq:	putxana
+🇰🇬 Qırğız:	bütqana
+🏴 Uyghur:	butxana
+🏴 Tatarça:	potxanä
+🏴 Başqort:	hın-botloq
+🏴 Çovaşla:	kölö vıronö
+🏴 Qaraqalpaq:	butxana
+🏴 Qırımtatar:	putperest tapınağı
+🏴 Qumuq:	butxana
+🏴 Alança:	mejisuw üy
+🏴 Noğay:	buthana
+🏴 Sıbırca:	sın-potloq
+🏴 Salırça:	kafirgar
+🏴 Gagauz:	tayfe klisäsi
+🏴 Urumça:	butperest kilsäsi
+🏴 Qarayçe:	abaxivi
+🏴 Qırımçah:	putperest qaalı
+🏴 Saqalī:	???
+🏴 Dolgan:	???
+🏴 Tıvalap:	???
+🏴 Altay:	???
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Soyıt:	???
+🏴 Tofa:	???''', reply_markup=markup_menu)
+# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
