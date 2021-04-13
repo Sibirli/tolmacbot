@@ -3838,7 +3838,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "жир" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "масло" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yağ":
-        bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰖𐰍
+        bot.send_message(message.chat.id, '''See also: petroleum
+
+🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰖𐰍
 🐺 Old Turkic: yağ, öz
 🇬🇧 English: oil 🛢️, butter 🧈
 🇷🇺 Русский: жир, масло
@@ -41441,6 +41443,47 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	???
 🏴 Tofa:	???''', reply_markup=markup_menu)
 # sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "welcome" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "милости просим" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "добро пожаловать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hoş geldin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hoş geldiniz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hoş gelipsin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hoş gelipsiniz":
+        bot.send_message(message.chat.id, '''First one is for singular use, second plural (or with respect)
+
+🇬🇧 English:	welcome
+🇷🇺 Русский:	добро пожаловать
+🇹🇷 Türkçe:	hoş geldin, hoş geldiniz
+🇦🇿 Türkcə:	xoş gəldin, xoş gəldiniz, xoş gəlibsən, xoş gəlibsniiz, xoş gəlmişsiniz {formal}
+🇹🇲 Türkmen:	hoş geldiň, hoş geldiňiz
+🇺🇿 Oʻzbek:	xush kelding, xush kelibsiz
+🇰🇿 Qazaq:	qoş keldiŋ, qoş keldiŋiz
+🇰🇬 Qırğız:	qoş keldiŋ, qoş keldiŋiz, qoş kelipsiz, qoş keliŋizder {formal}
+🏴 Uyghur:	xush kepsiz, xush kélipsiz, yaxshi kélipsiz
+🏴 Tatarça:	rähim itegez, xuş kildeŋ, xuş kildegez
+🏴 Başqort:	rähim itegeð, xuş kildeŋ, xuş kildegeð
+🏴 Çovaşla:	kilörex, ıro sunsa kötetpör
+🏴 Qaraqalpaq:	xosh keldiń, xosh keldińiz
+🏴 Qırımtatar:	hoş keldiñ, hoş keldiñiz
+🏴 Qumuq:	xoş geldiŋ, xoş geldigiz
+🏴 Alança:	xoş keldiŋ, saw kel, xoş keligiz, saw keligiz
+🏴 Noğay:	qoş keldiŋ, qoş keldiŋiz
+🏴 Sıbırca:	quş kilteŋ, quş kilteges
+🏴 Salırça:	xoş gelci, xoş geldiŋiz
+🏴 Gagauz:	hoş geldin, hoş geldiniz
+🏴 Urumça:	xoş sefa geldin, xoş sefaya geldiniz
+🏴 Qarayçe:	xoş keldin, xoş keldiyiz, bazlıx sizgä
+🏴 Qırımçah:	hoş keldıñ, hoş keldıñız
+🏴 Saqalī:	ütüöte oŋor
+🏴 Dolgan:	ütüöte oŋor
+🏴 Tıvalap:	kirip moorlaŋar
+🏴 Altay:	küünzep keliger
+🏴 Xakas:	aalcı polıŋar
+🏴 Şor:	çaqşı polğon
+🏴 Soyıt:	ekki keldiŋ
+🏴 Tofa:	ekki keldiŋ''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
