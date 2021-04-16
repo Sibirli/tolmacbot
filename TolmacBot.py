@@ -21657,16 +21657,16 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇬🇧 English: iftar, breaking fast
 🇷🇺 Русский: разговение, ифтар
 🇹🇷 Türkçe: iftar
-🇦🇿 Türkcə: iftar, ağızaçma {arch.}
+🇦🇿 Türkcə: iftar, ağızaçma
 🇹🇲 Türkmençe: agyz açar
-🇺🇿 Oʻzbekcha: ogʻiz ochor
+🇺🇿 Oʻzbekcha: ogʻiz ochar
 🇰🇿 Qazaqşa: awızaşar
 🇰🇬 Qırğızça: ooz açuu
 🏴 Uyghurche: eghiz echish, iptar
 🏴 Tatarça: awız açıw
 🏴 Başqortsa: awıð asıw
 🏴 Çovaşla: üte könö kun
-🏴 Qaraqalpaqsha: iftar
+🏴 Qaraqalpaqsha: iftar, awızashar
 🏴 Qırımtatarca: iftar
 🏴 Qumuqça: iftar
 🏴 Alança: awuz açar
@@ -41456,7 +41456,7 @@ Other types of traditional or national sausages are listed below:
 🇬🇧 English:	welcome
 🇷🇺 Русский:	добро пожаловать
 🇹🇷 Türkçe:	hoş geldin, hoş geldiniz
-🇦🇿 Türkcə:	xoş gəldin, xoş gəldiniz, xoş gəlibsən, xoş gəlibsniiz, xoş gəlmişsiniz {formal}
+🇦🇿 Türkcə:	xoş gəldin, xoş gəldiniz, xoş gəlibsən, xoş gəlibsiniz, xoş gəlmişsiniz {formal}
 🇹🇲 Türkmen:	hoş geldiň, hoş geldiňiz
 🇺🇿 Oʻzbek:	xush kelding, xush kelibsiz
 🇰🇿 Qazaq:	qoş keldiŋ, qoş keldiŋiz
@@ -41484,6 +41484,51 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	çaqşı polğon
 🏴 Soyıt:	ekki keldiŋ
 🏴 Tofa:	ekki keldiŋ''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orbit" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "орбита" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orbita" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yörünge" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orbital" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "орбитальный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "орбит":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	orbit {astr.}
+🇷🇺 Русский:	орбита [orbita] {astr.}
+🇹🇷 Türkçe:	yörünge
+🇦🇿 Türkcə:	orbit, mədar	
+🇺🇿 Oʻzbek:	mehvar
+🏴 Çovaşla:	cul
+🏴 Alança:	jürügen jolu, çorx
+🏴 Salırça:	guydao
+🏴 Gagauz:	orbita, medar
+🏴 Saqalī:	ergiyer ii
+🏴 Tıvalap:	dolganıp erter oruk
+🏴 Xakas:	çol
+🇹🇲🇰🇿🇰🇬🏴: orbita''', reply_markup=markup_menu)
+# RUSRUS??? tkrus kzrus kgrus ugrus ugcn ttrus barus qqrus crhrus kumrus nogrus
+# styrus slrcn uumrus kdrrus jctrus dlgrus altrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buddha" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "budda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "будда" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "буддийский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бурхан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burhan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burkan":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Burxan (Burqan)
+🇬🇧 English:	Buddha
+🇷🇺 Русский:	Будда [Budda]
+🇹🇷 Türkçe:	Buda
+🏴 Tıvalap:	Burgan
+🏴 Altay:	Bırqan, Boodo
+🏴 Xakas:	Purxan
+🏴 Şor:	Pırqan
+🏴 Soyıt:	Burhan
+🏴 Tofa:	Burhan
+🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: Budda''', reply_markup=markup_menu)
+# RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
