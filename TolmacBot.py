@@ -41530,6 +41530,41 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👽" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👾" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alien" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "extraterrestrial" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "extraterrestrial intelligence" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eti" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инопланетянин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uzayli" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пришелец .      " \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инопланетец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "космический пришелец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "extra-terrestre" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "extra terrestrial" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инопланетян" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инопланетный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "e.t." \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "extra-terrestrial" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uzaylı":
+        bot.send_message(message.chat.id, '''👽 👾
+
+🐺 Old Turkic (bef. XV c.):	teŋrili yïrli
+🇬🇧 English:	alien (extraterrestrial), extraterrestrial intelligence (ETI)
+🇷🇺 Русский:	инопланетянин
+🇹🇷 Türkçe:	uzaylı
+🇦🇿 Türkcə:	uzaylı, yadplanetli
+🇹🇲 Türkmen:	başga planetaly
+🇺🇿 Oʻzbek:	oʻzga sayyoralik
+🇰🇿 Qazaq:	jatplanetalıq
+🇰🇬 Qırğız:	başqa planetalyk
+🏴 Uyghur:	sirtqi planéta ademi
+🏴 Tatarça:	başqa planetada yäşäwçe
+🏴 Başqort:	başqa planetala yäşäwse''', reply_markup=markup_menu)
+#RUSRUS??? tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
