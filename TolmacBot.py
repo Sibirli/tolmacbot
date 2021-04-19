@@ -41603,6 +41603,36 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? tkrus ugrus ugcn qqrus
 # slrcn uumrus kdrrus jctrus sahrus dlgrus tyvrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "museum" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "музей" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "muzey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "müze" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "muze" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дом муз" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "musea" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "muzeum" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "музейный":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	museum
+🇷🇺 Русский:	музей [muzey]
+🇹🇷 Türkçe:	müze, acayiphane {arhc.}, numunehane {arch.}
+🇦🇿 Türkcə:	muzey, əcaibxana {arch.}
+🇹🇲 Türkmen:	muzeý
+🇺🇿 Oʻzbek:	muzey, ajoyibxona {arch.}
+🇰🇿 Qazaq:	murajay, ajayıpxana {arch.}
+🇰🇬 Qırğız:	murasqana, ajayıpqana
+🏴 Uyghur:	muzéy, ajayipxana
+🏴 Tatarça:	muzey (mözäy)
+🏴 Qaraqalpaq:	muzey, ajayıpxana {arch.}
+🏴 Qırımtatar:	müzey
+🏴 Qarayçe:	muzey, sergi üvü
+🏴 Qırımçah:	muze
+🏴 Saqalī:	tümel
+🏴 Dolgan:	musuoy
+🏴: muzey''', reply_markup=markup_menu)
+# building
+# RUSRUS??? tkrus ttrus barus cvrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus jctrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
