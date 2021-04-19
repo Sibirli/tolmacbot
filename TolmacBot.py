@@ -20265,7 +20265,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: uzbek
 🏴 Soyot: uzbek
 🏴 Tofalap: uzbek''', reply_markup=markup_menu)
-
+# nation
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "quarantine" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карантин" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карантинный" \
@@ -20351,7 +20351,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: kemis
 🏴 Soyot: çatqı, hupsır
 🏴 Tofalap: çatqı, moynaq''', reply_markup=markup_menu)
-
+#slrcn cnslr
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "левый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "налево" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "левая" \
@@ -20446,9 +20446,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ножик" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ножевой" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ножевое" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🔪" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ножевая":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): bıçaq (piçäk)
-🇬🇧 English: knife
+🇬🇧 English: knife 🔪
 🇷🇺 Русский: нож
 🇹🇷 Türkçe: bıçak
 🇦🇿 Türkcə: bıçaq, pıçaq {arch. + dial.}
@@ -20714,6 +20715,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: alban
 🏴 Soyot: alban
 🏴 Tofalap: alban''', reply_markup=markup_menu)
+# nation
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "scissors" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shears" \
@@ -20724,9 +20726,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ножнички" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qayçı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kayçı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "✂️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ножницы":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qoş bıçaq, biçğuc, sındu, qıftu
-🇬🇧 English: scissors, shears
+🇬🇧 English: scissors, shears ✂️
 🇷🇺 Русский: ножницы
 🇲🇳 Mongol: khaych
 🇹🇷 Türkçe: makas
@@ -20916,7 +20919,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: tadjik
 🏴 Soyot: tadjîk
 🏴 Tofalap: tadjîk''', reply_markup=markup_menu)
-
+# nation
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "украина" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ukraine" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ukraina" \
@@ -20957,7 +20960,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	Ukraina
 🏴 Soyot: Ukraîna
 🏴 Tofalap: Ukraîna''', reply_markup=markup_menu)
-
+# country geo
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ukrainian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "украинский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "украинец" \
@@ -20999,6 +21002,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	ukrain
 🏴 Soyot: ukraîn
 🏴 Tofalap: ukraîn''', reply_markup=markup_menu)
+# nation
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crimea" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crimean" \
@@ -21053,6 +21057,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	Krım
 🏴 Soyot: Krım
 🏴 Tofalap: Krım''', reply_markup=markup_menu)
+# geo
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "öl" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ölmek" \
@@ -22207,7 +22212,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tatarça: xörmä
 🏴 Başqortsa: xörmä
 🏴 Çovaşla: xurma
-🏴 Qaraqalpaqsha: xurma
+🏴 Qaraqalpaqsha: qurma
 🏴 Qırımtatarca: hurma, arap hurması {I}
 🏴 Qumuqça: xurma, kabaxurma {I}
 🏴 Alança: xurma
@@ -40714,13 +40719,13 @@ Other types of traditional or national sausages are listed below:
 🏴 Saqalī:	tahıyáççı
 🏴 Dolgan:	???
 🏴 Tıvalap:	şaajılakçı, nogaandık
-🏴 Altay:	???
-🏴 Xakas:	???
+🏴 Altay:	çubuqçı
+🏴 Xakas:	sımıxçı
 🏴 Şor:	moğatçı, üretçi
 🏴 Soyıt:	???
 🏴 Tofa:	???''', reply_markup=markup_menu)
 #RUSRUS???
-# slrcn dlgrus altrus khakrus sytrus tofrus
+# slrcn dlgrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "needle" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spoke" \
@@ -41538,7 +41543,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eti" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инопланетянин" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uzayli" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пришелец .      " \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пришелец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инопланетец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "космический пришелец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "extra-terrestre" \
@@ -41564,6 +41569,39 @@ Other types of traditional or national sausages are listed below:
 🏴 Başqort:	başqa planetala yäşäwse''', reply_markup=markup_menu)
 #RUSRUS??? tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "волга" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "volga" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wolga" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "волжский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "idil" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "itil" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "итиль" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идель" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "idel":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Etil (Edil)
+🇬🇧 English:	Volga
+🇷🇺 Русский:	Волга [Volga]
+🇲🇳 Mongol: Ijil
+🇹🇷 Türkçe:	Volga, İdil {neol.}, Etil (اتيل) {arch.}
+🇦🇿 Türkcə:	Volqa, İdil {neol.}, Atil (آطل) {arch.}
+🇺🇿 Oʻzbek:	Edil
+🇰🇿 Qazaq:	Edil
+🇰🇬 Qırğız:	Edil
+🏴 Tatarça:	İdel
+🏴 Başqort:	İðel
+🏴 Çovaşla:	Atol
+🏴 Qırımtatar:	Edil
+🏴 Qumuq:	Edil
+🏴 Alança:	İtil
+🏴 Noğay:	Edil
+🏴 Sıbırca:	Ädil
+🏴 Gagauz:	İtil
+🏴 Altay:	Edil
+🇹🇲🏴: Wolga / Volga''', reply_markup=markup_menu)
+# geo river
+# RUSRUS??? tkrus ugrus ugcn qqrus
+# slrcn uumrus kdrrus jctrus sahrus dlgrus tyvrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
