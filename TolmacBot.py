@@ -2526,9 +2526,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "есус" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ийсус" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ииссус":
-        bot.send_message(message.chat.id, '''
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): İsa, Yişu, Yesus
 🇬🇧 English: Jesus
-🇷🇺 Русский: Иисус
+🇷🇺 Русский: Иисус [Iısus]
 🇹🇷 Türkçe: İsa
 🇦🇿 Türkcə: İsa
 🇹🇲 Türkmençe: Isa
@@ -2538,16 +2538,18 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Uyghurche: Eysa
 🏴 Tatarça: Ğaysä
 🏴 Başqortsa: Ğaysa, İsa
-🏴 Çovaşla: İisus (Yisus)
+🏴 Çovaşla: Yisus
 🏴 Qaraqalpaqsha: İsa (İysa)
 🏴 Qırımtatarca: İsa
 🏴 Qumuqça: İsa
-🏴 Saqalí: İsus
+🏴 Saqalí: İsus (İsús)
 🏴 Qaraçay-Malqar: İssa
 🏴 Gagauzça: İsa, İisus
+🏴 Qarayçe: Yesu
 🏴 Sıbırca: Äysä
 🏴 Salırça: İsa
-🏴 Urumça: İsa, Xurtoz baba
+🏴 Urumça: İsa
+🏴 Altay: İsus
     ???
     Islamic Prophet: Isa (Jesus)''', reply_markup=markup_menu)
 
@@ -41614,9 +41616,9 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "музейный":
         bot.send_message(message.chat.id, '''🇬🇧 English:	museum
 🇷🇺 Русский:	музей [muzey]
-🇹🇷 Türkçe:	müze, acayiphane {arhc.}, numunehane {arch.}
+🇹🇷 Türkçe:	müze, acayiphane {arch.}, numunehane {arch.}
 🇦🇿 Türkcə:	muzey, əcaibxana {arch.}
-🇹🇲 Türkmen:	muzeý
+🇹🇲 Türkmen:	m
 🇺🇿 Oʻzbek:	muzey, ajoyibxona {arch.}
 🇰🇿 Qazaq:	murajay, ajayıpxana {arch.}
 🇰🇬 Qırğız:	murasqana, ajayıpqana
