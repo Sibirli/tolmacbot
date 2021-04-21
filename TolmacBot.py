@@ -2552,6 +2552,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: İsus
     ???
     Islamic Prophet: Isa (Jesus)''', reply_markup=markup_menu)
+# name RUSRUS??? cvrus nogrus
+# slrcn jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "июль" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "july" \
@@ -41634,6 +41636,48 @@ Other types of traditional or national sausages are listed below:
 # building
 # RUSRUS??? tkrus ttrus barus cvrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus jctrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chain" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chains" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цепь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цепи" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цепочка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "zincir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "zencir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цепной" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⛓":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	sincir (*from Farsi 🇦🇫)
+🇬🇧 English:	chain ⛓
+🇷🇺 Русский:	цепь, цепи
+🇹🇷 Türkçe:	zincir
+🇦🇿 Türkcə:	zəncir
+🇹🇲 Türkmen:	zynjyr
+🇺🇿 Oʻzbek:	zanjir
+🇰🇿 Qazaq:	şınjır
+🇰🇬 Qırğız:	çınjır
+🏴 Uyghur:	zenjir
+🏴 Tatarça:	zıncır, çılbır
+🏴 Başqort:	sınyır, sılbır
+🏴 Çovaşla:	sonçor
+🏴 Qaraqalpaq:	shınjır
+🏴 Qırımtatar:	zıncır
+🏴 Qumuq:	şınjır
+🏴 Alança:	sınjır
+🏴 Noğay:	şınjır
+🏴 Sıbırca:	cıncır
+🏴 Salırça:	sıncır
+🏴 Gagauz:	sincir
+🏴 Urumça:	zäncir
+🏴 Qarayçe:	zincir (cıncır)
+🏴 Qırımçah:	zıncır
+🏴 Saqalī:	timir bıa
+🏴 Dolgan:	timir bıa
+🏴 Tıvalap:	ilçirbe
+🏴 Altay:	ilcirme
+🏴 Xakas:	ilcirbe (ılcırba)
+🏴 Şor:	ilçirbe
+🏴 Soyıt:	îlcirvä
+🏴 Tofa:	îlcirmä''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
