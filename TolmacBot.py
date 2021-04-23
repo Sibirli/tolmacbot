@@ -8170,7 +8170,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "руское" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "русские" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "руские" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "в жопе узкий" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "урус" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "русня" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "русич" \
@@ -8198,20 +8197,20 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: vıros
 🏴 Qaraqalpaqsha: rus
 🏴 Qırımtatarca: rus, urus
-🏴 Qumuqça: orus, rus
-🏴 Qaraçay-Malqar: oruslu
+🏴 Qumuqça: orus
+🏴 Qaraçay-Malqar: orus
 🏴 Noğayşa: orıs
 🏴 Sıbırca: urıs
 🏴 Gagauzça: rus
 🏴 Saqalí: núçça
-🏴 Hakalí (Dulgan): núçça
+🏴 Hakalí: núçça
 🏴 Tıvalap: orus
 🏴 Salırça: rus, ıluosi
 🏴 Xakastap: orıs
 🏴 Altay: orus, onor (archaism)
 🏴 Şor: qazaq
 🏴 Urumça: urus, xazax, maskal (moskov, moskol, moskal)
-🏴 Karaj: javan, orus (urus)
+🏴 Qarayçe: yavan, orus (urus)
 🏴 Qrımçahça: urus
 🏴 Soyot: orıs
 🏴 Tofalap: orus (orıs)''', reply_markup=markup_menu)
@@ -8256,11 +8255,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qaraqalpaqsha: túrk
 🏴 Qırımtatarca: türk
 🏴 Qumuqça: türk
-🏴 Qaraçay-Malqar: I. türklü II. türk
+🏴 Qaraçay-Malqar: türk
 🏴 Noğayşa: türk
 🏴 Sıbırca: I. török II. törkiy
 🏴 Gagauzça: türk
-🏴 Saqalí: tűrk (tűr, türk, turak)
+🏴 Saqalí: tűrk (tűr, türk)
 🏴 Dulgan-Hakalí: türk
 🏴 Tıvalap: I. turk II. türk
 🏴 Salırça: türk
@@ -8268,7 +8267,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: türk
 🏴 Şor: türk
 🏴 Urumça: türk
-🏴 Karajče: tiurk
+🏴 Qarayçe: türk
 🏴 Qrımçahça: türk
 🏴 Soyot: türk
 🏴 Tofalap: türk''', reply_markup=markup_menu)
@@ -8313,7 +8312,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: uq
 🏴 Şor: uq
 🏴 Urumça: dinne
-🏴 Karajče: tynla, kajyrhyn ėšitiuviujńiu
+🏴 Qarayçe: tınla
 🏴 Qrımçahça: dıñle
 🏴 Soyot: dıŋna (tıŋna)
 🏴 Tofalap: dıŋna (tıŋna)''', reply_markup=markup_menu)
@@ -8356,7 +8355,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: aq
 🏴 Şor: aq
 🏴 Urumça: ax (ağ), biyaz (beyaz, byaz)
-🏴 Karajče: ach (ak), bijaz
+🏴 Qarayçe: ax (aq), biyaz
 🏴 Qrımçahça: ah, byaz
 🏴 Soyot: aq
 🏴 Tofalap: aq''', reply_markup=markup_menu)
@@ -8406,7 +8405,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: qızıl
 🏴 Şor: qızıl
 🏴 Urumça: xızıl, ğırmızı (xırmızı), al (eal, eval)
-🏴 Karajče: kyzyl, kyrmyzy, al
+🏴 Qarayçe: qızıl, qırmızı, al
 🏴 Qrımçahça: qırmızı, al
 🏴 Soyot: qızıl
 🏴 Tofalap: qızıl''', reply_markup=markup_menu)
@@ -8448,7 +8447,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: cajıl
 🏴 Şor: çajıl
 🏴 Urumça: yeşil (eşil), gög (blue, green, turquoise, glaucous, violet)
-🏴 Karajče: ješil´ (isil)
+🏴 Qarayçe: yeşil
 🏴 Qrımçahça: yeşıl
 🏴 Soyot: gök (kök) (green, blue)
 🏴 Tofalap: suğ-kök, kök (green, blue)''', reply_markup=markup_menu)
@@ -8496,7 +8495,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: sarı
 🏴 Şor: sarığ
 🏴 Urumça: sarı
-🏴 Karajče: sary
+🏴 Qarayçe: sarı
 🏴 Qrımçahça: sarı
 🏴 Soyot: sarığ
 🏴 Tofalap: sarığ''', reply_markup=markup_menu)
@@ -8535,7 +8534,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: maşına
 🏴 Şor: maşına
 🏴 Urumça: maşına (marışna, marşın, marşına)
-🏴 Karajče: mašina (mašyna)
+🏴 Qarayçe: maşina (maşına)
 🏴 Qrımçahça: maşına
 🏴 Soyot: maşîîn (maşıına, mahîîna)
 🏴 Tofalap: maşîîn''', reply_markup=markup_menu)
@@ -8578,10 +8577,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: çeber qorodor(ı), çeberleer(i)
 🏴 Şor: ekonomiya
 🏴 Urumça: tutumlu xullanma
-🏴 Karajče: kanaat
+🏴 Qarayçe: qanaat
 🏴 Qrımçahça: sarflıh
 🏴 Soyot: ekonomîya
 🏴 Tofalap: ekonomîya''', reply_markup=markup_menu)
+#RUSRUS???
+# dlgrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rain" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дождь" \
@@ -8614,7 +8615,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: caŋmır, caaş
 🏴 Şor: nağbur
 🏴 Urumça: yağış, yağmur, yavun, sağanax
-🏴 Karajče: jamhur (jahmur, janhur)
+🏴 Qarayçe: yamğur (yağmur, yanğur)
 🏴 Qrımçahça: yağmur (yañğur)
 🏴 Soyot: ças
 🏴 Tofalap: ösken, upqan {heavy rain}, ças {heavy rain}''', reply_markup=markup_menu)
@@ -8651,10 +8652,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: bunker
 🏴 Şor: bunker
 🏴 Urumça: bunker
-🏴 Karajče: syhynč, saklanmach, syjynč
+🏴 Qarayçe: sığınç (sıyınç), saqlanmax
 🏴 Qrımçahça: bunker
 🏴 Soyot: bunker
 🏴 Tofalap: bunker''', reply_markup=markup_menu)
+# RUSRUS??? tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus kumrus krcrus nogrus
+# styrus slrcn uumrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bride" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "daughter-in-law" \
@@ -8693,11 +8696,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: kelin, keldi
 🏴 Şor: kelin, negeeçi
 🏴 Urumça: gälin (kelin)
-🏴 Karajče: kieliń (kelin, kielin)
+🏴 Qarayçe: kelin
 🏴 Qrımçahça: kelın
 🏴 Soyot: helîn
 🏴 Tofalap: helîn''', reply_markup=markup_menu)
-
+#
+# slrcn
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eid-ul-azha" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eid ul azha" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eidulazha" \
@@ -8743,7 +8747,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Kurban-bayram
 🏴 Şor: Kurban-bayram
 🏴 Urumça: Xurban bayramı
-🏴 Karajče: Kurban bajramy
+🏴 Qarayçe: Qurban bayramı
 🏴 Qrımçahça: Qurban bayramı
 🏴 Soyot: Kurban-bayram
 🏴 Tofalap: Kurban-bayram''', reply_markup=markup_menu)
@@ -8794,7 +8798,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: I. boyınıŋ II. boyı
 🏴 Şor: I. pos II. pozu
 🏴 Urumça: I. öz II. özü
-🏴 Karajče: I. öź II. öźiu
+🏴 Qarayçe: I. öz II. öźü
 🏴 Qrımçahça: I. gendı, öz II. özı, gendı
 🏴 Soyot: I. bodınıŋ (bodnıŋ) II. bodı
 🏴 Tofalap: I. bodunuŋ II. bodu''', reply_markup=markup_menu)
@@ -8835,7 +8839,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: noutbuk
 🏴 Şor: noutbuk
 🏴 Urumça: noutbuk
-🏴 Karajče: laptop
+🏴 Qarayçe: laptop
 🏴 Qrımçahça: noutbuk
 🏴 Soyot: noutbuk
 🏴 Tofalap: noutbuk''', reply_markup=markup_menu)
@@ -8874,7 +8878,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: cirme
 🏴 Şor: çegirbe
 🏴 Urumça: igirmi (girim, yirmi, yigirmi)
-🏴 Karajče: jigirmi (igirme, egirme)
+🏴 Qarayçe: yigirmi (igirme, egirme)
 🏴 Qrımçahça: yıgırım (yıgrım)
 🏴 Soyot: çêêrbî (çêêrvî)
 🏴 Tofalap: îhön''', reply_markup=markup_menu)
@@ -8912,7 +8916,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: segis
 🏴 Şor: segis
 🏴 Urumça: säkkiz (sekiz)
-🏴 Karajče: segiź (sekiz)
+🏴 Qarayçe: segiz (sekiz)
 🏴 Qrımçahça: sekız
 🏴 Soyot: ses
 🏴 Tofalap: sehes''', reply_markup=markup_menu)
@@ -8991,7 +8995,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: toğus
 🏴 Şor: toğus
 🏴 Urumça: doxkuz (doxuz)
-🏴 Karajče: tohuz
+🏴 Qarayçe: toğuz
 🏴 Qrımçahça: doqız
 🏴 Soyot: tos
 🏴 Tofalap: tohos''', reply_markup=markup_menu)
@@ -9032,7 +9036,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: sağal
 🏴 Şor: eek sağalı, sağal (+ mustache)
 🏴 Urumça: saxkhal (saxal)
-🏴 Karajče: sakal (sahal)
+🏴 Qarayçe: saqal (sağal)
 🏴 Qrımçahça: saqal
 🏴 Soyot: sal
 🏴 Tofalap: sahal (+ mustache)''', reply_markup=markup_menu)
@@ -9087,7 +9091,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Çingisxan
 🏴 Şor: Çingisxan
 🏴 Urumça: Çingiz Xan
-🏴 Karajče: Čingischan
+🏴 Qarayçe: Çingisxan
 🏴 Qrımçahça: Cengız Han
 🏴 Soyot: Çîngîs Haan
 🏴 Tofalap: Çîngîs Haan''', reply_markup=markup_menu)
@@ -9125,10 +9129,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: plov
 🏴 Şor: plov
 🏴 Urumça: pilaf (piläv, pulov, pılav)
-🏴 Karajče: pilav
+🏴 Qarayçe: pilav
 🏴 Qrımçahça: pilav
 🏴 Soyot: plov
 🏴 Tofalap: plov''', reply_markup=markup_menu)
+# RUSRUS??? cvrus krcrus
+# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "planet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "planeta" \
@@ -9144,7 +9150,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇺🇿 Oʻzbekcha: sayyora
 🇰🇿 Qazaqşa: ğalamşar, planeta
 🇰🇬 Qırğızça: planeta
-🏴 Uyghurche: planét, seyyare
+🏴 Uyghurche: seyyare, planét
 🏴 Tatarça: planeta
 🏴 Başqortsa: planeta
 🏴 Çovaşla: planeta
@@ -9163,10 +9169,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: planeta
 🏴 Şor: planeta
 🏴 Urumça: planet (planeta)
-🏴 Karajče: planeta
+🏴 Qarayçe: planeta
 🏴 Qrımçahça: planeta
 🏴 Soyot: garag, planeta
 🏴 Tofalap: planeta''', reply_markup=markup_menu)
+# RUSRUS??? kgrus ttrus barus cvrus qqrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ben seni seviyorum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "я тебя люблю" \
@@ -9207,7 +9215,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: men seni süüp turar
 🏴 Şor: men sağa kölençam
 🏴 Urumça: bän säni severim
-🏴 Karajče: mień sieńi siuviam
+🏴 Qarayçe: men seni süväm
 🏴 Qrımçahça: men senı süvem
 🏴 Soyot: men sîîğä ınaq tur-men
 🏴 Tofalap: men seni ekkisinêr men''', reply_markup=markup_menu)
@@ -9245,7 +9253,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: on
 🏴 Şor: on
 🏴 Urumça: on
-🏴 Karajče: on
+🏴 Qarayçe: on
 🏴 Qrımçahça: on
 🏴 Soyot: on
 🏴 Tofalap: on''', reply_markup=markup_menu)
@@ -9285,7 +9293,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: on bir
 🏴 Şor: on pir
 🏴 Urumça: on bir
-🏴 Karajče: on bir
+🏴 Qarayçe: on bir
 🏴 Qrımçahça: on bır
 🏴 Soyot: on bir
 🏴 Tofalap: on bir''', reply_markup=markup_menu)
@@ -9327,7 +9335,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: on eki
 🏴 Şor: on iygi
 🏴 Urumça: on iki
-🏴 Karajče: on ėki
+🏴 Qarayçe: on eki
 🏴 Qrımçahça: on ekı
 🏴 Soyot: on îhî
 🏴 Tofalap: on îhî''', reply_markup=markup_menu)
@@ -9366,7 +9374,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: men süüp turar
 🏴 Şor: kölençam
 🏴 Urumça: severim
-🏴 Karajče: siuviam
+🏴 Qarayçe: süväm
 🏴 Qrımçahça: süvem
 🏴 Soyot: ınaq tur-men
 🏴 Tofalap: ekkisinêr men''', reply_markup=markup_menu)
@@ -9381,10 +9389,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇷🇺 Русский: дискриминация [diskriminatsiya]
 🇹🇷 Türkçe: ayrımcılık
 🇦🇿 Türkcə: ayrı-seçkilik
-🇹🇲 Türkmençe: diskriminasiýa, hukuklary kemsitme
-🇺🇿 Oʻzbekcha: diskriminatsiya, kamsitish
-🇰🇿 Qazaqşa: diskriminasıya, kemsitiwşilik
-🇰🇬 Qırğızça: diskriminatsiya, kemsintüü
+🇹🇲 Türkmençe: hukuklary kemsitme
+🇺🇿 Oʻzbekcha: kamsitish
+🇰🇿 Qazaqşa: kemsitiwşilik
+🇰🇬 Qırğızça: kemsintüü
 🏴 Uyghurche: ayrimichiliq, kemsitish
 🏴 Tatarça: diskriminatsiä
 🏴 Başqortsa: diskriminatsiya, xoquq qısıw
@@ -9403,9 +9411,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Xakastap: dîskrîmînatsiya
 🏴 Altaylap: diskriminatsiya
 🏴 Şor: diskriminatsiya
-🏴 Urumça: diskriminatsiya, ayrımcılıq
-🏴 Karajče: diskriminacija, ajyrym
-🏴 Qrımçahça: diskriminatsiya, ayırım
+🏴 Urumça: ayrımcılıx
+🏴 Qarayçe: ayırım
+🏴 Qrımçahça: ayırım
 🏴 Soyot: dîskrîmînatsiya
 🏴 Tofalap: dîskrîmînatsiya''', reply_markup=markup_menu)
 
@@ -9456,7 +9464,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: qıs-qıs
 🏴 Şor: qıs-qıs
 🏴 Urumça: pis-pis
-🏴 Karajče: pis-pis
+🏴 Qarayçe: pis-pis
 🏴 Qrımçahça: pis-pis
 🏴 Soyot: qıs-qıs
 🏴 Tofalap: qıs-qıs''', reply_markup=markup_menu)
@@ -9496,7 +9504,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: em tura, emdi
 🏴 Şor: am
 🏴 Urumça: şindi, endi (imdi)
-🏴 Karajče: endi, hali (halie), halieginia (haligine)
+🏴 Qarayçe: endi
 🏴 Qrımçahça: şındı, endı
 🏴 Soyot: am, amdı
 🏴 Tofalap: am, amdı''', reply_markup=markup_menu)
@@ -13965,7 +13973,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Gagauzça: skorpion
 🏴 Saqalí: skorpion
 🏴 Dulgan-Hakalí: skorpion
-🏴 Tıvalap: skorpion
+🏴 Tıvalap: aktebe
 🏴 Salırça: caca
 🏴 Xakastap: skorpîon
 🏴 Altaylap: skorpion
@@ -13977,7 +13985,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tofalap: skorpîon''', reply_markup=markup_menu)
 #animal
 # RUSRUS??? cvrus
-# slrcn gagrus uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# slrcn gagrus uumrus kdrrus sahrus dlgrus altrus khakrus shorrus sytrus tofrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "switzerland" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "swiss" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "switz" \
@@ -14212,7 +14221,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Gagauzça: baa, başça
 🏴 Saqalí: olordú oyúr, sát (sad)
 🏴 Dulgan-Hakalí: sad
-🏴 Tıvalap: sad
+🏴 Tıvalap: bakşa
 🏴 Salırça: bağ (pağ)
 🏴 Xakastap: sad
 🏴 Altaylap: sad
@@ -14223,7 +14232,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Soyot: sad
 🏴 Tofalap: saat''', reply_markup=markup_menu)
 # RUSRUS???
-# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# sahrus dlgrus altrus khakrus shorrus sytrus tofrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "никях" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "никах" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "свадба" \
@@ -14346,6 +14356,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tofalap: ???''', reply_markup=markup_menu)
 # RUSRUS??? kzrus ugrus ugcn cvrus qqrus nogrus
 # styrus slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дефективный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дефектность" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "деффектный" \
@@ -19031,10 +19042,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança: gokga xans, gül
 🏴 Noğayşa: qızıl gül
 🏴 Sıbırca: tegänäk köl
-🏴 Salırça: miguyxua
+🏴 Salırça: meyguy (miguy)
 🏴 Gagauzça: gül
 🏴 Urumça: gül
-🏴 Karajče: giul, giuliaf
+🏴 Qarayçe: gül
 🏴 Qırımçahça: gül
 🏴 Saqalí: qatí (qatí çeçik)
 🏴 Dulgan-Hakalí: dölühüön (dölühőn, dölüküne)
@@ -24342,7 +24353,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇺🇿 Oʻzbekcha: suv oti
 🇰🇿 Qazaqşa:	suw sıyırı
 🇰🇬 Qırğızça: begemot
-🏴 Uyghurche: su éti‎, seqenqur
+🏴 Uyghurche: su éti, seqenqur
 🏴 Tatarça:	su sıyırı ♀, su ügeze ♂
 🏴 Başqortsa: hıw hıyırı ♀, hıw ügeðe ♂
 🏴 Çovaşla: begemot
@@ -33580,7 +33591,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança:	I. sawğa II. olja
 🏴 Noğay:	I. sawğa II. olja
 🏴 Sıbır:	I. püläk II. ulca
-🏴 Salır:	I. hediye II. canlipin
+🏴 Salır:	I. hediye II. olca
 🏴 Gagauz:	I. ödül II. çapanak
 🏴 Urumça:	I. mukabele, ax II. ğanimet
 🏴 Qarayçe:	I. yal II. savğa, olca
@@ -33593,7 +33604,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	I. çal II. tabış
 🏴 Soyıt:	I. çaalım II. olca
 🏴 Tofa:	I. hölezîn II. olca''', reply_markup=markup_menu)
-#slrcn
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧗" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧗‍♀️" \
@@ -34005,14 +34015,14 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qırımçah:	çalğı
 🏴 Saqalí:	músuka
 🏴 Hakalí:	músuka
-🏴 Tıvalap:	xögjüm
+🏴 Tıvalap:	kökjüm (xögjüm)
 🏴 Altay:	muzıka
 🏴 Xakas:	muzıka
 🏴 Şor:	muzıka
 🏴 Soyıt:	muzıka
 🏴 Tofa:	hobus''', reply_markup=markup_menu)
 # RUSRUS??? kgrus ttrus barus kumrus krcrus
-# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus
+# sahrus dlgrus altrus khakrus shorrus sytrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vukuf" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "knowledge" \
@@ -34223,13 +34233,13 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qırımçah:	cami
 🏴 Saqalí:	meçiet
 🏴 Hakalí:	???
-🏴 Tıvalap:	???
+🏴 Tıvalap:	küree {East Turkestan Tuvan lang.}
 🏴 Altay:	???
 🏴 Xakas:	???
 🏴 Şor:	???
 🏴 Soyıt:	???
 🏴 Tofa:	???''', reply_markup=markup_menu)
-# RUSRUS??? dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# RUSRUS??? dlgrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "church" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "церковь" \
@@ -34981,7 +34991,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qırımtatar:	polis
 🏴 Alança:	mırtazaq
 🏴 Noğay:	mırtazaq
-🏴 Salırça:	cinça
+🏴 Salırça:	sıxlağucı
 🏴 Gagauz:	polis
 🏴 Qırımçah:	polis
 🏴 Saqalí:	belisiye
@@ -34989,7 +34999,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Xakas:	xızıl çağa
 🇰🇿🇰🇬🏴: politsiya ???''', reply_markup=markup_menu)
 # RUSRUS??? ttrus barus cvrus qqrus kumrus
-# styrus slrcn uumrus kdrrus sahrus dlgrus altrus shorrus sytrus tofrus
+# styrus uumrus kdrrus sahrus dlgrus altrus shorrus sytrus tofrus
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚑" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ambulance" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "скорая помощь" \
@@ -35213,14 +35223,14 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qırımçah:	zerdalı, erık {prunus, plum}
 🏴 Saqalí:	abrikos, ürük {purism}
 🏴 Dolgan:	abrikos
-🏴 Tıvalap:	abrikos
+🏴 Tıvalap:	örük
 🏴 Altay:	abrikos
 🏴 Xakas:	abrîkos
 🏴 Şor:	abrikos
 🏴 Soyıt:	abrîkos
 🏴 Tofa:	abrîkos''', reply_markup=markup_menu)
 # RUSRUS??? cvrus
-# styrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# styrus dlgrus altrus khakrus shorrus sytrus tofrus
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yaz!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yazmak" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "write!" \
@@ -35694,14 +35704,14 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qırımçah:	asker
 🏴 Saqalí:	sallát
 🏴 Dolgan:	haldát
-🏴 Tıvalap:	soldat
+🏴 Tıvalap:	şerix
 🏴 Altay:	çerü
 🏴 Xakas:	sîrig
 🏴 Şor:	soldat
 🏴 Soyıt:	saldaat
 🏴 Tofa:	saldaat''', reply_markup=markup_menu)
 # RUSRUS??? cvrus
-# sahrus dlgrus tyvrus sytrus tofrus
+# sahrus dlgrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "forward" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ahead" \
@@ -37025,14 +37035,14 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Qırımçah:	qabah
 🏴 Saqalí:	???
 🏴 Dolgan:	???
-🏴 Tıvalap:	???
+🏴 Tıvalap:	askabak
 🏴 Altay:	???
 🏴 Xakas:	???
 🏴 Şor:	???
 🏴 Soyıt:	???
 🏴 Tofa:	???''', reply_markup=markup_menu)
 # RUSRUS???
-# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# sahrus dlgrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏰" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏯" \
@@ -37068,7 +37078,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Alança:	qala
 🏴 Noğay:	qala
 🏴 Sıbırca:	qala
-🏴 Salırça:	yisır
+🏴 Salırça:	qorğan
 🏴 Gagauz:	kale
 🏴 Urumça:	kermen, kale (xave)
 🏴 Qarayçe:	kermän, qala (qale)
@@ -37082,7 +37092,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Soyıt:	???
 🏴 Tofa:	???''', reply_markup=markup_menu)
 # RUSRUS???
-# slrcn sytrus tofrus
+# sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏟" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stadium" \
@@ -37257,7 +37267,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Alança:	ayrımkan (ayrıkam)
 🏴 Noğay:	aral
 🏴 Sıbırca:	utraw
-🏴 Salırça:	tau
+🏴 Salırça:	aral
 🏴 Gagauz:	ada
 🏴 Urumça:	ada
 🏴 Qarayçe:	ada
@@ -37270,7 +37280,6 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Şor:	arğı, odrag
 🏴 Soyıt:	aral, oltırıq
 🏴 Tofa:	ortuluq''', reply_markup=markup_menu)
-# slrcn ???
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çöl" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чоль" \
@@ -37618,10 +37627,10 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Altay:	magazin, tükân {arch.}
 🏴 Xakas:	sadığ tura
 🏴 Şor:	magazin, lapke
-🏴 Soyıt:	maŋğazîîn, qorşaa (horşaa)
+🏴 Soyıt:	qorşaa (horşaa), delgüür
 🏴 Tofa:	maŋğazîîn''', reply_markup=markup_menu)
 # RUSRUS??? cvrus
-# slrcn sahrus dlgrus altrus shorrus sytrus tofrus
+# slrcn sahrus dlgrus altrus shorrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏦" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bank" \
@@ -39259,7 +39268,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Alança:	oram
 🏴 Noğay:	oram
 🏴 Sıbırca:	uram
-🏴 Salırça:	???
+🏴 Salırça:	geşoŋ
 🏴 Gagauz:	sokak
 🏴 Urumça:	soxax
 🏴 Qarayçe:	oram
@@ -40131,12 +40140,13 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Tatarça:	räqısxanä
 🏴 Çovaşla:	teattor
 🏴 Qırımtatar:	tiyatir, oyun evi
-🏴 Salırça:	oyun yeri
+🏴 Salırça:	şicü, oyun yeri
 🏴 Gagauz:	teatru
 🏴 Urumça:	tyatır
 🏴 Qarayçe:	tiyatir
 🏴 Saqalī:	tiyétir
 🏴 Dolgan:	tiyétir
+🏴 Tıva: tiyatir
 🇺🇿🇰🇬🏴: teatr''', reply_markup=markup_menu)
 # RUSRUS??? uzrus kgrus barus qqrus kumrus krcrus nogrus
 # styrus slrcn jctrus tyvrus altrus khakrus shorrus sytrus tofrus
@@ -40186,18 +40196,20 @@ Other types of traditional or national sausages are listed below:
 🏴 Qumuq:	içek, soqta {liver s.}
 🏴 Alança:	qıyma, soxta {liver s.}
 🏴 Noğay:	qıyma, qazı 🐎, qazılıq 🐎
-🏴 Sıbırca:	qası, qansuxta
+🏴 Sıbırca:	qası, suxta
+🏴 Salırça: fiçoŋ
 🏴 Gagauz:	sucuk, bumbar
 🏴 Urumça:	sırma, sucux, soxta {blood s.}
 🏴 Qarayçe:	qıyma, sucuq
 🏴 Qırımçah:	sucuq (sucyuk)
 🏴 Saqalī:	qalbahı, bísastáq qán {blood s.}
+🏴 Tıva: jılgı kazı 🐎
 🏴 Altay:	çuçuq, qaazı 🐎, qan {blood s.}
 🏴 Xakas:	xıyma {khakas s.}, xara xan {blood s.}, ax xan {blood plasma s.}, sımay xan {s. from liquid blood}, tîris xan {deoxygenated blood s.}, xosxanax xan {s. in large intestine}, xotı xan {cecum s.}, çoçıx xan {s. in rectum}
 🏴 Soyıt:	şıvay 🐎 {blood s.}, hıyma {minced meat in the gut}
 🏴 Tofa:	şıbay {blood s.}''', reply_markup=markup_menu)
 #RUSRUS???
-# slrcn dlgrus tyvrus shorrus
+# slrcn dlgrus shorrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qaymaq" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaymak" \
@@ -40715,7 +40727,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Alança:	jaldat
 🏴 Noğay:	yallat
 🏴 Sıbırca:	jallat, paşkisär
-🏴 Salırça:	???
+🏴 Salırça:	kesi
 🏴 Gagauz:	cellat
 🏴 Urumça:	cellat
 🏴 Qarayçe:	cellat, qasapçı
@@ -40729,7 +40741,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Soyıt:	???
 🏴 Tofa:	???''', reply_markup=markup_menu)
 #RUSRUS???
-# slrcn dlgrus sytrus tofrus
+# dlgrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "needle" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spoke" \
@@ -41309,14 +41321,14 @@ Other types of traditional or national sausages are listed below:
 🏴 Qırımçah:	neft
 🏴 Saqalī:	niep
 🏴 Dolgan:	niep
-🏴 Tıvalap:	neft
+🏴 Tıvalap:	neft, üs {East Turkestan Tuvan lang.}
 🏴 Altay:	neft
 🏴 Xakas:	neft
 🏴 Şor:	neft
 🏴 Soyıt:	neft
 🏴 Tofa:	neft''', reply_markup=markup_menu)
 # RUSRUS??? ugrus kumrus krcrus nogrus
-# styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+# styrus gagrus uumrus kdrrus jctrus sahrus dlgrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paganism" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "heathenism" \
@@ -41468,7 +41480,7 @@ Other types of traditional or national sausages are listed below:
 🇦🇿 Türkcə:	xoş gəldin, xoş gəldiniz, xoş gəlibsən, xoş gəlibsiniz, xoş gəlmişsiniz {formal}
 🇹🇲 Türkmen:	hoş geldiň, hoş geldiňiz
 🇺🇿 Oʻzbek:	xush kelding, xush kelibsiz
-🇰🇿 Qazaq:	qoş keldiŋ, qoş keldiŋiz
+🇰🇿 Qazaq:	qoş keldiŋ, qoş keldiŋiz, qoş keldiŋizder, qoş kelipsiz
 🇰🇬 Qırğız:	qoş keldiŋ, qoş keldiŋiz, qoş kelipsiz, qoş keliŋizder {formal}
 🏴 Uyghur:	xush kepsiz, xush kélipsiz, yaxshi kélipsiz
 🏴 Tatarça:	rähim itegez, xuş kildeŋ, xuş kildegez
@@ -41529,15 +41541,17 @@ Other types of traditional or national sausages are listed below:
 🇬🇧 English:	Buddha
 🇷🇺 Русский:	Будда [Budda]
 🇹🇷 Türkçe:	Buda
-🏴 Tıvalap:	Burgan
+🏴 Salırça: Palçıx kiş
+🏴 Tıvalap:	Burgan, Boxda {East Turkestan Tuvan lang.}
 🏴 Altay:	Bırqan, Boodo
 🏴 Xakas:	Purxan
+🏴 Sarıg-Yugur:	Buhrgan
 🏴 Şor:	Pırqan
 🏴 Soyıt:	Burhan
 🏴 Tofa:	Burhan
 🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: Budda''', reply_markup=markup_menu)
 # RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
-# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus
+# styrus gagrus uumrus kdrrus jctrus sahrus dlgrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👽" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👾" \
@@ -41632,10 +41646,11 @@ Other types of traditional or national sausages are listed below:
 🏴 Qırımçah:	muze
 🏴 Saqalī:	tümel
 🏴 Dolgan:	musuoy
+🏴 Tıva: esgetkiş saray
 🏴: muzey''', reply_markup=markup_menu)
 # building
 # RUSRUS??? tkrus ttrus barus cvrus crhrus kumrus krcrus nogrus
-# styrus slrcn gagrus uumrus jctrus tyvrus altrus khakrus shorrus sytrus tofrus
+# styrus slrcn gagrus uumrus jctrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chain" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chains" \
@@ -41678,6 +41693,34 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	ilçirbe
 🏴 Soyıt:	îlcirvä
 🏴 Tofa:	îlcirmä''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lighthouse" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "light house" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маяк" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "deniz feneri" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "denizfeneri" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pharos" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beacon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маячный":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	teŋiz qarğuyu
+🇬🇧 English:	lighthouse
+🇷🇺 Русский:	маяк [mayak]
+🇹🇷 Türkçe:	deniz feneri
+🇦🇿 Türkcə:	dəniz fənəri
+🇹🇲 Türkmen:	maýak, deňiz çyragy
+🇺🇿 Oʻzbek:	mayoq
+🇰🇿 Qazaq:	şamşıraq
+🏴 Çovaşla:	cutkoc
+🏴 Qırımtatar:	faros
+🏴 Alança:	teŋiz çıraq
+🏴 Salırça:	dıŋta
+🏴 Gagauz:	deniz feneri
+🏴 Urumça:	däŋiz fenäri
+🏴 Qarayçe:	deŋiz feneri
+🏴 Qırımçah:	faros
+🇰🇬🏴: mayak''', reply_markup=markup_menu)
+# RUSRUS??? uzrus kgrus ugrus ugcn ttrus barus qqrus kumrus nogrus
+# styrus slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
