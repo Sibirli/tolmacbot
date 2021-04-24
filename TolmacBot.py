@@ -41722,6 +41722,49 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? uzrus kgrus ugrus ugcn ttrus barus qqrus kumrus nogrus
 # styrus slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "a lie" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lie" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ложь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yalan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lying" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "брехня" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вранье" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "falsehood" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lies" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "неправда":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yalğan
+🇬🇧 English:	a lie
+🇷🇺 Русский:	ложь
+🇹🇷 Türkçe:	yalan
+🇦🇿 Türkcə:	yalan
+🇹🇲 Türkmen:	ýalan
+🇺🇿 Oʻzbek:	yolgʻon
+🇰🇿 Qazaq:	jalğan
+🇰🇬 Qırğız:	jalğan
+🏴 Uyghur:	yalghan
+🏴 Tatarça:	yalğan
+🏴 Başqort:	yalğan
+🏴 Çovaşla:	suya
+🏴 Qaraqalpaq:	jalǵan
+🏴 Qırımtatar:	yalan
+🏴 Qumuq:	yalğan
+🏴 Alança:	jalğan
+🏴 Noğay:	yalğan
+🏴 Sıbırca:	yalğan
+🏴 Salırça:	yalğan
+🏴 Gagauz:	yalan
+🏴 Urumça:	yalan
+🏴 Qarayçe:	yalan
+🏴 Qırımçah:	yalan
+🏴 Saqalí:	sımıya
+🏴 Hakalí:	albın
+🏴 Tıva:	mege
+🏴 Altay:	tögün
+🏴 Xakas:	çoy
+🏴 Şor:	tayba
+🏴 Duha-Soyıt:	arğan
+🏴 Tofa-Qarağas:	hoorha''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
