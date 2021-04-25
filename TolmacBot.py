@@ -17199,8 +17199,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "газетное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "газетные" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "газет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📰" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🗞" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рузнама":
-        bot.send_message(message.chat.id, '''🇬🇧 English: newspaper
+        bot.send_message(message.chat.id, '''🇬🇧 English: newspaper 📰 🗞
 🇷🇺 Русский: газета [gazeta]
 🇹🇷 Türkçe: gazete
 🇦🇿 Türkcə: qəzet, ruznamə {arch.}
@@ -17221,16 +17223,16 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: boci
 🏴 Gagauzça: gazete (gazeta)
 🏴 Urumça: ğazet (gazet)
-🏴 Karajče: gazeta
+🏴 Qarayçe: gazete (gazeta)
 🏴 Qrımçahça: gazeta
 🏴 Saqalí: qahıat (qasıat)
 🏴 Dulgan-Hakalí: gazet (kahıat)
 🏴 Tıvalap: solun
-🏴 Xakastap: gazeta
+🏴 Xakastap: gazet (gazeta)
 🏴 Altaylap: gazet
 🏴 Şor: gazet
-🏴 Soyot: ???
-🏴 Tofalap: ???''', reply_markup=markup_menu)
+🏴 Soyot: gazet (gazeta)
+🏴 Tofalap: gazet (gazeta)''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "1000" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "1 000" \
