@@ -41812,11 +41812,39 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS???
 # sahrus dlgrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "konfutsiy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "confucius" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "конфуций" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "konfüçyüs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "konfuçyus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кун-цзы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кун цзы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кунцзы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кун фу-цзы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кунфуцзы":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Quŋfutsi
+🇬🇧 English:	Confucius
+🇷🇺 Русский:	Конфуций [Konfutsiy]
+🇹🇷 Türkçe:	Konfüçyüs
+🇦🇿 Türkcə:	Kon Fu Dzı, Konfutsi
+🇹🇲 Türkmen:	Konfusiý
+🇰🇿 Qazaq:	Quŋ-zı
+🇰🇬 Qırğız:	Quŋzı
+🏴 Uyghur:	Kungzi
+🏴 Tatarça:	Qun Tsı
+🏴 Çovaşla:	Konfutsi
+🏴 Salırça:	Kuŋcı
+🏴 Saqalí:	Koŋ Zı
+🇺🇿🏴: Konfutsiy''', reply_markup=markup_menu)
+# person
+#RUSRUS??? uzrus barus qqrus crhrus kumrus krcrus nogrus
+# styrus gagrus uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-#tags country cameo geo nation animal
+#tags country cameo geo nation animal person
 bot.polling()
