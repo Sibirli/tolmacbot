@@ -17205,7 +17205,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇬🇧 English: newspaper 📰 🗞
 🇷🇺 Русский: газета [gazeta]
 🇹🇷 Türkçe: gazete
-🇦🇿 Türkcə: qəzet, ruznamə {arch.}
+🇦🇿 Türkcə: qəzet, ruznamə
 🇹🇲 Türkmençe: gazet
 🇺🇿 Oʻzbekcha: gazeta, roʻznoma
 🇰🇿 Qazaqşa: gazet (gäzet)
@@ -41734,7 +41734,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "falsehood" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lies" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "неправда":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yalğan
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yalğan, igid
 🇬🇧 English:	a lie
 🇷🇺 Русский:	ложь
 🇹🇷 Türkçe:	yalan
@@ -41766,6 +41766,51 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	tayba
 🏴 Duha-Soyıt:	arğan
 🏴 Tofa-Qarağas:	hoorha''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lavaş" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lavash" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lavas" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лаваш" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тортилья" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лепешка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yufka" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tortilla" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flatbread" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flat bread":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	lavaş
+🇬🇧 English:	lavash, tortilla, flatbread
+🇷🇺 Русский:	лаваш [lavash], тортилья, лепешка
+🇹🇷 Türkçe:	lavaş, yufka
+🇦🇿 Türkcə:	lavaş, yuxa, fətir
+🇹🇲 Türkmen:	lawaş
+🇺🇿 Oʻzbek:	patir
+🇰🇿 Qazaq:	pätir,  juqpa
+🇰🇬 Qırğız:	toqoç
+🏴 Uyghur:	pétir, çelpek
+🏴 Tatarça:	läwäş
+🏴 Başqort:	läwäş
+🏴 Çovaşla:	cüxü
+🏴 Qaraqalpaq:	shelpek
+🏴 Qırımtatar:	lavaş
+🏴 Qumuq:	lawaş
+🏴 Alança:	güttü
+🏴 Noğay:	qalaqay
+🏴 Sıbırca:	yoğa, päter
+🏴 Salırça:	simien
+🏴 Gagauz:	lavaş
+🏴 Urumça:	xamur-yaprax
+🏴 Qarayçe:	yuğa
+🏴 Qırımçah:	lavaş
+🏴 Saqalí:	leppieske
+🏴 Hakalí:	lepéske
+🏴 Tıva:	boova
+🏴 Altay:	teertpek
+🏴 Xakas:	köptirges
+🏴 Şor:	terpek
+🏴 Duha-Soyıt:	boova
+🏴 Tofa-Qarağas:	boova''', reply_markup=markup_menu)
+# RUSRUS???
+# sahrus dlgrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
