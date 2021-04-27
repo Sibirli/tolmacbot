@@ -41544,7 +41544,7 @@ Other types of traditional or national sausages are listed below:
 🇷🇺 Русский:	Будда [Budda]
 🇹🇷 Türkçe:	Buda
 🏴 Salırça: Palçıx kiş
-🏴 Tıvalap:	Burgan, Boxda {East Turkestan Tuvan lang.}
+🏴 Tıvalap:	Burgan, Bogda
 🏴 Altay:	Bırqan, Boodo
 🏴 Xakas:	Purxan
 🏴 Sarıg-Yugur:	Buhrgan
@@ -41840,11 +41840,75 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS??? uzrus barus qqrus crhrus kumrus krcrus nogrus
 # styrus gagrus uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "muezzin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "муэдзин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "азанчи" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "müezzin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ezancı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ezanci" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "муаззин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "муэззин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ezan okuyan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "muazzin":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	muezzin
+🇷🇺 Русский:	муэдзин, азанчи
+🇹🇷 Türkçe:	müezzin, ezancı
+🇦🇿 Türkcə:	müəzzin, azançı
+🇹🇲 Türkmen:	azançy
+🇺🇿 Oʻzbek:	soʻfi, muazzin, azonchi
+🇰🇿 Qazaq:	azanşı, mäzin
+🇰🇬 Qırğız:	mäzin, azançı
+🏴 Uyghur:	mezin (muezzin)
+🏴 Tatarça:	mäzin (möäzin), azançı
+🏴 Başqort:	mäzin (möäzin), aðansı
+🏴 Çovaşla:	asanco
+🏴 Qaraqalpaq:	azanshı
+🏴 Qırımtatar:	müezzin
+🏴 Qumuq:	budun, azançı
+🏴 Alança:	azançı, muazin
+🏴 Noğay:	azanşı
+🏴 Sıbırca:	mäsen
+🏴 Salırça:	mizarbo, mudzor
+🏴 Gagauz:	müezzin
+🏴 Urumça:	müezzin
+🏴 Qarayçe:	mezin''', reply_markup=markup_menu)
+# religion islam
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adhan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ezan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "azan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "азан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "call to prayer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "призыв к молитве" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adhaan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "azaan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "athan":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	adhan
+🇷🇺 Русский:	азан [azan]
+🇹🇷 Türkçe:	ezan
+🇦🇿 Türkcə:	azan
+🇹🇲 Türkmen:	azan
+🇺🇿 Oʻzbek:	azon
+🇰🇿 Qazaq:	azan
+🇰🇬 Qırğız:	azan
+🏴 Uyghur:	ezan
+🏴 Tatarça:	azan
+🏴 Başqort:	aðan
+🏴 Çovaşla:	asan
+🏴 Qaraqalpaq:	azan
+🏴 Qırımtatar:	ezan
+🏴 Qumuq:	azan
+🏴 Alança:	azan
+🏴 Noğay:	azan
+🏴 Sıbırca:	azan
+🏴 Salırça:	ezan''', reply_markup=markup_menu)
+# religion islam
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-#tags country cameo geo nation animal person
+#tags country cameo geo nation animal person religion islam
 bot.polling()
