@@ -3432,7 +3432,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇬🇧 English: Lithuania
 🇷🇺 Русский: Литва
 🇹🇷 Türkçe: Litvanya
-🇦🇿 Türkcə: Litva, Litvaniya (archaism)
+🇦🇿 Türkcə: Litva, Litvaniya {arch.}
 🇹🇲 Türkmençe: Litwa
 🇺🇿 Oʻzbekcha: Litva
 🇰🇿 Qazaqşa: Litva
@@ -5061,8 +5061,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 
 🇬🇧 English: Poland
 🇷🇺 Русский: Польша [Pol'sha]
-🇹🇷 Türkçe: Polonya, Lehistan (archaism)
-🇦🇿 Türkcə: Polşa, Lehistan (archaism), Löhüstan (archaism, dialect)
+🇹🇷 Türkçe: Polonya, Lehistan {arch.}
+🇦🇿 Türkcə: Polşa, Lehistan/Löhüstan {arch.}
 🇹🇲 Türkmençe: Polşa
 🇺🇿 Oʻzbekcha: Polsha
 🇰🇿 Qazaqşa: Polşa
@@ -5072,7 +5072,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Başqortsa: Polşa, Läxstan
 🏴 Çovaşla: Polşa
 🏴 Qaraqalpaqsha: Polsha
-🏴 Qırımtatarca: Lehistan, Poloniya, Köral (archaism)
+🏴 Qırımtatarca: Lehistan, Poloniya, Köral {arch.}
 🏴 Qumuqça: Polşa, Lehistan
 🏴 Qaraçay-Malqar: Polşa
 🏴 Noğayşa: Polşa
@@ -5086,7 +5086,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Polşa
 🏴 Şor: Polşa
 🏴 Urumça: Polonia
-🏴 Qaray: Lähistan, Esav, Leh yer, Poloniya, Läh-biyligi,
+🏴 Qaray: Lähistan, Esav, Poloniya
 🏴 Qrımçah: Esav
 🏴 Soyot: Polşa
 🏴 Tofalap: Polşa''', reply_markup=markup_menu)
@@ -8933,14 +8933,14 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇬🇧 English: Latvia
 🇷🇺 Русский: Латвия [Latviya]
 🇹🇷 Türkçe: Letonya
-🇦🇿 Türkcə: Latviya, Letoniya (archaism)
+🇦🇿 Türkcə: Latviya, Letoniya {arch.}
 🇹🇲 Türkmençe: Latwiýa
 🇺🇿 Oʻzbekcha: Latviya
-🇰🇿 Qazaqşa: Latviya (Latwıya)
+🇰🇿 Qazaqşa: Latviya
 🇰🇬 Qırğızça: Latviya
 🏴 Uyghurche: Latviye
 🏴 Tatarça: Latviä, Letoniä
-🏴 Başqortsa: Latviya/Latviä (Латвия)
+🏴 Başqortsa: Latviya
 🏴 Çovaşla: Latvi
 🏴 Qaraqalpaqsha: Latviya
 🏴 Qırımtatarca: Latviya
@@ -8962,6 +8962,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Soyot: Latvîya
 🏴 Tofalap: Latvîya''', reply_markup=markup_menu)
 #country
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nine" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "9" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "девять" \
@@ -16099,8 +16100,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 
 🇬🇧 English: Bulgaria
 🇷🇺 Русский: Болгария [Bolgariya]
-🇹🇷 Türkçe: Bulgaristan
-🇦🇿 Türkcə: Bolqarıstan, Bulğarıstan {dial.}
+🇹🇷 Türkçe: Bulgaristan, Diyar Bulgar {Ottoman Turkish}
+🇦🇿 Türkcə: Bolqarıstan, Bulğarstan {pre-Soviet literary norm + modern dialects}
 🇹🇲 Türkmençe: Bolgarystan
 🇺🇿 Oʻzbekcha: Bolgariya
 🇰🇿 Qazaqşa: Bolgariya
@@ -16146,7 +16147,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇬🇧 English: Bulgarian
 🇷🇺 Русский: болгар [bolgar]
 🇹🇷 Türkçe: Bulgar
-🇦🇿 Türkcə: bolqar, bulğar {dial.}
+🇦🇿 Türkcə: bolqar, bulğar {old literary norm + modern dialects}
 🇹🇲 Türkmençe: bolgar
 🇺🇿 Oʻzbekcha: bolgar, bulgʻor {arch.}
 🇰🇿 Qazaqşa: bolgar
@@ -16161,19 +16162,20 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qaraçay-Malqar: bolgar
 🏴 Noğayşa: bulğar
 🏴 Sıbırca: uŋ polğar
-🏴 Salırça: bulgar, Bolcaliya kişi
+🏴 Salırça: bulgar
 🏴 Gagauzça: tukan
 🏴 Urumça: bulğar (bolğar)
-🏴 Karajče: bulgar
+🏴 Qarayçe: bulgar
 🏴 Qrımçahça: bulğar
 🏴 Saqalí: bolgar
 🏴 Dulgan-Hakalí: bolgar
 🏴 Tıvalap:	bolgar
 🏴 Xakastap: bolgar
-🏴 Altaylap: bolgar, pulgar {arch.}
+🏴 Altaylap: bolgar, pulğar {arch.}
 🏴 Şor:	bolgar
 🏴 Soyot: bolgar
 🏴 Tofalap: bolgar''', reply_markup=markup_menu)
+# nation slavic orthodox
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ısrael" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "israel" \
@@ -16408,7 +16410,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qaraqalpaqsha: vengr (venger)
 🏴 Qırımtatarca: macar
 🏴 Qumuqça: majar
-🏴 Qaraçay-Malqar: majarlı
+🏴 Qaraçay-Malqar: majar
 🏴 Noğayşa: majar
 🏴 Sıbırca: majar
 🏴 Gagauzça: ungar, macar
@@ -16420,11 +16422,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: vengr (venger)
 🏴 Şor: vengr (venger)
 🏴 Urumça: ungar, macar
-🏴 Karajče: madžar
+🏴 Qarayçe: macar
 🏴 Qrımçahça: macar
 🏴 Soyot: vengr (venger)
 🏴 Tofalap: vengr (venger)''', reply_markup=markup_menu)
-
+#nation
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дай" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дать" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "давать" \
@@ -17391,13 +17393,13 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qırımtatarca: Yunanistan, Rum vilâyeti {arch.}
 🏴 Qumuqça: Yunanistan
 🏴 Alança: Urum
-🏴 Noğayşa: Yunanstan
+🏴 Noğayşa: Yunanstan, Urım
 🏴 Sıbırca: Greciya, Älin (Älin El)
 🏴 Salırça: Rom, Şila
 🏴 Gagauzça: Yunanistan
 🏴 Urumça: Urum
-🏴 Qarayçe: ???
-🏴 Qrımçahça: Yunanistan, Gretsiya
+🏴 Qarayçe: Urum
+🏴 Qrımçahça: Yunanistan
 🏴 Saqalí: Gretsiya
 🏴 Dulgan-Hakalí: Gretsiya
 🏴 Tıvalap: Gretsiya
@@ -17407,6 +17409,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Soyot: Gretsîya
 🏴 Tofalap: Gretsîya''', reply_markup=markup_menu)
 #country
+# kzrus kkrus kgrus tkrus tmrus barus cvrus styrus ugrus
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "greek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hellene" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hellen" \
@@ -17441,20 +17444,20 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇺🇿 Oʻzbekcha: yunon
 🇰🇿 Qazaqşa: grek
 🇰🇬 Qırğızça: grek
-🏴 Uyghurche: yunan, grék
+🏴 Uyghurche: yunan
 🏴 Tatarça: yunan, grik
 🏴 Başqortsa: grek
 🏴 Çovaşla: grek
 🏴 Qaraqalpaqsha: yunan
 🏴 Qırımtatarca: yunan, urum
-🏴 Qumuqça: yunan, urumlu
-🏴 Alança: urum, urumlu
-🏴 Noğayşa: yunan, urımlı
+🏴 Qumuqça: yunan
+🏴 Alança: urum
+🏴 Noğayşa: yunan, urım
 🏴 Sıbırca: grek, älin
-🏴 Salırça: rom, romlu, Şila kişi
+🏴 Salırça: rom
 🏴 Gagauzça: urum, yunan
-🏴 Urumça: I. urum (rum) II. tat, girek
-🏴 Karajče: urum, javan
+🏴 Urumça: urum, tat
+🏴 Qarayçe: urum
 🏴 Qrımçahça: urum, danğalaq
 🏴 Saqalí: grek
 🏴 Dulgan-Hakalí: grek
@@ -17464,7 +17467,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: grek
 🏴 Soyot: grek
 🏴 Tofalap: grek''', reply_markup=markup_menu)
-
+#nation
+# kzrus kkrus kgrus barus cvrus styrus
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buckwheat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fagopyrum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buck wheat" \
@@ -41904,11 +41908,38 @@ Other types of traditional or national sausages are listed below:
 🏴 Salırça:	ezan''', reply_markup=markup_menu)
 # religion islam
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "libya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "libye" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "libia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "liviya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "livia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ливия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ливийский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "libyan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇱🇾":
+        bot.send_message(message.chat.id, '''🇱🇾 Libya
+
+🇬🇧 English:	Libya
+🇷🇺 Русский:	Ливия [Liviya]
+🇹🇷 Türkçe:	Libya, Trablusgarp {Ottoman Turkish}
+🇹🇲 Türkmen:	Liwiýa
+🏴 Uyghur:	Liwiye
+🏴 Çovaşla:	Livi
+🏴 Qırımtatar:	Libiya
+🏴 Salırça:	Libiya
+🏴 Gagauz:	Libiya
+🏴 Qarayçe:	Luv
+🏴 Qırımçah: Libiya
+🏴 Saqalí:	Lîbiye
+🏴 Hakalí:	Lîbiye
+🇦🇿🇺🇿🇰🇿🇰🇬🏴: Liviya''', reply_markup=markup_menu)
+#country muslim
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-#tags country cameo geo nation animal person religion islam
+#tags country cameo geo nation animal person religion islam slavic orthodox muslim
 bot.polling()
