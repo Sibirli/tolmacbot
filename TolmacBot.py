@@ -12390,31 +12390,22 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇹🇲 Türkmençe: Pelestin
 🇺🇿 Oʻzbekcha: Falastin
 🇰🇿 Qazaqşa: Palestina, Pälestin {KazakGrammar}
-🇰🇬 Qırğızça: Palestina
 🏴 Uyghurche: Pelestin
 🏴 Tatarça: Fälistin
 🏴 Başqortsa: Fälästin
-🏴 Çovaşla: Palestina
-🏴 Qaraqalpaqsha: Palestina
 🏴 Qırımtatarca: Filistin
-🏴 Qumuqça: Palestina
-🏴 Qaraçay-Malqar: Filistin, Palestina
-🏴 Noğayşa: Palestina
+🏴 Qaraçay-Malqar: Filistin
 🏴 Sıbırca: Pälästin
-🏴 Gagauzça: Filistin, Palestina
-🏴 Saqalí: Palestina
-🏴 Dulgan-Hakalí: Palestina
-🏴 Tıvalap: Palestin, Palestina
+🏴 Gagauzça: Filistin
 🏴 Salırça: Balestan
-🏴 Xakastap: Palestîna
-🏴 Altaylap: Palestina
-🏴 Şor: Palestina
 🏴 Urumça: Fälästin (Filistin)
 🏴 Qarayçe: Peleşet
 🏴 Qrımçahça: Filistin
-🏴 Soyot: Palestin, Palestîna
-🏴 Tofalap: Palestîna''', reply_markup=markup_menu)
+🇰🇬🏴: Palestina''', reply_markup=markup_menu)
 #country
+# RUSRUS??? kgrus cvrus qqrus kumrus nogrus
+# slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "palestinian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палестинец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палестинка" \
@@ -12451,8 +12442,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Urumça: fälästinli (filistinli)
 🏴 Karajče: pelešetli
 🏴 Qrımçahça: filistinlı
-🏴 Soyot: palestin, palestînets
-🏴 Tofalap: palestînets''', reply_markup=markup_menu)
+🏴 Soyot: palestin
+🏴 Tofalap: palestîn''', reply_markup=markup_menu)
+#nation
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "signature" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сигнатура" \
@@ -16103,33 +16095,24 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇹🇷 Türkçe: Bulgaristan, Diyar Bulgar {Ottoman Turkish}
 🇦🇿 Türkcə: Bolqarıstan, Bulğarstan {pre-Soviet literary norm + modern dialects}
 🇹🇲 Türkmençe: Bolgarystan
-🇺🇿 Oʻzbekcha: Bolgariya
-🇰🇿 Qazaqşa: Bolgariya
-🇰🇬 Qırğızça: Bolgariya
 🏴 Uyghurche: Bulghariye
 🏴 Tatarça: Bolğarstan
 🏴 Başqortsa: Bolğarstan
 🏴 Çovaşla: Tonayci Polxarö
-🏴 Qaraqalpaqsha: Bolgariya
 🏴 Qırımtatarca: Bulğaristan
 🏴 Qumuqça:	Bolğaristan
-🏴 Qaraçay-Malqar: Bolgariya
 🏴 Noğayşa: Bulğarstan
-🏴 Sıbırca: Uŋ Polğar El
-🏴 Salırça: Bulgariya, Bolcaliya
+🏴 Sıbırca: Uŋ Polğarı
+🏴 Salırça: Bulgariya
 🏴 Gagauzça: Bulgariya
 🏴 Urumça: Bulğaristan
 🏴 Qarayçe: Bulgariya
 🏴 Qrımçahça: Bulğaristan
-🏴 Saqalí: Bolgariya
-🏴 Dulgan-Hakalí: Bolgariya
-🏴 Tıvalap: Bolgariya
-🏴 Xakastap: Bolgarîya
-🏴 Altaylap: Bolgariya
-🏴 Şor: Bolgariya
-🏴 Soyot: Bolgarîya
-🏴 Tofalap: Bolgarîya''', reply_markup=markup_menu)
+🇺🇿🇰🇿🇰🇬🏴: Bolgariya''', reply_markup=markup_menu)
 #country
+# RUSRUS??? uzrus kzrus kgrus qqrus krcrus
+# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulgarian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulğar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bolğar" \
@@ -16148,34 +16131,25 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇷🇺 Русский: болгар [bolgar]
 🇹🇷 Türkçe: Bulgar
 🇦🇿 Türkcə: bolqar, bulğar {old literary norm + modern dialects}
-🇹🇲 Türkmençe: bolgar
 🇺🇿 Oʻzbekcha: bolgar, bulgʻor {arch.}
-🇰🇿 Qazaqşa: bolgar
-🇰🇬 Qırğızça: bolgar
 🏴 Uyghurche: Bulghar
 🏴 Tatarça: bolğar
 🏴 Başqortsa: bolğar
 🏴 Çovaşla: polxar
-🏴 Qaraqalpaqsha: bolgar
 🏴 Qırımtatarca: bulğar
 🏴 Qumuqça:	bolğar
-🏴 Qaraçay-Malqar: bolgar
 🏴 Noğayşa: bulğar
 🏴 Sıbırca: uŋ polğar
 🏴 Salırça: bulgar
 🏴 Gagauzça: tukan
-🏴 Urumça: bulğar (bolğar)
+🏴 Urumça: bulğar
 🏴 Qarayçe: bulgar
 🏴 Qrımçahça: bulğar
-🏴 Saqalí: bolgar
-🏴 Dulgan-Hakalí: bolgar
-🏴 Tıvalap:	bolgar
-🏴 Xakastap: bolgar
 🏴 Altaylap: bolgar, pulğar {arch.}
-🏴 Şor:	bolgar
-🏴 Soyot: bolgar
-🏴 Tofalap: bolgar''', reply_markup=markup_menu)
+🇹🇲🇰🇿🇰🇬🏴: bolgar''', reply_markup=markup_menu)
 # nation slavic orthodox
+# RUSRUS??? tkrus kzrus kgrus qqrus krcrus
+# sahrus dlgrus tyvrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ısrael" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "israel" \
@@ -16203,32 +16177,22 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇦🇿 Türkcə: İsrail
 🇹🇲 Türkmençe: Ysraýyl
 🇺🇿 Oʻzbekcha: Isroil
-🇰🇿 Qazaqşa: İzrail
-🇰🇬 Qırğızça: İzrail
 🏴 Uyghurche: Israiliye
 🏴 Tatarça: İsrail
-🏴 Başqortsa: İzrail
-🏴 Çovaşla: İzrail
-🏴 Qaraqalpaqsha: İzrail
 🏴 Qırımtatarca: İsrail
-🏴 Qumuqça: İzrail
 🏴 Qaraçay-Malqar: İsrail
-🏴 Noğayşa: İzrail
 🏴 Sıbırca: İsrail
 🏴 Gagauzça: İsrail
 🏴 Saqalí: İsrail
-🏴 Dulgan-Hakalí: İzrail
-🏴 Tıvalap: İzrail
 🏴 Salırça: Yiseliye
-🏴 Xakastap: Îzraîl
-🏴 Altaylap: İzrail
-🏴 Şor: İzrail
 🏴 Urumça: İsrail
 🏴 Qarayçe: Yisrayel
 🏴 Qrımçahça: Srel (İsrael)
-🏴 Soyot: Îzraîl
-🏴 Tofalap: Îzraîl''', reply_markup=markup_menu)
+🇰🇿🇰🇬🏴:''', reply_markup=markup_menu)
 #country
+# RUSRUS??? kzrus kgrus barus cvrus qqrus kumrus nogrus
+# dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jew" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jewish" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "juden" \
@@ -16282,6 +16246,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: çufut, yeudi, srel
 🏴 Soyot: yevrey
 🏴 Tofalap: yevrey''', reply_markup=markup_menu)
+#nation
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to come" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "come" \
@@ -32357,7 +32322,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Gagauz:	Lübnan
 🏴 Qarayçe:	Levanon
 🏴 Saqalí:	Liban
-🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: Livan / Liwan ???''', reply_markup=markup_menu)
+🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: Livan / Liwan ''', reply_markup=markup_menu)
+# country
+# RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn barus cvrus qqrus kumrus krcrus nogrus
+# styrus uumrus jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wall" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стена" \
@@ -40041,6 +40009,8 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Qarayçe:	Yarden
 🇰🇿🇰🇬🏴: İordaniya''', reply_markup=markup_menu)
 #  country
+# RUSRUS??? tkrus uzrus kzrus kgrus ugrus ugcn barus cvrus qqrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "justice" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "справедливость" \
@@ -41934,6 +41904,8 @@ Other types of traditional or national sausages are listed below:
 🏴 Hakalí:	Lîbiye
 🇦🇿🇺🇿🇰🇿🇰🇬🏴: Liviya''', reply_markup=markup_menu)
 #country muslim
+# RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus kumrus krcrus nogrus
+# styrus uumrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
