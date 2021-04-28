@@ -41907,6 +41907,39 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus kumrus krcrus nogrus
 # styrus uumrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "syria" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "syrie" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сирия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "siria" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "siriya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "suriye" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "surye" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "syrian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сирийский":
+        bot.send_message(message.chat.id, '''🏴 Suriyya, Sham
+        
+🐺 Old Turkic (bef. XV c.):	Şağam
+🇬🇧 English:	Syria
+🇷🇺 Русский:	Сирия [Siriya]
+🇹🇷 Türkçe:	Suriye, Şam
+🇦🇿 Türkcə:	Suriya, Şam
+🇹🇲 Türkmen:	Siriýa, Şam
+🇺🇿 Oʻzbek:	Suriya, Shom
+🏴 Uyghur:	Suriye
+🏴 Tatarça:	Süriä
+🏴 Çovaşla:	Siri
+🏴 Qırımtatar:	Suriye, Şam
+🏴 Qumuq:	Suriya, Şam
+🏴 Salırça:	Suriye
+🏴 Gagauz:	Suriye
+🏴 Urumça:	Şam
+🏴 Qarayçe:	Sırion
+🏴 Qırımçah:	Şam
+🇰🇿🇰🇬🏴: Siriya''', reply_markup=markup_menu)
+#country muslim
+# RUSRUS??? tkrus kzrus kgrus barus qqrus krcrus nogrus
+# styrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
