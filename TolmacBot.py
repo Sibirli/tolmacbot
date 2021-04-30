@@ -11434,8 +11434,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇹🇲 Türkmençe: Hindistan
 🇺🇿 Oʻzbekcha: Hindiston
 🇰🇿 Qazaqşa: Ündistan
-🇰🇬 Qırğızça: İndiya, Indıstan {archaism}
-🏴 Uyghurche: Hindistan
+🇰🇬 Qırğızça: İndiya, Indıstan {arch.}
+🏴 Uyghurche: Hindistan, Enetkek {arch.}
 🏴 Tatarça:	Hindistan
 🏴 Başqortsa: Hindostan
 🏴 Çovaşla: İndi
@@ -11445,18 +11445,18 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qaraçay-Malqar: İndustan
 🏴 Noğayşa:	İndistan, İndiya
 🏴 Sıbırca:	İntistan
-🏴 Gagauzça: Hindistan, İndiya
+🏴 Gagauzça: Hindistan
 🏴 Saqalí: Îndiye
-🏴 Dulgan-Hakalí: İndiya
+🏴 Dulgan-Hakalí: Îndiye
 🏴 Tıvalap: İndiya
 🏴 Salırça: Hindustan
 🏴 Xakastap: Îndîya
 🏴 Altaylap: İndiya
 🏴 Şor: İndiya
-🏴 Urumça: İndiya
+🏴 Urumça: Hindistan, İndiya
 🏴 Qarayçe: Hindistan
 🏴 Qrımçahça: İndistan
-🏴 Soyot: Enedheg, Îndîya
+🏴 Soyot: Îndîya
 🏴 Tofalap: Îndîya''', reply_markup=markup_menu)
 #country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "индиец" \
@@ -41767,7 +41767,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Qaraqalpaq:	shelpek
 🏴 Qırımtatar:	lavaş
 🏴 Qumuq:	lawaş
-🏴 Alança:	güttü
+🏴 Alança:	çuqama
 🏴 Noğay:	qalaqay
 🏴 Sıbırca:	yoğa, päter
 🏴 Salırça:	simien
@@ -41939,6 +41939,51 @@ Other types of traditional or national sausages are listed below:
 #country muslim
 # RUSRUS??? tkrus kzrus kgrus barus qqrus krcrus nogrus
 # styrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rolling pin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "скалка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "скалка для теста" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oklava" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "merdane" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oklağu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rolling-pin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палка для раскатывания теста" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dough rolling pin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "скалка для раскатывания теста":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	oqlağu (oqlağı, oqlağaç), yoğurğuç
+🇬🇧 English:	rolling pin
+🇷🇺 Русский:	скалка (скалка для теста) [skalka]
+🇹🇷 Türkçe:	oklava, merdane
+🇦🇿 Türkcə:	oxlov
+🇹🇲 Türkmen:	oklaw
+🇺🇿 Oʻzbek:	oʻqlov (oʻqloq)
+🇰🇿 Qazaq:	oqtaw
+🇰🇬 Qırğız:	übölük
+🏴 Uyghur:	noghuch, xalo, sékilek
+🏴 Tatarça:	uqlaw
+🏴 Başqort:	uqlaw
+🏴 Çovaşla:	yötör
+🏴 Qaraqalpaq:	oqlaw
+🏴 Qırımtatar:	oqlav
+🏴 Qumuq:	oqlaw
+🏴 Alança:	jazğıç
+🏴 Noğay:	oqlaw
+🏴 Sıbırca:	uqlaw
+🏴 Salırça:	galçaŋ
+🏴 Gagauz:	oklava
+🏴 Urumça:	oxlov
+🏴 Qarayçe:	oqluv
+🏴 Qırımçah:	ohlov
+🏴 Saqalí:	???
+🏴 Hakalí:	???
+🏴 Tıva:	borbak-ıyaş, duŋkulak-ıyaş, dalgan-öyer
+🏴 Altay:	???
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# RUSRUS???
+# slrcn sahrus dlgrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
