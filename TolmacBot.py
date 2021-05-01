@@ -42009,7 +42009,42 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	Taŋğat
 🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: Tibet''', reply_markup=markup_menu)
 # khakrus shorrus tofrus
-    
+# geo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kalmyk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kalmykian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kalmyki" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kalmuck" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kalmuk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kalmık" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калмык" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калмыкский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калмыцкий" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калмычка":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Kalmyk, Kalmuck
+🇷🇺 Русский:	калмык [kalmyk]
+🇹🇷 Türkçe:	Kalmuk
+🇹🇲 Türkmen:	kalmyk
+🇺🇿 Oʻzbek:	qalmoq
+🇰🇿 Qazaq:	qalmaq
+🇰🇬 Qırğız:	qalmaq
+🏴 Uyghur:	Qalmaq
+🏴 Tatarça:	qalmıq
+🏴 Başqort:	qalmıq
+🏴 Çovaşla:	kalmok
+🏴 Qaraqalpaq:	qalmaq
+🏴 Qırımtatar:	qalmuq
+🏴 Qumuq:	qalmuq
+🏴 Alança:	qalmuq
+🏴 Noğay:	qalmıq
+🏴 Sıbırca:	qalmıq
+🏴 Salırça:	galmax
+🏴 Gagauz:	kalmuk
+🏴 Qarayçe:	qalmuq
+🏴 Altay:	qalmıq
+🇦🇿🏴: kalmık''', reply_markup=markup_menu)
+# nation
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
