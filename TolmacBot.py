@@ -41985,6 +41985,31 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS???
 # slrcn sahrus dlgrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tibet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "thibet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tibetian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тибет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тибетец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тибетка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тибетский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tibbet":
+        bot.send_message(message.chat.id, '''🏴 Bod
+
+🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱅𐰇𐰯𐰇𐱅
+🐺 Old Turkic (bef. XV c.):	Tüpüt (Tübüt, Tübät, Tübbät, Tibät, Töböt), Taŋğut
+🇬🇧 English:	Tibet
+🇷🇺 Русский:	Тибет [Tibet]
+🇲🇳 Mongol: Tövöd
+🇹🇷 Türkçe:	Tibet, Tibbet {Ottoman Turkish}
+🏴 Uyghur:	Tibet (Tüvet), Tangghit
+🏴 Salırça:	Tüvit (Tüyit, Tiut)
+🏴 Saqalí:	Tibiet
+🏴 Tıva:	Tövüt, Tangıt
+🏴 Altay:	Töböt
+🏴 Duha-Soyıt:	Taŋğat
+🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: Tibet''', reply_markup=markup_menu)
+# khakrus shorrus tofrus
+    
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
