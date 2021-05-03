@@ -12742,7 +12742,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "восточные" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "east" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eastern" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "easter" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "doğu" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şark" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şarq" \
@@ -42045,11 +42044,47 @@ Other types of traditional or national sausages are listed below:
 🇦🇿🏴: kalmık''', reply_markup=markup_menu)
 # nation
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "easter" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пасха" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pasxa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paskalya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пасхальный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pashalia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pascha" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paschal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pasha" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "resurrection sunday" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "христово воскресение" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "воскресение христово" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pesah" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "песах" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pesach":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Easter
+🇷🇺 Русский:	Пасха [Paskha]
+🇹🇷 Türkçe:	Paskalya, Kızıl Yumurta {Ottoman Turkish}
+🇦🇿 Türkcə:	Fəsh, Qızıl yumurta
+🇹🇲 Türkmen:	Pasha, Gyzyl ýumurtga
+🏴 Çovaşla:	Monkun (Munkun)
+🏴 Qırımtatar:	Pashalya
+🏴 Qumuq:	Qağal
+🏴 Salırça:	Fuhuo cie
+🏴 Gagauz:	Paskellä
+🏴 Urumça:	Paskalâ, Ğızıl yumurta
+🏴 Qarayçe:	Tımbıl, Pesax
+🏴 Qırımçah:	Pesah
+🏴 Saqalí:	Báska, Kiristiep
+🏴 Hakalí:	Páska, Kırıstuop
+🏴 Xakas:	Kristop
+🇺🇿🇰🇿🇰🇬🏴: Pasxa''', reply_markup=markup_menu)
+# holiday christian orthodox religion
+# RUSRUS??? uzrus kzrus kgrus ugrus ugcn ttrus barus qqrus krcrus nogrus
+# styrus slrcn tyvrus altrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-#tags country cameo geo nation animal person religion islam slavic orthodox muslim
+#tags country cameo geo nation animal person religion islam slavic orthodox muslim holiday
 bot.polling()
