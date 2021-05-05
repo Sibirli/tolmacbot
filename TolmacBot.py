@@ -8261,7 +8261,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Gagauzça: türk
 🏴 Saqalí: tűrk (tűr, türk)
 🏴 Dulgan-Hakalí: türk
-🏴 Tıvalap: I. turk II. türk
+🏴 Tıvalap: türük
 🏴 Salırça: türk
 🏴 Xakastap: I. turk II. türk
 🏴 Altay: türk
@@ -33408,7 +33408,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇬🇧 English:	lotus position 🧘, indian style sitting
 🇷🇺 Русский:	поза лотоса, сидение по-турецки
 🇹🇷 Türkçe:	bağdaş
-🇦🇿 Türkcə:	bardaş, bağdaş (bağdamaş) {dial.}
+🇦🇿 Türkcə:	bağdaş (bardaş)
 🇹🇲 Türkmen:	aýbogdaş
 🇺🇿 Oʻzbek:	bagʻdash, chordana
 🇰🇿 Qazaq:	maldas
@@ -33419,7 +33419,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla:	???
 🏴 Qaraqalpaq:	maldas
 🏴 Qırımtatar:	bağdaş
-🏴 Qumuq:	???
+🏴 Qumuq:	bawdaş
 🏴 Alança: bağdaş
 🏴 Noğay:	maldas
 🏴 Sıbır:	pağdaş
@@ -33436,7 +33436,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	???
 🏴 Soyıt:	???
 🏴 Tofa:	???''', reply_markup=markup_menu)
-#RUSRUS??? barus cvrus kumrus krcrus sahrus dlgrus shorrus sytrus tofrus
+#RUSRUS??? barus cvrus sahrus dlgrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bycycle" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bike" \
@@ -42079,6 +42079,56 @@ Other types of traditional or national sausages are listed below:
 # holiday christian orthodox religion
 # RUSRUS??? uzrus kzrus kgrus ugrus ugcn ttrus barus qqrus krcrus nogrus
 # styrus slrcn tyvrus altrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "türkçe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "turkce" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "türkce" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "по-турецки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "на турецком" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "in turkish" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "in turkish language" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "on turkish" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "in the turkish" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "in the turkish way" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "like turk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "like a turkish" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "like a turk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "like turkish" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "по-турецкий" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "по турецки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "по турецкий":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	türkçä
+🇬🇧 English:	in Turkish language, in the Turkish way, like turk
+🇷🇺 Русский:	по-турецки, на турецком, как турок
+🇹🇷 Türkçe:	türkçe
+🇦🇿 Türkcə:	türkcə
+🇹🇲 Türkmen:	türkçe
+🇺🇿 Oʻzbek:	turkcha
+🇰🇿 Qazaq:	türikşe
+🇰🇬 Qırğız:	türkçö
+🏴 Uyghur:	türkche
+🏴 Tatarça:	törekçä
+🏴 Başqort:	töröksä
+🏴 Çovaşla:	törökle
+🏴 Qaraqalpaq:	túrkshe
+🏴 Qırımtatar:	türkçe
+🏴 Qumuq:	türkçe
+🏴 Alança:	türkça
+🏴 Noğay:	türkşe
+🏴 Sıbırca:	törökcä
+🏴 Salırça:	türkeçi (türkiyçe)
+🏴 Gagauz:	türkçe
+🏴 Urumça:	türkçe
+🏴 Qarayçe:	türkçe
+🏴 Qırımçah:	türkçe
+🏴 Saqalí:	tűrdű (türktű)
+🏴 Hakalí:	türktű
+🏴 Tıva:	türktep
+🏴 Altay:	türktep
+🏴 Xakas:	türktep
+🏴 Şor:	türktep
+🏴 Duha-Soyıt:	türktep
+🏴 Tofa-Qarağas:	türktep''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
