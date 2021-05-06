@@ -42130,6 +42130,45 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	türktep
 🏴 Tofa-Qarağas:	türktep''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "astrakhan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "astrahan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "астрахань" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "астрахан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "астраханский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "астраханское" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hacıtarkan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hacıtarhan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "haşterhan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ejderhan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "astarhan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "astarkhan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "астархан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хаджи-тархан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хаджитархан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аждархан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гинтархань" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цитрахань" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "азторокань":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Astrakhan
+🇷🇺 Русский:	Астрахань [Astrakhan]
+🇹🇷 Türkçe:	Astrahan {<🇷🇺}, Hacıtarkan {<Tatar}, Haşterhan {<🇦🇿}, Ejderhan {???}, Hacıtarhan (حاجى طرخان) {Ottoman Turkish)
+🇦🇿 Türkcə:	Həştərxan, Hacıtərxan {arch.}
+🇹🇲 Türkmen:	Ajerhan
+🇺🇿 Oʻzbek:	Astraxon
+🇰🇿 Qazaq:	Qajıtarxan
+🇰🇬 Qırğız:	Ajıtarxan
+🏴 Uyghur:	Astiraxan
+🏴 Tatarça:	Ästerxan, Xacitarxan
+🏴 Başqort:	Ästerxan
+🏴 Çovaşla:	Actorxan
+🏴 Qırımtatar:	Hacıtarhan
+🏴 Qumuq:	Aştarxan
+🏴 Noğay:	Aştarxan
+🏴 Saqalí:	Astarqán''', reply_markup=markup_menu)
+# geo
+# RUSRUS??? qqrus krcrus
+# styrus slrcn gagrus uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
