@@ -1052,6 +1052,8 @@ Tofalap: burhan''', reply_markup=markup_menu)
 🏴 Qrımçahça: bahatır, batır
 🏴 Soyot: titim kîşî
 🏴 Tofalap: bogatır, mergen''', reply_markup=markup_menu)
+#cameo
+
     elif message.text.lower() == "большой" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "болшой" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "большая" \
@@ -16094,6 +16096,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇹🇷 Türkçe: Bulgaristan, Diyar Bulgar {Ottoman Turkish}
 🇦🇿 Türkcə: Bolqarıstan, Bulğarstan {pre-Soviet literary norm + modern dialects}
 🇹🇲 Türkmençe: Bolgarystan
+🇺🇿 Oʻzbekcha: Bolgariya, Bulgʻoriston
 🏴 Uyghurche: Bulghariye
 🏴 Tatarça: Bolğarstan
 🏴 Başqortsa: Bolğarstan
@@ -16107,9 +16110,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Urumça: Bulğaristan
 🏴 Qarayçe: Bulgariya
 🏴 Qrımçahça: Bulğaristan
-🇺🇿🇰🇿🇰🇬🏴: Bolgariya''', reply_markup=markup_menu)
+🇰🇿🇰🇬🏴: Bolgariya''', reply_markup=markup_menu)
 #country
-# RUSRUS??? uzrus kzrus kgrus qqrus krcrus
+# RUSRUS??? kzrus kgrus qqrus krcrus
 # sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulgarian" \
@@ -42168,6 +42171,59 @@ Other types of traditional or national sausages are listed below:
 # geo
 # RUSRUS??? qqrus krcrus
 # styrus slrcn gagrus uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beijing" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peking" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пекин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hanbalıq" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pekin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бэйцзин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ханбалык" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хан-балык" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rамбалук" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бейпин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cambaluc" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cambuluc" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kanbaluk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khanbaliq" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khanbalik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khanbalig" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пекинский":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Beijing (Peking)
+🇷🇺 Русский:	Пекин [Pekin]
+🇲🇳 Mongol: Beejin, Khanbalig
+🇹🇷 Türkçe:	Pekin, Beijing, Hanbalıq
+🇦🇿 Türkcə:	Pekin, Xanbalıq
+🇹🇲 Türkmen:	Pekin, Hanbalyk
+🇺🇿 Oʻzbek:	Pekin (Beijing, Bajing), Xonbaliq
+🇰🇿 Qazaq:	Beyjiŋ, Xanbalıq
+🇰🇬 Qırğız:	Beejin, Xanbalıq
+🏴 Uyghur:	Béjin (Béyjing), Xanbaliq (Xanbéliq)
+🏴 Tatarça:	Xanbalıq
+🏴 Başqort:	Pekin, Xanbalıq
+🏴 Çovaşla:	Pekin
+🏴 Qaraqalpaq:	Pekin
+🏴 Qırımtatar:	Hanbalıq
+🏴 Qumuq:	Pekin
+🏴 Alança:	Pekin
+🏴 Noğay:	Pekin
+🏴 Sıbırca:	Pekin
+🏴 Salırça:	Beycin (Becin, Peycin)
+🏴 Gagauz:	Pekin
+🏴 Urumça:	Pekin
+🏴 Qarayçe:	Pekin
+🏴 Qırımçah:	Pekin
+🏴 Saqalí:	Bekîn
+🏴 Hakalí:	Pekin
+🏴 Tıva:	Pekin
+🏴 Altay:	Pekin
+🏴 Xakas:	Pekin
+🏴 Şor:	Pekin
+🏴 Duha-Soyıt:	Pekin
+🏴 Tofa-Qarağas:	Pekin''', reply_markup=markup_menu)
+# geo
+#RUSRUS??? cvrus qqrus kumrus krcrus nogrus
+# styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
