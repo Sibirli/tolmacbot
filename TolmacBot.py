@@ -42237,7 +42237,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "granate" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гранатовое" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гранатник":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	nar (nara), dana
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	nar (nara)
 🇬🇧 English:	pomegranate
 🇷🇺 Русский:	гранат [granat]
 🇲🇳 Mongol: anar
@@ -42273,6 +42273,54 @@ Other types of traditional or national sausages are listed below:
 # fruit cameo
 #RUSRUS??? cvrus
 # sahrus dlgrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "челеби" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чалаби" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "челяби" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "челяба" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "челябинск" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чаляба" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chelebi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chalabi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chelyaba" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chelyabinsk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çelebi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çelebî":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Çäläbi
+🇬🇧 English:	Chelebi (Chalabi), Chelyaba, Chelyabinsk
+🇷🇺 Русский:	Челяба, Челябинск, Челеби
+🇹🇷 Türkçe:	Çelebi
+🇦🇿 Türkcə:	Çələbi
+🇹🇲 Türkmen:	Çelebi
+🇺🇿 Oʻzbek:	Chalabiy
+🇰🇿 Qazaq:	Çeläbi
+🇰🇬 Qırğız:	Çelebi
+🏴 Uyghur:	Chelebi
+🏴 Tatarça:	Çiläbe
+🏴 Başqort:	Siläbe
+🏴 Çovaşla:	Çelepi
+🏴 Qaraqalpaq:	???
+🏴 Qırımtatar:	Çelebi
+🏴 Qumuq:	???
+🏴 Alança:	???
+🏴 Noğay:	???
+🏴 Sıbırca:	???
+🏴 Salırça:	???
+🏴 Gagauz:	Çelebi
+🏴 Urumça:	Çelebi
+🏴 Qarayçe:	Çelebi
+🏴 Qırımçah:	Çelebi
+🏴 Saqalí:	???
+🏴 Hakalí:	???
+🏴 Tıva:	???
+🏴 Altay:	???
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# geo
+# RUSRUS??? qqrus kumrus krcrus nogrus
+# styrus slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
