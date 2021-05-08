@@ -42225,11 +42225,60 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS??? cvrus qqrus kumrus krcrus nogrus
 # styrus gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "анар" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pomegranate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гранат" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "granat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гранатовый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "granatum" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pomegranade" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "granate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гранатовое" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гранатник":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	nar (nara), dana
+🇬🇧 English:	pomegranate
+🇷🇺 Русский:	гранат [granat]
+🇲🇳 Mongol: anar
+🇹🇷 Türkçe:	nar
+🇦🇿 Türkcə:	nar
+🇹🇲 Türkmen:	nar
+🇺🇿 Oʻzbek:	anor
+🇰🇿 Qazaq:	anar
+🇰🇬 Qırğız:	anar
+🏴 Uyghur:	anar
+🏴 Tatarça:	anar
+🏴 Başqort:	anar
+🏴 Çovaşla:	granat
+🏴 Qaraqalpaq:	anar
+🏴 Qırımtatar:	nar
+🏴 Qumuq:	nar
+🏴 Alança:	nar
+🏴 Noğay:	nar
+🏴 Sıbırca:	nar
+🏴 Salırça:	anar
+🏴 Gagauz:	nar
+🏴 Urumça:	nar
+🏴 Qarayçe:	nar
+🏴 Qırımçah:	nar
+🏴 Saqalí:	granat
+🏴 Hakalí:	granat
+🏴 Tıva:	anar
+🏴 Altay:	granat
+🏴 Xakas:	granat
+🏴 Şor:	granat
+🏴 Duha-Soyıt:	granat
+🏴 Tofa-Qarağas:	granat''', reply_markup=markup_menu)
+# fruit cameo
+#RUSRUS??? cvrus
+# sahrus dlgrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-#tags country cameo geo nation animal person religion islam slavic orthodox muslim holiday
+#tags country cameo geo nation animal person religion islam slavic orthodox muslim holiday fruit
 bot.polling()
