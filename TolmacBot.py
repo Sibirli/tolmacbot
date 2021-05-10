@@ -40727,7 +40727,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Dolgan:	???
 🏴 Tıvalap:	şaajılakçı, nogaandık
 🏴 Altay:	çubuqçı
-🏴 Xakas:	sımıxçı
+🏴 Xakas:	xatığlaaçı, sımıxçı
 🏴 Şor:	moğatçı, üretçi
 🏴 Soyıt:	???
 🏴 Tofa:	???''', reply_markup=markup_menu)
@@ -42179,10 +42179,11 @@ Other types of traditional or national sausages are listed below:
 🏴 Çovaşla:	Actorxan
 🏴 Qırımtatar:	Hacıtarhan
 🏴 Qumuq:	Aştarxan
+🏴 Alança: Hajıtarxan
 🏴 Noğay:	Aştarxan
 🏴 Saqalí:	Astarqán''', reply_markup=markup_menu)
 # geo
-# RUSRUS??? qqrus krcrus
+# RUSRUS??? qqrus
 # styrus slrcn gagrus uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beijing" \
@@ -42287,6 +42288,52 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS??? cvrus
 # sahrus dlgrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "açar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ключ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ключевой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ключевая" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "key" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "keys" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anahtar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "açkıç" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🗝" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🔑":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	açqıç
+🇬🇧 English:	key 🔑 🗝
+🇷🇺 Русский:	ключ [klyuch]
+🇲🇳 Mongol: tülkhüür
+🇹🇷 Türkçe:	anahtar, açar
+🇦🇿 Türkcə:	açar, haçar {dial.}
+🇹🇲 Türkmen:	açar
+🇺🇿 Oʻzbek:	kalit, ochqich
+🇰🇿 Qazaq:	kilt, aşqış
+🇰🇬 Qırğız:	açqıç, kilit
+🏴 Uyghur:	achquch
+🏴 Tatarça:	açqıç
+🏴 Başqort:	asqıs
+🏴 Çovaşla:	uco, uckoç, coracci
+🏴 Qaraqalpaq:	gilt, ashqısh, ashar
+🏴 Qırımtatar:	anahtar, açqıç
+🏴 Qumuq:	açğıç
+🏴 Alança:	açxıç
+🏴 Noğay:	aşqış
+🏴 Sıbırca:	acqıc
+🏴 Salırça:	kirit
+🏴 Gagauz:	anatar, açar
+🏴 Urumça:	anaxtar, açxıç
+🏴 Qarayçe:	anaxtar, açxıç
+🏴 Qırımçah:	anahtar
+🏴 Saqalí:	tıl
+🏴 Hakalí:	???
+🏴 Tıva:	dülgüür
+🏴 Altay:	tülküür
+🏴 Xakas:	asxıs
+🏴 Şor:	???
+🏴 Duha-Soyıt:	tülhüür
+🏴 Tofa-Qarağas:	hîn''', reply_markup=markup_menu)
+# cameo
+# sahrus dlgrus shorrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "челеби" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чалаби" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "челяби" \
@@ -42334,6 +42381,20 @@ Other types of traditional or national sausages are listed below:
 # geo
 # RUSRUS??? qqrus kumrus krcrus nogrus
 # styrus slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "саратов" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saratov" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "саратовский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saratof" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сарытау" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сарытов":
+        bot.send_message(message.chat.id, '''САРАТОВ / SARATOV
+
+🇰🇿 Qazaq:		Sarıtaw
+🏴 Tatarça:	Sarıtaw
+🏴 Başqort:	Harıtaw
+🏴 Çovaşla:	Sarotu''', reply_markup=markup_menu)
+# geo
 
     else:
         bot.send_message(message.chat.id, hesbisey)
