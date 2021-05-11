@@ -42396,6 +42396,53 @@ Other types of traditional or national sausages are listed below:
 🏴 Çovaşla:	Sarotu''', reply_markup=markup_menu)
 # geo
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jerusalem" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jerusalim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alquds" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "al quds" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "al-quds" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иерусалим" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ерусалем" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ерусалим" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иерусалем" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аль-кудс" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аль кудс" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kudüs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kudus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "el kudüs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "al-kudüs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alkudüs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "йерушалайим" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "йерушалаим" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "уршалим" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "урушалим" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yerushalayim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yerushalaim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeruşalaim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeruşalayim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алькудс":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Jerusalem, al-Quds
+🇷🇺 Русский:	Иерусалим, аль-Кудс
+🇹🇷 Türkçe:	Kudüs
+🇦🇿 Türkcə:	Qüds
+🇺🇿 Oʻzbek:	Quddus
+🇰🇿 Qazaq:	Qudıs
+🇰🇬 Qırğız:	Qudus
+🏴 Uyghur:	Quddus
+🏴 Tatarça:	Qodüs
+🏴 Başqort:	Qotdos
+🏴 Çovaşla:	Mörselin
+🏴 Qaraqalpaq:	Qudıs
+🏴 Qırımtatar:	Qudus
+🏴 Salırça:	Gudus
+🏴 Urumça:	Yud-Şerif
+🏴 Qarayçe:	Yeruşalayım (Yeruşalayim, Yeruşlem, Yerusalim)
+🏴 Qırımçah:	Qudus, Yeruşalayım (Yeruşalaim)
+🇹🇲🏴: ???''', reply_markup=markup_menu)
+# geo
+# RUSRUS??? tkrus kumrus krcrus nogrus
+# styrus gagrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
