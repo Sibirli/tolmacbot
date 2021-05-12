@@ -42407,6 +42407,8 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иерусалем" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аль-кудс" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аль кудс" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кудс" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "quds" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kudüs" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kudus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "el kudüs" \
@@ -42425,6 +42427,7 @@ Other types of traditional or national sausages are listed below:
 🇷🇺 Русский:	Иерусалим, аль-Кудс
 🇹🇷 Türkçe:	Kudüs
 🇦🇿 Türkcə:	Qüds
+🇹🇲 Türkmen: Kudus
 🇺🇿 Oʻzbek:	Quddus
 🇰🇿 Qazaq:	Qudıs
 🇰🇬 Qırğız:	Qudus
@@ -42438,10 +42441,55 @@ Other types of traditional or national sausages are listed below:
 🏴 Urumça:	Yud-Şerif
 🏴 Qarayçe:	Yeruşalayım (Yeruşalayim, Yeruşlem, Yerusalim)
 🏴 Qırımçah:	Qudus, Yeruşalayım (Yeruşalaim)
-🇹🇲🏴: ???''', reply_markup=markup_menu)
+🏴: ???''', reply_markup=markup_menu)
 # geo
-# RUSRUS??? tkrus kumrus krcrus nogrus
+# RUSRUS??? kumrus krcrus nogrus
 # styrus gagrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "people" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peoples" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "public" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "народ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "народная" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "народный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "народное" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "народные" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "halk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "the people" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "people's" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hulk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peopleʻs":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	people, public
+🇷🇺 Русский:	народ, народный
+🇹🇷 Türkçe:	halk
+🇦🇿 Türkcə:	xalq
+🇹🇲 Türkmen:	halk
+🇺🇿 Oʻzbek:	xalq
+🇰🇿 Qazaq:	xalıq
+🇰🇬 Qırğız:	qalq
+🏴 Uyghur:	xelq
+🏴 Tatarça:	xalıq
+🏴 Başqort:	xalıq
+🏴 Çovaşla:	xalox
+🏴 Qaraqalpaq:	xalıq
+🏴 Qırımtatar:	halq
+🏴 Qumuq:	xalq
+🏴 Alança:	xalq
+🏴 Noğay:	xalq
+🏴 Sıbırca:	qalıq
+🏴 Salırça:	xalıx
+🏴 Gagauz:	halk
+🏴 Urumça:	xalx
+🏴 Qarayçe:	xalq
+🏴 Qırımçah:	halq
+🏴 Saqalí:	con
+🏴 Hakalí:	con
+🏴 Tıva:	ulus, çon
+🏴 Altay:	qalıq
+🏴 Xakas:	xalıx, çon
+🏴 Şor:	qalıq, çon
+🏴 Duha-Soyıt:	ulıs, arat-çon
+🏴 Tofa-Qarağas:	ulus''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
