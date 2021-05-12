@@ -8733,7 +8733,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Uyghurche: Qurvan héyt
 🏴 Tatarça: Qorban bäyräme, Qorban ğayıtı
 🏴 Başqortsa: Qorban bayramı
-🏴 Çovaşla: Xorpan payranö
+🏴 Çovaşla: Korman peyremö
 🏴 Qaraqalpaqsha: Qurban bayramı
 🏴 Qırımtatarca: Qurban bayramı
 🏴 Qumuqça: Qurban bayram
@@ -42490,6 +42490,101 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	qalıq, çon
 🏴 Duha-Soyıt:	ulıs, arat-çon
 🏴 Tofa-Qarağas:	ulus''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ramazan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ramadan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рамазан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рамадан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oruç ayı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oruç ay" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ramzan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рамзан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ramadhan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ramathan":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Ramaðán
+🇬🇧 English:	Ramadan
+🇷🇺 Русский:	Рамадан [Ramadan] {influence of English}, Рамазан [Ramazan] {influence of Turkic}
+🇹🇷 Türkçe:	Ramazan
+🇦🇿 Türkcə:	Ramazan
+🇹🇲 Türkmen:	Remezan
+🇺🇿 Oʻzbek:	Ramazon
+🇰🇿 Qazaq:	Ramazan
+🇰🇬 Qırğız:	Iramazan (Ramazan)
+🏴 Uyghur:	Ramizan
+🏴 Tatarça:	Ramazan
+🏴 Başqort:	Ramaðan
+🏴 Çovaşla:	Ramasan
+🏴 Qaraqalpaq:	Ramazan
+🏴 Qırımtatar:	Ramazan
+🏴 Qumuq:	Ramazan
+🏴 Alança:	Ramazan
+🏴 Noğay:	Ramazan
+🏴 Sıbırca:	Ramazan
+🏴 Salırça:	Ramzan (Ramazan)
+🏴 Gagauz:	Ramazan
+🏴 Urumça:	Ramazan
+🏴 Qarayçe:	Ramazan (Iramazan)
+🏴 Qırımçah:	Ramazan
+🏴 Saqalí:	Ramazán
+🏴 Hakalí:	Ramazán
+🏴 Tıva:	Aas xoray ay
+🏴 Altay:	Ramadan/Ramazan
+🏴 Xakas:	Ramadan/Ramazan
+🏴 Şor:	Ramadan/Ramazan
+🏴 Duha-Soyıt:	Ramadan/Ramazan
+🏴 Tofa-Qarağas:	Ramadan/Ramazan''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ramazan bayramı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ramazan bayram" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рамазан-байрам" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рамазан байрам" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şeker bayramı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şeker bayram" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ид аль фитр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ид аль-фитр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ид-аль-фитр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идальфитр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ид-аль фитр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fitr bayramı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "id al-fitr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "id-al-fitr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eid-al-fitr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aid el-fitr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eid al-fitr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ураза байрам" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sweet eid" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ураза-байрам":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Eid al-Fitr, Sweet Eid
+🇷🇺 Русский:	Ураза-байрам [Uraza-bayram]
+🇹🇷 Türkçe:	Ramazan Bayramı, Şeker Bayramı
+🇦🇿 Türkcə:	Ramazan bayramı
+🇹🇲 Türkmen:	Oraza baýramy
+🇺🇿 Oʻzbek:	Roʻza hayiti
+🇰🇿 Qazaq:	Oraza ayt
+🇰🇬 Qırğız:	Orozo ayt
+🏴 Uyghur:	Roza héyt
+🏴 Tatarça:	Uraza bäyräme
+🏴 Başqort:	Uraða bayramı
+🏴 Çovaşla:	Urasa peyremö
+🏴 Qaraqalpaq:	Ramazan bayramı
+🏴 Qırımtatar:	Oraza bayram
+🏴 Qumuq:	Oraza bayram
+🏴 Alança:	Oraza bayram
+🏴 Noğay:	Oraza bayram
+🏴 Sıbırca:	Urasa payramı
+🏴 Salırça:	Rozi ayit
+🏴 Gagauz:	Ramazan bayramı
+🏴 Urumça:	Ramazan bayramı
+🏴 Qarayçe:	Iramazan bayramı
+🏴 Qırımçah:	Oraza bayram
+🏴 Saqalí:	Urazá-bayram
+🏴 Hakalí:	Urazá-bayram
+🏴 Tıva:	Uraza bayramı
+🏴 Altay:	Uraza-bayram
+🏴 Xakas:	Uraza-bayram
+🏴 Şor:	Uraza-bayram
+🏴 Duha-Soyıt:	Uraza-bayram
+🏴 Tofa-Qarağas:	Uraza-bayram''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
