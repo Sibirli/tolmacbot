@@ -25286,6 +25286,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burunduk" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бурундук" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çizgili sincap" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eutamias sibiricus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orman gelengisi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tamias" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eutamias" \
@@ -25686,6 +25687,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "samuru" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lutrinae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lutra" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lutra lutra" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lutridae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "порешня" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lutra vulgaris":
@@ -25694,7 +25696,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇬🇧 English: otter 🦦
 🇷🇺 Русский:	выдра
 🇹🇷 Türkçe: su samuru
-🇦🇿 Türkcə: çay samuru
+🇦🇿 Türkcə: su samuru (susamuru), çay samuru
 🇹🇲 Türkmençe: gunduz
 🇺🇿 Oʻzbekcha: qunduz, qama {arch.}
 🇰🇿 Qazaqşa:	kämşat, qama {arch.}, suw samır {arch.}
@@ -25706,7 +25708,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qaraqalpaqsha: qundız
 🏴 Qırımtatarca: suv samırı
 🏴 Qumuqça:	xunduz
-🏴 Alança: qunduz
+🏴 Alança: suwsamır, qunduz
 🏴 Noğayşa:	qundız
 🏴 Sıbırca:	qama, qamnaw
 🏴 Salırça:	qama
@@ -25812,6 +25814,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	albığa
 🏴 Soyot: aldı, çaracañ
 🏴 Tofalap: aldı, çaracañ''', reply_markup=markup_menu)
+#slrcn
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐷" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐖" \
@@ -42585,6 +42588,47 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	Uraza-bayram
 🏴 Duha-Soyıt:	Uraza-bayram
 🏴 Tofa-Qarağas:	Uraza-bayram''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "musk deer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabarga" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кабарга" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "misk geyiği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mişk geyiği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "müşk geyiği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moschus moschiferus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сибирская кабарга" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moschidae" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "siberian musk deer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moschus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кобарга" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "musk-deer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "muskdeer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "miskgeyiği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мускусный олень" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кабарговый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кабарги":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	musk deer
+🇷🇺 Русский:	кабарга [kabarga]
+🇹🇷 Türkçe:	misk geyiği
+🇦🇿 Türkcə:	müşk maralı
+🇹🇲 Türkmen:	kelek keýik
+🇺🇿 Oʻzbek:	mushk kiyigi
+🇰🇿 Qazaq:	qudır, toqal buğı
+🇰🇬 Qırğız:	sıyaquş, toorğu
+🏴 Uyghur:	ipar kéyiki
+🏴 Noğay:	toqal buğı
+🏴 Salırça:	yohor (yohor kiyih)
+🏴 Saqalí:	bűçén
+*🏴 Sakha & Dolgan dialects: bîçén, abağa (tayaq abağata), dádağas (dagdaras), mekçiki (meççiki, meççike, mekçike, mekçiké, mekçikén, meççikét, mökçökö), meneq
+🏴 Tıva:	toorgu
+🏴 Altay:	tabırğı (toorğı)
+*🏴 Altai dialects: taabarğı, taabarı, toborğı, tobırğı, toorı, tooro
+🏴 Xakas:	tabırğa
+🏴 Şor:	tabırğı
+🏴 Duha-Soyıt:	toorhı, şıbar (şıvar)
+🏴 Tofa-Qarağas:	toorğu (toorğu, toorğı), şubaraş (şıbaraş, şıvaraş, şavaraş)''', reply_markup=markup_menu)
+# RUSRUS??? ttrus barus cvrus qqrus crhrus kumrus krcrus
+# styrus gagrus uumrus kdrrus jctrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
