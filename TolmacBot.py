@@ -13644,7 +13644,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: aq-ayas
 🏴 Şor: qaan tegri
 🏴 Urumça: avlax
-🏴 Karajče: avlak (avlach)
+🏴 Qarayçe: avlax
 🏴 Qrımçahça: feza
 🏴 Soyot: sansır
 🏴 Tofalap: kosmos''', reply_markup=markup_menu)
@@ -13738,11 +13738,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: belgiyets
 🏴 Şor: belgiyets
 🏴 Urumça: belgiyalı
-🏴 Karajče: belgijaly
+🏴 Qarayçe: belgiyalı
 🏴 Qrımçahça: belçikalı
 🏴 Soyot: belgi, belgîyets
 🏴 Tofalap: belgîyets''', reply_markup=markup_menu)
-
+#nation
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "москва" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moscow" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moskow" \
@@ -14131,7 +14131,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Saqalí: slavyan
 🏴 Dulgan-Hakalí: slavyan
 🏴 Tıvalap: slavyan
-🏴 Salırça:	slav, sılafu
+🏴 Salırça:	sılafu
 🏴 Xakastap: slavyan
 🏴 Altaylap: slavyan
 🏴 Şor: slavyan
@@ -14621,12 +14621,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Saqalí: çey
 🏴 Dulgan-Hakalí: çáy
 🏴 Tıvalap: şay
-🏴 Salırça: çá (çay, çäy)
+🏴 Salırça: çā (çay, çäy)
 🏴 Xakastap: çey
 🏴 Altaylap: çay
 🏴 Şor: şay
 🏴 Urumça: çay
-🏴 Karajče: čaj
+🏴 Qarayçe: çay
 🏴 Qrımçahça: çay
 🏴 Soyot: şäy (şêy)
 🏴 Tofalap: şey (şêy)''', reply_markup=markup_menu)
@@ -14675,7 +14675,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: uyğur
 🏴 Şor: uyğur
 🏴 Urumça: uyğur
-🏴 Karajče: ujgur
+🏴 Qarayçe: uygur
 🏴 Qrımçahça: uygur
 🏴 Soyot: tuha (tufa)
 🏴 Tofalap: uyğur''', reply_markup=markup_menu)
@@ -15171,7 +15171,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: tiştegen et
 🏴 Şor: şişteen et
 🏴 Urumça: şaşlık
-🏴 Karajče: šišlik (siślik)
+🏴 Qarayçe: şişlik
 🏴 Qrımçahça: şaşlıq
 🏴 Soyot: şîştään et
 🏴 Tofalap: şîştään et''', reply_markup=markup_menu)
@@ -15475,7 +15475,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: bir sanaa-şüültelü, tüñey sanaalu
 🏴 Şor: pir sağıstığ
 🏴 Urumça: fikirdaş
-🏴 Karajče: fikirdaš
+🏴 Qarayçe: fikirdaş
 🏴 Qrımçahça: fıkırdaş
 🏴 Soyot: ???
 🏴 Tofalap: ???''', reply_markup=markup_menu)
@@ -16881,9 +16881,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "осенний" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "осенняя" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "осеннее" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "осенние" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "son-bahar" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е').replace(' ', '') == "sonbahar":
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sonbahar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "son-bahar":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): küz
 🇬🇧 English: autumn, fall
 🇷🇺 Русский: осень
@@ -16912,7 +16911,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: küs
 🏴 Şor: küskü
 🏴 Urumça: güz (küz)
-🏴 Karajče: kiuź
+🏴 Qarayçe: küz
 🏴 Qrımçahça: küz
 🏴 Soyot: küs
 🏴 Tofalap: küs''', reply_markup=markup_menu)
@@ -16961,7 +16960,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: ulu (uulu, uluu)
 🏴 Şor: ???
 🏴 Urumça: ajder (ajdar)
-🏴 Karajče: ačdaha (adžydahyr)
+🏴 Qarayçe: açdaha (acıdahır)
 🏴 Qrımçahça: ajderha
 🏴 Soyot: luu
 🏴 Tofalap: ???''', reply_markup=markup_menu)
@@ -17332,7 +17331,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: tümen
 🏴 Gagauzça: tümen
 🏴 Urumça: tümen
-🏴 Karajče: tiumiań
+🏴 Qarayçe: tümän
 🏴 Qrımçahça: tümen
 🏴 Saqalí: tümen
 🏴 Dulgan-Hakalí: tümen
@@ -17583,7 +17582,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: samsax (samzax)
 🏴 Gagauzça: sarmısak (sarımsak)
 🏴 Urumça: sarımsax
-🏴 Karajče: sarymsak (sarymsach)
+🏴 Qarayçe: sarımsax
 🏴 Qırımçahça: samırsax (sarımsax)
 🏴 Saqalí: sarımsaq
 🏴 Dulgan-Hakalí: çoçunák
@@ -17722,7 +17721,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: dimur (temur)
 🏴 Gagauzça: demir
 🏴 Urumça: demir (temir)
-🏴 Karajče: demir (tiemir)
+🏴 Qarayçe: demir (temir)
 🏴 Qırımçahça: demır
 🏴 Saqalí: timir
 🏴 Dulgan-Hakalí: timir
@@ -17818,7 +17817,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: süt
 🏴 Gagauzça: süt
 🏴 Urumça: süt
-🏴 Karajče: siut (sit)
+🏴 Qarayçe: süt
 🏴 Qırımçahça: süt
 🏴 Saqalí: űt
 🏴 Dulgan-Hakalí: emiy, űt
@@ -17961,7 +17960,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: yizi
 🏴 Gagauzça: sabun
 🏴 Urumça: sabon (sabun)
-🏴 Karajče: sabun (sapun)
+🏴 Qarayçe: sabun (sapun)
 🏴 Qırımçahça: sabun
 🏴 Saqalí: míla, qayaq {arch.}
 🏴 Dulgan-Hakalí: ???
@@ -18395,7 +18394,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: yaş
 🏴 Gagauzça: yaş
 🏴 Urumça: yaş
-🏴 Karajče: jaš
+🏴 Qarayçe: yaş
 🏴 Qırımçahça: yaş
 🏴 Saqalí: sás
 🏴 Dulgan-Hakalí: hás
@@ -24386,7 +24385,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "департация":
         bot.send_message(message.chat.id, '''🇬🇧 English: deportation, exile, eviction
 🇷🇺 Русский: депортация, изгнание, ссылка
-🇹🇷 Türkçe: sürgün, tehcir
+🇹🇷 Türkçe: sürgün, zorunlu göç
 🇦🇿 Türkcə: sürgün
 🇹🇲 Türkmençe: sürgün
 🇺🇿 Oʻzbekcha: surgun
@@ -24403,18 +24402,18 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Noğayşa:	sürgin
 🏴 Sıbırca:	sörgön
 🏴 Salırça:	sürgün
-🏴 Gagauzça: sürgünlük
-🏴 Urumça:	sürgünlük
+🏴 Gagauzça: sürgün
+🏴 Urumça:	sürgün
 🏴 Qarayçe:	sürgünlük
-🏴 Qırımçahça: sürgunlık
+🏴 Qırımçahça: surgun
 🏴 Saqalí: űrű
 🏴 Dulgan-Hakalí: batí
-🏴 Tıvalap: şölülge
+🏴 Tıvalap: sürgin
 🏴 Xakastap: sürgen, ızığ
 🏴 Altaylap: aydu, sürüp salar
 🏴 Şor:	ızığ
 🏴 Soyot: sürgün
-🏴 Tofalap: sürgin''', reply_markup=markup_menu)
+🏴 Tofalap: sürgün''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦘" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kangaroo" \
@@ -25728,7 +25727,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qunduz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beaver" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "выдра" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобр" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kunduz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобры" \
@@ -26018,6 +26016,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	yoj
 🏴 Soyot: arbağar çümä
 🏴 Tofalap: arcağar çüme''', reply_markup=markup_menu)
+# sahrus dlgrus shorrrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ostrich" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "camel-bird" \
@@ -26165,6 +26164,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	vulkan
 🏴 Soyot: vulkan
 🏴 Tofalap: vulkan''', reply_markup=markup_menu)
+# sahrus dlgrus kjhrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "train" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚋" \
@@ -42626,7 +42626,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Xakas:	tabırğa
 🏴 Şor:	tabırğı
 🏴 Duha-Soyıt:	toorhı, şıbar (şıvar)
-🏴 Tofa-Qarağas:	toorğu (toorğu, toorğı), şubaraş (şıbaraş, şıvaraş, şavaraş)''', reply_markup=markup_menu)
+🏴 Tofa-Qarağas:	toorğu (toorğo, toorğı), şubaraş (şıbaraş, şıvaraş, şavaraş)''', reply_markup=markup_menu)
 # RUSRUS??? ttrus barus cvrus qqrus crhrus kumrus krcrus
 # styrus gagrus uumrus kdrrus jctrus
 
