@@ -21036,11 +21036,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Uyghurche: Qirim (Qrim)
 🏴 Tatarça:	Qırım
 🏴 Başqortsa: Qırım
-🏴 Çovaşla:	Korom (Krım)
+🏴 Çovaşla:	Korom
 🏴 Qaraqalpaqsha: Qırım
 🏴 Qırımtatarca: Qırım
 🏴 Qumuqça:	Qırım
-🏴 Alança: Qrım
+🏴 Alança: Qırım (Qrım)
 🏴 Noğayşa:	Qırım
 🏴 Sıbırca:	Qırım
 🏴 Salırça:	Qırım (Kelimu)
@@ -34161,7 +34161,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇦🇿 Türkcə:	beyin
 🇹🇲 Türkmen:	beýin
 🇺🇿 Oʻzbek:	miya
-🇰🇿 Qazaq:	miy
+🇰🇿 Qazaq:	mıy
 🇰🇬 Qırğız:	mee
 🏴 Uyghur:	ménge
 🏴 Tatarça:	mi
@@ -42182,7 +42182,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Çovaşla:	Actorxan
 🏴 Qırımtatar:	Hacıtarhan
 🏴 Qumuq:	Aştarxan
-🏴 Alança: Hajıtarxan
+🏴 Alança: Astarxan
 🏴 Noğay:	Aştarxan
 🏴 Saqalí:	Astarqán''', reply_markup=markup_menu)
 # geo
@@ -42629,6 +42629,55 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	toorğu (toorğo, toorğı), şubaraş (şıbaraş, şıvaraş, şavaraş)''', reply_markup=markup_menu)
 # RUSRUS??? ttrus barus cvrus qqrus crhrus kumrus krcrus
 # styrus gagrus uumrus kdrrus jctrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mesih" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "masih" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "messiah" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "christ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "messiya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мессия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "христос" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "христ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "помазанник" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "помазанный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "масих" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "месия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "месих" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mesiah":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	I. Misih II. Kristus
+🇬🇧 English:	I. Messiah II. Christ
+🇷🇺 Русский:	I. Мессия [Messiya] II. Христос [Khristos]
+🇹🇷 Türkçe:	Mesih
+🇦🇿 Türkcə:	Məsih
+🇹🇲 Türkmen:	Mesih
+🇺🇿 Oʻzbek:	Masih
+🇰🇿 Qazaq:	Mäsih
+🇰🇬 Qırğız:	Maşayaq
+🏴 Uyghur:	Mesih
+🏴 Tatarça:	Mäsih
+🏴 Başqort:	Mäsih
+🏴 Çovaşla:	Xristos (Xristus)
+🏴 Qaraqalpaq:	Másih
+🏴 Qırımtatar:	Mesih
+🏴 Qumuq:	Masih
+🏴 Alança:	Masih
+🏴 Noğay:	Masih
+🏴 Sıbırca:	Mäsih
+🏴 Salırça:	Mesih
+🏴 Gagauz:	Hristos
+🏴 Urumça:	Xurtoz
+🏴 Qarayçe:	Masiyax
+🏴 Qırımçah:	Maşiyah
+🏴 Saqalí:	Kiristies
+🏴 Hakalí:	Xristos
+🏴 Tıva:	Xristos
+🏴 Altay:	Xristos
+🏴 Xakas:	Xristos
+🏴 Şor:	Xristos
+🏴 Duha-Soyıt:	Xristos
+🏴 Tofa-Qarağas:	Xristos''', reply_markup=markup_menu)
+#RUSRUS??? cvrus
+# gagrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
