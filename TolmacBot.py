@@ -42679,6 +42679,47 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS??? cvrus
 # gagrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cold" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soğuk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "холодный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "холод" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "холодно" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "холодная" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "холодное" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chilly":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	soğuq (soğıq)
+🇬🇧 English:	cold
+🇷🇺 Русский:	холодный (-ая, -ое), холодно, холод
+🇹🇷 Türkçe:	soğuk
+🇦🇿 Türkcə:	soyuq, sȫx (soox, soux, sovux) {dial}
+🇹🇲 Türkmen:	sowuk
+🇺🇿 Oʻzbek:	sovuq
+🇰🇿 Qazaq:	suwıq
+🇰🇬 Qırğız:	suuq
+🏴 Uyghur:	soghuq
+🏴 Tatarça:	suwıq
+🏴 Başqort:	hıwıq
+🏴 Çovaşla:	sivö
+🏴 Qaraqalpaq:	suwıq
+🏴 Qırımtatar:	suvuq
+🏴 Qumuq:	suwuq
+🏴 Alança:	suwuq
+🏴 Noğay:	suwıq
+🏴 Sıbırca:	suwıq
+🏴 Salırça:	sox
+🏴 Gagauz:	suuk
+🏴 Urumça:	soyux (suux, sovux, suvux)
+🏴 Qarayçe:	suvux (suvuq)
+🏴 Qırımçah:	suvuq (suvuh)
+🏴 Saqalí:	mülűn, tımní
+🏴 Hakalí:	tımní
+🏴 Tıva:	sook
+🏴 Altay:	sooq
+🏴 Xakas:	soox
+🏴 Şor:	sooq
+🏴 Duha-Soyıt:	sooq
+🏴 Tofa-Qarağas:	sooq''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
