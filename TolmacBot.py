@@ -42764,6 +42764,53 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	kirbik
 🏴 Tofa-Qarağas:	kirbik''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "serbia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "serbiya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sırbıstan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sırbistan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sirbistan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сербия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇷🇸" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "srbija" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ср̀бија" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "србиja":
+        bot.send_message(message.chat.id, '''🇷🇸 Srbija
+
+🇬🇧 English:	Serbia
+🇷🇺 Русский:	Сербия [Serbiya]
+🇹🇷 Türkçe:	Sırbistan
+🇦🇿 Türkcə:	Serbiya, Serbstan
+🏴 Tatarça:	Sırbıstan
+🏴 Çovaşla:	Serbi
+🏴 Qırımtatar:	Sırbistan
+🏴 Gagauz:	Sırbıstan
+🏴 Qırımçah:	Sırbistan
+🇹🇲🇺🇿🇰🇿🇰🇬🏴: Serbiya ?''', reply_markup=markup_menu)
+# country orthodox
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "serb" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sirp" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sirb" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "srpska" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sırb" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sırp" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "serbian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "серб" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сербский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сербка":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Serb, Serbian
+🇷🇺 Русский:	серб [serb]
+🇹🇷 Türkçe:	Sırp, Sırb {Ottoman T.}
+🏴 Tatarça:	sırb
+🏴 Qırımtatar:	sırb
+🏴 Qumuq:	sırb
+🏴 Gagauz:	sırp (sırb), morgoç
+🏴 Qırımçah:	sırb
+🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: serb''', reply_markup=markup_menu)
+# nation
+#RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn barus cvrus qqrus krcrus nogrus
+# styrus slrcn uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
