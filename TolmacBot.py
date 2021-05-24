@@ -42811,6 +42811,95 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn barus cvrus qqrus krcrus nogrus
 # styrus slrcn uumrus kdrrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colony" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колония" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "koloniya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sömürge" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "müstemleke" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mustemleke" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "koloni" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonial" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колониальный":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	colony
+🇷🇺 Русский:	колония [koloniya]
+🇹🇷 Türkçe:	sömürge, müstemleke, koloni {in a good way}
+🇦🇿 Türkcə:	müstəmləkə
+🇹🇲 Türkmen:	mellek
+🇺🇿 Oʻzbek:	mustamlaka
+🇰🇿 Qazaq:	otar
+🇰🇬 Qırğız:	otor
+🏴 Uyghur:	müstemlike	
+🏴 Başqort:	möstämläkä
+🏴 Çovaşla:	koloni
+🏴 Qırımtatar:	müstemleke
+🏴 Qumuq:	mustamlaka
+🏴 Salırça:	cimin
+🏴 Qarayçe:	oçarlıq
+🏴: koloniya''', reply_markup=markup_menu)
+#RUSRUS??? ttrus cvrus qqrus krcrus nogrus
+# styrus slrcn gagrus uumrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonist" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колонист" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kolonist" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sömürgeci" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "müstemlekeci" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mustemlekeci" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колонистка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колонизатор" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonialist" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "coloniser" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonizer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonisator" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonizator":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	colonist
+🇷🇺 Русский:	колонист [kolonist]
+🇹🇷 Türkçe:	sömürgeci, kolonist {in a good way}
+🇦🇿 Türkcə:	müstəmləkəçi
+🇹🇲 Türkmen:	mellekçi
+🇺🇿 Oʻzbek:	mustamlakachi
+🇰🇿 Qazaq:	otarlawşı, otarşıl
+🇰🇬 Qırğız:	otorçul
+🏴 Uyghur:	mustemlikichi
+🏴 Başqort:	möstämläkäse
+🏴 Qırımtatar:	müstemlekeci
+🏴 Qumuq:	mustamlakaçi
+🏴 Salırça:	cimin kişi
+🏴 Qarayçe:	oçarlavçu
+🏴: kolonist''', reply_markup=markup_menu)
+#RUSRUS??? ttrus cvrus qqrus krcrus nogrus
+# styrus slrcn gagrus uumrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonialism" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колониализм" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kolonializm" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sömürgecilik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "müstemlekecilik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mustemlekecilik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kolonicilik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kolonyalizm" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колонизаторство" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonism":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	colonialism
+🇷🇺 Русский:	колониализм [kolonializm]
+🇹🇷 Türkçe:	sömürgecilik, müstemlekecilik, kolonicilik {in a good way}, kolonyalizm {in a good way}
+🇦🇿 Türkcə:	müstəmləkəçilik
+🇹🇲 Türkmen:	mellekçilik
+🇺🇿 Oʻzbek:	mustamlakachilik
+🇰🇿 Qazaq:	otarlaw, otarşıldıq
+🇰🇬 Qırğız:	otorçulduq, otorçuluq
+🏴 Uyghur:	mustemlikichilik
+🏴 Başqort:	möstämläkäselek
+🏴 Çovaşla:	kolonileni
+🏴 Qırımtatar:	müstemlekecilik
+🏴 Qumuq:	mustamlakaçilik
+🏴 Salırça:	cimin cuyi
+🏴 Qarayçe:	oçarlav
+🏴: kolonializm''', reply_markup=markup_menu)
+#RUSRUS??? ttrus cvrus qqrus krcrus nogrus
+# styrus slrcn gagrus uumrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
