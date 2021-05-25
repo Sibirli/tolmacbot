@@ -42900,6 +42900,87 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS??? ttrus cvrus qqrus krcrus nogrus
 # styrus slrcn gagrus uumrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to fall" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fall!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "go down" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "get down" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "come down" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "collapse!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "descend" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to go down" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "go down!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "get down!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "come down!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to collapse" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to descend" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to get down" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to come down" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fall down" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fall down!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to fall down" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "спускаться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "опускаться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "падать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "спуститься" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "снижаться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "понижаться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "спускайся" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "опуститься" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "падай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "спустись" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "снизиться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "понизиться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "падай!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "спускайся!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "слезай!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сойти" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сойди!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сойди" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "слезай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "понижайся" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "понижайся" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "düş!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "düşmek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yıkıl" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yıkıl!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yıkılmak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "in!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "inmek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рухнуть" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рухни":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tüş! yıqıl! en!
+🇬🇧 English:	fall! go down! collapse! descend!
+🇷🇺 Русский:	падай! спускайся! слезай! понижайся! рухни! сойди!
+🇹🇷 Türkçe:	düş! yıkıl! in!
+🇦🇿 Türkcə:	düş, yıxıl, en
+🇹🇲 Türkmen:	düş, ýykyl, in
+🇺🇿 Oʻzbek:	qula, tush, yiqil, in
+🇰🇿 Qazaq:	qula, tüs, jığıl
+🇰🇬 Qırğız:	qula, tüş, jığıl
+🏴 Uyghur:	chüsh, yiqil
+🏴 Tatarça:	töş, qola, yığıl
+🏴 Başqort:	töş, qola, yığıl
+🏴 Çovaşla:	tün, takon, ük
+🏴 Qaraqalpaq:	qula, tús, jıǵıl
+🏴 Qırımtatar:	tüş, yıqıl, en
+🏴 Qumuq:	tüş, yığıl, en
+🏴 Alança:	tüş, jığıl, en
+🏴 Noğay:	tüs, qula, yığıl
+🏴 Sıbırca:	töş, yığıl
+🏴 Salırça:	çiş, şankula, yıxıl, en
+🏴 Gagauz:	düş, yıkıl, en
+🏴 Urumça:	tüş, yıxıl, en
+🏴 Qarayçe:	tüş, yıqıl, en
+🏴 Qırımçah:	çüş, yıhıl, en
+🏴 Saqalí:	tüs, suul
+🏴 Hakalí:	tüs
+🏴 Tıva:	düş, kudula
+🏴 Altay:	tüş, cığıl
+🏴 Xakas:	tüs, çığıl, în
+🏴 Şor:	tüş, çığıl, en
+🏴 Duha-Soyıt:	tüş, cuul, en
+🏴 Tofa-Qarağas:	tüş, çuul, en''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
