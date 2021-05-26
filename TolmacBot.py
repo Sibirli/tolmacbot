@@ -42981,6 +42981,59 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	tüş, cuul, en
 🏴 Tofa-Qarağas:	tüş, çuul, en''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инжир" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инджир" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fig" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "incir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "injir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "indjir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "encir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фига" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инжирный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инжировое" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фиговое" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фиговый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "смоква" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "figs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ficus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фикус" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "смоковница":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	incir, açır {fig fruit}
+🇬🇧 English:	fig
+🇷🇺 Русский:	инжир [injir], фига [figa]
+🇹🇷 Türkçe:	incir
+🇦🇿 Türkcə:	əncir, incil (əncil, incir) {dial.}
+🇹🇲 Türkmen:	injir
+🇺🇿 Oʻzbek:	anjir
+🇰🇿 Qazaq:	injir
+🇰🇬 Qırğız:	anjir (anjır)
+🏴 Uyghur:	enjür
+🏴 Tatarça:	incir
+🏴 Başqort:	injir
+🏴 Çovaşla:	injır *
+🏴 Qaraqalpaq:	ánjir
+🏴 Qırımtatar:	incir
+🏴 Qumuq:	injil (injir)
+🏴 Alança:	injir
+🏴 Noğay:	ınjır (injir)
+🏴 Sıbırca:	injir
+🏴 Salırça:	vuhuaguy
+🏴 Gagauz:	incir
+🏴 Urumça:	incir
+🏴 Qarayçe:	incir
+🏴 Qırımçah:	incir
+🏴 Saqalí:	injır *
+🏴 Hakalí:	injır *
+🏴 Tıva:	injır *, cecekbes cemnix (çeçekbes çemnig)
+🏴 Altay:	injır *
+🏴 Xakas:	injır *
+🏴 Şor:	injır *
+🏴 Duha-Soyıt:	injır *
+🏴 Tofa-Qarağas:	injır *
+* < Russian ИНЖИР < Turkish İNCİR < Persian انجیر''', reply_markup=markup_menu)
+# RUSRUS??? cvrus
+# slrcn sahrus dlgrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
