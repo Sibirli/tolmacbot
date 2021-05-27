@@ -43034,6 +43034,63 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? cvrus
 # slrcn sahrus dlgrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "about" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "approximately" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "approximate" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "roughly" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nearly" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "примерно" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "приблизительно" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "где-то" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "о" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "об" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "обо" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "про" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "насчет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ориентировочно" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yaklaşık" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tahminî" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tahmini" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tahminen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hakkında" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ilgili" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "takriben" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "regarding" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "относительно" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "по поводу" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hakta":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	I. about {adj.}, approximately, roughly II. about ~ {prep.}
+🇷🇺 Русский:	I. примерно, приблизительно, где-то, около II. о (об, обо) ~, про ~
+🇹🇷 Türkçe:	I. yaklaşık ~, tahminen ~ II. ~ hakkında, ~ ile ilgili
+🇦🇿 Türkcə:	I. təxminən ~, hardasa ~ II. haqqında, barədə
+🇹🇲 Türkmen:	I. takmınan, çen bilen II. hakynda, barada
+🇺🇿 Oʻzbek:	I. taxminan, deyarli, chamasi II. haqida, to‘g‘risida
+🇰🇿 Qazaq:	I. şaqtı, şamamen II. tuwralı
+🇰🇬 Qırğız:	I. çamaluu, çaması menen II. tuuraluu, jönündö
+🏴 Uyghur:	I. texminen II. heqqide
+🏴 Tatarça:	I. yaqınça, çama belän II. turında, haqında
+🏴 Başqort:	I. samahı, sama menän II. turala, haqında
+🏴 Çovaşla:	I. çuxlavlo, yaxon II. cinçen, pirki, -şon/şön
+🏴 Qaraqalpaq:	I. shamalı, shama menen II. tuwralı, haqqında
+🏴 Qırımtatar:	I. qararnen, tahminen II. aqqında
+🏴 Qumuq:	I. göz hisapda II. haqında
+🏴 Alança:	I. çaqlı II. üsünden, haqından
+🏴 Noğay:	I. köz qarar II. aqında, tuwra
+🏴 Sıbırca:	I. qarap toroşqa, cama II. turlı
+🏴 Salırça:	I. bapumu II. -dan/-den
+🏴 Gagauz:	I. nerdesä, yaklaşıkça, göz karara II. için
+🏴 Urumça:	I. bir ~ ğadar II. üçün
+🏴 Qarayçe:	I. ~ tekli II. üçün
+🏴 Qırımçah:	I. ~ qararlarında II. içun
+🏴 Saqalí:	I. keriŋe II. tuhunan
+🏴 Hakalí:	I. -ça/-çe II. tuhunan
+🏴 Tıva:	I. çijeglep alırga II. dugayında
+🏴 Altay:	I. cuuq, kire II. kereginde
+🏴 Xakas:	I. xıza II. -daŋar/-deŋer/-taŋar/teŋer
+🏴 Şor:	I. piree II. aara
+🏴 Duha-Soyıt:	I. hîrä II. tuhayı
+🏴 Tofa-Qarağas:	I. hîre II. ıŋğay''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
