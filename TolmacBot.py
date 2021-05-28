@@ -5345,7 +5345,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇷🇺 Русский: республика [respublika]
 🇹🇷 Türkçe: сumhuriyet
 🇦🇿 Türkcə: cümhuriyyət, respublika
-🇹🇲 Türkmençe: jemhuriýet (jemhuryýet), respublika
+🇹🇲 Türkmençe: jemhuryýet, respublika
 🇺🇿 Oʻzbekcha: jumhuriyat, respublika
 🇰🇿 Qazaqşa: respublika
 🇰🇬 Qırğızça: jumuriyat, respublika
@@ -5356,22 +5356,24 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qaraqalpaqsha: respublika
 🏴 Qırımtatarca: cumhuriyet
 🏴 Qumuqça: cumhuriyat, respublika
-🏴 Qaraçay-Malqar:	respublika
+🏴 Qaraçay-Malqar: jumhuriyat, respublika
 🏴 Noğayşa: yümeriyet, respublika
 🏴 Sıbırca: jömhüriät, respublika
 🏴 Gagauzça: cumhuriyet, respublika
-🏴 Saqalí: öröspűbülüke (respublika)
-🏴 Dulğan-Hakalıı: ???
-🏴 Tıvalap: respublika
-🏴 Salırça: cumhuriyet
-🏴 Xakastap: ???
-🏴 Altaylap: ???
-🏴 Şor: ???
+🏴 Salırça: cumhuriyet, gungxego (gunxuoguo)
 🏴 Urumça: cumhuriyet
-🏴 Karajče: džumhurijet, respublika
+🏴 Qarayçe: cumhuriyet, respublika
 🏴 Qrımçahça: cumhuriyet
+🏴 Saqalí: öröspűbülüke (respublika)
+🏴 Dulğan-Hakalıı: respublika
+🏴 Tıvalap: respublika
+🏴 Xakastap: respublika
+🏴 Altaylap: respublika
+🏴 Şor: respublika
 🏴 Soyot: respublîk
-🏴 Tofalap: respublîk	''', reply_markup=markup_menu)
+🏴 Tofalap: respublîk''', reply_markup=markup_menu)
+#RUSRUS??? kzrus cvrus qqrus
+# slrcn sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "horn" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рог" \
@@ -43071,7 +43073,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Tatarça:	I. yaqınça, çama belän II. turında, haqında
 🏴 Başqort:	I. samahı, sama menän II. turala, haqında
 🏴 Çovaşla:	I. çuxlavlo, yaxon II. cinçen, pirki, -şon/şön
-🏴 Qaraqalpaq:	I. shamalı, shama menen II. tuwralı, haqqında
+🏴 Qaraqalpaq:	I. shama menen, derlik, shaması II. haqqında, tuwralı, jóninde
 🏴 Qırımtatar:	I. qararnen, tahminen II. aqqında
 🏴 Qumuq:	I. göz hisapda II. haqında
 🏴 Alança:	I. çaqlı II. üsünden, haqından
@@ -43111,7 +43113,7 @@ Other types of traditional or national sausages are listed below:
 🇹🇷 Türkçe:	kutup porsuğu, ayı porsuğu, obur, volverin
 🇦🇿 Türkcə:	sibir porsuğu
 🇹🇲 Türkmen:	sibir torsugy (sibir porsygy)
-🇺🇿 Oʻzbek:	???
+🇺🇿 Oʻzbek:	suvsar
 🇰🇿 Qazaq:	qunıw
 🇰🇬 Qırğız:	???
 🏴 Uyghur:	böre borsuq
@@ -43137,7 +43139,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	qunu, qunuçaq
 🏴 Duha-Soyıt:	cekpä (çekpä)
 🏴 Tofa-Qarağas:	çekpe''', reply_markup=markup_menu)
-# RUSRUS??? uzrus kgrus qqrus kumrus krcrus nogrus
+# RUSRUS??? kgrus qqrus kumrus krcrus nogrus
 # slrcn gagrus uumrus kdrrus jctrus
 
     else:
