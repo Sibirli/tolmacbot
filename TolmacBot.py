@@ -43091,6 +43091,55 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	I. hîrä II. tuhayı
 🏴 Tofa-Qarağas:	I. hîre II. ıŋğay''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wolverine" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wolverene" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "росомаха" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "россомаха" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kutup porsuğu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ayı porsuğu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "volverin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sibir porsuğu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gulo gulo" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gulo" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gulo gulo gulo" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "carcajou" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "glutton" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "quickhatch" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "росомаший":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	wolverine (wolverene)
+🇷🇺 Русский:	росомаха (россомаха)
+🇹🇷 Türkçe:	kutup porsuğu, ayı porsuğu, obur, volverin
+🇦🇿 Türkcə:	sibir porsuğu
+🇹🇲 Türkmen:	sibir torsugy (sibir porsygy)
+🇺🇿 Oʻzbek:	???
+🇰🇿 Qazaq:	qunıw
+🇰🇬 Qırğız:	???
+🏴 Uyghur:	böre borsuq
+🏴 Tatarça:	qonı
+🏴 Başqort:	qono
+🏴 Çovaşla:	mon sosar
+🏴 Qaraqalpaq:	???
+🏴 Qırımtatar:	ceyeken
+🏴 Qumuq:	???
+🏴 Alança:	???
+🏴 Noğay:	???
+🏴 Sıbırca:	qono (qonı, qunı)
+🏴 Salırça:	???
+🏴 Gagauz:	???
+🏴 Urumça:	???
+🏴 Qarayçe:	???
+🏴 Qırımçah:	???
+🏴 Saqalí:	siegen
+🏴 Hakalí:	hiegen
+🏴 Tıva:	çekpe
+🏴 Altay:	ceeken (yeeken)
+🏴 Xakas:	xunu
+🏴 Şor:	qunu, qunuçaq
+🏴 Duha-Soyıt:	cekpä (çekpä)
+🏴 Tofa-Qarağas:	çekpe''', reply_markup=markup_menu)
+# RUSRUS??? uzrus kgrus qqrus kumrus krcrus nogrus
+# slrcn gagrus uumrus kdrrus jctrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
