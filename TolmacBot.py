@@ -43115,7 +43115,7 @@ Other types of traditional or national sausages are listed below:
 🇹🇲 Türkmen:	sibir torsugy (sibir porsygy)
 🇺🇿 Oʻzbek:	suvsar
 🇰🇿 Qazaq:	qunıw
-🇰🇬 Qırğız:	???
+🇰🇬 Qırğız:	qunu
 🏴 Uyghur:	böre borsuq
 🏴 Tatarça:	qonı
 🏴 Başqort:	qono
@@ -43139,8 +43139,64 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	qunu, qunuçaq
 🏴 Duha-Soyıt:	cekpä (çekpä)
 🏴 Tofa-Qarağas:	çekpe''', reply_markup=markup_menu)
-# RUSRUS??? kgrus qqrus kumrus krcrus nogrus
+# RUSRUS??? qqrus kumrus krcrus nogrus
 # slrcn gagrus uumrus kdrrus jctrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anxiety" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sorrow" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "affliction" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sadness" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "concern" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "беспокойство" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тревожность" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "печаль" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "забота" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "горесть" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "огорчение" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "скорбь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тоска" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "уныние" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грусть" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "волнение" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "переживание" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaygı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kayğı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "endişe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qayğı":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qadğu (qaðğu, qayğu, qayğı)
+🇬🇧 English:	anxiety, sorrow, affliction, sadness, concern
+🇷🇺 Русский:	беспокойство, тревожность, печаль, забота, горесть, огорчение, скорбь, тоска, уныние, грусть, волнение, переживание
+🇹🇷 Türkçe:	kaygı
+🇦🇿 Türkcə:	qayğı
+🇹🇲 Türkmen:	gaýgy
+🇺🇿 Oссzbek:	qaygʻu
+🇰🇿 Qazaq:	qayğı
+🇰🇬 Qırğız:	qayğı
+🏴 Uyghur:	qayghu
+🏴 Tatarça:	qayğı
+🏴 Başqort:	qayğı
+🏴 Çovaşla:	xuyxo
+🏴 Qaraqalpaq:	qayǵı
+🏴 Qırımtatar:	qayğı
+🏴 Qumuq:	qayğı
+🏴 Alança:	qayğı
+🏴 Noğay:	qayğı
+🏴 Sıbırca:	qayğı
+🏴 Salırça:	???
+🏴 Gagauz:	???
+🏴 Urumça:	qayğı
+🏴 Qarayçe:	qayğı
+🏴 Qırımçah:	qayğı
+🏴 Saqalí:	kıhalğa
+🏴 Hakalí:	kıhalga
+🏴 Tıva:	kudaral
+🏴 Altay:	qayğı
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# RUSRUS???
+# slrcn gagrus tyvrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
