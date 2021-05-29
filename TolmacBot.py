@@ -43169,7 +43169,7 @@ Other types of traditional or national sausages are listed below:
 🇹🇷 Türkçe:	kaygı
 🇦🇿 Türkcə:	qayğı
 🇹🇲 Türkmen:	gaýgy
-🇺🇿 Oссzbek:	qaygʻu
+🇺🇿 Oʻzbek:	qaygʻu
 🇰🇿 Qazaq:	qayğı
 🇰🇬 Qırğız:	qayğı
 🏴 Uyghur:	qayghu
@@ -43197,6 +43197,34 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
 # RUSRUS???
 # slrcn gagrus tyvrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hucho" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taimen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hucho taimen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "таймень" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taimeni" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "таймень" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "таймени" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taymeni" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taymeny" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "таймин":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	hucho, taimen
+🇷🇺 Русский:	таймень [taymen]
+🏴 Uyghur:	chong qizil béliq
+🏴 Tatarça:	qızılbalıq, bil
+🏴 Başqort:	qıðıl balıq
+🏴 Sıbırca:	pil
+🏴 Saqalí:	bil, bil balık
+🏴 Hakalí:	bil, bil balık
+🏴 Tıva:	bel
+🏴 Altay:	bel (pel), bel balıq (pel balıq)
+🏴 Xakas:	pîl
+🏴 Şor:	pel
+🏴 Duha-Soyıt:	bel
+🏴 Tofa-Qarağas:	bel
+🇹🇷🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: ???''', reply_markup=markup_menu)
+# RUSRUS??? azrus tkrus uzrus kzrus kgrus cvrus qqrus crhrus kumrus krcrus nogrus
+# slrcn gagrus uumrus kdrrus jctrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
