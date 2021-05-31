@@ -43269,6 +43269,50 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? tkrus kumrus krcrus
 # uumrus kdrrus jctrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fly" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "the housefly" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "housefly" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "house fly" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "муха" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "musca" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "musca domestica" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sinek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karasinek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara sinek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "diptera":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	çibin
+🇬🇧 English:	fly, housefly
+🇷🇺 Русский:	муха
+🇹🇷 Türkçe:	sinek, karasinek
+🇦🇿 Türkcə:	çibin, milçək {Diptera}, çivin {dial.}
+🇹🇲 Türkmen:	siňek, çybyn {Culicoidea}
+🇺🇿 Oʻzbek:	pashsha, chivin {+ Culicoidea}
+🇰🇿 Qazaq:	şıbın
+🇰🇬 Qırğız:	çımın
+🏴 Uyghur:	chivin
+🏴 Tatarça:	çeben
+🏴 Başqort:	seben
+🏴 Çovaşla:	şona
+🏴 Qaraqalpaq:	shıbın
+🏴 Qırımtatar:	çibin
+🏴 Qumuq:	cibin
+🏴 Alança:	çibin
+🏴 Noğay:	şıbın
+🏴 Sıbırca:	cergäy, ceben {Culicoidea}
+🏴 Salırça:	cüyin
+🏴 Gagauz:	sinek
+🏴 Urumça:	çibin
+🏴 Qarayçe:	çibin, sinäk
+🏴 Qırımçah:	çıbın, sınek
+🏴 Saqalí:	saqsırğa
+🏴 Hakalí:	haksırga
+🏴 Tıva:	seek, kara-seek
+🏴 Altay:	çımın (çımıl)
+🏴 Xakas:	seek, xara seek
+🏴 Şor:	padat
+🏴 Duha-Soyıt:	sîîk, qara-sîîk
+🏴 Tofa-Qarağas:	seek, qaraseek''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
