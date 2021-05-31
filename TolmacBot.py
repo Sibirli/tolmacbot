@@ -43226,6 +43226,49 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? azrus tkrus uzrus kzrus kgrus cvrus qqrus crhrus kumrus krcrus nogrus
 # slrcn gagrus uumrus kdrrus jctrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marmot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сурок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сурки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dağsıçanı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dağ sıçanı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тарбаган" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tarbagan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marmota" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bobak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marmots" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "байбак":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	suğur (soğur)
+🇬🇧 English:	marmot
+🇷🇺 Русский:	сурок, сурки
+🇲🇳 Mongol: tarvaga
+🇹🇷 Türkçe:	marmot, dağ sıçanı
+🇦🇿 Türkcə:	marmot, dağ siçanı
+🇺🇿 Oʻzbek:	sugʻur
+🇰🇿 Qazaq:	suwır
+🇰🇬 Qırğız:	suur
+🏴 Uyghur:	sughur
+🏴 Tatarça:	suwır
+🏴 Başqort:	huwır
+🏴 Çovaşla:	sovor
+🏴 Qaraqalpaq:	balpaq tıshqan
+🏴 Qırımtatar:	dağ sıçanı
+🏴 Noğay:	tarbağan, suwır
+🏴 Sıbırca:	söyör
+🏴 Salırça:	suxur
+🏴 Gagauz:	daa sıçanı
+🏴 Saqalí:	tárbağan
+🏴 Hakalí:	tárbagan
+🏴 Tıva:	tarbagan
+🏴 Altay:	tarbağan
+🏴 Xakas:	tarbağan
+🏴 Şor:	tarbağan
+🏴 Duha-Soyıt:	tarvağan (tarbağan)
+🏴 Tofa-Qarağas:	tarbağan
+🇹🇲🏴: ???''', reply_markup=markup_menu)
+# animal cameo
+# RUSRUS??? tkrus kumrus krcrus
+# uumrus kdrrus jctrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
