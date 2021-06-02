@@ -43223,6 +43223,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	bel
 🏴 Tofa-Qarağas:	bel
 🇹🇷🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: ???''', reply_markup=markup_menu)
+# animal fish
 # RUSRUS??? azrus tkrus uzrus kzrus kgrus cvrus qqrus crhrus kumrus krcrus nogrus
 # slrcn gagrus uumrus kdrrus jctrus
 
@@ -43312,6 +43313,44 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	padat
 🏴 Duha-Soyıt:	sîîk, qara-sîîk
 🏴 Tofa-Qarağas:	seek, qaraseek''', reply_markup=markup_menu)
+# insect
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "налим" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nalim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burbot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bubbot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mariah" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "freshwater cod" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "freshwater ling" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rockling" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatlısu gelinciği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatlı su gelinciği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lotidae" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lota" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lota lota":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	burbot (bubbot), mariah, freshwater cod, freshwater ling, rockling
+🇷🇺 Русский:	налим [nalim]
+🇹🇷 Türkçe:	tatlısu gelinciği
+🇦🇿 Türkcə:	yayın balığı
+🇺🇿 Oʻzbek:	yelimbaliq
+🇰🇿 Qazaq:	qurtqa, laqa
+🏴 Tatarça:	şambı
+🏴 Başqort:	şambı
+🏴 Çovaşla:	şampa
+🏴 Qırımtatar:	tatlısu balığı
+🏴 Sıbırca:	qurtı
+🏴 Saqalí:	sıalıhar
+🏴 Hakalí:	hıalahar, hieŋán
+🏴 Tıva:	mezil
+🏴 Altay:	qortı
+🏴 Xakas:	xortı, mîndir
+🏴 Şor:	qortu
+🏴 Duha-Soyıt:	besil
+🏴 Tofa-Qarağas:	besil
+🇹🇲🇰🇬🏴: ???''', reply_markup=markup_menu)
+# animal fish
+# RUSRUS??? tkrus kgrus ugrus qqrus kumrus krcrus nogrus
+#  slrcn gagrus uumrus kdrrus jctrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
@@ -43319,5 +43358,5 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-#tags country cameo geo nation animal person religion islam slavic orthodox muslim holiday fruit
+#tags country cameo geo nation animal person religion islam slavic orthodox muslim holiday fruit insect
 bot.polling()
