@@ -43332,8 +43332,9 @@ Other types of traditional or national sausages are listed below:
 🇷🇺 Русский:	налим [nalim]
 🇹🇷 Türkçe:	tatlısu gelinciği
 🇦🇿 Türkcə:	yayın balığı
+🇹🇲 Türkmen: ýaýyn
 🇺🇿 Oʻzbek:	yelimbaliq
-🇰🇿 Qazaq:	qurtqa, laqa
+🇰🇿 Qazaq:	qurtqa
 🏴 Tatarça:	şambı
 🏴 Başqort:	şambı
 🏴 Çovaşla:	şampa
@@ -43347,10 +43348,44 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	qortu
 🏴 Duha-Soyıt:	besil
 🏴 Tofa-Qarağas:	besil
-🇹🇲🇰🇬🏴: ???''', reply_markup=markup_menu)
+🇰🇬🏴: ???''', reply_markup=markup_menu)
 # animal fish
-# RUSRUS??? tkrus kgrus ugrus qqrus kumrus krcrus nogrus
+# RUSRUS??? kgrus ugrus qqrus kumrus krcrus nogrus
 #  slrcn gagrus uumrus kdrrus jctrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "thymallus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "thymallus thymallus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "grayling" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gray ling" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хариус" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "harjus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "harius" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gölge balığı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "thymallus arcticus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gölgebalığı":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	thymallus, grayling
+🇷🇺 Русский:	хариус [kharius]
+🇹🇷 Türkçe:	gölge balığı
+🇦🇿 Türkcə:	kölgə balığı
+🇰🇿 Qazaq:	qarawız
+🏴 Uyghur:	ala palaq béliq, ala qanat béliq
+🏴 Tatarça:	bärde
+🏴 Başqort:	bärðe
+🏴 Çovaşla:	küteme
+🏴 Sıbırca:	quŋırla (quŋğırala)
+🏴 Gagauz:	gölgäbalıı
+🏴 Saqalí:	carğá
+🏴 Hakalí:	cargá
+🏴 Tıva:	kadırgı
+🏴 Altay:	çaraan
+🏴 Xakas:	xoora
+🏴 Şor:	qoora
+🏴 Duha-Soyıt:	qadırhı
+🏴 Tofa-Qarağas:	qadırğı
+🇹🇲🇺🇿🇰🇬🏴: ???''', reply_markup=markup_menu)
+# animal fish
+# RUSRUS??? tkrus uzrus kgrus qqrus crhrus kumrus krcrus nogrus
+# slrcn uumrus kdrrus jctrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
