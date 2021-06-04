@@ -43387,6 +43387,55 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? tkrus uzrus kgrus qqrus crhrus kumrus krcrus nogrus
 # slrcn uumrus kdrrus jctrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sirke" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nit" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vine gar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vinegar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uksus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "уксус" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "уксусный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оцет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "яйцо вши" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bit yumurtası" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "louse egg":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	sirkä
+🇬🇧 English:	I. nit II. vinegar
+🇷🇺 Русский:	I. гнида II. уксус [uksus]
+🇭🇺 Magyar: I. serke II. ecet
+🇲🇳 Mongol: I. sirke II. tsuu
+🇹🇷 Türkçe:	sirke
+🇦🇿 Türkcə:	sirkə
+🇹🇲 Türkmen:	sirke
+🇺🇿 Oʻzbek:	sirka
+🇰🇿 Qazaq:	sirke
+🇰🇬 Qırğız:	sirke
+🏴 Uyghur:	sirke
+🏴 Tatarça:	serkä
+🏴 Başqort:	herkä
+🏴 Çovaşla:	I. şorka II. xörxülenternö erex
+🏴 Qaraqalpaq:	sirke
+🏴 Qırımtatar:	sirke
+🏴 Qumuq:	sirke
+🏴 Alança:	sirke
+🏴 Noğay:	sirke
+🏴 Sıbırca:	serkä
+🏴 Salırça:	sirğe
+🏴 Gagauz:	sirkä
+🏴 Urumça:	sirke
+🏴 Qarayçe:	sirkä
+🏴 Qırımçah:	sırke
+🏴 Saqalí:	I. bıt sáğa II. uksús
+🏴 Hakalí:	I. bıt hága II. uksús
+🏴 Tıva:	I. sirge II. uksus
+🏴 Altay:	I. sirke II. uksus
+🏴 Xakas:	I. sirge II. uksus
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	I. sîrhe II. ???''', reply_markup=markup_menu)
+#cameo
+# RUSRUS???
+# sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
