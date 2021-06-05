@@ -43429,12 +43429,145 @@ Other types of traditional or national sausages are listed below:
 🏴 Tıva:	I. sirge II. uksus
 🏴 Altay:	I. sirke II. uksus
 🏴 Xakas:	I. sirge II. uksus
-🏴 Şor:	???
+🏴 Şor:	I. sirge II. uksus
 🏴 Duha-Soyıt:	???
 🏴 Tofa-Qarağas:	I. sîrhe II. ???''', reply_markup=markup_menu)
 #cameo
 # RUSRUS???
 # sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hawk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ястреб" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "atmaca" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "atmaca kuşu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "atmaca kuş" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çakır kuşu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çakırkuşu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şahin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тетеревятник" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ястреб-тетеревятник" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "accipitrinae" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "accipiter" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "goshawk":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qırğuy
+🇬🇧 English:	hawk
+🇷🇺 Русский:	ястреб
+🇹🇷 Türkçe:	atmaca, çakır kuşu, şahin
+🇦🇿 Türkcə:	qırğı, şahin {+ kestrel, falcon}
+🇹🇲 Türkmen:	gyrgy
+🇺🇿 Oʻzbek:	qirg'iy
+🇰🇿 Qazaq:	qırğıy, qarşığa {goshawk}
+🇰🇬 Qırğız:	qırğıy, qarçığa {goshawk}
+🏴 Uyghur:	qirghiy
+🏴 Tatarça:	qarçığa
+🏴 Başqort:	qarsığa
+🏴 Çovaşla:	xurçoka
+🏴 Qaraqalpaq:	qırǵıy, qarshıǵa
+🏴 Qırımtatar:	qırğıy
+🏴 Qumuq:	qırğıy, qarçığa {+ kestrel, falcon}
+🏴 Alança:	qartjığa
+🏴 Noğay:	qarşığa
+🏴 Sıbırca:	qarcığa
+🏴 Salırça:	seci quş, biya quş, alaci
+🏴 Gagauz:	atmaca, alaca kuş
+🏴 Urumça:	xırğıy
+🏴 Qarayçe:	qırğıy
+🏴 Qırımçah:	qırğıy
+🏴 Saqalí:	kírt, qardáççı
+🏴 Hakalí:	kírt
+🏴 Tıva:	xartıga (kartdıga)
+🏴 Altay:	qarçağa
+🏴 Xakas:	xartığa
+🏴 Şor:	qartığa
+🏴 Duha-Soyıt:	hartığa
+🏴 Tofa-Qarağas:	hartığa''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black hawk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черный ястреб" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara atmaca" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara atmaca kuşu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara atmaca kuş" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara çakır kuşu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara çakırkuşu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara şahin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black accipiter" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black goshawk":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qara qırğuy
+🇬🇧 English:	black hawk
+🇷🇺 Русский:	чёрный ястреб
+🇹🇷 Türkçe:	kara şahin
+🇦🇿 Türkcə:	qara şahin, qara qırğı
+🇹🇲 Türkmen:	gara gyrgy
+🇺🇿 Oʻzbek:	qora qirg'iy
+🇰🇿 Qazaq:	qara suŋqar
+🇰🇬 Qırğız:	qara qarçığa
+🏴 Uyghur:	qara qirghiy
+🏴 Tatarça:	qara qarçığa
+🏴 Başqort:	qara qarsığa
+🏴 Çovaşla:	xura xurçoka
+🏴 Qaraqalpaq:	qara qırǵıy
+🏴 Qırımtatar:	qara qırğıy
+🏴 Qumuq:	qara qırğıy
+🏴 Alança:	qara qartjığa
+🏴 Noğay:	qara qarşığa
+🏴 Sıbırca:	qara qarcığa
+🏴 Salırça:	qara alaci
+🏴 Gagauz:	kara atmaca
+🏴 Urumça:	xara xırğıy
+🏴 Qarayçe:	qara qırğıy
+🏴 Qırımçah:	qara qırğıy
+🏴 Saqalí:	qara kírt
+🏴 Hakalí:	kara kírt
+🏴 Tıva:	kara xartıga
+🏴 Altay:	qara qarçağa
+🏴 Xakas:	xara xartığa
+🏴 Şor:	qara qartığa
+🏴 Duha-Soyıt:	qara hartığa
+🏴 Tofa-Qarağas:	qara hartığa''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black hawks" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черные ястребы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черные ястреба" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara atmacalar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara atmaca kuşları" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara atmaca kuşlar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara çakır kuşları" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara çakırkuşları" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara şahinler" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black accipiters" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black goshawks":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qara qırğuylar
+🇬🇧 English:	black hawks
+🇷🇺 Русский:	чёрные ястребы
+🇹🇷 Türkçe:	kara şahinler
+🇦🇿 Türkcə:	qara şahinlər
+🇹🇲 Türkmen:	gara gyrgylar
+🇺🇿 Oʻzbek:	qora qirg'iylar
+🇰🇿 Qazaq:	qara suŋqarlar
+🇰🇬 Qırğız:	qara qarçığalar
+🏴 Uyghur:	qara qirghiylar
+🏴 Tatarça:	qara qarçığalar
+🏴 Başqort:	qara qarsığalar
+🏴 Çovaşla:	xura xurçokasem
+🏴 Qaraqalpaq:	qara qırǵıylar
+🏴 Qırımtatar:	qara qırğıylar
+🏴 Qumuq:	qara qırğıylar
+🏴 Alança:	qara qartjığala
+🏴 Noğay:	qara qarşığalar
+🏴 Sıbırca:	qara qarcığalar
+🏴 Salırça:	qara alacilar
+🏴 Gagauz:	kara atmacalar
+🏴 Urumça:	xara xırğıylar
+🏴 Qarayçe:	qara qırğıylar
+🏴 Qırımçah:	qara qırğıylar
+🏴 Saqalí:	qara kírttar
+🏴 Hakalí:	kara kírttar
+🏴 Tıva:	kara xartıgalar
+🏴 Altay:	qara qarçağalar
+🏴 Xakas:	xara xartığalar
+🏴 Şor:	qara qartığalar
+🏴 Duha-Soyıt:	qara hartığalar
+🏴 Tofa-Qarağas:	qara hartığalar''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
