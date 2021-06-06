@@ -23117,7 +23117,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Noğayşa:	teñiz talawşısı
 🏴 Sıbırca:	tiñges talawcısı
 🏴 Salırça:	deñiz oğrısı
-🏴 Gagauzça: korsan
+🏴 Gagauzça: deniz haydudu, korsan
 🏴 Urumça: pirat
 🏴 Qarayçe: pirat
 🏴 Qırımçahça: korsan
@@ -23125,10 +23125,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Dulgan-Hakalí: pirat
 🏴 Tıvalap:	dalay üptekçizi
 🏴 Xakastap: pîrat
-🏴 Altaylap: pirat
+🏴 Altaylap: talaydıŋ tonoqçılı
 🏴 Şor:	pirat
 🏴 Soyot: pîrat
 🏴 Tofalap: pîrat''', reply_markup=markup_menu)
+# uumrus kdrrus sahrus dlgrus kjhrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сaterpillar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐛" \
