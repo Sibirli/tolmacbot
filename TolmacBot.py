@@ -43570,6 +43570,58 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	qara hartığalar
 🏴 Tofa-Qarağas:	qara hartığalar''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mustela" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "weasel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ferret" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mink" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мустела" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ласка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хорек" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "норка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ласки и хорьки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ласка и хорек" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фретка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хорь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gelincik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bayağı gelincik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dağgelinciği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dağ gelinciği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vizon":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	küzün, gelincük
+🇬🇧 English:	mustela (weasel, ferret, mink)
+🇷🇺 Русский:	mustela (ласка, хорёк, норка)
+🇹🇷 Türkçe:	gelincik (bayağı gelincik, dağgelinciği, vizon)
+🇦🇿 Türkcə:	gəlincik
+🇹🇲 Türkmen:	gözen
+🇺🇿 Oʻzbek:	kuzan
+🇰🇿 Qazaq:	küzen
+🇰🇬 Qırğız:	küzön
+🏴 Uyghur:	küzen
+🏴 Tatarça:	közän
+🏴 Başqort:	köðän
+🏴 Çovaşla:	posara
+🏴 Qaraqalpaq:	gúzen
+🏴 Qırımtatar:	kelinçek
+🏴 Qumuq:	gözen
+🏴 Alança:	ağaz
+🏴 Noğay:	küzen
+🏴 Sıbırca:	kösän
+🏴 Salırça:	???
+🏴 Gagauz:	gelincik
+🏴 Urumça:	kelinçek
+🏴 Qarayçe:	gelinçik
+🏴 Qırımçah:	kelinçek
+🏴 Saqalí:	muŋur
+🏴 Hakalí:	???
+🏴 Tıva:	solaŋgı
+🏴 Altay:	küzen
+🏴 Xakas:	küzen
+🏴 Şor:	toqanas
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	soğur-as''', reply_markup=markup_menu)
+# RUSRUS??? 
+# slrcn dlgrus sytrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
