@@ -16935,7 +16935,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "evreğen" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зилант" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зилент":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): yel bükä, loŋ (luu, lú)
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): yel bükä, sazağan, loŋ (luu, lú)
 🇬🇧 English: dragon 🐲🐉
 🇷🇺 Русский: дракон [drakon]
 🇹🇷 Türkçe: ejderha
@@ -16943,7 +16943,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇹🇲 Türkmençe: aždarha
 🇺🇿 Oʻzbekcha: ajdaho (ajdarho, ajdar)
 🇰🇿 Qazaqşa: aydahar (ajdaha)
-🇰🇬 Qırğızça: ajıdaar
+🇰🇬 Qırğızça: ajıdaar, ulu
 🏴 Uyghurche: ejdiha (hejdiha, ejdar)
 🏴 Tatarça: ajdaha, läw
 🏴 Başqortsa: ajdaha
@@ -43342,7 +43342,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Qırımtatar:	tatlısu balığı
 🏴 Sıbırca:	qurtı
 🏴 Saqalí:	sıalıhar
-🏴 Hakalí:	hıalahar, hieŋán
+🏴 Hakalí:	hıalahar, hieŋán (haŋán)
 🏴 Tıva:	mezil
 🏴 Altay:	qortı
 🏴 Xakas:	xortı, mîndir
@@ -43621,6 +43621,48 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	soğur-as''', reply_markup=markup_menu)
 # RUSRUS??? 
 # slrcn dlgrus sytrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "table" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "masa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stol" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стол" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "desk":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tergi (tirki), şire (şira), täwsi {little}, işküm {royal}, tamğalıq {table of the Khan}
+🇬🇧 English:	table; desk
+🇷🇺 Русский:	стол [stol]
+🇭🇺 Magyar: asztal
+🇲🇳 Mongol: shiree
+🇹🇷 Türkçe:	masa
+🇦🇿 Türkcə:	masa
+🇹🇲 Türkmen:	stol (istol, ustal, ustol), eşkim {traditional, royal}
+🇺🇿 Oʻzbek:	stol, xontaxta {traditional, royal}
+🇰🇿 Qazaq:	üstel
+🇰🇬 Qırğız:	üstöl
+🏴 Uyghur:	joza, shiree
+🏴 Tatarça:	östäl
+🏴 Başqort:	öþtäl
+🏴 Çovaşla:	sötel
+🏴 Qaraqalpaq:	stol
+🏴 Qırımtatar:	masa
+🏴 Qumuq:	stol, tepsi {traditional}
+🏴 Alança:	stol, tepsi {traditional}
+🏴 Noğay:	stöl, sıpıra {traditional}, işkim {traditional, royal}
+🏴 Sıbırca:	östäl
+🏴 Salırça:	şira, goco
+🏴 Gagauz:	masa
+🏴 Urumça:	trapeza
+🏴 Qarayçe:	tirki
+🏴 Qırımçah:	ustol
+🏴 Saqalí:	ostuol
+🏴 Hakalí:	ostól
+🏴 Tıva:	şiree
+🏴 Altay:	stol (ostol, ustal, istel)
+🏴 Xakas:	stol
+🏴 Şor:	tergi
+🏴 Duha-Soyıt:	şîrää
+🏴 Tofa-Qarağas:	nostool''', reply_markup=markup_menu)
+# RUSRUS??? qqrus
+# uumrus jctrus sahrus dlgrus altrus khakrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
