@@ -43627,7 +43627,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stol" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стол" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "desk":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tergi (tirki), şire (şira), täwsi {little}, işküm {royal}, tamğalıq {table of the Khan}
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tergi (tirki), şirä, tävsi {little}, işküm {royal}, tamğalıq {table of the Khan}
 🇬🇧 English:	table; desk
 🇷🇺 Русский:	стол [stol]
 🇭🇺 Magyar: asztal
@@ -43661,8 +43661,54 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	tergi
 🏴 Duha-Soyıt:	şîrää
 🏴 Tofa-Qarağas:	nostool''', reply_markup=markup_menu)
+# cameo furniture
 # RUSRUS??? qqrus
 # uumrus jctrus sahrus dlgrus altrus khakrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "scotland" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шотландия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shotlandiya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏴󠁧󠁢󠁳󠁣󠁴󠁿" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iskoçya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iskoçiya":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁳󠁣󠁴󠁿 Alba
+
+🇬🇧 English:	Scotland 
+🇷🇺 Русский:	Шотландия [Shotlandiya]
+🇹🇷 Türkçe:	İskoçya
+🇦🇿 Türkcə:	Şotlandiya {North Az.T.} İskatlənd {South Az.T.}
+🇹🇲 Türkmen:	Şotlandiýa
+🇺🇿 Oʻzbek:	Shotlandiya, Shotlon (شتلان) {arch.}
+🏴 Uyghur:	Shotlandiy
+🏴 Çovaşla:	Şotlandi
+🏴 Qırımtatar:	İskoçiya
+🏴 Alança:	Şotland
+🏴 Salırça:	Şugılan
+🏴 Gagauz:	İskoçiya
+🏴 Urumça:	İskoçiya
+🏴 Qarayçe:	İskoçiya
+🏴 Qırımçah:	İskoçiya
+🇰🇿🇰🇬🏴: Şotlandiya''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "scot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шотландец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "scottish" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shotland" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "󠁧󠁢󠁳󠁣󠁴шотландка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iskoç" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шотландский":
+        bot.send_message(message.chat.id, '''🏴🇬🇧 English:	Scottish
+🇷🇺 Русский:	шотландец, шотландский
+🇹🇷 Türkçe:	İskoç
+🇦🇿 Türkcə:	şotland {North Az.T.} iskatlənd {South Az.T.}
+🇺🇿 Oʻzbek:	shotland, shotlon (شتلان) {arch.}
+🏴 Qırımtatar:	iskoç
+🏴 Salırça:	şugılan
+🏴 Gagauz:	iskoç
+🏴 Urumça:	iskoç
+🏴 Qarayçe:	iskoç
+🏴 Qırımçah:	iskoç
+🇹🇲🇰🇿🇰🇬🏴: şotland''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
@@ -43670,5 +43716,5 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-#tags country cameo geo nation animal person religion islam slavic orthodox muslim holiday fruit insect
+#tags country cameo geo nation animal person religion islam slavic orthodox muslim holiday fruit insect furniture
 bot.polling()
