@@ -43676,10 +43676,10 @@ Other types of traditional or national sausages are listed below:
 🇬🇧 English:	Scotland 
 🇷🇺 Русский:	Шотландия [Shotlandiya]
 🇹🇷 Türkçe:	İskoçya
-🇦🇿 Türkcə:	Şotlandiya {North Az.T.} İskatlənd {South Az.T.}
+🇦🇿 Türkcə:	Şotlandiya {North Az.T.} İskətlənd {South Az.T.}
 🇹🇲 Türkmen:	Şotlandiýa
 🇺🇿 Oʻzbek:	Shotlandiya, Shotlon (شتلان) {arch.}
-🏴 Uyghur:	Shotlandiy
+🏴 Uyghur:	Shotlandiye
 🏴 Çovaşla:	Şotlandi
 🏴 Qırımtatar:	İskoçiya
 🏴 Alança:	Şotland
@@ -43689,6 +43689,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Qarayçe:	İskoçiya
 🏴 Qırımçah:	İskoçiya
 🇰🇿🇰🇬🏴: Şotlandiya''', reply_markup=markup_menu)
+# country
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "scot" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шотландец" \
@@ -43697,10 +43698,10 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "󠁧󠁢󠁳󠁣󠁴шотландка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iskoç" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шотландский":
-        bot.send_message(message.chat.id, '''🏴🇬🇧 English:	Scottish
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Scottish
 🇷🇺 Русский:	шотландец, шотландский
 🇹🇷 Türkçe:	İskoç
-🇦🇿 Türkcə:	şotland {North Az.T.} iskatlənd {South Az.T.}
+🇦🇿 Türkcə:	şotland {North Az.T.} iskətlənd {South Az.T.}
 🇺🇿 Oʻzbek:	shotland, shotlon (شتلان) {arch.}
 🏴 Qırımtatar:	iskoç
 🏴 Salırça:	şugılan
@@ -43709,6 +43710,53 @@ Other types of traditional or national sausages are listed below:
 🏴 Qarayçe:	iskoç
 🏴 Qırımçah:	iskoç
 🇹🇲🇰🇿🇰🇬🏴: şotland''', reply_markup=markup_menu)
+# nation
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черная гора" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черногорск" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черногор" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черногория" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черногорский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "montenegro" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chernogoriya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara dağ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crna gora" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇲🇪" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karadağ":
+        bot.send_message(message.chat.id, '''🇲🇪 Crna Gora
+
+🇬🇧 English:	Montenegro
+🇷🇺 Русский:	Черногория [Chernogoriya]
+🇹🇷 Türkçe:	Karadağ
+🇦🇿 Türkcə:	Qaradağ
+🇹🇲 Türkmen:	Garadag
+🇺🇿 Oʻzbek:	Qoratogʻ
+🇰🇿 Qazaq:	Qarataw
+🇰🇬 Qırğız:	Qaratoo
+🏴 Uyghur:	Qaratagh
+🏴 Tatarça:	Qarataw
+🏴 Başqort:	Qarataw
+🏴 Çovaşla:	Xuratu
+🏴 Qaraqalpaq:	Qarataw
+🏴 Qırımtatar:	Qaradağ
+🏴 Qumuq:	Qarataw
+🏴 Alança:	Qarataw
+🏴 Noğay:	Qarataw
+🏴 Sıbırca:	Qarataw
+🏴 Salırça:	Qaradağ
+🏴 Gagauz:	Karadaa
+🏴 Urumça:	Xatadağ
+🏴 Qarayçe:	Qaratav
+🏴 Qırımçah:	Qaradağ
+🏴 Saqalí:	Qara Qaya
+🏴 Hakalí:	Kara Kaya
+🏴 Tıva:	Karadag
+🏴 Altay:	Qaratuu
+🏴 Xakas:	Xaratağ
+🏴 Şor:	Qaratağ
+🏴 Duha-Soyıt:	Qaradağ
+🏴 Tofa-Qarağas:	Qaradağ''', reply_markup=markup_menu)
+# country slavic orthodox
 
     else:
         bot.send_message(message.chat.id, hesbisey)
