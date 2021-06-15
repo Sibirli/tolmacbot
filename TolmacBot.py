@@ -43745,7 +43745,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Sıbırca:	Qarataw
 🏴 Salırça:	Qaradağ
 🏴 Gagauz:	Karadaa
-🏴 Urumça:	Xatadağ
+🏴 Urumça:	Xaradağ
 🏴 Qarayçe:	Qaratav
 🏴 Qırımçah:	Qaradağ
 🏴 Saqalí:	Qara Qaya
@@ -43758,11 +43758,75 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	Qaradağ''', reply_markup=markup_menu)
 # country slavic orthodox
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "österreich" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "osterreich" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "austria" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аустрия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "австрия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "avstriya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "avusturya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "avsturya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nemçe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇦🇹" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nemse":
+        bot.send_message(message.chat.id, '''🇦🇹 Österreich
+
+🇬🇧 English:	Austria
+🇷🇺 Русский:	Австрия [Avsrtiya]
+🇭🇺 Magyar: Osztrák
+🇹🇷 Türkçe:	Avusturya, Nemçe {arch.}, Beç ülkesi {arch.}
+🇦🇿 Türkcə:	Avstriya, Nemsə (Nəmsə, Nemçə) {arch.}, Avstriş (Ostriş) {arch.}, Avstrya (Osturya) {arch.}, Otriş {South Az.T.}
+🇹🇲 Türkmen:	Awstriýa, Awstrýa {arch.}
+🇰🇿 Qazaq:	Awstriya
+🏴 Uyghur:	Awstiriye	
+🏴 Çovaşla:	Avstri
+🏴 Salırça:	Odiri
+🏴 Qarayçe:	Austriya
+🇺🇿🇰🇬🏴: Avstriya''', reply_markup=markup_menu)
+# cameo country catholic
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tattoo" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatto" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatoo" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тату" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "татуировка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tattooing" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "татуаж" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatouage" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dövme" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "наколка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "портак":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	tattoo
+🇷🇺 Русский:	тату, татуировка [tatu/tatuirovka]
+🇹🇷 Türkçe:	dövme
+🇦🇿 Türkcə:	döymə
+🇹🇲 Türkmen:	sançma surat
+🇰🇿 Qazaq:	dene äşekeyi
+🇰🇬 Qırğız:	dene süröt
+🏴 Uyghur:	chékim	
+🏴 Alança:	teride jazıw {text}, teride belgi {sign, mark}, teride tamğa {seal, stigma}, teride surat {picture}
+🏴 Altay:	terede curuq
+🇺🇿🏴: tatu''', reply_markup=markup_menu)
+# RUSRUS??? uzrus ttrus barus cvrus qqrus crhrus kumrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
-#tags country cameo geo nation animal person religion islam slavic orthodox muslim holiday fruit insect furniture
+#tags
+# animal
+# cameo country catholic
+# fruit furniture
+# geo
+# holiday insect islam
+# muslim
+# nation
+# orthodox
+# person
+# religion
+# slavic
 bot.polling()
