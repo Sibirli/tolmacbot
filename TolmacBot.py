@@ -43781,6 +43781,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Uyghur:	Awstiriye	
 🏴 Çovaşla:	Avstri
 🏴 Salırça:	Odiri
+🏴 Gagauz:	Avstriya, Nemțä {people + language}
 🏴 Qarayçe:	Austriya
 🇺🇿🇰🇬🏴: Avstriya''', reply_markup=markup_menu)
 # cameo country catholic
@@ -43810,6 +43811,92 @@ Other types of traditional or national sausages are listed below:
 🇺🇿🏴: tatu''', reply_markup=markup_menu)
 # RUSRUS??? uzrus ttrus barus cvrus qqrus crhrus kumrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cannibal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "human cannibal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каннибал" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kannibal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "man-eater" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "maneater" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "man eater" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yamyam" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yamyamı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yamyami" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "канибалы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "антропофаг" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "antropofag" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anthropophag" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "канибал" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "людоед" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каннибалы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каннибальский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "канибальский":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	cannibal
+🇷🇺 Русский:	каннибал [kannibal], людоед {man-eater}
+🇹🇷 Türkçe:	yamyam
+🇦🇿 Türkcə:	yamyam, adamyeyən {man-eater}
+🇹🇲 Türkmen:	ýamýam
+🇺🇿 Oʻzbek:	kannibal, odamxoʻr {man-eater}
+🇰🇿 Qazaq:	kannibal, adam jegiş {man-eater}
+🇰🇬 Qırğız:	mıqaaçı
+🏴 Uyghur:	kannibal, ademxor {man-eater}
+🏴 Tatarça:	kannibal, keşe aşawçı {man-eater}
+🏴 Başqort:	kannibal, keşe aşawsı {man-eater}
+🏴 Çovaşla:	kannibal, cın ciyen {man-eater}
+🏴 Qaraqalpaq:	kannibal, adamxor {man-eater}
+🏴 Qırımtatar:	yamyam
+🏴 Qumuq:	kannibal, adam aşayğan {man-eater}
+🏴 Alança:	issarab, adam aşağan {man-eater}
+🏴 Noğay:	manaşa
+🏴 Sıbırca:	kannibal, keşe aşawcı {man-eater}
+🏴 Saqalí:	kannibal, kihini sieççi {man-eater}
+🏴 Tıva:	magaçın
+🏴 Altay:	kannibal, kiji ciyiçi {man-eater}
+🏴 Xakas:	omır-çimir, çeek''', reply_markup=markup_menu)
+# RUSRUS???
+# slrcn gagrus uumrus kdrrus jctrus dlgrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cannibalism" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "human cannibalism" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каннибализм" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kannibalizm" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "maneating" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "man-eating" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "man eating" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yamyamlık" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yamyamılık" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yamyamilik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "канибализм" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "антропофагия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "antropofaji" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anthropophagy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "людоедство" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kanibalizm" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каннибальство" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cannibalization":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	cannibalism
+🇷🇺 Русский:	каннибализм [kannibalizm], людоедство {human cannibalism}
+🇹🇷 Türkçe:	yamyamlık
+🇦🇿 Türkcə:	yamyamlıq, adamyemə {human cannibalism}
+🇹🇲 Türkmen:	ýamýamlyk
+🇺🇿 Oʻzbek:	kannibalizm, odamxoʻrlik {human cannibalism}
+🇰🇿 Qazaq:	kannibalizm, adam jegiştik {human cannibalism}
+🇰🇬 Qırğız:	mıqaaçılıq
+🏴 Uyghur:	kannibalizm, ademxorluq {human cannibalism}
+🏴 Tatarça:	kannibalizm, keşe aşawçılıq {human cannibalism}
+🏴 Başqort:	kannibalizm, keşe aşawsılıq {human cannibalism}
+🏴 Çovaşla:	kannibalizm, cınciyenlöx {human cannibalism}
+🏴 Qaraqalpaq:	kannibalizm, adamxorlıq {human cannibalism}
+🏴 Qırımtatar:	yamyamlıq
+🏴 Qumuq:	kannibalizm, adam aşayğanlıq {human cannibalism}
+🏴 Alança:	issarablıq, adam aşağanlıq {human cannibalism}
+🏴 Noğay:	manaşalıq
+🏴 Sıbırca:	kannibalizm, keşe aşawcılıq {human cannibalism}
+🏴 Tıva:	magaçın boloru
+🏴 Altay:	kannibalizm, kiji ciyiri {human cannibalism}
+🏴 Xakas:	kannibalizm, kizi çipçetkeni {human cannibalism}''', reply_markup=markup_menu)
+#RUSRUS???
+# slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
