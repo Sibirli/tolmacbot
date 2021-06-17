@@ -1207,7 +1207,7 @@ Tofalap: uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): -da/-dä/-ta/-tä
 🇬🇧 English: in
 🇷🇺 Русский: в
-🇹🇷 Türkçe: -da/-de
+🇹🇷 Türkçe: -da/-de/-ta/-te
 🇦🇿 Türkcə: -da/-də
 🇹🇲 Türkmençe: -da/-de
 🇺🇿 Oʻzbekcha: -da
@@ -1224,7 +1224,7 @@ Tofalap: uluğ''', reply_markup=markup_menu)
 🏴 Noğayşa: -da/-de/-ta/-te
 🏴 Sıbırca: -ta/-tä
 🏴 Gagauzça: -da/-de
-🏴 Saqalí: ihiger
+🏴 Saqalí: -ga/-ğa, ihiger
 🏴 Dulgan-Hakalí: ihiger
 🏴 Tıvalap: -da/-de/-ta/-te
 🏴 Salırça: -da/-de/-ta/-te
@@ -43897,6 +43897,53 @@ Other types of traditional or national sausages are listed below:
 🏴 Xakas:	kannibalizm, kizi çipçetkeni {human cannibalism}''', reply_markup=markup_menu)
 #RUSRUS???
 # slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "above" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "выше" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "свыше" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "наверху" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вверху" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "на" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "на чем-то" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "над" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поверх" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yukarıda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yukarda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "üstünde":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	I. yoqqaruda II. üstündä
+🇬🇧 English:	I. above {adj.} II. above {prep.}
+🇷🇺 Русский:	выше, свыше, наверху, вверху, на (чём-то), над, поверх
+🇰🇷 Hangug-eo: I. joguro (쪽으로) II. sandane (상단에)
+🇹🇷 Türkçe:	I. yukarıda II. üstünde
+🇦🇿 Türkcə:	I. yuxarıda II. üstündə
+🇹🇲 Türkmen:	I. ýokarda II. üstünde
+🇺🇿 Oʻzbek:	I. yuqorida II. ustida
+🇰🇿 Qazaq:	I. joğarıda II. üstinde
+🇰🇬 Qırğız:	I. joğorudo II. üstündö
+🏴 Uyghur:	I. yuqirida II. üstide
+🏴 Tatarça:	I. yuğarıda II. östendä
+🏴 Başqort:	I. yuğarıla II. öþtöndä
+🏴 Çovaşla:	I. cülte II. cinçe
+🏴 Qaraqalpaq:	I. joqarıda II. ústinde
+🏴 Qırımtatar:	I. yuqarıda II. üstünde
+🏴 Qumuq:	I. yoğaride II. üstünde
+🏴 Alança:	I. oğarıda II. üsünde
+🏴 Noğay:	I. yoğarda II. üstinde
+🏴 Sıbırca:	I. yuğarıta II. östöntä
+🏴 Salırça:	I. yoxarda II. iştinte
+🏴 Gagauz:	I. yukarda II. üstünde
+🏴 Urumça:	I. yoxarda II. üstündä
+🏴 Qarayçe:	I. yoğarda II. üstündä
+🏴 Qırımçah:	I. yoqarda II. sutınde
+🏴 Saqalí:	I. üöhenen II. ürdünen
+🏴 Hakalí:	I. ürdüger II. űhe
+🏴 Tıva:	I. örü II. üstünde
+🏴 Altay:	I. örö II. üstünde
+🏴 Xakas:	I. çoğar II. üstünde
+🏴 Şor:	I. örede II. üstünde
+🏴 Duha-Soyıt:	I. ündiride II. üstindä
+🏴 Tofa-Qarağas:	I. ündürüde II. üstinde''', reply_markup=markup_menu)
+# cameo
 
     else:
         bot.send_message(message.chat.id, hesbisey)
