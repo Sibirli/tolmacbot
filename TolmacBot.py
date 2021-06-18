@@ -19872,37 +19872,39 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "неконкретно" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "не конкретно" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "неконкретная":
-        bot.send_message(message.chat.id, '''🇬🇧 English: abstract {adj.}
-🇷🇺 Русский: абстрактный, отвлеченный
-🇹🇷 Türkçe: soyut, mücerret
-🇦🇿 Türkcə: mücərrəd
-🇹🇲 Türkmençe: howaýy
-🇺🇿 Oʻzbekcha: mavhum
-🇰🇿 Qazaqşa: dereksiz, şarttı, zatsız, uzaq-sonar, uzın-sonar
-🇰🇬 Qırğızça: beytaasın
-🏴 Uyghurche: mewhum
-🏴 Tatarça: abstrakt, çitläşkän
-🏴 Başqortsa: abstrakt, sitlätelgän
-🏴 Çovaşla: abstraktlo
-🏴 Qaraqalpaqsha: abstrakt, ulıwma
-🏴 Qırımtatarca: mücerret
-🏴 Qumuqça: abstrakt, barlıqdan ayrılğan
-🏴 Alança: abstrakt, ölçesiz
-🏴 Noğayşa: abstraktlı, erek manede, küŋirt aŋda
-🏴 Sıbırca: abstrakt, citlätelgän
-🏴 Salırça: çuşoŋ
-🏴 Gagauzça: abstrakt
-🏴 Urumça: abstrakt, eşkâre dööl
-🏴 Qarayçe: abstrakt
-🏴 Qırımçahça: abstrakt
-🏴 Saqalí: abstrakt
-🏴 Dulgan-Hakalí: abstrakt
-🏴 Tıvalap: tuugay
-🏴 Xakastap: abstrakt
-🏴 Altaylap: abstrakt, uçurı çoqum emes
-🏴 Şor: abstrakt
-🏴 Soyot: abstrakt
-🏴 Tofalap: abstrakt''', reply_markup=markup_menu)
+        bot.send_message(message.chat.id, '''🇬🇧 English:	abstract {adj.}
+🇷🇺 Русский:	абстрактный [abstraktnyy], отвлеченный
+🇹🇷 Türkçe:	soyut, mücerret
+🇦🇿 Türkcə:	mücərrəd
+🇹🇲 Türkmen:	howaýy
+🇺🇿 Oʻzbek:	mavhum
+🇰🇿 Qazaq:	dereksiz
+🇰🇬 Qırğız:	beytaasın
+🏴 Uyghur:	mewhum
+🏴 Tatarça:	çitläşkän
+🏴 Başqort:	toþhöð
+🏴 Çovaşla:	pötömletülle
+🏴 Qaraqalpaq:	ulıwma
+🏴 Qırımtatar:	mücerret
+🏴 Qumuq:	barlıqdan ayrılğan
+🏴 Alança:	ölçesiz
+🏴 Noğay:	abstrakt
+🏴 Sıbırca:	abstrakt
+🏴 Salırça:	çuşoŋ
+🏴 Gagauz:	abstrakt
+🏴 Urumça:	abstrakt
+🏴 Qarayçe:	abstrakt
+🏴 Qırımçah:	abstrakt
+🏴 Saqalí:	abstrakt
+🏴 Hakalí:	abstrakt
+🏴 Tıva:	tuugay
+🏴 Altay:	abstrakt
+🏴 Xakas:	abstrakt
+🏴 Şor:	abstrakt
+🏴 Duha-Soyıt:	abstrakt
+🏴 Tofa-Qarağas:	abstrakt''', reply_markup=markup_menu)
+# RUSRUS??? nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus altrus khakrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kül" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ash" \
@@ -43959,6 +43961,10 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "falco peregrinus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beyaz şahin" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "duck hawk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лачин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лачын" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lachin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lachyn" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "falco":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	laçın
 🇬🇧 English:	falcon, peregrine
@@ -43992,7 +43998,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Xakas:	ılaçın
 🏴 Şor:	laçın
 🏴 Duha-Soyıt:	???
-🏴 Tofa-Qarağas:	naŧen''', reply_markup=markup_menu)
+🏴 Tofa-Qarağas:	naçen''', reply_markup=markup_menu)
 # cameo animal bird
 
     else:
