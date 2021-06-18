@@ -43945,6 +43945,56 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	I. ündürüde II. üstinde''', reply_markup=markup_menu)
 # cameo
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "laçın" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "falcon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peregrine" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сокол" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сапсан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peregrine falcon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lâçin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "laçin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lâçın" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peregrin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peregrin falcon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "falco peregrinus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beyaz şahin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "duck hawk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "falco":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	laçın
+🇬🇧 English:	falcon, peregrine
+🇷🇺 Русский:	сокол, сапсан
+🇲🇳 Mongol: nachin
+🇹🇷 Türkçe:	laçın
+🇦🇿 Türkcə:	laçın
+🇹🇲 Türkmen:	laçyn
+🇺🇿 Oʻzbek:	lochin
+🇰🇿 Qazaq:	laşın
+🇰🇬 Qırğız:	ılaaçın
+🏴 Uyghur:	lachin
+🏴 Tatarça:	laçın
+🏴 Başqort:	ılasın
+🏴 Çovaşla:	laççon
+🏴 Qaraqalpaq:	lashın
+🏴 Qırımtatar:	lâçin
+🏴 Qumuq:	laçin
+🏴 Alança:	ilâçin
+🏴 Noğay:	laşın
+🏴 Sıbırca:	lacın
+🏴 Salırça:	???
+🏴 Gagauz:	???
+🏴 Urumça:	???
+🏴 Qarayçe:	???
+🏴 Qırımçah:	???
+🏴 Saqalí:	???
+🏴 Hakalí:	???
+🏴 Tıva:	laşın
+🏴 Altay:	laçın
+🏴 Xakas:	ılaçın
+🏴 Şor:	laçın
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	naŧen''', reply_markup=markup_menu)
+# cameo animal bird
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
@@ -43953,6 +44003,7 @@ Other types of traditional or national sausages are listed below:
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
 #tags
 # animal
+# bird
 # cameo country catholic
 # fruit furniture
 # geo
