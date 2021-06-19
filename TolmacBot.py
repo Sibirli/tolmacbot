@@ -44001,6 +44001,104 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	naçen''', reply_markup=markup_menu)
 # cameo animal bird
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "accept!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "accept!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to accept" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "admit!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "admit" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to admit" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прими!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прими" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "принять" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "принимай!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "принимай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "принимать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "признай!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "признай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "признать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "признавай!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "признавай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "признавать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul eyle!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul eyle" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul etmek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul et" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul et!":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	accept! admit!
+🇷🇺 Русский:	прими! признай!
+🇹🇷 Türkçe:	kabul et
+🇦🇿 Türkcə:	qəbul et
+🇹🇲 Türkmen:	kabul et
+🇺🇿 Oʻzbek:	qabul qil
+🇰🇿 Qazaq:	qabılda
+🇰🇬 Qırğız:	qabıl al
+🏴 Uyghur:	qobul qil
+🏴 Tatarça:	qabul it
+🏴 Başqort:	qabul it
+🏴 Çovaşla:	yışon, xapolla {about guests}
+🏴 Qaraqalpaq:	qabılla
+🏴 Qırımtatar:	qabul et
+🏴 Qumuq:	qabul et
+🏴 Alança:	qabıl et
+🏴 Noğay:	qabıl et
+🏴 Sıbırca:	al
+🏴 Salırça:	al
+🏴 Gagauz:	kablet
+🏴 Urumça:	xabul eyle
+🏴 Qarayçe:	qabul et
+🏴 Qırımçah:	qabul et
+🏴 Saqalí:	ıl
+🏴 Hakalí:	ıl
+🏴 Tıva:	xülep al
+🏴 Altay:	al
+🏴 Xakas:	al
+🏴 Şor:	al
+🏴 Duha-Soyıt:	gola
+🏴 Tofa-Qarağas:	qolla''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "acceptance" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "admission" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to accept" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "admittance" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "acception" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прием" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "признание" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "принятие" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "допуск" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вступительный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	acceptance, admission, admittance
+🇷🇺 Русский:	приём, принятие, допуск, вступительный
+🇹🇷 Türkçe:	kabul
+🇦🇿 Türkcə:	qəbul
+🇹🇲 Türkmen:	kabul
+🇺🇿 Oʻzbek:	qabul
+🇰🇿 Qazaq:	qabıl
+🇰🇬 Qırğız:	qabıl
+🏴 Uyghur:	qobul
+🏴 Tatarça:	qabul
+🏴 Başqort:	qabul
+🏴 Çovaşla:	yışonu, xapol {about guests}
+🏴 Qaraqalpaq:	qabıl
+🏴 Qırımtatar:	qabul
+🏴 Qumuq:	qabul
+🏴 Alança:	qabıl
+🏴 Noğay:	qabıl
+🏴 Sıbırca:	alıw
+🏴 Salırça:	alış
+🏴 Gagauz:	kabul
+🏴 Urumça:	xabul
+🏴 Qarayçe:	qabul
+🏴 Qırımçah:	qabul
+🏴 Saqalí:	ılí
+🏴 Hakalí:	ılí
+🏴 Tıva:	xüleep alırı
+🏴 Altay:	alırı
+🏴 Xakas:	alğanı
+🏴 Şor:	alçatqanı
+🏴 Duha-Soyıt:	golaaşqın
+🏴 Tofa-Qarağas:	qollaaşqın''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
