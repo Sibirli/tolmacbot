@@ -23595,16 +23595,17 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: pağa
 🏴 Gagauzça: kaplunbua
 🏴 Urumça: taşbaxa, tozbaxa, xaplıbaxa
-🏴 Qarayçe: qatlıbaqa
+🏴 Qarayçe: qaplı baqa (qatlıbaqa)
 🏴 Qırımçahça: qaplıbaqa
-🏴 Saqalí: ???
+🏴 Saqalí: çarapaşqı-nîńze
 🏴 Dulgan-Hakalí: ???
-🏴 Tıvalap: yazıtı-melegey
-🏴 Xakastap: ???
-🏴 Altaylap: ???
+🏴 Tıvalap: daş baka, yazıtı-melegey
+🏴 Xakastap: taspağa, xuyaxtığ pağa
+🏴 Altaylap: taş-baqa, qaba-baqa
 🏴 Şor: ???
 🏴 Soyot: ???
 🏴 Tofalap: ???''', reply_markup=markup_menu)
+# animal sahrus dlgrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦎" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lizard" \
