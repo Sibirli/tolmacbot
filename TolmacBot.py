@@ -21303,7 +21303,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇰🇬 Qırğızça: qırsıq
 🏴 Uyghurche: qaza, apet
 🏴 Tatarça:	qaza
-🏴 Başqortsa: avariya
+🏴 Başqortsa: qaza
 🏴 Çovaşla: inkek
 🏴 Qaraqalpaqsha: apat
 🏴 Qırımtatarca: qaza
@@ -21313,11 +21313,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Sıbırca:	äläk
 🏴 Salırça:	belâ
 🏴 Gagauzça: kaza
-🏴 Urumça:	avarya
-🏴 Qarayçe:	avarıya
+🏴 Urumça:	xaze
+🏴 Qarayçe:	qaza, çıyır
 🏴 Qırımçahça: qaza
 🏴 Saqalí: sáqal
-🏴 Dulgan-Hakalí: avariya
+🏴 Dulgan-Hakalí: alcarkay
 🏴 Tıvalap:	üreliişkin
 🏴 Xakastap: saay
 🏴 Altaylap: üüle
