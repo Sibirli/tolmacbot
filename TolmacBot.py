@@ -44100,6 +44100,62 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	golaaşqın
 🏴 Tofa-Qarağas:	qollaaşqın''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "add" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to add" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "add!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "attach" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "attach!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "добавь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "добавь!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "добавляй!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "добавляй" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "просиединяй" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "добавить" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "добавлять" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "просиединять" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "присоедини!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "присоедини" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "присоединить" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ekle" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eklemek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "koş" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "koşmak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "просиединяй!":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qoş
+🇬🇧 English:	add! attach!
+🇷🇺 Русский:	добавь! присоедини!
+🇭🇺 Magyar: hozzá
+🇹🇷 Türkçe:	ekle, koş {dial., "run, rush" in standart Turkish}
+🇦🇿 Türkcə:	əlavə et, qoş
+🇹🇲 Türkmen:	goş
+🇺🇿 Oʻzbek:	qo‘sh
+🇰🇿 Qazaq:	qos
+🇰🇬 Qırğız:	qoş
+🏴 Uyghur:	qosh
+🏴 Tatarça:	quş
+🏴 Başqort:	quş
+🏴 Çovaşla:	xuş
+🏴 Qaraqalpaq:	qos
+🏴 Qırımtatar:	qoş
+🏴 Qumuq:	qoş
+🏴 Alança:	qoş
+🏴 Noğay:	qos
+🏴 Sıbırca:	quş
+🏴 Salırça:	qoş
+🏴 Gagauz:	ekle
+🏴 Urumça:	xoş
+🏴 Qarayçe:	qoş
+🏴 Qırımçah:	qoş
+🏴 Saqalí:	ep
+🏴 Hakalí:	ep
+🏴 Tıva:	neme
+🏴 Altay:	qoş
+🏴 Xakas:	xos
+🏴 Şor:	qoş
+🏴 Duha-Soyıt:	havsara
+🏴 Tofa-Qarağas:	neme''', reply_markup=markup_menu)
+# cameo
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
