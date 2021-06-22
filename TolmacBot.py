@@ -44142,7 +44142,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Noğay:	qos
 🏴 Sıbırca:	quş
 🏴 Salırça:	qoş
-🏴 Gagauz:	ekle
+🏴 Gagauz:	ekle, koş
 🏴 Urumça:	xoş
 🏴 Qarayçe:	qoş
 🏴 Qırımçah:	qoş
@@ -44155,6 +44155,46 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	havsara
 🏴 Tofa-Qarağas:	neme''', reply_markup=markup_menu)
 # cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "суммирование" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "addition" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сложение" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прибавление" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toplama" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "additio":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	addition {math.}
+🇷🇺 Русский:	сложение, прибавление
+🇹🇷 Türkçe:	toplama
+🇦🇿 Türkcə:	toplama
+🇹🇲 Türkmen:	goşma
+🇺🇿 Oʻzbek:	qo‘shish, qo‘shuv
+🇰🇿 Qazaq:	qosıw
+🇰🇬 Qırğız:	qoşuu
+🏴 Uyghur:	qoshush
+🏴 Tatarça:	quşu
+🏴 Başqort:	quşıw
+🏴 Çovaşla:	xuşu, xuşassi
+🏴 Qaraqalpaq:	qosıw
+🏴 Qırımtatar:	qoşuv
+🏴 Qumuq:	qoşuw
+🏴 Alança:	qoşuw
+🏴 Noğay:	qosuw
+🏴 Sıbırca:	quşıw
+🏴 Salırça:	qoşuş
+🏴 Gagauz:	toplamak
+🏴 Urumça:	???
+🏴 Qarayçe:	???
+🏴 Qırımçah:	???
+🏴 Saqalí:	ebî
+🏴 Hakalí:	ebî
+🏴 Tıva:	kadılga
+🏴 Altay:	qojorı
+🏴 Xakas:	xozıs
+🏴 Şor:	qojuluş
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	nemääri''', reply_markup=markup_menu)
+# math
+# uumrus kdrrus jctrus sytrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
@@ -44169,7 +44209,7 @@ Other types of traditional or national sausages are listed below:
 # fruit furniture
 # geo
 # holiday insect islam
-# muslim
+# math muslim
 # nation
 # orthodox
 # person
