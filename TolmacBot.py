@@ -15588,7 +15588,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тесто" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dough" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hamur":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): un
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): yoğurmış un
 🇬🇧 English: dough
 🇷🇺 Русский: тесто [testo]
 🇹🇷 Türkçe: hamur
@@ -15611,15 +15611,16 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Saqalí: tieste
 🏴 Dulgan-Hakalí: testo
 🏴 Tıvalap: dalgan
-🏴 Salırça: simen, kotan, aş
-🏴 Xakastap: testa (teste)
-🏴 Altaylap: teste
+🏴 Salırça: yuğurğan un
+🏴 Xakastap: köptirges, xordın, çuuraan un
+🏴 Altaylap: qulur {+ flour}
 🏴 Şor: çeeste
 🏴 Urumça: xamur (amur)
-🏴 Karajče: chamur
+🏴 Qarayçe: xamur
 🏴 Qrımçahça: hamur
 🏴 Soyot: testo
 🏴 Tofalap: testo''', reply_markup=markup_menu)
+# cvrus sahrus dlgrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ant" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ante" \
@@ -15667,7 +15668,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: çımalı (çubalgı), küzürüm, qomısqaş, sarı sideş
 🏴 Şor: qımısqaş (qımırtaş)
 🏴 Urumça: ğarınca (xarınca), xırmısxa (xımırsxa)
-🏴 Karajče: kyrmyska (kumurstka, kumuska, kymyrsak)
+🏴 Qarayçe: qırmısqa (qumurstqa, qumusqa, qımırsaq)
 🏴 Qrımçahça: qırmısqa
 🏴 Soyot: hımısqa
 🏴 Tofalap: hımısqa''', reply_markup=markup_menu)
