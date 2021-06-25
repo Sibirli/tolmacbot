@@ -44197,6 +44197,48 @@ Other types of traditional or national sausages are listed below:
 # math
 # uumrus kdrrus jctrus sytrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adjective" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adj" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adj." \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прилагательное" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "имя прилагательное" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сифат" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sifat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sıfat":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	adjective
+🇷🇺 Русский:	прилагательное
+🇹🇷 Türkçe:	sıfat
+🇦🇿 Türkcə:	sifət, sıfat {dial.}
+🇹🇲 Türkmen:	sypat
+🇺🇿 Oʻzbek:	sifat
+🇰🇿 Qazaq:	sın esim
+🇰🇬 Qırğız:	sın atooç
+🏴 Uyghur:	süpet
+🏴 Tatarça:	sıyfat
+🏴 Başqort:	sifat
+🏴 Çovaşla:	pallo yaçö {from Russian}
+🏴 Qaraqalpaq:	kelbetlik
+🏴 Qırımtatar:	sıfat
+🏴 Qumuq:	sıpatlıq
+🏴 Alança:	sıfat
+🏴 Noğay:	sıpat
+🏴 Sıbırca:	sıybat
+🏴 Salırça:	???
+🏴 Gagauz:	???
+🏴 Urumça:	???
+🏴 Qarayçe:	???
+🏴 Qırımçah:	???
+🏴 Saqalí:	dağáhın át {from Russian}
+🏴 Hakalí:	???
+🏴 Tıva:	demdek adı {from Russian}
+🏴 Altay:	cartalğış
+🏴 Xakas:	pildiris
+🏴 Şor:	çüüngü sös
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# #RUSRUS???
+# slrcn gagrus uumrus kdrrus jctrus dlgrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
