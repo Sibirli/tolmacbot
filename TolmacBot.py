@@ -44239,6 +44239,51 @@ Other types of traditional or national sausages are listed below:
 # #RUSRUS???
 # slrcn gagrus uumrus kdrrus jctrus dlgrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caviar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "roe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "икра" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ikra" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "havyar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kürü" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hayvar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fish eggs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "икряной" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caviare" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "balık yumurtası":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	caviar, roe
+🇷🇺 Русский:	икра [ikra]
+🇹🇷 Türkçe:	havyar, kürü
+🇦🇿 Türkcə:	kürü
+🇹🇲 Türkmen:	işbil
+🇺🇿 Oʻzbek:	uvildiriq
+🇰🇿 Qazaq:	uwıldırıq
+🇰🇬 Qırğız:	uruq
+🏴 Uyghur:	törel
+🏴 Tatarça:	uwıldıq
+🏴 Başqort:	ıwıldırıq
+🏴 Çovaşla:	volça
+🏴 Qaraqalpaq:	uwıldırıq
+🏴 Qırımtatar:	havyar
+🏴 Qumuq:	urluq
+🏴 Alança:	ırxız, cıynı
+🏴 Noğay:	uwıldıq
+🏴 Sıbırca:	ultıq
+🏴 Salırça:	yumuda
+🏴 Gagauz:	halver
+🏴 Urumça:	xavyar (xayvar)
+🏴 Qarayçe:	ikra
+🏴 Qırımçah:	havyar (hayvar)
+🏴 Saqalí:	iskeq
+🏴 Hakalí:	istek
+🏴 Tıva:	üürgene
+🏴 Altay:	ürkene
+🏴 Xakas:	örgen (üzürgen)
+🏴 Şor:	örtken
+🏴 Duha-Soyıt:	üŋgürhän (üürhän)
+🏴 Tofa-Qarağas:	üŋgürhen''', reply_markup=markup_menu)
+# food
+# kdrrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
@@ -44249,7 +44294,7 @@ Other types of traditional or national sausages are listed below:
 # animal
 # bird
 # cameo country catholic
-# fruit furniture
+# food fruit furniture
 # geo
 # holiday insect islam
 # math muslim
