@@ -13250,6 +13250,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🐺 Old Turkic (bef. 15th c.): yay
 🇬🇧 English: summer
 🇷🇺 Русский: лето
+🇭🇺 Magyar: nyár
 🇹🇷 Türkçe: yaz
 🇦🇿 Türkcə: yay
 🇹🇲 Türkmençe: ýaý
@@ -28530,6 +28531,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "go between" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "co-father-in-law" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kuda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "related by marriage" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marriage-broker" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marriagebroker" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marriage broker":
@@ -44265,7 +44267,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Qaraqalpaq:	uwıldırıq
 🏴 Qırımtatar:	havyar
 🏴 Qumuq:	urluq
-🏴 Alança:	ırxız, cıynı
+🏴 Alança:	ırxız, jıynı
 🏴 Noğay:	uwıldıq
 🏴 Sıbırca:	ultıq
 🏴 Salırça:	yumuda
@@ -44283,6 +44285,57 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	üŋgürhen''', reply_markup=markup_menu)
 # food
 # kdrrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зять" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "жених" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "son-in-law" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "groom" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bridegroom" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "son in-law" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "son in law" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soninlaw" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зятек" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "enişte" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "güvey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "güveyi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "damat":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	 küdägü (küðagü)
+🇬🇧 English:	son-in-law, groom, bridegroom
+🇷🇺 Русский:	зять, жених
+🇭🇺 Magyar: vő (vej), vőlegény
+🇫🇮 Suomea: vävy
+🇲🇳 Mongol: khürgen
+🇹🇷 Türkçe:	güvey (güveyi)
+🇦🇿 Türkcə:	kürəkən, giyəv (gəyəv) {dial.}
+🇹🇲 Türkmen:	köreken, giýew
+🇺🇿 Oʻzbek:	kuyov
+🇰🇿 Qazaq:	küyew
+🇰🇬 Qırğız:	küyöö
+🏴 Uyghur:	küyö (küy-oghul)
+🏴 Tatarça:	kiyäw
+🏴 Başqort:	keyäw
+🏴 Çovaşla:	körü (köröv)
+🏴 Qaraqalpaq:	kúyew
+🏴 Qırımtatar:	kiyev
+🏴 Qumuq:	giyev
+🏴 Alança:	küyew (kiyew)
+🏴 Noğay:	kiyew
+🏴 Sıbırca:	köyäw
+🏴 Salırça:	gufu (güy-oğul)
+🏴 Gagauz:	güvää
+🏴 Urumça:	kiyöv (küyev, kiyev)
+🏴 Qarayçe:	küyüv (kiyev, küyev, kiyov, güveyi)
+🏴 Qırımçah:	kuyuv
+🏴 Saqalí:	kütüöt (kütüe)
+🏴 Hakalí:	kütüöt
+🏴 Tıva:	küdee
+🏴 Altay:	küyü
+🏴 Xakas:	kizö (küzee)
+🏴 Şor:	küze
+🏴 Duha-Soyıt:	hüdää
+🏴 Tofa-Qarağas:	hüdää (hüdö)''', reply_markup=markup_menu)
+# cameo
+# sytrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
