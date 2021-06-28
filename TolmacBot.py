@@ -44298,42 +44298,51 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "enişte" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "güvey" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "güveyi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yezne" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "муж дочери" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "муж сестры" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сестры муж" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sister's husband" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sisters husband" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "the husband of your sister" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "the husband of sister" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "husband of sister" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "damat":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	 küdägü (küðagü)
-🇬🇧 English:	son-in-law, groom, bridegroom
-🇷🇺 Русский:	зять, жених
-🇭🇺 Magyar: vő (vej), vőlegény
-🇫🇮 Suomea: vävy
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): I. küdägü (küðagü) II. yeznä
+🇬🇧 English:	I. son-in-law, groom, bridegroom II. sister's husband
+🇷🇺 Русский:	I. зять, жених, муж дочери II. зять, муж сестры
+🇭🇺 Magyar: I. vő (vej), vőlegény II. sógor
+🇫🇮 Suomea: I. vävy II. lanko
 🇲🇳 Mongol: khürgen
-🇹🇷 Türkçe:	güvey (güveyi)
-🇦🇿 Türkcə:	kürəkən, giyəv (gəyəv) {dial.}
-🇹🇲 Türkmen:	köreken, giýew
-🇺🇿 Oʻzbek:	kuyov
-🇰🇿 Qazaq:	küyew
-🇰🇬 Qırğız:	küyöö
-🏴 Uyghur:	küyö (küy-oghul)
-🏴 Tatarça:	kiyäw
-🏴 Başqort:	keyäw
-🏴 Çovaşla:	körü (köröv)
-🏴 Qaraqalpaq:	kúyew
-🏴 Qırımtatar:	kiyev
+🇹🇷 Türkçe:	I. güvey (güveyi), küreken (köreken) {dial.} II. enişte
+🇦🇿 Türkcə:	I. kürəkən, giyəv (gəyəv) {dial.} II. yeznə
+🇹🇲 Türkmen:	I. köreken, giýew II. ýüwürji
+🇺🇿 Oʻzbek:	I. kuyov II. poçça
+🇰🇿 Qazaq:	I. küyew II. jezde
+🇰🇬 Qırğız:	I. küyöö II. jezde
+🏴 Uyghur:	I. küyö (küy-oghul) II. yézne
+🏴 Tatarça:	I. kiyäw II. cizni
+🏴 Başqort:	I. keyäw II. yeðnä
+🏴 Çovaşla:	I. körü (köröv) II. yısna
+🏴 Qaraqalpaq:	I. kúyew II. jezde
+🏴 Qırımtatar:	I. kiyev II. enişte
 🏴 Qumuq:	giyev
 🏴 Alança:	küyew (kiyew)
-🏴 Noğay:	kiyew
-🏴 Sıbırca:	köyäw
-🏴 Salırça:	gufu (güy-oğul)
-🏴 Gagauz:	güvää
-🏴 Urumça:	kiyöv (küyev, kiyev)
-🏴 Qarayçe:	küyüv (kiyev, küyev, kiyov, güveyi)
-🏴 Qırımçah:	kuyuv
-🏴 Saqalí:	kütüöt (kütüe)
+🏴 Noğay:	I. kiyew II. yezde
+🏴 Sıbırca:	I. köyäw II. yesnä
+🏴 Salırça:	I. gufu (güy-oğul) II. gaga, cefu
+🏴 Gagauz:	I. güvää II. eniştä
+🏴 Urumça:	I. kiyöv (küyev, kiyev) II. enişte
+🏴 Qarayçe:	I. küyüv (kiyev, küyev, kiyov, güveyi) II. yeznä
+🏴 Qırımçah: I. kuyuv II. znaqay
+🏴 Saqalí:	kütüö (kütüe, kütüöt)
 🏴 Hakalí:	kütüöt
-🏴 Tıva:	küdee
-🏴 Altay:	küyü
-🏴 Xakas:	kizö (küzee)
-🏴 Şor:	küze
-🏴 Duha-Soyıt:	hüdää
-🏴 Tofa-Qarağas:	hüdää (hüdö)''', reply_markup=markup_menu)
+🏴 Tıva:	I. küdee II. çeste
+🏴 Altay:	I. küyü II. ceste
+🏴 Xakas:	I. kizö (küzee) II. çîste
+🏴 Şor:	I. küze II. çeste
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas: I. hüdää (hüdö) II. çürsü''', reply_markup=markup_menu)
 # cameo
 # sytrus
 
