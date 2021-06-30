@@ -21768,7 +21768,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇰🇬 Qırğızça: geografiya
 🏴 Uyghurche: jughrapiye
 🏴 Tatarça: cäğrafiä
-🏴 Başqortsa: geografiya
+🏴 Başqortsa: yäğräfiä
 🏴 Çovaşla: geografi
 🏴 Qaraqalpaqsha: geografiya
 🏴 Qırımtatarca: coğrafiya 
@@ -21776,7 +21776,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Alança: geografiya
 🏴 Noğayşa: geografiya
 🏴 Sıbırca: geografiya
-🏴 Salırça: dili
+🏴 Salırça: cuğrapiya
 🏴 Gagauzça: coğrafya
 🏴 Urumça: geografia
 🏴 Qarayçe: geografiya
@@ -44316,8 +44316,8 @@ Other types of traditional or national sausages are listed below:
 🇲🇳 Mongol: khürgen
 🇹🇷 Türkçe:	I. güvey (güveyi), küreken (köreken) {dial.} II. enişte
 🇦🇿 Türkcə:	I. kürəkən, giyəv (gəyəv) {dial.} II. yeznə
-🇹🇲 Türkmen:	I. köreken, giýew II. ýüwürji
-🇺🇿 Oʻzbek:	I. kuyov II. poçça
+🇹🇲 Türkmen:	I. köreken, giýew II. ýezne
+🇺🇿 Oʻzbek:	I. kuyov II. poçça, yezna (yazna, jezna)
 🇰🇿 Qazaq:	I. küyew II. jezde
 🇰🇬 Qırğız:	I. küyöö II. jezde
 🏴 Uyghur:	I. küyö (küy-oghul) II. yézne
@@ -44342,9 +44342,53 @@ Other types of traditional or national sausages are listed below:
 🏴 Xakas:	I. kizö (küzee) II. çîste
 🏴 Şor:	I. küze II. çeste
 🏴 Duha-Soyıt:	???
-🏴 Tofa-Qarağas: I. hüdää (hüdö) II. çürsü''', reply_markup=markup_menu)
+🏴 Tofa-Qarağas: hüdää (hüdö)''', reply_markup=markup_menu)
 # cameo
 # sytrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crossbow" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arbalest" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "арбалет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лук-самострел" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tataryayı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatar yayı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kundaklı yay" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kurmalı yay" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "самострел" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arbalete" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arbalet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cross bow":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	crossbow, arbalest
+🇷🇺 Русский:	арбалет [arbalet], лук-самострел
+🇹🇷 Türkçe:	tatar yayı, kundaklı yay, kurmalı yay, çark/çarh, zenberek/zenburek
+🇦🇿 Türkcə:	tatar yayı, qundaqlı yay-ox, çarx, zənbərək/zənburək
+🇹🇲 Türkmen:	gundagly ýaý
+🇺🇿 Oʻzbek:	qoʻndoqli kamon
+🇰🇿 Qazaq:	???
+🇰🇬 Qırğız:	qundaqtuu jaa
+🏴 Uyghur:	???
+🏴 Tatarça:	saplı cäyä
+🏴 Başqort:	haplı yäyä
+🏴 Çovaşla:	???
+🏴 Qaraqalpaq:	???
+🏴 Qırımtatar:	qundaqlı yay
+🏴 Qumuq:	???
+🏴 Alança:	soltan jaya
+🏴 Noğay:	???
+🏴 Sıbırca:	???
+🏴 Salırça:	???
+🏴 Gagauz:	???
+🏴 Urumça:	???
+🏴 Qarayçe:	???
+🏴 Qırımçah:	???
+🏴 Saqalí:	aya, çáçar saa, dar gınar saa
+🏴 Hakalí:	aya
+🏴 Tıva:	aya
+🏴 Altay:	aya
+🏴 Xakas:	aya, pozı atılcaŋ
+🏴 Şor:	aya
+🏴 Duha-Soyıt:	aya
+🏴 Tofa-Qarağas:	aya''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
