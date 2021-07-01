@@ -44389,6 +44389,50 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	aya
 🏴 Duha-Soyıt:	aya
 🏴 Tofa-Qarağas:	aya''', reply_markup=markup_menu)
+# kzrus ugrus cvrus qqrus kumrus nogrus styrus slrcn gagrus uumrus kdrrus jctrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mace" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulava" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "булава" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "topuz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toppuz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gürz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bozdoğan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buzdığan":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	çoxmar, topuz (toppuz), bozdoğan
+🇬🇧 English:	mace
+🇷🇺 Русский:	булава
+🇭🇺 Magyar: buzogány
+🇹🇷 Türkçe:	topuz, gürz, bozdoğan
+🇦🇿 Türkcə:	toppuz, çomaq, gürz
+🇹🇲 Türkmen:	serdesse
+🇺🇿 Oʻzbek:	choʻqmor, gurz (gurzi)
+🇰🇿 Qazaq:	şoqpar, kürzi, buzdığan
+🇰🇬 Qırğız:	çoqmor
+🏴 Uyghur:	choqmaq, gürzi (gürze)
+🏴 Tatarça:	çuqmar
+🏴 Başqort:	suqmar
+🏴 Çovaşla:	çukmar
+🏴 Qaraqalpaq:	shoqmar
+🏴 Qırımtatar:	çoqmar, gürsü
+🏴 Qumuq:	çoqmar
+🏴 Alança:	temir toqmaq
+🏴 Noğay:	şoqpar
+🏴 Sıbırca:	cuqmar
+🏴 Salırça:	dimur toxmax
+🏴 Gagauz:	topuz
+🏴 Urumça:	topuz
+🏴 Qarayçe:	çoxmar
+🏴 Qırımçah:	çohmar
+🏴 Saqalí:	çompo sülüges
+🏴 Hakalí:	bolçuok-ták mas
+🏴 Tıva:	ulug moŋ dokpak
+🏴 Altay:	çoqpor
+🏴 Xakas:	soxpar
+🏴 Şor:	çoqpar
+🏴 Duha-Soyıt:	moŋ-dayaq
+🏴 Tofa-Qarağas:	moŋ-tayaq''', reply_markup=markup_menu)
+# cameo
 
     else:
         bot.send_message(message.chat.id, hesbisey)
