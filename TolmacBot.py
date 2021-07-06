@@ -931,7 +931,7 @@ Tofalap: ???''', reply_markup=markup_menu)
 🇬🇧 English: biology
 🇷🇺 Русский: биология [biologiya]
 🇹🇷 Türkçe: biyoloji, dirim bilimi (neologism), hayatiyyat (ottoman archaism)
-🇦🇿 Türkcə: biologiya, təbiətşünaslıq (acrhaism), həyatiyyat (acrhaism), elmi həyat (archaism)
+🇦🇿 Türkcə: biologiya, təbiətşünaslıq (arсhaism), həyatiyyat (arсhaism), elmi həyat (archaism)
 🇹🇲 Türkmençe: biologiýa
 🇺🇿 Oʻzbekcha: biologiya
 🇰🇿 Qazaqşa: biyologiya (biologiya), tirşiliktanıw
@@ -1568,7 +1568,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🐺 Old Turkic (bef. 13th c.): köz, qaraq ("eye", "eyeball")
 🇬🇧 English: eye
 🇷🇺 Русский: глаз
-🇹🇷 Türkçe: göz, karak (acrhaism)
+🇹🇷 Türkçe: göz, karak (arсhaism)
 🇦🇿 Türkcə: göz
 🇹🇲 Türkmençe: göz, garak
 🇺🇿 Oʻzbekcha: koʻz
@@ -10516,7 +10516,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇺🇿 Oʻzbekcha: Xitoy, Chin (archaism)
 🇰🇿 Qazaqşa: Qıtay
 🇰🇬 Qırğızça: Qıtay, Juñgo (dialect)
-🏴 Uyghurche: Chine, Junggo, Kidat (acrhaism)
+🏴 Uyghurche: Chine, Junggo, Kidat (arсhaism)
 🏴 Tatarça: Qıtay, Çin
 🏴 Başqortsa: Qıtay
 🏴 Çovaşla: Kittay
@@ -10566,7 +10566,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇺🇿 Oʻzbekcha: xitoy, chinli (archaism)
 🇰🇿 Qazaqşa: qıtay
 🇰🇬 Qırğızça: qıtay
-🏴 Uyghurche: xenzu, jongguluq, Kidat kişi (acrhaism)
+🏴 Uyghurche: xenzu, jongguluq, Kidat kişi (arсhaism)
 🏴 Tatarça: qıtay
 🏴 Başqortsa: qıtay
 🏴 Çovaşla: kittay
@@ -11423,7 +11423,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "индия" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "india" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "inidian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "indian" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ındıan" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ındıa" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hindistan" \
@@ -11507,7 +11507,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇹🇷 Türkçe: I. Hint, Hindistanlı II. Hindu 
 🇦🇿 Türkcə: I. hind, hindistanlı, hindi, hindli II. hindu
 🇹🇲 Türkmençe: I. hindi II. indus, induizmiň tarapdary
-🇺🇿 Oʻzbekcha: I. hindi, hindi II. hindu
+🇺🇿 Oʻzbekcha: I. hind, hindi II. hindu
 🇰🇿 Qazaqşa: I. ündi, ündistandıq II. ündi, ündis
 🇰🇬 Qırğızça: I. indiyalıq, indi, indus II. induist, indus
 🏴 Uyghurche: I. Hindistanliq, Hindi II. Hindu, Hindi
@@ -44398,6 +44398,10 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toppuz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gürz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bozdoğan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "буздыган" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "боздыхан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "буздыхан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "буздуган" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buzdığan":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	çoxmar, topuz (toppuz), bozdoğan
 🇬🇧 English:	mace
@@ -44433,6 +44437,48 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	moŋ-dayaq
 🏴 Tofa-Qarağas:	moŋ-tayaq''', reply_markup=markup_menu)
 # cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jinn" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "genie" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "джинн" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "djinn" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "djin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gennie" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "джин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cinn" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cinni" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "джинни" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧞‍♂️" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧞" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧞‍♀" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jinnee":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	cin
+🇬🇧 English:	jinn, genie
+🇷🇺 Русский:	джинн [djynn]
+🇹🇷 Türkçe:	cin
+🇦🇿 Türkcə:	cin
+🇹🇲 Türkmen:	jyn
+🇺🇿 Oʻzbek:	jin
+🇰🇿 Qazaq:	jin
+🇰🇬 Qırğız:	jin
+🏴 Uyghur:	jin
+🏴 Tatarça:	cen
+🏴 Başqort:	yen
+🏴 Çovaşla:	???
+🏴 Qaraqalpaq:	jin
+🏴 Qırımtatar:	cin
+🏴 Qumuq:	cin
+🏴 Alança:	cin
+🏴 Noğay:	yin
+🏴 Sıbırca:	cen
+🏴 Salırça:	cin
+🏴 Gagauz:	cin
+🏴 Urumça:	cin
+🏴 Qarayçe:	cin
+🏴 Qırımçah:	cın''', reply_markup=markup_menu)
+# cvrus islam
 
     else:
         bot.send_message(message.chat.id, hesbisey)
