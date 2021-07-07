@@ -44461,7 +44461,7 @@ Other types of traditional or national sausages are listed below:
 🇦🇿 Türkcə:	cin
 🇹🇲 Türkmen:	jyn
 🇺🇿 Oʻzbek:	jin
-🇰🇿 Qazaq:	jin
+🇰🇿 Qazaq:	jin (jın)
 🇰🇬 Qırğız:	jin
 🏴 Uyghur:	jin
 🏴 Tatarça:	cen
@@ -44472,13 +44472,59 @@ Other types of traditional or national sausages are listed below:
 🏴 Qumuq:	cin
 🏴 Alança:	cin
 🏴 Noğay:	yin
-🏴 Sıbırca:	cen
+🏴 Sıbırca:	cen (yin)
 🏴 Salırça:	cin
 🏴 Gagauz:	cin
 🏴 Urumça:	cin
 🏴 Qarayçe:	cin
 🏴 Qırımçah:	cın''', reply_markup=markup_menu)
 # cvrus islam
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sirtlan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sırtlan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hyena" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гиена" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gyena" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hiyena" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hiena" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hyaena" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hyaenidae" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "andık":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	sırtlan
+🇬🇧 English:	hyena
+🇷🇺 Русский:	гиена [giyena]
+🇹🇷 Türkçe:	sırtlan
+🇦🇿 Türkcə:	kaftar, sırtlan, goreşən
+🇹🇲 Türkmen:	syrtlan
+🇺🇿 Oʻzbek:	sirtlon
+🇰🇿 Qazaq:	qorqaw
+🇰🇬 Qırğız:	kökjal
+🏴 Uyghur:	sirtlan
+🏴 Tatarça:	sırtlan
+🏴 Başqort:	hırtlan
+🏴 Çovaşla:	???
+🏴 Qaraqalpaq:	???
+🏴 Qırımtatar:	sırtlan
+🏴 Qumuq:	kaptar
+🏴 Alança:	qabır eşek
+🏴 Noğay:	???
+🏴 Sıbırca:	sırtlan
+🏴 Salırça:	???
+🏴 Gagauz:	???
+🏴 Urumça:	???
+🏴 Qarayçe:	???
+🏴 Qırımçah:	???
+🏴 Saqalí:	???
+🏴 Hakalí:	???
+🏴 Tıva:	???
+🏴 Altay:	???
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# animal
+# RUSRUS??? cvrus qqrus krcrus nogrus
+# slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
