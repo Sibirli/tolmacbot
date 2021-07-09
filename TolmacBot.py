@@ -6850,11 +6850,14 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "улитка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐌" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "улиточный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гастропода" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "улиточка":
-        bot.send_message(message.chat.id, '''🇬🇧 English: snail, gastropoda 🐌
+        bot.send_message(message.chat.id, '''🐺 Old Turkic: lim, sümüklü böcäk
+🇬🇧 English: snail, gastropoda 🐌
 🇷🇺 Русский: улитка [ulitka]
-🇹🇷 Türkçe: salyangoz
-🇦🇿 Türkcə: ilbiz, şeytan (dialect), babaqulu (dialect), xaxayək (dialect), xəxəy (dialect)
+🇹🇷 Türkçe: salyangoz, sümüklü böcek (kabuklu sümüklü böcek)
+🇦🇿 Türkcə: ilbiz
+ * dialects: şeytan, babaqulu, xaxayək, xəxəy
 🇹🇲 Türkmençe: balykgulak
 🇺🇿 Oʻzbekcha: shilliq
 🇰🇿 Qazaqşa: ulıw
@@ -6863,25 +6866,26 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tatarça: äkäm-tökäm, quçqar
 🏴 Başqortsa: qusqar
 🏴 Çovaşla: şuy, şuyttan moyraki, suyttan-xuran
-🏴 Qaraqalpaqsha: suw ögizi
+🏴 Qaraqalpaqsha: shıyırshıq, suw ögizi
 🏴 Qırımtatarca: çıqçıqbalaban
 🏴 Qumuqça: xurtuya
-🏴 Qaraçay-Malqar: tekelemüyüz
-🏴 Noğayşa: ıluw
+🏴 Qaraçay-Malqar: tekelemüyüz, meteke
+🏴 Noğayşa: ıluw, şüyirşik
 🏴 Sıbırca: äkäk-tökäm, qucqar
 🏴 Gagauzça: sülük, melk
 🏴 Saqalí: qaba, çoqu qáta
 🏴 Dulgan-Hakalí: çoku káta
-🏴 Tıvalap: xap-balık
-🏴 Salırça: puzuvaş, mogumo
-🏴 Xakastap: ???
-🏴 Altaylap: cılan-castıq
+🏴 Tıvalap: ulıg, xap-balık
+🏴 Salırça: puzuvaş, mogumo, buzi-momo
+🏴 Xakastap: pağa kîbi, pağa nımırxazı
+🏴 Altaylap: qaba-qurt, cılan-castıq, qandrıyaq
 🏴 Şor: ???
 🏴 Urumça: çıxçıxbalaban, sümükli böcük
-🏴 Karajče: siliegejli kurt, tyrtyr, baha
+🏴 Qarayçe: silegeyli qurt, tırtır
 🏴 Qrımçahça: tırtır
 🏴 Soyot: ???
 🏴 Tofalap: ???''', reply_markup=markup_menu)
+# shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ухо" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "уши" \
