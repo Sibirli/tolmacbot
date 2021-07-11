@@ -14701,38 +14701,47 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soy kırımı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soy kirimi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soykırımı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "massacre" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "masacre" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бойня" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "резня" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "погром" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "истребление" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "katliam" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pogrom" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soykirimi":
-        bot.send_message(message.chat.id, '''🇬🇧 English: genocide
-🇷🇺 Русский: геноцид [genotsid]
-🇹🇷 Türkçe: soykırım
-🇦🇿 Türkcə: soyqırım
+        bot.send_message(message.chat.id, '''🇬🇧 English: I. genocide II. massacre
+🇷🇺 Русский: I. геноцид [genotsid] II. погром [pogrom]
+🇹🇷 Türkçe: I. soykırım II. katliam
+🇦🇿 Türkcə: I. soyqırım II. qırğın
 🇹🇲 Türkmençe: gyrgyn
-🇺🇿 Oʻzbekcha: genotsid
-🇰🇿 Qazaqşa: genotsid
-🇰🇬 Qırğızça: tuqumqurut
-🏴 Uyghurche: soy qirim
+🇺🇿 Oʻzbekcha: qirgʻn
+🇰🇿 Qazaqşa: qırğın
+🇰🇬 Qırğızça: I. tuqumqurut II. qırğın
+🏴 Uyghurche: I. soy qirim II. qirghin
 🏴 Tatarça: qırğın
-🏴 Başqortsa: genotsid
-🏴 Çovaşla: genotsid
-🏴 Qaraqalpaqsha: genocid
-🏴 Qırımtatarca: soyqırım
-🏴 Qumuqça:	???
-🏴 Qaraçay-Malqar: soyqırım
-🏴 Noğayşa: genotsid
-🏴 Sıbırca: genocid
-🏴 Gagauzça: genoțid
-🏴 Saqalí: genotsid
-🏴 Dulgan-Hakalí: genotsid
-🏴 Tıvalap: genotsid
-🏴 Salırça: ???
-🏴 Xakastap: genotsîd
-🏴 Altaylap: genotsid
-🏴 Şor: genotsid
-🏴 Urumça: ???
-🏴 Karajče: ???
-🏴 Qrımçahça: soyqırım
-🏴 Soyot: genotsîd
-🏴 Tofalap: genotsîd''', reply_markup=markup_menu)
+🏴 Başqortsa: qırqın
+🏴 Çovaşla: tustaru
+🏴 Qaraqalpaqsha: qırǵın
+🏴 Qırımtatarca: I. soyqırım II. qırğın
+🏴 Qumuqça:	qırğın
+🏴 Qaraçay-Malqar: I. soyqırım II. qırğın
+🏴 Noğayşa: qırğın
+🏴 Sıbırca: qırqın
+🏴 Gagauzça: kıyım
+🏴 Saqalí: kırgí
+🏴 Dulgan-Hakalí: kersi
+🏴 Tıvalap: kırar
+🏴 Salırça: qırğın
+🏴 Xakastap: xırğan
+🏴 Altaylap: qırğın
+🏴 Şor: qırğağ
+🏴 Urumça: xırğın
+🏴 Qarayçe: ???
+🏴 Qrımçahça: I. soyqırım I. qırğın
+🏴 Soyot: ???
+🏴 Tofalap: ???''', reply_markup=markup_menu)
+# kdrrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to like" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "like" \
