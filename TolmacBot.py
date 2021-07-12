@@ -44539,6 +44539,49 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? cvrus qqrus krcrus nogrus
 # slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "duduk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "balaban" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "balaman" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "düdük" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tütek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дудка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дудук" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "балабан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "баламан":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	borğuy
+🇬🇧 English:	pipe (ex. duduk, balaban)
+🇷🇺 Русский:	дудка (напр. дудук, балабан)
+🇹🇷 Türkçe:	düdük, mey
+🇦🇿 Türkcə:	balaban, düdük (tütək), ney (mey)
+🇹🇲 Türkmen:	tüýdük
+🇺🇿 Oʻzbek:	boʻlamon, nay
+🇰🇿 Qazaq:	tütik, nay
+🇰🇬 Qırğız:	tütük, nay
+🏴 Uyghur:	düdük, balaman, nay
+🏴 Tatarça:	sıbızğı
+🏴 Başqort:	hıbıðğı
+🏴 Çovaşla:	tüttüt, şoxliçö
+🏴 Qaraqalpaq:	balaman
+🏴 Qırımtatar:	düdük, qaval
+🏴 Qumuq:	düdük
+🏴 Alança:	sıbızğı
+🏴 Noğay:	sıbızğı
+🏴 Sıbırca:	sımızğı
+🏴 Salırça:	çor, laba
+🏴 Gagauz:	düdük
+🏴 Urumça:	düdük
+🏴 Qarayçe:	qaval
+🏴 Qırımçah:	qaval
+🏴 Saqalí:	oyduo
+🏴 Hakalí:	oyduo
+🏴 Tıva:	şoor
+🏴 Altay:	qomırğay
+🏴 Xakas:	xobırax
+🏴 Şor:	qobraq
+🏴 Duha-Soyıt:	şoor
+🏴 Tofa-Qarağas:	murğu''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
