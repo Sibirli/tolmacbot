@@ -44582,6 +44582,30 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	şoor
 🏴 Tofa-Qarağas:	murğu''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ossetian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "osetian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "осетин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оссетин" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "осетинка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "осетинский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oset" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "osset" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "osetin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ossete" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "osetic" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "osete" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ossetic":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	Ossetian
+🇷🇺 Русский:	осетин, осетинка, осетинский (-ая, -ое)
+🇹🇷 Türkçe:	Oset
+🏴 Qırımtatar:	oset
+🏴 Qumuq:	asetin
+🏴 Malqar:	düger
+🏴 Qaraçay: tegey
+🏴 Noğay:	duğır
+🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: osetin ???''', reply_markup=markup_menu)
+# nation
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
