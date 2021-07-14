@@ -22564,7 +22564,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tatarça: ärlän
 🏴 Başqortsa: irlän, alyırðan
 🏴 Çovaşla: arlan
-🏴 Qaraqalpaqsha: balpaq tıshqan
+🏴 Qaraqalpaqsha: balpaq tıshqan {+ spermophilus, marmot)
 🏴 Qırımtatarca: yerbuçuq
 🏴 Qumuqça: awlaq çıçqan
 🏴 Alança: xomyak
@@ -43271,7 +43271,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Tatarça:	suwır
 🏴 Başqort:	huwır
 🏴 Çovaşla:	sovor
-🏴 Qaraqalpaq:	balpaq tıshqan
+🏴 Qaraqalpaq:	balpaq tıshqan {+ spermophilus, hamster)
 🏴 Qırımtatar:	dağ sıçanı
 🏴 Noğay:	tarbağan, suwır
 🏴 Sıbırca:	söyör
@@ -44639,7 +44639,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Tatarça:	yomran
 🏴 Başqort:	yomran
 🏴 Çovaşla:	tırkas, yomran
-🏴 Qaraqalpaq:	balpaq tıshqan {+ hamster)
+🏴 Qaraqalpaq:	balpaq tıshqan {+ hamster, marmot)
 🏴 Qırımtatar:	cumran
 🏴 Qumuq:	awlaq atyalman
 🏴 Alança:	juburan
@@ -44659,6 +44659,59 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	örgä
 🏴 Tofa-Qarağas:	örge''', reply_markup=markup_menu)
 # cameo animal
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandoor" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pit oven" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тандыр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandyr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandır" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tendir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tanur" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тондыр" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandoori" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "танур" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tanoor" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "танир" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tanour" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandour" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandur" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandor" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandır fırını" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тондир" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тандир":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	pit oven, tandoor
+🇷🇺 Русский:	тандыр [tandyr]
+🇹🇷 Türkçe:	tandır
+🇦🇿 Türkcə:	təndir
+🇹🇲 Türkmen:	tamdyr
+🇺🇿 Oʻzbek:	tandir
+🇰🇿 Qazaq:	tandır
+🇰🇬 Qırğız:	tandır (dandır)
+🏴 Uyghur:	tonur
+🏴 Tatarça:	tandır
+🏴 Başqort:	tandır
+🏴 Çovaşla:	???
+🏴 Qaraqalpaq:	tandır
+🏴 Qırımtatar:	tandır
+🏴 Qumuq:	tandır
+🏴 Alança:	tandır
+🏴 Noğay:	tandır
+🏴 Sıbırca:	tantır
+🏴 Salırça:	tonur
+🏴 Gagauz:	???
+🏴 Urumça:	???
+🏴 Qarayçe:	tandur (tannur)
+🏴 Qırımçah:	???
+🏴 Saqalí:	???
+🏴 Hakalí:	???
+🏴 Tıva:	tonar
+🏴 Altay:	tandır
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# cvrus gagrus uumrus jctrus sahrus dlgrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
