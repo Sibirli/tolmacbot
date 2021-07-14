@@ -26421,7 +26421,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Dulgan-Hakalí: küter
 🏴 Tıvalap:	dedir-davan
 🏴 Xakastap: tîsker azax, oyda azax, tödir azax, oyda tamas, noman, sarğlax
-🏴 Altaylap: cer çıçqan, tersek, cerdiñ türtküni, küjül, nomon, añqıyt, suu çıçqan, çumaş, tarbağan, türtün
+🏴 Altaylap: cer çıçqan, tersek, cerdiñ türtküni, küjül, nomon, añqıyt, suu çıçqan, çumaş, türtün
 🏴 Şor:	teskere tamaş
 🏴 Soyot: comman
 🏴 Tofalap: hîy-qurt''', reply_markup=markup_menu)
@@ -44605,6 +44605,60 @@ Other types of traditional or national sausages are listed below:
 🏴 Noğay:	duğır
 🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: osetin ???''', reply_markup=markup_menu)
 # nation
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ground squirrel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ground squirel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "groundsquirrel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ground-squirrel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "суслик" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сусел" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yer sincabı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yer sincabi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tarla sincabı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gelengi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "geleni" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "suslik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gofer" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gopher" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гофер" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "citellus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spermophilus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "souslik":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	kelägü {+ striped field mouse}
+🇬🇧 English:	ground squirrel
+🇷🇺 Русский:	суслик
+🇭🇺 Magyar: ürge
+🇲🇳 Mongol: ürge
+🇹🇷 Türkçe:	yer sincabı (tarla sincabı), gelengi (geleni)
+🇦🇿 Türkcə:	sünbülqıran 
+🇹🇲 Türkmen:	alaka
+🇺🇿 Oʻzbek:	yumronqoziq
+🇰🇿 Qazaq:	sarışunaq,  zorman, taraqquyrıq
+🇰🇬 Qırğız:	sarı çıçqan
+🏴 Uyghur:	sériq chashqan, küsütke
+🏴 Tatarça:	yomran
+🏴 Başqort:	yomran
+🏴 Çovaşla:	tırkas, yomran
+🏴 Qaraqalpaq:	balpaq tıshqan {+ hamster)
+🏴 Qırımtatar:	cumran
+🏴 Qumuq:	awlaq atyalman
+🏴 Alança:	juburan
+🏴 Noğay:	erlen {+ hamster)
+🏴 Sıbırca:	yomran
+🏴 Salırça:	sarı geme
+🏴 Gagauz:	kelemä sıçanı {+ striped field mouse}
+🏴 Urumça:	cumran (cımran, cımıran)
+🏴 Qarayçe:	cumran
+🏴 Qırımçah:	cumran
+🏴 Saqalí:	örgüö
+🏴 Hakalí:	örgő
+🏴 Tıva:	örge
+🏴 Altay:	örkö, süzelik
+🏴 Xakas:	örke
+🏴 Şor:	çıbran
+🏴 Duha-Soyıt:	örgä
+🏴 Tofa-Qarağas:	örge''', reply_markup=markup_menu)
+# cameo animal
 
     else:
         bot.send_message(message.chat.id, hesbisey)
