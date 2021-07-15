@@ -6059,6 +6059,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): tuz
 🇬🇧 English: salt 🧂
 🇷🇺 Русский: соль [sol']
+🇲🇳 Mongol: davs
 🇹🇷 Türkçe: tuz
 🇦🇿 Türkcə: duz
 🇹🇲 Türkmençe: duz
@@ -6084,10 +6085,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: tus
 🏴 Şor: tus
 🏴 Urumça: duz (tuz)
-🏴 Karajče: tuz
+🏴 Qarayçe: tuz
 🏴 Qrımçahça: tuz
 🏴 Soyot: tus
 🏴 Tofalap: tus''', reply_markup=markup_menu)
+# cameo
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стамбул" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "станбул" \
@@ -6127,7 +6129,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: İstanbul (Stambul)
 🏴 Şor: İstanbul
 🏴 Urumça: İstanbul (İstanbol, Stambol, Stanbol)
-🏴 Karajče: İstanbul
+🏴 Qarayçe: İstanbul
 🏴 Qrımçahça: İstanbul
 🏴 Soyot: İstanbul
 🏴 Tofalap: İstanbul''', reply_markup=markup_menu)
@@ -6168,7 +6170,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: el
 🏴 Şor: el
 🏴 Urumça: el
-🏴 Karajče: ėl´
+🏴 Qarayçe: el´
 🏴 Qrımçahça: el
 🏴 Soyot: ulıs
 🏴 Tofalap: ulus''', reply_markup=markup_menu)
@@ -6205,7 +6207,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: anda (ondo)
 🏴 Şor: anda
 🏴 Urumça: orda, onda
-🏴 Karaj: anda (onda), anavda, ara (ari, ary)
+🏴 Qarayçe: anda (onda), anavda, ara (ari, arı)
 🏴 Qrımçahça: onda
 🏴 Soyot: ında, aa, deêde (teêde)
 🏴 Tofalap: ında, teêde''', reply_markup=markup_menu)
@@ -6243,7 +6245,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: qılıq
 🏴 Şor: qılıq
 🏴 Urumça: tabiyet (tabyat)
-🏴 Karajče: kylyk (kylych)
+🏴 Qarayçe: qılıx
 🏴 Qrımçahça: qılıq
 🏴 Soyot: qılıq, çaŋ
 🏴 Tofalap: qılıq''', reply_markup=markup_menu)
@@ -6283,7 +6285,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: pascux
 🏴 Altay: bar
 🏴 Urumça: ğablan (xaplan), aslan-xaplan
-🏴 Karaj: bars (barst, pars)
+🏴 Qarayçe: bars (pars)
 🏴 Qrımçahça: qaplan, pars
 🏴 Soyot: bar''', reply_markup=markup_menu)
 
@@ -6335,7 +6337,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: tilmeş
 🏴 Şor: ???
 🏴 Urumça: tilmaç
-🏴 Karajče: talmač (tolmač)
+🏴 Qarayçe: talmaç (tolmaç)
 🏴 Qrımçahça: tılmaç
 🏴 Soyot: tolmooçı
 🏴 Tofalap: tolmooçı''', reply_markup=markup_menu)
@@ -6395,7 +6397,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: I. qalıŋ, coon II. coon, semis, tepçek III. semis, üstü
 🏴 Şor: I. qalın, çoon II. çoon, sebis III. semis (sebis)
 🏴 Urumça: I. ğalın (xalın) II. kök, şişman, semiz III. yağlı, maylı
-🏴 Karaj: I. kalyn II. bazych (bazyk), siemiź (semiz) III. javly (javlu), siemiź (semiz)
+🏴 Qaray: I. qalın II. bazıx, semiz III. yavlı (yavlu), semiz
 🏴 Qrımçahça: I. qalın II. semız III. yağlı
 🏴 Soyot: I. hılın II. semîs III. çağlığ, üstiğ, dosalığ (tosalığ)
 🏴 Tofalap: I. hılı, II. semîs III. üstüğ''', reply_markup=markup_menu)
@@ -6437,7 +6439,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: çiçke, cuqa
 🏴 Şor: çişke, çuğa
 🏴 Urumça: yuxa, xuba, ince
-🏴 Karajče: ińčkia (inckie, inčkie), indže, jufka
+🏴 Qarayçe: inçkä (inçke), ince, yufqa
 🏴 Qrımçahça: ince, yufqa
 🏴 Soyot: çuğa (cuğa), cîŋge
 🏴 Tofalap: çuğa, nîŋge''', reply_markup=markup_menu)
@@ -6473,7 +6475,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: ol
 🏴 Şor: ol, tigi
 🏴 Urumça: o
-🏴 Karaj: ol, ošol (osol)
+🏴 Qarayçe: ol, oşol
 🏴 Qrımçahça: o (ol), oşol
 🏴 Soyot: ol, deê (teê)
 🏴 Tofalap: ol, teê''', reply_markup=markup_menu)
@@ -6513,7 +6515,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: ölön
 🏴 Şor: öleŋ, ot
 🏴 Urumça: ot, ölet
-🏴 Karajče: ot, kiogiot, čiop, ješillik
+🏴 Qarayçe: ot, çöp, yeşillik
 🏴 Qrımçahça: ot
 🏴 Soyot: ot, kök (gök), sigen (sigän)
 🏴 Tofalap: ot, kök, sigen''', reply_markup=markup_menu)
@@ -6554,7 +6556,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: traktor
 🏴 Şor: traktor
 🏴 Urumça: traktor
-🏴 Karajče: traktor
+🏴 Qarayçe: traktor
 🏴 Qrımçahça: traktor
 🏴 Soyot: traktor
 🏴 Tofalap: tıraqtır''', reply_markup=markup_menu)
@@ -6603,7 +6605,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: Traktor Azerbaydjan
 🏴 Şor: Traktor Azerbaydjan
 🏴 Urumça: Traktor Azırbacan
-🏴 Karajče: Traktor Azierbajdžan
+🏴 Qarayçe: Traktor Azerbaycan
 🏴 Qrımçahça: Traktor Azerbaycan
 🏴 Soyot: Traktor Azerbayjan
 🏴 Tofalap: Tıraqtır Azerbayjan''', reply_markup=markup_menu)
@@ -6640,7 +6642,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: üş
 🏴 Dolgan: üs
 🏴 Urumça: üç
-🏴 Karaj: üč
+🏴 Qarayçe: üç
 🏴 Qrımçahça: uç
 🏴 Soyot: üş
 🏴 Tofalap: üş''', reply_markup=markup_menu)
@@ -6719,7 +6721,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: sen
 🏴 Dolgan: en
 🏴 Urumça: sän (sen)
-🏴 Karaj: sień
+🏴 Qarayçe: sen
 🏴 Qrımçahça: sen
 🏴 Soyot: sen
 🏴 Tofalap: sen''', reply_markup=markup_menu)
@@ -6759,7 +6761,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: uur
 🏴 Şor: aar
 🏴 Urumça: ağır (avur)
-🏴 Karaj: avur (ahyr)
+🏴 Qarayçe: avur (ağır)
 🏴 Qrımçahça: ağır
 🏴 Soyot: aar
 🏴 Tofalap: aar''', reply_markup=markup_menu)
@@ -6796,7 +6798,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: biste
 🏴 Şor: piste
 🏴 Urumça: bizde
-🏴 Karaj: biźdie
+🏴 Qarayçe: bizde
 🏴 Qrımçahça: bızde
 🏴 Soyot: bîstê
 🏴 Tofalap: bîstê''', reply_markup=markup_menu)
@@ -6839,7 +6841,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: tar, qızıq
 🏴 Şor: tar
 🏴 Urumça: dar (tar), sıxıx
-🏴 Karajče: tar, kysyk (kysych)
+🏴 Qarayçe: tar, qısıx
 🏴 Qrımçahça: tar
 🏴 Soyot: tar
 🏴 Tofalap: tar, nîŋge''', reply_markup=markup_menu)
@@ -6921,7 +6923,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: qulaq
 🏴 Şor: qulaq
 🏴 Urumça: xulax (ğulax, ğulağ)
-🏴 Karajče: kulach (kulak)
+🏴 Qarayçe: qulax
 🏴 Qrımçahça: qulah
 🏴 Soyot: qulaq
 🏴 Tofalap: qulaq''', reply_markup=markup_menu)
@@ -6964,7 +6966,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: fevral, qoçqor
 🏴 Şor: azığ
 🏴 Urumça: fevrar
-🏴 Karajče: (they use Karaim calendar)
+🏴 Qarayçe: (they use Karaim calendar)
 🏴 Qrımçahça: fevral
 🏴 Soyot: fevral
 🏴 Tofalap: kuruğ hovuğ''', reply_markup=markup_menu)
@@ -7028,7 +7030,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: ciilek, frukta
 🏴 Şor: ezre
 🏴 Urumça: meyvä (meyva, meva), yemiş
-🏴 Karajče: jemiš (jemis)
+🏴 Qarayçe: yemiş
 🏴 Qrımçahça: yemış, meyva
 🏴 Soyot: hat (soft fruit)
 🏴 Tofalap: qat (soft fruit)''', reply_markup=markup_menu)
@@ -7064,7 +7066,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: ???
 🏴 Şor: ???
 🏴 Urumça: ???
-🏴 Karajče: chimija
+🏴 Qarayçe: ???
 🏴 Qrımçahça: ???
 🏴 Soyot: ???
 🏴 Tofalap: ???''', reply_markup=markup_menu)
@@ -7107,7 +7109,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: caqşı
 🏴 Şor: çaqşı
 🏴 Urumça: yaxşı, iyi (ey, eyi)
-🏴 Karajče: jachšy, iji (ėgi, ėji)
+🏴 Qarayçe: yaxşı, iyi (egi, eyi)
 🏴 Qrımçahça: yaxşı, eyı
 🏴 Soyot: ekki
 🏴 Tofalap: ekki, bert''', reply_markup=markup_menu)
@@ -7147,7 +7149,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: xristian
 🏴 Dolgan: xristian
 🏴 Urumça: xristiyan, xristianos
-🏴 Karaj: christian
+🏴 Qarayçe: xristian
 🏴 Qrımçahça: hristian
 🏴 Soyot: xrîstîan
 🏴 Tofalap: xrîstîan''', reply_markup=markup_menu)
@@ -7227,7 +7229,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: kiji
 🏴 Şor: kiji
 🏴 Urumça: insan, adam, kişi
-🏴 Karajče: kiši (kisi), adam, insan, adam ohlu
+🏴 Qarayçe: kişi, adam, insan, adam oğlu
 🏴 Qrımçahça: insan, adam, kışı
 🏴 Soyot: kîşî (kîhî)
 🏴 Tofalap: kîşî''', reply_markup=markup_menu)
@@ -7265,7 +7267,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: qurt, çoyloşqon
 🏴 Şor: qurt, şoşqan
 🏴 Urumça: ğurt (xurt), suvalçan (sıvalçan)
-🏴 Karajče: kurt
+🏴 Qarayçe: qurt
 🏴 Qrımçahça: qurt
 🏴 Soyot: qurt, şoylaşqan
 🏴 Tofalap: qurt''', reply_markup=markup_menu)
@@ -7310,7 +7312,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: qara
 🏴 Şor: qara
 🏴 Urumça: ğara (kara, xara)
-🏴 Karajče: kara
+🏴 Qarayçe: qara
 🏴 Qrımçahça: qara
 🏴 Soyot: qara
 🏴 Tofalap: qara''', reply_markup=markup_menu)
@@ -7348,7 +7350,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: tört
 🏴 Dolgan: tüört
 🏴 Urumça: dört (dörd)
-🏴 Karaj: diort’
+🏴 Qarayçe: dört
 🏴 Qrımçahça: dört
 🏴 Soyot: dört''', reply_markup=markup_menu)
 
@@ -7385,7 +7387,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: ne, neme
 🏴 Şor: noo
 🏴 Urumça: nä (ne, ni, nı)
-🏴 Karaj: nie (ne)
+🏴 Qarayçe: ne
 🏴 Qrımçahça: ne
 🏴 Soyot: çü (cü)
 🏴 Tofalap: çü''', reply_markup=markup_menu)
@@ -7424,7 +7426,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: altı (alçı)
 🏴 Şor: altı
 🏴 Urumça: altı
-🏴 Karajče: alty
+🏴 Qarayçe: altı
 🏴 Qrımçahça: altı
 🏴 Soyot: altı
 🏴 Tofalap: altı''', reply_markup=markup_menu)
@@ -7464,7 +7466,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: keŋ, calbaq, elbek
 🏴 Şor: keŋ, çalbaq, ennig
 🏴 Urumça: enni (eŋli, yeŋli), keŋ
-🏴 Karaj: kień (ken), avlach (avlak), keńiš
+🏴 Qarayçe: keŋ, avlax, keŋiş
 🏴 Qrımçahça: keñ
 🏴 Soyot: eńgiri, alhığ (alhuğ), örgän
 🏴 Tofalap: eńgiri, alhığ''', reply_markup=markup_menu)
@@ -7504,7 +7506,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: şqol
 🏴 Şor: şqol
 🏴 Urumça: sxolios (şkola, skolâ, skolios, sxolio)
-🏴 Karajče: üriatiuv üviu
+🏴 Qarayçe: ürätüv üvü
 🏴 Qrımçahça: mekteb
 🏴 Soyot: ışqool
 🏴 Tofalap: ööredir öğ, ışqool
@@ -7544,7 +7546,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: bu
 🏴 Şor: po
 🏴 Urumça: bu
-🏴 Karaj: bu
+🏴 Qarayçe: bu
 🏴 Qrımçahça: bu
 🏴 Soyot: bo
 🏴 Tofalap: bo''', reply_markup=markup_menu)
@@ -7583,7 +7585,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor: men
 🏴 Dolgan: min
 🏴 Urumça: bän (men)
-🏴 Karaj: mień
+🏴 Qarayçe: men
 🏴 Qrımçahça: men
 🏴 Soyot: men
 🏴 Tofalap: men''', reply_markup=markup_menu)
@@ -7622,13 +7624,14 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tıvalap: yablok (yabloko)
 🏴 Salırça: alima
 🏴 Xakastap: yabloko
-🏴 Altaylap: yablok, alma (archaism)
+🏴 Altaylap: alma
 🏴 Şor: yabloko
 🏴 Urumça: alma
-🏴 Karajče: alma
+🏴 Qarayçe: alma
 🏴 Qrımçahça: alma
 🏴 Soyot: yabloko
 🏴 Tofalap: yabloga''', reply_markup=markup_menu)
+# tyvrus dlgrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lamb" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ягненок" \
@@ -7667,7 +7670,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: quraan*
 🏴 Şor: qurağan* (1 y.o.), tölege (2 y.o.)
 🏴 Urumça: xuzu (ğuzi, xozu), xozu bala
-🏴 Karajče: kozu, jaš koj
+🏴 Qarayçe: qozu, yaş qoy
 🏴 Qrımçahça: qozu
 🏴 Soyot: hurağan*, tölik (1 y.o.)
 🏴 Tofalap: hoy oğlu, hurağan* (1 y.o.)
@@ -7705,7 +7708,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altay: til
 🏴 Şor:	til
 🏴 Urumça: dil (til)
-🏴 Karajče: til´ (til)
+🏴 Qarayçe: til
 🏴 Qrımçahça: tıl
 🏴 Soyot: dıl (tıl)
 🏴 Tofalap: dıl (tıl)''', reply_markup=markup_menu)
@@ -7746,7 +7749,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: cımırtqa
 🏴 Şor: nıbırtqa
 🏴 Urumça: yumurta (yemırta)
-🏴 Karajče: jumurtcha (jumurta, jymyrta)
+🏴 Qarayçe: yumurtxa (yumurta, yımırta)
 🏴 Qrımçahça: yımırta
 🏴 Soyot: çuurha (cuurha)
 🏴 Tofalap: nümurha''', reply_markup=markup_menu)
@@ -7790,7 +7793,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: yanvar, çağan
 🏴 Şor: çel
 🏴 Urumça: yinar
-🏴 Karajče: (they use Karaim calendar)
+🏴 Qarayçe: (they use Karaim calendar)
 🏴 Qrımçahça: yanvar
 🏴 Soyot: yanvar
 🏴 Tofalap: aq''', reply_markup=markup_menu)
@@ -7823,7 +7826,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Saqalí: joppuon
 🏴 Dulgan-Hakalí: joppuon
 🏴 Tıvalap: yapon
-🏴 Salırça: ribun, ribun kişi
+🏴 Salırça: ribun
 🏴 Xakastap: yapon
 🏴 Altaylap: copon
 🏴 Şor: yapon
@@ -7832,7 +7835,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: yapon (japon)
 🏴 Soyot: yapon
 🏴 Tofalap: yapon''', reply_markup=markup_menu)
-#nation
+# nation
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "japan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nippon" \
@@ -7876,7 +7879,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: Yaponiya (Japonya)
 🏴 Soyot: Yapon, Yaponîya
 🏴 Tofalap: Yaponîya''', reply_markup=markup_menu)
-#country
+# country
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "интернет" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "internet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ınternet" \
@@ -7910,7 +7913,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: internet
 🏴 Şor: internet
 🏴 Urumça: internet
-🏴 Karajče: internet
+🏴 Qarayçe: internet
 🏴 Qrımçahça: internet
 🏴 Soyot: înternêt
 🏴 Tofalap: înternêt''', reply_markup=markup_menu)
@@ -7948,10 +7951,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: istoriya
 🏴 Şor: istoriya
 🏴 Urumça: istoria
-🏴 Karajče: istorija
+🏴 Qarayçe: istoriya
 🏴 Qrımçahça: tarih
 🏴 Soyot: îstorîya
 🏴 Tofalap: îstorîya''', reply_markup=markup_menu)
+# cvrus sahrus dlgruus  slrcn altrus shorrus uumrus kdrrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cake" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кекс" \
@@ -44712,6 +44716,56 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	???
 🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
 # cvrus gagrus uumrus jctrus sahrus dlgrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "squirrel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "squirel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "белка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "векша" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вевереца" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "беличий" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sincap" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sıncap" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sincab" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sıncab" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "değin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "teyyun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "teyun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sciuridae" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sciurus":
+        bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱅𐰘𐰭
+🐺 Old Turkic (bef. XV c.):	teyiŋ (tiyiŋ)
+🇬🇧 English:	squirrel
+🇷🇺 Русский:	белка
+🇹🇷 Türkçe:	sincap, değin {dial.}, teyyun {arch.}
+🇦🇿 Türkcə:	sincab
+🇹🇲 Türkmen:	awusiýdik
+🇺🇿 Oʻzbek:	tiyin, olmaxon
+🇰🇿 Qazaq:	tiyin
+🇰🇬 Qırğız:	tıyın
+🏴 Uyghur:	tiyin
+🏴 Tatarça:	tiyen
+🏴 Başqort:	teyen
+🏴 Çovaşla:	pakşa (векша)
+🏴 Qaraqalpaq:	tıyın
+🏴 Qırımtatar:	sansar
+🏴 Qumuq:	atyalman
+🏴 Alança:	tıyın, ağaç qoyan
+🏴 Noğay:	tıyın
+🏴 Sıbırca:	teyen
+🏴 Salırça:	ağaş geme
+🏴 Gagauz:	sincap (sıncap), ceviz tavşamı (ceviztavşam)
+🏴 Urumça:	cävizğıran
+🏴 Qarayçe:	diyin
+🏴 Qırımçah:	sansar
+🏴 Saqalí:	tiiŋ
+🏴 Hakalí:	tiiŋ
+🏴 Tıva:	diiŋ
+🏴 Altay:	tiyiŋ
+🏴 Xakas:	tîîn
+🏴 Şor:	tiyiŋ
+🏴 Duha-Soyıt:	diîŋ
+🏴 Tofa-Qarağas:	diîŋ''', reply_markup=markup_menu)
+# animal
 
     else:
         bot.send_message(message.chat.id, hesbisey)
