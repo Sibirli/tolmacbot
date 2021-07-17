@@ -7807,7 +7807,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇬🇧 English: japanese
 🇷🇺 Русский: японец, японка, японский (-ая, -ое)
 🇹🇷 Türkçe: japon
-🇦🇿 Türkcə: yapon, japon {arch.}
+🇦🇿 Türkcə: yapon, japon {arch. + south AzT.}
 🇹🇲 Türkmençe: ýapon
 🇺🇿 Oʻzbekcha: yapon
 🇰🇿 Qazaqşa: japon
@@ -7823,8 +7823,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Noğayşa: yapon
 🏴 Sıbırca: yamar, nippon
 🏴 Gagauzça: yapon
-🏴 Saqalí: joppuon
-🏴 Dulgan-Hakalí: joppuon
+🏴 Saqalí: coppuon
+🏴 Dulgan-Hakalí: coppuon
 🏴 Tıvalap: yapon
 🏴 Salırça: ribun
 🏴 Xakastap: yapon
@@ -14407,7 +14407,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇬🇧 English: defect, flaw
 🇷🇺 Русский: дефект [defekt], недостаток, изъян, брак
 🇹🇷 Türkçe: kusur, noksan, eksiklik, bozukluk, kem
-🇦🇿 Türkcə: qüsur, nöqsan, çatışmazlıq, kəm, kəmlik
+🇦🇿 Türkcə: qüsur, nöqsan, çatışmazlıq, kəm, kəmlik, man
 🇹🇲 Türkmençe: kem, bozuklyk, ýetmezçilik
 🇺🇿 Oʻzbekcha: kamchilik, nuqson, illat
 🇰🇿 Qazaqşa: aqaw, kemistik, jetimsizdik, kemşilik, min
@@ -43966,6 +43966,49 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	I. örede II. üstünde
 🏴 Duha-Soyıt:	I. ündiride II. üstindä
 🏴 Tofa-Qarağas:	I. ündürüde II. üstinde''', reply_markup=markup_menu)
+# cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "up" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "upward" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "upwards" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "верх" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "верхний" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вверх" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yukarı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yukari":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yoqaru
+🇬🇧 English:	up, upward, upwards
+🇷🇺 Русский:	верх, вверх, верхний
+🇰🇷 Hangug-eo: joguro (쪽으로)
+🇹🇷 Türkçe:	yukarı
+🇦🇿 Türkcə:	yuxarı
+🇹🇲 Türkmen:	ýokary
+🇺🇿 Oʻzbek:	yuqori
+🇰🇿 Qazaq:	joğarı
+🇰🇬 Qırğız:	joğoru
+🏴 Uyghur:	yuqiri
+🏴 Tatarça:	yuğarı
+🏴 Başqort:	yuğarı
+🏴 Çovaşla:	cülelle
+🏴 Qaraqalpaq:	joqarı
+🏴 Qırımtatar:	yuqarı
+🏴 Qumuq:	yoğari
+🏴 Alança:	oğarı
+🏴 Noğay:	yoğarı
+🏴 Sıbırca:	yuğarı
+🏴 Salırça:	yoxar
+🏴 Gagauz:	yukarı
+🏴 Urumça:	yuxarı
+🏴 Qarayçe:	yoğarı
+🏴 Qırımçah:	yoqarı
+🏴 Saqalí:	üöhe
+🏴 Hakalí:	űhe
+🏴 Tıva:	örü
+🏴 Altay:	örö
+🏴 Xakas:	çoğar
+🏴 Şor:	öre
+🏴 Duha-Soyıt:	öörî
+🏴 Tofa-Qarağas:	ündürü''', reply_markup=markup_menu)
 # cameo
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "laçın" \
