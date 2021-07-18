@@ -3147,21 +3147,21 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇦🇿 Türkcə: timsah
 🇹🇲 Türkmençe: tymsak
 🇺🇿 Oʻzbekcha: timsoh
-🇰🇿 Qazaqşa: qoltırawın, tımsaq (archaism)
-🇰🇬 Qırğızça: krokodil
+🇰🇿 Qazaqşa: qoltırawın, tımsaq
+🇰🇬 Qırğızça: tımsaq
 🏴 Uyghurche: timsaq
 🏴 Tatarça: timsax
 🏴 Başqortsa: krokodil, diŋgeð keþärtkehe
 🏴 Çovaşla: krokodil
 🏴 Qaraqalpaqsha: krokodil
 🏴 Qırımtatarca: timsah
-🏴 Qumuqça: krokodil
-🏴 Qaraçay-Malqar: sarıwbek
+🏴 Qumuqça: timsah
+🏴 Qaraçay-Malqar: sarıwek (sarıwbek)
 🏴 Noğayşa: alawan, krokodil
 🏴 Sıbırca: timsaq (timsax)
 🏴 Gagauzça: krokodil
 🏴 Saqalí: luobuya
-🏴 Dulgan-Hakalí: krokodil
+🏴 Dulgan-Hakalí: karakacíl
 🏴 Tıvalap: krokodil
 🏴 Salırça: ıyü
 🏴 Xakastap: krokodîl
@@ -3172,7 +3172,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qrımçahça: timsah
 🏴 Soyot: krokodîl
 🏴 Tofalap: krokodîl''', reply_markup=markup_menu)
-# RUSRUS??? kgrus barus cvrus qqrus kumrus nogrus
+# RUSRUS??? barus cvrus qqrus nogrus
 # slrcn gagrus uumrus kdrrus sahrus dlgrus tyvrus khakrus altrus shorrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kanat" \
@@ -5974,6 +5974,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐕‍🦺" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kancık":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰃𐱃
+🐺 Old Turkic (bef. 13th c.): ıt, köpäk ♂, qançıq ♀
 🇬🇧 English: dog 🐶🐕, bitch ♀
 🇷🇺 Русский: собака, пёс ♂, кобель ♂, сука ♀
 🇹🇷 Türkçe: köpek, it, erkek köpek ♂, kancık ♀
@@ -10784,7 +10785,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐱" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐈" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "киска":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): mişkiç, muş, manu /wildcat/
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): mişkiç, muş
 🇬🇧 English: cat 🐱🐈
 🇷🇺 Русский: кот, кошка [koshka], киска [kiska]
 🇹🇷 Türkçe: kedi, pişik {dial.}, pisi {used by children}
@@ -10808,13 +10809,13 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Dulgan-Hakalí: kuoska (koşka)
 🏴 Tıvalap:	diis, moortay, mıy-ıt, tiispey {arch.}
 🏴 Salırça:	müşüh (mışux, muşux)
-🏴 Xakastap: xoosxa
-🏴 Altaylap: mıy, kiske, manı {wildcat}, pırzaq {arch.}
+🏴 Xakastap: mıçığaç
+🏴 Altaylap: mıy
 🏴 Şor: pızraq
 🏴 Urumça: pişik (pisik, mışıx), maçu, pardoş (pardu, pardoy, pardos) {male cat}
-🏴 Qarayçe: meçi (mmaçı), kedi
+🏴 Qarayçe: meçi (maçı), kedi
 🏴 Qrımçahça: mışıh
-🏴 Soyot: hööşke, manıl (manuul) {wildcat}
+🏴 Soyot: hööşke
 🏴 Tofalap: hööşke (kööşke)''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "осел" \
@@ -18159,7 +18160,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: geme (kämä, keme) {+ rat}
 🏴 Gagauzça: sıçan, patkan, farä
 🏴 Urumça: sıçan
-🏴 Karajče: syčan (šyčan, syčkan)
+🏴 Qarayçe: sıçan (sıçqan)
 🏴 Qırımçahça: sıçan {+ rat}, sıçançıx
 🏴 Saqalí: kutuyaq
 🏴 Dulgan-Hakalí: kutuyak
