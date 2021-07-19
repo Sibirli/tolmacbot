@@ -44811,6 +44811,62 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	diîŋ''', reply_markup=markup_menu)
 # animal
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тетрадь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тетрать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тетрад" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тетрадный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тетрадька" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тетрадка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тетратька" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тетратка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "блокнот" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "notepad" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "notebook" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📔" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🗒" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📓" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "writing pad" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "exercise book" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "note pad" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "defter" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "defder" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "note book":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	däftär (däptär)
+🇬🇧 English:	notebook, notepad, register, registry 📔🗒📓
+🇷🇺 Русский:	тетрадь [tetrad], блокнот [bloknot], регистр; (реже: книга)
+🇲🇳 Mongol: devter
+🇹🇷 Türkçe:	defter
+🇦🇿 Türkcə:	dəftər
+🇹🇲 Türkmen:	depder
+🇺🇿 Oʻzbek:	daftar
+🇰🇿 Qazaq:	däpter
+🇰🇬 Qırğız:	depter
+🏴 Uyghur:	depter
+🏴 Tatarça:	däftär
+🏴 Başqort:	däftär
+🏴 Çovaşla:	tipter
+🏴 Qaraqalpaq:	dápter
+🏴 Qırımtatar:	defter
+🏴 Qumuq:	tepter
+🏴 Alança:	defter
+🏴 Noğay:	tepter
+🏴 Sıbırca:	täptär
+🏴 Salırça:	däptär
+🏴 Gagauz:	tefter
+🏴 Urumça:	defter
+🏴 Qarayçe:	defter
+🏴 Qırımçah:	defter
+🏴 Saqalí:	teterét, bloknot
+🏴 Hakalí:	tetrét, bloknot
+🏴 Tıva:	dekter, kıdıraaş
+🏴 Altay:	depter
+🏴 Xakas:	tağdır
+🏴 Şor:	tetrad, qadıraş
+🏴 Duha-Soyıt:	depter
+🏴 Tofa-Qarağas:	tetraat''', reply_markup=markup_menu)
+# cameo
+# sahrus dlgrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
