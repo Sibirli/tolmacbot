@@ -44867,6 +44867,60 @@ Other types of traditional or national sausages are listed below:
 # cameo
 # sahrus dlgrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gazlı su" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gazlı içecek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gazöz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soda pop" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "carbonated drink" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "газировка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "газированная вода" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "газированный напиток" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "газированный сок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "содовая" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gazoz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gazeuse" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aeration" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fizzy water" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soda water" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "carbonated water" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bicarbonate of soda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fizz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sodalı su" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aerated water" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soda suyu":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	soda, carbonated drink
+🇷🇺 Русский:	газировка (газированная вода, газированный напиток, газированный сок), содовая
+🇹🇷 Türkçe:	gazoz
+🇦🇿 Türkcə:	qazlı su
+🇹🇲 Türkmen:	gazly suw
+🇺🇿 Oʻzbek:	gazli suv
+🇰🇿 Qazaq:	gazdı su
+🇰🇬 Qırğız:	gazduu suu
+🏴 Uyghur:	gazliq su
+🏴 Tatarça:	gazlı su
+🏴 Başqort:	gazlı hıw
+🏴 Çovaşla:	gazlano şıv
+🏴 Qaraqalpaq:	gazlı suw
+🏴 Qırımtatar:	gazlı suv
+🏴 Qumuq:	gazlı suw
+🏴 Alança:	mıstı suw
+🏴 Noğay:	gazlı suw
+🏴 Sıbırca:	gazlı sıw
+🏴 Salırça:	suda
+🏴 Gagauz:	şpriț
+🏴 Urumça:	gazdı su
+🏴 Qarayçe:	zıldırıq suv
+🏴 Qırımçah:	gazlı suv
+🏴 Saqalí:	gaztáq uu
+🏴 Hakalí:	gazták uu
+🏴 Tıva:	gaztıg sug
+🏴 Altay:	gaztu suu
+🏴 Xakas:	isçeŋ soda
+🏴 Şor:	gaztığ suğ
+🏴 Duha-Soyıt:	gaztığ suğ
+🏴 Tofa-Qarağas:	gaztığ suğ''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
