@@ -44921,6 +44921,44 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	gaztığ suğ
 🏴 Tofa-Qarağas:	gaztığ suğ''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crystal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кристалл" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kristall" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kristal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "billur" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "billûr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "billür" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bilur" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bilûr" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bilür" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cristal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crystall" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кристальный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хрустальный":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	bolor (billäwr)
+🇬🇧 English:	crystal
+🇷🇺 Русский:	кристалл [kristall]
+🇹🇷 Türkçe:	kristal, billur (billûr)
+🇦🇿 Türkcə:	büllur
+🇹🇲 Türkmen:	bulgur
+🇺🇿 Oʻzbek:	billur
+🏴 Uyghur:	billür
+🏴 Tatarça:	bällür
+🏴 Başqort:	bälläwer, gölsär
+🏴 Çovaşla:	yoltorga
+🏴 Qırımtatar:	büllür
+🏴 Sıbırca:	pällür
+🏴 Salırça:	şüyçin
+🏴 Gagauz:	bülür
+🏴 Qarayçe:	bilör, sobuq
+🏴 Qırımçah:	bilôr
+🏴 Saqalí:	kurustál
+🏴 Altay:	cada
+🏴 Xakas:	xolarba
+🇰🇿🇰🇬🏴: kristall ???''', reply_markup=markup_menu)
+#RUSRUS??? kzrus kgrus qqrus kumrus krcrus nogrus
+# slrcn uumrus sahrus dlgrus tyvrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
