@@ -44923,6 +44923,8 @@ Other types of traditional or national sausages are listed below:
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crystal" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кристалл" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кристал" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "💎" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kristall" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kristal" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "billur" \
@@ -44936,7 +44938,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кристальный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хрустальный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	bolor (billäwr)
-🇬🇧 English:	crystal
+🇬🇧 English:	crystal 💎
 🇷🇺 Русский:	кристалл [kristall]
 🇹🇷 Türkçe:	kristal, billur (billûr)
 🇦🇿 Türkcə:	büllur
