@@ -44961,6 +44961,56 @@ Other types of traditional or national sausages are listed below:
 #RUSRUS??? kzrus kgrus qqrus kumrus krcrus nogrus
 # slrcn uumrus sahrus dlgrus tyvrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "admire!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to admire" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "admire" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hayran ol" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hayran olmak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "heyran ol" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "heyran olmak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "восхищайся!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "любуйся!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "восхищайся" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "любуйся" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "восхитись" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "восхитись!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "восхититься" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "восхищаться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "любоваться":
+        bot.send_message(message.chat.id, '''Below are the most popular verbs, however, there are 3-4 similar verbs in any Turkic language.
+
+🇬🇧 English:	admire!
+🇷🇺 Русский:	восхищайся! любуйся!
+🇹🇷 Türkçe:	hayran ol
+🇦🇿 Türkcə:	heyran ol
+🇹🇲 Türkmen:	täsin gal
+🇺🇿 Oʻzbek:	qoyil qol
+🇰🇿 Qazaq:	taŋdan
+🇰🇬 Qırğız:	taŋdan
+🏴 Uyghur:	qayil bol
+🏴 Tatarça:	taŋ qal
+🏴 Başqort:	hoqlan
+🏴 Çovaşla:	xavxalan
+🏴 Qaraqalpaq:	tań qal
+🏴 Qırımtatar:	ayran ol
+🏴 Qumuq:	suqlan
+🏴 Alança:	alamat kör
+🏴 Noğay:	suqlan
+🏴 Sıbırca:	soqlan
+🏴 Salırça:	gızgan
+🏴 Gagauz:	mayıl ol
+🏴 Urumça:	suxlan
+🏴 Qarayçe:	suxlan
+🏴 Qırımçah:	eyran ol
+🏴 Saqalí:	söq
+🏴 Hakalí:	kögüt
+🏴 Tıva:	magada
+🏴 Altay:	qayqap qal
+🏴 Xakas:	çapsîr
+🏴 Şor:	könzün
+🏴 Duha-Soyıt:	carağsın
+🏴 Tofa-Qarağas:	çarağlığsın''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
