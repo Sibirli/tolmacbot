@@ -33542,33 +33542,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 # RUSRUS??? kzrus ugrus ttrus barus qqrus
 # styrus slrcn kdrrus jctrus sahrus dlgrus khakrus altrus shorrus
 
-    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медальный" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏅" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🎖" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏵" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "medal" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "madalya" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "medalya" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медаль" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медал":
-        bot.send_message(message.chat.id, '''🇬🇧 English: medal 🥇🏅🎖
-🇷🇺 Русский:	медаль [medal]
-🇹🇷 Türkçe:	madalya, nişan, nişan-i sikke {arch.}
-🇦🇿 Türkcə:	nişan, talğa {dial.}
-🇹🇲 Türkmen:	nyşan
-🇺🇿 Oʻzbek:	nishon
-🏴 Tatarça:	midal
-🏴 Başqort:	miðal
-🏴 Çovaşla:	mital
-🏴 Alança:	maydal
-🏴 Salır:	şüncan
-🏴 Gagauz: midaliye
-🏴 Saqalí:	metél
-🏴 Tofa: metaal
-🇰🇿🇰🇬🏴: medal''', reply_markup=markup_menu)
-# RUSRUS??? kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
-# styrus slrcn uumrus kdrrus jctrus sahrus dlgrus tyvrus khakrus altrus shorrus sytrus tofrus
-
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏆" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trophy" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "war trophy" \
@@ -34908,51 +34881,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tofa:	peeşke (пешка)''', reply_markup=markup_menu)
 # RUSRUS??? cvrus qqrus  kumrus
 # styrus sahrus dlgrus altrus khakrus shorrus sytrus tofrus
-
-        elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алтын" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altun" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altın" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gold" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "golden" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "золото" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "золотой" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥇" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aurum" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "au":
-        bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰞𐱃𐰆𐰣
-🐺 Old Turkic (bef. XV c.):	altun (altın)
-🇬🇧 English:	gold, golden
-🇷🇺 Русский:	золото, золотой
-🇲🇳 Mongol: alt (altan)
-🇹🇷 Türkçe:	altın
-🇦🇿 Türkcə:	qızıl, altın (altun) {very rarely}
-🇹🇲 Türkmen:	altyn, gyzyl
-🇺🇿 Oʻzbek:	oltin
-🇰🇿 Qazaq:	altın
-🇰🇬 Qırğız:	altın
-🏴 Uyghur:	altun
-🏴 Tatarça:	altın
-🏴 Başqort:	altın
-🏴 Çovaşla:	ılton
-🏴 Qaraqalpaq:	altın
-🏴 Qırımtatar:	altın
-🏴 Qumuq:	altın
-🏴 Alança:	altın
-🏴 Noğay:	altın
-🏴 Sıbırca:	altın
-🏴 Salırça:	altun
-🏴 Gagauz:	altın
-🏴 Urumça:	altın
-🏴 Qarayçe:	altın
-🏴 Qırımçah:	altın
-🏴 Saqalí:	kıhıl kömüs
-🏴 Dolgan:	kıhıl kömüs
-🏴 Tıvalap:	aldın
-🏴 Altay:	altın
-🏴 Xakas:	altın
-🏴 Şor:	altın
-🏴 Soyıt:	altın
-🏴 Tofa:	altın''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vehicle" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "транспорт" \
@@ -45012,6 +44940,124 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	könzün
 🏴 Duha-Soyıt:	carağsın
 🏴 Tofa-Qarağas:	çarağlığsın''', reply_markup=markup_menu)
+
+        elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronze" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronza" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronzed" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бронза" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tunç" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бронзовый" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronz" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aes" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aeris" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥉":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tuç
+🇬🇧 English:	bronze 🥉
+🇷🇺 Русский:	бронза [bronza]
+🇲🇳 Mongol: khürel
+🇹🇷 Türkçe:	tunç
+🇦🇿 Türkcə:	bürünc {+ brass}, tunc
+🇹🇲 Türkmen:	bürünç
+🇺🇿 Oʻzbek:	birinj
+🇰🇿 Qazaq:	qola
+🇰🇬 Qırğız:	qolo
+🏴 Uyghur:	tuch
+🏴 Tatarça:	toç
+🏴 Başqort:	qula
+🏴 Çovaşla:	xura yös, tuy
+🏴 Qaraqalpaq:	qola
+🏴 Qırımtatar:	tunç
+🏴 Qumuq:	tümpek
+🏴 Alança:	dommaq (tompaq)
+🏴 Noğay:	tuş
+🏴 Sıbırca:	tuc
+🏴 Salırça:	gox tiş
+🏴 Gagauz:	pirinç {+ brass}, tunç
+🏴 Urumça:	tuç
+🏴 Qarayçe:	tuç
+🏴 Qırımçah:	tuc
+🏴 Saqalí:	çaŋ
+🏴 Hakalí:	çáŋ
+🏴 Tıva:	xüler
+🏴 Altay:	küler, qolo (+ tin)
+🏴 Xakas:	küler, xola
+🏴 Şor:	qola
+🏴 Duha-Soyıt:	hürîl
+🏴 Tofa-Qarağas:	hüler
+* Perhaps bürünc, bürünç, birinj are used because of the similarity to "bronze" word, but historically it means brass''', reply_markup=markup_menu)
+# cameo
+
+        elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алтын" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altun" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altın" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gold" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "golden" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "золото" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "золотой" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥇" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aurum" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "au":
+        bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰞𐱃𐰆𐰣
+🐺 Old Turkic (bef. XV c.):	altun (altın)
+🇬🇧 English:	gold, golden
+🇷🇺 Русский:	золото, золотой
+🇲🇳 Mongol: alt (altan)
+🇹🇷 Türkçe:	altın
+🇦🇿 Türkcə:	qızıl, altın (altun) {very rarely}
+🇹🇲 Türkmen:	altyn, gyzyl
+🇺🇿 Oʻzbek:	oltin
+🇰🇿 Qazaq:	altın
+🇰🇬 Qırğız:	altın
+🏴 Uyghur:	altun
+🏴 Tatarça:	altın
+🏴 Başqort:	altın
+🏴 Çovaşla:	ılton
+🏴 Qaraqalpaq:	altın
+🏴 Qırımtatar:	altın
+🏴 Qumuq:	altın
+🏴 Alança:	altın
+🏴 Noğay:	altın
+🏴 Sıbırca:	altın
+🏴 Salırça:	altun
+🏴 Gagauz:	altın
+🏴 Urumça:	altın
+🏴 Qarayçe:	altın
+🏴 Qırımçah:	altın
+🏴 Saqalí:	kıhıl kömüs
+🏴 Dolgan:	kıhıl kömüs
+🏴 Tıvalap:	aldın
+🏴 Altay:	altın
+🏴 Xakas:	altın
+🏴 Şor:	altın
+🏴 Soyıt:	altın
+🏴 Tofa:	altın''', reply_markup=markup_menu)
+
+        elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медальный" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏅" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🎖" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏵" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "medal" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "madalya" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "medalya" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медаль" \
+             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медал":
+        bot.send_message(message.chat.id, '''🇬🇧 English: medal 🥇🏅🎖
+🇷🇺 Русский:	медаль [medal]
+🇹🇷 Türkçe:	madalya, nişan, nişan-i sikke {arch.}
+🇦🇿 Türkcə:	nişan, talğa {dial.}
+🇹🇲 Türkmen:	nyşan
+🇺🇿 Oʻzbek:	nishon
+🏴 Tatarça:	midal
+🏴 Başqort:	miðal
+🏴 Çovaşla:	mital
+🏴 Alança:	maydal
+🏴 Salır:	şüncan
+🏴 Gagauz: midaliye
+🏴 Saqalí:	metél
+🏴 Tofa: metaal
+🇰🇿🇰🇬🏴: medal''', reply_markup=markup_menu)
+# RUSRUS??? kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+# styrus slrcn uumrus kdrrus jctrus sahrus dlgrus tyvrus khakrus altrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
