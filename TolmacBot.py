@@ -45013,52 +45013,6 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	carağsın
 🏴 Tofa-Qarağas:	çarağlığsın''', reply_markup=markup_menu)
 
-    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronze" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronza" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronzed" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бронза" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tunç" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бронзовый" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronz" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aes" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aeris" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥉":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tuç
-🇬🇧 English:	bronze 🥉
-🇷🇺 Русский:	бронза [bronza]
-🇲🇳 Mongol: khürel
-🇹🇷 Türkçe:	tunç
-🇦🇿 Türkcə:	bürünc {+ brass}, tunc
-🇹🇲 Türkmen:	bürünç
-🇺🇿 Oʻzbek:	birinj
-🇰🇿 Qazaq:	qola
-🇰🇬 Qırğız:	qolo
-🏴 Uyghur:	tuch
-🏴 Tatarça:	toç
-🏴 Başqort:	qula
-🏴 Çovaşla:	xura yös, tuy
-🏴 Qaraqalpaq:	qola
-🏴 Qırımtatar:	tunç
-🏴 Qumuq:	tümpek
-🏴 Alança:	dommaq (tompaq)
-🏴 Noğay:	tuş
-🏴 Sıbırca:	tuc
-🏴 Salırça:	gox tiş
-🏴 Gagauz:	pirinç {+ brass}, tunç
-🏴 Urumça:	tuç
-🏴 Qarayçe:	tuç
-🏴 Qırımçah:	tuc
-🏴 Saqalí:	çaŋ
-🏴 Hakalí:	çáŋ
-🏴 Tıva:	xüler
-🏴 Altay:	küler, qolo (+ tin)
-🏴 Xakas:	küler, xola
-🏴 Şor:	qola
-🏴 Duha-Soyıt:	hürîl
-🏴 Tofa-Qarağas:	hüler
-* Perhaps bürünc, bürünç, birinj are used because of the similarity to "bronze" word, but historically it means brass''', reply_markup=markup_menu)
-# cameo
-
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
