@@ -33542,9 +33542,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 # RUSRUS??? kzrus ugrus ttrus barus qqrus
 # styrus slrcn kdrrus jctrus sahrus dlgrus khakrus altrus shorrus
 
-    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥇" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥈" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥉" \
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медальный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏅" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🎖" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏵" \
@@ -34910,13 +34908,14 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tofa:	peeşke (пешка)''', reply_markup=markup_menu)
 # RUSRUS??? cvrus qqrus  kumrus
 # styrus sahrus dlgrus altrus khakrus shorrus sytrus tofrus
-    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "AAAA" \
+        elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алтын" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altun" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altın" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gold" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "golden" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "золото" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "золотой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥇" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aurum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "au":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰞𐱃𐰆𐰣
@@ -34926,7 +34925,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇲🇳 Mongol: alt (altan)
 🇹🇷 Türkçe:	altın
 🇦🇿 Türkcə:	qızıl, altın (altun) {very rarely}
-🇹🇲 Türkmen:	altyn
+🇹🇲 Türkmen:	altyn, gyzyl
 🇺🇿 Oʻzbek:	oltin
 🇰🇿 Qazaq:	altın
 🇰🇬 Qırğız:	altın
@@ -45010,6 +45009,53 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	könzün
 🏴 Duha-Soyıt:	carağsın
 🏴 Tofa-Qarağas:	çarağlığsın''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronze" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronza" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronzed" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бронза" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tunç" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бронзовый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aes" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aeris" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥉":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tuç
+🇬🇧 English:	bronze 🥉
+🇷🇺 Русский:	бронза [bronza]
+🇲🇳 Mongol: khürel
+🇹🇷 Türkçe:	tunç
+🇦🇿 Türkcə:	bürünc {+ brass}, tunc
+🇹🇲 Türkmen:	bürünç
+🇺🇿 Oʻzbek:	birinj
+🇰🇿 Qazaq:	qola
+🇰🇬 Qırğız:	qolo
+🏴 Uyghur:	tuch
+🏴 Tatarça:	toç
+🏴 Başqort:	qula
+🏴 Çovaşla:	xura yös, tuy
+🏴 Qaraqalpaq:	qola
+🏴 Qırımtatar:	tunç
+🏴 Qumuq:	tümpek
+🏴 Alança:	dommaq (tompaq)
+🏴 Noğay:	tuş
+🏴 Sıbırca:	tuc
+🏴 Salırça:	gox tiş
+🏴 Gagauz:	pirinç {+ brass}, tunç
+🏴 Urumça:	tuç
+🏴 Qarayçe:	tuç
+🏴 Qırımçah:	tuc
+🏴 Saqalí:	çaŋ
+🏴 Hakalí:	çáŋ
+🏴 Tıva:	xüler
+🏴 Altay:	küler, qolo (+ tin)
+🏴 Xakas:	küler, xola
+🏴 Şor:	qola
+🏴 Duha-Soyıt:	hürîl
+🏴 Tofa-Qarağas:	hüler
+
+* Perhaps bürünc, bürünç, birinj are used because of the similarity to "bronze" word, but historically it means brass''', reply_markup=markup_menu)
+# cameo
 
     else:
         bot.send_message(message.chat.id, hesbisey)
