@@ -34908,6 +34908,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tofa:	peeşke (пешка)''', reply_markup=markup_menu)
 # RUSRUS??? cvrus qqrus  kumrus
 # styrus sahrus dlgrus altrus khakrus shorrus sytrus tofrus
+
         elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алтын" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altun" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "altın" \
@@ -34952,6 +34953,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Şor:	altın
 🏴 Soyıt:	altın
 🏴 Tofa:	altın''', reply_markup=markup_menu)
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vehicle" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "транспорт" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taşıt" \
@@ -34989,6 +34991,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴: transport ???''', reply_markup=markup_menu)
 # RUSRUS??? ugcn ttrus barus cvrus
 # styrus slrcn uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus
+
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полиция" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "polis" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "police" \
@@ -45053,7 +45056,6 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	qola
 🏴 Duha-Soyıt:	hürîl
 🏴 Tofa-Qarağas:	hüler
-
 * Perhaps bürünc, bürünç, birinj are used because of the similarity to "bronze" word, but historically it means brass''', reply_markup=markup_menu)
 # cameo
 
