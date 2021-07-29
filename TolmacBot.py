@@ -34926,7 +34926,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇲🇳 Mongol: alt (altan)
 🇹🇷 Türkçe:	altın
 🇦🇿 Türkcə:	qızıl, altın (altun) {very rarely}
-🇹🇲 Türkmen:	altyn
+🇹🇲 Türkmen:	altyn, gyzyl
 🇺🇿 Oʻzbek:	oltin
 🇰🇿 Qazaq:	altın
 🇰🇬 Qırğız:	altın
@@ -39493,7 +39493,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 🏴 Alança:	sülewsün, jaz kiştik
 🏴 Noğay:	malmısıq (balmısıq)
 🏴 Sıbırca:	seläwsen
-🏴 Salırça:	şiliysün
+🏴 Salırça:	sülevsün
 🏴 Gagauz:	vaşak
 🏴 Urumça:	vaşax
 🏴 Qarayçe:	vaşax
@@ -45047,11 +45047,61 @@ Other types of traditional or national sausages are listed below:
 🏴 Saqalí:	çaŋ
 🏴 Hakalí:	çáŋ
 🏴 Tıva:	xüler
-🏴 Altay:	küler, qolo (+ tin)
+🏴 Altay:	küler, qolo {+ tin}
 🏴 Xakas:	küler, xola
 🏴 Şor:	qola
 🏴 Duha-Soyıt:	hürîl
 🏴 Tofa-Qarağas:	hüler''', reply_markup=markup_menu)
+# cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "манул" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мануул" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "manuul" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "manul" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дикая кошка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "степная кошка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дикий кот" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "otocolobus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wildcat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pallas's cat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wild cat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pallas kedisi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pallas' cat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pallas cat":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	manu
+🇬🇧 English:	manul, Pallas's cat
+🇷🇺 Русский:	манул, палласов кот
+🇲🇳 Mongol: manuul
+🇹🇷 Türkçe:	manul, Pallas kedisi
+🇦🇿 Türkcə:	manul, çöl pişiyi
+🇹🇲 Türkmen:	köwük
+🇺🇿 Oʻzbek:	semiz sabonchi
+🇰🇿 Qazaq:	sabanşı
+🇰🇬 Qırğız:	madıl
+🏴 Uyghur:	samanchi, molun, toshqansiman süleysün
+🏴 Tatarça:	maŋıl
+🏴 Başqort:	manul, Pallas besäye
+🏴 Çovaşla:	manul, Pallas kuşakö
+🏴 Qaraqalpaq:	manul, Pallas pıshıǵı
+🏴 Qırımtatar:	manul, Pallas mışığı
+🏴 Qumuq:	manul, Pallas mişik
+🏴 Alança:	manul, Pallas kiştik
+🏴 Noğay:	manul, Pallas mısığı
+🏴 Sıbırca:	manul, Pallas meşäge
+🏴 Salırça:	doşankağı sülevsün
+🏴 Gagauz:	manul, Pallas kedisi
+🏴 Urumça:	manul, Pallas pişiyi
+🏴 Qarayçe:	manul, Pallas meçisi
+🏴 Qırımçah:	manul, Pallas mışığı
+🏴 Saqalí:	manul, Bıalás kuoskata
+🏴 Hakalí:	manul, Bıalás kuoskata
+🏴 Tıva:	manı
+🏴 Altay:	manı
+🏴 Xakas:	manı
+🏴 Şor:	manı
+🏴 Duha-Soyıt:	manıl (manuul)
+🏴 Tofa-Qarağas:	manıl''', reply_markup=markup_menu)
+# cameo animal tofrus shorrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
