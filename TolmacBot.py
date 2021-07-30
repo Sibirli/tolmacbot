@@ -45103,6 +45103,49 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	manıl''', reply_markup=markup_menu)
 # cameo animal tofrus shorrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "silver" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "serebro" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "серебро" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gümüş" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "серебряный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "серебрянный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "argentum" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ag":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	kümiş (kümüş)
+🇬🇧 English:	silver
+🇷🇺 Русский:	серебро
+🇲🇳 Mongol: möngö
+🇹🇷 Türkçe:	gümüş
+🇦🇿 Türkcə:	gümüş
+🇹🇲 Türkmen:	kümüş
+🇺🇿 Oʻzbek:	kumush
+🇰🇿 Qazaq:	kümis
+🇰🇬 Qırğız:	kümüş
+🏴 Uyghur:	kümüsh
+🏴 Tatarça:	kömeş
+🏴 Başqort:	kömöş
+🏴 Çovaşla:	kömöl
+🏴 Qaraqalpaq:	gúmis
+🏴 Qırımtatar:	kümüş
+🏴 Qumuq:	gümüş
+🏴 Alança:	kümüş
+🏴 Noğay:	kümis
+🏴 Sıbırca:	kömöş
+🏴 Salırça:	gumuş
+🏴 Gagauz:	gümüş
+🏴 Urumça:	gümüş
+🏴 Qarayçe:	kümüş
+🏴 Qırımçah:	kumış
+🏴 Saqalí:	ürüŋ kömüs, kömüs {+ gold}
+🏴 Hakalí:	ürüŋ kömüs, kömüs {+ gold}
+🏴 Tıva:	möŋgün, xümüş
+🏴 Altay:	kümüş, möŋün
+🏴 Xakas:	kümüs
+🏴 Şor:	kümüş
+🏴 Duha-Soyıt:	möŋgin (aq-möŋgi)
+🏴 Tofa-Qarağas:	möŋgün (aq-möŋgün)''', reply_markup=markup_menu)
+# cameo
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
