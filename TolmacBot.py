@@ -45146,6 +45146,51 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	möŋgün (aq-möŋgün)''', reply_markup=markup_menu)
 # cameo
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alphabet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alfabet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "abc" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алфавит" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "альфавит" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alfabe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "abece" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "elifbe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "азбука" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "букварь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "elifba":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	älifbey (älifbä, älifba)
+🇬🇧 English:	alphabet, ABC
+🇷🇺 Русский:	алфавит [alfavit]
+🇹🇷 Türkçe:	alfabe, abece {neol.}, elifba {ottoman alph.}
+🇦🇿 Türkcə:	əlifba, əlippa/əlipba {arch. + dial.}
+🇹🇲 Türkmen:	elipbiý
+🇺🇿 Oʻzbek:	alifbo
+🇰🇿 Qazaq:	älifpbiy (älippe)
+🇰🇬 Qırğız:	alippe
+🏴 Uyghur:	élipbe
+🏴 Tatarça:	älifba
+🏴 Başqort:	älifba
+🏴 Çovaşla:	alfavit, azbuka
+🏴 Qaraqalpaq:	älipbe
+🏴 Qırımtatar:	elifbe
+🏴 Qumuq:	alipler, alifba
+🏴 Alança:	elifle (elible)
+🏴 Noğay:	elippe
+🏴 Sıbırca:	älippä
+🏴 Salırça:	elifbe
+🏴 Gagauz:	alfabet
+🏴 Urumça:	elifba
+🏴 Qarayçe:	alefbet, otiyotlar
+🏴 Qırımçah:	alefbet
+🏴 Saqalí:	alfavit, azbuka
+🏴 Hakalí:	alfavit, azbuka
+🏴 Tıva:	alfavit, azbuka
+🏴 Altay:	taŋmalıq
+🏴 Xakas:	alfavit, azbuka
+🏴 Şor:	piçik
+🏴 Duha-Soyıt:	alfavit, azbuka
+🏴 Tofa-Qarağas:	alfavit, azbuka''', reply_markup=markup_menu)
+# cvrus sahrus slgrus tyvrus khakrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
