@@ -45164,7 +45164,7 @@ Other types of traditional or national sausages are listed below:
 🇦🇿 Türkcə:	əlifba, əlippa/əlipba {arch. + dial.}
 🇹🇲 Türkmen:	elipbiý
 🇺🇿 Oʻzbek:	alifbo
-🇰🇿 Qazaq:	älifpbiy (älippe)
+🇰🇿 Qazaq:	älipbiy (älippe)
 🇰🇬 Qırğız:	alippe
 🏴 Uyghur:	élipbe
 🏴 Tatarça:	älifba
@@ -45191,6 +45191,74 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	alfavit, azbuka''', reply_markup=markup_menu)
 # cvrus sahrus slgrus tyvrus khakrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trousers" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trouser" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pants" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pant" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "брюки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "штаны" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шаровары" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шаровар" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шальвары" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шальвар" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шалвар" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шалвары" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pantolon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pantalon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pontolon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pontalon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кальсоны" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şalvar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şelvar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shalvar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sirwal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "serwal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saroual" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seroual" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sarouel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "serouel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чембар" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чембары" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salavári" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salwar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shalwar":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	iştan/içton/ışton (اِشتُن), öm/üm (اُم), üträn/öträn (اُترَن), şalvar/şälvar (شلوار)
+🇬🇧 English:	trousers, pants
+🇷🇺 Русский:	брюки, штаны, шаровары (шальвары)
+🇭🇺 Magyar: nadrág, salavári
+🇲🇳 Mongol: ömödö (ömd), shalbuur
+🇫🇮 Suomea: housut, salwar
+🇹🇷 Türkçe:	pantolon, şalvar
+🇦🇿 Türkcə:	şalvar, iştan {dial.}
+🇹🇲 Türkmen:	jalbar, balak
+🇺🇿 Oʻzbek:	chalvar, shim, ishton
+🇰🇿 Qazaq:	şalbar, sım, ıştan
+🇰🇬 Qırğız:	çalbar, şım, ıştan
+🏴 Uyghur:	shalwur, shim, ishtan
+🏴 Tatarça:	çalbar, ıştan
+🏴 Başqort:	salbar, ıştan
+🏴 Çovaşla:	şolavar, yöm
+🏴 Qaraqalpaq:	shalbar, sım, ıshtan
+🏴 Qırımtatar:	şalvar, ştan
+🏴 Qumuq:	şalbar, iştan
+🏴 Alança:	şalbar, könçek
+🏴 Noğay:	şalbır (şalbar), ıstan
+🏴 Sıbırca:	calbar (çambar), ıştan
+🏴 Salırça:	işdän
+🏴 Gagauz:	şalvar, pantalon, iç don, don
+🏴 Urumça:	şalvar, ıştan
+🏴 Qarayçe:	navitslär, könçäk
+🏴 Qırımçah:	könçek, şalvar
+🏴 Saqalí:	sıalıya, ıstán
+🏴 Hakalí:	hıalıya, ıstán
+🏴 Tıva:	çüvür, şalbıır
+🏴 Altay:	ştan (ıştan), şalbır (şalmar)
+🏴 Xakas:	ıstan, çaŋmar
+🏴 Şor:	ıştan, çanmar
+🏴 Duha-Soyıt:	çühür
+🏴 Tofa-Qarağas:	çüpür''', reply_markup=markup_menu)
+# cameo clothes slrcn kdrrus sahrus dlgrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
@@ -45200,7 +45268,7 @@ Other types of traditional or national sausages are listed below:
 #tags
 # animal
 # bird
-# cameo country catholic
+# cameo country catholic clothes
 # food fruit furniture
 # geo
 # holiday insect islam
