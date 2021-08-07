@@ -45259,6 +45259,48 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	çüpür''', reply_markup=markup_menu)
 # cameo clothes slrcn kdrrus sahrus dlgrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "0️⃣" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ноль" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нуль" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "null" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "zero" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sifir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sıfır" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "0" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нолевой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нулевой":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	zero, null
+🇷🇺 Русский:	ноль [nol], нуль [nul]
+🇹🇷 Türkçe:	sıfır
+🇦🇿 Türkcə:	sıfır
+🇹🇲 Türkmen:	nol, hiç, syfyr {arch. + dial.}
+🇺🇿 Oʻzbek:	nol (nul, noʻl), sifr {arch.}
+🇰🇿 Qazaq:	nöl
+🇰🇬 Qırğız:	nöl (nol)
+🏴 Uyghur:	nöl, sifir
+🏴 Tatarça:	nol (nül)
+🏴 Başqort:	nül (nol)
+🏴 Çovaşla:	nol (nul)
+🏴 Qaraqalpaq:	nol
+🏴 Qırımtatar:	sıfır
+🏴 Qumuq:	sıfır
+🏴 Alança:	nol
+🏴 Noğay:	nol
+🏴 Sıbırca:	nol (nül)
+🏴 Salırça:	liŋ
+🏴 Gagauz:	sıfır
+🏴 Urumça:	nol
+🏴 Qarayçe:	zero
+🏴 Qırımçah:	sıfır
+🏴 Saqalí:	nul (nol)
+🏴 Hakalí:	nol
+🏴 Tıva:	nöl (nol), tik
+🏴 Altay:	nol
+🏴 Xakas:	nol, tik san
+🏴 Şor:	nol
+🏴 Duha-Soyıt:	nol
+🏴 Tofa-Qarağas:	nol''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
