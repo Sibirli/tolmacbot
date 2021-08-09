@@ -18269,7 +18269,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: doşan (doşen)
 🏴 Gagauzça: tavşam (tauşam, tauşan)
 🏴 Urumça: tavşan (dauşan, davuşan), xoyan
-🏴 Karajče: tavšan (dafsan), kojan
+🏴 Qarayçe: tavşan (dafsan), qoyan
 🏴 Qırımçahça: tavşan, qoyan
 🏴 Saqalí: kuobaq
 🏴 Dulgan-Hakalí: uskán, kuobak
@@ -22561,10 +22561,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇷🇺 Русский: хомяк [khomyak]
 🇹🇷 Türkçe: hamster
 🇦🇿 Türkcə: dağsiçanı
-🇹🇲 Türkmençe: homýak
+🇹🇲 Türkmençe: atýalman {+ jerboa}
 🇺🇿 Oʻzbekcha: ogʻmaxon
 🇰🇿 Qazaqşa:	atjalman
-🇰🇬 Qırğızça: xomyak
+🇰🇬 Qırğızça: alaman
 🏴 Uyghurche: aghmixan
 🏴 Tatarça: ärlän
 🏴 Başqortsa: irlän, alyırðan
@@ -22572,7 +22572,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Qaraqalpaqsha: balpaq tıshqan {+ spermophilus, marmot)
 🏴 Qırımtatarca: yerbuçuq
 🏴 Qumuqça: awlaq çıçqan
-🏴 Alança: xomyak
+🏴 Alança: erlen
 🏴 Noğayşa: atşalman, erlen {+ spermophilus}
 🏴 Sıbırca: irlän
 🏴 Salırça: sangku geme
@@ -22580,13 +22580,13 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Urumça: alabaş {+ spermophilus}
 🏴 Qarayçe: xomik
 🏴 Qırımçahça: yerbuçıq
-🏴 Saqalí: qomyak
+🏴 Saqalí: bıtahıt {+ vole}
 🏴 Dulgan-Hakalí: qomyak
 🏴 Tıvalap:	çoldak-oy
 🏴 Xakastap: xara paar, soñıs
 🏴 Altaylap: beşpek-sarı, erlen {+ mouse}, ırlaq {arch.}
 🏴 Şor:	qarabar (qara par), erlen
-🏴 Soyot: xomyak
+🏴 Soyot: xomyak 
 🏴 Tofalap: xomyak''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мост" \
