@@ -45301,6 +45301,96 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	nol
 🏴 Tofa-Qarağas:	nol''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "collarette" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "collaret" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ворот" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yaka" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "collar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "collars" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "воротник" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "край" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "воротничек":
+        bot.send_message(message.chat.id, '''
+🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖𐰴𐰀
+🐺 Old Turkic (bef. XV c.):	yaqa
+🇬🇧 English:	collar, rim
+🇷🇺 Русский:	воротник, край
+🇭🇺 Magyar: nyak
+🇲🇳 Mongol: zakh (zakha)
+🇹🇷 Türkçe:	yaka
+🇦🇿 Türkcə:	yaxa
+🇹🇲 Türkmen:	yaka
+🇺🇿 Oʻzbek:	yoqa
+🇰🇿 Qazaq:	jağa
+🇰🇬 Qırğız:	jaqa
+🏴 Uyghur:	yaqa
+🏴 Tatarça:	yaqa
+🏴 Başqort:	yağa
+🏴 Çovaşla:	cuxa
+🏴 Qaraqalpaq:	jaǵa
+🏴 Qırımtatar:	yaqa
+🏴 Qumuq:	yağa
+🏴 Alança:	jağa
+🏴 Noğay:	yağa
+🏴 Sıbırca:	yağa
+🏴 Salırça:	yaxa
+🏴 Gagauz:	yaka
+🏴 Urumça:	yaxa
+🏴 Qarayçe:	yaqa
+🏴 Qırımçah:	yaqa
+🏴 Saqalí:	sağa
+🏴 Hakalí:	haga
+🏴 Tıva:	moyunduruk, kıdıg
+🏴 Altay:	caqa
+🏴 Xakas:	çağa
+🏴 Şor:	çağa
+🏴 Duha-Soyıt:	caha
+🏴 Tofa-Qarağas:	çaha''', reply_markup=markup_menu)
+# cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adult" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "взрослый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "взрослая" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "совершеннолетний" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "совершеннолетняя" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yetişkin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yetkin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "erişkin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зрелый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зрелая":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	adult
+🇷🇺 Русский:	взрослый, совершеннолетний
+🇹🇷 Türkçe:	yetişkin
+🇦🇿 Türkcə:	yetkin
+🇹🇲 Türkmen:	ýetişen
+🇺🇿 Oʻzbek:	yetgan
+🇰🇿 Qazaq:	jetken
+🇰🇬 Qırğız:	jetken
+🏴 Uyghur:	yetken
+🏴 Tatarça:	citkän
+🏴 Başqort:	yetkän
+🏴 Çovaşla:	citönnö
+🏴 Qaraqalpaq:	jetken
+🏴 Qırımtatar:	yetişken
+🏴 Qumuq:	yetişgen
+🏴 Alança:	jetgen
+🏴 Noğay:	yetken
+🏴 Sıbırca:	yetkän
+🏴 Salırça:	yetken
+🏴 Gagauz:	etişkin
+🏴 Urumça:	yetişken
+🏴 Qarayçe:	yetken
+🏴 Qırımçah:	yetışken
+🏴 Saqalí:	sippit
+🏴 Hakalí:	ulakan
+🏴 Tıva:	çetken
+🏴 Altay:	cetken
+🏴 Xakas:	çîtken
+🏴 Şor:	çetken
+🏴 Duha-Soyıt:	ulığ
+🏴 Tofa-Qarağas:	uluğ''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
