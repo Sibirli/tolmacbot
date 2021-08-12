@@ -10863,7 +10863,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Altaylap: eştek
 🏴 Şor: eştek
 🏴 Urumça: eşşäk (eşyäk, eşek, işek)
-🏴 Karajče: ešiak (ešek, esek)
+🏴 Qarayçe: eşäk (eşek, esek)
 🏴 Qrımçahça: eşek
 🏴 Soyot: elcîgän
 🏴 Tofalap: elcîgen''', reply_markup=markup_menu)
@@ -10897,18 +10897,18 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🇹🇷 Türkçe: Hazar Denizi
 🇦🇿 Türkcə: Xəzər dənizi
 🇹🇲 Türkmençe: Hazar deňzi
-🇺🇿 Oʻzbekcha: Kaspiy dengizi, Xazar dengizi {archaism}
-🇰🇿 Qazaqşa: Kaspiy teŋizi (Qaspıy teŋizi), Atıraw teŋizi {archaism, 1931}
+🇺🇿 Oʻzbekcha: Kaspiy dengizi, Xazar dengizi {arch.}
+🇰🇿 Qazaqşa: Kaspiy teŋizi (Qaspıy teŋizi)
 🇰🇬 Qırğızça: Kaspiy deŋizi
 🏴 Uyghurche: Kaspiy Déngizi, Hazar Déngizi (Hezer Déngizi)
 🏴 Tatarça: Xäzär diñgeze
-🏴 Başqortsa: Kaspiy diñgeðe (Kaspi diñgeðe)
+🏴 Başqortsa: Kaspiy diŋgeðe (Kaspi diŋgeðe)
 🏴 Çovaşla: Kaspi tinösö
 🏴 Qaraqalpaqsha: Kaspiy teńizi
 🏴 Qırımtatarca: Hazar deñizi
 🏴 Qumuqça: Xazar deñiz, Tarğu deñiz
-🏴 Qaraçay-Malqar: Xazar teñiz (Xaznar teñiz)
-🏴 Noğayşa: Kaspiy teñizi
+🏴 Qaraçay-Malqar: Xazar teŋiz (Xaznar teŋiz)
+🏴 Noğayşa: Xazar teŋizi
 🏴 Sıbırca: Qäsär tiñgese
 🏴 Gagauzça: Hazar Denizi
 🏴 Saqalí: Kaspiy bayğala
@@ -10918,8 +10918,8 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Xakastap: Kaspîyskay talay
 🏴 Altaylap: Kaspiyskiy talay
 🏴 Şor: Kaspiy talay
-🏴 Urumça: Xazar dängizi (Xazar denizi)
-🏴 Karajče: Chazar tieńgiźi (Chazar denizi)
+🏴 Urumça: Xazar däŋizi
+🏴 Qarayçe: Xazar deŋizi
 🏴 Qrımçahça: Hazar dengızı
 🏴 Soyot: Kaspiy dalay
 🏴 Tofalap: Kaspiy dalay''', reply_markup=markup_menu)
