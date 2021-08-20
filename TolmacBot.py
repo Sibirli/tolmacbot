@@ -45391,6 +45391,51 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	ulığ
 🏴 Tofa-Qarağas:	uluğ''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "consciousness" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "conscious" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "reasoning" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "thinking" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "размышление" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "раздумье" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дума" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "думы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bilinç" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tüşünce" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "düşünce":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	saqış (saqınç)
+🇬🇧 English:	consciousness, conscious, reasoning, thought, thinking
+🇷🇺 Русский:	размышление, раздумье, рассудок, сознание (осознание), понимание (понятие), дума, мысль
+🇹🇷 Türkçe:	bilinç, düşünce
+🇦🇿 Türkcə:	düşüncə
+🇹🇲 Türkmen:	düşünje
+🇺🇿 Oʻzbek:	tushuncha
+🇰🇿 Qazaq:	tüsinik
+🇰🇬 Qırğız:	tüşünük
+🏴 Uyghur:	chüshenche
+🏴 Tatarça:	töşençä
+🏴 Başqort:	töşönsä
+🏴 Çovaşla:	şuxoş, söm
+🏴 Qaraqalpaq:	túsinik
+🏴 Qırımtatar:	tüşünce
+🏴 Qumuq:	tüşünüw
+🏴 Alança:	tüşünüw
+🏴 Noğay:	tüsinüw
+🏴 Sıbırca:	töşöncä
+🏴 Salırça:	???
+🏴 Gagauz:	düşünecek
+🏴 Urumça:	tüşünük
+🏴 Qarayçe:	tüşünce
+🏴 Qırımçah:	tüşünce
+🏴 Saqalí:	öydöbül
+🏴 Hakalí:	haná
+🏴 Tıva:	düjünik
+🏴 Altay:	sanaa
+🏴 Xakas:	sağıs
+🏴 Şor:	sağış
+🏴 Duha-Soyıt:	sağış
+🏴 Tofa-Qarağas:	sağış''', reply_markup=markup_menu)
+# slrcn
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
