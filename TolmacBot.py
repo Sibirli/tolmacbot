@@ -45436,6 +45436,50 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	sağış''', reply_markup=markup_menu)
 # slrcn
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sound" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "voice" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "звук" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голос" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "глас" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "звуковой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ses" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ün" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "avaz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "avaze" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seda":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	ün, säs
+🇬🇧 English:	sound, voice, noise
+🇷🇺 Русский:	звук, голос, шум
+🇹🇷 Türkçe:	ses, ün, avaz, seda
+🇦🇿 Türkcə:	səs, ün, səda, avaz
+🇹🇲 Türkmen:	ses, owaz
+🇺🇿 Oʻzbek:	tovush, ovoz, sado, sas, un
+🇰🇿 Qazaq:	dıbıs, ses, ün
+🇰🇬 Qırğız:	dabış (tıbış, dobuş), ün
+🏴 Uyghur:	tawush, awaz
+🏴 Tatarça:	tawış, awaz
+🏴 Başqort:	awaz, tawış, ön
+🏴 Çovaşla:	sas, saso
+🏴 Qaraqalpaq:	ses, dawıs, hawaz
+🏴 Qırımtatar:	davuş, ses, seda
+🏴 Qumuq:	tawuş, awaz, ses
+🏴 Alança:	tawuş, awaz, ses
+🏴 Noğay:	ses, tawıs, awaz, ün
+🏴 Sıbırca:	ön, tawış, awaz
+🏴 Salırça:	awaz, un (unı)
+🏴 Gagauz:	ses
+🏴 Urumça:	säs, säda
+🏴 Qarayçe:	avaz, ses, ün
+🏴 Qırımçah:	davuş, ses, seda
+🏴 Saqalí:	tıas, saŋa, dorğón 
+🏴 Hakalí:	tıas, haŋa, dorgón 
+🏴 Tıva:	ııt, ün
+🏴 Altay:	tabış, ün
+🏴 Xakas:	ün, tabıs
+🏴 Şor:	ün, tabış
+🏴 Duha-Soyıt:	ün, ııt
+🏴 Tofa-Qarağas:	ün, ııt''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
