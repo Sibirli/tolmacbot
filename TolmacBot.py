@@ -5094,6 +5094,32 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Soyot: Polşa
 🏴 Tofalap: Polşa''', reply_markup=markup_menu)
 #country
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поляк" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "polak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pole" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "polonyalı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "leh" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "polish" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "польский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лях" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "polonez":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	pole, polish
+🇷🇺 Русский:	поляк, польский
+🇹🇷 Türkçe:	polonyalı, polonez, leh
+🇦🇿 Türkcə:	polyak {north azb.}, leh (löh, ləh)
+🏴 Uyghur:	leh
+🏴 Tatarça:	läh
+🏴 Qırımtatar:	leh
+🏴 Qumuq:	leh
+🏴 Salırça:	bolan
+🏴 Gagauz:	läh
+🏴 Urumça:	läh
+🏴 Qarayçe:	läh
+🏴 Qırımçah:	leh
+🏴 Saqalí:	belék
+🏴 Hakalí:	bilék
+🇹🇲🇺🇿🇰🇿🇰🇬🏴: polyak''', reply_markup=markup_menu)
+#nation
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oruç" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "говенье" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "говение" \
@@ -14141,7 +14167,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Noğayşa: slavyan, orıs {east slav}
 🏴 Sıbırca: slavyan
 🏴 Gagauzça: slavyan
-🏴 Saqalí: slavyan
+🏴 Saqalí: músqaraq
 🏴 Dulgan-Hakalí: slavyan
 🏴 Tıvalap: slavyan
 🏴 Salırça:	sılafu
