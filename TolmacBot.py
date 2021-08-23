@@ -45506,6 +45506,46 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	ün, ııt
 🏴 Tofa-Qarağas:	ün, ııt''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "meatball" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "meat ball" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "meatballs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "meat balls" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kofta" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kyufta" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kufta" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kyofta" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тефтели" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фрикадельки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "котлеты" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "битки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кюфта" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тефтель" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pirzola" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kotlet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "катлета" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "катлет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "катлеты" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "котлет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фрикаделька" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "котлета" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "биток" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тефтеля" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "биточки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "биточек" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köfte":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	meatball, kofta
+🇷🇺 Русский:	тефтели, фрикадельки, котлеты, битки, кюфта
+🇹🇷 Türkçe:	köfte
+🇦🇿 Türkcə:	küftə (kiftə)
+🇹🇲 Türkmen:	küfte
+🏴 Qırımtatar:	küfte
+🏴 Qumuq:	küpte
+🏴 Gagauz:	kifte (kiftä, küftä, köftä, köfte)
+🏴 Urumça:	küftä
+🏴 Qarayçe:	köfte (kopta, köptä, küfte)
+🏴 Qırımçah:	kofte (köfte)
+🇺🇿🇰🇿🇰🇬🏴:	''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
