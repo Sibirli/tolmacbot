@@ -45546,6 +45546,61 @@ Other types of traditional or national sausages are listed below:
 🏴 Qırımçah:	kofte (köfte)
 🇺🇿🇰🇿🇰🇬🏴:	''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romani" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çingene" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыган" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыганка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыганский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cigan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tsygan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sigan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsies" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsies" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çigan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыгане" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çingen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kıpti" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tzigane" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romany" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsie":
+        bot.send_message(message.chat.id, '''🇬🇧 English:	gypsy, romani
+🇷🇺 Русский:	цыган [cigan/tsygan], цыганка, цыганский (-ая, -ое)
+🇹🇷 Türkçe:	çingene
+🇦🇿 Türkcə:	qaraçı
+🇹🇲 Türkmen:	sygan, garaçy {arch.}, löli {arch.}
+🇺🇿 Oʻzbek:	loʻli
+🇰🇿 Qazaq:	sığan
+🇰🇬 Qırğız:	lölü
+🏴 Uyghur:	loli
+🏴 Tatarça:	çegän
+🏴 Başqort:	segän (siğan)
+🏴 Çovaşla:	çikan
+🏴 Qaraqalpaq:	lolı
+🏴 Qırımtatar:	çingene, tayfa
+🏴 Qumuq:	sigan, muntali
+🏴 Alança:	çıgan
+🏴 Noğay:	şingene, siğan
+🏴 Sıbırca:	cegän
+🏴 Salırça:	loli
+🏴 Gagauz:	çingenä, şoroy, tayfe
+🏴 Urumça:	çingene
+🏴 Qarayçe:	çingene (cingene), qara el
+🏴 Qırımçah:	çıngene
+🏴 Saqalí:	sıgán
+🏴 Hakalí:	sıgán
+🏴 Tıva:	tsıgan
+🏴 Altay:	sığan
+🏴 Xakas:	tsıgan
+🏴 Şor:	tsıgan
+🏴 Duha-Soyıt:	tsıgan
+🏴 Tofa-Qarağas:	tsıgan''', reply_markup=markup_menu)
+# RUSRUS???
+# tyvrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
