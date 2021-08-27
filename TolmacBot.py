@@ -21683,19 +21683,19 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Çovaşla: aptyak (apteka)
 🏴 Qaraqalpaqsha: dárixana
 🏴 Qırımtatarca: eczahane, ilâchane, aphane
-🏴 Qumuqça: aptek, darmanxana {arch.}
-🏴 Alança: apteka
+🏴 Qumuqça: aptek, darmanxana
+🏴 Alança: apteka, darmanxana
 🏴 Noğayşa: därixana
 🏴 Sıbırca: tarıwqana
 🏴 Salırça: em öy
 🏴 Gagauzça: eçzane, ilaç evi
 🏴 Urumça: aptek
 🏴 Qarayçe: onğaltuv kebiti
-🏴 Qırımçahça: apteka
+🏴 Qırımçahça: attar
 🏴 Saqalí: emtieke
 🏴 Dulgan-Hakalí: apteka
 🏴 Tıvalap: apteka
-🏴 Xakastap: apteka
+🏴 Xakastap: apteka, îm-tom tura
 🏴 Altaylap: apteka
 🏴 Şor: apteka
 🏴 Soyot: apteka
@@ -45573,7 +45573,7 @@ Other types of traditional or national sausages are listed below:
 🇦🇿 Türkcə:	qaraçı
 🇹🇲 Türkmen:	sygan, garaçy {arch.}, löli {arch.}
 🇺🇿 Oʻzbek:	loʻli
-🇰🇿 Qazaq:	sığan
+🇰🇿 Qazaq:	sığan, dolı
 🇰🇬 Qırğız:	lölü
 🏴 Uyghur:	loli
 🏴 Tatarça:	çegän
