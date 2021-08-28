@@ -45601,27 +45601,14 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS???
 # tyvrus khakrus shorrus sytrus tofrus
 
-    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsy" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romani" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çingene" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыган" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыганка" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыганский" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cigan" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tsygan" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sigan" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsies" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsies" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çigan" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыгане" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çingen" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kıpti" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsy" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tzigane" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romany" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsey" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsey" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsie":
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ireland" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eire" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "irlandiya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "irlanda" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "irland" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ирландия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇮🇪" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "éire":
         bot.send_message(message.chat.id, '''🇮🇪 Éire
 
 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Ireland
@@ -45633,6 +45620,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Salırça:	Ayarlan
 🏴 Gagauz:	İrlanda
 🇹🇲🇺🇿🇰🇿🇰🇬🏴: İrlandiya''', reply_markup=markup_menu)
+# country
 
     else:
         bot.send_message(message.chat.id, hesbisey)
