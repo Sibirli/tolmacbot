@@ -12,7 +12,7 @@ markup_menu.row('Alphabets Алфавиты Abeceler').add('help', 'donate')
 # db = Database('postgresql://localhost/postgres') #!!!!!!!!!!!!!!!!
 db = Database(os.environ.get('DATABASE_URL'))  # !!!!!!!!!!!!!!!!!!!
 
-hesbisey = '''🇬🇧 Nothing found, write other word. You can ask author to add this word, you can also write me your suggestions and comments if you notice a mistake @sibirli
+hesbisey = '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 Nothing found, write other word. You can ask author to add this word, you can also write me your suggestions and comments if you notice a mistake @sibirli
 Our channel: @tolmacchannel
 Our chat: @tolmacchat
 Donate: https://t.me/TolmacChannel/364
@@ -33,7 +33,7 @@ def send_welcome(message):
         db.insert(message.chat.id, message.chat.username, message.chat.first_name,
                   message.chat.last_name, message.date)
 
-    bot.send_message(message.chat.id, '''🇬🇧 Write any word
+    bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 Write any word
 🇷🇺 Введите слово
 🇹🇷 Bir kelime yazın''', reply_markup=markup_menu)
 
@@ -250,7 +250,7 @@ E e = [e], [ɛ] (at the beginning of the word, and after T, D)
 
 @bot.message_handler(commands=['help'])
 def help(message):
-    bot.send_message(message.chat.id, '''🇬🇧 How to use the bot:
+    bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 How to use the bot:
 ⚪️ Write the masculine variation of word, because in Turkic languages there is no concept of gender (eg, “tiger” instead of “tigress”).
 ⚪️ Write a noun without "the" or "a" (eg, “guest” instead of “the guest”).
 ⚪️ Often adverbs and adjectives are translated the same way from English into Turkic languages, so it is better to look for an adjective (eg. “easy” instead of “easily”).
@@ -456,7 +456,7 @@ E e = [e], [ɛ] (at the beginning of the word, and after T, D)
 â = Palatalization before [a]''')
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "help":
-        bot.send_message(message.chat.id, '''🇬🇧 How to use the bot:
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 How to use the bot:
 ⚪️ Write the masculine variation of word, because in Turkic languages there is no concept of gender (eg, “tiger” instead of “tigress”).
 ⚪️ Write a noun without "the" or "a" (eg, “guest” instead of “the guest”).
 ⚪️ Often adverbs and adjectives are translated the same way from English into Turkic languages, so it is better to look for an adjective (eg. “easy” instead of “easily”).
@@ -500,7 +500,7 @@ Chatex crypto neobank: https://t.me/Chatex_bot?start=r_150763''')
         or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "greating"\
         or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "greatings"\
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "säläm":
-        bot.send_message(message.chat.id, '''🇬🇧 English: hi, hello
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hi, hello
 🇷🇺 Русский: привет, здравствуйте, здорово [zdorovo]
 🇹🇷 Türkçe: selam, merhaba
 🇦🇿 Türkcə: salam
@@ -538,11 +538,11 @@ Tofalap: ekkîî, mendi, doroobo''', reply_markup=markup_menu)
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "август" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ağustos" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "august":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: august
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: august
 🇷🇺 Русский: август
 🇹🇷 Türkçe: ağustos
 🇦🇿 Türkcə: avqust, sünbülə
@@ -596,7 +596,7 @@ Tofalap: aynaar''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').replace('ı', 'I').lower() == "azerbaidjan":
         bot.send_message(message.chat.id, '''🇦🇿 Azərbaycan
         
-🇬🇧 English: Azerbaijan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Azerbaijan
 🇷🇺 Русский: Азербайджан
 🇹🇷 Türkçe: Azerbaycan, Azarbeycan (Azerbeycan) {dial.}
 🇹🇲 Türkmençe: Azerbaýjan
@@ -634,7 +634,7 @@ Tofalap: Azerbaycan''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').replace('ı', 'I').lower() == "cebr" \
             or message.text.replace('İ', 'i').replace('ı', 'I').lower() == "cebir":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): cäbr
-🇬🇧 English: algebra
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: algebra
 🇷🇺 Русский: алгебра
 🇹🇷 Türkçe: cebir
 🇦🇿 Türkcə: cəbr
@@ -675,7 +675,7 @@ Tofalap: algebra''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алла" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аллаh":
         bot.send_message(message.chat.id, '''
-🇬🇧 English: Allah
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Allah
 🇷🇺 Русский: Аллах
 🇹🇷 Türkçe: Allah
 🇦🇿 Türkcə: Allah 
@@ -711,7 +711,7 @@ Tofalap: Allah''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "andreas" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "andrey":
         bot.send_message(message.chat.id, '''
-🇬🇧 English: Andrew
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Andrew
 🇷🇺 Русский: Андрей [Andrey]
 🏴 Çovaşla: Yentöri (Entri, Untri, Entöruk, Entyuk)
 🏴 Qaraçay-Malqar: Endirew''', reply_markup=markup_menu)
@@ -721,7 +721,7 @@ Tofalap: Allah''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "apostle" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "havari":
         bot.send_message(message.chat.id, '''🐺 Old Turkic: yalawıç
-🇬🇧 English: apostle
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: apostle
 🇷🇺 Русский: апостол [apostol]
 🇹🇷 Türkçe: havari
 🇦🇿 Türkcə: həvari
@@ -755,11 +755,11 @@ Tofalap: ???''', reply_markup=markup_menu)
     elif message.text.lower() == "апрель" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "april" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nisan":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: april
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: april
 🇷🇺 Русский: апрель
 🇹🇷 Türkçe: nisan
 🇦🇿 Türkcə: aprel, neysan (nisan, leysan)
@@ -806,7 +806,7 @@ Tofalap: ıtalaar''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hayastan":
         bot.send_message(message.chat.id, '''🇦🇲 Hayastan
         
-🇬🇧 English: Armenia
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Armenia
 🇷🇺 Русский: Армения [Armeniya]
 🇹🇷 Türkçe: Ermenistan
 🇦🇿 Türkcə: Ermənistan
@@ -849,7 +849,7 @@ Tofalap: ıtalaar''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ermen" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "armenian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "armen":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Armenian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Armenian
 🇷🇺 Русский: армянин
 🇹🇷 Türkçe: Ermeni
 🇦🇿 Türkcə: erməni
@@ -892,7 +892,7 @@ Tofalap: ıtalaar''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ублюдина" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "внебрачный ребенок" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "внебрачный ребёнок":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bastard
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bastard
 🇷🇺 Русский: бастард, ублюдок
 🇹🇷 Türkçe: piç, haramzade, veledizina
 🇦🇿 Türkcə: bic, haramzada (dialect), bicbala (dialect)
@@ -928,7 +928,7 @@ Tofalap: ???''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "biyoloji" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bioloji":
         bot.send_message(message.chat.id, '''
-🇬🇧 English: biology
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: biology
 🇷🇺 Русский: биология [biologiya]
 🇹🇷 Türkçe: biyoloji, dirim bilimi (neologism), hayatiyyat (ottoman archaism)
 🇦🇿 Türkcə: biologiya, təbiətşünaslıq (arсhaism), həyatiyyat (arсhaism), elmi həyat (archaism)
@@ -972,7 +972,7 @@ Tofalap: bîologiya''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тэнгри" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тангры":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱅𐰭𐰼𐰃 
-🇬🇧 English: god
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: god
 🇷🇺 Русский: бог
 🇹🇷 Türkçe: tanrı, yaradan, hüda
 🇦🇿 Türkcə: tanrı, yaradan, xuda
@@ -1018,7 +1018,7 @@ Tofalap: burhan''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bator":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐱃𐰆𐰺 
 🐺 Old Turkic (bef. 13th c.): bağatur, batur, sökmän, alp, alp er, alpağut (alpağu)
-🇬🇧 English: bogatyr, baghatur ("batır" also means "hero" in most Turkic languages)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bogatyr, baghatur ("batır" also means "hero" in most Turkic languages)
 🇷🇺 Русский: богатырь, багатур (батыр, батур)
 🇯🇵 Nihongo: bagatoru
 🇰🇷 Hangug-eo: bagatuleu
@@ -1068,7 +1068,7 @@ Tofalap: burhan''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "büyük" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "большие":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰆𐰞𐰆𐰍
-🇬🇧 English: big, large
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: big, large
 🇷🇺 Русский: большой, крупный (-ая, -ое)
 🇹🇷 Türkçe: büyük
 🇦🇿 Türkcə: böyük, yekə, iri
@@ -1117,7 +1117,7 @@ Tofalap: uluğ''', reply_markup=markup_menu)
 - younger, младщий, küçük
 
 🐺 Old Turkic (bef. 13th c.): qarındaş, qadaş, aqa (+), eçi (+), ini (-)
-🇬🇧 English: brother
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: brother
 🇷🇺 Русский: брат [brat]
 🇹🇷 Türkçe: kardeş (erkek kardeş), ağabey (+), abi (+)
 🇦🇿 Türkcə: qardaş, ici (dialect), qada (dialect), çöçüy (dialect), lələ (dialect) (+), ağa (dialect) (+), ağadadaş (dialect) (+), dadaş (dialect) (+), qağa (dialect) (+), qaqa (informal), qaqaş (informal)
@@ -1164,7 +1164,7 @@ Tofalap: uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бывать" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "быть":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): bol
-🇬🇧 English: be
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: be
 🇷🇺 Русский: будь, являйся
 🇲🇳 Mongol: bolo
 🇹🇷 Türkçe: ol
@@ -1205,7 +1205,7 @@ Tofalap: uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "+da" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "+de":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): -da/-dä/-ta/-tä
-🇬🇧 English: in
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: in
 🇷🇺 Русский: в
 🇹🇷 Türkçe: -da/-de/-ta/-te
 🇦🇿 Türkcə: -da/-də
@@ -1242,7 +1242,7 @@ Tofalap: uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "basil" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "basileios" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vasiliy":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Basil
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Basil
 🇷🇺 Русский: Василий, Вася
 🇹🇷 Türkçe: Basileios
 🇦🇿 Türkcə: Basil, Vasili (Vasiliy)
@@ -1283,7 +1283,7 @@ Tofalap: ???''', reply_markup=markup_menu)
         or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yüce" \
         or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "велико":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰆𐰞𐰆𐰍
-🇬🇧 English: great, grand
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: great, grand
 🇷🇺 Русский: великий (-ая, -ое)
 🇹🇷 Türkçe: ulu, yüce
 🇦🇿 Türkcə: ulu, uca
@@ -1322,7 +1322,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "h2o":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰽𐰆𐰉
 🐺 Old Turkic (bef. 13th c.): sub (suğ, suv, suw)
-🇬🇧 English: water
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: water
 🇷🇺 Русский: вода
 🇲🇳 Mongol: us
 🇹🇷 Türkçe: su
@@ -1363,7 +1363,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐺" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "böri":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰋𐰇𐰼𐰃
-🇬🇧 English: wolf 🐺
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: wolf 🐺
 🇷🇺 Русский: волк
 🇹🇷 Türkçe: kurt, börü
 🇦🇿 Türkcə: canavar, qurd, börü
@@ -1402,7 +1402,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гнида" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pediculus":
-        bot.send_message(message.chat.id, '''🇬🇧 English: louse
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: louse
 🇷🇺 Русский: вошь
 🇹🇷 Türkçe: bit
 🇦🇿 Türkcə: bit
@@ -1448,7 +1448,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "everybody" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "everyone":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐰺
-🇬🇧 English: I. all, every II. everybody, everyone
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. all, every II. everybody, everyone
 🇷🇺 Русский: I. всё, каждый (каждая, каждое) II. все
 🇹🇷 Türkçe: I. tüm, bütün, hep, her II. herkes, hepsi
 🇦🇿 Türkcə: I. bütün, hər II. hamı, hər kəs
@@ -1488,7 +1488,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "you guys" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "y'all":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰾𐰃𐰔
-🇬🇧 English: you (plural) (write "sen" for singular)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: you (plural) (write "sen" for singular)
 🇷🇺 Русский: вы
 🇹🇷 Türkçe: siz, sizler
 🇦🇿 Türkcə: siz, sizler
@@ -1525,7 +1525,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "where" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hani":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰣𐰃
-🇬🇧 English: where
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: where
 🇷🇺 Русский: где
 🇲🇳 Mongol: khaana
 🇹🇷 Türkçe: nerede, hani
@@ -1566,7 +1566,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eyes":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰚𐰇𐰔
 🐺 Old Turkic (bef. 13th c.): köz, qaraq ("eye", "eyeball")
-🇬🇧 English: eye
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: eye
 🇷🇺 Русский: глаз
 🇹🇷 Türkçe: göz, karak (arсhaism)
 🇦🇿 Türkcə: göz
@@ -1606,7 +1606,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "years":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰘𐰃𐰞
 🐺 Old Turkic: yıl (yíl)
-🇬🇧 English: year
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: year
 🇷🇺 Русский: год
 🇲🇳 Mongol: jil
 🇹🇷 Türkçe: yıl, sene
@@ -1645,7 +1645,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baş":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐱁
 🐺 Old Turkic: baş
-🇬🇧 English: head
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: head
 🇷🇺 Русский: голова
 🇹🇷 Türkçe: baş, kafa
 🇦🇿 Türkcə: baş
@@ -1685,7 +1685,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏔" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mountain":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱃𐰍
-🇬🇧 English: mountain ⛰
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mountain ⛰
 🇷🇺 Русский: гора
 🇹🇷 Türkçe: dağ
 🇦🇿 Türkcə: dağ, tov {dial.}
@@ -1726,7 +1726,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gürcü" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gürci":
         bot.send_message(message.chat.id, '''
-🇬🇧 English: georgian
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: georgian
 🇷🇺 Русский: грузин, грузинка
 🇹🇷 Türkçe: gürcü
 🇦🇿 Türkcə: gürcü
@@ -1767,7 +1767,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "georgıa":
         bot.send_message(message.chat.id, '''🇬🇪 Sakartvelo
         
-🇬🇧 English: Georgia
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Georgia
 🇷🇺 Русский: Грузия [Gruziya], Картвелия [Kartveliya] {new official}
 🇹🇷 Türkçe: Gürcistan (Gürcüstan)
 🇦🇿 Türkcə: Gürcüstan
@@ -1806,7 +1806,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yep" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yea":
         bot.send_message(message.chat.id, '''🐺 Old Turkic: evät (emät, yemät), yah
-🇬🇧 English: yes
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: yes
 🇷🇺 Русский: да
 🇪🇪 Eesti: jah
 🇰🇷 Hangug-eo: ye
@@ -1848,7 +1848,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "две" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "двое":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰚𐰃 
-🇬🇧 English: two
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: two
 🇷🇺 Русский: два, две, двое
 🇹🇷 Türkçe: iki
 🇦🇿 Türkcə: iki
@@ -1886,11 +1886,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aralik" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "декабрь" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dekabr":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: december
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: december
 🇷🇺 Русский: декабрь
 🇹🇷 Türkçe: aralık
 🇦🇿 Türkcə: dekabr, qanuni-əvvəl
@@ -1936,7 +1936,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gündüz":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰾. 𐰚𐰇𐰤 𐰾𐰾. 𐰚𐰇𐰦𐰔 (𐰚𐰇𐰤𐱅𐰔)
 🐺 Old Turkic: I. kün II. kündüz (küntüz)
-🇬🇧 English: I. day II. daytime
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. day II. daytime
 🇷🇺 Русский: I. день II. днём (дневное время)
 🇹🇷 Türkçe: I. gün II. gündüz (ışık veren gün sonucu için "güneş" girin)
 🇦🇿 Türkcə: I. gün II. gündüz
@@ -1977,7 +1977,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "древесный" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ağaç":\
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰃𐰍𐰲
-🇬🇧 English: I. tree 🌳 II. wood  🪵
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. tree 🌳 II. wood  🪵
 🇷🇺 Русский: дерево
 🇹🇷 Türkçe: ağaç, dıraht (archaism)
 🇦🇿 Türkcə: ağac, dirəxt (poetry)
@@ -2018,7 +2018,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "длинные" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "длинное":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰆𐰔𐰣
-🇬🇧 English: long
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: long
 🇷🇺 Русский: длинный (-ая, -ое)
 🇭🇺 Magyar: hosszú
 🇹🇷 Türkçe: uzun
@@ -2068,7 +2068,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "başkası" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "another":
         bot.send_message(message.chat.id, '''
-🇬🇧 English: other
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: other
 🇷🇺 Русский: другой, иной, прочий (-ая, -ое)
 🇹🇷 Türkçe: başka, öbür, diğer
 🇦🇿 Türkcə: başqa, ayrı, o biri, özgə, digər
@@ -2107,7 +2107,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eş" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "zevce":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰆𐰨𐰖, 𐰴𐱃𐰆𐰣
-🇬🇧 English: wife
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: wife
 🇷🇺 Русский: жена
 🇹🇷 Türkçe: karı, avrat, eş, zevce
 🇦🇿 Türkcə: arvad, əyal, zövcə, qarı
@@ -2144,7 +2144,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "women" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kadın":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐱃𐰆𐰣
-🇬🇧 English: woman
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: woman
 🇷🇺 Русский: женщина
 🇹🇷 Türkçe: kadın
 🇦🇿 Türkcə: qadın, arvad
@@ -2182,7 +2182,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "животные" \
          or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фауна":
         bot.send_message(message.chat.id, '''
-🇬🇧 English: animal
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: animal
 🇷🇺 Русский: животное
 🇹🇷 Türkçe: hayvan
 🇦🇿 Türkcə: heyvan
@@ -2225,7 +2225,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "️🌟" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "звездный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): yıldız (yulduz, yúltus) (also means "planet"), şıryu
-🇬🇧 English: star ⭐
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: star ⭐
 🇷🇺 Русский: звезда [zvezda]
 🇹🇷 Türkçe: yıldız
 🇦🇿 Türkcə: ulduz
@@ -2271,7 +2271,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ring up" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to phone":
         bot.send_message(message.chat.id, '''
-🇬🇧 English: ring up, call, phone
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ring up, call, phone
 🇷🇺 Русский: позвони (по телефону), сделай звонок
 🇹🇷 Türkçe: ara, telefon et, çağrı yap
 🇦🇿 Türkcə: zəng et, yığ
@@ -2313,7 +2313,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burda" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burası":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐰆𐰦𐰀, 𐰉𐰆𐰘𐰼𐰓𐰀
-🇬🇧 English: here
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: here
 🇷🇺 Русский: здесь, тут
 🇹🇷 Türkçe: burada, bura, burası
 🇦🇿 Türkcə: burada (burda), bura
@@ -2356,7 +2356,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐍" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "serpent":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰘𐰃𐰞𐰣 (𐰖𐰃𐰞𐰣)
-🇬🇧 English: snake 🐍 serpent
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: snake 🐍 serpent
 🇷🇺 Русский: змея, змей
 🇹🇷 Türkçe: yılan
 🇦🇿 Türkcə: ilan, şan (dialect), yatağan (dialect)
@@ -2398,7 +2398,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fang" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "teeth":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): tiş
-🇬🇧 English: tooth
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tooth
 🇷🇺 Русский: зуб
 🇹🇷 Türkçe: diş
 🇦🇿 Türkcə: diş, tiş (dialect)
@@ -2444,7 +2444,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iohannes" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "johan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ıvan":
-        bot.send_message(message.chat.id, '''🇬🇧 English: John
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: John
 🇷🇺 Русский: Иван, Иоанн, Ваня
 🇹🇷 Türkçe: Yahya
 🇦🇿 Türkcə: Yəhya
@@ -2487,7 +2487,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "görsel sanat işi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "visual art" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "visual arts":
-        bot.send_message(message.chat.id, '''🇬🇧 English: visual art(s)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: visual art(s)
 🇷🇺 Русский: искусство запечатления образов (ИЗО), изобразительное искусство
 🇹🇷 Türkçe: görsel sanat(lar)
 🇦🇿 Türkcə: təsviri incəsənət
@@ -2530,7 +2530,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ийсус" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ииссус":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): İsa, Yişu, Yesus
-🇬🇧 English: Jesus
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Jesus
 🇷🇺 Русский: Иисус [Iısus]
 🇹🇷 Türkçe: İsa
 🇦🇿 Türkcə: İsa
@@ -2562,11 +2562,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "july" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "temmuz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "temuz":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: july
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: july
 🇷🇺 Русский: июль
 🇹🇷 Türkçe: temmuz
 🇦🇿 Türkcə: iyul, təmuz
@@ -2605,11 +2605,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "june" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "haziran" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hazıran":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: june
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: june
 🇷🇺 Русский: июнь
 🇹🇷 Türkçe: haziran
 🇦🇿 Türkcə: iyun, həziran
@@ -2658,7 +2658,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kazakhstan":
         bot.send_message(message.chat.id, '''🇰🇿 Qazaqstan, Qazağıstan {arch.}
 
-🇬🇧 English: Kazakhstan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Kazakhstan
 🇷🇺 Русский: Казахстан
 🇹🇷 Türkçe: Kazakistan
 🇦🇿 Türkcə: Qazaxıstan, Qazaxstan {arch.}
@@ -2696,7 +2696,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каким образом":
         bot.send_message(message.chat.id, '''🇷🇺 Слово "как" указано в значении "каким образом", для значения подобия, введите "подобно".
         
-🇬🇧 English: how
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: how
 🇷🇺 Русский: как, каким образом
 🇹🇷 Türkçe: nasıl
 🇦🇿 Türkcə: necə, nətər, nəcür, hancar (dialect)
@@ -2738,7 +2738,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🍠" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥔" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "картопля":
-        bot.send_message(message.chat.id, '''🇬🇧 English: potato 🥔
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: potato 🥔
 🇷🇺 Русский: картофель, картошка
 🇹🇷 Türkçe: patates
 🇦🇿 Türkcə: kartof, yeralma (yeralması) (dialect, archaism), moqu (dialect)
@@ -2777,7 +2777,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "haçan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaçan":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰲𐰣
-🇬🇧 English: when
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: when
 🇷🇺 Русский: когда
 🇹🇷 Türkçe: ne zaman
 🇦🇿 Türkcə: nə vaxt, nə zaman, haçan, havaxt
@@ -2817,7 +2817,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "leather":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱅𐰼𐰃
 🐺 Old Turkic: teri, quyqa, kön
-🇬🇧 English: skin, leather
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: skin, leather
 🇷🇺 Русский: кожа, шкура
 🇹🇷 Türkçe: deri
 🇦🇿 Türkcə: dəri, gön
@@ -2860,7 +2860,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "компутер" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кампьютер" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "компьютерный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: computer 🖥
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: computer 🖥
 🇷🇺 Русский: компьютер [kompyuter]
 🇹🇷 Türkçe: bilgisayar
 🇦🇿 Türkcə: bilgisayar, kompüter
@@ -2897,7 +2897,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anayasa" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "контитуционный":
         bot.send_message(message.chat.id, '''
-🇬🇧 English: constitution
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: constitution
 🇷🇺 Русский: конституция
 🇹🇷 Türkçe: anayasa, kanun-u esasi (archaism)
 🇦🇿 Türkcə: konstitusiya, anayasa, qanun-əsasi (archaism), məşrutə (archaism)
@@ -2936,7 +2936,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "корневой":
         bot.send_message(message.chat.id, '''
 🐺 Old Turkic (bef. 13th c.): kök, yıldız, tüp
-🇬🇧 English: root
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: root
 🇷🇺 Русский: корень
 🇭🇺 Magyar: gyök, gyökér
 🇹🇷 Türkçe: kök
@@ -2980,7 +2980,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kıska" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "киска":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰃𐱁𐰍𐰀	
-🇬🇧 English: short
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: short
 🇷🇺 Русский: короткий (-ая, -ое)
 🇹🇷 Türkçe: kısa
 🇦🇿 Türkcə: qısa, gödək
@@ -3021,7 +3021,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "костяной":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰾𐰇𐰭𐰜
 🐺 Old Turkic (bef. XV c.): süŋük
-🇬🇧 English: bone 🦴
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bone 🦴
 🇷🇺 Русский: кость
 🇹🇷 Türkçe: kemik, sümük {dial.}
 🇦🇿 Türkcə: sümük
@@ -3063,7 +3063,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "херасе" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ни хера себе" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ıstavroz":
-        bot.send_message(message.chat.id, '''🇬🇧 English: cross
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cross
 🇷🇺 Русский: крест [krest]
 🇹🇷 Türkçe: haç, salip, ıstavroz
 🇦🇿 Türkcə: xaç, səlib
@@ -3100,7 +3100,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кровный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kan":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰣
-🇬🇧 English: blood
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: blood
 🇷🇺 Русский: кровь
 🇹🇷 Türkçe: kan
 🇦🇿 Türkcə: qan
@@ -3141,7 +3141,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lacoste" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tımsah":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): alavan, nek
-🇬🇧 English: crocodile 🐊
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: crocodile 🐊
 🇷🇺 Русский: крокодил [krokodil]
 🇹🇷 Türkçe: timsah
 🇦🇿 Türkcə: timsah
@@ -3181,7 +3181,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "крылья":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰣𐱃 (𐰴𐰣𐰀𐱃)
 🐺 Old Turkic: qanat
-🇬🇧 English: wing
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: wing
 🇷🇺 Русский: крыло
 🇹🇷 Türkçe: kanat
 🇦🇿 Türkcə: qanad, qənət (dialect)
@@ -3218,7 +3218,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "who" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кто":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰚𐰢
-🇬🇧 English: who
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: who
 🇷🇺 Русский: кто [kto]
 🇭🇺 Magyar: ki
 🇹🇷 Türkçe: kim
@@ -3266,7 +3266,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сьесть" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ешь":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): aşa, ye
-🇬🇧 English: eat!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: eat!
 🇷🇺 Русский: кушай! ешь!
 🇹🇷 Türkçe: ye
 🇦🇿 Türkcə: ye (yi)
@@ -3308,7 +3308,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "львица" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "львиный":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰺𐰽𐰞𐰣 
-🇬🇧 English: lion 🦁
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: lion 🦁
 🇷🇺 Русский: лев
 🇭🇺 Magyar: oroszlán
 🇲🇳 Mongol: arslan
@@ -3345,7 +3345,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orman" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ağaçlık":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰘𐰃𐰾 (𐰘𐰃𐱁)
-🇬🇧 English: forest
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: forest
 🇷🇺 Русский: лес
 🇫🇮 Suomea: metsä
 🇹🇷 Türkçe: orman
@@ -3391,7 +3391,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "листок" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лист":
         bot.send_message(message.chat.id, '''🐺 Old Turkic: yapırğaq (yalbırğaq, yapurğaq), yawışğu
-🇬🇧 English: leaf 🍁🍂🍃
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: leaf 🍁🍂🍃
 🇷🇺 Русский: лист (лист растения)
 🇹🇷 Türkçe: yaprak
 🇦🇿 Türkcə: yarpaq
@@ -3432,7 +3432,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lietuva":
         bot.send_message(message.chat.id, '''🇱🇹 Lietuva
 
-🇬🇧 English: Lithuania
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Lithuania
 🇷🇺 Русский: Литва
 🇹🇷 Türkçe: Litvanya
 🇦🇿 Türkcə: Litva, Litvaniya {arch.}
@@ -3469,7 +3469,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "literature" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "edebiyat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yazın":
-        bot.send_message(message.chat.id, '''🇬🇧 English: literature
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: literature
 🇷🇺 Русский: литература
 🇹🇷 Türkçe: edebiyat, yazın
 🇦🇿 Türkcə: ədəbiyyat, yazın (rarely, purism)
@@ -3515,7 +3515,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ay":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰖
 🐺 Old Turkic (bef. 13th c.): ay
-🇬🇧 English: I. moon II. month
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. moon II. month
 🇷🇺 Русский: I. луна II. месяц
 🇹🇷 Türkçe: ay
 🇦🇿 Türkcə: ay
@@ -3558,7 +3558,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "love!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "возлюби":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): sev (seb), jaqşı kör, sev amra, amran
-🇬🇧 English: love!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: love!
 🇷🇺 Русский: люби!
 🇹🇷 Türkçe: sev
 🇦🇿 Türkcə: sev (to partner), çox istə (to family member, friend, relative, comrade etc)
@@ -3594,11 +3594,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "may" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mayıs" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mayis":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: may
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: may
 🇷🇺 Русский: май
 🇹🇷 Türkçe: mayıs
 🇦🇿 Türkcə: may, mayıs
@@ -3645,7 +3645,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маленькие":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰚𐰃𐰲𐰏
 🐺 Old Turkic: kiçig, biçä
-🇬🇧 English: little, small
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: little, small
 🇷🇺 Русский: маленький, малый (-ая, -ое)
 🇭🇺 Magyar: kicsi
 🇲🇳 Mongol: kichig (jijig)
@@ -3685,7 +3685,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мало" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "a few":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰔
-🇬🇧 English: few, a little
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: few, a little
 🇷🇺 Русский: мало
 🇹🇷 Türkçe: az
 🇦🇿 Türkcə: az
@@ -3722,7 +3722,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "детка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "младенец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bebek":
-        bot.send_message(message.chat.id, '''🇬🇧 English: baby
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: baby
 🇷🇺 Русский: малыш, детка, младенец
 🇹🇷 Türkçe: bebek
 🇦🇿 Türkcə: bəbə, bəbək, çağa
@@ -3762,7 +3762,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anne" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ana":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰇𐰏𐰀, 𐰤
-🇬🇧 English: mom, mother
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mom, mother
 🇷🇺 Русский: мама, мать
 🇭🇺 Magyar: anya
 🇹🇷 Türkçe: anne, ana
@@ -3799,11 +3799,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "март" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mart" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мартовский":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: march
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: march
 🇷🇺 Русский: март
 🇹🇷 Türkçe: mart
 🇦🇿 Türkcə: mart
@@ -3849,7 +3849,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰖𐰍
 🐺 Old Turkic: yağ, öz
-🇬🇧 English: oil 🛢️, butter 🧈
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: oil 🛢️, butter 🧈
 🇷🇺 Русский: жир, масло
 🇭🇺 Magyar: háj
 🇹🇷 Türkçe: yağ
@@ -3897,7 +3897,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚖" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🛺" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "motorlu araba":
-        bot.send_message(message.chat.id, '''🇬🇧 English: car, automobile 🚗
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: car, automobile 🚗
 🇷🇺 Русский: автомобиль, машина (автомашина)
 🇹🇷 Türkçe: araba (motorlu araba)
 🇦🇿 Türkcə: maşın
@@ -3940,7 +3940,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медведица":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰑𐰃𐰍
 🐺 Old Turkic (bef. 13th c.): adığ
-🇬🇧 English: bear 🐻🧸
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bear 🐻🧸
 🇷🇺 Русский: медведь
 🇹🇷 Türkçe: ayı
 🇦🇿 Türkcə: ayı
@@ -3981,7 +3981,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "honney":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐰞 
 🐺 Old Turkic (bef. 13th c.): bal (bál), arı yağı
-🇬🇧 English: honey 🍯
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: honey 🍯
 🇷🇺 Русский: мёд [myod]
 🇲🇳 Mongol: bal
 🇹🇷 Türkçe: bal
@@ -4022,7 +4022,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dakka" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "minuta":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): altı qolu
-🇬🇧 English: minute
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: minute
 🇷🇺 Русский: минута [minuta]
 🇹🇷 Türkçe: dakika
 🇦🇿 Türkcə: dəqiqə
@@ -4059,7 +4059,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "много" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çok":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰜𐰇𐰾
-🇬🇧 English: many, much, lot
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: many, much, lot
 🇷🇺 Русский: много
 🇭🇺 Magyar: sok
 🇹🇷 Türkçe: çok
@@ -4101,7 +4101,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moishe" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moyshe" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moyses":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Moses
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Moses
 🇷🇺 Русский: Моисей [Moisey]
 🇹🇷 Türkçe: Musa
 🇦🇿 Türkcə: Musa
@@ -4139,7 +4139,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "er" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "husbant":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰼
-🇬🇧 English: husband
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: husband
 🇷🇺 Русский: муж (в значении супруга)
 🇲🇳 Mongol: er
 🇹🇷 Türkçe: koca, er
@@ -4178,7 +4178,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "erkek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adam":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰼
-🇬🇧 English: man
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: man
 🇷🇺 Русский: мужчина, мужик
 🇲🇳 Mongol: er
 🇹🇷 Türkçe: erkek, adam
@@ -4216,7 +4216,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "biz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bizler":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰋𐰃𐰔	
-🇬🇧 English: we
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: we
 🇷🇺 Русский: мы
 🇹🇷 Türkçe: biz, bizler
 🇦🇿 Türkcə: biz, bizlər
@@ -4257,7 +4257,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🍗" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🍖" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мяско":
-        bot.send_message(message.chat.id, '''🇬🇧 English: meat 🥩🍗🍖
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: meat 🥩🍗🍖
 🇷🇺 Русский: мясо
 🇹🇷 Türkçe: et
 🇦🇿 Türkcə: ət
@@ -4293,7 +4293,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "не" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "değil":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰖𐰆𐰸
-🇬🇧 English: not
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: not
 🇷🇺 Русский: не
 🇹🇷 Türkçe: değil, yok
 🇦🇿 Türkcə: deyil, yox
@@ -4332,7 +4332,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hayir":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰖𐰸 (𐰖𐰆𐰸)
 🐺 Old Turkic: I. yoq (yóq) II. yoq (yo)
-🇬🇧 English: I. no (absence) II. no (abnegation)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. no (absence) II. no (abnegation)
 🇷🇺 Русский: I. нет (отсутствие) II. нет (отрицание)
 🇹🇷 Türkçe: I. yok II. hayır, yok
 🇦🇿 Türkcə: I. yox II. xeyr (formal), yox (informal), yo (informal)
@@ -4373,7 +4373,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sema" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "asuman":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱅𐰭𐰼𐰃
-🇬🇧 English: sky, heaven
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sky, heaven
 🇷🇺 Русский: небо [nebo]
 🇹🇷 Türkçe: gök, sema, asuman
 🇦🇿 Türkcə: göy, səma, asiman, fələk, əsman (dialect)
@@ -4410,7 +4410,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "несколько" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "birkaç":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰽𐰣𐰍𐰞𐰃
-🇬🇧 English: several, a few
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: several, a few
 🇷🇺 Русский: несколько
 🇹🇷 Türkçe: birkaç
 🇦🇿 Türkcə: bir neçə
@@ -4452,7 +4452,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "никол" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nikol" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "niko":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Nicholas
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Nicholas
 🇷🇺 Русский: Николай, Коля
 🇦🇿 Türkcə: Niqalay
 🏴 Çovaşla: Mikka (Mikula, Mikulay)
@@ -4471,7 +4471,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeni":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰖𐰭𐰃
 🐺 Old Turkic (bef. 13th c.): yaŋı
-🇬🇧 English: new
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: new
 🇷🇺 Русский: новый (-ая, -ое) [novy]
 🇹🇷 Türkçe: yeni
 🇦🇿 Türkcə: yeni, təzə
@@ -4510,7 +4510,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ногти" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ноготок":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): tırŋaq (tıŋraq, tıŋaraq)
-🇬🇧 English: fingernail
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fingernail
 🇷🇺 Русский: ноготь [noɡotʲ]
 🇹🇷 Türkçe: tırnak
 🇦🇿 Türkcə: dırnaq
@@ -4547,7 +4547,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нос" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burun":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): burun
-🇬🇧 English: nose
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: nose
 🇷🇺 Русский: нос [nos]
 🇹🇷 Türkçe: burun
 🇦🇿 Türkcə: burun
@@ -4587,7 +4587,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ночной":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱅𐰇𐰤
 🐺 Old Turkic: tün, keçä
-🇬🇧 English: night 🌃
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: night 🌃
 🇷🇺 Русский: ночь [noch']
 🇹🇷 Türkçe: gece
 🇦🇿 Türkcə: gecə
@@ -4624,11 +4624,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ноябрь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kasım" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kasim":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: november
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: november
 🇷🇺 Русский: ноябрь [noyabr']
 🇹🇷 Türkçe: kasım
 🇦🇿 Türkcə: noyabr, təşrini-sani
@@ -4668,7 +4668,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bir" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "один":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰋𐰃𐰼 
-🇬🇧 English: one
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: one
 🇷🇺 Русский: один [odin]
 🇹🇷 Türkçe: bir
 🇦🇿 Türkcə: bir
@@ -4707,7 +4707,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göl":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰚𐰇𐰠
 🐺 Old Turkic (bef. 13th c.): köl, kölman (little lake)
-🇬🇧 English: lake
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: lake
 🇷🇺 Русский: озеро [ozero]
 🇹🇷 Türkçe: göl
 🇦🇿 Türkcə: göl
@@ -4745,11 +4745,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ekim" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ekim ayi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ekim ayı":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: october
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: october
 🇷🇺 Русский: октябрь [oktyabr']
 🇹🇷 Türkçe: ekim
 🇦🇿 Türkcə: oktyabr, təşrini-əvvəl
@@ -4791,7 +4791,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "она" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оно":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰆𐰞 
-🇬🇧 English: he, she, it
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: he, she, it
 🇷🇺 Русский: он, она, оно
 🇭🇺 Magyar: ő
 🇹🇷 Türkçe: o
@@ -4828,7 +4828,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "они" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "onlar":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰆𐰞𐰺
-🇬🇧 English: they
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: they
 🇷🇺 Русский: они [oni]
 🇹🇷 Türkçe: onlar
 🇦🇿 Türkcə: onlar
@@ -4865,7 +4865,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stick" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦯" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палка":
-        bot.send_message(message.chat.id, '''🇬🇧 English: stick
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: stick
 🇷🇺 Русский: палка
 🇹🇷 Türkçe: değnek, çubuk, dayak
 🇦🇿 Türkcə: çubuq, çöp, çomaq, əsa, əl ağacı, şıvırtı (dialect), tubulqu (dialect), milil (dialect)
@@ -4905,7 +4905,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baba" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ata":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰲𐰃, 𐱃𐰀
-🇬🇧 English: dad, father
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dad, father
 🇷🇺 Русский: папа [papa], отец [otets]
 🇹🇷 Türkçe: baba, ata
 🇭🇺 Magyar: atya, apa
@@ -4943,7 +4943,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "parliament" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "parlamento":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): qurultay
-🇬🇧 English: parliament, Parliament of the United Kingdom of Great Britain and Northern Ireland 
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: parliament, Parliament of the United Kingdom of Great Britain and Northern Ireland 
 🇷🇺 Русский: парламент, Федеральное собрание Российской Федерации
 🇹🇷 Türkçe: parlamento, Türkiye Büyük Millet Meclisi
     🇨🇾🇹🇷 Türkçe: parlamento, Cumhuriyet Meclisi
@@ -4983,7 +4983,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara ciğer" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ливерная":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): bağır
-🇬🇧 English: liver
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: liver
 🇷🇺 Русский: печень [pechen']
 🇹🇷 Türkçe: karaciğer, bağır
 🇦🇿 Türkcə: ciyər, qaraciyər, bağır
@@ -5020,7 +5020,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shelf" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полочка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shelves":
-        bot.send_message(message.chat.id, '''🇬🇧 English: shelf
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: shelf
 🇷🇺 Русский: полка [polka]
 🇹🇷 Türkçe: raf
 🇦🇿 Türkcə: rəf
@@ -5062,7 +5062,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стронг":
         bot.send_message(message.chat.id, '''🇵🇱 Polska
 
-🇬🇧 English: Poland
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Poland
 🇷🇺 Русский: Польша [Pol'sha]
 🇹🇷 Türkçe: Polonya, Lehistan {arch.}
 🇦🇿 Türkcə: Polşa, Lehistan/Löhüstan {arch.}
@@ -5103,7 +5103,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "польский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лях" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "polonez":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	pole, polish
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pole, polish
 🇷🇺 Русский:	поляк, польский
 🇹🇷 Türkçe:	polonyalı, polonez, leh
 🇦🇿 Türkcə:	polyak {north azb.}, leh (löh, ləh)
@@ -5134,7 +5134,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sawm" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "siyam" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ораза":
-        bot.send_message(message.chat.id, '''🇬🇧 English: fasting
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fasting
 🇷🇺 Русский: пост, говенье, голодание, воздержание от пищи
 🇹🇷 Türkçe: oruç
 🇦🇿 Türkcə: oruc, ruzə
@@ -5175,7 +5175,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cumhur başkanı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cumhur başkan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "praesidens":
-        bot.send_message(message.chat.id, '''🇬🇧 English: president (head of state)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: president (head of state)
 🇷🇺 Русский: президент [prezident]
 🇹🇷 Türkçe: cumhurbaşkanı, başkan, reis-i cumhur (arch.}
 🇦🇿 Türkcə: prezident, zeim (زعىم) {arch.}, rəis cümhur {arch., dial.}
@@ -5212,7 +5212,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐦" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kuş":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰆𐰽
-🇬🇧 English: bird 🐦
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bird 🐦
 🇷🇺 Русский: птица [ptitsa]
 🇹🇷 Türkçe: kuş
 🇦🇿 Türkcə: quş
@@ -5249,7 +5249,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "five" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beş":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰋𐰾 ,𐰋𐰀𐱁
-🇬🇧 English: five
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: five
 🇷🇺 Русский: пять [pyat']
 🇹🇷 Türkçe: beş
 🇦🇿 Türkcə: beş
@@ -5287,7 +5287,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çocuk" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "evlat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uşak":
-        bot.send_message(message.chat.id, '''🇬🇧 English: child
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: child
 🇷🇺 Русский: ребёнок
 🇹🇷 Türkçe: çocuk, evlat, uşak (dialect)
 🇦🇿 Türkcə: bala, uşaq, övlad, səbi (rarely)
@@ -5326,7 +5326,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ırmak" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "akarsu":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰇𐰏𐰔, 𐰽𐰆𐰉
-🇬🇧 English: river
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: river
 🇷🇺 Русский: река [reka]
 🇹🇷 Türkçe: dere, çay, nehir, ırmak, akarsu
 🇦🇿 Türkcə: çay, irmaq, nəhr, şam (dialect)
@@ -5363,11 +5363,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "republic" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сumhuriyet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "res publica":
-        bot.send_message(message.chat.id, '''🇬🇧 In many languages, different cognates of the word "cumhuriyet" were replaced by the word "respublika" by the Soviet Russia in the 30s, 40s of the 20th century, therefore at this moment it is a more used word.
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 In many languages, different cognates of the word "cumhuriyet" were replaced by the word "respublika" by the Soviet Russia in the 30s, 40s of the 20th century, therefore at this moment it is a more used word.
 🇷🇺 Мо многих языках разные когнаты слова "сumhuriyet" были заменены на слово "respublika" советской властью в 30-х, 40-х годах XX века, поэтому в данный момент оно является более используемым словом.
 🇹🇷 Çok türk lehcelerinde "сumhuriyet" kelimesinin farklı köktaşları Sovyet Rusyası tarafından XX yüzyılın 30-cu, 40-cı yıllarında "respublika" kelimesi ile değiştirildi. Bu yüzden şu anda daha çok kullanılan bir kelimedir.
 
-🇬🇧 English: republic
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: republic
 🇷🇺 Русский: республика [respublika]
 🇹🇷 Türkçe: сumhuriyet
 🇦🇿 Türkcə: cümhuriyyət, respublika
@@ -5407,7 +5407,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рога" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buynuz":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): miŋiz (müŋüz, müyüz, mügüz)
-🇬🇧 English: horn
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: horn
 🇷🇺 Русский: рог, рога
 🇹🇷 Türkçe: boynuz
 🇦🇿 Türkcə: buynuz
@@ -5451,7 +5451,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇷🇺 Rossiya
 
 🐺 Old Turkic: Mosqov
-🇬🇧 English: Russia
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Russia
 🇹🇷 Türkçe: Rusya
 🇦🇿 Türkcə: Rusiya, Ərəsey (dialect), Urusyet (Ruset, Uruset, Ursyet, Rusyet) (dialect)
 🇹🇲 Türkmençe: Orsýet, Russiýa
@@ -5488,7 +5488,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ротовая" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ротовой":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): ağız (ağaz)
-🇬🇧 English: mouth
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mouth
 🇷🇺 Русский: рот [rot]
 🇹🇷 Türkçe: ağız
 🇦🇿 Türkcə: ağız
@@ -5527,7 +5527,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kol" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "десница":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): I. el, elig II. qol (qól)
-🇬🇧 English: I. hand II. arm
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. hand II. arm
 🇷🇺 Русский: рука [ruka]
 🇹🇷 Türkçe: I. el II. kol
 🇦🇿 Türkcə: I. əl II. qol
@@ -5570,7 +5570,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐟" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рыбка":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐰞𐰶 
-🇬🇧 English: fish 🐟🐠🐡
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fish 🐟🐠🐡
 🇷🇺 Русский: рыба [ryba]
 🇹🇷 Türkçe: balık
 🇦🇿 Türkcə: balıq
@@ -5613,7 +5613,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пегенеги" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "свояки":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): adaş böşük, öz kişi, uruğ özlüg
-🇬🇧 English: brother-in-law
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: brother-in-law
 🇷🇺 Русский: свояк, муж свояченицы, шурин
 🇲🇳 Mongol: baza (baz)
 🇹🇷 Türkçe: bacanak
@@ -5657,7 +5657,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şimal":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰘𐰃𐰺𐰖𐰀
 🐺 Old Turkic (bef. 13th c.): tün sarı, yırya, tağdın (tağtın)
-🇬🇧 English: I. north I. northern
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. north I. northern
 🇷🇺 Русский: I. север II. северный (-ая, -ое)
 🇹🇷 Türkçe: kuzey, şimal (archaism)
 🇦🇿 Türkcə: I. şimal, quzey II. şimali, quzey
@@ -5695,7 +5695,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "семь":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰘‎𐱅𐰃
 🐺 Old Turkic (bef. 13th c.): yetti (yeti)
-🇬🇧 English: seven
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: seven
 🇷🇺 Русский: семь (sem')
 🇹🇷 Türkçe: yedi
 🇦🇿 Türkcə: yeddi
@@ -5734,7 +5734,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seed" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "семена":
         bot.send_message(message.chat.id, '''🐺 Old Turkic: uruq
-🇬🇧 English: seed
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: seed
 🇷🇺 Русский: семя, зёрнышко
 🇹🇷 Türkçe: tohum
 🇦🇿 Türkcə: toxum
@@ -5770,11 +5770,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "septembre" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сентябрь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eylül":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: september
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: september
 🇷🇺 Русский: сентябрь [sentyabr']
 🇹🇷 Türkçe: eylül
 🇦🇿 Türkcə: sentyabr, eylül
@@ -5816,7 +5816,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "❤️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сердце":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): yüräk (cüräk)
-🇬🇧 English: heart
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: heart
 🇷🇺 Русский: сердце [serdtse]
 🇹🇷 Türkçe: yürek, kalp
 🇦🇿 Türkcə: ürək, qəlb
@@ -5870,7 +5870,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gök reng":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰚𐰇𐰚
 🐺 Old Turkic: kök
-🇬🇧 English: blue 🔵
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: blue 🔵
 🇷🇺 Русский: голубой, синий, небесный (-ая, -ое)
 🇭🇺 Magyar: kék
 🇲🇳 Mongol: khökh
@@ -5910,7 +5910,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaya":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰖𐰀
 🐺 Old Turkic: qaya
-🇬🇧 English: rock (geol.)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: rock (geol.)
 🇷🇺 Русский: скала, утёс
 🇹🇷 Türkçe: kaya
 🇦🇿 Türkcə: qaya, kəpəz (dialect)
@@ -5949,7 +5949,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wordbook" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "словник" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dictionary":
-        bot.send_message(message.chat.id, '''🇬🇧 English: dictionary, wordbook
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dictionary, wordbook
 🇷🇺 Русский: словарь, словник (словник в значении "список слов" в большинство тюркских языков является переводов словосочетания "список слов", не требует специального слова)
 🇪🇪 Eesti: sõnastik
 🇹🇷 Türkçe: sözlük, lügât (archaism)
@@ -6001,7 +6001,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kancık":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰃𐱃
 🐺 Old Turkic (bef. 13th c.): ıt, köpäk ♂, qançıq ♀
-🇬🇧 English: dog 🐶🐕, bitch ♀
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dog 🐶🐕, bitch ♀
 🇷🇺 Русский: собака, пёс ♂, кобель ♂, сука ♀
 🇹🇷 Türkçe: köpek, it, erkek köpek ♂, kancık ♀
 🇦🇿 Türkcə: it, köpək ♂, qancıq ♀
@@ -6047,7 +6047,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сонца" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "☉":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): I. kün II. künäş, aditya, yaşıq
-🇬🇧 English: I. sun ☀️ II. The Sun, Solar (astr.) ☉
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. sun ☀️ II. The Sun, Solar (astr.) ☉
 🇷🇺 Русский: I. солнце II. Солнце (звезда, астр.) ☉ [solntse]
 🇹🇷 Türkçe: I. gün II. güneş
 🇦🇿 Türkcə: I. gün II. günəş
@@ -6084,7 +6084,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧂" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tuz":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): tuz
-🇬🇧 English: salt 🧂
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: salt 🧂
 🇷🇺 Русский: соль [sol']
 🇲🇳 Mongol: davs
 🇹🇷 Türkçe: tuz
@@ -6129,7 +6129,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stanbul" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ıstambul" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "istambul":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Istanbul
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Istanbul
 🇷🇺 Русский: Стамбул
 🇹🇷 Türkçe: İstanbul
 🇦🇿 Türkcə: İstanbul
@@ -6169,7 +6169,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ил":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰠, 𐰆𐰞𐰾
 🐺 Old Turkic (bef. 13th c.): el, ulus (uluş)
-🇬🇧 English: "el" or "ulus" (turkic society)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: "el" or "ulus" (turkic society)
 🇷🇺 Русский: "эль" (ил, ел, эл) или "улус" (тюркский социум, общество, люди, страна, народ, государство), также слово, которым обозначают свой традиционный ареал обитания
 🇲🇳 Mongol: uls
 🇹🇷 Türkçe: el (*anatomi "el" sonucu için "hand" yazın), ulus
@@ -6207,7 +6207,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orada" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orası":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰦𐰀
-🇬🇧 English: there (place)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: there (place)
 🇷🇺 Русский: там [tam]
 🇹🇷 Türkçe: orada, ora, orası
 🇦🇿 Türkcə: orada, ora
@@ -6245,7 +6245,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "huy" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mizaç" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "темперамент":
-        bot.send_message(message.chat.id, '''🇬🇧 English: temperament
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: temperament
 🇷🇺 Русский: темперамент
 🇹🇷 Türkçe: huy, mizaç
 🇦🇿 Türkcə: xoy (xuy), məzac
@@ -6288,7 +6288,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐅" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pars":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐰺𐰽 ,𐰉𐰺𐱁
-🇬🇧 English: tiger 🐯 🐅, leopard 🐆
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tiger 🐯 🐅, leopard 🐆
 🇷🇺 Русский: тигр [tigr], леопард [leopard]
 🇹🇷 Türkçe: kaplan, pars
 🇦🇿 Türkcə: pələng, qaplan, bəbir
@@ -6336,7 +6336,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "interpreter" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tolmach":
         bot.send_message(message.chat.id, '''🐺 Old Turkic: tılmaçı
-🇬🇧 English: interpreter
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: interpreter
 🇷🇺 Русский: толмач [tolmach]
 🇭🇺 Magyar: tolmács
 🇹🇷 Türkçe: dilmaç
@@ -6397,7 +6397,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yagli" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şişko":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰾. 𐰴𐰞𐰣 𐰾𐰾. 𐰾𐰢𐰃𐰔
-🇬🇧 English: I. thick II. fat (adj.) III. fatty, oily
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. thick II. fat (adj.) III. fatty, oily
 🇷🇺 Русский: I. толстый (-ая, -ое) II. толстый, жирный, упитанный (-ая, -ое) III. жирный (о продуктах)
 🇹🇷 Türkçe: I. kalın, yoğun II. şişman, şişko, tombul, semiz III. yağlı
 🇦🇿 Türkcə: I. qalın, yoğun II. gombul, kök, şişman, səmiz (dialect) III. yağlı, yağlaşov (yağlaşoy) (dialect)
@@ -6439,7 +6439,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yufka" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тонко":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰖𐰆𐰖𐰴𐰀, 𐰘𐰨𐰏𐰀
-🇬🇧 English: slim
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: slim
 🇷🇺 Русский: тонкий (-ая, -ое)
 🇹🇷 Türkçe: ince, yufka
 🇦🇿 Türkcə: nazik, incə, yuxa
@@ -6475,7 +6475,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тот" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şu":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰆𐰞
-🇬🇧 English: that (such)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: that (such)
 🇷🇺 Русский: тот [tot]
 🇹🇷 Türkçe: şu, о
 🇦🇿 Türkcə: o
@@ -6515,7 +6515,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "травка":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱃
 🐺 Old Turkic (bef. 13th c.): ot
-🇬🇧 English: grass, herb 🌿
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: grass, herb 🌿
 🇷🇺 Русский: трава [trava]
 🇹🇷 Türkçe: ot
 🇦🇿 Türkcə: ot
@@ -6554,7 +6554,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tiraxtur" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚜" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "traxtır":
-        bot.send_message(message.chat.id, '''🇬🇧 English: tractor 🚜
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tractor 🚜
 🇷🇺 Русский: трактор [traktor]
 🇹🇷 Türkçe: traktör
 🇦🇿 Türkcə: tiraxtur – South Azerbaijani Turkish + Derbend dialect
@@ -6605,7 +6605,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tractor club" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tractorclub" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "трактор азербайджан":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Tractor Azerbaijan
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Tractor Azerbaijan
 🇷🇺 Русский: Трактор Азербайджан
 🇹🇷 Türkçe: Traktör Azerbaycan
 🇦🇿 Türkcə: Tiraxtur Azərbaycan
@@ -6642,7 +6642,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "3" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "üç":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰇𐰲 
-🇬🇧 English: three
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: three
 🇷🇺 Русский: три [tri]
 🇹🇷 Türkçe: üç
 🇦🇿 Türkcə: üç
@@ -6681,12 +6681,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "турция" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇹🇷" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "туркия":
-        bot.send_message(message.chat.id, '''🇬🇧 Note: In some/most languages "Türkiya" might be "Türkiyä". There is misunderstanding due to writing style in Cyrillic alphabet, because in Cyrillic script "ya" and "yä" are the same ("я").
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 Note: In some/most languages "Türkiya" might be "Türkiyä". There is misunderstanding due to writing style in Cyrillic alphabet, because in Cyrillic script "ya" and "yä" are the same ("я").
 🇷🇺 Примечание: В некоторых/многих языках слово "Türkiya" может быть заменено на "Türkiyä". Это недопонимание связано с тем, что в кириллическом алфавите этих языков используется буква "я", которая в латинице равна "ya" и "yä" одновременно.
 🇹🇷 Not: Bazi/çok lehcede "Türkiya" kelimesi "Türkiyä" gibi yazılabilir, bu anlamsızlığa kirill alfabesi sebeptir. Çünkü kirill yazılışında "ya" ile "yä" sesleri aynı harfdır ("я").
 
 🇹🇷 Türkiye
-🇬🇧 English: Türkiye
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Türkiye
 🇷🇺 Русский: Турция
 🇦🇿 Türkcə: Türkiyə
 🇹🇲 Türkmençe: Türkiýe
@@ -6721,7 +6721,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "you" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sen":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰾𐰤 
-🇬🇧 English: you (singular) (write "siz" for plural)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: you (singular) (write "siz" for plural)
 🇷🇺 Русский: ты [ty]
 🇹🇷 Türkçe: sen
 🇦🇿 Türkcə: sən
@@ -6761,7 +6761,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ağir" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "heavy":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰍𐰃𐰺
-🇬🇧 English: heavy
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: heavy
 🇷🇺 Русский: тяжелый (-ая, -ое)
 🇹🇷 Türkçe: ağır
 🇦🇿 Türkcə: ağır
@@ -6798,7 +6798,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "with us" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bizde" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пизда":
-        bot.send_message(message.chat.id, '''🇬🇧 English: we have, with us
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: we have, with us
 🇷🇺 Русский: у нас [u nas]
 🇹🇷 Türkçe: bizde
 🇦🇿 Türkcə: bizdə
@@ -6841,7 +6841,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тесно" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тесные" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dar":
-        bot.send_message(message.chat.id, '''🇬🇧 English: narrow
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: narrow
 🇷🇺 Русский: узкий, тесный (-ая, -ое)
 🇹🇷 Türkçe: dar
 🇦🇿 Türkcə: dar
@@ -6882,7 +6882,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гастропода" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "улиточка":
         bot.send_message(message.chat.id, '''🐺 Old Turkic: lim, sümüklü böcäk
-🇬🇧 English: snail, gastropoda 🐌
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: snail, gastropoda 🐌
 🇷🇺 Русский: улитка [ulitka]
 🇹🇷 Türkçe: salyangoz, sümüklü böcek (kabuklu sümüklü böcek)
 🇦🇿 Türkcə: ilbiz
@@ -6923,7 +6923,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "an ear":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰸𐰆𐰞𐰴
 🐺 Old Turkic: qulaq (qulğaq, qulxaq, qulqaq)
-🇬🇧 English: ear
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ear
 🇷🇺 Русский: ухо [ukho]
 🇹🇷 Türkçe: kulak
 🇦🇿 Türkcə: qulaq
@@ -6959,11 +6959,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "февраль" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "februar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şubat":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: february
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: february
 🇷🇺 Русский: февраль [fevral']
 🇹🇷 Türkçe: şubat
 🇦🇿 Türkcə: fevral, şubat (şübat)
@@ -7009,7 +7009,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пидр" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tevazirus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пидор":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Theodore, Ted, Teddy
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Theodore, Ted, Teddy
 🇷🇺 Русский: Фёдор, Федя
 🇹🇷 Türkçe: Tevazirus
 🇰🇿 Qazaqşa: Şodır
@@ -7028,7 +7028,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "плод" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fruit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fruits":
-        bot.send_message(message.chat.id, '''🇬🇧 English: fruit
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fruit
 🇷🇺 Русский: фрукт [frukt], плод [plod]
 🇲🇳 Mongol: jims
 🇭🇺 Magyar: gyümölcs
@@ -7066,7 +7066,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chemistry" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kimya" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kimiya":
-        bot.send_message(message.chat.id, '''🇬🇧 English: chemistry
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: chemistry
 🇷🇺 Русский: химия [khimiya]
 🇹🇷 Türkçe: kimya
 🇦🇿 Türkcə: kimya
@@ -7109,7 +7109,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хорошо":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰓𐰏𐰇
 🐺 Old Turkic (bef. 13th c.): edgü, kuşal, nik
-🇬🇧 English: good
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: good
 🇷🇺 Русский: хороший (-ая, -ое)
 🇹🇷 Türkçe: iyi
 🇦🇿 Türkcə: yaxşı
@@ -7150,7 +7150,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hristiyan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "isevi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nasrani":
-        bot.send_message(message.chat.id, '''🇬🇧 English: christian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: christian
 🇷🇺 Русский: христианин [khristianin]
 🇹🇷 Türkçe: hristiyan, isevi, nasrani
 🇦🇿 Türkcə: xaçpərəst, isəvi, nəsrani, məsihi, xristian
@@ -7190,7 +7190,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🌼" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çiçek":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): çeçäk
-🇬🇧 English: flower 🌷🌹🌺🌸🌼
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: flower 🌷🌹🌺🌸🌼
 🇷🇺 Русский: цветок, цветки
 🇲🇳 Mongol: tsetseg
 🇹🇷 Türkçe: çiçek
@@ -7229,7 +7229,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kişi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ademoğlu":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰚𐰃𐰾𐰃 (𐰚𐰃𐱁𐰃)
-🇬🇧 English: human
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: human
 🇷🇺 Русский: человек [chelovek]
 🇹🇷 Türkçe: insan, kişi
 🇦🇿 Türkcə: insan, adam, Adəm oğlu (religious)
@@ -7267,7 +7267,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kurt" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "solucan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "червячек":
-        bot.send_message(message.chat.id, '''🇬🇧 English: worm
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: worm
 🇷🇺 Русский: червь [cherv'], червяк [chervyak]
 🇹🇷 Türkçe: kurt, solucan
 🇦🇿 Türkcə: qurd, soxulcan, sazan (dialect)
@@ -7310,7 +7310,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черное":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰺𐰀 
 🐺 Old Turkic: qara
-🇬🇧 English: black ⚫️
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: black ⚫️
 🇷🇺 Русский: чёрный (-ая, -ое)
 🇯🇵 Nihongo: kuro
 🇲🇳 Mongol: khara (khar)
@@ -7350,7 +7350,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dört" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dörd":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱅𐰇𐰼𐱅 
-🇬🇧 English: four
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: four
 🇷🇺 Русский: четыре [chetyre]
 🇹🇷 Türkçe: dört
 🇦🇿 Türkcə: dörd
@@ -7386,7 +7386,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ne" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "туох":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰤𐰀, 𐰭𐰭
-🇬🇧 English: what
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: what
 🇷🇺 Русский: что (местоимение)
 🇯🇵 Nihongo: nani
 🇹🇷 Türkçe: ne
@@ -7426,7 +7426,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шесть":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰞𐱃𐰃
 🐺 Old Turkic (bef. 13th c.): altı
-🇬🇧 English: six
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: six
 🇷🇺 Русский: шесть [shest']
 🇹🇷 Türkçe: altı
 🇦🇿 Türkcə: altı
@@ -7466,7 +7466,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "широкие" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "enli" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "geniş":
-        bot.send_message(message.chat.id, '''🇬🇧 English: wide, broad
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: wide, broad
 🇷🇺 Русский: широкий (-ая, -ое)
 🇹🇷 Türkçe: geniş, enli
 🇦🇿 Türkcə: gen, geniş, enli
@@ -7506,7 +7506,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏫" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мактаб":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): nikay (religious)
-🇬🇧 English: school 🏫
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: school 🏫
 🇷🇺 Русский: школа [shkola]
 🇹🇷 Türkçe: okul (*?), mektep (archaism)
 🇦🇿 Türkcə: məktəb (North Azerbaijani), mədrəsə (South Azerbaijani)
@@ -7546,7 +7546,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "эта" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "эти":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐰆
-🇬🇧 English: this, these
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: this, these
 🇷🇺 Русский: этот, эта, эти
 🇹🇷 Türkçe: bu
 🇦🇿 Türkcə: bu
@@ -7584,7 +7584,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "я" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ben":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰢𐰤 
-🇬🇧 English: I
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I
 🇷🇺 Русский: я [ya]
 🇭🇺 Magyar: ém
 🇹🇷 Türkçe: ben
@@ -7625,7 +7625,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🍎" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "elma":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): alma, alımla
-🇬🇧 English: apple 🍎
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: apple 🍎
 🇷🇺 Русский: яблоко [yabloko]
 🇭🇺 Magyar: alma
 🇲🇳 Mongol: alim (alima)
@@ -7669,7 +7669,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "детеныш овцы" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ягнец":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): qozı, baqlan qozı (fat livestock lamb), toqlı (0,5 y.o.), sögüş (meat)
-🇬🇧 English: lamb
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: lamb
 🇷🇺 Русский: ягнёнок [yagnyonok]
 🇯🇵 Nihongo: kohitsuji
 🇹🇷 Türkçe: kuzu
@@ -7708,7 +7708,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tongue" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dil" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lang":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. language II. tongue
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. language II. tongue
 🇷🇺 Русский: язык [yazyk]
 🇹🇷 Türkçe: dil
 🇦🇿 Türkcə: dil
@@ -7749,7 +7749,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "яичный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yumurta":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): yumurtğa (yumurqa)
-🇬🇧 English: egg 🥚
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: egg 🥚
 🇷🇺 Русский: яйцо [yaytso]
 🇹🇷 Türkçe: yumurta
 🇦🇿 Türkcə: yumurta
@@ -7786,11 +7786,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "январь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ocak ayı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ocak":
-        bot.send_message(message.chat.id, '''🇬🇧 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 First written actual word (now in use), then historical (archaism). Before Russian invasion most of Turkic people used Hijri calendar, thats why they don't have words for Gregorian months and use Russian loanwords. 
 🇷🇺 Сначала написан ныне используемый, затем исторический (устаревший). До российского нашествия, большинство тюркских народов использовали календарь по Хиджре, поэтому названия различаются, а многие используют заимствования из русского для обозначения Григорианских месяцев.
 🇹🇷 Önce şimdi kullanımda olan kelime yazılmış, sonra tarihi (eskimiş), şimdi türk milletlerin coğu Miladi ayları için rusçadan alınma sözler kullanır, çünkü önce Hicri takvimi kullanırdı.
 
-🇬🇧 English: january
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: january
 🇷🇺 Русский: январь [yanvar']
 🇹🇷 Türkçe: ocak
 🇦🇿 Türkcə: yanvar, qanuni-sani
@@ -7831,7 +7831,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "японский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "japon":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): cabarqalı
-🇬🇧 English: japanese
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: japanese
 🇷🇺 Русский: японец, японка, японский (-ая, -ое)
 🇹🇷 Türkçe: japon
 🇦🇿 Türkcə: yapon, japon {arch. + south AzT.}
@@ -7875,7 +7875,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇯🇵 Nippon, Nihon
 
 🐺 Old Turkic (bef. 13th c.): Cabarqa (جَابَرْقَا)
-🇬🇧 English: Japan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Japan
 🇷🇺 Русский: Япония [Yaponiya]
 🇹🇷 Türkçe: Japonya, Ruğan (archaism, Ottoman Turkish)
 🇦🇿 Türkcə: Yaponiya, Japon (archaism), Məmləkəti Japon (archaism)
@@ -7913,7 +7913,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "genel ağ" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "genelağ" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "всемирная сеть":
-        bot.send_message(message.chat.id, '''🇬🇧 English: internet
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: internet
 🇷🇺 Русский: интернет [internet], всемирная сеть [vsemirnaya set']
 🇹🇷 Türkçe: internet [ˈintæɾnet], genel ağ
 🇦🇿 Türkcə: internet
@@ -7951,7 +7951,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hystory" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "histori" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tarıh":
-        bot.send_message(message.chat.id, '''🇬🇧 English: history
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: history
 🇷🇺 Русский: история [istoriya]
 🇹🇷 Türkçe: tarih
 🇦🇿 Türkcə: tarix
@@ -8012,7 +8012,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пироженное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сладкий пирог" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кек":
-        bot.send_message(message.chat.id, '''🇬🇧 English: cake 🥮🎂🥧🧁
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cake 🥮🎂🥧🧁
 🇷🇺 Русский:	торт [tort]
 🇹🇷 Türkçe:	kek, pasta
 🇦🇿 Türkcə:	keks, tort
@@ -8052,7 +8052,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱃𐰞𐰆𐰖‎
 🐺 Old Turkic (bef. 13th c.): teŋiz (deŋiz), taluy (talay), sundırı (sundurı)
-🇬🇧 English: sea
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sea
 🇷🇺 Русский: море [more]
 🇭🇺 Magyar: tenger
 🇲🇳 Mongol: tengis
@@ -8092,7 +8092,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''See also: town
 
 🐺 Old Turkic (bef. 13th c.): balıq (baluq), känt (känd, ken), şähir, qala, toy
-🇬🇧 English: city
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: city
 🇷🇺 Русский: город [gorod]
 🇹🇷 Türkçe: şehir
 🇦🇿 Türkcə: şəhər
@@ -8131,7 +8131,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "puppet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "a doll":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): quðurçuq
-🇬🇧 English: doll
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: doll
 🇷🇺 Русский: кукла [kukla]
 🇹🇷 Türkçe: bebek (oyuncak bebek), kukla
 🇦🇿 Türkcə: qolcaq, gəlincik/gəlin {female doll}
@@ -8169,7 +8169,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kazakh" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "казашка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "казахский":
-        bot.send_message(message.chat.id, '''🇬🇧 English: kazakh
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: kazakh
 🇷🇺 Русский: казах [kazakh]
 🇹🇷 Türkçe: kazak
 🇦🇿 Türkcə: qazax
@@ -8223,7 +8223,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ruski" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "urus":
         bot.send_message(message.chat.id, '''🐺 Old Turkic: mosqovlu
-🇬🇧 English: russian
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: russian
 🇷🇺 Русский: русский (-ая, -ое), урус (ethnophaulism), русня (ethnophaulism), рузке (ethnophaulism)
 🇹🇷 Türkçe: rus, nataşa (female, ethnophaulism)
 🇦🇿 Türkcə: rus, urus (dialect), sarıqulax (sarıqulaq) (dialect, ethnophaulism), nataşa (female, ethnophaulism)
@@ -8280,7 +8280,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "turkıc":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱅𐰇𐰼𐰜 (𐱅𐰇𐰼𐰛)
 🐺 Old Turkic (bef. 13th c.): türk (türük)
-🇬🇧 English: I. turk, turkish II. turk, turkic
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. turk, turkish II. turk, turkic
 🇷🇺 Русский: I. турок [turok], турчанка (female), турецкий (-ая, -ое) II. тюрк [tyurk], тюркский (-ая, -ое)
 🇹🇷 Türkçe: türk
 🇦🇿 Türkcə: türk
@@ -8325,7 +8325,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kulak asmak" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kulak as":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): tıŋla, eşitgil, eşid (eşit), qulaq tut
-🇬🇧 English: listen
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: listen
 🇷🇺 Русский: слушай, послушай
 🇹🇷 Türkçe: dinle, kulak as
 🇦🇿 Türkcə: dinlə, qulaq as
@@ -8368,7 +8368,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "белые":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴 (𐰀𐰴), 𐰘𐰇𐰼𐰇𐰭
 🐺 Old Turkic: aq, yürüŋ (ürüŋ, örün)
-🇬🇧 English: white ⚪️
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: white ⚪️
 🇷🇺 Русский: белый (-ая, -ое)
 🇹🇷 Türkçe: beyaz, ak
 🇦🇿 Türkcə: ağ, bəyaz
@@ -8418,7 +8418,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🟥" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алые":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): qızıl, al, yepin (yepkil, yepkin, yepün)
-🇬🇧 English: red, scarlet 🔴
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: red, scarlet 🔴
 🇷🇺 Русский: красный (-ая, -ое), алый (-ая, -ое)
 🇹🇷 Türkçe: kızıl, kırmızı, al
 🇦🇿 Türkcə: qırmızı, al, qızıl
@@ -8460,7 +8460,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🟩" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeşıl":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): yaşıl, kök (blue, green, turquoise, gray, glaucous, violet)
-🇬🇧 English: green 🟢
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: green 🟢
 🇷🇺 Русский: зелёный (-ая, -ое)
 🇹🇷 Türkçe: yeşil
 🇦🇿 Türkcə: yaşıl, göy (blue, green, turquoise, glaucous, violet)
@@ -8506,7 +8506,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "жолтые":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰽𐰺𐰍
 🐺 Old Turkic (bef. 13th c.): sarığ, eträk
-🇬🇧 English: yellow 🟡
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: yellow 🟡
 🇷🇺 Русский: жёлтый (-ая, -ое) [zheltyy]
 🇭🇺 Magyar: sárga
 🇲🇳 Mongol: shar
@@ -8547,7 +8547,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "maşın" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mechanical device" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "maşin":
-        bot.send_message(message.chat.id, '''🇬🇧 English: machine
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: machine
 🇷🇺 Русский: машина (в широком смысле, для значения "автомобиль" введите "автомобиль") [mashyna]
 🇹🇷 Türkçe: makine
 🇦🇿 Türkcə: maşın
@@ -8590,7 +8590,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "экономность" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ekonomik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бережливость":
-        bot.send_message(message.chat.id, '''🇬🇧 English: saving
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: saving
 🇷🇺 Русский: экономия [ekonomiya]
 🇹🇷 Türkçe: tasarruf, kanâat
 🇦🇿 Türkcə: qənaət, qənaətçilik, təsərrüf, isrif (isrip) (dialect), madar (dialect), sülf (dialect)
@@ -8628,7 +8628,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дождь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yağmur":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): yağmur (yamğur)
-🇬🇧 English: rain
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: rain
 🇷🇺 Русский: дождь [dozhd']
 🇹🇷 Türkçe: yağmur
 🇦🇿 Türkcə: yağış, yağmur, yağannıx (yağanlıq) (dialect), gülül {dial., rain with big drops}, gürşat {dial., heavy rain}, hır {dial., small rain}, qarapüsəh (qarapüsək) {dial., small rain}, qarayarpax (qarayarpaq) {dial., rain with big drops}, püsəh (püsək) {dial. small rain}
@@ -8665,7 +8665,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "подземное укрытие" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sığınak" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "siğinak":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bunker
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bunker
 🇷🇺 Русский: бункер [bunker] (подземное укрытие)
 🇹🇷 Türkçe: sığınak
 🇦🇿 Türkcə: sığınaq (sığınacaq)
@@ -8709,7 +8709,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "новобрачная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сноха":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): kelin, keliŋün (kelin yegün)
-🇬🇧 English: I. bride II. daughter-in-law
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. bride II. daughter-in-law
 🇷🇺 Русский: I. невеста [nevesta] II. невестка [nevestka]
 🇹🇷 Türkçe: gelin
 🇦🇿 Türkcə: gəlin
@@ -8760,7 +8760,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "festival of the sacrifice" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "праздник жертвоприношения" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kurban bayram":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Eid al-Adha (Eid-ul-Azha)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Eid al-Adha (Eid-ul-Azha)
 🇷🇺 Русский: Курбан-байрам [Kurban-bayram]
 🇹🇷 Türkçe: Kurban Bayramı
 🇦🇿 Türkcə: Qurban bayramı
@@ -8811,7 +8811,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "собственное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "собственные":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): I. öz II. özü, öz kentü (öz kendü)
-🇬🇧 English: I. own II. itself, himself, herself
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. own II. itself, himself, herself
 🇷🇺 Русский: I. свой, собственный II. само, сам, сама
 🇹🇷 Türkçe: I. kendi, öz II. özü, kendi
 🇦🇿 Türkcə: I. öz II. özü
@@ -8852,7 +8852,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dizüstü bilgisayar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "notebook computer" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dizüstü":
-        bot.send_message(message.chat.id, '''🇬🇧 English: laptop, ((notebook) (computer)) 💻
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: laptop, ((notebook) (computer)) 💻
 🇷🇺 Русский: ноутбук [noutbuk], лэптоп [leptop]
 🇹🇷 Türkçe: ((dizüstü) (bilgisayar)), laptop
 🇦🇿 Türkcə: ((dizüstü) (bilgisayar)), noutbuk, dizüstü kompüter
@@ -8891,7 +8891,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iyirmi":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰘𐰃𐰏𐰼𐰢𐰃 
 🐺 Old Turkic (bef. 13th c.): yegirmi
-🇬🇧 English: twenty
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: twenty
 🇷🇺 Русский: двадцать [dvadtsat']
 🇹🇷 Türkçe: yirmi
 🇦🇿 Türkcə: iyirmi
@@ -8929,7 +8929,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sekiz":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰾‎𐰚𐰔
 🐺 Old Turkic (bef. 13th c.): sekkiz (sekiz)
-🇬🇧 English: eight
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: eight
 🇷🇺 Русский: восемь [vosem']
 🇹🇷 Türkçe: sekiz
 🇦🇿 Türkcə: səkkiz
@@ -8970,7 +8970,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "latvija":
         bot.send_message(message.chat.id, '''🇱🇻 Latvija
 
-🇬🇧 English: Latvia
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Latvia
 🇷🇺 Русский: Латвия [Latviya]
 🇹🇷 Türkçe: Letonya
 🇦🇿 Türkcə: Latviya, Letoniya {arch.}
@@ -9009,7 +9009,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dokuz":
         bot.send_message(message.chat.id, '''🐺𐰚𐰇𐰚𐱅𐰇𐰼𐰜: ‎𐱃𐰆𐰴𐰔
 🐺 Old Turkic (bef. 13th c.): toquz
-🇬🇧 English: nine
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: nine
 🇷🇺 Русский: девять [devyat']
 🇹🇷 Türkçe: dokuz
 🇦🇿 Türkcə: doqquz
@@ -9048,7 +9048,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "растительность на лице" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "расстительность на лице":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): saqal
-🇬🇧 English: beard
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: beard
 🇷🇺 Русский: борода [boroda]
 🇭🇺 Magyar: szakáll
 🇲🇳 Mongol: sakhal
@@ -9104,7 +9104,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cengız han" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cengiz han":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): Çiŋğis Qağan
-🇬🇧 English: Genghis Khan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Genghis Khan
 🇷🇺 Русский: Чингисхан [Chingiskhan]
 🇲🇳 Mongol: Chinggis Khaan
 🇹🇷 Türkçe: Cengiz Han
@@ -9143,7 +9143,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pilav" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пилав" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "plov":
-        bot.send_message(message.chat.id, '''🇬🇧 English: pilaf (pilau)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pilaf (pilau)
 🇷🇺 Русский: плов [plov], пилав [pilav] (archaism)
 🇹🇷 Türkçe: pilav
 🇦🇿 Türkcə: aş, plov, pilav (dialect), plo (pılo) (dialect)
@@ -9182,7 +9182,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "планета" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gezegen" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seyyare":
-        bot.send_message(message.chat.id, '''🇬🇧 English: planet
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: planet
 🇷🇺 Русский: планета [planeta]
 🇹🇷 Türkçe: gezegen, seyyare
 🇦🇿 Türkcə: səyyarə, planet, gəzəyən (rarely, purism)
@@ -9228,7 +9228,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seviyorum seni" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iloveu":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): men seni sevärmen
-🇬🇧 English: I love you
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I love you
 🇷🇺 Русский: я тебя люблю
 🇹🇷 Türkçe: ben seni seviyorum
 🇦🇿 Türkcə: mən səni sevirəm (to partner), mən səni çox istəyirəm (to family member, friend, relative, comrade etc)
@@ -9266,7 +9266,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ten":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰆𐰣
 🐺 Old Turkic (bef. 13th c.): on
-🇬🇧 English: ten
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ten
 🇷🇺 Русский: десять [desyat']
 🇹🇷 Türkçe: on
 🇦🇿 Türkcə: on
@@ -9306,7 +9306,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "onbir":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰋𐰃𐰼 : 𐰘𐰃𐰏𐰼𐰢𐰃
 🐺 Old Turkic (bef. 13th c.): bir yegirmi (1 + 20)
-🇬🇧 English: eleven (11)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: eleven (11)
 🇷🇺 Русский: одиннадцать (11)
 🇹🇷 Türkçe: on bir (10 + 1)
 🇦🇿 Türkcə: on bir
@@ -9348,7 +9348,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oniki":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰚𐰃 : 𐰘𐰃𐰏𐰼𐰢𐰃
 🐺 Old Turkic (bef. 13th c.): eki yegirmi (2 + 20)
-🇬🇧 English: twelve (12)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: twelve (12)
 🇷🇺 Русский: двенадцать (12)
 🇹🇷 Türkçe: on iki (10 + 2)
 🇦🇿 Türkcə: on iki
@@ -9387,7 +9387,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "я люблю" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ben seviyorum":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): sevärmen
-🇬🇧 English: I love
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I love
 🇷🇺 Русский: люблю
 🇹🇷 Türkçe: seviyorum
 🇦🇿 Türkcə: sevirəm (to partner), çox istəyirəm (to family member, friend, relative, comrade etc)
@@ -9425,7 +9425,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дискриминация" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ущемление" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ущемление прав":
-        bot.send_message(message.chat.id, '''🇬🇧 English: discrimination
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: discrimination
 🇷🇺 Русский: дискриминация [diskriminatsiya]
 🇹🇷 Türkçe: ayrımcılık
 🇦🇿 Türkcə: ayrı-seçkilik
@@ -9479,7 +9479,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кыс-кыс" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кыс-кыс-кыс" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pisi pisi":
-        bot.send_message(message.chat.id, '''🇬🇧 English: kitty kitty, chh-chh-chh
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: kitty kitty, chh-chh-chh
 🇷🇺 Русский: кис-кис [kis-kis] (кыс-кыс) [kys-kys]
 🇹🇷 Türkçe: pisi pisi
 🇦🇿 Türkcə: piş-piş
@@ -9519,7 +9519,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "в данный момент":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰢𐱃𐰃 
 🐺 Old Turkic (bef. 13th c.): emdi (amtı, emti), bu ödtä, bu sa'at
-🇬🇧 English: now
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: now
 🇷🇺 Русский: сейчас [seychas]
 🇹🇷 Türkçe: şimdi, şu an
 🇦🇿 Türkcə: indi, bu saat (psat - dial.), hal-hazırda
@@ -9562,7 +9562,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "такие" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şöyle":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): antağ (antaq), mundağ (muntağ), osuğluğ
-🇬🇧 English: so, such
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: so, such
 🇷🇺 Русский: так, такое (-ая, -ое, -ие)
 🇹🇷 Türkçe: öyle, şöyle, böyle
 🇦🇿 Türkcə: elə, belə, öylə (archaism), böylə (archaism)
@@ -9603,7 +9603,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sünnü" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "суннитский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "суннитские":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Sunni, Sunnite, Sunni Muslim
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Sunni, Sunnite, Sunni Muslim
 🇷🇺 Русский: суннит [sunnit]
 🇹🇷 Türkçe: Sünni
 🇦🇿 Türkcə: Sünni, Sünnü (dial.)
@@ -9646,7 +9646,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ehli sünnet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ehl-i sünnet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sünnılık":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Sunni, Sunni Islam, Sunnism
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Sunni, Sunni Islam, Sunnism
 🇷🇺 Русский: суннизм [sunnizm]
 🇹🇷 Türkçe: Sünnilik, Ehl-i Sünnet
 🇦🇿 Türkcə: Sünnilik, Sünnülük (dial.), Əhli Sünnə
@@ -9695,7 +9695,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шиитская" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шиитские" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shiites":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Shia, Shia Muslim, Shi'ite
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Shia, Shia Muslim, Shi'ite
 🇷🇺 Русский: шиит [shiit]
 🇹🇷 Türkçe: Şii, Alevi
 🇦🇿 Türkcə: Şiə
@@ -9736,7 +9736,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şiilik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şıılık" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shiizm":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Shia Islam, Shia
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Shia Islam, Shia
 🇷🇺 Русский: шиизм [shiizm]
 🇹🇷 Türkçe: Şiilik, Alevilik
 🇦🇿 Türkcə: Şiəlik
@@ -9781,7 +9781,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "математека" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "riyaziyet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "math":
-        bot.send_message(message.chat.id, '''🇬🇧 English: mathematics
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mathematics
 🇷🇺 Русский: математика [matematika]
 🇹🇷 Türkçe: matematik, riyaziye (Ottoman Turkish)
 🇦🇿 Türkcə: riyaziyyat
@@ -9835,7 +9835,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "современница" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "coeval" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "zamandaş":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. contemporary, coeval II. modern
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. contemporary, coeval II. modern
 🇷🇺 Русский: современный [sovremenny] (-ая, -ое), современник [sovremennik] (I)
 🐺 Old Turkic (bef. 13th c.): yügärüki (II), közünür (II), amtı (II), amtıqı (II)
 🇹🇷 Türkçe: çağdaş, modern (II)
@@ -9877,7 +9877,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "столичная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "столичный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): balıq, ordu, örgün (throne), toy (residence, general headquarters)
-🇬🇧 English: capital (capital city)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: capital (capital city)
 🇷🇺 Русский: столица [stolitsa]
 🇹🇷 Türkçe: başkent, payitaht {Ottoman Turk.}
 🇦🇿 Türkcə: paytaxt, baş şəhər, mərkəz {centre}
@@ -9912,10 +9912,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ve" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "and" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "и":
-        bot.send_message(message.chat.id, '''🇬🇧 See also "with", because in Turkic languages "with" is often used than "and" (For example, "cat and dog" literally will be "cat with dog")
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 See also "with", because in Turkic languages "with" is often used than "and" (For example, "cat and dog" literally will be "cat with dog")
 🇷🇺 Посмотрите также союз "с", поскольку в тюркских языках часто используется этот союз чем "и" (Напр. "кот и собака" дословно будет "кот с собакой")
 
-🇬🇧 English: and
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: and
 🇷🇺 Русский: и [i]
 🇹🇷 Türkçe: ve
 🇦🇿 Türkcə: və
@@ -9954,7 +9954,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "билан":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰋𐰃𐰼𐰠𐰀
 🐺 Old Turkic (bef. 13th c.): birlä (bilä)
-🇬🇧 English: with
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: with
 🇷🇺 Русский: с [s] (с кем-либо, с чем-либо)
 🇹🇷 Türkçe: ile (-la/-le)
 🇦🇿 Türkcə: ilə (-la/-lə) (north azerb.), inən (-nan/-nən) (south azerb.)
@@ -9990,7 +9990,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "исключение" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "istisna":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): qalı
-🇬🇧 English: exception
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: exception
 🇷🇺 Русский: исключение (из правил) [isklyucheniye]
 🇹🇷 Türkçe: istisna
 🇦🇿 Türkcə: istisna
@@ -10035,7 +10035,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐝" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ari":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): arı
-🇬🇧 English: bee, apis, honeybee 🐝
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bee, apis, honeybee 🐝
 🇷🇺 Русский: пчела [pchela]
 🇹🇷 Türkçe: arı, bal arısı
 🇦🇿 Türkcə: arı
@@ -10084,7 +10084,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "recollection" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "reminiscence":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): yad, zikr (zikir)
-🇬🇧 English: memory, reminiscence (II), recollection (II)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: memory, reminiscence (II), recollection (II)
 🇷🇺 Русский: память, воспоминание (II)
 🇹🇷 Türkçe: bellek, hafıza, hatır
 🇦🇿 Türkcə: yaddaş, hafizə, yad, zehin, zənn, huş (III)
@@ -10132,7 +10132,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "платишко" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "woman dress":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): ton
-🇬🇧 English: dress (women's dress), gown
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dress (women's dress), gown
 🇷🇺 Русский: платье [plat'ye] (женское платье)
 🇹🇷 Türkçe: elbise (kadın elbisesi)
 🇦🇿 Türkcə: don
@@ -10179,7 +10179,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👕" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rubashka":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): köŋläk
-🇬🇧 English: shirt 👔👚🎽👕
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: shirt 👔👚🎽👕
 🇷🇺 Русский: рубашка [rubashka]
 🇹🇷 Türkçe: gömlek
 🇦🇿 Türkcə: köynək
@@ -10222,7 +10222,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧊" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "frozen water":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): buz (muz)
-🇬🇧 English: ice 🧊
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ice 🧊
 🇷🇺 Русский: лёд [lyod]
 🇹🇷 Türkçe: buz
 🇦🇿 Türkcə: buz
@@ -10266,7 +10266,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "old brother" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bıg brother":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): aqa, eçi
-🇬🇧 English: big brother, older brother
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: big brother, older brother
 🇷🇺 Русский: большой брат, старший брат 
 🇹🇷 Türkçe: büyük birader, ağabey, abi
 🇦🇿 Türkcə: böyük qardaş, ağa (dialect), ağadadaş (dialect), dadaş (dialect), qağa (dialect)
@@ -10312,7 +10312,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mehr" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "muhabbet":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): sevig, sevmäk, sevüglük, vudd, amranmaq
-🇬🇧 English: love
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: love
 🇷🇺 Русский: любовь [lyubov']
 🇭🇺 Magyar: szeretet
 🇹🇷 Türkçe: sevgi, aşk, muhabbet, sevda
@@ -10353,7 +10353,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "секира" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "топорный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): baltu (baldu)
-🇬🇧 English: axe
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: axe
 🇷🇺 Русский: топор [topor], секира [sekira]
 🇭🇺 Magyar: balta
 🇲🇳 Mongol: balta (balt), sükhe (sükh)
@@ -10404,7 +10404,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dahi" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гениальный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): irşi täŋri
-🇬🇧 English: genius
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: genius
 🇷🇺 Русский: гений [geniy]
 🇹🇷 Türkçe: deha, dahi
 🇦🇿 Türkcə: dahi
@@ -10442,7 +10442,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ячменный" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "barley":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): arpa
-🇬🇧 English: barley
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: barley
 🇷🇺 Русский: ячмень [yachmien]
 🇭🇺 Magyar: árpa
 🇲🇳 Mongol: arbay (arvay)
@@ -10490,7 +10490,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кхонах" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "guest":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): qonuq, küdän (küdün, küðän), uma (wayfarer)
-🇬🇧 English: guest
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: guest
 🇷🇺 Русский: гость [gost']
 🇹🇷 Türkçe: misafir, konuk, mihman
 🇦🇿 Türkcə: qonaq, mehman, müsafir (wayfarer)
@@ -10543,7 +10543,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇹🇼 Zhóngguó
         
 🐺 Old Turkic (bef. 13th c.): Xıtay, Tavğaç, Çin, Çin-ü Maçin, Maxaçinadiş
-🇬🇧 English: China, Cathay (archaism)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: China, Cathay (archaism)
 🇷🇺 Русский: Китай [Kitay]
 🇹🇷 Türkçe: Çin, Sin (Ottoman Turk.), Maçin (Ottoman Turk.)
 🇦🇿 Türkcə: Çin, Kitay (in sovyet Azerbaijan), Xita (خطا) (archaism)
@@ -10593,7 +10593,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чингчонг" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çinçon":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): xıtay, tabğaç (tavğaç), çınlığ, çini
-🇬🇧 English: Chinese
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Chinese
 🇷🇺 Русский: китаец [китаец]
 🇹🇷 Türkçe: Çinli
 🇦🇿 Türkcə: çinli, kitay (in sovyet Azerbaijan)
@@ -10638,7 +10638,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "валун":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜:	𐱃𐱁 (𐱃𐰀𐱁)
 🐺 Old Turkic (bef. 13th c.): taş
-🇬🇧 English: stone
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: stone
 🇷🇺 Русский: камень [kamen']
 🇹🇷 Türkçe: taş
 🇦🇿 Türkcə: daş
@@ -10683,7 +10683,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pad-e shah" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "padeshah":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): padişah
-🇬🇧 English:	Padishah (Padeshah, Padshah)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Padishah (Padeshah, Padshah)
 🇷🇺 Русский: падишах [padishakh]
 🇹🇷 Türkçe: padişah
 🇦🇿 Türkcə: padşah
@@ -10721,7 +10721,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shah" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "šâh":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): şah
-🇬🇧 English:	shah
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	shah
 🇷🇺 Русский: шах [shakh]
 🇹🇷 Türkçe: şah
 🇦🇿 Türkcə: şah
@@ -10760,7 +10760,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "king" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "korol" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kıng":
-        bot.send_message(message.chat.id, '''🇬🇧 English: king
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: king
 🇷🇺 Русский: король [korol']
 🇹🇷 Türkçe: kral
 🇦🇿 Türkcə: kral, qıral (archaism), şah (South Azerbaijani)
@@ -10812,7 +10812,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐈" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "киска":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): mişkiç, muş
-🇬🇧 English: cat 🐱🐈
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cat 🐱🐈
 🇷🇺 Русский: кот, кошка [koshka], киска [kiska]
 🇹🇷 Türkçe: kedi, pişik {dial.}, pisi {used by children}
 🇦🇿 Türkcə: pişik
@@ -10862,7 +10862,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ишачье" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "donki":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): eşäk (eşyäk, eşgäk)
-🇬🇧 English: donkey, ass
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: donkey, ass
 🇷🇺 Русский: ишак [ishak], осёл [osyol]
 🇹🇷 Türkçe: eşek
 🇦🇿 Türkcə: eşşək, ulaq, uzunqulaq
@@ -10918,7 +10918,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "abbacuch" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "abiskun" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hazardeniz":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Caspian Sea
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Caspian Sea
 🇷🇺 Русский: Каспийское море [Kaspiyskoye more]
 🇹🇷 Türkçe: Hazar Denizi
 🇦🇿 Türkcə: Xəzər dənizi
@@ -10964,7 +10964,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cermanya":
         bot.send_message(message.chat.id, '''🇩🇪 Deutschland
         
-🇬🇧 English: Germany, Germania {historical region}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Germany, Germania {historical region}
 🇷🇺 Русский: Германия [Germaniya]
 🇹🇷 Türkçe: Almanya, Cermanya {historical region}, Nemçe {archaism}
 🇦🇿 Türkcə: Almaniya, Germaniya {historical region}, Nemcə {archaism}
@@ -11015,7 +11015,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "deutsch" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "germanic" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "almanlar":
-        bot.send_message(message.chat.id, '''🇬🇧 English: German
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: German
 🇷🇺 Русский: немец [nemec]
 🇹🇷 Türkçe: Alman, Nemçe {archaism}
 🇦🇿 Türkcə: alman, nemcə {archaism}, nemes {in Sovyet Azerbaijani}
@@ -11056,7 +11056,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cerman" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "германец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "германцы" :
-        bot.send_message(message.chat.id, '''🇬🇧 English: Germanic-speaking European
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Germanic-speaking European
 🇷🇺 Русский: германец [germanec]
 🇹🇷 Türkçe: Cermen, Nemçe {archaism}
 🇦🇿 Türkcə: german, nemcə {archaism}
@@ -11097,7 +11097,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "république française":
         bot.send_message(message.chat.id, '''🇫🇷 France
 
-🇬🇧 English: France
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: France
 🇷🇺 Русский: Франция [Frantsiya]
 🇹🇷 Türkçe: Fransa
 🇦🇿 Türkcə: Fransa, Frəngistan {archaism}
@@ -11136,7 +11136,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fransiz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "франк" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "french":
-        bot.send_message(message.chat.id, '''🇬🇧 English: French
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: French
 🇷🇺 Русский: француз [frantsuz]
 🇹🇷 Türkçe: Fransız
 🇦🇿 Türkcə: fransız, frəng {archaism}
@@ -11191,7 +11191,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "расказывать" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рассказывать":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): sözlä, tılda, savla, til yorıt, söz ula, söz qıl, ay, ay te, yaŋşa, sumlı ("speak a foreign language")
-🇬🇧 English: I. speak II. talk
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. speak II. talk
 🇷🇺 Русский: говори, рассказывай, разговаривай
 🇹🇷 Türkçe: I. konuş II. söyle
 🇦🇿 Türkcə: I. danış, qonuş {archaism} II. söylə, ayt {archaism}
@@ -11236,7 +11236,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "назвать" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tosay":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): te, ayıt
-🇬🇧 English: say, tell
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: say, tell
 🇷🇺 Русский: скажи, назови
 🇹🇷 Türkçe: de
 🇦🇿 Türkcə: de
@@ -11279,7 +11279,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чудище" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "monstre":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): madar
-🇬🇧 English: monster
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: monster
 🇷🇺 Русский: чудовище, чудище, монстр [monstr]
 🇹🇷 Türkçe: canavar
 🇦🇿 Türkcə: qulyabanı, xoxan, canavar (dialect, meaning may vary, "wolf" in standart language)
@@ -11322,12 +11322,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pink color" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pink colour" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pembe":
-        bot.send_message(message.chat.id, ''' 🇬🇧 In most of the cases word "red" is used in Turkic languages, because it is considered a shade of the red color.
+        bot.send_message(message.chat.id, ''' 🏴󠁧󠁢󠁥󠁮󠁧󠁿 In most of the cases word "red" is used in Turkic languages, because it is considered a shade of the red color.
 🇷🇺 Чаще всего используется просто слово "красный", поскольку в тюркских языках розовый цвет считается оттенком красного.
 🇹🇷 Çok durumda "pembe" yerine Türk lehcelerinde "kırmızı" kelimesi kullanılır, çünkü pembe kırmızı rengin tonu olarak kabul edilir.
 
 🐺 Old Turkic (bef. 13th c.): qırğu (qızğu)
-🇬🇧 English: pink
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pink
 🇷🇺 Русский: розовый (-ая, -ое) [rozovyy]
 🇹🇷 Türkçe: pembe, gül rengi {archaism}
 🇦🇿 Türkcə: çəhrayı, gül rəngi {archaism}
@@ -11368,7 +11368,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "angleterre" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "angelterre" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "angliya":
-        bot.send_message(message.chat.id, '''🇬🇧 English: England
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: England
 🇷🇺 Русский:	Англия [Angliya]
 🇹🇷 Türkçe: İngiltere, İngilterra {archaism}
 🇦🇿 Türkcə: İngiltərə, İngilis bladı {archaism}
@@ -11424,7 +11424,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ınglız" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ıngılız" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ingilis":
-        bot.send_message(message.chat.id, '''🇬🇧 English: english, englishman
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: english, englishman
 🇷🇺 Русский: англичанин [anglichanin], английский [angliyskiy]
 🇹🇷 Türkçe: İngiliz
 🇦🇿 Türkcə: ingilis
@@ -11479,7 +11479,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇮🇳 Hindustan, Bhárat
 
 🐺 Old Turkic (bef. 13th c.): Enätkäk
-🇬🇧 English:	India
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	India
 🇷🇺 Русский: Индия [Indiya]
 🇹🇷 Türkçe: Hindistan
 🇦🇿 Türkcə: Hindistan
@@ -11537,7 +11537,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hinduist" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "induist":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): enät, hindi (hindu)
-🇬🇧 English: I. Indian II. Hindu
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. Indian II. Hindu
 🇷🇺 Русский: I. индиец, индус II. индуист, индус
 🇹🇷 Türkçe: I. Hint, Hindistanlı II. Hindu 
 🇦🇿 Türkcə: I. hind, hindistanlı, hindi, hindli II. hindu
@@ -11578,7 +11578,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ınduizm" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "индуизм" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hındu dını":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Hinduism
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Hinduism
 🇷🇺 Русский: индуизм [induizm]
 🇹🇷 Türkçe: Hinduizm
 🇦🇿 Türkcə: Hindu dini, Hinduizm
@@ -11623,7 +11623,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "italia":
         bot.send_message(message.chat.id, '''🇮🇹 Italia
 
-🇬🇧 English: Italy
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Italy
 🇷🇺 Русский: Италия [Italiya]
 🇹🇷 Türkçe: İtalya
 🇦🇿 Türkcə: İtaliya
@@ -11665,7 +11665,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "italian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ıtalyan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ıtalyan":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Italian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Italian
 🇷🇺 Русский: I. итальянец, итальянка II. итальянский
 🇹🇷 Türkçe: İtalyan, İtalyalı, dalyan {archaism}
 🇦🇿 Türkcə: italyan, italiyalı
@@ -11703,7 +11703,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "korean" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "koreli" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "korelı":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Korean
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Korean
 🇷🇺 Русский: кореец [koreyets], кореянка [koreyanka]
 🇹🇷 Türkçe: Koreli
 🇦🇿 Türkcə: koreyalı, koreist {dial.}
@@ -11748,7 +11748,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "koreya":
         bot.send_message(message.chat.id, '''🇰🇷 Hanguk, Namhan
 
-🇬🇧 English: Korea
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Korea
 🇷🇺 Русский: Корея [Koreya]
 🇹🇷 Türkçe: Kore
 🇦🇿 Türkcə: Koreya
@@ -11794,7 +11794,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "астралия":
         bot.send_message(message.chat.id, '''🇦🇺 Australia
 
-🇬🇧 English: Australia
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Australia
 🇷🇺 Русский: Австралия [Avstraliya]
 🇹🇷 Türkçe: Avustralya
 🇦🇿 Türkcə: Avstraliya, Astraliya {archaism}, Huland-Cədid {archaism}
@@ -11835,7 +11835,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "avusturalyali" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "австралийка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "астралиец":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Australian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Australian
 🇷🇺 Русский: австралиец [avstraliyets]
 🇹🇷 Türkçe: Avustralyalı
 🇦🇿 Türkcə: avstraliyalı
@@ -11873,12 +11873,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "для " \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ıçın" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "için":
-        bot.send_message(message.chat.id, '''🇬🇧 These words are not used in all cases (eg. "For the God" – "Allah aşkına", "I have a gift for you – Sizə hədiyyəm var" etc.)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 These words are not used in all cases (eg. "For the God" – "Allah aşkına", "I have a gift for you – Sizə hədiyyəm var" etc.)
 🇷🇺 Этот перевод используется не во всех случаях (напр. "Ради меня – mənim xətrimə", "таблетки для роста – boy dərmanı" и т.д.)
 
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰇𐰲𐰇𐰤 (𐰇𐰲𐰤 , 𐰇𐰲𐰃𐰤)
 🐺 Old Turkic (bef. 13th c.): üçün
-🇬🇧 English: for
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: for
 🇷🇺 Русский: для, ради
 🇹🇷 Türkçe: için
 🇦🇿 Türkcə: üçün, ötrü (ötəri)
@@ -11928,7 +11928,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kyrgystan":
         bot.send_message(message.chat.id, '''🇰🇬 Qırğızstan
 
-🇬🇧 English: Kyrgyzstan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Kyrgyzstan
 🇷🇺 Русский: Кыргызстан [Kyrgyzstan]
 🇹🇷 Türkçe: Kırgızistan
 🇦🇿 Türkcə: Qırğızıstan
@@ -11973,7 +11973,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "киргизское" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "киргизские":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): qırqız
-🇬🇧 English: Kyrgyz (Kyrghyz, Kirghiz)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Kyrgyz (Kyrghyz, Kirghiz)
 🇷🇺 Русский: кыргыз [kyrgyz]
 🇹🇷 Türkçe: Kırgız
 🇦🇿 Türkcə: qırğız
@@ -12023,7 +12023,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "netherworld" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cahennem":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.):	tamu (tamuğ)
-🇬🇧 English: hell, gehenna
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hell, gehenna
 🇷🇺 Русский: ад [ad], геенна [geyenna]
 🇹🇷 Türkçe: cehennem, tamu, dûzah {arch.}
 🇦🇿 Türkcə: cəhənnəm, damı {dial.}, duzəx {arch.}
@@ -12065,7 +12065,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "американское " \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "американская" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "американские":
-        bot.send_message(message.chat.id, '''🇬🇧 English: America
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: America
 🇷🇺 Русский: Америка [Amerika]
 🇹🇷 Türkçe: Amerika, Yeni Dünya {arch.}
 🇦🇿 Türkcə: Amerika, Amerqa {arch.}, Yeni Dünya {arch.}
@@ -12107,7 +12107,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amerikali " \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amerıkalı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "американка":
-        bot.send_message(message.chat.id, '''🇬🇧 English: American
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: American
 🇷🇺 Русский: американец
 🇹🇷 Türkçe: Amerikan, Amerikalı, Yeni Dünyalı {arch.}
 🇦🇿 Türkcə: amerikan, amerikalı
@@ -12151,7 +12151,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sneg":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰺
 🐺 Old Turkic (bef. 13th c.): qar
-🇬🇧 English: snow
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: snow
 🇷🇺 Русский: снег
 🇭🇺 Magyar: hó
 🇹🇷 Türkçe: kar
@@ -12201,7 +12201,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "daughter":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰶𐰃𐰔
 🐺 Old Turkic (bef. 13th c.): qız (xız)
-🇬🇧 English: girl, daughter
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: girl, daughter
 🇷🇺 Русский: девушка, девочка, дочь
 🇹🇷 Türkçe: kız
 🇦🇿 Türkcə: qız
@@ -12249,7 +12249,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "papagan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦜" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "papuga":
-        bot.send_message(message.chat.id, '''🇬🇧 English: parrot 🦜
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: parrot 🦜
 🇷🇺 Русский: попугай [popugay]
 🇲🇳 Mongol: toti
 🇹🇷 Türkçe: papağan, dudu, dudukuşu
@@ -12295,7 +12295,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "schvetsiya":
         bot.send_message(message.chat.id, '''🇸🇪 Sverige
 
-🇬🇧 English: Sweden
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Sweden
 🇷🇺 Русский: Швеция [Shvetsiya]
 🇹🇷 Türkçe: İsveç
 🇦🇿 Türkcə: İsveç, İşves {dial.}, Svid {arch.}
@@ -12340,7 +12340,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шведские" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "swedish" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "swede":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Swede, Swedish
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Swede, Swedish
 🇷🇺 Русский: швед [shved], шведка, шведский
 🇹🇷 Türkçe: İsveç, İsveçli
 🇦🇿 Türkcə: isveç, isveçli
@@ -12386,7 +12386,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "спокойное" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "спокойные":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): nirvanlığ, amıl (amul), eräjlıg, inç, örüg
-🇬🇧 English: calm {adj.}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: calm {adj.}
 🇷🇺 Русский: спокойный
 🇹🇷 Türkçe: sakin, uslu, dinç (dınç) {arch.}
 🇦🇿 Türkcə: dinc, sakit, diş {dial.}
@@ -12435,7 +12435,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peleset":
         bot.send_message(message.chat.id, '''🇵🇸 Falastiyn
         
-🇬🇧 English: Palestine
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Palestine
 🇷🇺 Русский: Палестина [Palestina]
 🇹🇷 Türkçe: Filistin
 🇦🇿 Türkcə: Fələstin
@@ -12465,7 +12465,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filistinli" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filistian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pelestian":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Palestinian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Palestinian
 🇷🇺 Русский: палестнец [palestinets], палестинка
 🇹🇷 Türkçe: Filistinli
 🇦🇿 Türkcə: fələstinli
@@ -12511,7 +12511,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "autograph" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "imza":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): tuğrağ {oghuz turkish}
-🇬🇧 English: signature
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: signature
 🇷🇺 Русский: подпись
 🇹🇷 Türkçe: imza, signatür, kol {dial.}
 🇦🇿 Türkcə: imza, qol
@@ -12568,7 +12568,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sağolunuz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sağolun" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sağ ol":
-        bot.send_message(message.chat.id, '''🇬🇧 English: thanks, thank you
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: thanks, thank you
 🇷🇺 Русский: спасибо [spasibo], благодарствую
 🇹🇷 Türkçe: teşekkür(ler), çok yaşa, sağ ol (sağol)
 🇦🇿 Türkcə: sağ ol (sağol), təşəkkür(lər), Allah razı olsun
@@ -12615,11 +12615,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вобще не" \
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hiç" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hıç":
-        bot.send_message(message.chat.id, '''🇬🇧 In most cases, {da (ta, daa) / de (te, dee) + negative} is used (eg "bir kişi de gelmedi" - "nobody came"). And the word "hiç" and all its cognates are borrowed from Farsi.
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 In most cases, {da (ta, daa) / de (te, dee) + negative} is used (eg "bir kişi de gelmedi" - "nobody came"). And the word "hiç" and all its cognates are borrowed from Farsi.
 🇷🇺 В большинстве случаев используется связка {da (ta, daa) / de(te, dee) + отрицание} для усиления, можно добавить слово bir ("один") в начало предложения (напр. bir kişi de gelmedi – никто не пришёл). А само слово "hiç" и все его когнаты являются заимствованием из фарси.
 🇹🇷 Çoğu durumda, {da (ta, daa) / de (te, dee) + olumsuzluk} kullanılır (örneğin, "kişi de gelmedi" - "hiç kimse gelmedi"). Ve "hiç" kelimesi ve bütün ona benzer sözler Farsça'dan alınmadır.
 
-🇬🇧 English: no~ (nobody, never etc), at all (not at all)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: no~ (nobody, never etc), at all (not at all)
 🇷🇺 Русский: ни~ (нисколько, никогда, никто и т.д.) [ni], совершенно не, совсем не, вовсе не, даже не
 🇹🇷 Türkçe: hiç
 🇦🇿 Türkcə: heç
@@ -12662,7 +12662,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dania":
         bot.send_message(message.chat.id, '''🇩🇰 Danmark
 
-🇬🇧 English: Denmark
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Denmark
 🇷🇺 Русский: Дания [Daniya]
 🇹🇷 Türkçe: Danimarka
 🇦🇿 Türkcə: Danimarka, Danmarqa {arch.}
@@ -12708,7 +12708,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "danimarkali" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "danımarkalı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dane":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Dane, Danish
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Dane, Danish
 🇷🇺 Русский: датчанин [datchanin]
 🇹🇷 Türkçe: dan, Danimarkalı
 🇦🇿 Türkcə: dan, danimarkalı, danmarqalı {arch.}
@@ -12755,7 +12755,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''See also: midday; Ayrıca bknz: öğle; См. также: полдень
         
 🐺 Old Turkic (bef. 13th c.): I. berdin, kündünki buluŋ, kün ortu II. beriyäki, kün ortudın, küntün (küntin), küntünki
-🇬🇧 English: I. south II. southern
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. south II. southern
 🇷🇺 Русский: I. юг II. южный
 🇹🇷 Türkçe: güney
 🇦🇿 Türkcə: güney {South Azerbaijani}, cənub {I. North Azerbaijani}, cənubi {II. North Azerbaijani}
@@ -12799,7 +12799,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şarq" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şarki":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): toğar
-🇬🇧 English: I. east II. eastern
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. east II. eastern
 🇷🇺 Русский: I. восток II. восточный
 🇹🇷 Türkçe: doğu, şark {arch.}
 🇦🇿 Türkcə: günçıxan, doğu {South Azerbaijani}, şərq {I. North Azerbaijani}, şərqi {II. North Azerbaijani}
@@ -12844,7 +12844,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bati" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "batı":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): batar
-🇬🇧 English: I. west II. western
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. west II. western
 🇷🇺 Русский: I. запад II. западный
 🇹🇷 Türkçe: batı, garp {arch.}
 🇦🇿 Türkcə: günbatan, batı {South Azerbaijani}, qərb {I. North Azerbaijani}, qərbi {II. North Azerbaijani}
@@ -12889,7 +12889,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шейная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шейное":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): boyun (boyın)
-🇬🇧 English: neck
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: neck
 🇷🇺 Русский: шея
 🇹🇷 Türkçe: boyun
 🇦🇿 Türkcə: boyun
@@ -12938,7 +12938,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тучка":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐰆𐰞𐰃𐱃
 🐺 Old Turkic (bef. 13th c.): bulut (bulıt)
-🇬🇧 English: cloud ☁️
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cloud ☁️
 🇷🇺 Русский: облако, туча
 🇹🇷 Türkçe: bulut
 🇦🇿 Türkcə: bulud
@@ -12978,7 +12978,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oq":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰸
 🐺 Old Turkic (bef. 13th c.): oq
-🇬🇧 English: arrow
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: arrow
 🇷🇺 Русский: стрела
 🇹🇷 Türkçe: ok
 🇦🇿 Türkcə: ox
@@ -13021,7 +13021,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ız" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iz":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): iz (yiz)
-🇬🇧 English: trail, trace, footprint, paw print 🐾
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: trail, trace, footprint, paw print 🐾
 🇷🇺 Русский: след
 🇹🇷 Türkçe: iz
 🇦🇿 Türkcə: iz
@@ -13069,7 +13069,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fog":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱃𐰆𐰢𐰣
 🐺 Old Turkic (bef. 13th c.): tuman, bus, iş
-🇬🇧 English: fog, mist 🌫🌁
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fog, mist 🌫🌁
 🇷🇺 Русский: туман [tuman], дымка, смог
 🇹🇷 Türkçe: sis, pus, duman
 🇦🇿 Türkcə: duman, çən
@@ -13110,7 +13110,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "frıday" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cuma":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): adına (ayna)
-🇬🇧 English: friday
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: friday
 🇷🇺 Русский: пятница [pyatnitsa]
 🇹🇷 Türkçe: cuma
 🇦🇿 Türkcə: beşinci gün, cümə
@@ -13150,7 +13150,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "al-jumuah" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аль-джуму‘а" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jumu'ah":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Jumu'ah
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Jumu'ah
 🇷🇺 Русский: джума [dzhuma]
 🇹🇷 Türkçe: cuma
 🇦🇿 Türkcə: cümə
@@ -13195,7 +13195,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🎺" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🗜" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инструмент":
-        bot.send_message(message.chat.id, '''🇬🇧 English: tool, implement, instrument
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tool, implement, instrument
 🇷🇺 Русский: инструмент [instrument], орудие {орудие труда, оружие}
 🇹🇷 Türkçe: alet
 🇦🇿 Türkcə: alət
@@ -13239,7 +13239,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wınter":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰃𐱁
 🐺 Old Turkic (bef. 13th c.): qış
-🇬🇧 English: winter
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: winter
 🇷🇺 Русский: зима
 🇹🇷 Türkçe: kış
 🇦🇿 Türkcə: qış
@@ -13283,7 +13283,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "summertime":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰖𐰖
 🐺 Old Turkic (bef. 15th c.): yay
-🇬🇧 English: summer
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: summer
 🇷🇺 Русский: лето
 🇭🇺 Magyar: nyár
 🇹🇷 Türkçe: yaz
@@ -13328,7 +13328,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "countenance" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "facial":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): yüz (yűz), meŋgiz (meŋiz), bit
-🇬🇧 English: face {n.}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: face {n.}
 🇷🇺 Русский: лицо, лик
 🇹🇷 Türkçe: yüz, beniz, surat
 🇦🇿 Türkcə: üz, bəniz, surət
@@ -13374,7 +13374,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰘𐰇𐰔
 🐺 Old Turkic (bef. 13th c.): yüz
-🇬🇧 English: hundred
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hundred
 🇷🇺 Русский: сто
 🇹🇷 Türkçe: yüz
 🇦🇿 Türkcə: yüz
@@ -13421,7 +13421,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бизнэсс" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бизнесс":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): iş
-🇬🇧 English: business, job, work
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: business, job, work
 🇷🇺 Русский: работа, дело
 🇹🇷 Türkçe: iş
 🇦🇿 Türkcə: iş
@@ -13466,7 +13466,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🛣" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "path":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): yol (col)
-🇬🇧 English: way, road, path 🛤🛣
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: way, road, path 🛤🛣
 🇷🇺 Русский: дорога, путь
 🇹🇷 Türkçe: yol
 🇦🇿 Türkcə: yol
@@ -13507,7 +13507,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "harita" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "xarita" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "harite":
-        bot.send_message(message.chat.id, '''🇬🇧 English: map 🗺
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: map 🗺
 🇷🇺 Русский: карта [karta] {геогр.}
 🇹🇷 Türkçe: harita
 🇦🇿 Türkcə: xəritə
@@ -13554,7 +13554,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kurdyuk" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kuyruk":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): qudruq (qudruğ, quduruq, quðruq)
-🇬🇧 English: I. tail II. tail fat
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. tail II. tail fat
 🇷🇺 Русский: I. хвост II. курдюк [kurdyuk]
 🇹🇷 Türkçe: kuyruk
 🇦🇿 Türkcə: quyruq
@@ -13604,7 +13604,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tauk" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "куриное":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): taquq (taqağu, taqığu)
-🇬🇧 English: hen, chicken 🐔
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hen, chicken 🐔
 🇷🇺 Русский: курица [kuritsa]
 🇭🇺 Magyar: tyúk
 🇲🇳 Mongol: takhia
@@ -13656,7 +13656,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "космическое" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "космическая" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "космо":
-        bot.send_message(message.chat.id, '''🇬🇧 English: space (outer space)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: space (outer space)
 🇷🇺 Русский: космос [kosmos]
 🇹🇷 Türkçe: uzay
 🇦🇿 Türkcə: fəza (kosmik fəza), uzay
@@ -13709,7 +13709,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "belgique":
         bot.send_message(message.chat.id, '''🇧🇪 België
         
-🇬🇧 English: Belgium
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Belgium
 🇷🇺 Русский: Бельгия [Belgiya]
 🇹🇷 Türkçe: Belçika
 🇦🇿 Türkcə: Belçika, Belcik {arch.}
@@ -13750,7 +13750,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "belcikali" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "belçıkalı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "belçıkali":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Belgian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Belgian
 🇷🇺 Русский: бельгиец [belgiyets]
 🇹🇷 Türkçe: Belçikalı
 🇦🇿 Türkcə: belçikalı, belcikli {arch.}
@@ -13793,7 +13793,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moskov" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moskof":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): Mosqov
-🇬🇧 English: Moscow
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Moscow
 🇷🇺 Русский: Москва [Moskva]
 🇹🇷 Türkçe: Moskova, Moskov (Moskof) {arch.}
 🇦🇿 Türkcə: Moskva, Mosqva {arch.}
@@ -13835,7 +13835,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "годины" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "година" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anniversary":
-        bot.send_message(message.chat.id, '''🇬🇧 English: anniversary
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: anniversary
 🇷🇺 Русский: годовщина
 🇹🇷 Türkçe: yıldönümü
 🇦🇿 Türkcə: ildönümü, illik, il
@@ -13878,7 +13878,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jacal" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shakal":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): ajru (azru, arzu)
-🇬🇧 English: jackal
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: jackal
 🇷🇺 Русский: шакал [shakal]
 🇹🇷 Türkçe: çakal
 🇦🇿 Türkcə: çaqqal
@@ -13950,7 +13950,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "исполняй" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "исполнять" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "etmek":
-        bot.send_message(message.chat.id, '''🇬🇧 English: do, make, construct, perform
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: do, make, construct, perform
 🇷🇺 Русский: действуй, делай, сделай
 🇹🇷 Türkçe: et (eyle), yap
 🇦🇿 Türkcə: et (elə), qayır
@@ -13997,7 +13997,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦂" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "scorpiu":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.):	çayan (çıyan, çadan, caðan)
-🇬🇧 English: scorpion 🦂
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: scorpion 🦂
 🇷🇺 Русский: скорпион [skorpion]
 🇹🇷 Türkçe: akrep
 🇦🇿 Türkcə: əqrəb, çayan
@@ -14049,7 +14049,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "швейцарская":
         bot.send_message(message.chat.id, '''🇨🇭 Schweiz
 
-🇬🇧 English: Switzerland
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Switzerland
 🇷🇺 Русский: Швейцария [Shveytsariya]
 🇹🇷 Türkçe: İsviçre, Svisera {arch.}
 🇦🇿 Türkcə: İsveçrə, İşvesrə {dial.}
@@ -14099,7 +14099,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "△" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "триугольник":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): üçgül (üçgil)
-🇬🇧 English: triangle
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: triangle
 🇷🇺 Русский: треугольник, эчпочмак {tatar-bashkir dish}
 🇹🇷 Türkçe: üçgen {neologism, since 1937}, üçbucak, müselles
 🇦🇿 Türkcə: üçbucaq
@@ -14148,7 +14148,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "slavian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "slavka" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "слав":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Slav, Slavic
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Slav, Slavic
 🇷🇺 Русский: славянин [slavyanin]
 🇹🇷 Türkçe: İslav (Slav), Sakalibe {arch.}
 🇦🇿 Türkcə: slavyan, urus-murus {dial.}, səqləb {arch.}
@@ -14198,7 +14198,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прасник" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baryam":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): bayram (baðram)
-🇬🇧 English: feast, holiday
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: feast, holiday
 🇷🇺 Русский: праздник
 🇹🇷 Türkçe: bayram
 🇦🇿 Türkcə: bayram
@@ -14245,7 +14245,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "garten" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orchard":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): bağ, bağça, çeçäklik {floral garden}, yemişlik {orchard}
-🇬🇧 English: garden, orchard
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: garden, orchard
 🇷🇺 Русский: сад [sad], садик
 🇹🇷 Türkçe: bağ, bahçe
 🇦🇿 Türkcə: bağ, bağça
@@ -14301,7 +14301,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wedlock":
         bot.send_message(message.chat.id, '''🇷🇺 Брак указан в значении брачного союза, для брака в значении дефекта введите "дефект".
         
-🇬🇧 English: I. wedding II. marriage, matrimony, wedlock
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. wedding II. marriage, matrimony, wedlock
 🇷🇺 Русский: I. свадьба II. брак (брачный союз между мужчиной и женщиной)
 🇹🇷 Türkçe: I. düğün, nikâh, evlenme II. evlilik
 🇦🇿 Türkcə: I. toy I. nikah, kəbin
@@ -14365,10 +14365,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голубцы" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голубец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tulma":
-        bot.send_message(message.chat.id, '''🇬🇧 In some languages, dolma and sarma are equivalent synonym words, in some languages dolma means a dish of stuffed leaves, and sarma means cabbage rolls, but in other languges vice versa.
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 In some languages, dolma and sarma are equivalent synonym words, in some languages dolma means a dish of stuffed leaves, and sarma means cabbage rolls, but in other languges vice versa.
 🇷🇺 В некоторых языках долма и сарма равнозначные слова-синонимы, в некоторых долма означает блюдо из листьев, а сарма – голубцы, а в некоторых – наоборот. 
         
-🇬🇧 English: dolma, sarma, cabbage roll, stuffed food
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dolma, sarma, cabbage roll, stuffed food
 🇷🇺 Русский:	долма [dolma] + голубцы {cabbage roll}
 🇹🇷 Türkçe: dolma {from ottoman: طوٓلمه‎} [tolma], sarma
 🇦🇿 Türkcə: dolma
@@ -14431,7 +14431,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "деффект" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дефектный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): irinçü, äksüklüg, käm, çolmaq, mün
-🇬🇧 English: defect, flaw
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: defect, flaw
 🇷🇺 Русский: дефект [defekt], недостаток, изъян, брак
 🇹🇷 Türkçe: kusur, noksan, eksiklik, bozukluk, kem
 🇦🇿 Türkcə: qüsur, nöqsan, çatışmazlıq, kəm, kəmlik, man
@@ -14488,7 +14488,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sovyet central asia" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soviet central asia":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): Türkistan
-🇬🇧 English: Turkistan (Turkestan), Central Asia
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Turkistan (Turkestan), Central Asia
 🇷🇺 Русский: Туркестан [Turkestan], Центральная Азия
 🇹🇷 Türkçe: Türkistan
 🇦🇿 Türkcə: Türküstan
@@ -14551,7 +14551,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uyğuristan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uyguristan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uiguristan":
-        bot.send_message(message.chat.id, '''🇬🇧 English: East Turkestan (East Turkistan)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: East Turkestan (East Turkistan)
 🇷🇺 Русский: Восточный Туркестан
 🇹🇷 Türkçe: Doğu Türkistan
 🇦🇿 Türkcə: Doğu Türküstan, Şərqi Türküstan
@@ -14594,7 +14594,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кофэ" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "☕️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кофейный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: coffee ☕️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: coffee ☕️
 🇷🇺 Русский: кофе [kofe]
 🇹🇷 Türkçe: kahve
 🇦🇿 Türkcə: qəhvə
@@ -14638,7 +14638,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чайные" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chay" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "teon":
-        bot.send_message(message.chat.id, '''🇬🇧 English: tea 🍵
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tea 🍵
 🇷🇺 Русский: чай [chay]
 🇹🇷 Türkçe: çay
 🇦🇿 Türkcə: çay
@@ -14687,7 +14687,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uyghur":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜:𐰆𐰖𐰍𐰺
 🐺 Old Turkic (bef. 13th c.): uyğur
-🇬🇧 English: Uyghur
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Uyghur
 🇷🇺 Русский: уйгур [uygur]
 🇹🇷 Türkçe: Uygur
 🇦🇿 Türkcə: uyğur
@@ -14741,7 +14741,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "katliam" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pogrom" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soykirimi":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. genocide II. massacre
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. genocide II. massacre
 🇷🇺 Русский: I. геноцид [genotsid] II. погром [pogrom]
 🇹🇷 Türkçe: I. soykırım II. katliam
 🇦🇿 Türkcə: I. soyqırım II. qırğın
@@ -14789,9 +14789,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beğenmek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "begen" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beğen koy":
-        bot.send_message(message.chat.id, '''🇬🇧 It is verb, for preposition, adverb, adjective enter "as" or "such as".
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 It is verb, for preposition, adverb, adjective enter "as" or "such as".
         
-🇬🇧 English: like! {verb}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: like! {verb}
 🇷🇺 Русский:	нравиться {нет формы императива, можно попытаться перевести как "пусть тебе понравится", также можно перевести как "ставь лайк"}
 🇹🇷 Türkçe: beğen
 🇦🇿 Türkcə: bəyən
@@ -14833,7 +14833,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "similar to" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gibi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gıbı":
-        bot.send_message(message.chat.id, '''🇬🇧 English: as, like {prep., adj.}, such as, similar to
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: as, like {prep., adj.}, such as, similar to
 🇷🇺 Русский: как, подобно, словно, в качестве
 🇹🇷 Türkçe: gibi
 🇦🇿 Türkcə: kimi
@@ -14876,7 +14876,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рублевая" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ruble" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rouble":
-        bot.send_message(message.chat.id, '''🇬🇧 English: rouble
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: rouble
 🇷🇺 Русский: рубль [rubl'], целковый [tselkolvyy]
 🇹🇷 Türkçe: ruble
 🇦🇿 Türkcə: rubl, (uruːbəl) {dial.}, manat
@@ -14922,7 +14922,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "milat yortusu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "doğuş bayramı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kutsal doğuş":
-        bot.send_message(message.chat.id, '''🇬🇧 English: сhristmas
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: сhristmas
 🇷🇺 Русский: рождество [roždestvo]
 🇹🇷 Türkçe: noel
 🇦🇿 Türkcə: milad
@@ -14971,7 +14971,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şapka" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şapke":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 13th c.): börk
-🇬🇧 English: hat, cap
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hat, cap
 🇷🇺 Русский: шапка [shapka]
 🇹🇷 Türkçe: şapka
 🇦🇿 Türkcə: papaq
@@ -15023,7 +15023,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 
 🇪🇬 Misr
 
-🇬🇧 English: Egypt
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Egypt
 🇷🇺 Русский: Египет [Yegipet]
 🇹🇷 Türkçe: Mısır
 🇦🇿 Türkcə: Misir
@@ -15079,7 +15079,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jagara" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jugara" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mısır buğdası":
-        bot.send_message(message.chat.id, '''🇬🇧 English: corn, maize 🌽
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: corn, maize 🌽
 🇷🇺 Русский: кукуруза [kukuruza], маис [mais]
 🇹🇷 Türkçe: mısır
 🇦🇿 Türkcə: qarğıdalı, {dialects: qardalı, qarqundey, peyğəmbəri, məkə, hacıbuğda, sütül, kakruz}
@@ -15133,7 +15133,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şişik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "эдема":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): şiş (şış)
-🇬🇧 English: I. skewer, brochette, shish II. swelling, edema, fluid retention
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. skewer, brochette, shish II. swelling, edema, fluid retention
 🇷🇺 Русский: I. шампур [shampur], вертел II. отёк, опухоль, шишка
 🇹🇷 Türkçe: şiş
 🇦🇿 Türkcə: şiş
@@ -15192,7 +15192,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şış kebabi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şiş kebabi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şaşlık":
-        bot.send_message(message.chat.id, '''🇬🇧 English: shish kebab
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: shish kebab
 🇷🇺 Русский: шашлык [shashlyk]
 🇹🇷 Türkçe: şiş kebabı
 🇦🇿 Türkcə: şiş kabab, şişlik
@@ -15234,7 +15234,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кабоб" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кябаб" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кавап" :
-        bot.send_message(message.chat.id, '''🇬🇧 English: kebab
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: kebab
 🇷🇺 Русский: кебаб [kebab]
 🇹🇷 Türkçe: kebap
 🇦🇿 Türkcə: kabab
@@ -15282,7 +15282,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "coın" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "demir para" :
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): yarmaq (yartmaq), bişi, benäk {small}
-🇬🇧 English: coin
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: coin
 🇷🇺 Русский: монета [moneta] (чеканная монета)
 🇹🇷 Türkçe: sikke, gümüş {silver}
 🇦🇿 Türkcə: sikkə, dəmir pul
@@ -15320,7 +15320,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "более" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "больше" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "daha":
-        bot.send_message(message.chat.id, '''🇬🇧 English: — {forms the comparative of the following adjective, adverb or particip}, no more, no longer, more= {"many" + affixes below (ex. "köbirek" – köp + -irek) or words below + "many" (ex. "daha çok", see "many"} 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: — {forms the comparative of the following adjective, adverb or particip}, no more, no longer, more= {"many" + affixes below (ex. "köbirek" – köp + -irek) or words below + "many" (ex. "daha çok", see "many"} 
 🇷🇺 Русский:	более, больше= {слово "много" + аффиксы, написанные ниже позволят составить слово "больше" (напр. köbirek – köp + -irek), если вместо аффикса написано слово, то оно идет первым (напр. daha çok) см. "много"}
 🇹🇷 Türkçe: daha
 🇦🇿 Türkcə: daha, -rax/-rəh (-raq/-rək) {dial.}
@@ -15357,7 +15357,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dayanışma" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dayanisma" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "единодушие":
-        bot.send_message(message.chat.id, '''🇬🇧 English: solidarity
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: solidarity
 🇷🇺 Русский: солидарность
 🇹🇷 Türkçe: dayanışma
 🇦🇿 Türkcə: həmrəylik
@@ -15398,7 +15398,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "accomplice" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "солидарная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "единодушный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: solidary, accomplice
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: solidary, accomplice
 🇷🇺 Русский: солидарный
 🇹🇷 Türkçe: dayanışık
 🇦🇿 Türkcə: həmrəy
@@ -15446,7 +15446,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "agreement of opinion" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "like-mindedness" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "unanimity":
-        bot.send_message(message.chat.id, '''🇬🇧 English: unanimity, like-mindedness
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: unanimity, like-mindedness
 🇷🇺 Русский: единомыслие
 🇹🇷 Türkçe: fikirdaşlık
 🇦🇿 Türkcə: fikirdaşlıq
@@ -15496,7 +15496,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "accomplice" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "like-minded-person" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "единомышленница":
-        bot.send_message(message.chat.id, '''🇬🇧 English: like-minded, accomplice
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: like-minded, accomplice
 🇷🇺 Русский: единомышленник
 🇹🇷 Türkçe: fikirdaş
 🇦🇿 Türkcə: fikirdeş
@@ -15544,7 +15544,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "plastilin" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пластилиновый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пластелиновый":
-        bot.send_message(message.chat.id, '''🇬🇧 English: plasticine
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: plasticine
 🇷🇺 Русский: пластилин [plastilin]
 🇹🇷 Türkçe: oyun hamuru
 🇦🇿 Türkcə: plastilin, oyun xəmiri
@@ -15598,7 +15598,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧩" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гра":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): oyun
-🇬🇧 English: game 🎯🎳🎮🎰🧩♟🎲
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: game 🎯🎳🎮🎰🧩♟🎲
 🇷🇺 Русский: игра
 🇹🇷 Türkçe: oyun
 🇦🇿 Türkcə: oyun
@@ -15634,7 +15634,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dough" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hamur":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): yoğurmış un
-🇬🇧 English: dough
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dough
 🇷🇺 Русский: тесто [testo]
 🇹🇷 Türkçe: hamur
 🇦🇿 Türkcə: xəmir, xamır {dial.}
@@ -15686,7 +15686,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "муравиный":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴‎𐰆𐰢𐰆𐰺𐰽𐰍𐰀
 🐺 Old Turkic (bef. 15th c.): qomursğa (qumursğa), çömäli (çümäli, çimäli), qarınça (qarınçaq)
-🇬🇧 English: ant 🐜
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ant 🐜
 🇷🇺 Русский: муравей
 🇹🇷 Türkçe: karınca
 🇦🇿 Türkcə: qarışqa, qarınca {arch.}
@@ -15730,7 +15730,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "andaman":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰦
 🐺 Old Turkic (bef. 15th c.): ant (and)
-🇬🇧 English: oath, plight, vow {n.}, swear {n.}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: oath, plight, vow {n.}, swear {n.}
 🇷🇺 Русский: клятва, присяга, божба
 🇹🇷 Türkçe: yemin, ant
 🇦🇿 Türkcə: and
@@ -15802,11 +15802,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "получай" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "получать" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бери":
-        bot.send_message(message.chat.id, '''🇬🇧 In the Turkic languages, “to take” and “to buy” are the same word (al-), but to clarify the purchase “satın al” (“satıp al”) is used.
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 In the Turkic languages, “to take” and “to buy” are the same word (al-), but to clarify the purchase “satın al” (“satıp al”) is used.
 🇷🇺 В тюркских языках "брать" и "покупать" обозначается одним словом, но для уточнения о покупке говорят "satın al" ("satıp al").
 🇹🇷 Türk lehcelerinde almak ve satın almak aynı kelimedir, lâkin belirtmek Türkiye türkçesindeki gibi için satın al (satıp al) kelimeleri kullanılır.
 
-🇬🇧 English: II. take II. buy, purchase {v.} III. get IV. receive
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: II. take II. buy, purchase {v.} III. get IV. receive
 🇷🇺 Русский: возьми, бери II. купи IV. получи
 🇹🇷 Türkçe: al
 🇦🇿 Türkcə: I. götür, ala {not verb}, al {very rarely} II. al (satın al)
@@ -15861,7 +15861,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "имется":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰉𐰺
 🐺 Old Turkic (bef. 15th c.): bar
-🇬🇧 English: there is, there are, to have, to own
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: there is, there are, to have, to own
 🇷🇺 Русский: есть, имеется, имеются, существует, существуют
 🇭🇺 Magyar: van
 🇹🇷 Türkçe: var
@@ -15906,7 +15906,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moğolstan":
         bot.send_message(message.chat.id, '''🇲🇳 Mongol uls
 
-🇬🇧 English: Mongolia
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Mongolia
 🇷🇺 Русский: Монголия [Mongoliya]
 🇹🇷 Türkçe: Moğolistan
 🇦🇿 Türkcə: Monqolustan, Moñğolstan {dial.}
@@ -15951,7 +15951,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mongolian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "monggolian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mongholian":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Mongol
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Mongol
 🇷🇺 Русский: монгол [mongol]
 🇹🇷 Türkçe: Moğol
 🇦🇿 Türkcə: monqol, məğul (مغول) {arch.}, moñğol {dial.}
@@ -16002,7 +16002,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tayyare" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aeroplan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "teyyare":
-        bot.send_message(message.chat.id, '''🇬🇧 English: airplane (aeroplane) ✈️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: airplane (aeroplane) ✈️
 🇷🇺 Русский: самолёт [samolyot], аэроплан [aeroplan]
 🇹🇷 Türkçe: uçak, tayyare
 🇦🇿 Türkcə: təyyarə, uçaq
@@ -16051,7 +16051,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iranic":
         bot.send_message(message.chat.id, '''🇮🇷 Irán
 
-🇬🇧 English: Iran
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Iran
 🇷🇺 Русский: Иран [iran]
 🇹🇷 Türkçe: İran
 🇦🇿 Türkcə: İran
@@ -16103,7 +16103,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "afghanistani":
         bot.send_message(message.chat.id, '''🇦🇫 Afġānistān
 
-🇬🇧 English: Afghanistan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Afghanistan
 🇷🇺 Русский: Афганистан [Afganistan]
 🇹🇷 Türkçe: Afganistan
 🇦🇿 Türkcə: Əfqanıstan
@@ -16152,7 +16152,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulgariya":
         bot.send_message(message.chat.id, '''🇧🇬 Balgariya
 
-🇬🇧 English: Bulgaria
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Bulgaria
 🇷🇺 Русский: Болгария [Bolgariya]
 🇹🇷 Türkçe: Bulgaristan, Diyar Bulgar {Ottoman Turkish}
 🇦🇿 Türkcə: Bolqarıstan, Bulğarstan {pre-Soviet literary norm + modern dialects}
@@ -16190,7 +16190,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "болгарские" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bolgar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulgar":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Bulgarian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Bulgarian
 🇷🇺 Русский: болгар [bolgar]
 🇹🇷 Türkçe: Bulgar
 🇦🇿 Türkcə: bolqar, bulğar {old literary norm + modern dialects}
@@ -16234,7 +16234,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "израель":
         bot.send_message(message.chat.id, '''🇮🇱 Israel, Israyil
 
-🇬🇧 English: Israel
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Israel
 🇷🇺 Русский: Израиль [Izrail]
 🇹🇷 Türkçe: İsrail
 🇦🇿 Türkcə: İsrail
@@ -16278,7 +16278,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "жидовский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "еврейский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "еврейка":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Jew
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Jew
 🇷🇺 Русский: еврей [yevrey]
 🇹🇷 Türkçe: Yahudi
 🇦🇿 Türkcə: yahudi (yəhudi), cuhud
@@ -16330,7 +16330,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇷🇺 Данное слово означает "прийти" любым средством, поэтому переводы слов "приехать", "прилететь", "приплыть" и так далее будут одинаковыми.
 
 🐺 Old Turkic (bef. 15th c.): kel
-🇬🇧 English: come
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: come
 🇷🇺 Русский: приходи, приди
 🇹🇷 Türkçe: gel
 🇦🇿 Türkcə: gəl
@@ -16376,7 +16376,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "magyarorszag":
         bot.send_message(message.chat.id, '''🇭🇺 Magyarország
 
-🇬🇧 English: Hungary
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Hungary
 🇷🇺 Русский: Венгрия [Vengriya]
 🇹🇷 Türkçe: Macaristan
 🇦🇿 Türkcə: Macarıstan
@@ -16423,7 +16423,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "венгер" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "венгерка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "magyar":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Hungarian, Magyar
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Hungarian, Magyar
 🇷🇺 Русский: венгр [vengr]
 🇹🇷 Türkçe: Macar
 🇦🇿 Türkcə: macar
@@ -16473,7 +16473,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ver" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vermek":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): ber (ver)
-🇬🇧 English: give!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: give!
 🇷🇺 Русский: дай, отдай, подай, вручи
 🇹🇷 Türkçe: ver
 🇦🇿 Türkcə: ver
@@ -16525,7 +16525,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "однакоже" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "однако ж" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "однако же":
-        bot.send_message(message.chat.id, '''🇬🇧 English: but, however
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: but, however
 🇷🇺 Русский: но, однако
 🇹🇷 Türkçe: ama, lakin
 🇦🇿 Türkcə: amma, lakin
@@ -16569,7 +16569,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "патом" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пожже":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): soŋ, ançıp (ınçıp), ötrü (ötürü), udu (uðu), üzä, andan (andın, antın), inğaru (ingärü), keyin (keðin, kedin, kidin, ken, kän, kin), kesrä (kisrä), basa
-🇬🇧 English: later, after
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: later, after
 🇷🇺 Русский: позже, потом, после, затем
 🇹🇷 Türkçe: sonra
 🇦🇿 Türkcə: sonra, sora {dial.}
@@ -16628,7 +16628,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🌎" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🌏" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "land":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. location, place II. ground, land, earth, soil III. Earth 🌍
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. location, place II. ground, land, earth, soil III. Earth 🌍
 🇷🇺 Русский: место ~ местность ~ земля ~ почва III. Земля
 🇹🇷 Türkçe: yer ~ toprak III. Dünya, Yerküre
 🇦🇿 Türkcə: yer ~ torpaq III. Yer
@@ -16683,7 +16683,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лучшее" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лучшие" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "линейный размер":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. width II. most {~st: biggest, fastest etc}
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. width II. most {~st: biggest, fastest etc}
 🇷🇺 Русский: I. ширина II. самый {превосходная степень}, наиболее
 🇹🇷 Türkçe: en
 🇦🇿 Türkcə: I. en II. ən
@@ -16732,10 +16732,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dilemek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dıle" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dılemek":
-        bot.send_message(message.chat.id, '''🇬🇧 Also in the Turkic languages the verb "come" instead of "want" is often used (for example, "he wants to sleep" - "yatmağı gəlir")
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 Also in the Turkic languages the verb "come" instead of "want" is often used (for example, "he wants to sleep" - "yatmağı gəlir")
 🇷🇺 Также в тюркских языках часто используется глагол "приходить" вместо "хотеть", (например "он хочет спать" – "yatmağı gəlir")
 
-🇬🇧 English: want! wish!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: want! wish!
 🇷🇺 Русский: хоти! желай! проси!
 🇹🇷 Türkçe: iste, dile
 🇦🇿 Türkcə: istə, dilə
@@ -16779,7 +16779,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kitab" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kitap":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): bitig {+ writing, writ, letter, document} {biti- from chinese}, nom {sogdian loanword}, kitab {arab loanword}
-🇬🇧 English: book
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: book
 🇷🇺 Русский: книга [kniga]
 🇹🇷 Türkçe: kitap, betik {+ writing, writ, letter, document}, bitik {dial.}
 🇦🇿 Türkcə: kitab, betik {purism, non-dictionary word}
@@ -16831,7 +16831,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "büyük anne":
         bot.send_message(message.chat.id, '''* {p.} — paternal, по отцу, babasının annesi, {m.} — maternal, по матери, annesinin annesi
         
-🇬🇧 English: grandmother
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: grandmother
 🇷🇺 Русский: бабушка
 🇹🇷 Türkçe: büyükanne, nine (nene)
 🇦🇿 Türkcə: nənə
@@ -16882,7 +16882,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ilk-bahar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spring time":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): yaz
-🇬🇧 English: spring
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: spring
 🇷🇺 Русский: весна
 🇹🇷 Türkçe: ilkbahar, ilkyaz, bahar
 🇦🇿 Türkcə: yaz, bahar
@@ -16933,7 +16933,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sonbahar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "son-bahar":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): küz
-🇬🇧 English: autumn, fall
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: autumn, fall
 🇷🇺 Русский: осень
 🇹🇷 Türkçe: sonbahar, güz
 🇦🇿 Türkcə: güz, payız
@@ -16982,7 +16982,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зилант" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зилент":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): yel bükä, sazağan, loŋ (luu, lú)
-🇬🇧 English: dragon 🐲🐉
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dragon 🐲🐉
 🇷🇺 Русский: дракон [drakon]
 🇹🇷 Türkçe: ejderha
 🇦🇿 Türkcə: əjdaha
@@ -17032,7 +17032,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "xan":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰍𐰣‎
 🐺 Old Turkic (bef. 15th c.): xan, qağan
-🇬🇧 English: khan, qaghan, khagan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: khan, qaghan, khagan
 🇷🇺 Русский: хан, каган, хаган
 🇹🇷 Türkçe: han, kağan, hakan
 🇦🇿 Türkcə: xan, xaqan
@@ -17080,7 +17080,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "microbat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кажан":
         bot.send_message(message.chat.id, '''‎🐺 Old Turkic (bef. 15th c.): yarısa (yersgü, aya yersgü)
-🇬🇧 English: the bat 🦇
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: the bat 🦇
 🇷🇺 Русский: летучая мышь
 🇹🇷 Türkçe: yarasa, gece kuşu
 🇦🇿 Türkcə: yarasa, şəbpərə, gecəquşu
@@ -17101,7 +17101,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: yarasan (yarasen)
 🏴 Gagauzça: yarasa (yarasa kuşu)
 🏴 Urumça: gecä uçan sıçan
-🏴 Karajče: jarykanat (jarykanatly, jeri-kanaty), gedžekušu
+🏴 Qarayçe: yarıqanat (yarıqanatlı, yeri-qanatı), gecequşu
 🏴 Qrımçahça: gecekuşı
 🏴 Saqalí: kınattáq kutuyaq, sarıı kınat
 🏴 Dulgan-Hakalí: harıı kınat
@@ -17135,7 +17135,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "именины" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "день рождения" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "др":
-        bot.send_message(message.chat.id, '''🇬🇧 English: birthday
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: birthday
 🇷🇺 Русский: день рождения
 🇹🇷 Türkçe: doğum günü, yaş günü
 🇦🇿 Türkcə: I. ad günü, yaşı II. doğum günü {day of birth}
@@ -17183,7 +17183,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bılmek":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰋𐰃𐰠
 🐺 Old Turkic (bef. 15th c.): bil
-🇬🇧 English: know!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: know!
 🇷🇺 Русский: знай! умей!
 🇹🇷 Türkçe: bil
 🇦🇿 Türkcə: bil
@@ -17231,7 +17231,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📰" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🗞" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рузнама":
-        bot.send_message(message.chat.id, '''🇬🇧 English: newspaper 📰 🗞
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: newspaper 📰 🗞
 🇷🇺 Русский: газета [gazeta]
 🇹🇷 Türkçe: gazete
 🇦🇿 Türkcə: qəzet, ruznamə
@@ -17275,7 +17275,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bin":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰋𐰃𐰭‎
 🐺 Old Turkic (bef. 15th c.): biŋ
-🇬🇧 English: thousand
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: thousand
 🇷🇺 Русский: тысяча [tysyacha]
 🇲🇳 Mongol: myang
 🇹🇷 Türkçe: bin
@@ -17357,7 +17357,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "onbin":
         bot.send_message(message.chat.id, '''‎🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱅𐰇𐰢𐰤
 🐺 Old Turkic (bef. 15th c.): tümän
-🇬🇧 English: tumen, division, ten thousand, a bunch of, myriad
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tumen, division, ten thousand, a bunch of, myriad
 🇷🇺 Русский: десять тысяч, тумен, дивизия, тысяцкий, множество, тьма, десятитысячное войско, несметное войско, мириада
 🇲🇳 Mongol: tümen
 🇭🇺 Magyar: tömény
@@ -17404,7 +17404,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "элада":
         bot.send_message(message.chat.id, '''🇬🇷 Ellaða
 
-🇬🇧 English: Greece, Hellas
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Greece, Hellas
 🇷🇺 Русский: Греция [Gretsiya]
 🇹🇷 Türkçe: Yunanistan
 🇦🇿 Türkcə: Yunanıstan, Rum {arch.}
@@ -17463,7 +17463,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rumei" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romei" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yunan":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Greek
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Greek
 🇷🇺 Русский: грек [grek], румей [rumey]
 🇹🇷 Türkçe: Yunan, Rum (Urum)
 🇦🇿 Türkcə: yunan, bərzan {dial.}, rumi {arch.}
@@ -17511,7 +17511,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гречишная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karabuğday" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara buğday":
-        bot.send_message(message.chat.id, '''🇬🇧 English: buckwheat, fagopyrum
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: buckwheat, fagopyrum
 🇷🇺 Русский: гречиха [grechikha], гречка, греча, гречневая крупа, ядрица
 🇹🇷 Türkçe: karabuğday
 🇦🇿 Türkcə: qarabaşaq, qara düyü {arch.}
@@ -17560,7 +17560,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦚" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tavus kuş" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tavus kuşu":
-        bot.send_message(message.chat.id, '''🇬🇧 English: 🦚 peafowl, peacock, peahen, pavo
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: 🦚 peafowl, peacock, peahen, pavo
 🇷🇺 Русский: павлин [pavlin]
 🇲🇳 Mongol: togos
 🇹🇷 Türkçe: tavus
@@ -17609,7 +17609,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "allium-sativum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чесночный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): sarımsaq (sarumsaq, samırsaq, samursaq, sarmısaq, sarmusaq), usqun, satun, qamğaq, basar {mountain ~}
-🇬🇧 English: garlic 🧄
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: garlic 🧄
 🇷🇺 Русский: чеснок [chesnok]
 🇲🇳 Mongol: sarimsag, sarims
 🇹🇷 Türkçe: sarımsak
@@ -17653,7 +17653,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вертолет" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚁" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вертолетный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: helicopter, chopper 🚁
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: helicopter, chopper 🚁
 🇷🇺 Русский: вертолёт [vertolyot]
 🇹🇷 Türkçe: helikopter, dikuçar {purism}, döner kanat {purism}
 🇦🇿 Türkcə: dikuçar, helikopter, vertolyot
@@ -17704,7 +17704,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐒" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "haplorhine":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): beçin (biçin), keylig
-🇬🇧 English: monkey 🐵, guenon 🐒
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: monkey 🐵, guenon 🐒
 🇷🇺 Русский: обезьяна [obezyana], мартышка
 🇹🇷 Türkçe: maymun
 🇦🇿 Türkcə: meymun
@@ -17748,7 +17748,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "железная":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐱅𐰢𐰼
 🐺 Old Turkic (bef. 15th c.): temir (temür)
-🇬🇧 English: iron, ferrum, Fe
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: iron, ferrum, Fe
 🇷🇺 Русский: железо
 🇲🇳 Mongol: tömör
 🇹🇷 Türkçe: demir
@@ -17801,7 +17801,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "утюжный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "smoothingiron":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): ütüg (ütük)
-🇬🇧 English: iron (clothes iron), flatiron, smoothing iron
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: iron (clothes iron), flatiron, smoothing iron
 🇷🇺 Русский: утюг [utyug]
 🇹🇷 Türkçe: ütü
 🇦🇿 Türkcə: ütü
@@ -17844,7 +17844,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "молочное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "молочные" :
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): süt
-🇬🇧 English: milk 🥛🍼
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: milk 🥛🍼
 🇷🇺 Русский: молоко
 🇲🇳 Mongol: süü
 🇹🇷 Türkçe: süt
@@ -17897,7 +17897,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хуралдай" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "съезд":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): qurultay
-🇬🇧 English: kurultai, meeting, congress, diet
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: kurultai, meeting, congress, diet
 🇷🇺 Русский: курултай [kurultay], собрание, съезд, конгресс
 🇲🇳 Mongol: khuraldai, khural
 🇭🇺 Magyar: kurultáj
@@ -17942,7 +17942,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "familia" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aile":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): eb, urluğ
-🇬🇧 English:	family
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	family
 🇷🇺 Русский:	семья [semya]
 🇲🇳 Mongol: ail, ger bül
 🇹🇷 Türkçe: aile
@@ -17985,7 +17985,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мыльный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мыльная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мыльное":
-        bot.send_message(message.chat.id, '''🇬🇧 English: soap
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: soap
 🇷🇺 Русский: мыло [mylo]
 🇲🇳 Mongol: savan
 🇭🇺 Magyar: szappan
@@ -18046,7 +18046,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "имущественный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stock":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): mal, tabar (tavar), barım, yılqı
-🇬🇧 English: cattle, beasts, livestock, stock, goods, property, asset, commodity
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cattle, beasts, livestock, stock, goods, property, asset, commodity
 🇷🇺 Русский: скот, скотина, товар, благо, имущество
 🇲🇳 Mongol: mal
 🇹🇷 Türkçe: mal, davar
@@ -18098,7 +18098,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ворота":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰴𐰯𐰍
 🐺 Old Turkic (bef. XV c.): qapığ (qapuğ, qapağ, qapğa), eşik, el
-🇬🇧 English: I. door II. gate
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. door II. gate
 🇷🇺 Русский: I. дверь II. ворота [vorota] врата
 🇭🇺 Magyar: I. ajtó II. kapu
 🇹🇷 Türkçe: kapı
@@ -18165,7 +18165,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
              or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "murides":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰚‎𐰇𐰾‎𐰚‎𐰇 (𐰚‎𐰇𐰾𐰏‎𐰇)
 🐺 Old Turkic (bef. XV c.): sıçğan (sıçqan), küskü (küsgü), ablan {one of animals from muridae family}
-🇬🇧 English: mouse 🐭🐁
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mouse 🐭🐁
 🇷🇺 Русский: мышь
 🇹🇷 Türkçe: fare, sıçan
 🇦🇿 Türkcə: siçan (sıçan)
@@ -18215,7 +18215,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦉" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baykuşu":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qoburğa, yabaqulaq, ügi (ühi)
-🇬🇧 English: owl 🦉
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: owl 🦉
 🇷🇺 Русский: сова
 🇹🇷 Türkçe: baykuş, gece yırtıcı kuşu (yırtıcı gece kuşu, gecekuşu)
 🇦🇿 Türkcə: bayquş (bəyquş)
@@ -18274,7 +18274,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lepus":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱃𐰉𐰽𐰍𐰣
 🐺 Old Turkic (bef. XV c.): tavşan (tabışğan, tawışğan, tawışqan), quyanığ
-🇬🇧 English: rabbit 🐰🐇
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: rabbit 🐰🐇
 🇷🇺 Русский: заяц [zayats], кролик [krolik], ушкан [ushkan]
 🇹🇷 Türkçe: tavşan
 🇦🇿 Türkcə: dovşan
@@ -18328,7 +18328,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🕸" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ağ":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): tor, izdäŋ
-🇬🇧 English: net, web 🕸
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: net, web 🕸
 🇷🇺 Русский: сеть, сетка, паутина
 🇲🇳 Mongol: tor
 🇹🇷 Türkçe: ağ
@@ -18380,7 +18380,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "siktutan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sik tutan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "godfather":
-        bot.send_message(message.chat.id, '''🇬🇧 English: godfather
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: godfather
 🇷🇺 Русский: кум, крёстный отец✝️
 🇹🇷 Türkçe: kirve☪️ ️vaftiz babası✝️, baba {The Godfather}
 🇦🇿 Türkcə: kirvə☪️ xaç atası✝️
@@ -18422,7 +18422,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лет":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖𐱁
 🐺 Old Turkic (bef. XV c.): yaş, qarı, yıl-yaş
-🇬🇧 English: age {one of the stages of life}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: age {one of the stages of life}
 🇷🇺 Русский: возраст, годы {аналогично русскому "лет" и "года", напр. "мне 25 лет" или "мне 23 года"}
 🇹🇷 Türkçe: yaş
 🇦🇿 Türkcə: yaş
@@ -18479,7 +18479,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰴𐰆𐰪 (𐰸𐰆𐰪)
 🐺 Old Turkic (bef. XV c.): qoy (qoɲ, qon), qoyun (qoyın)
-🇬🇧 English: ovis, sheep 🐑, ram 🐏
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ovis, sheep 🐑, ram 🐏
 🇷🇺 Русский: овца, барашек, баран [baran]
 🇲🇳 Mongol: khoni (khonö, khoɲ)
 🇭🇺 Magyar: yuh, kos ♂
@@ -18588,7 +18588,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "красноголовый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "красная голова" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qizilbásh":
-        bot.send_message(message.chat.id, '''🇬🇧 English: qizilbash
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: qizilbash
 🇷🇺 Русский: кызылбаш [kyzylbash]
 🇹🇷 Türkçe: kızılbaş
 🇦🇿 Türkcə: qızılbaş
@@ -18636,7 +18636,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "страдалец" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "погибший за веру" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şehıt":
-        bot.send_message(message.chat.id, '''🇬🇧 English: martyr, shahid
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: martyr, shahid
 🇷🇺 Русский: мученик, шахид
 🇹🇷 Türkçe: şehit
 🇦🇿 Türkcə: şəhid
@@ -18686,7 +18686,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kuğu":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰴𐰆𐰍𐰆 : 𐰴𐰆𐰽
 🐺 Old Turkic (bef. XV c.): quğu, quğu quş
-🇬🇧 English: swan 🦢
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: swan 🦢
 🇷🇺 Русский: лебедь
 🇹🇷 Türkçe: kuğu
 🇦🇿 Türkcə: qu, qu quşu
@@ -18736,7 +18736,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beautifully" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "güzel":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): körkülüg (körklüg, körglüg), körklä (körtlä), çebär
-🇬🇧 English: beautiful, nice, pretty
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: beautiful, nice, pretty
 🇷🇺 Русский: прекрасно (-ый, -ая, -ое), красиво (-ый, -ая, -ое), красавица (-ец) красотка
 🇹🇷 Türkçe: güzel, dilber, yakışıklı, gökçek
 🇦🇿 Türkcə: gözəl, dilbər, yaraşıqlı, göyçək
@@ -18781,7 +18781,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sözcük" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kelam":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): söz (soð), sav (sab), til
-🇬🇧 English: word
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: word
 🇷🇺 Русский: слово [slovo]
 🇪🇪 Eesti: sõna
 🇭🇺 Magyar: szó
@@ -18833,7 +18833,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "al-kuhl" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "al-kohl" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алкоголь":
-        bot.send_message(message.chat.id, '''🇬🇧 English: alcohol
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: alcohol
 🇷🇺 Русский: алкоголь [alkogol]
 🇹🇷 Türkçe: alkol
 🇦🇿 Türkcə: alkohol (alkoqol)
@@ -18874,7 +18874,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dying" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ölüm":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	ölüm
-🇬🇧 English: death
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: death
 🇷🇺 Русский: смерть
 🇹🇷 Türkçe: ölüm
 🇦🇿 Türkcə: ölüm
@@ -18917,7 +18917,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çirk" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нечистоты":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kir
-🇬🇧 English: dirt
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dirt
 🇷🇺 Русский: грязь, нечистота
 🇲🇳 Mongol: khir
 🇹🇷 Türkçe: kir
@@ -18963,7 +18963,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kuvve" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "takat":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): küç
-🇬🇧 English: power, force, strength
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: power, force, strength
 🇷🇺 Русский: сила, мощь, мощность, могущество
 🇲🇳 Mongol: khüch
 🇹🇷 Türkçe: güç
@@ -19018,7 +19018,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iourt" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alacık":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): üy (üv, ev, eb, ef), kerägü
-🇬🇧 English: yourte, yurt
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: yourte, yurt
 🇷🇺 Русский: юрта [yurta], отав, алачиг (алачыг), лачуга, чум, кибитка
 🇹🇷 Türkçe: yurt {çadır yurt}, alaçık (alacık), keçe çadır
 🇦🇿 Türkcə: alaçıq, coma {dial.}, alakeçə {dial.}, muxru {dial.}, tarçığ {dial.}
@@ -19057,7 +19057,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gül" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🌹" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kızılgül":
-        bot.send_message(message.chat.id, '''🇬🇧 English: rose 🌹
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: rose 🌹
 🇷🇺 Русский: роза [roza]
 🇹🇷 Türkçe: gül
 🇦🇿 Türkcə: qızılgül
@@ -19095,7 +19095,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tataristan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tatarıstan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tataria":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Tatarstan
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Tatarstan
 🇷🇺 Русский: Татарстан [Tatarstan]
 🇹🇷 Türkçe: Tataristan
 🇦🇿 Türkcə: Tatarıstan
@@ -19144,7 +19144,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "казанский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "казанский татар" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "татарский":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Tatar
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Tatar
 🇷🇺 Русский: татар [tatar]
 🇹🇷 Türkçe: Tatar Türkü, Kazan Tatarı, Kazan Türkü
 🇦🇿 Türkcə: tatar
@@ -19184,7 +19184,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сибиряк" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сибирский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "siberian":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Siberia
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Siberia
 🇷🇺 Русский: Сибирь [Sibir]
 🇹🇷 Türkçe: Sibirya
 🇦🇿 Türkcə: Sibir
@@ -19225,7 +19225,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дагистан" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дагистанский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dağıstan":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Dagestan
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Dagestan
 🇷🇺 Русский: Дагестан [Dagestan]
 🇹🇷 Türkçe: Dağıstan
 🇦🇿 Türkcə: Dağıstan
@@ -19265,7 +19265,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "no gay" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "noğay" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nogay":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Nogay (Nogai)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Nogay (Nogai)
 🇷🇺 Русский: ногай [nogay]
 🇹🇷 Türkçe: Nogay Türkü, Eski Türk, Nogay
 🇦🇿 Türkcə: noğay
@@ -19308,7 +19308,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чувашка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чувашский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çuvaş":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Chuvash
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Chuvash
 🇷🇺 Русский: чуваш [chuvash]
 🇹🇷 Türkçe: Çuvaş Türkü, Çuvaş
 🇦🇿 Türkcə: çuvaş
@@ -19347,7 +19347,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çuvaşya" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çuvaşıstan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çuvaşistan":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Chuvashia
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Chuvashia
 🇷🇺 Русский: Чувашия [Chuvashiya]
 🇹🇷 Türkçe: Çuvaşistan
 🇦🇿 Türkcə: Çuvaşıstan
@@ -19397,7 +19397,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хлыст" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "камча":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qamçı, bärkä (bärgä, bärgü, birgä, bergä), qağıl (qağal), çağığ (çavığ)
-🇬🇧 English: whip, knout, nagaika, kamcha
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: whip, knout, nagaika, kamcha
 🇷🇺 Русский: нагайка, плеть, кнут, камча, плетка, хлыст, бич
 🇹🇷 Türkçe: kamçı, kırbaç
 🇦🇿 Türkcə: qamçı, qırmanc, tatarı
@@ -19447,7 +19447,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paw" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "окорок":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): ayaq (adaq, aðaq, azaq), but
-🇬🇧 English: foot, leg, thigh, ham
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: foot, leg, thigh, ham
 🇷🇺 Русский: нога, ножка, лапа, ляжка, бедро, окорок
 🇹🇷 Türkçe: ayak, bacak, but
 🇦🇿 Türkcə: ayaq, qıç, bud
@@ -19495,7 +19495,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "infirmary" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏥" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "богадельня":
-        bot.send_message(message.chat.id, '''🇬🇧 English: clinic, hospital 🏥
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: clinic, hospital 🏥
 🇷🇺 Русский: больница [bolnitsa], госпиталь [gospital], лечебница, врачебница, лазарет, клиника
 🇹🇷 Türkçe: hastane (hastahane), darüşşifa {arch.}
 🇦🇿 Türkcə: xəstəxana, bimaristan {dial.}, azarxana {arch.}
@@ -19535,7 +19535,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pain" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "agri":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): ağrığ
-🇬🇧 English: pain, hurt, ache
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pain, hurt, ache
 🇷🇺 Русский: боль
 🇹🇷 Türkçe: ağrı
 🇦🇿 Türkcə: ağrı
@@ -19582,7 +19582,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çağ" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vakit":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): çağ (çaq), öd (öt, öð, öz), çer (çerlik, çerig), oğur, tuş
-🇬🇧 English: time, era, period of life
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: time, era, period of life
 🇷🇺 Русский: время, эпоха, эра, период жизни, срок, пора
 🇲🇳 Mongol: tsag, üye
 🇹🇷 Türkçe: vakit, çağ, zaman
@@ -19624,7 +19624,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "turkmenia":
         bot.send_message(message.chat.id, '''🇹🇲 Türkmenistan
 
-🇬🇧 English: Turkmenistan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Turkmenistan
 🇷🇺 Русский: Туркменистан [Turkmenistan]
 🇹🇷 Türkçe: Türkmenistan
 🇦🇿 Türkcə: Türkmənistan
@@ -19674,7 +19674,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "туркоман" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "туркман" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "туркменский":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Turkmen, Turcoman, Turkoman, Turkman
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Turkmen, Turcoman, Turkoman, Turkman
 🇷🇺 Русский: туркмен, туркоман, туркман
 🇹🇷 Türkçe: Türkmen
 🇦🇿 Türkcə: türkmən
@@ -19722,7 +19722,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''See also: yourte
 
 🐺 Old Turkic (bef. XV c.): kerägü (käräkü, qurıqan), otağ, alaçu, çatır (çaşır, çaçır)
-🇬🇧 English: tent ⛺️🎪
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tent ⛺️🎪
 🇷🇺 Русский: шатёр, палатка, тент
 🇭🇺 Magyar: sátor
 🇹🇷 Türkçe: çadır
@@ -19773,7 +19773,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "младая" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "молодо":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): känç, yaş
-🇬🇧 English: young, youthful
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: young, youthful
 🇷🇺 Русский: молодой, юный
 🇹🇷 Türkçe: genç, civan
 🇦🇿 Türkcə: gənc, cavan, yaş {arch.}
@@ -19815,7 +19815,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "başkortostan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "башкортостан" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "башкирия":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Bashkortostan
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Bashkortostan
 🇷🇺 Русский: Башкортостан [Bashkortostan]
 🇹🇷 Türkçe: Başkurdistan
 🇦🇿 Türkcə: Başqırdıstan (Başqurdustan)
@@ -19862,7 +19862,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "башкорт" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "başkurt":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): başğirt
-🇬🇧 English: Bashkir
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Bashkir
 🇷🇺 Русский: башкир [bashkir]
 🇹🇷 Türkçe: Başkurt
 🇦🇿 Türkcə: başqırd (başqurd)
@@ -19918,7 +19918,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "неконкретно" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "не конкретно" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "неконкретная":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	abstract {adj.}
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	abstract {adj.}
 🇷🇺 Русский:	абстрактный [abstraktnyy], отвлеченный
 🇹🇷 Türkçe:	soyut, mücerret
 🇦🇿 Türkcə:	mücərrəd
@@ -19963,7 +19963,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прах" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зольный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kül
-🇬🇧 English: ash, ashes, cinder
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ash, ashes, cinder
 🇷🇺 Русский:	пепел, зола
 🇹🇷 Türkçe: kül
 🇦🇿 Türkcə: kül
@@ -20008,7 +20008,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "от чего" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ne için":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): negä (näkä), negükä, nelük (nelüg), negülüg, ne üçün, negü üçün
-🇬🇧 English: why
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: why
 🇷🇺 Русский: почему, зачем, для чего, из-за чего, по какой причине
 🇹🇷 Türkçe: neden, niye, niçin
 🇦🇿 Türkcə: niyə, nə üçün, nədən
@@ -20052,7 +20052,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hause":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰋
 🐺 Old Turkic (bef. XV c.): öy (üy, üv, ev, eb)
-🇬🇧 English: home, house
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: home, house
 🇷🇺 Русский: дом, жилище
 🇹🇷 Türkçe: ev
 🇦🇿 Türkcə: ev, öy {dial.}
@@ -20095,7 +20095,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dexter" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dexteral":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): oŋ, sağ
-🇬🇧 English: right {opposite to left}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: right {opposite to left}
 🇷🇺 Русский: правый {антоним - левый}
 🇹🇷 Türkçe: sağ {sol karşıtı}
 🇦🇿 Türkcə: sağ
@@ -20139,7 +20139,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ayaktopu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ayak topu":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): tepük {game similar to soccer but not soccer}
-🇬🇧 English: football, soccer ⚽️
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: football, soccer ⚽️
 🇷🇺 Русский: футбол
 🇹🇷 Türkçe: futbol, ayaktopu {purism}
 🇦🇿 Türkcə: futbol, ayaqtopu {purism}
@@ -20185,7 +20185,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маленько" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маленька" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "немношко":
-        bot.send_message(message.chat.id, '''🇬🇧 English: some, a bit, somewhat, awhile, something of
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: some, a bit, somewhat, awhile, something of
 🇷🇺 Русский: немного, слегка
 🇹🇷 Türkçe: biraz
 🇦🇿 Türkcə: bir az
@@ -20235,7 +20235,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "узбекистан":
         bot.send_message(message.chat.id, '''🇺🇿 Oʻzbekiston
         
-🇬🇧 English: Uzbekistan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Uzbekistan
 🇷🇺 Русский: Узбекистан [Uzbekistan]
 🇹🇷 Türkçe: Özbekistan
 🇦🇿 Türkcə: Özbəkistan
@@ -20284,7 +20284,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "узбекская" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "узбекское" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "узбекские":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Uzbek
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Uzbek
 🇷🇺 Русский: узбекский [uzbeksky]
 🇹🇷 Türkçe: Özbek Türkü
 🇦🇿 Türkcə: özbək
@@ -20325,7 +20325,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "quarantaine" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "quarantena" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karantına":
-        bot.send_message(message.chat.id, '''🇬🇧 English: quarantine
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: quarantine
 🇷🇺 Русский: карантин [karantin]
 🇹🇷 Türkçe: karantina, tahaffuz {arch.}
 🇦🇿 Türkcə: təhəffüz, karantin, giraxtun (گراختون) {arch.}
@@ -20370,7 +20370,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "половик" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "halı":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): küvüz (kiviz, küviz), yazım (yadım, yaðım)
-🇬🇧 English: carpet, rug, mat
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: carpet, rug, mat
 🇷🇺 Русский: ковёр [kovyor], палас [palas], килим [kilim]
 🇹🇷 Türkçe: halı, kilim
 🇦🇿 Türkcə: xalça, xalı, gəbə, palaz, kilim
@@ -20413,7 +20413,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sinister" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sinistral":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): sol, çoŋ
-🇬🇧 English: left {opposite to right}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: left {opposite to right}
 🇷🇺 Русский: левый
 🇹🇷 Türkçe: sol
 🇦🇿 Türkcə: sol
@@ -20455,7 +20455,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "firstname":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰀𐱃
 🐺 Old Turkic (bef. XV c.): at (át)
-🇬🇧 English: name
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: name
 🇷🇺 Русский: имя, название
 🇹🇷 Türkçe: ad, isim
 🇦🇿 Türkcə: ad, isim
@@ -20499,7 +20499,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🔪" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ножевая":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): bıçaq (piçäk)
-🇬🇧 English: knife 🔪
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: knife 🔪
 🇷🇺 Русский: нож
 🇹🇷 Türkçe: bıçak
 🇦🇿 Türkcə: bıçaq, pıçaq {arch. + dial.}
@@ -20549,7 +20549,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ехтибар" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saygınlık":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): ayağ, çiltäg
-🇬🇧 English: trustworthiness, reliability; creditworthiness
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: trustworthiness, reliability; creditworthiness
 🇷🇺 Русский: благонадежность, надежность; кредитоспособность
 🇹🇷 Türkçe: itibar, saygınlık
 🇦🇿 Türkcə: etibar
@@ -20604,7 +20604,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "коняшка":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱃
 🐺 Old Turkic (bef. XV c.):	at, yılqı
-🇬🇧 English: horse 🐴
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: horse 🐴
 🇷🇺 Русский: конь, лошадь
 🇹🇷 Türkçe: at, beygir
 🇦🇿 Türkcə: at
@@ -20651,7 +20651,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "south-paw" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "левша":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): solamuq
-🇬🇧 English: left-hander, left-handed, lefty, southpaw
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: left-hander, left-handed, lefty, southpaw
 🇷🇺 Русский: левша
 🇹🇷 Türkçe: solak
 🇦🇿 Türkcə: solaxay
@@ -20692,7 +20692,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шкиперия":
         bot.send_message(message.chat.id, '''🇦🇱 Shqipëri
 
-🇬🇧 English: Albania
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Albania
 🇷🇺 Русский:	Албания [Albaniya]
 🇹🇷 Türkçe: Arnavutluk
 🇦🇿 Türkcə: Arnaudluq, Albaniya (Balkan Albaniyası)
@@ -20734,7 +20734,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "албанка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "албанский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "албанская":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Albanian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Albanian
 🇷🇺 Русский: албанский [albansky]
 🇹🇷 Türkçe: Arnavut
 🇦🇿 Türkcə: arnaud, alban (balkan albanı)
@@ -20779,7 +20779,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "✂️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ножницы":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qoş bıçaq, biçğuc, sındu, qıftu
-🇬🇧 English: scissors, shears ✂️
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: scissors, shears ✂️
 🇷🇺 Русский: ножницы
 🇲🇳 Mongol: khaych
 🇹🇷 Türkçe: makas
@@ -20845,7 +20845,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хлопчик" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "daredevil":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): igid (yigit, yiğit, yığıt)
-🇬🇧 English: jigit, fellow, brave one, wight
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: jigit, fellow, brave one, wight
 🇷🇺 Русский: джигит [djigit], молодой парень, молодец, юноша, храбрец, смельчак, хлопец
 🇹🇷 Türkçe: yiğit
 🇦🇿 Türkcə: igid
@@ -20890,7 +20890,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "todjikiston":
         bot.send_message(message.chat.id, '''🇹🇯 Todjikiston
 
-🇬🇧 English: Tajikistan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Tajikistan
 🇷🇺 Русский: Таджикистан [Tadjikistan]
 🇹🇷 Türkçe: Tacikistan
 🇦🇿 Türkcə: Tacikistan
@@ -20938,7 +20938,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tajikic" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tojik":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): täjik (täzik, täjçik)
-🇬🇧 English: Tajik
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Tajik
 🇷🇺 Русский: таджикский [tadjiksky]
 🇹🇷 Türkçe: Tacik
 🇦🇿 Türkcə: tacik
@@ -20979,7 +20979,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ukrayina":
         bot.send_message(message.chat.id, '''🇺🇦 Ukrayina
 
-🇬🇧 English: Ukraine
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Ukraine
 🇷🇺 Русский: Украина [Ukraina]
 🇹🇷 Türkçe: Ukrayna, Kazak vilayeti (قزاق ولایتی) {arch.}
 🇦🇿 Türkcə: Ukrayna
@@ -21021,7 +21021,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "укр" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ukrain" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ukraynalı":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Ukrainian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Ukrainian
 🇷🇺 Русский: украинский [ukrainsky]
 🇹🇷 Türkçe: Ukraynalı
 🇦🇿 Türkcə: ukraynalı
@@ -21076,7 +21076,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "таврида" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "таврика" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "крим":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Crimea, Crimean
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Crimea, Crimean
 🇷🇺 Русский: Крым [Krym], крымский
 🇹🇷 Türkçe: Kırım
 🇦🇿 Türkcə: Qırım (Krım)
@@ -21126,7 +21126,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "be dying" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мри":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): öl
-🇬🇧 English: die!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: die!
 🇷🇺 Русский: умри! умирай!
 🇹🇷 Türkçe: öl
 🇦🇿 Türkcə: öl
@@ -21171,7 +21171,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гребешек" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peineta":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): tarğaq
-🇬🇧 English: comb
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: comb
 🇷🇺 Русский: расчёска, гребень; обойма
 🇹🇷 Türkçe: tarak
 🇦🇿 Türkcə: daraq
@@ -21213,7 +21213,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⚔️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "svord":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qılıç
-🇬🇧 English: sword 🗡 ⚔️
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sword 🗡 ⚔️
 🇷🇺 Русский: меч
 🇹🇷 Türkçe: kılıç
 🇦🇿 Türkcə: qılınc, kılış {dial.}
@@ -21253,7 +21253,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чурек" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хлебный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): äpmäk (etmäk, ötmäk, ekmäk), çöräk
-🇬🇧 English:	bread 🍞
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bread 🍞
 🇷🇺 Русский:	хлеб [khleb]
 🇹🇷 Türkçe: ekmek
 🇦🇿 Türkcə: çörək, əppək {dial.}
@@ -21299,7 +21299,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пожалуйсте" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прошу" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pls":
-        bot.send_message(message.chat.id, '''🇬🇧 English: please
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: please
 🇷🇺 Русский: пожалуйста {просьба} [pojaluysta]
 🇹🇷 Türkçe: lütfen, zahmet olmazsa
 🇦🇿 Türkcə: lütfən, nə olar [n'olar], - da, xahiş edirəm, zəhmət olmasa
@@ -21339,7 +21339,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trafik kazası" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "traffik kazası" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yol kazası":
-        bot.send_message(message.chat.id, '''🇬🇧 English: accident (ex. traffic accident)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: accident (ex. traffic accident)
 🇷🇺 Русский: авария [avariya]
 🇹🇷 Türkçe: kaza
 🇦🇿 Türkcə: qəza
@@ -21381,7 +21381,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👺" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🤿" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "масочный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: mask 😷🎭👺🤿
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mask 😷🎭👺🤿
 🇷🇺 Русский: маска [maska]
 🇹🇷 Türkçe: maske, yüzlük
 🇦🇿 Türkcə: yaşmaq, üzlük
@@ -21429,7 +21429,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "smooth" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "smoothly":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): tüz
-🇬🇧 English: flat(ly), smooth
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: flat(ly), smooth
 🇷🇺 Русский: прямой, ровный
 🇹🇷 Türkçe: düz
 🇦🇿 Türkcə: düz
@@ -21484,7 +21484,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nearby":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖𐰍𐰸
 🐺 Old Turkic (bef. XV c.): yaqın, yağuq (yawuq), yağru
-🇬🇧 English: near, close {adj.}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: near, close {adj.}
 🇷🇺 Русский: близкий
 🇹🇷 Türkçe: yakın
 🇦🇿 Türkcə: yaxın
@@ -21530,7 +21530,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оттоманская" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "османское" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оттоманское":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. Osman (Uthman, Othman) II. Ottoman
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. Osman (Uthman, Othman) II. Ottoman
 🇷🇺 Русский: I. Осман (Усман) II. Осман (Оттоман)
 🇹🇷 Türkçe: Osman
 🇦🇿 Türkcə: Osman
@@ -21570,7 +21570,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦋" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kebelek":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kepäli
-🇬🇧 English: butterfly 🦋
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: butterfly 🦋
 🇷🇺 Русский: бабочка, мотылек
 🇹🇷 Türkçe: kelebek
 🇦🇿 Türkcə: kəpənək
@@ -21622,7 +21622,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грибной" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грибница" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грибы":
-        bot.send_message(message.chat.id, '''🇬🇧 English: mushroom 🍄
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mushroom 🍄
 🇷🇺 Русский: гриб
 🇭🇺 Magyar: gomba
 🇹🇷 Türkçe: mantar, göbelek {dial.}
@@ -21669,7 +21669,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аптечный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aptek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eczahane":
-        bot.send_message(message.chat.id, '''🇬🇧 English: pharmacy (community pharmacy), drugstore, chemist's
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pharmacy (community pharmacy), drugstore, chemist's
 🇷🇺 Русский: аптека [apteka]
 🇹🇷 Türkçe: eczane (eczahane)
 🇦🇿 Türkcə: aptek, əczəxana {arch.}, dərmanxana {arch.}, davaxana {dial.}, dərmangah {dial.}
@@ -21709,7 +21709,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "разговение" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "разговенье" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ифтар":
-        bot.send_message(message.chat.id, '''🇬🇧 English: iftar, breaking fast
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: iftar, breaking fast
 🇷🇺 Русский: разговение, ифтар
 🇹🇷 Türkçe: iftar
 🇦🇿 Türkcə: iftar, ağızaçma
@@ -21753,7 +21753,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грязевое" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ил":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): balçıq, titik (titig)
-🇬🇧 English: mud
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mud
 🇷🇺 Русский: жидкая грязь, грязевой, грязь; слякоть; ил, глина
 🇹🇷 Türkçe: balçık, çamur
 🇦🇿 Türkcə: palçıq
@@ -21802,7 +21802,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "географический" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "географическая" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "географическая":
-        bot.send_message(message.chat.id, '''🇬🇧 English: geography
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: geography
 🇷🇺 Русский: география [geografiya]
 🇹🇷 Türkçe: coğrafya, yerçizim {purism, non-official}
 🇦🇿 Türkcə: coğrafiya
@@ -21842,7 +21842,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "phisics" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "физический" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "физическое":
-        bot.send_message(message.chat.id, '''🇬🇧 English: physics
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: physics
 🇷🇺 Русский:	физика [fizika]
 🇹🇷 Türkçe: fizik, Hikmet-i Tabiyye {arch.}
 🇦🇿 Türkcə: fizika, hikməti-təbiiyyə {arch.}
@@ -21921,7 +21921,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🤽" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🤽‍♀️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "physical culture":
-        bot.send_message(message.chat.id, '''🇬🇧 English: sport, physical education
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sport, physical education
 🇷🇺 Русский: спорт, физкультура (физическая культура)
 🇹🇷 Türkçe: spor, beden eğitimi
 🇦🇿 Türkcə: idman, bədən tərbiyəsi
@@ -21970,7 +21970,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "песчаное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "песчанные":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qum, qayır
-🇬🇧 English: sand
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sand
 🇷🇺 Русский: песок
 🇭🇺 Magyar: homok
 🇹🇷 Türkçe: kum
@@ -22014,7 +22014,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "merkuri" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "меркурий":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): Suw Yulduz
-🇬🇧 English: Mercury
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Mercury
 🇷🇺 Русский: Меркурий [Merkuriy]
 🇹🇷 Türkçe: Merkür, Yazıcı Yıldız {arch.}
 🇦🇿 Türkcə: Merkuri, Müştəri
@@ -22053,7 +22053,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "венера" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çulpan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çolpan":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Venus
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Venus
 🇷🇺 Русский: Венера [Venera]
 🇹🇷 Türkçe: Venüs, Zühre, Çolpan, Çoban
 🇦🇿 Türkcə: Venera, Zöhrə, Karvanqıran
@@ -22093,7 +22093,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "merrih" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "redplanet":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): Baqırsuqum, Kürüd
-🇬🇧 English: Mars, Red Planet
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Mars, Red Planet
 🇷🇺 Русский: Марс [Mars]
 🇹🇷 Türkçe: Mars, Merih
 🇦🇿 Türkcə: Mars, Mərrix
@@ -22152,7 +22152,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khan headquarter" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "general headquarters":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): ordu
-🇬🇧 English: horde, army, General Headquarters
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: horde, army, General Headquarters
 🇷🇺 Русский: орда [orda], армия, войско, ставка хана
 🇹🇷 Türkçe: ordu
 🇦🇿 Türkcə: ordu
@@ -22195,7 +22195,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "юпитерский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jewpiter":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): Oŋay (Oŋğay), Qaraquş, Ormızt
-🇬🇧 English: Jupiter ♃
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Jupiter ♃
 🇷🇺 Русский: Юпитер
 🇹🇷 Türkçe: Jüpiter, Erendiz {arch.}, Hürmüz {arch.}, Müşteri {arch.}
 🇦🇿 Türkcə: Yupiter, Müştəri {arch.}
@@ -22250,7 +22250,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "diospyros" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "phoenix dactylifera" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "datte":
-        bot.send_message(message.chat.id, '''🇬🇧 English: date fruit, date, date palm, palm date, date palm fruit, persimmon, date-plum, caucasian persimmon, lilac persimmon
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: date fruit, date, date palm, palm date, date palm fruit, persimmon, date-plum, caucasian persimmon, lilac persimmon
 🇷🇺 Русский: I. финик II. хурма
 🇹🇷 Türkçe: hurma
 🇦🇿 Türkcə: xurma, xirnik {II. dial.}
@@ -22292,7 +22292,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🪐" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sekendiz":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): Säkändiz (Säkäntir), Kiwan (Keyvan)
-🇬🇧 English: Saturn ♄ 🪐
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Saturn ♄ 🪐
 🇷🇺 Русский: Сатурн [Saturn]
 🇹🇷 Türkçe: Satürn, Zühal, Sekendiz {purism, non-official}
 🇦🇿 Türkcə: Saturn, Zühəl, Səkəndiz {purism, non-official}
@@ -22330,7 +22330,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uran" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "уран" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⛢":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Uranus ⛢
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Uranus ⛢
 🇷🇺 Русский: Уран [Uran]
 🇹🇷 Türkçe: Uranüs
 🇦🇿 Türkcə: Uran
@@ -22367,7 +22367,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "neptun" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "neptün" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "♆":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Neptune ♆
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Neptune ♆
 🇷🇺 Русский: Нептун [Neptun]
 🇹🇷 Türkçe: Neptün
 🇦🇿 Türkcə: Neptun
@@ -22409,7 +22409,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "plüton" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "плутон" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "plütön":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Pluto (134340 Pluto) ♇
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Pluto (134340 Pluto) ♇
 🇷🇺 Русский: Плутон [Pluton]
 🇹🇷 Türkçe: Plüton
 🇦🇿 Türkcə: Pluton
@@ -22456,7 +22456,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐄" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sığır":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): iŋäk, sığır, ud (uð)
-🇬🇧 English: cow 🐮🐄
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cow 🐮🐄
 🇷🇺 Русский: корова [korova]
 🇹🇷 Türkçe: sığır, inek
 🇦🇿 Türkcə: inək, sığır {dial.}
@@ -22498,7 +22498,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "верблюдица" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "верблюжий":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): devä (tevä)
-🇬🇧 English: camel 🐪🐫
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: camel 🐪🐫
 🇷🇺 Русский: верблюд
 🇭🇺 Magyar: teve
 🇲🇳 Mongol: temee
@@ -22542,7 +22542,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🕷" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "паучий":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): örümcäk
-🇬🇧 English: spider 🕷
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: spider 🕷
 🇷🇺 Русский: паук
 🇹🇷 Türkçe: örümcek
 🇦🇿 Türkcə: hörümçək
@@ -22583,7 +22583,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хомячий" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cricetinae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mesocricetus auratus":
-        bot.send_message(message.chat.id, '''🇬🇧 English: hamster 🐹
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hamster 🐹
 🇷🇺 Русский: хомяк [khomyak]
 🇹🇷 Türkçe: hamster
 🇦🇿 Türkcə: dağsiçanı
@@ -22632,7 +22632,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pedestrian bridge" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pedestrian overpass":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): köprük
-🇬🇧 English: bridge 🌉
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bridge 🌉
 🇷🇺 Русский: мост [most]
 🇹🇷 Türkçe: köprü
 🇦🇿 Türkcə: körpü
@@ -22678,7 +22678,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "red fox":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱅𐰃𐰠𐰚𐰇
 🐺 Old Turkic (bef. XV c.): tilkü (tülkü, tilki, tülki)
-🇬🇧 English: fox 🦊
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fox 🦊
 🇷🇺 Русский: лис, лиса, лисица
 🇹🇷 Türkçe: tilki
 🇦🇿 Türkcə: tülkü
@@ -22720,7 +22720,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "panda bear" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бамбуковый медведь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dev panda":
-        bot.send_message(message.chat.id, '''🇬🇧 English: panda 🐼
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: panda 🐼
 🇷🇺 Русский: панда
 🇹🇷 Türkçe: panda
 🇦🇿 Türkcə: panda
@@ -22759,7 +22759,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "phascolarctos cinereus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медведь коала" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaola":
-        bot.send_message(message.chat.id, '''🇬🇧 English: koala 🐨
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: koala 🐨
 🇷🇺 Русский: коала
 🇹🇷 Türkçe: koala
 🇦🇿 Türkcə: koala
@@ -22799,7 +22799,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pinguin" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spheniscidae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sphenisciforme":
-        bot.send_message(message.chat.id, '''🇬🇧 English: penguin 🐧
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: penguin 🐧
 🇷🇺 Русский:	пингвин [pingvin]
 🇹🇷 Türkçe: penguen
 🇦🇿 Türkcə: pinqvin
@@ -22850,7 +22850,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karakurbağa" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara kurbağa":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qurbaqa, baqa (bağa)
-🇬🇧 English: frog 🐸 toad
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: frog 🐸 toad
 🇷🇺 Русский: лягушка, жаба [zhaba]
 🇭🇺 Magyar: béka
 🇲🇳 Mongol: bakha (bakh)
@@ -22907,7 +22907,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыпа" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чика" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "civ-civ":
-        bot.send_message(message.chat.id, '''🇬🇧 English: chick 🐤
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: chick 🐤
 🇷🇺 Русский:	цыпленок
 🇹🇷 Türkçe: civciv
 🇦🇿 Türkcə: cücə
@@ -22954,7 +22954,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "один рог" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "единороговый":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kelän keyik, qıat (qat, qiat)
-🇬🇧 English: unicorn 🦄
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: unicorn 🦄
 🇷🇺 Русский: единорог [yedinorog]
 🇹🇷 Türkçe: tekboynuz
 🇦🇿 Türkcə: təkbuynuz
@@ -22997,7 +22997,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "утиное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "утиные":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): ördäk (ödiräk)
-🇬🇧 English: duck 🦆
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: duck 🦆
 🇷🇺 Русский: утка
 🇹🇷 Türkçe: ördek
 🇦🇿 Türkcə: ördək
@@ -23048,7 +23048,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "berkut" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bürküt":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qara quş
-🇬🇧 English: eagle 🦅
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: eagle 🦅
 🇷🇺 Русский: орёл, беркут
 🇲🇳 Mongol: bürged
 🇹🇷 Türkçe: kartal
@@ -23098,7 +23098,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "water fall" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "waterflow" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "водоспад":
-        bot.send_message(message.chat.id, '''🇬🇧 English: waterfall
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: waterfall
 🇷🇺 Русский: водопад
 🇹🇷 Türkçe: şelale, çağlayan, çavlan
 🇦🇿 Türkcə: şəlalə, şarşar (şırşır, çırçır, curcur) {dial.}
@@ -23146,7 +23146,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "corsair" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "морской разбойник" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "korsar":
-        bot.send_message(message.chat.id, '''🇬🇧 English: pirate 🏴‍☠️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pirate 🏴‍☠️
 🇷🇺 Русский: пират [pirat]
 🇹🇷 Türkçe: korsan
 🇦🇿 Türkcə: dəniz qulduru
@@ -23215,10 +23215,10 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "earthworm" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wriggler" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kurdçuk":
-        bot.send_message(message.chat.id, '''🇬🇧 In the Turkic languages, worms, caterpillars, larvae, maggots, and other similar creatures are denoted by one word, although for each of them there is a term (soxulcan, tırtıl, kəpənək qurdu etc)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 In the Turkic languages, worms, caterpillars, larvae, maggots, and other similar creatures are denoted by one word, although for each of them there is a term (soxulcan, tırtıl, kəpənək qurdu etc)
 🇷🇺 В тюркских языках черви, гусеницы, личинки, опарыши, глисты и другие подобные существа обозначаются одним словом, хоть и для каждого из есть отдельный термин или словосочетание (soxulcan, tırtıl, kəpənək qurdu и т.д.)
 
-🇬🇧 English: сaterpillar 🐛 worm 🪱 larva, maggot, grub, worm-like insect
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: сaterpillar 🐛 worm 🪱 larva, maggot, grub, worm-like insect
 🇷🇺 Русский: гусеница, червь, личинка, опарыш
 🇹🇷 Türkçe: kurt
 🇦🇿 Türkcə: qurd
@@ -23269,7 +23269,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eaudecologne" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колонье" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eau-de-cologne":
-        bot.send_message(message.chat.id, '''🇬🇧 English: cologne
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cologne
 🇷🇺 Русский: одеколон [odekolon]
 🇹🇷 Türkçe: kolonya
 🇦🇿 Türkcə: odekolon, kolonya
@@ -23319,7 +23319,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "комариное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "комариные":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kimünçä (kümiçä), öyäz, siŋäk
-🇬🇧 English: mosquito 🦟
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mosquito 🦟
 🇷🇺 Русский: комар [komar]
 🇹🇷 Türkçe: sivrisinek
 🇦🇿 Türkcə: mığı (mığmığ), ağcaqanad
@@ -23363,7 +23363,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "coleoptera" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kın kanatlı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beettle":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bug, beetle 🐞
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bug, beetle 🐞
 🇷🇺 Русский: жук
 🇹🇷 Türkçe: böcek {ayrıca bakınız: haşere/haşerat}
 🇦🇿 Türkcə: böcək, cücü
@@ -23414,7 +23414,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ectognatha" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "böcekler":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qurt-qoŋuz
-🇬🇧 English: insect
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: insect
 🇷🇺 Русский: насекомое
 🇹🇷 Türkçe: haşere, böcek
 🇦🇿 Türkcə: həşərat, qurd-qıc (qurd-quş)
@@ -23465,7 +23465,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грабительница" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грабительский":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qaraqçı
-🇬🇧 English: bandit, brigand, robber
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bandit, brigand, robber
 🇷🇺 Русский: разбойник, бандит, грабитель
 🇹🇷 Türkçe: soyguncu, haydut, eşkıya
 🇦🇿 Türkcə: soyğunçu, quldur, talançı, yolkəsən, çapqınçı
@@ -23523,7 +23523,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кузнечиксен" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кузнечиковый":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): çekürgä, sarıçğa
-🇬🇧 English: grasshopper, locust, cricket 🦗
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: grasshopper, locust, cricket 🦗
 🇷🇺 Русский: кузнечик, сверчок, саранча
 🇹🇷 Türkçe: çekirge
 🇦🇿 Türkcə: çəyirtkə
@@ -23571,7 +23571,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dinözor" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dynosaur" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dynozaur":
-        bot.send_message(message.chat.id, '''🇬🇧 English: dinosaur 🦕🦖
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dinosaur 🦕🦖
 🇷🇺 Русский: динозавр [dinozavr]
 🇹🇷 Türkçe: dinozor
 🇦🇿 Türkcə: dinozavr
@@ -23620,7 +23620,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черепаший" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черепаховый":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): müŋüzbaqa
-🇬🇧 English: turtle 🐢 tortoise
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: turtle 🐢 tortoise
 🇷🇺 Русский: черепаха
 🇹🇷 Türkçe: kaplumbağa, tosbağa
 🇦🇿 Türkcə: tısbağa ['t͡sɯsbɑɣɑ']
@@ -23664,7 +23664,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kerten kele" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lisard":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): käslinçü
-🇬🇧 English: lizard 🦎
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: lizard 🦎
 🇷🇺 Русский: ящерица
 🇹🇷 Türkçe: kertenkele
 🇦🇿 Türkcə: kərtənkələ, daşkələz {dial.}
@@ -23721,7 +23721,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "poulpe" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "восемь ног" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oktapod":
-        bot.send_message(message.chat.id, '''🇬🇧 English: octopus 🐙
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: octopus 🐙
 🇷🇺 Русский: осьминог
 🇹🇷 Türkçe: ahtapot, sekizayak
 🇦🇿 Türkcə: səkkizayaq
@@ -23763,7 +23763,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "calmar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "squide" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "calamari":
-        bot.send_message(message.chat.id, '''🇬🇧 English: squid 🦑
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: squid 🦑
 🇷🇺 Русский: кальмар [kalmar]
 🇹🇷 Türkçe: kalamar, mürekkep balığı {+ cuttlefish}, bülbüliye {arch.}
 🇦🇿 Türkcə: kalmar, qalamar {arch.}
@@ -23804,7 +23804,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caridea" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crangon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crangon crangon":
-        bot.send_message(message.chat.id, '''🇬🇧 English: shrimp 🦐 prawn 🍤
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: shrimp 🦐 prawn 🍤
 🇷🇺 Русский: креветка [krevetka]
 🇹🇷 Türkçe: karides, teke {arch.}
 🇦🇿 Türkcə: krevet
@@ -23881,7 +23881,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crustacean" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crabs":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yeŋäç
-🇬🇧 English: I. crayfish 🦞 II. crab 🦀 
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. crayfish 🦞 II. crab 🦀 
 🇷🇺 Русский: I. рак II. краб
 🇹🇷 Türkçe: I. kerevit II. yengeç
 🇦🇿 Türkcə: I. xərçəng II. yengəc
@@ -23934,7 +23934,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oceanic dolphin" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "delphinidae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dophlin":
-        bot.send_message(message.chat.id, '''🇬🇧 English: dolphin 🐬
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dolphin 🐬
 🇷🇺 Русский: дельфин [delfin]
 🇹🇷 Türkçe: yunus
 🇦🇿 Türkcə: delfin, yunisbalığı, dərya donuzu {arch.}
@@ -23979,7 +23979,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "balaenóptera músculus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "balaenoptera musculus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "balaenoptera":
-        bot.send_message(message.chat.id, '''🇬🇧 English: whale 🐳🐋
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: whale 🐳🐋
 🇷🇺 Русский: кит [kit]
 🇹🇷 Türkçe: balina, ada balığı {arch.}, kadırğa balığı {arch.}
 🇦🇿 Türkcə: balina, nəhəng {arch.}
@@ -24024,7 +24024,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hákall" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "акулий" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hakall":
-        bot.send_message(message.chat.id, '''🇬🇧 English: shark 🦈
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: shark 🦈
 🇷🇺 Русский: акула [akula]
 🇹🇷 Türkçe: köpek balığı
 🇦🇿 Türkcə: köpəkbalığı
@@ -24070,7 +24070,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "elefant" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "слоновый":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yağan (yaŋan, yaŋa)
-🇬🇧 English: elephant 🐘
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: elephant 🐘
 🇷🇺 Русский: слон [slon]
 🇹🇷 Türkçe: fil
 🇦🇿 Türkcə: fil
@@ -24107,7 +24107,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зебра" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hippotigris" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "zebro":
-        bot.send_message(message.chat.id, '''🇬🇧 English: zebra 🦓
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: zebra 🦓
 🇷🇺 Русский: зебра [zebra]
 🇹🇷 Türkçe: zebra, yaban eşeği {arch.}
 🇦🇿 Türkcə: zebr (zebra), xərkürə {arch.}
@@ -24149,7 +24149,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gorillas" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gorillina" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "горила":
-        bot.send_message(message.chat.id, '''🇬🇧 English: gorilla 🦍
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: gorilla 🦍
 🇷🇺 Русский: горилла [gorilla]
 🇹🇷 Türkçe: goril
 🇦🇿 Türkcə: qorilla, qul {arch.}, qulyabani {arch.}
@@ -24192,7 +24192,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "орангутанг" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orang-utang" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orangoutang":
-        bot.send_message(message.chat.id, '''🇬🇧 English: orangutan 🦧
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: orangutan 🦧
 🇷🇺 Русский: орангутан [orangutan]
 🇹🇷 Türkçe: orangutan
 🇦🇿 Türkcə: nəsnas
@@ -24237,7 +24237,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "laminoid" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lamina" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lamini":
-        bot.send_message(message.chat.id, '''🇬🇧 English: llama, lama 🦙
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: llama, lama 🦙
 🇷🇺 Русский: лама [lama]
 🇹🇷 Türkçe: lama
 🇦🇿 Türkcə: lama
@@ -24294,7 +24294,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mübarak" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mubarakah" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mubaraka":
-        bot.send_message(message.chat.id, '''🇬🇧 English: happy holiday
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: happy holiday
 🇷🇺 Русский: с праздником, поздравляю с праздником, счасливого праздника
 🇹🇷 Türkçe: kutlu olsun, mübarek
 🇦🇿 Türkcə: mübarək, qutlu olsun
@@ -24334,7 +24334,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "let it to be" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "let it" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "let to be":
-        bot.send_message(message.chat.id, '''🇬🇧 English: so be it
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: so be it
 🇷🇺 Русский:	пусть (пусть будет)
 🇹🇷 Türkçe: olsun
 🇦🇿 Türkcə: olsun
@@ -24382,7 +24382,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "behemoth" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "riverhorse":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): suw sığırı
-🇬🇧 English: hippopotamus 🦛
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hippopotamus 🦛
 🇷🇺 Русский: бегемот [begemot]
 🇹🇷 Türkçe: su aygırı
 🇦🇿 Türkcə: su atı, begemot (begemont)
@@ -24436,7 +24436,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ostracism" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "deportasyon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "департация":
-        bot.send_message(message.chat.id, '''🇬🇧 English: deportation, exile, eviction
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: deportation, exile, eviction
 🇷🇺 Русский: депортация, изгнание, ссылка
 🇹🇷 Türkçe: sürgün, zorunlu göç
 🇦🇿 Türkcə: sürgün
@@ -24482,7 +24482,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kangur" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кенгуровый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "macropod":
-        bot.send_message(message.chat.id, '''🇬🇧 English: kangaroo 🦘
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: kangaroo 🦘
 🇷🇺 Русский:	кенгуру [kenguru]
 🇹🇷 Türkçe: kanguru
 🇦🇿 Türkcə: kenquru, kenğur {arch.}
@@ -24527,7 +24527,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "giraffidae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "girafe" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гираф":
-        bot.send_message(message.chat.id, '''🇬🇧 English: giraffe 🦒
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: giraffe 🦒
 🇷🇺 Русский: жираф [zhiraf]
 🇹🇷 Türkçe: zürafa
 🇦🇿 Türkcə: zürafə
@@ -24569,7 +24569,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rhino" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kergedan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "носороговый":
-        bot.send_message(message.chat.id, '''🇬🇧 English: rhinoceros 🦏
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: rhinoceros 🦏
 🇷🇺 Русский: носорог {nose + horn}
 🇹🇷 Türkçe: gergedan
 🇦🇿 Türkcə: kərgədan (gərgədan)
@@ -24615,7 +24615,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "phoenicopter" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flamin go":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): aŋıt
-🇬🇧 English: flamingo 🦩
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: flamingo 🦩
 🇷🇺 Русский: фламинго [flamingo]
 🇹🇷 Türkçe: flamingo, flaman kuşu
 🇦🇿 Türkcə: qızılqaz
@@ -24673,7 +24673,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "буйволица" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зубр" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бизоновый":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bison, buffalo 🐃
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bison, buffalo 🐃
 🇷🇺 Русский:	буйвол, бизон
 🇹🇷 Türkçe: manda, camız, kömüş, dombay, su sığırı
 🇦🇿 Türkcə: camış, gomuş, kəl ♂
@@ -24726,7 +24726,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "öküz":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c):𐰉𐰆𐰴𐰀 ,𐰇𐰚𐰔
 🐺 Old Turkic (bef. XV c.): öküz, buqa
-🇬🇧 English: bull, ox 🐂
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bull, ox 🐂
 🇷🇺 Русский: бык, телец
 🇭🇺 Magyar: ökör, bika
 🇹🇷 Türkçe: öküz, boğa
@@ -24771,7 +24771,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "козье" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "козий":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): keçi (eçkü), tekä
-🇬🇧 English: goat 🐐
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: goat 🐐
 🇷🇺 Русский: коза [koza], козёл [kozyol]
 🇭🇺 Magyar: kecske
 🇹🇷 Türkçe: keçi, teke
@@ -24814,7 +24814,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aurupa" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "европейский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "european":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Europe
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Europe
 🇷🇺 Русский: Европа [Yevropa]
 🇹🇷 Türkçe: Avrupa
 🇦🇿 Türkcə: Avropa, Ovropa {arch.}
@@ -24852,7 +24852,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "азиатский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "asian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "asiya":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Asia
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Asia
 🇷🇺 Русский: Азия [Aziya]
 🇹🇷 Türkçe: Asya
 🇦🇿 Türkcə: Asiya
@@ -24894,7 +24894,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "европа-азия" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "europe-asia" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "europa-asia":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Eurasia
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Eurasia
 🇷🇺 Русский:	Евразия [Yevrziya]
 🇹🇷 Türkçe: Avrasya
 🇦🇿 Türkcə: Avrasiya
@@ -24932,7 +24932,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "африка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "африканский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "африканское":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Africa
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Africa
 🇷🇺 Русский: Африка [Afrika]
 🇹🇷 Türkçe: Afrika
 🇦🇿 Türkcə: Afrika, Afriqa {arch.}
@@ -24976,7 +24976,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cervidae":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): (𐰚𐰘𐰚) 𐰚𐰃𐰘𐰃𐰚
 🐺 Old Turkic (bef. XV c.):	keyik, buğu, suğun
-🇬🇧 English: deer 🦌
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: deer 🦌
 🇷🇺 Русский: олень
 🇹🇷 Türkçe: geyik
 🇦🇿 Türkcə: maral
@@ -25022,7 +25022,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "female deer" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cervus elaphus":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): sığun-kiyik
-🇬🇧 English: red deer; deer female, doe
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: red deer; deer female, doe
 🇷🇺 Русский: благородный олень, марал; самка оленя
 🇲🇳 Mongol: maral
 🇹🇷 Türkçe: kızıl geyik; dişi geyik
@@ -25073,7 +25073,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "петушиный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "петуч":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): erkäk taqağu
-🇬🇧 English: cock, rooster 🐔🐓
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cock, rooster 🐔🐓
 🇷🇺 Русский: петух [petukh]
 🇹🇷 Türkçe: horoz
 🇦🇿 Türkcə: xoruz
@@ -25125,7 +25125,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hindi baba" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baba hindi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hindi horozu":
-        bot.send_message(message.chat.id, '''🇬🇧 English: turkey 🦃
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: turkey 🦃
 🇷🇺 Русский: индейка [indeyka]
 🇹🇷 Türkçe: hindi kuşu
 🇦🇿 Türkcə: hind quşu
@@ -25170,7 +25170,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голубьиный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голубка":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kögürçün (kökürçkün, kögürçkän)
-🇬🇧 English: dove 🕊
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dove 🕊
 🇷🇺 Русский: голубь [golub']
 🇹🇷 Türkçe: güvercin
 🇦🇿 Türkcə: göyərçin
@@ -25216,7 +25216,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "brock" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "борсук":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): borsuq
-🇬🇧 English:	badger 🦡
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	badger 🦡
 🇷🇺 Русский:	барсук [barsuk]
 🇭🇺 Magyar: borz
 🇹🇷 Türkçe: porsuk
@@ -25260,7 +25260,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "coon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "енотовый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "racoon":
-        bot.send_message(message.chat.id, '''🇬🇧 English: raccoon 🦝
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: raccoon 🦝
 🇷🇺 Русский:	енот [yenot]
 🇹🇷 Türkçe: rakun
 🇦🇿 Türkcə: xəz
@@ -25301,7 +25301,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pephitidae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mephitidae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mephitis":
-        bot.send_message(message.chat.id, '''🇬🇧 English: skunk 🦨
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: skunk 🦨
 🇷🇺 Русский: скунс [skuns]
 🇹🇷 Türkçe: kokarca
 🇦🇿 Türkcə: Amerika qoxarcası, iyverən porsuq
@@ -25344,7 +25344,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eutamias" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chippy" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бурундучий":
-        bot.send_message(message.chat.id, '''🇬🇧 English: chipmunk 🐿
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: chipmunk 🐿
 🇷🇺 Русский: бурундук [burunduk]
 🇹🇷 Türkçe: çizgili sincap, orman gelengisi
 🇦🇿 Türkcə: burunduq
@@ -25385,7 +25385,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rattus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "крысиный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "крыска":
-        bot.send_message(message.chat.id, '''🇬🇧 English: rat 🐀
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: rat 🐀
 🇷🇺 Русский: крыса
 🇹🇷 Türkçe: keme, sıçan {+ mouse}
 🇦🇿 Türkcə: siçovul (sıçovul)
@@ -25430,7 +25430,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пресмыкающеяся" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "reptelia" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "reptilian":
-        bot.send_message(message.chat.id, '''🇬🇧 English: reptile 🐍🦎🐢🐊🐸
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: reptile 🐍🦎🐢🐊🐸
 🇷🇺 Русский:	рептилия, пресмыкающееся
 🇹🇷 Türkçe: sürüngen
 🇦🇿 Türkcə: sürünən
@@ -25473,7 +25473,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "monies" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "moneys":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): aqça, yarmaq
-🇬🇧 English:	money
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	money
 🇷🇺 Русский:	деньги
 🇹🇷 Türkçe: para, akçe
 🇦🇿 Türkcə: pul, axça (ağca)
@@ -25544,7 +25544,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mönkh":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰋𐰭𐰏𐰇 (𐰋𐰭𐰇 , 𐰋𐰭𐰚𐰇 , 𐰢𐰭𐰚𐰇) 
 🐺 Old Turkic (bef. XV c.):	meŋgü (beŋgü, beŋkü, beŋü, beŋi)
-🇬🇧 English: eternal
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: eternal
 🇷🇺 Русский: вечный
 🇲🇳 Mongol: mönkh
 🇹🇷 Türkçe: bengi
@@ -25597,7 +25597,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "para cüzdanı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cüzdan":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yançıq
-🇬🇧 English:	wallet
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	wallet
 🇷🇺 Русский: кошелёк, бумажник
 🇹🇷 Türkçe: para cüzdanı
 🇦🇿 Türkcə: pulqabı, cüzdan, pul kisəsi, qabcıq
@@ -25651,7 +25651,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''See also: walnut
 См. также: грецкий орех
 
-🇬🇧 English: hazelnut 🌰
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hazelnut 🌰
 🇷🇺 Русский: фундук [funduk], лесной орех
 🇹🇷 Türkçe: fındık
 🇦🇿 Türkcə: fındıq
@@ -25698,7 +25698,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mustelidae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mustelinae":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): sarsal, savsar
-🇬🇧 English: marten
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: marten
 🇷🇺 Русский: куница
 🇲🇳 Mongol: suusar
 🇹🇷 Türkçe: sansar
@@ -25745,7 +25745,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lutra vulgaris":
         bot.send_message(message.chat.id, '''See also "beaver". См. также "бобр". Ayrıca bknz "kunduz"
 
-🇬🇧 English: otter 🦦
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: otter 🦦
 🇷🇺 Русский:	выдра
 🇹🇷 Türkçe: su samuru
 🇦🇿 Türkcə: su samuru (susamuru), çay samuru
@@ -25790,7 +25790,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''See also "otter". См. также "выдра". Ayrıca bknz "su samuru"
 
 🐺 Old Turkic (bef. XV c.):	qunduz
-🇬🇧 English:	beaver
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	beaver
 🇷🇺 Русский:	бобр
 🇹🇷 Türkçe:	kunduz
 🇦🇿 Türkcə:	qunduz
@@ -25834,7 +25834,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "martes zibellina" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marteszibellina":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kiş
-🇬🇧 English:	sable
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	sable
 🇷🇺 Русский:	соболь
 🇹🇷 Türkçe: samur
 🇦🇿 Türkcə: samur
@@ -25891,7 +25891,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поросячий" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "свиной":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): toŋuz, lağzın
-🇬🇧 English:	pig 🐷🐖
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pig 🐷🐖
 🇷🇺 Русский:	свинья
 🇹🇷 Türkçe: domuz
 🇦🇿 Türkcə: donuz, çoşqa
@@ -25941,7 +25941,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "польский кабан" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çöl domuzu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yabandomuzu":
-        bot.send_message(message.chat.id, '''🇬🇧 English: boar 🐗
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: boar 🐗
 🇷🇺 Русский: вепрь, кабан [kaban]
 🇹🇷 Türkçe: yaban domuzu
 🇦🇿 Türkcə: qaban, çöldonuzu
@@ -25992,7 +25992,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tenbel" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tenbel hayvan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "slothful":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. lazy II. sloth 🦥
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. lazy II. sloth 🦥
 🇷🇺 Русский:	ленивый, ленивец
 🇹🇷 Türkçe: I. tembel, erincek II. tembel hayvan
 🇦🇿 Türkcə: ərincək
@@ -26038,7 +26038,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hedge hog" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "urchin":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kirpi
-🇬🇧 English: hedgehog 🦔
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hedgehog 🦔
 🇷🇺 Русский: ёж [yozh]
 🇹🇷 Türkçe: kirpi
 🇦🇿 Türkcə: kirpi
@@ -26090,7 +26090,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "struthio" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "devekuşu":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): täväquş
-🇬🇧 English:	ostrich, camel-bird
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	ostrich, camel-bird
 🇷🇺 Русский:	страус [straus]
 🇹🇷 Türkçe: deve kuşu
 🇦🇿 Türkcə: dəvəquşu
@@ -26142,7 +26142,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "keyf" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каеф" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "keyif":
-        bot.send_message(message.chat.id, '''🇬🇧 English: pleasure, delight, enjoyment, mood, well-being, kaif (keif, kef, kief, kiff)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pleasure, delight, enjoyment, mood, well-being, kaif (keif, kef, kief, kiff)
 🇷🇺 Русский:	кайф, удовольствие, услада, наслаждение, настроение, самочувствие, кейф
 🇹🇷 Türkçe: keyif
 🇦🇿 Türkcə: kef
@@ -26186,7 +26186,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "volkan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "volkanik dağ" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yanardağ":
-        bot.send_message(message.chat.id, '''🇬🇧 English: volcano 🌋
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: volcano 🌋
 🇷🇺 Русский: вулкан [vulkan]
 🇹🇷 Türkçe: yanardağ
 🇦🇿 Türkcə: yanardağ
@@ -26238,7 +26238,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tren" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поездовый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trahiner":
-        bot.send_message(message.chat.id, '''🇬🇧 English: train 🚄🚅🚆🚋
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: train 🚄🚅🚆🚋
 🇷🇺 Русский: поезд [poyezd]
 🇹🇷 Türkçe: tren
 🇦🇿 Türkcə: qatar
@@ -26291,7 +26291,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тюленевый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "deniz köpeği" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ayı balığı":
-        bot.send_message(message.chat.id, '''🇬🇧 English: seal
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: seal
 🇷🇺 Русский: тюлень
 🇹🇷 Türkçe: fok, denizköpeği, ayıbalığı
 🇦🇿 Türkcə: suiti
@@ -26336,7 +26336,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sea horse" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "morse" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "моржовые":
-        bot.send_message(message.chat.id, '''🇬🇧 English: walrus
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: walrus
 🇷🇺 Русский:	морж [morzh]
 🇹🇷 Türkçe: mors, deniz aygırı
 🇦🇿 Türkcə: su inəyi ♀, su öküzü ♂
@@ -26380,7 +26380,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "земляной заяц" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jumping mouse":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): alängir, quzan, käläkü
-🇬🇧 English: dipodid, jerboa
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dipodid, jerboa
 🇷🇺 Русский: тушканчик [tushkanchik]
 🇹🇷 Türkçe: araptavşanı, cırboğa
 🇦🇿 Türkcə: ərəbdovşanı
@@ -26425,7 +26425,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кротовый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кротовые":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kösürgä (kösürgän), qarağu sıçqan
-🇬🇧 English: mole
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mole
 🇷🇺 Русский: крот
 🇹🇷 Türkçe: köstebek
 🇦🇿 Türkcə: köstəbək
@@ -26467,7 +26467,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "acinonyx jubatus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "guipard" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "acinonyx":
-        bot.send_message(message.chat.id, '''🇬🇧 English: cheetah, guepard
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cheetah, guepard
 🇷🇺 Русский: гепард [gepard]
 🇹🇷 Türkçe: çita
 🇦🇿 Türkcə: hepard (gepard), ov pələngi
@@ -26513,7 +26513,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dziggetai" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kulan":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qulan
-🇬🇧 English: onager, hemione, Asiatic wild ass
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: onager, hemione, Asiatic wild ass
 🇷🇺 Русский: кулан, дикая лошадь, джигетай, онагр, дикий осёл
 🇲🇳 Mongol: khulan
 🇹🇷 Türkçe: kulan, Asya yaban eşeği
@@ -26556,7 +26556,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "адресс" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "аддрес" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adresse":
-        bot.send_message(message.chat.id, '''🇬🇧 English: address
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: address
 🇷🇺 Русский:	адрес [adres]
 🇹🇷 Türkçe: adres
 🇦🇿 Türkcə: ünvan
@@ -26597,7 +26597,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "флаговый":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱃𐰆𐰍
 🐺 Old Turkic (bef. XV c.): bayraq, tuğ
-🇬🇧 English: flag
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: flag
 🇷🇺 Русский: флаг [flag]
 🇲🇳 Mongol: tug
 🇹🇷 Türkçe: bayrak
@@ -26637,7 +26637,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rüzrgâr" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ветр":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yel
-🇬🇧 English: wind
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: wind
 🇷🇺 Русский: ветер
 🇭🇺 Magyar: szél
 🇹🇷 Türkçe: yel
@@ -26680,7 +26680,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "учетка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "user account" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "acc":
-        bot.send_message(message.chat.id, '''🇬🇧 English: user account
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: user account
 🇷🇺 Русский:	учётная запись
 🇹🇷 Türkçe: hesap
 🇦🇿 Türkcə: hesab
@@ -26727,7 +26727,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c):	𐰃𐰲
 🐺 Old Turkic (bef. XV c.): iç
-🇬🇧 English: drink!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: drink!
 🇷🇺 Русский: пей!
 🇭🇺 Magyar: iszik (idd!)
 🇹🇷 Türkçe: iç
@@ -26779,7 +26779,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alcoholic drink" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beverage":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): içkü (içgü), içiglik, içim, süçig
-🇬🇧 English: drink 🍹🥃🥂
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: drink 🍹🥃🥂
 🇷🇺 Русский: I. напиток II. выпивка, спиртное
 🇹🇷 Türkçe: I. içecek II. içki
 🇦🇿 Türkcə: içməli şey, içəcək {rarely}, içki {usually alcoholic drink}
@@ -26823,7 +26823,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥤" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "meyve su":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): suv, yüü, uxaq, çağır
-🇬🇧 English:	juice 🧃🥤
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	juice 🧃🥤
 🇷🇺 Русский: сок (фруктовый сок)
 🇹🇷 Türkçe: su (meyve suyu)
 🇦🇿 Türkcə: şirə, su
@@ -26865,7 +26865,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cactaceae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "opuntiaceae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "leuchtenbergiaceae":
-        bot.send_message(message.chat.id, '''🇬🇧 English: cactus 🌵
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cactus 🌵
 🇷🇺 Русский: кактус [kaktus]
 🇹🇷 Türkçe: kaktüs
 🇦🇿 Türkcə: maldili
@@ -26889,7 +26889,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "palmtree" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tree of palm" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пальмовый":
-        bot.send_message(message.chat.id, '''🇬🇧 English: palm 🌴
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: palm 🌴
 🇷🇺 Русский: пальма [palma]
 🇹🇷 Türkçe: palmiye ağacı
 🇦🇿 Türkcə: ağac (xurma ağacı, kokos ağacı), nəhl {arch.}
@@ -26918,7 +26918,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fideler" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filiz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fide":
-        bot.send_message(message.chat.id, '''🇬🇧 English: sprout, seedling 🌱
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sprout, seedling 🌱
 🇷🇺 Русский:	проросток, сеянец, саженец, рассада, росток
 🇹🇷 Türkçe: fide
 🇦🇿 Türkcə: şitil, tink
@@ -26986,7 +26986,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaba yonca" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şark yoncası":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yorunça (yorınça, yorunçqa, yorunçğa, yonçqa)
-🇬🇧 English:	clover ☘️🍀
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	clover ☘️🍀
 🇷🇺 Русский:	клевер
 🇹🇷 Türkçe: yonca
 🇦🇿 Türkcə: yonca
@@ -27043,7 +27043,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hayzuran" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hezaren" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бамбу":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bamboo 🎍
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bamboo 🎍
 🇷🇺 Русский:	бамбук [bambuk]
 🇹🇷 Türkçe: Hint kamışı
 🇦🇿 Türkcə: hind qamışı
@@ -27079,7 +27079,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кожица" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ağaç kabuğu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "луб":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bark, crust, peel, shell 🐚
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bark, crust, peel, shell 🐚
 🇷🇺 Русский: скорлупа, оболочка, кора, шелуха, раковина (ракушка)
 🇹🇷 Türkçe: kabuk
 🇦🇿 Türkcə: qabıq
@@ -27123,7 +27123,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колосья" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spica":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): baş, tubun {dial.}
-🇬🇧 English:	ear (ear of wheat, ear of rice, ear of barley, ear of rye etc) 🌾
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	ear (ear of wheat, ear of rice, ear of barley, ear of rye etc) 🌾
 🇷🇺 Русский: колос
 🇹🇷 Türkçe: başak
 🇦🇿 Türkcə: başaq, baş, sünbül
@@ -27167,7 +27167,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gül demeti" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gül buketi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çiçek demeti":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bouquet 💐
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bouquet 💐
 🇷🇺 Русский:	букет [buket]
 🇹🇷 Türkçe: buket, demet
 🇦🇿 Türkcə: dəstə
@@ -27213,7 +27213,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lalegül" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тюльпанный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лале":
-        bot.send_message(message.chat.id, '''🇬🇧 English: tulip 🌷
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tulip 🌷
 🇷🇺 Русский:	тюльпан [tyulpan]
 🇹🇷 Türkçe: lale (lâle)
 🇦🇿 Türkcə: lalə
@@ -27260,7 +27260,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ayçiçek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ay çiçek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "helianthus ":
-        bot.send_message(message.chat.id, '''🇬🇧 English: sunflower 🌻
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sunflower 🌻
 🇷🇺 Русский:	подсолнечник, подсолнух
 🇹🇷 Türkçe: günebakan, ayçiçeği
 🇦🇿 Türkcə: günəbaxan
@@ -27310,7 +27310,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sickle moon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "half moon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "demilune":
-        bot.send_message(message.chat.id, '''🇬🇧 English: crescent 🌙
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: crescent 🌙
 🇷🇺 Русский:	полумесяц
 🇹🇷 Türkçe: hilal, ayça
 🇦🇿 Türkcə: aypara, yarımay, hilal
@@ -27352,7 +27352,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''See also: Sea
 
 🐺 Old Turkic (bef. XV c.):	taluy, taluy-ögüz
-🇬🇧 English:	ocean 🌊
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	ocean 🌊
 🇷🇺 Русский:	океан [okean]
 🇹🇷 Türkçe: okyanus, umman {arch.}
 🇦🇿 Türkcə: okean, mühit, aqyanus {arch.}
@@ -27399,7 +27399,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeni-ay" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeniay":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yaŋı
-🇬🇧 English:	new moon 🌑
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	new moon 🌑
 🇷🇺 Русский:	новолуние
 🇹🇷 Türkçe: yeni ay
 🇦🇿 Türkcə: yeni ay, təzə ay, hilal
@@ -27440,7 +27440,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kirli kartopu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buzlu çamur topu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cometes":
-        bot.send_message(message.chat.id, '''🇬🇧 English: comet ☄️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: comet ☄️
 🇷🇺 Русский: комета [kometa]
 🇹🇷 Türkçe: kuyruklu yıldız
 🇦🇿 Türkcə: quyruqlu ulduz
@@ -27481,7 +27481,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "having a tail" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "have tail" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "with a tail":
-        bot.send_message(message.chat.id, '''🇬🇧 English: caudate, tailed, having a tail, with a tail
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: caudate, tailed, having a tail, with a tail
 🇷🇺 Русский: хвостатый, с хвостом, имеющий хвост
 🇹🇷 Türkçe: kuyruklu
 🇦🇿 Türkcə: quyruqlu
@@ -27548,7 +27548,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "циклонный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "squall":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qasırqu
-🇬🇧 English: tornado 🌪, whirl, hurricane
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tornado 🌪, whirl, hurricane
 🇷🇺 Русский: смерч, торнадо, вихрь, ураган
 🇹🇷 Türkçe: kasırga, hortum
 🇦🇿 Türkcə: qasırğa, xortum, burağan, çovğun
@@ -27600,7 +27600,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "домашняя обувь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sliper" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "slipers":
-        bot.send_message(message.chat.id, '''🇬🇧 English: slippers
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: slippers
 🇷🇺 Русский:	тапочки
 🇹🇷 Türkçe: terlik
 🇦🇿 Türkcə: çəkələk
@@ -27645,7 +27645,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "thunder bolt" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lightning":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yaşın
-🇬🇧 English:	lightning, bolt, zap ⚡️
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	lightning, bolt, zap ⚡️
 🇷🇺 Русский:	молния
 🇹🇷 Türkçe: şimşek, yıldırım
 🇦🇿 Türkcə: şimşək, ildırım
@@ -27693,7 +27693,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rain bow" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rain-bow" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gök kurşağı":
-        bot.send_message(message.chat.id, '''🇬🇧 English: rainbow 🌈
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: rainbow 🌈
 🇷🇺 Русский:	радуга
 🇹🇷 Türkçe: gökkuşağı, alkım
 🇦🇿 Türkcə: göy qurşağı, türkimun {dial.}, yay (yay ux, yay ox) {dial.}, alaqurşax (alaqurşaq) {dial.}, qövsi-qüzeh {arch.}
@@ -27744,7 +27744,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "full-moon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полно луние" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "strawberry-moon":
-        bot.send_message(message.chat.id, '''🇬🇧 English: full moon 🌕
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: full moon 🌕
 🇷🇺 Русский:	полнолуние
 🇹🇷 Türkçe: dolunay, bedir (bedr)
 🇦🇿 Türkcə: dolu ay, bütöv ay, bədr (bədir), mehtab (mahtab)
@@ -27784,7 +27784,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полные" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dolu":
-        bot.send_message(message.chat.id, '''🇬🇧 English: full
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: full
 🇷🇺 Русский:	полный (непустой)
 🇭🇺 Magyar: tele
 🇹🇷 Türkçe: dolu
@@ -27828,7 +27828,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пальцевый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пальцовый":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): barmaq <- barnaq
-🇬🇧 English:	finger, toe
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	finger, toe
 🇷🇺 Русский:	палец
 🇹🇷 Türkçe:	parmak
 🇦🇿 Türkcə:	barmaq
@@ -27876,7 +27876,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "atmosfera" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "воздушный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "погодный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. air 💨 II. weather 🌦
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. air 💨 II. weather 🌦
 🇷🇺 Русский:	I. воздух II. погода
 🇹🇷 Türkçe: hava
 🇦🇿 Türkcə: hava
@@ -27919,7 +27919,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гусиный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гусак":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qaz
-🇬🇧 English:	goose
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	goose
 🇷🇺 Русский:	гусь
 🇹🇷 Türkçe: kaz
 🇦🇿 Türkcə: qaz
@@ -27960,7 +27960,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pasaport" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pasaporta" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "passaporto":
-        bot.send_message(message.chat.id, '''🇬🇧 English: passport
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: passport
 🇷🇺 Русский:	паспорт [pasport] (заграничный паспорт)
 🇹🇷 Türkçe: pasaport, tezkere (yol tezkeresi) {arch.}
 🇦🇿 Türkcə: pasport, başport {arch.}
@@ -28003,7 +28003,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pyrus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pyru":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kertme, armut
-🇬🇧 English:	pear 🍐
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pear 🍐
 🇷🇺 Русский:	груша [grusha]
 🇹🇷 Türkçe: armut
 🇦🇿 Türkcə: armud
@@ -28049,7 +28049,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "parıldı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pırıldı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сверкания":
-        bot.send_message(message.chat.id, '''🇬🇧 English: shine, sparkle ✨
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: shine, sparkle ✨
 🇷🇺 Русский:	блеск, сияние
 🇹🇷 Türkçe: parıltı
 🇦🇿 Türkcə: parıltı, bərq
@@ -28099,7 +28099,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "взрывание" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "blow-up" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "infilak":
-        bot.send_message(message.chat.id, '''🇬🇧 English: explosion 💥
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: explosion 💥
 🇷🇺 Русский:	взрыв
 🇹🇷 Türkçe: patlama
 🇦🇿 Türkcə: partlayış, partlama
@@ -28144,7 +28144,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мандариновый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mandariinid" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mandalin":
-        bot.send_message(message.chat.id, '''🇬🇧 English: mandarin orange 🍊
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: mandarin orange 🍊
 🇷🇺 Русский:	мандарин [mandarin]
 🇹🇷 Türkçe: mandalina
 🇦🇿 Türkcə: naringi
@@ -28163,7 +28163,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "citrus limon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "limone" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "citrus × limon":
-        bot.send_message(message.chat.id, '''🇬🇧 English: lemon 🍋
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: lemon 🍋
 🇷🇺 Русский:	лимон [limon]
 🇹🇷 Türkçe: limon, limu (ilimon, ilmon) {arch.}, suluzırtlak {dial.}, cıcık {dial.}, zıvrak {dial.}
 🇦🇿 Türkcə: limon, lumu {arch.}, ulmu (lumu, ilmun, ilmon) {dial.}
@@ -28188,7 +28188,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "banaana" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "банановый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bananas":
-        bot.send_message(message.chat.id, '''🇬🇧 English: banana 🍌
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: banana 🍌
 🇷🇺 Русский:	банан [banan]
 🇹🇷 Türkçe: muz
 🇦🇿 Türkcə: banan {North Az.T.), muz {South Az.T.)
@@ -28204,7 +28204,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flamme" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пламенный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flamma":
-        bot.send_message(message.chat.id, '''🇬🇧 English: flame 🔥
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: flame 🔥
 🇷🇺 Русский:	пламя
 🇹🇷 Türkçe: alev, yalım (yalın)
 🇦🇿 Türkcə: alov, yalınqı {dial.}
@@ -28247,7 +28247,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰆𐱃
 🐺 Old Turkic (bef. XV c.):	ot (ót)
-🇬🇧 English: fire
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fire
 🇷🇺 Русский:	огонь
 🇹🇷 Türkçe:	ateş, od {arch.}
 🇦🇿 Türkcə: od
@@ -28290,7 +28290,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "costalis" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "costae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eğe kemiği":
-        bot.send_message(message.chat.id, '''🇬🇧 English: rib
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: rib
 🇷🇺 Русский:	ребро
 🇲🇳 Mongol: khavirga
 🇹🇷 Türkçe: kaburga, eğe
@@ -28345,7 +28345,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rainshade" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bumbershoot" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sunshades":
-        bot.send_message(message.chat.id, '''🇬🇧 English: umbrella ☂️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: umbrella ☂️
 🇷🇺 Русский:	зонт, зонтик [zontik]
 🇹🇷 Türkçe: şemsiye, güncek
 🇦🇿 Türkcə: çətir, günlük, şəmsiyyə
@@ -28427,7 +28427,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to insufflate" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to blow out" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "puff out":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. blow! {expel air through pursed lips} 🌬 II. blow! {about wind}
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. blow! {expel air through pursed lips} 🌬 II. blow! {about wind}
 🇷🇺 Русский:	I. дуй! {о воздухе изо рта} II. вей! дуй! {о ветре}
 🇭🇺 Magyar: fúj
 🇹🇷 Türkçe: I. üfür, üfle II. es
@@ -28477,7 +28477,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "snow man" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "снежная бабка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "снеговичок":
-        bot.send_message(message.chat.id, '''🇬🇧 English: snowman ⛄️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: snowman ⛄️
 🇷🇺 Русский:	снеговик
 🇹🇷 Türkçe: kardan adam
 🇦🇿 Türkcə: qardan adam, qar adam
@@ -28522,7 +28522,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "капельный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "damcı":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): tamındı, tamızım
-🇬🇧 English:	drop, droplet 💧
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	drop, droplet 💧
 🇷🇺 Русский:	капля
 🇹🇷 Türkçe: damla
 🇦🇿 Türkcə: damcı, damla
@@ -28580,7 +28580,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marriagebroker" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marriage broker":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): savçı, arquçı
-🇬🇧 English:	I. in-law; father (mother) of one’s son-in-law (daughter-in-law) II. matchmaker
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. in-law; father (mother) of one’s son-in-law (daughter-in-law) II. matchmaker
 🇷🇺 Русский: I. сват {родство} II. сват {кто идет сватать}
 🇲🇳 Mongol: khud (khuda)
 🇹🇷 Türkçe: I. dünür II. dünürcü, görücü
@@ -28627,7 +28627,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сватушка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dünürcülük" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dünürlük":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. relationship by marriage, affinity II. matchmaking
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. relationship by marriage, affinity II. matchmaking
 🇷🇺 Русский:	I. свойство II. сватовство
 🇲🇳 Mongol: khudlakh (khudalakh)
 🇹🇷 Türkçe: I. dünürlük II. dünürcülük
@@ -28714,7 +28714,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "найти партию" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "найди партию" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kız istemek":
-        bot.send_message(message.chat.id, '''🇬🇧 English: match! make a match!
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: match! make a match!
 🇷🇺 Русский: сватай!
 🇹🇷 Türkçe: dünürleş, dünür düş, kız iste
 🇦🇿 Türkcə: elçilik et, qız istə
@@ -28756,7 +28756,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kar tane" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "снежина" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flake of snow":
-        bot.send_message(message.chat.id, '''🇬🇧 English: snowflake ❄️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: snowflake ❄️
 🇷🇺 Русский:	снежинка
 🇹🇷 Türkçe: kar tanesi, kar taneciği
 🇦🇿 Türkcə: qar dənəsi, qar dənəciyi
@@ -28798,7 +28798,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karbuz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "арбузный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "citrullus":
-        bot.send_message(message.chat.id, '''🇬🇧 English: watermelon 🍉
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: watermelon 🍉
 🇷🇺 Русский:	арбуз [arbuz]
 🇹🇷 Türkçe: karpuz
 🇦🇿 Türkcə: qarpız
@@ -28860,7 +28860,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dans et" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dans etmek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oynamak":
-        bot.send_message(message.chat.id, '''🇬🇧 English: play! dance!
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: play! dance!
 🇷🇺 Русский:	играй! тешься! резвись! забавляйся!; танцуй! пляши!
 🇹🇷 Türkçe:	oyna
 🇦🇿 Türkcə:	oyna
@@ -28902,7 +28902,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fragaria" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "клубничный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "земляничный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: strawberry 🍓
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: strawberry 🍓
 🇷🇺 Русский:	клубника, земляника
 🇹🇷 Türkçe: çilek
 🇦🇿 Türkcə: çiyələk (çiyələm)
@@ -28945,7 +28945,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "виноградный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "виноградина":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): üzüm
-🇬🇧 English:	grapes 🍇
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	grapes 🍇
 🇷🇺 Русский:	виноград
 🇲🇳 Mongol: üzem
 🇹🇷 Türkçe: üzüm
@@ -28989,7 +28989,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дынный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cucumis melo":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qağun
-🇬🇧 English:	muskmelon, melon 🍈
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	muskmelon, melon 🍈
 🇷🇺 Русский:	дыня
 🇹🇷 Türkçe: kavun
 🇦🇿 Türkcə: yemiş, qovun
@@ -29032,7 +29032,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cerasus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mazzard" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "massard":
-        bot.send_message(message.chat.id, '''🇬🇧 English: cherry 🍒
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cherry 🍒
 🇷🇺 Русский:	вишня [vishnya], черешня
 🇹🇷 Türkçe: kiraz
 🇦🇿 Türkcə: gilas, albalı
@@ -29071,7 +29071,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mangifera" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мангифера":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): amra {from Sanskrit "ámra"}
-🇬🇧 English:	mango 🥭
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	mango 🥭
 🇷🇺 Русский:	манго [mango]
 🇹🇷 Türkçe: mango
 🇦🇿 Türkcə: manqo
@@ -29109,7 +29109,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ананас" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ananas" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ананасовый":
-        bot.send_message(message.chat.id, '''🇬🇧 English: pineapple 🍍
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pineapple 🍍
 🇷🇺 Русский:	ананас [ananas]
 🇹🇷 Türkçe:	ananas
 🇦🇿 Türkcə:	ananas
@@ -29150,7 +29150,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cocos" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kokonut" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кокосовый":
-        bot.send_message(message.chat.id, '''🇬🇧 English: coconut 🥥
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: coconut 🥥
 🇷🇺 Русский:	кокос [kokos]
 🇹🇷 Türkçe: Hindistan cevizi
 🇦🇿 Türkcə: hind qozu
@@ -29166,7 +29166,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "actinidia deliciosa" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kiwi-fruit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kiwifruit":
-        bot.send_message(message.chat.id, '''🇬🇧 English: kiwifruit 🥝
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: kiwifruit 🥝
 🇷🇺 Русский:	киви [kivi]
 🇹🇷 Türkçe: kivi
 🇦🇿 Türkcə: kivi
@@ -29208,7 +29208,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şaftali" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "персиковый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "prunus persica ":
-        bot.send_message(message.chat.id, '''🇬🇧 English: peach 🍑
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: peach 🍑
 🇷🇺 Русский:	персик [persik]
 🇹🇷 Türkçe: şeftali
 🇦🇿 Türkcə: şaftalı, şöytəli {dial.}
@@ -29254,7 +29254,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "помидорный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "томатный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tomat":
-        bot.send_message(message.chat.id, '''🇬🇧 English: tomato 🍅
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: tomato 🍅
 🇷🇺 Русский:	помидор [pomidor], томат [tomat]
 🇹🇷 Türkçe: domates, kızanak {purism, neologism, from Kazakh}
 🇦🇿 Türkcə: pomidor, bamadur {dial.}, qırmızı badımcan {dial.}, baldırcan {dial.}
@@ -29301,7 +29301,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "patlican" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "patlıcan":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): bütükä
-🇬🇧 English:	eggplant 🍆
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	eggplant 🍆
 🇷🇺 Русский:	баклажан [baklajan]
 🇹🇷 Türkçe: patlıcan
 🇦🇿 Türkcə: badımcan
@@ -29330,7 +29330,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "салат-латук" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "AAAAA" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "салатовый":
-        bot.send_message(message.chat.id, '''🇬🇧 English: lettuce 🥬
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: lettuce 🥬
 🇷🇺 Русский:	листья салата [listya salata]
 🇹🇷 Türkçe: marul
 🇦🇿 Türkcə: kahı
@@ -29354,7 +29354,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "салатный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salata" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salade":
-        bot.send_message(message.chat.id, '''🇬🇧 English: salad 🥗
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: salad 🥗
 🇷🇺 Русский:	салат [salat]
 🇹🇷 Türkçe:	salata
 🏴 Uyghurche: sey
@@ -29373,7 +29373,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "авокадо" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "авокадный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "авокадина":
-        bot.send_message(message.chat.id, '''🇬🇧 English: avocado 🥑
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: avocado 🥑
 🇷🇺 Русский:	авокадо [avokado]
 🇹🇷 Türkçe: avokado
 🇦🇿 Türkcə: avokado
@@ -29415,7 +29415,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "спаржевая капуста" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "brocoli" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "броколи":
-        bot.send_message(message.chat.id, '''🇬🇧 English: broccoli 🥦
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: broccoli 🥦
 🇷🇺 Русский:	брокколи [brokkoli]
 🇹🇷 Türkçe:	brokoli
 🏴 Uyghurche: leylikök
@@ -29430,7 +29430,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "piper" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "capsicum":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): murç (mırç)
-🇬🇧 English:	pepper 🌶
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pepper 🌶
 🇷🇺 Русский:	перец [perets]
 🇹🇷 Türkçe: biber
 🇦🇿 Türkcə: bibər
@@ -29470,7 +29470,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cucumis sativus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cucumis" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "огурцы":
-        bot.send_message(message.chat.id, '''🇬🇧 English: cucumber 🥒
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cucumber 🥒
 🇷🇺 Русский:	огурец 
 🇹🇷 Türkçe:	hıyar
 🇦🇿 Türkcə:	xiyar, yelpənək
@@ -29512,7 +29512,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "daucus carota" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "морковный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): sarığ turma, gizri {arghu lang.}, keşür {oghuz lang.}
-🇬🇧 English:	carrot 🥕
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	carrot 🥕
 🇷🇺 Русский:	морковь [morkov]
 🇹🇷 Türkçe:	havuç
 🇦🇿 Türkcə:	yerkökü, kök, keşir {dial.}, zərdə {dial.}
@@ -29561,7 +29561,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cepa" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bulb onion":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): soğan
-🇬🇧 English:	onion 🧅
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	onion 🧅
 🇷🇺 Русский:	лук репчатый
 🇹🇷 Türkçe: soğan
 🇦🇿 Türkcə: soğan
@@ -29605,12 +29605,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yay ve ok" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лук (для стрельбы)" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yay-ok":
-        bot.send_message(message.chat.id, '''🇬🇧 See also: arrow
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 See also: arrow
 🇷🇺 См. также: луковица
 
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖
 🐺 Old Turkic (bef. XV c.): yá
-🇬🇧 English:	bow 🏹
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bow 🏹
 🇷🇺 Русский:	лук (для стрельбы)
 🇹🇷 Türkçe: yay
 🇦🇿 Türkcə: yay
@@ -29656,7 +29656,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рогалик" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ay çöreği" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kipferl":
-        bot.send_message(message.chat.id, '''🇬🇧 English: croissant 🥐
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: croissant 🥐
 🇷🇺 Русский:	круассан [kruassan]
 🇹🇷 Türkçe: ayçöreği
 🇦🇿 Türkcə: ay çörəyi
@@ -29680,7 +29680,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "баранка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бараночное изделие" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gevrek":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bagel 🥯
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bagel 🥯
 🇷🇺 Русский:	бублик, калач [kalach]
 🇹🇷 Türkçe: simit
 🇦🇿 Türkcə: simit
@@ -29723,7 +29723,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "une baguette de pain" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "une baguette" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pain français":
-        bot.send_message(message.chat.id, '''🇬🇧 English: baguette 🥖
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: baguette 🥖
 🇷🇺 Русский:	багет, батон, булка
 🇹🇷 Türkçe: francala
 🇦🇿 Türkcə: uzun türk çörəyi
@@ -29750,7 +29750,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бретцель" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kringle" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tuzlu kraker":
-        bot.send_message(message.chat.id, '''🇬🇧 English: pretzel 🥨
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pretzel 🥨
 🇷🇺 Русский:	крендель
 🇹🇷 Türkçe:	halka kraker
 🇹🇲 Türkmençe: tokaş
@@ -29772,7 +29772,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dere bey" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "derebegi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "derebeyi":
-        bot.send_message(message.chat.id, '''🇬🇧 English: feudal lord, feudalist
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: feudal lord, feudalist
 🇷🇺 Русский:	феодал [feodal]
 🇹🇷 Türkçe: derebeyi
 🇦🇿 Türkcə: dərəbəyi
@@ -29797,7 +29797,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "derebeyliği" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "derebeyliyi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dere beylik":
-        bot.send_message(message.chat.id, '''🇬🇧 English: feudalism 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: feudalism 
 🇷🇺 Русский:	феодализм [feodalizm]
 🇹🇷 Türkçe: derebeylik
 🇦🇿 Türkcə: dərəbəylik
@@ -29820,7 +29820,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "penir" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paynir":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): soğut, üzitmä
-🇬🇧 English:	cheese 🧀
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cheese 🧀
 🇷🇺 Русский:	сыр
 🇹🇷 Türkçe:	peynir
 🇦🇿 Türkcə:	pendir
@@ -29883,7 +29883,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tavakeki" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "akitma" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "панкейк":
-        bot.send_message(message.chat.id, '''🇬🇧 English: pancake 🥞
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pancake 🥞
 🇷🇺 Русский:	блинчик [blinchik] 
 🇹🇷 Türkçe: akıtma
 🇦🇿 Türkcə: fəsəli
@@ -29926,7 +29926,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вафельный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ваффельный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вафля":
-        bot.send_message(message.chat.id, '''🇬🇧 English: waffle 🧇
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: waffle 🧇
 🇷🇺 Русский:	вафли [vafli]
 🇹🇷 Türkçe:	waffle
 🇹🇲 Türkmen:	gatlakly
@@ -29940,7 +29940,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bekon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "domuz pastırması" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "domuz-pastırması":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bacon 🥓
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bacon 🥓
 🇷🇺 Русский:	бекон [bekon]
 🇹🇷 Türkçe: domuz pastırması
 🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: bekon ???''', reply_markup=markup_menu)
@@ -29956,7 +29956,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "frankfurter" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sausage roll" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pig in a blanket":
-        bot.send_message(message.chat.id, '''🇬🇧 English: hot dog 🌭
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hot dog 🌭
 🇷🇺 Русский:	хотдог, сосиска в тесте
 🇹🇷 Türkçe: sosisli sandviç
 🇦🇿 Türkcə: sosiska-çörək
@@ -29968,7 +29968,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gamburger" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burger" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бургер":
-        bot.send_message(message.chat.id, '''🇬🇧 English: hamburger 🍔
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: hamburger 🍔
 🇷🇺 Русский:	гамбургер [gamburger]
 🇹🇷 Türkçe:	hamburger
 🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: hamburger/gamburger''', reply_markup=markup_menu)
@@ -29986,7 +29986,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pomfrit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фри" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "картофель фри":
-        bot.send_message(message.chat.id, '''🇬🇧 English: fries 🍟
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fries 🍟
 🇷🇺 Русский:	картошка фри
 🇹🇷 Türkçe:	patates kızartması
 🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: fri''', reply_markup=markup_menu)
@@ -29994,7 +29994,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🍕" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pizza" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пицца":
-        bot.send_message(message.chat.id, '''🇬🇧 English: pizza 🍕
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: pizza 🍕
 🇷🇺 Русский:	пицца [pitstsa]
 🇹🇷 Türkçe: pizza
 🇦🇿🇹🇲🇺🇿🇰🇿🇰🇬🏴: pizza (or "pitstsa" becouse of Cyrillic alphabet)''', reply_markup=markup_menu)
@@ -30013,7 +30013,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "двойняшка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "близняк":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): ekiz
-🇬🇧 English:	twin
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	twin
 🇷🇺 Русский:	близнецы, двойняшки
 🇭🇺 Magyar: iker
 🇲🇳 Mongol: ikher
@@ -30062,7 +30062,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰆𐰍𐰞𐰣
 🐺 Old Turkic (bef. XV c.): oğlan
-🇬🇧 English:	boy {also can mean brave son, brave boy, brave young man}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	boy {also can mean brave son, brave boy, brave young man}
 🇷🇺 Русский:	мальчик, парень
 🇹🇷 Türkçe:	oğlan
 🇦🇿 Türkcə:	oğlan
@@ -30114,7 +30114,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yaşlı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ihitiyar":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): I. eski II. qarı
-🇬🇧 English:	I. old {of object, concept etc} II. old {of living being}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. old {of object, concept etc} II. old {of living being}
 🇷🇺 Русский:	I. старый {о вещи, времени и т.д.} II. старый {о человеке}
 🇹🇷 Türkçe:	I. eski II. kart
 🇦🇿 Türkcə:	I. köhnə, əski (əsgi) II. qoca, qart
@@ -30158,7 +30158,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oficer" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оффицер" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "офицерский":
-        bot.send_message(message.chat.id, '''🇬🇧 English: officer {armed forces}
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: officer {armed forces}
 🇷🇺 Русский:	офицер [ofitser]
 🇹🇷 Türkçe:	subay, zabit
 🇦🇿 Türkcə:	zabit, sübay {arch.}, əfsər {sovyet arch.}
@@ -30188,7 +30188,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "piştov" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "писталет" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "handgun":
-        bot.send_message(message.chat.id, '''🇬🇧 English: gun 🔫
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: gun 🔫
 🇷🇺 Русский:	пистолет [pistolet]
 🇹🇷 Türkçe:	tabanca, piştov {small ottoman musket}
 🇦🇿 Türkcə:	tapança, piştov {arch.}
@@ -30231,7 +30231,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "enfeksiyon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "infeksiyon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зараза":
-        bot.send_message(message.chat.id, '''🇬🇧 English: infection 🦠
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: infection 🦠
 🇷🇺 Русский:	инфекция [infektsiya]
 🇹🇷 Türkçe:	bulaşma; bulaşıcı
 🇦🇿 Türkcə:	yoluxma
@@ -30271,7 +30271,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "brachium" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "omuz":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): egin (eŋin)
-🇬🇧 English:	shoulder
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	shoulder
 🇷🇺 Русский:	плечо
 🇹🇷 Türkçe:	omuz
 🇦🇿 Türkcə:	çiyin, omuz {arch. + dial.}, əyin {the whole body except the head}
@@ -30314,7 +30314,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "брюхо" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чрево":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qarın
-🇬🇧 English:	belly
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	belly
 🇷🇺 Русский:	живот
 🇹🇷 Türkçe:	karın
 🇦🇿 Türkcə:	qarın
@@ -30365,7 +30365,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пища" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yimek":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): aş, yegü
-🇬🇧 English:	food 🥙🧆🥘🍝🍲🍛🍱🦪🍣
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	food 🥙🧆🥘🍝🍲🍛🍱🦪🍣
 🇷🇺 Русский:	еда
 🇹🇷 Türkçe:	yemek
 🇦🇿 Türkcə:	yimək (yemək)
@@ -30419,7 +30419,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mandu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "manta" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "manty":
-        bot.send_message(message.chat.id, '''🇬🇧 English: dumpling 🥟
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dumpling 🥟
 🇷🇺 Русский:	манты, пельмени, вареники
 🇹🇷 Türkçe:	mantı
 🇦🇿 Türkcə:	düşbərə, mantı, gürzə
@@ -30466,7 +30466,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🎑" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oryza":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): tüki, tuturqan
-🇬🇧 English:	rice 🍚
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	rice 🍚
 🇷🇺 Русский:	рис [ris]
 🇹🇷 Türkçe:	pirinç, düğü {dial.}
 🇦🇿 Türkcə:	düyü
@@ -30513,7 +30513,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "biscuit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bisküvi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "coockie":
-        bot.send_message(message.chat.id, '''🇬🇧 English: cookie 🍪
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: cookie 🍪
 🇷🇺 Русский:	печенье [pechenye]
 🇹🇷 Türkçe:	kurabiye
 🇦🇿 Türkcə:	kökə, külçə {soft biscuit}, qurabiyə {Azerbaijani cookie}
@@ -30541,7 +30541,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "broth" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "souppe":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): bün (mün)
-🇬🇧 English:	soup 🍜
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	soup 🍜
 🇷🇺 Русский:	суп [sup]
 🇹🇷 Türkçe:	çorba
 🇦🇿 Türkcə:	şorba
@@ -30585,7 +30585,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сласти" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сласть" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сладость":
-        bot.send_message(message.chat.id, '''🇬🇧 English: sweets 🍬🍡🍭
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sweets 🍬🍡🍭
 🇷🇺 Русский:	сладости
 🇹🇷 Türkçe:	şekerleme
 🇦🇿 Türkcə:	şirniyyat, şirin şeylər, billə(lər) {dial.}, qaqqa {childish lang.}
@@ -30644,7 +30644,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "конфетный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "конфекта" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "конфетка":
-        bot.send_message(message.chat.id, '''🇬🇧 English: sugar candy, comfit, bonbon 🍬
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sugar candy, comfit, bonbon 🍬
 🇷🇺 Русский:	конфета [konfeta]
 🇹🇷 Türkçe:	şeker, bonbon
 🇦🇿 Türkcə:	konfet, qəmfit (qanfet, qamfet) {dial.}, şirni {arch.}
@@ -30692,7 +30692,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "леденцы" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "леденцовый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saplı şeker":
-        bot.send_message(message.chat.id, '''🇬🇧 English: lollipop 🍭
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: lollipop 🍭
 🇷🇺 Русский:	леденец
 🇹🇷 Türkçe:	lolipop, saplı şeker
 🇦🇿 Türkcə:	nabat, şirinquş, manpası {dial.}
@@ -30721,7 +30721,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "консвервированные продукты" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "консервированная еда" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "konserv":
-        bot.send_message(message.chat.id, '''🇬🇧 English: canned food 🥫
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: canned food 🥫
 🇷🇺 Русский:	консервы
 🇹🇷 Türkçe:	konserve
 🇦🇿 Türkcə:	konserv
@@ -30757,7 +30757,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shaurma":
         bot.send_message(message.chat.id, '''Most popular street food at the moment.
 
-🇬🇧 English: burrito 🌯
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: burrito 🌯
 🇷🇺 Русский:	шаверма [shaverma]
 🇹🇷 Türkçe:	döner
 🇦🇿 Türkcə:	dönər, şavarma
@@ -30784,7 +30784,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мароженое" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мороженное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "морожная":
-        bot.send_message(message.chat.id, '''🇬🇧 English: ice cream 🍦
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ice cream 🍦
 🇷🇺 Русский:	мороженое 
 🇹🇷 Türkçe:	dondurma
 🇦🇿 Türkcə:	dondurma
@@ -30828,7 +30828,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "choco" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chokolate" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шоколат":
-        bot.send_message(message.chat.id, '''🇬🇧 English: chocolate 🍫
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: chocolate 🍫
 🇷🇺 Русский:	шоколад [shokolad]
 🇹🇷 Türkçe:	çikolata
 🇦🇿 Türkcə:	şokolad, şaqalat {dial.}
@@ -30859,7 +30859,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "popcorns" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pop-corn" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pop corn":
-        bot.send_message(message.chat.id, '''🇬🇧 English: popcorn 🍿
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: popcorn 🍿
 🇷🇺 Русский:	попкорн [popkorn]
 🇹🇷 Türkçe:	mısır (patlamış mısır)
 🇹🇲 Türkmen:	patrak
@@ -30873,7 +30873,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пышка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "doughnut" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "doghnut":
-        bot.send_message(message.chat.id, '''🇬🇧 English: donut 🍩
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: donut 🍩
 🇷🇺 Русский:	пончик, пышка
 🇹🇷 Türkçe:	donut
 🇹🇲 Türkmen:	gabartma
@@ -30898,7 +30898,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arpa suyu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arpasuyu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пивной":
-        bot.send_message(message.chat.id, '''🇬🇧 English: beer 🍺
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: beer 🍺
 🇷🇺 Русский:	пиво [pivo]
 🇹🇷 Türkçe:	bira
 🇦🇿 Türkcə:	pivə
@@ -30946,7 +30946,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "китайский орех" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "арахисовая" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "арахисовый":
-        bot.send_message(message.chat.id, '''🇬🇧 English: peanut 🥜
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: peanut 🥜
 🇷🇺 Русский:	арахис [arakhis]
 🇹🇷 Türkçe:	fıstık (yer fıstığı)
 🇦🇿 Türkcə:	yerfıstığı
@@ -30975,7 +30975,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "домбыра" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "domra" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "домра":
-        bot.send_message(message.chat.id, '''🇬🇧 English: dombra
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: dombra
 🇷🇺 Русский:	домбра
 🇹🇷 Türkçe:	dombra
 🇦🇿 Türkcə:	dombra
@@ -31014,7 +31014,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaşık" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spoun":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qaşıq
-🇬🇧 English:	spoon 🥄
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	spoon 🥄
 🇷🇺 Русский:	ложка
 🇹🇷 Türkçe:	kaşık
 🇦🇿 Türkcə:	qaşıq
@@ -31053,7 +31053,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вила" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yemek çatalı":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): tikuc
-🇬🇧 English:	fork 🍴
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fork 🍴
 🇷🇺 Русский:	вилка [vilka]
 🇹🇷 Türkçe:	çatal
 🇦🇿 Türkcə:	çəngəl
@@ -31092,7 +31092,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şişe" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бутыль" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "butelka":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bottle 🍾🍼
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bottle 🍾🍼
 🇷🇺 Русский:	бутылка [butylka]
 🇹🇷 Türkçe:	şişe
 🇦🇿 Türkcə:	şüşə
@@ -31134,7 +31134,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "glassy" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стекляная":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): sırçqa
-🇬🇧 English:	glass {material}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	glass {material}
 🇷🇺 Русский:	стекло
 🇹🇷 Türkçe:	cam, sırça
 🇦🇿 Türkcə:	şüşə
@@ -31175,7 +31175,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "винный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vinum":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): çağır {+ grape juice}, süçüg (süçig) {+ something sweet}, surma (sürmä)
-🇬🇧 English:	wine 🍷
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	wine 🍷
 🇷🇺 Русский:	вино
 🇹🇷 Türkçe:	şarap
 🇦🇿 Türkcə:	çaxır, şərab
@@ -31214,7 +31214,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "талерка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тарелочный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yikü näŋ (yikäsi näŋ)
-🇬🇧 English:	plate, dish 🍽
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	plate, dish 🍽
 🇷🇺 Русский:	тарелка [tarelka]
 🇹🇷 Türkçe:	tabak
 🇦🇿 Türkcə:	boşqab
@@ -31256,7 +31256,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пиала" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kase":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): çanaq, ayaq, sağraq
-🇬🇧 English:	bowl 🥣
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bowl 🥣
 🇷🇺 Русский:	чаша, миска
 🇹🇷 Türkçe:	çanak, kâse
 🇦🇿 Türkcə:	kasa, piyalə, çanaq
@@ -31298,7 +31298,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "коробок" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "короб" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "коробочный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: box 📦🥡📮🗳️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: box 📦🥡📮🗳️
 🇷🇺 Русский:	коробка [korobka]
 🇹🇷 Türkçe:	kutu
 🇦🇿 Türkcə:	qutu
@@ -31358,7 +31358,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "потешный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "потешно":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): külünç
-🇬🇧 English:	funny
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	funny
 🇷🇺 Русский:	смешно
 🇹🇷 Türkçe:	komik, gülünç
 🇦🇿 Türkcə:	gülməli, gülünc, məzəli
@@ -31406,7 +31406,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "койцзы" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "food sticks" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "foodsticks":
-        bot.send_message(message.chat.id, '''🇬🇧 English: chopsticks 🥢
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: chopsticks 🥢
 🇷🇺 Русский:	китайские палочки, палочки для еды
 🇹🇷 Türkçe:	yemek çubukları
 🇦🇿 Türkcə:	yemək çubuqları
@@ -31427,7 +31427,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mühafazakâr" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "konservatif" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tory":
-        bot.send_message(message.chat.id, '''🇬🇧 English: conservative
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: conservative
 🇷🇺 Русский:	консерватор, консервативный
 🇹🇷 Türkçe:	muhafazakâr, tutucu
 🇦🇿 Türkcə:	mühafizəkar
@@ -31455,7 +31455,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toryism" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "консервативность" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "konservatizm":
-        bot.send_message(message.chat.id, '''🇬🇧 English: conservatism
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: conservatism
 🇷🇺 Русский:	консерватизм [konservatizm]
 🇹🇷 Türkçe:	muhafazakârlık
 🇦🇿 Türkcə:	mühafizəkarlıq
@@ -31493,7 +31493,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🎾" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏉":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): top
-🇬🇧 English:	I. ball ⚽️🏀🏐 II. cannon
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. ball ⚽️🏀🏐 II. cannon
 🇷🇺 Русский:	I. мяч II. пушка
 🇹🇷 Türkçe:	top
 🇦🇿 Türkcə:	top
@@ -31533,7 +31533,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "plaything" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "безделушка":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): oyunçaq
-🇬🇧 English:	toy 🧸🪀
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	toy 🧸🪀
 🇷🇺 Русский:	игрушка
 🇹🇷 Türkçe:	oyuncak
 🇦🇿 Türkcə:	oyuncaq
@@ -31577,7 +31577,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бумажный змей" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кайт" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бумажная змея":
-        bot.send_message(message.chat.id, '''🇬🇧 English: kite 🪁
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: kite 🪁
 🇷🇺 Русский:	воздушный змей
 🇹🇷 Türkçe:	uçurtma
 🇦🇿 Türkcə:	uçurtma, çərpələng, göyçan
@@ -31620,7 +31620,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "balıkavlama" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рыбная ловля" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ловля рыбы":
-        bot.send_message(message.chat.id, '''🇬🇧 English: fishing 🎣
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fishing 🎣
 🇷🇺 Русский:	рыбалка
 🇹🇷 Türkçe:	balık tutma, balık avı, balık avlama
 🇦🇿 Türkcə:	balıq tutma
@@ -31670,7 +31670,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "порыбачить" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поудить" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рыбалить":
-        bot.send_message(message.chat.id, '''🇬🇧 English: fish! (to fish)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fish! (to fish)
 🇷🇺 Русский:	рыбачь! лови рыбу!
 🇹🇷 Türkçe:	balık tut
 🇦🇿 Türkcə:	balıq tut
@@ -31721,7 +31721,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "перчи" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🥊":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): äliklik (eliglik)
-🇬🇧 English:	glove 🧤
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	glove 🧤
 🇷🇺 Русский:	перчатки
 🇹🇷 Türkçe:	eldiven
 🇦🇿 Türkcə:	əlcək
@@ -31773,7 +31773,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "coveralls" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cloth":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): keyim (kedim, keðim), kedgü (keðgü), ton
-🇬🇧 English:	clothes, uniform
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	clothes, uniform
 🇷🇺 Русский:	одежда, форма, униформа, спецодежда
 🇹🇷 Türkçe:	elbise, giyecek, giyim, giysi
 🇦🇿 Türkcə:	paltar, geyim
@@ -31813,7 +31813,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "санки" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "санка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kızak":
-        bot.send_message(message.chat.id, '''🇬🇧 English: sled 🛷
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sled 🛷
 🇷🇺 Русский:	сани [sani]
 🇹🇷 Türkçe:	kızak
 🇦🇿 Türkcə:	kirşə
@@ -31873,7 +31873,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "снежная доска" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сноубоард" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "скейтбоард":
-        bot.send_message(message.chat.id, '''🇬🇧 English: board
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: board
 🇷🇺 Русский:	доска
 🇹🇷 Türkçe:	tahta
 🇦🇿 Türkcə:	taxta
@@ -31916,7 +31916,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cubit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cubital" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "локти":
-        bot.send_message(message.chat.id, '''🇬🇧 English: elbow
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: elbow
 🇷🇺 Русский:	локоть
 🇹🇷 Türkçe:	dirsek
 🇦🇿 Türkcə:	dirsək
@@ -31971,7 +31971,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iceskate" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iceskates" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rollerskate":
-        bot.send_message(message.chat.id, '''🇬🇧 English: skates ⛸
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: skates ⛸
 🇷🇺 Русский:	коньки [konki]
 🇹🇷 Türkçe:	paten
 🏴 Tatarça:	timerayaq
@@ -31990,7 +31990,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колена":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱅𐰃𐰔
 🐺 Old Turkic (bef. XV c.):	diz (tiz)
-🇬🇧 English:	knee
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	knee
 🇷🇺 Русский:	колено
 🇹🇷 Türkçe:	diz
 🇦🇿 Türkcə:	diz
@@ -32029,7 +32029,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лыжа" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лыжный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kayak":
-        bot.send_message(message.chat.id, '''🇬🇧 English: ski 🎿⛷
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ski 🎿⛷
 🇷🇺 Русский:	лыжи [lyzhi]
 🇹🇷 Türkçe:	kayak
 🇦🇿 Türkcə:	xizək
@@ -32071,7 +32071,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "parashut" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "parachut" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "parashute":
-        bot.send_message(message.chat.id, '''🇬🇧 English: parachute 🪂
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: parachute 🪂
 🇷🇺 Русский:	парашют [parashyut]
 🇹🇷 Türkçe:	paraşüt
 🇦🇿 Türkcə:	paraşüt
@@ -32094,7 +32094,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baner":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱃𐰆𐰍
 🐺 Old Turkic (bef. XV c.):	tuğ
-🇬🇧 English:	banner
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	banner
 🇷🇺 Русский:	знамя [znamya], стяг, хоругвь, штандарт
 🇹🇷 Türkçe:	sancak
 🇦🇿 Türkcə:	sancaq
@@ -32139,7 +32139,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sweet orange" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "citrus sinensis" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "citrus × sinensis":
-        bot.send_message(message.chat.id, '''🇬🇧 English: orange fruit
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: orange fruit
 🇷🇺 Русский:	апельсин [apelsin]
 🇹🇷 Türkçe:	portakal
 🇦🇿 Türkcə:	portağal
@@ -32176,7 +32176,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🟠" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "turunçu":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): al sarığ
-🇬🇧 English:	orange color 🟠
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	orange color 🟠
 🇷🇺 Русский:	оранжевый
 🇹🇷 Türkçe:	turuncu
 🇦🇿 Türkcə:	narıncı
@@ -32227,12 +32227,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "morumsu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🟪" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🟣":
-        bot.send_message(message.chat.id, '''🇬🇧 In most of the cases word "blue" is used in Turkic languages, because it is considered a shade of the blue color.
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 In most of the cases word "blue" is used in Turkic languages, because it is considered a shade of the blue color.
 🇷🇺 Чаще всего используется просто слово "синий", поскольку в тюркских языках фиолетовый цвет считается оттенком синего.
 🇹🇷 Çok durumda "mor" yerine Türk lehcelerinde "gök" kelimesi kullanılır, çünkü mor rengi gök (mavi) rengin tonu olarak kabul edilir.
 
 🐺 Old Turkic (bef. XV c.): yipkin
-🇬🇧 English:	purple, violet 🟣
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	purple, violet 🟣
 🇷🇺 Русский:	пурпурный, фиолетовый
 🇹🇷 Türkçe:	mor, menekşe
 🇦🇿 Türkcə:	bənövşəyi
@@ -32289,7 +32289,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fulvous" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "konur":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qoŋur
-🇬🇧 English:	brown 🟤
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	brown 🟤
 🇷🇺 Русский:	коричневый
 🇹🇷 Türkçe:	kahverengi, esmer, konur, fındıkı {arch.}
 🇦🇿 Türkcə:	qəhvəyi, qonur
@@ -32339,7 +32339,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "судная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "судебная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "судебное":
-        bot.send_message(message.chat.id, '''🇬🇧 English: court (court of law)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: court (court of law)
 🇷🇺 Русский:	суд [sud]
 🇹🇷 Türkçe:	mahkeme
 🇦🇿 Türkcə:	məhkəmə
@@ -32385,7 +32385,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lübnan":
         bot.send_message(message.chat.id, '''🇱🇧 Libnan
 
-🇬🇧 English: Lebanon
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Lebanon
 🇷🇺 Русский:	Ливан [Livan]
 🇹🇷 Türkçe:	Lübnan 
 🏴 Tatarça:	Löbnan
@@ -32413,7 +32413,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стены":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱃𐰀𐰢
 🐺 Old Turkic (bef. XV c.):	tam
-🇬🇧 English:	wall
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	wall
 🇷🇺 Русский:	стена [stena]
 🇹🇷 Türkçe:	duvar
 🇦🇿 Türkcə:	divar
@@ -32456,11 +32456,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бумажная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бумажное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бумажные":
-        bot.send_message(message.chat.id, '''🇬🇧 The sounds "Q" and "K" can be confused due to the peculiarities of the Cyrillic alphabet.
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 The sounds "Q" and "K" can be confused due to the peculiarities of the Cyrillic alphabet.
 🇷🇺 Звуки "Q" и "K" могут быть перепутаны из-за особенностей кириллицы.
 🇹🇷 Kiril alfabesinin özellikleri nedeniyle "Q" ve "K" sesleri karıştırılabilir.
         
-🇬🇧 English: paper
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: paper
 🇷🇺 Русский:	бумага [bumaga, gumaga {arch.}]
 🇹🇷 Türkçe:	kâğıt
 🇦🇿 Türkcə:	kağız
@@ -32520,7 +32520,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "уезжай" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "уезжай!":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): ket
-🇬🇧 English:	go!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	go!
 🇷🇺 Русский:	уходи!
 🇹🇷 Türkçe:	git
 🇦🇿 Türkcə:	get
@@ -32568,7 +32568,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "видать":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰚𐰇𐰼
 🐺 Old Turkic (bef. XV c.):	kör
-🇬🇧 English:	see!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	see!
 🇷🇺 Русский:	узри!
 🇹🇷 Türkçe:	gör
 🇦🇿 Türkcə:	gör
@@ -32605,7 +32605,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fotografer" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fotoğrafçı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fotografçı":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	photographer
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	photographer
 🇷🇺 Русский:	фотограф [fotograf]
 🇹🇷 Türkçe:	fotoğrafçı
 🇦🇿 Türkcə:	fotoqraf, əkkas {arch.}, şəkilbasan {dial.}
@@ -32652,7 +32652,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "photographic" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фотографический" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fotoğraf":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	photograph, photo
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	photograph, photo
 🇷🇺 Русский:	фотография [fotografiya], фото
 🇹🇷 Türkçe:	fotoğraf
 🇦🇿 Türkcə:	şəkil
@@ -32731,7 +32731,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fotoğraf çek!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fotoğraf çekmek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fotoğraf yapmak":
-        bot.send_message(message.chat.id, '''🇬🇧 English: take a photo!
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: take a photo!
 🇷🇺 Русский:	фотографируй!
 🇹🇷 Türkçe:	fotoğraf yap
 🇦🇿 Türkcə:	şəkil çək
@@ -32785,7 +32785,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pot" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "котелок":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qazan
-🇬🇧 English:	pan, cauldron, saucepan, boiler, pot
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pan, cauldron, saucepan, boiler, pot
 🇷🇺 Русский:	казан [kazan], кастрюля, котёл
 🇭🇺 Magyar: kazán
 🇹🇷 Türkçe:	kazan
@@ -32829,7 +32829,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каблучный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пятки":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	taban
-🇬🇧 English:	sole, heel
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	sole, heel
 🇷🇺 Русский:	пята, стопа
 🇹🇷 Türkçe:	taban
 🇦🇿 Türkcə:	daban
@@ -32901,11 +32901,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to inhabit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "inhabit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to dwell":
-        bot.send_message(message.chat.id, '''🇬🇧 Also means "long live!" (Imperative form) and gratitude.
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 Also means "long live!" (Imperative form) and gratitude.
 🇷🇺 Также означает "Да здравствует!" в форме императива ("Здравствуй!", но не в значении приветствия) и слово благодарности.
 
 🐺 Old Turkic (bef. XV c.): yaşa
-🇬🇧 English:	live!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	live!
 🇷🇺 Русский:	живи!
 🇹🇷 Türkçe:	yaşa
 🇦🇿 Türkcə:	yaşa
@@ -32959,7 +32959,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sit down!":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰆𐰞𐰺 (𐰆𐰞𐰆𐰺)
 🐺 Old Turkic (bef. XV c.):	olur (oltur, otur)
-🇬🇧 English:	sit!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	sit!
 🇷🇺 Русский:	сиди! садись!
 🇹🇷 Türkçe:	otur
 🇦🇿 Türkcə:	otur
@@ -33005,7 +33005,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "excavate!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to excavate":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qaz
-🇬🇧 English:	dig!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	dig!
 🇷🇺 Русский:	копай!
 🇭🇺 Magyar: ás
 🇹🇷 Türkçe:	kaz
@@ -33048,7 +33048,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gül!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gülmek":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	kül
-🇬🇧 English:	laugh!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	laugh!
 🇷🇺 Русский:	смейся!
 🇹🇷 Türkçe:	gül!
 🇦🇿 Türkcə:	gül
@@ -33098,7 +33098,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "подой" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "подои!":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	sağ
-🇬🇧 English:	milk! {to express milk from mammal}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	milk! {to express milk from mammal}
 🇷🇺 Русский:	дои!
 🇲🇳 Mongol: saakh
 🇹🇷 Türkçe:	sağ
@@ -33141,7 +33141,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wristband" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bilezik":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	biläzük
-🇬🇧 English:	bracelet, bangles
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bracelet, bangles
 🇷🇺 Русский:	браслет
 🇹🇷 Türkçe:	bilezik, bileklik
 🇦🇿 Türkcə:	biləzik (bilərzik)
@@ -33192,7 +33192,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🤼‍♀️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🤼":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	çalış, küräş
-🇬🇧 English:	I. wrestling 🤼‍♂️ II. wrestle!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. wrestling 🤼‍♂️ II. wrestle!
 🇷🇺 Русский:	I. борьба {спорт.} II. борись! {спорт.}
 🇹🇷 Türkçe:	güreş
 🇦🇿 Türkcə:	güləş
@@ -33238,7 +33238,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kimiz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kimis":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qımız
-🇬🇧 English:	koumiss
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	koumiss
 🇷🇺 Русский:	кумыс [kumys]
 🇹🇷 Türkçe:	kımız
 🇦🇿 Türkcə:	qımız
@@ -33282,7 +33282,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fechten" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "swordplay" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "singlestick":
-        bot.send_message(message.chat.id, '''🇬🇧 English: fencing 🤺
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: fencing 🤺
 🇷🇺 Русский:	фехтование [fekhtovaniye]
 🇹🇷 Türkçe:	eskrim, matrakçılık {arch.}
 🇦🇿 Türkcə:	qılıncbazlıq, qılıncoynatma, silahşurluq (səlahşurlıq) {arch.}
@@ -33317,7 +33317,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏊‍♀️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🏊‍♂️":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yüz
-🇬🇧 English:	swim! 🏊
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	swim! 🏊
 🇷🇺 Русский:	плавай!
 🇭🇺 Magyar: ússz!
 🇹🇷 Türkçe:	yüz!
@@ -33378,7 +33378,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vessel" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caique" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "skiff":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	I. boat 🛶 I. ship 🚢
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. boat 🛶 I. ship 🚢
 🇷🇺 Русский:	I. лодка II. корабль
 🇹🇷 Türkçe:	I. kayık II. gemi
 🇦🇿 Türkcə:	I. qayıq II. gəmi
@@ -33426,7 +33426,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rider":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱃𐰞𐰍
 🐺 Old Turkic (bef. XV c.):	atlığ
-🇬🇧 English:	horseman 🏇
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	horseman 🏇
 🇷🇺 Русский:	всадник
 🇹🇷 Türkçe:	atlı
 🇦🇿 Türkcə:	atlı
@@ -33478,7 +33478,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поза лотуса" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сидение по-турецки":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	bağdaş
-🇬🇧 English:	lotus position 🧘, indian style sitting
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	lotus position 🧘, indian style sitting
 🇷🇺 Русский:	поза лотоса, сидение по-турецки
 🇹🇷 Türkçe:	bağdaş
 🇦🇿 Türkcə:	bağdaş (bardaş)
@@ -33540,11 +33540,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🛵" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "велосипедная" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bicycle":
-        bot.send_message(message.chat.id, '''🇬🇧 In all post-Soviet Turkic languages the word "velosiped" is used, alternative variants are given below.
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 In all post-Soviet Turkic languages the word "velosiped" is used, alternative variants are given below.
 🇷🇺 Во всех постсоветских тюркских языках используется слово "velosiped", ниже даны альтернативные варианты.
 🇹🇷 Tüm Sovyet sonrası Türk lehcelerinde "velosiped" kelimesi kullanılır, alternatif kelimeler aşağıda verilmiştir.
 
-🇬🇧 English: bicycle, bike 🚲
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bicycle, bike 🚲
 🇷🇺 Русский:	велосипед [velosiped]
 🇹🇷 Türkçe:	bisiklet
 🇦🇿 Türkcə:	yelsebet (yelsevet, velisaped) {dial.}, dırığın {dial.}, vilasiped {arch.}
@@ -33579,7 +33579,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "medalya" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медаль" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медал":
-        bot.send_message(message.chat.id, '''🇬🇧 English: medal 🥇🏅🎖
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: medal 🥇🏅🎖
 🇷🇺 Русский:	медаль [medal]
 🇹🇷 Türkçe:	madalya, nişan, nişan-i sikke {arch.}
 🇦🇿 Türkcə:	nişan, talğa {dial.}
@@ -33619,7 +33619,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "award" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "olja":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): I. açığ, utlı II. barğu, bulunç, talım
-🇬🇧 English:	I. trophy 🏆 II. war trophy
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. trophy 🏆 II. war trophy
 🇷🇺 Русский:	I. приз, награда II. трофей
 🇹🇷 Türkçe:	I. ödül, mükâfat II. ganimet, olca {arch.}
 🇦🇿 Türkcə:	I. mükafat, ödül II. qənimət, kisif {dial.}
@@ -33688,7 +33688,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лезь наверх" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лезть наверх":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tırmaş!
-🇬🇧 English:	climb! 🧗
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	climb! 🧗
 🇷🇺 Русский:	карабкайся! забирайся!
 🇹🇷 Türkçe:	tırman! tırmaş!
 🇦🇿 Türkcə:	dırmaş
@@ -33741,7 +33741,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тесемка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tape" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lente":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	ribbon 🎗
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	ribbon 🎗
 🇷🇺 Русский:	лента [lenta]
 🇹🇷 Türkçe:	kurdele, şerit
 🇦🇿 Türkcə:	bafta, əmbərçə {dial.}
@@ -33779,7 +33779,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "билет" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bilet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "билетный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: ticket 🎫🎟
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ticket 🎫🎟
 🇷🇺 Русский:	билет [bilet]
 🇹🇷 Türkçe:	bilet, tezkere {arch.}
 🇦🇿 Türkcə:	bilet, təzkirə
@@ -33813,7 +33813,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "conjuror" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фигляр" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jonglör":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	conjurer, illusionist 🤹
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	conjurer, illusionist 🤹
 🇷🇺 Русский:	фокусник, иллюзионист
 🇹🇷 Türkçe:	hokkabaz, göz bağcı
 🇦🇿 Türkcə:	gözbağlayıcı, hoqqabaz
@@ -33870,7 +33870,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to cut off" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to cut out":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	käs
-🇬🇧 English:	cut!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cut!
 🇷🇺 Русский:	режь!
 🇹🇷 Türkçe:	kes
 🇦🇿 Türkcə:	kəs
@@ -33931,7 +33931,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "footwear" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shoe":
         bot.send_message(message.chat.id, '''👞🩰🥾👠👢👡🥿
-🇬🇧 English: I. shoe II. footwear
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. shoe II. footwear
 🇷🇺 Русский:	I. ботинки II. обувь
 🇹🇷 Türkçe:	I. ayakkabı II. ayak giyimi
 🇦🇿 Türkcə:	I. ayaqqabı, əkkaf {dial.} II. ayaq geyimi
@@ -33988,7 +33988,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "earbuds" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гарнитура" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "наушник":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	earphones, headphones 🎧
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	earphones, headphones 🎧
 🇷🇺 Русский:	наушники [naushniki]
 🇹🇷 Türkçe:	kulaklık
 🇦🇿 Türkcə:	qulaqlıq
@@ -34032,11 +34032,11 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🎼" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🎤" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "musical":
-        bot.send_message(message.chat.id, '''🇬🇧 See also "the game (in the Turkic language, this word is also used for music)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 See also "the game (in the Turkic language, this word is also used for music)
 🇷🇺 Смотрите также "игра" (в тюркском языке этим словом называют и музыку)
         
 🐺 Old Turkic (bef. XV c.): musıqı (músıqí)
-🇬🇧 English:	music 🎵
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	music 🎵
 🇷🇺 Русский:	музыка [muzyka]
 🇹🇷 Türkçe:	müzik, musiki {arch.}, çalgı {rarely}
 🇦🇿 Türkcə:	musiqi, çalğı
@@ -34083,7 +34083,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🇹🇷 Bilgi kelimesi "vukuf" anlamındadır, başka anlamı için "malumat" yazın.
         
 🐺 Old Turkic (bef. XV c.):	bilig
-🇬🇧 English:	knowledge
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	knowledge
 🇷🇺 Русский:	знания
 🇹🇷 Türkçe:	bilgi, bilik {dial. + arch.}
 🇦🇿 Türkcə:	bilik
@@ -34126,7 +34126,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "melümat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "информационный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "инфо":
-        bot.send_message(message.chat.id, '''🇬🇧 English: information
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: information
 🇷🇺 Русский:	информация [informatsiya]
 🇹🇷 Türkçe:	bilgi, malumat
 🇦🇿 Türkcə:	məlumat, bilgi
@@ -34165,7 +34165,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "davul" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "барабанный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tovul (tawıl), kövrüg, tuğ
-🇬🇧 English:	drum 🥁
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	drum 🥁
 🇷🇺 Русский:	барабан [baraban]
 🇭🇺 Magyar: dob
 🇹🇷 Türkçe:	davul
@@ -34209,7 +34209,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beyin" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cerebrum":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	meŋi (meyi, miyi, meŋä, meŋ)
-🇬🇧 English:	brain 🧠
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	brain 🧠
 🇷🇺 Русский:	головной мозг
 🇹🇷 Türkçe:	beyin
 🇦🇿 Türkcə:	beyin
@@ -34254,7 +34254,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мусульманский храм" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "masjed":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	meçit (mäscit, mäzgit)
-🇬🇧 English:	mosque 🕌
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	mosque 🕌
 🇷🇺 Русский:	мечеть [mechet]
 🇹🇷 Türkçe:	cami, mescit {little mosque}
 🇦🇿 Türkcə:	məscid, meçit {dial.}
@@ -34303,7 +34303,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "православный храм" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "церков":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kilisä (klisä)
-🇬🇧 English:	church ⛪️
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	church ⛪️
 🇷🇺 Русский:	церковь [cerkov]
 🇹🇷 Türkçe:	kilise
 🇦🇿 Türkcə:	kilsə (kilisə)
@@ -34347,7 +34347,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "еврейский храм" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "иудаистский храм" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sinagoge":
-        bot.send_message(message.chat.id, '''🇬🇧 English: synagogue 🕍
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: synagogue 🕍
 🇷🇺 Русский:	синагога [sinagoga]
 🇹🇷 Türkçe:	havra, sinagog
 🇦🇿 Türkcə:	kənisə, sinaqoq, xavra
@@ -34394,7 +34394,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
         bot.send_message(message.chat.id, '''🕌⛪️🕍🛕⛩
 
 🐺 Old Turkic (bef. XV c.):	teŋrilig
-🇬🇧 English:	temple
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	temple
 🇷🇺 Русский:	храм
 🇹🇷 Türkçe:	tapınak, mabet, ibadethane, ibadetgâh
 🇦🇿 Türkcə:	tapınaq, məbəd, ibadətxana, ibadətgah
@@ -34434,7 +34434,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "guitarra" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kitara" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гитарный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: guitar 🎸
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: guitar 🎸
 🇷🇺 Русский:	гитара [gitara]
 🇹🇷 Türkçe:	gitar
 🇦🇿 Türkcə:	gitar (gitara), kitar (kitara, qitara) {dial.}
@@ -34455,7 +34455,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "broom stick" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "broomstick":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): süpürgü
-🇬🇧 English:	broom 🧹
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	broom 🧹
 🇷🇺 Русский:	метла
 🇭🇺 Magyar: söprű (seprű)
 🇹🇷 Türkçe:	süpürge
@@ -34505,7 +34505,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хлопковый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хлопчатобумажный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хлопчатобумажная":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	cotton
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cotton
 🇷🇺 Русский:	вата, хлопок
 🇭🇺 Magyar: pamut
 🇹🇷 Türkçe:	pamuk
@@ -34550,7 +34550,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калпак" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "крышка":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): qapaq (qapğaq)
-🇬🇧 English:	lid, cap (bottlecap)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	lid, cap (bottlecap)
 🇷🇺 Русский:	крышка, колпак
 🇭🇺 Magyar: kupak
 🇹🇷 Türkçe:	kapak
@@ -34595,7 +34595,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "minarah" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🗼" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "minareh":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	I. tower II. minaret
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. tower II. minaret
 🇷🇺 Русский:	I. башня II. минарет [minaret]
 🇹🇷 Türkçe:	I. kule II. minare
 🇦🇿 Türkcə:	I. qala II. minarə
@@ -34639,7 +34639,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кыз каласы" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кыз кулеси" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qiz qalasi":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	maiden tower
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	maiden tower
 🇷🇺 Русский:	девичья башня
 🇹🇷 Türkçe:	kız kulesi
 🇦🇿 Türkcə:	qız qalası
@@ -34684,7 +34684,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📨" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📬" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pochta":
-        bot.send_message(message.chat.id, '''🇬🇧 English: 📬 mail 📨️, post 🏤
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: 📬 mail 📨️, post 🏤
 🇷🇺 Русский:	почта [pochta], пошта [poshta] {arch.}
 🇹🇷 Türkçe:	posta
 🇦🇿 Türkcə:	poçt, poşt {dial.}, postə {arch.}
@@ -34716,7 +34716,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "испарения" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "паровой":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	bu (buğ)
-🇬🇧 English:	vapour, steam
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	vapour, steam
 🇷🇺 Русский:	пар
 🇹🇷 Türkçe:	buğu, buhar
 🇦🇿 Türkcə:	buğ, buxar
@@ -34755,7 +34755,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "the hammer" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cekic":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	çäkük, basğan
-🇬🇧 English:	hammer
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hammer
 🇷🇺 Русский:	молоток
 🇹🇷 Türkçe:	çekiç
 🇦🇿 Türkcə:	cəkic
@@ -34800,7 +34800,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кеманча" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каманча" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "viola":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	violin 🎻
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	violin 🎻
 🇷🇺 Русский:	скрипка
 🇹🇷 Türkçe:	keman
 🇦🇿 Türkcə:	kaman, kamança
@@ -34840,7 +34840,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ud" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lutnia" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "laute":
-        bot.send_message(message.chat.id, '''🇬🇧 English: lute 🪕
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: lute 🪕
 🇷🇺 Русский:	лютня
 🇹🇷 Türkçe:	lavta, ut (ud)
 🇦🇿 Türkcə:	ud
@@ -34861,7 +34861,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "knucklebone" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "knucklebones" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "альчик":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	dice 🎲
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	dice 🎲
 🇷🇺 Русский:	игральная кость
 🇹🇷 Türkçe:	zar
 🇦🇿 Türkcə:	zər
@@ -34903,7 +34903,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şahmat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shahmat":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	şatranç
-🇬🇧 English:	chess ♟
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	chess ♟
 🇷🇺 Русский:	шахматы [shakhmaty]
 🇹🇷 Türkçe:	satranç
 🇦🇿 Türkcə:	şahmat, şətrənc
@@ -34947,7 +34947,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "au":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰞𐱃𐰆𐰣
 🐺 Old Turkic (bef. XV c.):	altun (altın)
-🇬🇧 English:	gold, golden
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	gold, golden
 🇷🇺 Русский:	золото, золотой
 🇲🇳 Mongol: alt (altan)
 🇹🇷 Türkçe:	altın
@@ -34994,7 +34994,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚌" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚐" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚎":
-        bot.send_message(message.chat.id, '''🇬🇧 English: vehicle 🚌🚎🚐
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: vehicle 🚌🚎🚐
 🇷🇺 Русский:	транспорт [transport]
 🇹🇷 Türkçe:	taşıt
 🇦🇿 Türkcə:	nəqliyyat
@@ -35026,7 +35026,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚓" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "️️полицейский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "policeman":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	police ️👮🚓
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	police ️👮🚓
 🇷🇺 Русский:	полиция [politsiya]
 🇹🇷 Türkçe:	polis
 🇦🇿 Türkcə:	polis, zabitə (zabitiyyə) {arch.}
@@ -35060,7 +35060,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ems" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "acele yardım" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "paramedic service":
-        bot.send_message(message.chat.id, '''🇬🇧 English: ambulance 🚑
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: ambulance 🚑
 🇷🇺 Русский:	скорая помощь {"fast help"}
 🇹🇷 Türkçe:	ambulans, cankurtaranlar
 🇦🇿 Türkcə:	təcili yardım, ambulans {dial.}
@@ -35106,7 +35106,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "заря":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱃𐰭
 🐺 Old Turkic (bef. XV c.):	taŋ
-🇬🇧 English:	dawn
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	dawn
 🇷🇺 Русский:	рассвет
 🇹🇷 Türkçe:	şafak, tan
 🇦🇿 Türkcə:	dan
@@ -35149,7 +35149,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чистое":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰺𐰍
 🐺 Old Turkic (bef. XV c.):	arığ
-🇬🇧 English:	clean, clear
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	clean, clear
 🇷🇺 Русский:	чистый
 🇹🇷 Türkçe:	temiz
 🇦🇿 Türkcə:	təmiz
@@ -35201,7 +35201,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "temizle!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "temizle":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	arı, arığla
-🇬🇧 English:	clean! clear! {verb}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	clean! clear! {verb}
 🇷🇺 Русский:	очищай! чисти! убирай! (~ пыль, мусор, беспорядок)
 🇹🇷 Türkçe:	temizle
 🇦🇿 Türkcə:	təmizlə
@@ -35244,7 +35244,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "абрикосовый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "абрикосовая":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	ärük {prunus, plum, peach, apricot}, sarığ ärük
-🇬🇧 English:	apricot
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	apricot
 🇷🇺 Русский:	абрикос [abrikos]
 🇹🇷 Türkçe:	kayısı
 🇦🇿 Türkcə:	ərik
@@ -35295,7 +35295,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "записывай" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "записывай!":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yaz, biti
-🇬🇧 English:	write!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	write!
 🇷🇺 Русский:	пиши!
 🇭🇺 Magyar: ír
 🇲🇳 Mongol: bichikh
@@ -35338,7 +35338,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "воровка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "расхититель":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	oğrı
-🇬🇧 English:	thief, burglar
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	thief, burglar
 🇷🇺 Русский:	вор
 🇹🇷 Türkçe:	hırsız, uğru {arch.}
 🇦🇿 Türkcə:	oğru
@@ -35381,7 +35381,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "witnessed" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "свидетельница":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tanuq
-🇬🇧 English:	witness
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	witness
 🇷🇺 Русский:	свидетель
 🇭🇺 Magyar: tanú
 🇹🇷 Türkçe:	şahit, tanık
@@ -35436,7 +35436,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "полетай":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰆𐰲
 🐺 Old Turkic (bef. XV c.):	uç
-🇬🇧 English:	fly!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fly!
 🇷🇺 Русский:	лети! летай!
 🇹🇷 Türkçe:	uç!
 🇦🇿 Türkcə:	uç, uş {dial.}
@@ -35482,7 +35482,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "carpathian walnut" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "madeira walnut" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "common walnut":
-        bot.send_message(message.chat.id, '''🇬🇧 English: walnut
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: walnut
 🇷🇺 Русский:	турецкий орех
 🇹🇷 Türkçe:	ceviz, koz
 🇦🇿 Türkcə:	qoz
@@ -35533,7 +35533,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black garden" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "черный сад":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): Qarabağ
-🇬🇧 English:	Karabakh
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Karabakh
 🇷🇺 Русский:	Карабах [Karabakh]
 🇹🇷 Türkçe:	Karabağ
 🇦🇿 Türkcə:	Qarabağ
@@ -35589,7 +35589,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vur!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vurmak":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	ur (vur)
-🇬🇧 English:	hit! beat! strike! shoot!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hit! beat! strike! shoot!
 🇷🇺 Русский:	ударь! бей! стреляй!
 🇹🇷 Türkçe:	vur
 🇦🇿 Türkcə:	vur
@@ -35628,7 +35628,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "müharebe" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "воина":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): uruş, süŋüş
-🇬🇧 English:	war
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	war
 🇷🇺 Русский:	война
 🇹🇷 Türkçe:	savaş
 🇦🇿 Türkcə:	müharibə, savaş, vuruş, dava
@@ -35678,7 +35678,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hilly" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hillman" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mountainy":
-        bot.send_message(message.chat.id, '''🇬🇧 English: highland, mountainous, montane; highlander
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: highland, mountainous, montane; highlander
 🇷🇺 Русский:	нагорный; горный, горец
 🇹🇷 Türkçe:	dağlık; dağlı
 🇦🇿 Türkcə:	dağlıq; dağlı
@@ -35725,7 +35725,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "troop" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "солдаты" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soldiers":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	soldier, troops
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	soldier, troops
 🇷🇺 Русский:	солдат [soldat], войска
 🇹🇷 Türkçe:	asker
 🇦🇿 Türkcə:	əskər (əsgər)
@@ -35768,7 +35768,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ileriye" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "forwards":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	ilgärü
-🇬🇧 English:	forward, ahead
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	forward, ahead
 🇷🇺 Русский:	вперед
 🇭🇺 Magyar: előre
 🇹🇷 Türkçe:	ileri
@@ -35825,7 +35825,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "a destructive burning" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "a conflagration" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "the conflagration":
-        bot.send_message(message.chat.id, '''🇬🇧 English: conflagration, fire, a destructive burning
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: conflagration, fire, a destructive burning
 🇷🇺 Русский:	пожар
 🇹🇷 Türkçe:	yangın
 🇦🇿 Türkcə:	yanğın
@@ -35873,7 +35873,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cebrail" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jibrail" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cebrayıl":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Gabriel ✝️, Djabrail ☪️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Gabriel ✝️, Djabrail ☪️
 🇷🇺 Русский:	Гавриил ✝️, Джебраил ☪️
 🇹🇷 Türkçe:	Cebrâil
 🇦🇿 Türkcə:	Cəbrayıl, Cəvreil {dial.}
@@ -35923,7 +35923,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
         
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖𐰆𐰺𐱃
 🐺 Old Turkic (bef. XV c.):	yurt
-🇬🇧 English:	homeland, dorm, home
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	homeland, dorm, home
 🇷🇺 Русский:	страна, родина, дом (отчизна)
 🇹🇷 Türkçe:	yurt
 🇦🇿 Türkcə:	yurd
@@ -35960,7 +35960,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ватан":
         bot.send_message(message.chat.id, '''Ayrıca bakınız: yurt
 
-🇬🇧 English:	homeland
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	homeland
 🇷🇺 Русский:	родина
 🇹🇷 Türkçe:	vatan
 🇦🇿 Türkcə:	vətən
@@ -36006,7 +36006,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👨‍🚒" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "👩‍🚒" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧑‍🚒":
-        bot.send_message(message.chat.id, '''🇬🇧 English: firefighter 🧑‍🚒🚒
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: firefighter 🧑‍🚒🚒
 🇷🇺 Русский:	пожарный
 🇹🇷 Türkçe:	itfaiyeci
 🇦🇿 Türkcə:	yanğınsöndürən
@@ -36048,7 +36048,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kamyon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грузовой автомобиль" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "грузовая машина":
-        bot.send_message(message.chat.id, '''🇬🇧 English: truck 🚚, lorry 🚛
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: truck 🚚, lorry 🚛
 🇷🇺 Русский:	грузовик {birebir çevirisi: yük makinesi}
 🇹🇷 Türkçe:	kamyon
 🇦🇿 Türkcə:	yük maşını
@@ -36103,7 +36103,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kağnı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "подвода":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qaŋlı, qanğa (qaŋa), tergän
-🇬🇧 English:	cart, truck, barrow, wheelbarrow, carriage, dray, trolley, 🛒, 🦽, 🦼. {also means car in some languages}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cart, truck, barrow, wheelbarrow, carriage, dray, trolley, 🛒, 🦽, 🦼. {also means car in some languages}
 🇷🇺 Русский:	арба (араба), телега [telega], тележка, тачка, повозка, воз, бричка, подвода, карета, вагонетка. {в некоторых языках означает любой транспорт, в том числе автомобиль}
 🇹🇷 Türkçe:	araba, kağnı
 🇦🇿 Türkcə:	araba, harava {dial.}
@@ -36144,7 +36144,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кладь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вьюк":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yük
-🇬🇧 English:	load, burden
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	load, burden
 🇷🇺 Русский:	груз, тяжесть
 🇹🇷 Türkçe:	yük
 🇦🇿 Türkcə:	yük
@@ -36199,7 +36199,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
         bot.send_message(message.chat.id, '''See also: south; Ayrıca bknz: güney; См. также: юг
         
 🐺 Old Turkic (bef. XV c.):	öylä, kün ortu, tüş
-🇬🇧 English:	noon, midday
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	noon, midday
 🇷🇺 Русский:	полдень, полуденный
 🇹🇷 Türkçe:	öğle, öğlen
 🇦🇿 Türkcə:	günorta, öylə
@@ -36250,7 +36250,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🕟" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🕠":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	ekindi
-🇬🇧 English:	afternoon
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	afternoon
 🇷🇺 Русский:	пополудни, послеполуденный, предвечерний
 🇹🇷 Türkçe:	ikindi
 🇦🇿 Türkcə:	ikindi
@@ -36292,7 +36292,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🕡" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🕢" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soiree":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	evening
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	evening
 🇷🇺 Русский:	вечер
 🇹🇷 Türkçe:	akşam
 🇦🇿 Türkcə:	axşam
@@ -36330,7 +36330,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yastı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yassı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "işa":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	isha
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	isha
 🇷🇺 Русский:	иша [isha]
 🇹🇷 Türkçe:	yatsı
 🇦🇿 Türkcə:	yatsı
@@ -36378,7 +36378,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amazingly" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amazing!" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amazin":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	amazing
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	amazing
 🇷🇺 Русский:	удивительный, изумительный, восхитительный
 🇹🇷 Türkçe:	şaşırtıcı, hayret verici
 🇦🇿 Türkcə:	valehedici, heyranedici
@@ -36416,7 +36416,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bu gün" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bügün" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to day":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	today
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	today
 🇷🇺 Русский:	сегодня
 🇹🇷 Türkçe:	bugün
 🇦🇿 Türkcə:	bu gün, büün (büyün, böön, böün) {dial.}
@@ -36455,7 +36455,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ışık" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "işık":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yaşıq (yaşuq, yarıq, yaruq)
-🇬🇧 English:	light 💡🚨
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	light 💡🚨
 🇷🇺 Русский:	свет
 🇹🇷 Türkçe:	ışık
 🇦🇿 Türkcə:	işıq
@@ -36498,7 +36498,7 @@ Aşağıdaki sözler kökdaşdır. Anlamdaş olmasa da anlamları yakın (vatan,
 Это дословный перевод, но чаще всего тюрки используют слово "место".
 Türk halkları daha çok "yer" sözcüğünü kullanır.
 
-🇬🇧 English:	seat 💺
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	seat 💺
 🇷🇺 Русский:	сиденье
 🇹🇷 Türkçe:	koltuk (oturacak yer)
 🇦🇿 Türkcə:	oturacaq
@@ -36543,7 +36543,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "естественный спутник":
         bot.send_message(message.chat.id, '''Указано в значении естественного спутника (луна) и искусственного. Для другого значения введите "товарищ".
 
-🇬🇧 English:	satellite 🌕🛰
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	satellite 🌕🛰
 🇷🇺 Русский:	спутник [sputnik]
 🇹🇷 Türkçe:	uydu, peyk
 🇦🇿 Türkcə:	peyk
@@ -36588,7 +36588,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mate" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "товарисч" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "попутчик":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	comrade
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	comrade
 🇷🇺 Русский:	товарищ, спутник
 🇹🇷 Türkçe:	yoldaş
 🇦🇿 Türkcə:	yoldaş
@@ -36635,7 +36635,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rocchetta" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rakete" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "raket":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. rocket 🚀 II. missile
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. rocket 🚀 II. missile
 🇷🇺 Русский:	ракета [raketa]
 🇹🇷 Türkçe:	I. roket II. füze
 🇦🇿 Türkcə:	raket
@@ -36659,7 +36659,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salute" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salut" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salüt":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	fireworks 🎆
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fireworks 🎆
 🇷🇺 Русский:	фейерверк [feyerverk]
 🇹🇷 Türkçe:	fişek (havai fişek)
 🇦🇿 Türkcə:	fişəng
@@ -36689,7 +36689,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uçandaire" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "летающая тарелка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "неопознанный летающий обьект":
-        bot.send_message(message.chat.id, '''🇬🇧 English: unidentified flying object (UFO) 🛸
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: unidentified flying object (UFO) 🛸
 🇷🇺 Русский:	неопознанный летающий объект (НЛО)
 🇹🇷 Türkçe:	uçan daire (UFO)
 🇦🇿 Türkcə:	uçan naməlum obyekt (UNO)
@@ -36716,7 +36716,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ankura" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "boat anchor" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anker":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	anchor ⚓️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	anchor ⚓️
 🇷🇺 Русский:	якорь [yakor]
 🇹🇷 Türkçe:	çapa (çıpa), demir, lenger
 🇦🇿 Türkcə:	lövbər, ləngər
@@ -36758,7 +36758,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "горючий" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yakıt" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yakacak":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	fuel ⛽️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fuel ⛽️
 🇷🇺 Русский:	топливо, горючее
 🇹🇷 Türkçe:	yakıt
 🇦🇿 Türkcə:	yanacaq
@@ -36799,7 +36799,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "traffic light" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trafik lâmbası" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trafik lambası":
-        bot.send_message(message.chat.id, '''🇬🇧 English: traffic lights 🚦
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: traffic lights 🚦
 🇷🇺 Русский:	светофор [svetofor]
 🇹🇷 Türkçe:	trafik ışığı
 🇦🇿 Türkcə:	işıqfor, yol işığı
@@ -36824,7 +36824,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "istasyon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стоянка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🚏":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	station, stop {for vehicles, e.g. bus stop} 🚏
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	station, stop {for vehicles, e.g. bus stop} 🚏
 🇷🇺 Русский:	остановка (остановочный пункт)
 🇹🇷 Türkçe:	durak
 🇦🇿 Türkcə:	dayanacaq
@@ -36866,7 +36866,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "statua" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "статуа" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "grave stone":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	statue 🗿🗽
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	statue 🗿🗽
 🇷🇺 Русский:	статуя [statuya]
 🇹🇷 Türkçe:	heykel, yontu
 🇦🇿 Türkcə:	heykəl
@@ -36915,7 +36915,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alamet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alemet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "belgi":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	sign 🚧, omen, mark
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	sign 🚧, omen, mark
 🇷🇺 Русский:	знак, признак, знамение
 🇹🇷 Türkçe:	işaret, im, alâmet, belgi
 🇦🇿 Türkcə:	işarə, nişan, əlamət, bəlgi
@@ -36958,7 +36958,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bildik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tanış":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): biliş
-🇬🇧 English:	familiar, acquaintance
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	familiar, acquaintance
 🇷🇺 Русский:	знакомый
 🇲🇳 Mongol: tanil
 🇹🇷 Türkçe:	aşina, tanıdık, bildik, tanış
@@ -37010,7 +37010,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "штамп":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱃𐰢𐰍𐰀
 🐺 Old Turkic (bef. XV c.):	tamğa
-🇬🇧 English:	tamga (tamgha), stamp, seal
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	tamga (tamgha), stamp, seal
 🇷🇺 Русский:	тамга, тавро, метка, клеймо, печать
 🇲🇳 Mongol: tamga
 🇹🇷 Türkçe:	damga
@@ -37056,7 +37056,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тыквенный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cucurbita":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qabaq {+ marrow, zucchini}
-🇬🇧 English:	pumpkin 🎃
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pumpkin 🎃
 🇷🇺 Русский:	тыква
 🇹🇷 Türkçe:	balkabağı, kabak {+ marrow, zucchini}
 🇦🇿 Türkcə:	balqabaq, qabaq {+ marrow, zucchini}
@@ -37106,7 +37106,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şato" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шато" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fort":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	fortress, castle 🏰🏯
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fortress, castle 🏰🏯
 🇷🇺 Русский:	замок, крепость
 🇹🇷 Türkçe:	kermen, kale
 🇦🇿 Türkcə:	qəsr, qala
@@ -37157,7 +37157,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "майдан" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "maydan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "maidan":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	square, piazza, arena, stadium 🏟
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	square, piazza, arena, stadium 🏟
 🇷🇺 Русский:	площадь, стадион, сквер, арена
 🇹🇷 Türkçe:	meydan, alan
 🇦🇿 Türkcə:	meydan, alan {arch.}
@@ -37198,7 +37198,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рулевое колесо" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колеса":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tilgän, tegrek (dekerek)
-🇬🇧 English:	wheel
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	wheel
 🇷🇺 Русский:	колесо [koleso]
 🇹🇷 Türkçe:	tekerlek, teker
 🇦🇿 Türkcə:	təkər, təkərək
@@ -37242,7 +37242,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fontana" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fontaine" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fiskiye":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	fountain ⛲️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fountain ⛲️
 🇷🇺 Русский:	фонтан [fontan]
 🇹🇷 Türkçe:	fıskiye
 🇦🇿 Türkcə:	fəvvarə
@@ -37269,7 +37269,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çimerlik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "plâj" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пляжный":
-        bot.send_message(message.chat.id, '''🇬🇧 English: beach 🏖
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: beach 🏖
 🇷🇺 Русский:	пляж [plyaj]
 🇹🇷 Türkçe:	plaj
 🇦🇿 Türkcə:	çimərlik
@@ -37294,7 +37294,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "островной" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "островок":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	otruq (otruğ), adağ (atağ), aral
-🇬🇧 English:	island 🏝
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	island 🏝
 🇷🇺 Русский:	остров [ostrov]
 🇲🇳 Mongol: aral
 🇹🇷 Türkçe:	ada
@@ -37335,7 +37335,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chöl":
         bot.send_message(message.chat.id, '''Daha fazla bilgi için "desert" veya "steppe" yazın.
 
-🇬🇧 English: I. desert II. steppe
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. desert II. steppe
 🇷🇺 Русский: I. пустыня II. степь
 🇲🇳 Mongol: tsöl
 🇹🇷 Türkçe: çöl
@@ -37377,7 +37377,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bozkır" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "wilderness":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. 15th c.): I. körtük, isig yer, quruğ yer, qarqağ, öŋ, biyaban, say II. tala, say
-🇬🇧 English: I. desert II. steppe
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. desert II. steppe
 🇷🇺 Русский: I. пустыня II. степь [step]
 🇲🇳 Mongol: I. tsöl II. tal kheer
 🇹🇷 Türkçe: I. çöl, sahra II. bozkır, step
@@ -37418,7 +37418,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "building construction" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "строительный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "построение":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	construction  🏗
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	construction  🏗
 🇷🇺 Русский:	строительство
 🇹🇷 Türkçe:	inşaat
 🇦🇿 Türkcə:	tikinti, inşaat
@@ -37463,7 +37463,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bina evi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "edifice" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "inşa":
-        bot.send_message(message.chat.id, '''🇬🇧 English: building 🏢🏛
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: building 🏢🏛
 🇷🇺 Русский:	здание
 🇹🇷 Türkçe:	bina, yapı
 🇦🇿 Türkcə:	bina, tikili
@@ -37508,7 +37508,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "production plant" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fabrica" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fabrik":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	factory 🏭
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	factory 🏭
 🇷🇺 Русский:	завод, фабрика [fabrika]
 🇹🇷 Türkçe:	fabrika, üretimevi, kerhane {arch.}
 🇦🇿 Türkcə:	karxana
@@ -37556,7 +37556,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "триумф" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "galibiyet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "utku":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	victory ✌️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	victory ✌️
 🇷🇺 Русский:	победа
 🇹🇷 Türkçe:	zafer, yengi
 🇦🇿 Türkcə:	qələbə, zəfər
@@ -37595,7 +37595,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палац" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "palas":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qarşı, ordu, örgi, saray
-🇬🇧 English:	palace
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	palace
 🇷🇺 Русский:	дворец
 🇹🇷 Türkçe:	saray
 🇦🇿 Türkcə:	saray
@@ -37644,7 +37644,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dükkan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dükan":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): kebit
-🇬🇧 English:	shop, store 🏬🏪
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	shop, store 🏬🏪
 🇷🇺 Русский:	магазин [magazin], лавка [lavka]
 🇹🇷 Türkçe:	dükkân, mağaza
 🇦🇿 Türkcə:	dükan, mağaza
@@ -37687,7 +37687,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "banca" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "banka" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "банкъ":
-        bot.send_message(message.chat.id, '''🇬🇧 English: bank 🏦
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bank 🏦
 🇷🇺 Русский:	банк [bank]
 🇹🇷 Türkçe:	banka
 🇦🇿 Türkcə:	bank, sərrafxana {arch.}, baɲh (baɲg) {dial.}
@@ -37718,7 +37718,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hostel" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "inn" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "motel":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	hotel 🏨
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hotel 🏨
 🇷🇺 Русский:	отель [otel], гостиница
 🇹🇷 Türkçe:	otel, konakçı, mihmanhane, misafirhane
 🇦🇿 Türkcə:	mehmanxana, qonaq evi
@@ -37762,7 +37762,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaabaa" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaabba" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ka'bah":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Kaaba 🕋
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Kaaba 🕋
 🇷🇺 Русский:	Кааба [Kaaba]
 🇹🇷 Türkçe:	Kâbe
 🇦🇿 Türkcə:	Kəbə
@@ -37804,7 +37804,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "natura" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "натура" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tâbiat":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	nature 🏞
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	nature 🏞
 🇷🇺 Русский:	природа
 🇹🇷 Türkçe:	doğa, tabiat
 🇦🇿 Türkcə:	təbiət
@@ -37862,11 +37862,11 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gün doğma" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gündoğum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gün doğum":
-        bot.send_message(message.chat.id, '''🇬🇧 Due to the fact that a large number of variations of this word are possible in the Turkic languages (f.e. in Turkish: gündoğumu, güneş doğumu, günün doğumu, güneşin doğuşu, güneşin doğumu etc) the most frequently used one is written below
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 Due to the fact that a large number of variations of this word are possible in the Turkic languages (f.e. in Turkish: gündoğumu, güneş doğumu, günün doğumu, güneşin doğuşu, güneşin doğumu etc) the most frequently used one is written below
 🇷🇺 По причине того, что в тюркских языках возможно большое количество вариаций этого слова, ниже написан самый часто используемый
 🇹🇷 Bu kelimenin çok sayıda varyasyon olduğu nedeni ile en sıkca kullanılanı yazılmıştır
 
-🇬🇧 English: sunrise 🌅🌄🌇
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: sunrise 🌅🌄🌇
 🇷🇺 Русский:	восход
 🇹🇷 Türkçe:	gündoğumu
 🇦🇿 Türkcə:	günəşin çıxması
@@ -37925,7 +37925,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "meteorit" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "meteoric" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "метеоритный":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	meteoroid, meteorite, meteor 🌠
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	meteoroid, meteorite, meteor 🌠
 🇷🇺 Русский:	метеороид, метеорит, метеор
 🇹🇷 Türkçe:	göktaşı, akanyıldız
 🇦🇿 Türkcə:	axan ulduz, şəhab {arch.}
@@ -37963,7 +37963,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gloomy" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dusky" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alakaranlık":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	twilight, dusk 🌆
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	twilight, dusk 🌆
 🇷🇺 Русский:	сумрак, сумерки, полумрак
 🇹🇷 Türkçe:	alacakaranlık 
 🇦🇿 Türkcə:	alatoranlıq
@@ -38003,7 +38003,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "görünüş" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "обзор" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "görünüm":
-        bot.send_message(message.chat.id, '''🇬🇧 English: view, appearance
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: view, appearance
 🇷🇺 Русский:	вид (внешность, обзор, местность)
 🇹🇷 Türkçe:	görünüş
 🇦🇿 Türkcə:	görünüş
@@ -38048,7 +38048,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пейсаж":
         bot.send_message(message.chat.id, '''Ayrıca bknz. "görünüş"
 
-🇬🇧 English: scape 🏙
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: scape 🏙
 🇷🇺 Русский:	пейзаж [peyzazh]
 🇹🇷 Türkçe:	manzara
 🇦🇿 Türkcə:	mənzərə
@@ -38088,7 +38088,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kehkeşan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saman yolu" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "via lactea":
-        bot.send_message(message.chat.id, '''🇬🇧 English: milky way 🌌
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: milky way 🌌
 🇷🇺 Русский:	млечный путь
 🇹🇷 Türkçe:	samanyolu, kehkeşan
 🇦🇿 Türkcə:	ağ yol, kəhkəşan
@@ -38135,7 +38135,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "o'clock" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oclock" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oʻclock":
-        bot.send_message(message.chat.id, '''🇬🇧 English: I. watch ⌚️ II. hour
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: I. watch ⌚️ II. hour
 🇷🇺 Русский:	I. часы [chasy] I. час [chas]
 🇹🇷 Türkçe:	saat
 🇦🇿 Türkcə:	saat
@@ -38176,7 +38176,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "телефон" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "telephone" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📲":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	phone 📞📱☎️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	phone 📞📱☎️
 🇷🇺 Русский:	телефон [telefon]
 🇹🇷 Türkçe:	telefon
 🇦🇿 Türkcə:	telefon
@@ -38230,7 +38230,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🕹" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📽" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🖲":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	device 🖨🖲🕹📻🎙📠📟
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	device 🖨🖲🕹📻🎙📠📟
 🇷🇺 Русский:	устройство
 🇹🇷 Türkçe:	aygıt, cihaz
 🇦🇿 Türkcə:	qurğu, cihaz
@@ -38293,7 +38293,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📀" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📼" :
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	saqla
-🇬🇧 English:	keep! save!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	keep! save!
 🇷🇺 Русский:	храни! сохрани!
 🇹🇷 Türkçe:	sakla
 🇦🇿 Türkcə:	saxla
@@ -38346,7 +38346,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фотографическаий аппарат" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "still camera" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "съемочная камера":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	camera 📷📹
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	camera 📷📹
 🇷🇺 Русский:	фотоаппарат, камера
 🇹🇷 Türkçe:	fotoğraf makinesi, kamera
 🇦🇿 Türkcə:	şəkilçəkən
@@ -38365,7 +38365,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
         bot.send_message(message.chat.id, '''See also: city
 
 🐺 Old Turkic (bef. XV c.):	känd (kent)
-🇬🇧 English:	town
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	town
 🇷🇺 Русский:	городок (в некоторых языках: поселек, село и т.д.)
 🇹🇷 Türkçe:	kent
 🇦🇿 Türkcə:	kənd
@@ -38409,7 +38409,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "деревня" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hamlet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köy":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	village
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	village
 🇷🇺 Русский:	село, деревня
 🇹🇷 Türkçe:	köy
 🇦🇿 Türkcə:	kənd
@@ -38464,7 +38464,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зимовище" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зимовка":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qışlağ
-🇬🇧 English:	kishlak (qishlaq), winter village, winter hut, winter cabin, winter camp, winter quarters
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	kishlak (qishlaq), winter village, winter hut, winter cabin, winter camp, winter quarters
 🇷🇺 Русский:	кишлак, зимовье, зимовище, зимовка
 🇹🇷 Türkçe:	kışlak
 🇦🇿 Türkcə:	qışlaq
@@ -38519,7 +38519,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "протеки" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "протеки!":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): aq
-🇬🇧 English:	flow! stream!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	flow! stream!
 🇷🇺 Русский:	потеки! теки!
 🇹🇷 Türkçe:	ak! (örn. su)
 🇦🇿 Türkcə:	ax
@@ -38562,7 +38562,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buz dolap" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "холодильный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рефрижератор":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	refrigerator, fridge
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	refrigerator, fridge
 🇷🇺 Русский:	холодильник [kholodilnik]
 🇹🇷 Türkçe:	buzdolabı
 🇦🇿 Türkcə:	soyuducu
@@ -38612,7 +38612,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "санта клаус":
         bot.send_message(message.chat.id, '''Во многих языках является дословным переводом с русского, поскольку это пришло из русской мифологии.
 
-🇬🇧 English:	santa claus 🎅
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	santa claus 🎅
 🇷🇺 Русский:	дед мороз {grandfather frost}
 🇹🇷 Türkçe:	noel baba
 🇦🇿 Türkcə:	şaxta baba
@@ -38654,7 +38654,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "новогодний" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "новогодняя" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "новогоднее":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	new year
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	new year
 🇷🇺 Русский:	новый год
 🇹🇷 Türkçe:	I. yeni yıl II. yılbaşı
 🇦🇿 Türkcə:	yeni il
@@ -38705,7 +38705,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "новогодняя елочка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "еловый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "елочный":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	I. tree (Christmas tree, New Year tree) 🎄II. spruce 🌲
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. tree (Christmas tree, New Year tree) 🎄II. spruce 🌲
 🇷🇺 Русский:	ёлка, ель
 🇹🇷 Türkçe:	I. ağac (noel ağacı, yılbaşı ağacı, yeni yıl ağacı) II. ladin
 🇦🇿 Türkcə:	I. ağac (yeni il ağacı, milad ağacı) II. küknar
@@ -38751,7 +38751,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fena":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖𐰉𐰞𐰴
 🐺 Old Turkic (bef. XV c.):	yablaq, yaman
-🇬🇧 English:	bad
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bad
 🇷🇺 Русский:	плохой
 🇹🇷 Türkçe:	kötü, yaman
 🇦🇿 Türkcə:	yaman, pis
@@ -38793,7 +38793,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "labour" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "emgek":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	ämgäk
-🇬🇧 English:	labor, exertion
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	labor, exertion
 🇷🇺 Русский:	труд
 🇹🇷 Türkçe:	emek, zahmet, mihnet
 🇦🇿 Türkcə:	əmək, zəhmət
@@ -38842,7 +38842,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "maaş":
         bot.send_message(message.chat.id, '''* daily, weekly, monthly, yearly - günlük, haftalık, aylık, yıllık.
 
-🇬🇧 English:	I. salary II. wage
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. salary II. wage
 🇷🇺 Русский:	зарплата
 🇹🇷 Türkçe:	I. aylık II. ücret
 🇦🇿 Türkcə:	I. aylıq II. əmək haqqı
@@ -38897,7 +38897,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
         bot.send_message(message.chat.id, '''
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰇𐰠𐰼 (𐰇𐰠𐰇𐰼)
 🐺 Old Turkic (bef. XV c.):	ölür (ölürt, ölüt)
-🇬🇧 English:	kill!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	kill!
 🇷🇺 Русский:	убей! убивай!
 🇭🇺 Magyar: ölni
 🇹🇷 Türkçe:	öldür
@@ -38941,7 +38941,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рпц" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rum-ortodoks" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rum ortodoks":
-            bot.send_message(message.chat.id, '''🇬🇧 English: Orthodoxy (Eastern Orthodoxy Church)
+            bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Orthodoxy (Eastern Orthodoxy Church)
 🇷🇺 Русский:	православие [pravoslaviye]
 🇹🇷 Türkçe:	ortodoks dini
 🇦🇿 Türkcə:	pravoslavlıq, ortadosluq {arch.}
@@ -38968,7 +38968,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pravoslav" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orthodox christian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eastern orthodox christian":
-            bot.send_message(message.chat.id, '''🇬🇧 English:	orthodox
+            bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	orthodox
 🇷🇺 Русский: православный [pravoslavnyy]
 🇹🇷 Türkçe:	ortodoks
 🇦🇿 Türkcə:	pravoslav, ortados {arch.}
@@ -38993,7 +38993,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кармашки" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карманный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "корман":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	pocket
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pocket
 🇷🇺 Русский:	карман [karman]
 🇭🇺 Magyar: zseb
 🇹🇷 Türkçe:	cep
@@ -39037,7 +39037,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cevab" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cavap":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yanut, yanığ
-🇬🇧 English:	answer, response, reply
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	answer, response, reply
 🇷🇺 Русский:	ответ
 🇹🇷 Türkçe:	yanıt, cevap
 🇦🇿 Türkcə:	cavab
@@ -39095,7 +39095,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зиндан" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "correctional facility":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qınlıq (qıyınlıq), tünäk
-🇬🇧 English:	prison, jail
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	prison, jail
 🇷🇺 Русский:	тюрьма [tyurma]
 🇹🇷 Türkçe:	cezaevi, hapishane, zindan, mahpushane, hapis
 🇦🇿 Türkcə:	türmə, həbsxana, dustaqxana, zindan
@@ -39134,7 +39134,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "митинг" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "miting" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "encounter":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	meeting
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	meeting
 🇷🇺 Русский:	встреча
 🇹🇷 Türkçe:	toplantı, görüşme
 🇦🇿 Türkcə:	görüş, yığıncaq
@@ -39181,7 +39181,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кипр":
         bot.send_message(message.chat.id, '''🇹🇷🇨🇾 Kıbrıs, Kipros
 
-🇬🇧 English:	Cyprus
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Cyprus
 🇷🇺 Русский:	Кипр [Kipr]
 🇹🇷 Türkçe:	Kıbrıs
 🇦🇿 Türkcə:	Kipr, Qıbrıs (قبرس)
@@ -39201,7 +39201,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "philosophia" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filozofi":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	fälsäfä
-🇬🇧 English:	philosophy
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	philosophy
 🇷🇺 Русский:	философия [filosofiya]
 🇹🇷 Türkçe:	felsefe
 🇦🇿 Türkcə:	fəlsəfə
@@ -39226,7 +39226,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "filozof" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "feylesof":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	fälyäsuf (fäylasuf)
-🇬🇧 English:	philosopher
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	philosopher
 🇷🇺 Русский:	философ [filosof]
 🇹🇷 Türkçe:	feylesof, filozof
 🇦🇿 Türkcə:	fəlsəfə alimi
@@ -39254,7 +39254,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trauer" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yaslılık":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): yas
-🇬🇧 English:	mourning 
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	mourning 
 🇷🇺 Русский:	траур
 🇭🇺 Magyar: gyász
 🇹🇷 Türkçe:	yas, matem
@@ -39296,7 +39296,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oram" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stret":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	oram
-🇬🇧 English:	street
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	street
 🇷🇺 Русский:	улица [ulitsa]
 🇹🇷 Türkçe:	sokak
 🇦🇿 Türkcə:	küçə
@@ -39339,7 +39339,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "piyasa değişimi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "trading exchange" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bourse":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	exchange, bourse
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	exchange, bourse
 🇷🇺 Русский:	биржа [birja]
 🇹🇷 Türkçe:	borsa
 🇦🇿 Türkcə:	birja, bursa {arch.}
@@ -39356,7 +39356,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lider" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лидер" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "önder":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	leader
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	leader
 🇷🇺 Русский:	лидер [lider]
 🇹🇷 Türkçe:	önder
 🇦🇿 Türkcə:	öndər, yolgörsədən
@@ -39397,7 +39397,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "psychologia" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "psikolojik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ruh bilimi":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	psychology
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	psychology
 🇷🇺 Русский:	психология [psikhologiya]
 🇹🇷 Türkçe:	psikoloji, ruh bilimi
 🇦🇿 Türkcə:	psixologiya, elmi-ruh
@@ -39452,7 +39452,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "numerial" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "san" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "числовой":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	I. digit (numerical digit) II. number {numerus} III. number {numero}
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. digit (numerical digit) II. number {numerus} III. number {numero}
 🇷🇺 Русский:	I. цифра II. число III. номер
 🇹🇷 Türkçe:	I. rakam II. sayı III. numara
 🇦🇿 Türkcə:	I. rəqəm II. say, ədəd {math.}, san III. nömrə
@@ -39498,7 +39498,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lynx rufus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lynx pardinus":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): üşek
-🇬🇧 English:	lynx
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	lynx
 🇷🇺 Русский:	рысь
 🇰🇷 Hangug-eo: seulasoni
 🇭🇺 Magyar: hiúz
@@ -39550,7 +39550,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "арктический лис" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ak tilki" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beyaz tilki":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	arctic fox, white fox, polar fox, snow fox
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	arctic fox, white fox, polar fox, snow fox
 🇷🇺 Русский:	песец
 🇹🇷 Türkçe:	kutup tilkisi
 🇦🇿 Türkcə:	qütb tülküsü
@@ -39595,7 +39595,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "воронье" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "corbie":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qarğa, quzğun
-🇬🇧 English:	crow, raven
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	crow, raven
 🇷🇺 Русский:	ворона, ворон
 🇰🇷 Hangug-eo: galgamagwi
 🇭🇺 Magyar: varjú, holló
@@ -39643,7 +39643,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taçboynuzlu geyik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сохатый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "alces alces":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	moose, elk
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	moose, elk
 🇷🇺 Русский:	лось [los]
 🇲🇳 Mongol: khandagay
 🇹🇷 Türkçe:	sığın, mus
@@ -39690,7 +39690,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маргач" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "saiga tatarica":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	suqaq (soqaq)
-🇬🇧 English:	saiga
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	saiga
 🇷🇺 Русский:	сайга, сайгак [sayga/saygak]
 🇲🇳 Mongol: bökhön
 🇹🇷 Türkçe:	sayga, bozkır antilopu
@@ -39733,7 +39733,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "midilli" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "midili" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ponaidh":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	pony
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pony
 🇷🇺 Русский:	пони [poni]
 🇹🇷 Türkçe:	midilli
 🇺🇿 Oʻzbek:	to'pichoq ot, toti ot
@@ -39756,7 +39756,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "calipha" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калиф" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "calif":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	caliph, khalifa
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	caliph, khalifa
 🇷🇺 Русский:	халиф [khalif]
 🇹🇷 Türkçe:	halife
 🇦🇿 Türkcə:	xəlifə
@@ -39785,7 +39785,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hilafet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khalifate" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khilafah":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	caliphate
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	caliphate
 🇷🇺 Русский:	халифат [khalifat]
 🇹🇷 Türkçe:	halifelik, hilâfet
 🇦🇿 Türkcə:	xilafət, xəlifəlik
@@ -39827,7 +39827,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧛" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "упыр":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	içkäk
-🇬🇧 English:	vampire 🧛
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	vampire 🧛
 🇷🇺 Русский:	вампир, кровопийца
 🇹🇷 Türkçe:	vampir, kan içici
 🇦🇿 Türkcə:	qaniçən
@@ -39869,7 +39869,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ekonomi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iktisat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iktisadiyat":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	I. economy II. economics
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. economy II. economics
 🇷🇺 Русский:	экономика [ekonomika]
 🇹🇷 Türkçe:	ekonomi, iktisat, iktisadiyat
 🇦🇿 Türkcə:	iqtisadiyyat
@@ -39895,7 +39895,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "португалия":
         bot.send_message(message.chat.id, '''🇵🇹 Portugal
 
-🇬🇧 English:	Portugal 
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Portugal 
 🇷🇺 Русский:	Португалия [Portugaliya]
 🇹🇷 Türkçe:	Portekiz
 🇦🇿 Türkcə:	Portəgiz
@@ -39911,7 +39911,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "португальский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "portuguesa" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "португальская":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Portuguese 
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Portuguese 
 🇷🇺 Русский:	португалец, португальский
 🇹🇷 Türkçe:	Portekiz
 🇦🇿 Türkcə:	portəgiz
@@ -39936,7 +39936,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nederland":
         bot.send_message(message.chat.id, '''🇳🇱 Nederland
 
-🇬🇧 English:	Netherlands, Holland
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Netherlands, Holland
 🇷🇺 Русский:	Нидерланды, Голландия
 🇹🇷 Türkçe:	Hollanda, Felemenk {arch.}
 🇦🇿 Türkcə:	Niderland, Fələməng {arch.}
@@ -39962,7 +39962,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голландский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фламандский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фламандец":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Dutch
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Dutch
 🇷🇺 Русский:	нидерландец, голландец, фламандский
 🇹🇷 Türkçe:	Felemenk
 🇦🇿 Türkcə:	fələməng
@@ -39991,7 +39991,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sultanate of oman":
         bot.send_message(message.chat.id, '''🇴🇲 Uman
 
-🇬🇧 English:	Oman
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Oman
 🇷🇺 Русский:	Оман [Oman]
 🇹🇷 Türkçe:	Umman
 🇦🇿 Türkcə:	Ümman	
@@ -40013,7 +40013,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "rumanian" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "româna" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romen":
-        bot.send_message(message.chat.id, '''🇬🇧 English: Romanian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Romanian
 🇷🇺 Русский:	румын [rumyn]
 🇹🇷 Türkçe:	Rumen (Romen)
 🇦🇿 Türkcə:	rumın (romın, roman)
@@ -40040,7 +40040,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇷🇴":
         bot.send_message(message.chat.id, '''🇷🇴 România
 
-🇬🇧 English:	Romania
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Romania
 🇷🇺 Русский:	Румыния [Rumyniya]
 🇹🇷 Türkçe:	Romanya
 🇦🇿 Türkcə:	Rumıniya, Romıniya, Romaniya
@@ -40067,7 +40067,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇯🇴":
         bot.send_message(message.chat.id, '''🇯🇴 al-Urdun
 
-🇬🇧 English:	Jordania, Jordan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Jordania, Jordan
 🇷🇺 Русский:	Иордания [Iordaniya]
 🇹🇷 Türkçe:	Ürdün
 🇦🇿 Türkcə:	Ürdün
@@ -40092,7 +40092,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "justiz" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "правосудие":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	könülük (könilik)
-🇬🇧 English:	justice
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	justice
 🇷🇺 Русский:	справедливость
 🇹🇷 Türkçe:	adalet
 🇦🇿 Türkcə:	ədalət
@@ -40135,7 +40135,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "graven image" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "истукан":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): burxan, but
-🇬🇧 English:	idol (fetish) 🗿
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	idol (fetish) 🗿
 🇷🇺 Русский:	идол [idol]
 🇹🇷 Türkçe:	put, idol
 🇦🇿 Türkcə:	büt
@@ -40178,7 +40178,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "театральный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "playhouse":
         bot.send_message(message.chat.id, '''👳‍ Classic Turkic:	räqsxana, oyun evi
-🇬🇧 English:	theatre (theater)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	theatre (theater)
 🇷🇺 Русский:	театр [teatr]
 🇹🇷 Türkçe:	tiyatro
 🇦🇿 Türkcə:	teatr, tiyatro (tiyatr) {arch. + dial.}
@@ -40227,7 +40227,7 @@ Türk halkları daha çok "yer" sözcüğünü kullanır.
 Other types of traditional or national sausages are listed below:
 
 🐺 Old Turkic (bef. XV c.):	soqtu, soxta, soğut, suçuq
-🇬🇧 English:	sausage
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	sausage
 🇷🇺 Русский:	колбаса [kolbasa]
 🇹🇷 Türkçe:	sucuk, salam, sosis
 🇦🇿 Türkcə:	sucuq
@@ -40289,7 +40289,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "krem" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "krema":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qayaq (qańaq)
-🇬🇧 English:	cream, milk foam, milky sediment, milk clots, kaymak, kajmak, qaymaq
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cream, milk foam, milky sediment, milk clots, kaymak, kajmak, qaymaq
 🇷🇺 Русский:	сливки, крем, пенка молока, молочный осадок, сгусток молока, каймак
 🇹🇷 Türkçe:	kaymak
 🇦🇿 Türkcə:	qaymaq
@@ -40341,7 +40341,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "матрацный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "şilte":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	töşäk
-🇬🇧 English:	mattress, bedding, mat
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	mattress, bedding, mat
 🇷🇺 Русский:	матрас [matras], тюфяк [tyufyak], мат [mat]
 🇹🇷 Türkçe:	döşek
 🇦🇿 Türkcə:	döşək
@@ -40389,7 +40389,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пастрама" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pastrama" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "басдырма":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	pastirma, pastrami
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pastirma, pastrami
 🇷🇺 Русский:	бастурма [basturma]
 🇹🇷 Türkçe:	pastırma
 🇦🇿 Türkcə:	basdırma
@@ -40422,7 +40422,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочевой" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "номад":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	göçer oba
-🇬🇧 English:	nomad, migrant
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	nomad, migrant
 🇷🇺 Русский:	кочевник, переселенец
 🇹🇷 Türkçe:	göçebe
 🇦🇿 Türkcə:	köçəri, köşkün {dial.}
@@ -40475,7 +40475,7 @@ Other types of traditional or national sausages are listed below:
         
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖𐰺𐰴
 🐺 Old Turkic (bef. XV c.):	tolum, yaraq
-🇬🇧 English:	weapon 🔫 🗡 🏹 ⚔️
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	weapon 🔫 🗡 🏹 ⚔️
 🇷🇺 Русский:	оружие
 🇹🇷 Türkçe:	silah, savut, yarak {arch.}
 🇦🇿 Türkcə:	silah, yaraq
@@ -40525,7 +40525,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fowling piece" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пищаль" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стрелковый":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	rifle, shotgun
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	rifle, shotgun
 🇷🇺 Русский:	винтовка, ружье
 🇲🇳 Mongol: buu
 🇹🇷 Türkçe:	tüfek
@@ -40567,7 +40567,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бахлава" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "похлава":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	baqlağu
-🇬🇧 English:	baklava
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	baklava
 🇷🇺 Русский:	пахлава
 🇹🇷 Türkçe:	baklava
 🇦🇿 Türkcə:	paxlava
@@ -40622,7 +40622,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to nomadise" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кочевка":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	köç
-🇬🇧 English:	migrate! 
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	migrate! 
 🇷🇺 Русский:	кочуй! переселяйся! переселение!
 🇹🇷 Türkçe:	göç
 🇦🇿 Türkcə:	köç
@@ -40662,7 +40662,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цвета" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tüs":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	öŋ
-🇬🇧 English:	color
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	color
 🇷🇺 Русский:	цвет
 🇲🇳 Mongol: öŋö
 🇹🇷 Türkçe:	renk
@@ -40709,7 +40709,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "duzak" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ловчая петля":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qapqan (qapğan), tuzaq
-🇬🇧 English:	trap, trapping
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	trap, trapping
 🇷🇺 Русский:	капкан [kapkan], ловушка, западня
 🇭🇺 Magyar: csapda
 🇲🇳 Mongol: khavkha
@@ -40757,7 +40757,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "палаческий" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карательный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yarğan
-🇬🇧 English:	executioner
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	executioner
 🇷🇺 Русский:	палач
 🇹🇷 Türkçe:	cellat
 🇦🇿 Türkcə:	cəllad, başkəsən
@@ -40808,7 +40808,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sew needle" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "igne":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yignä (yiŋnä)
-🇬🇧 English:	needle, spoke, stinger, pin
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	needle, spoke, stinger, pin
 🇷🇺 Русский:	игла, иголка, спица, жало
 🇹🇷 Türkçe:	iğne
 🇦🇿 Türkcə:	iynə
@@ -40863,7 +40863,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зашей":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱅𐰃𐰚
 🐺 Old Turkic (bef. XV c.):	tik
-🇬🇧 English:	sew!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	sew!
 🇷🇺 Русский:	шей!
 🇹🇷 Türkçe:	dik!
 🇦🇿 Türkcə:	tik
@@ -40905,7 +40905,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "farao" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "faro" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "faraoh":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	pharaoh
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pharaoh
 🇷🇺 Русский:	фараон [faraon]
 🇹🇷 Türkçe:	firavun
 🇦🇿 Türkcə:	firon
@@ -40955,7 +40955,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khanum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khanim" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hanum":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	lady 🧕
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	lady 🧕
 🇷🇺 Русский:	дама, леди
 🇹🇷 Türkçe:	hanım, bayan
 🇦🇿 Türkcə:	xanım
@@ -41003,7 +41003,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мистер" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "centilmen" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сударь":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	gentlemen 👳‍♂️
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	gentlemen 👳‍♂️
 🇷🇺 Русский:	господин, джентльмен
 🇹🇷 Türkçe:	bey, bay
 🇦🇿 Türkcə:	bəy 🧭⬆️, ağa 🧭⬇️
@@ -41052,7 +41052,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сир" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dominus":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	äfändi
-🇬🇧 English:	esquire, sir, effendy (effendi), monsieur
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	esquire, sir, effendy (effendi), monsieur
 🇷🇺 Русский:	эфенди
 🇹🇷 Türkçe:	efendi
 🇦🇿 Türkcə:	əfəndi
@@ -41095,7 +41095,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сигаретта":
         bot.send_message(message.chat.id, '''See also: tobacco, smoke; Ayrıca bknz: tütün; См. также: табак, дым
 
-🇬🇧 English:	cigarette 🚬
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cigarette 🚬
 🇷🇺 Русский:	сигарета [sigareta]
 🇹🇷 Türkçe:	sigara
 🇦🇿 Türkcə:	siqaret, siqar {arch.}, jığaret {arch.}
@@ -41138,7 +41138,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "табака" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дымок":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tütün
-🇬🇧 English:	I. tobacco II. smoke
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. tobacco II. smoke
 🇷🇺 Русский:	I. табак [tabak] II. дым, чад
 🇭🇺 Magyar: I. dohány II. füst
 🇲🇳 Mongol: I. tamkhi II. utaa
@@ -41180,7 +41180,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "oramiral" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "адмиральский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amir al-bahr":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	admiral
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	admiral
 🇷🇺 Русский:	адмирал [admiral]
 🇭🇺 Magyar: tengernagy
 🇹🇷 Türkçe:	amiral
@@ -41204,7 +41204,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рогульник" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "водяной орех" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pipo":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	water pipe, a pipe with a long mouthpiece in which smoke is inhaled through water, smoking device (trapa, water caltrop)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	water pipe, a pipe with a long mouthpiece in which smoke is inhaled through water, smoking device (trapa, water caltrop)
 🇷🇺 Русский:	курительная трубка, чилим {род кальяна} (рогульник, водяной орех, чертов орех, водяной каштан)
 🇹🇷 Türkçe:	pipo
 🇦🇿 Türkcə:	tənbəki çubuğu
@@ -41246,7 +41246,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hamamböceği" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🪳" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cock roach":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	cockroach 🪳
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cockroach 🪳
 🇷🇺 Русский:	таракан [tarakan]
 🇹🇷 Türkçe:	hamam böceği
 🇦🇿 Türkcə:	yüyürük (yüyrük)
@@ -41296,7 +41296,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "prayerbeads" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "📿" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "prayer beads":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	prayer beads 📿
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	prayer beads 📿
 🇷🇺 Русский:	чётки
 🇹🇷 Türkçe:	tespih
 🇦🇿 Türkcə:	təsbeh [təspehʲ]
@@ -41344,7 +41344,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нефтяной" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "naphtha":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qara yağ
-🇬🇧 English:	petroleum, oil (crude oil) 🛢
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	petroleum, oil (crude oil) 🛢
 🇷🇺 Русский:	нефть [neft]
 🇹🇷 Türkçe:	petrol, neft, yer yağı
 🇦🇿 Türkcə:	neft, nöyüt (nəvit)
@@ -41386,7 +41386,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идолопоклонничество" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идолопоклонство" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "паганизм":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	paganism, heathenism
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	paganism, heathenism
 🇷🇺 Русский:	язычество
 🇹🇷 Türkçe:	paganizm, putperestlik
 🇦🇿 Türkcə:	bütpərəstlik
@@ -41427,7 +41427,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идолопоклонник" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "паганист" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pagani":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	pagan, heathen
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pagan, heathen
 🇷🇺 Русский:	язычник
 🇹🇷 Türkçe:	putperest
 🇦🇿 Türkcə:	bütpərəst
@@ -41480,7 +41480,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pagan mâbedi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "puthane" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кумирня":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	heathen temple, pagan temple
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	heathen temple, pagan temple
 🇷🇺 Русский:	языческий храм, капище, кумирня
 🇹🇷 Türkçe:	putperest tapınağı
 🇦🇿 Türkcə:	bütxana
@@ -41522,7 +41522,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hoş gelipsiniz":
         bot.send_message(message.chat.id, '''First one is for singular use, second plural (or with respect)
 
-🇬🇧 English:	welcome
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	welcome
 🇷🇺 Русский:	добро пожаловать
 🇹🇷 Türkçe:	hoş geldin, hoş geldiniz
 🇦🇿 Türkcə:	xoş gəldin, xoş gəldiniz, xoş gəlibsən, xoş gəlibsiniz, xoş gəlmişsiniz {formal}
@@ -41561,7 +41561,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orbital" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "орбитальный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "орбит":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	orbit {astr.}
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	orbit {astr.}
 🇷🇺 Русский:	орбита [orbita] {astr.}
 🇹🇷 Türkçe:	yörünge
 🇦🇿 Türkcə:	orbit, mədar	
@@ -41586,7 +41586,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burhan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "burkan":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Burxan (Burqan)
-🇬🇧 English:	Buddha
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Buddha
 🇷🇺 Русский:	Будда [Budda]
 🇹🇷 Türkçe:	Buda
 🏴 Salırça: Palçıx kiş
@@ -41622,7 +41622,7 @@ Other types of traditional or national sausages are listed below:
         bot.send_message(message.chat.id, '''👽 👾
 
 🐺 Old Turkic (bef. XV c.):	teŋrili yïrli
-🇬🇧 English:	alien (extraterrestrial), extraterrestrial intelligence (ETI)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	alien (extraterrestrial), extraterrestrial intelligence (ETI)
 🇷🇺 Русский:	инопланетянин
 🇹🇷 Türkçe:	uzaylı
 🇦🇿 Türkcə:	uzaylı, yadplanetli
@@ -41646,7 +41646,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "идель" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "idel":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Etil (Edil)
-🇬🇧 English:	Volga
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Volga
 🇷🇺 Русский:	Волга [Volga]
 🇲🇳 Mongol: Ijil
 🇹🇷 Türkçe:	Volga, İdil {neol.}, Etil (اتيل) {arch.}
@@ -41678,7 +41678,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "musea" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "muzeum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "музейный":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	museum
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	museum
 🇷🇺 Русский:	музей [muzey]
 🇹🇷 Türkçe:	müze, acayiphane {arch.}, numunehane {arch.}
 🇦🇿 Türkcə:	muzey, əcaibxana {arch.}
@@ -41710,7 +41710,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цепной" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⛓":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	sincir (*from Farsi 🇦🇫)
-🇬🇧 English:	chain ⛓
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	chain ⛓
 🇷🇺 Русский:	цепь, цепи
 🇹🇷 Türkçe:	zincir
 🇦🇿 Türkcə:	zəncir
@@ -41751,7 +41751,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beacon" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маячный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	teŋiz qarğuyu
-🇬🇧 English:	lighthouse
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	lighthouse
 🇷🇺 Русский:	маяк [mayak]
 🇹🇷 Türkçe:	deniz feneri
 🇦🇿 Türkcə:	dəniz fənəri
@@ -41781,7 +41781,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lies" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "неправда":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yalğan, igid
-🇬🇧 English:	a lie
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	a lie
 🇷🇺 Русский:	ложь
 🇹🇷 Türkçe:	yalan
 🇦🇿 Türkcə:	yalan
@@ -41824,7 +41824,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flatbread" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "flat bread":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	lavaş
-🇬🇧 English:	lavash, tortilla, flatbread
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	lavash, tortilla, flatbread
 🇷🇺 Русский:	лаваш [lavash], тортилья, лепешка
 🇹🇷 Türkçe:	lavaş, yufka
 🇦🇿 Türkcə:	lavaş, yuxa, fətir
@@ -41869,7 +41869,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кун фу-цзы" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кунфуцзы":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Quŋfutsi
-🇬🇧 English:	Confucius
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Confucius
 🇷🇺 Русский:	Конфуций [Konfutsiy]
 🇹🇷 Türkçe:	Konfüçyüs
 🇦🇿 Türkcə:	Kon Fu Dzı, Konfutsi
@@ -41896,7 +41896,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "муэззин" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ezan okuyan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "muazzin":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	muezzin
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	muezzin
 🇷🇺 Русский:	муэдзин, азанчи
 🇹🇷 Türkçe:	müezzin, ezancı
 🇦🇿 Türkcə:	müəzzin, azançı
@@ -41929,7 +41929,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "adhaan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "azaan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "athan":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	adhan
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	adhan
 🇷🇺 Русский:	азан [azan]
 🇹🇷 Türkçe:	ezan
 🇦🇿 Türkcə:	azan
@@ -41961,7 +41961,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🇱🇾":
         bot.send_message(message.chat.id, '''🇱🇾 Libya
 
-🇬🇧 English:	Libya
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Libya
 🇷🇺 Русский:	Ливия [Liviya]
 🇹🇷 Türkçe:	Libya, Trablusgarp {Ottoman Turkish}
 🇹🇲 Türkmen:	Liwiýa
@@ -41991,7 +41991,7 @@ Other types of traditional or national sausages are listed below:
         bot.send_message(message.chat.id, '''🏴 Suriyya, Sham
         
 🐺 Old Turkic (bef. XV c.):	Şağam
-🇬🇧 English:	Syria
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Syria
 🇷🇺 Русский:	Сирия [Siriya]
 🇹🇷 Türkçe:	Suriye, Şam
 🇦🇿 Türkcə:	Suriya, Şam
@@ -42023,7 +42023,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dough rolling pin" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "скалка для раскатывания теста":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	oqlağu (oqlağı, oqlağaç), yoğurğuç
-🇬🇧 English:	rolling pin
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	rolling pin
 🇷🇺 Русский:	скалка (скалка для теста) [skalka]
 🇹🇷 Türkçe:	oklava, merdane
 🇦🇿 Türkcə:	oxlov
@@ -42069,7 +42069,7 @@ Other types of traditional or national sausages are listed below:
 
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱅𐰇𐰯𐰇𐱅
 🐺 Old Turkic (bef. XV c.):	Tüpüt (Tübüt, Tübät, Tübbät, Tibät, Töböt), Taŋğut
-🇬🇧 English:	Tibet
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Tibet
 🇷🇺 Русский:	Тибет [Tibet]
 🇲🇳 Mongol: Tövöd
 🇹🇷 Türkçe:	Tibet, Tibbet {Ottoman Turkish}
@@ -42093,7 +42093,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калмыкский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калмыцкий" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "калмычка":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Kalmyk, Kalmuck
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Kalmyk, Kalmuck
 🇷🇺 Русский:	калмык [kalmyk]
 🇹🇷 Türkçe:	Kalmuk
 🇹🇲 Türkmen:	kalmyk
@@ -42132,7 +42132,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pesah" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "песах" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pesach":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Easter
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Easter
 🇷🇺 Русский:	Пасха [Paskha]
 🇹🇷 Türkçe:	Paskalya, Kızıl Yumurta {Ottoman Turkish}
 🇦🇿 Türkcə:	Fəsh, Qızıl yumurta
@@ -42171,7 +42171,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "по турецки" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "по турецкий":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	türkçä
-🇬🇧 English:	in Turkish language, in the Turkish way, like turk
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	in Turkish language, in the Turkish way, like turk
 🇷🇺 Русский:	по-турецки, на турецком, как турок
 🇹🇷 Türkçe:	türkçe
 🇦🇿 Türkcə:	türkcə
@@ -42222,7 +42222,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гинтархань" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цитрахань" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "азторокань":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Astrakhan
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Astrakhan
 🇷🇺 Русский:	Астрахань [Astrakhan]
 🇹🇷 Türkçe:	Astrahan {<🇷🇺}, Hacıtarkan {<Tatar}, Haşterhan {<🇦🇿}, Ejderhan {???}, Hacıtarhan (حاجى طرخان) {Ottoman Turkish)
 🇦🇿 Türkcə:	Həştərxan, Hacıtərxan {arch.}
@@ -42260,7 +42260,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khanbalik" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khanbalig" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пекинский":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Beijing (Peking)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Beijing (Peking)
 🇷🇺 Русский:	Пекин [Pekin]
 🇲🇳 Mongol: Beejin, Khanbalig
 🇹🇷 Türkçe:	Pekin, Beijing, Hanbalıq
@@ -42309,7 +42309,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гранатовое" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "гранатник":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	nar (nara)
-🇬🇧 English:	pomegranate
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pomegranate
 🇷🇺 Русский:	гранат [granat]
 🇲🇳 Mongol: anar
 🇹🇷 Türkçe:	nar
@@ -42356,7 +42356,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🗝" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🔑":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	açqıç
-🇬🇧 English:	key 🔑 🗝
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	key 🔑 🗝
 🇷🇺 Русский:	ключ [klyuch]
 🇲🇳 Mongol: tülkhüür
 🇹🇷 Türkçe:	anahtar, açar
@@ -42404,7 +42404,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çelebi" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çelebî":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Çäläbi
-🇬🇧 English:	Chelebi (Chalabi), Chelyaba, Chelyabinsk
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Chelebi (Chalabi), Chelyaba, Chelyabinsk
 🇷🇺 Русский:	Челяба, Челябинск, Челеби
 🇹🇷 Türkçe:	Çelebi
 🇦🇿 Türkcə:	Çələbi
@@ -42480,7 +42480,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeruşalaim" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeruşalayim" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "алькудс":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Jerusalem, al-Quds
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Jerusalem, al-Quds
 🇷🇺 Русский:	Иерусалим, аль-Кудс
 🇹🇷 Türkçe:	Kudüs
 🇦🇿 Türkcə:	Qüds
@@ -42516,7 +42516,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "people's" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hulk" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peopleʻs":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	people, public
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	people, public
 🇷🇺 Русский:	народ, народный
 🇹🇷 Türkçe:	halk
 🇦🇿 Türkcə:	xalq
@@ -42559,7 +42559,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ramadhan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ramathan":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	Ramaðán
-🇬🇧 English:	Ramadan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Ramadan
 🇷🇺 Русский:	Рамадан [Ramadan] {influence of English}, Рамазан [Ramazan] {influence of Turkic}
 🇹🇷 Türkçe:	Ramazan
 🇦🇿 Türkcə:	Ramazan
@@ -42611,7 +42611,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ураза байрам" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sweet eid" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ураза-байрам":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Eid al-Fitr, Sweet Eid
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Eid al-Fitr, Sweet Eid
 🇷🇺 Русский:	Ураза-байрам [Uraza-bayram]
 🇹🇷 Türkçe:	Ramazan Bayramı, Şeker Bayramı
 🇦🇿 Türkcə:	Ramazan bayramı
@@ -42661,7 +42661,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мускусный олень" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кабарговый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кабарги":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	musk deer
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	musk deer
 🇷🇺 Русский:	кабарга [kabarga]
 🇹🇷 Türkçe:	misk geyiği
 🇦🇿 Türkcə:	müşk maralı
@@ -42699,7 +42699,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "месих" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mesiah":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	I. Misih II. Kristus
-🇬🇧 English:	I. Messiah II. Christ
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. Messiah II. Christ
 🇷🇺 Русский:	I. Мессия [Messiya] II. Христос [Khristos]
 🇹🇷 Türkçe:	Mesih
 🇦🇿 Türkcə:	Məsih
@@ -42742,7 +42742,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "холодное" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "chilly":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	soğuq (soğıq)
-🇬🇧 English:	cold
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cold
 🇷🇺 Русский:	холодный (-ая, -ое), холодно, холод
 🇹🇷 Türkçe:	soğuk
 🇦🇿 Türkcə:	soyuq, sȫx (soox, soux, sovux) {dial}
@@ -42785,7 +42785,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cilia" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lashes":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	kirpik
-🇬🇧 English:	eyelash
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	eyelash
 🇷🇺 Русский:	ресница, ресницы
 🇹🇷 Türkçe:	kirpik
 🇦🇿 Türkcə:	kirpik
@@ -42829,7 +42829,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "србиja":
         bot.send_message(message.chat.id, '''🇷🇸 Srbija
 
-🇬🇧 English:	Serbia
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Serbia
 🇷🇺 Русский:	Сербия [Serbiya]
 🇹🇷 Türkçe:	Sırbistan
 🇦🇿 Türkcə:	Serbiya, Serbstan
@@ -42851,7 +42851,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "серб" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сербский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сербка":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Serb, Serbian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Serb, Serbian
 🇷🇺 Русский:	серб [serb]
 🇹🇷 Türkçe:	Sırp, Sırb {Ottoman T.}
 🏴 Tatarça:	sırb
@@ -42874,7 +42874,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "koloni" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonial" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колониальный":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	colony
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	colony
 🇷🇺 Русский:	колония [koloniya]
 🇹🇷 Türkçe:	sömürge, müstemleke, koloni {in a good way}
 🇦🇿 Türkcə:	müstəmləkə
@@ -42906,7 +42906,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonizer" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonisator" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonizator":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	colonist
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	colonist
 🇷🇺 Русский:	колонист [kolonist]
 🇹🇷 Türkçe:	sömürgeci, kolonist {in a good way}
 🇦🇿 Türkcə:	müstəmləkəçi
@@ -42934,7 +42934,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kolonyalizm" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "колонизаторство" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "colonism":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	colonialism
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	colonialism
 🇷🇺 Русский:	колониализм [kolonializm]
 🇹🇷 Türkçe:	sömürgecilik, müstemlekecilik, kolonicilik {in a good way}, kolonyalizm {in a good way}
 🇦🇿 Türkcə:	müstəmləkəçilik
@@ -43002,7 +43002,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рухнуть" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "рухни":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tüş! yıqıl! en!
-🇬🇧 English:	fall! go down! collapse! descend!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fall! go down! collapse! descend!
 🇷🇺 Русский:	падай! спускайся! слезай! понижайся! рухни! сойди!
 🇹🇷 Türkçe:	düş! yıkıl! in!
 🇦🇿 Türkcə:	düş, yıxıl, en
@@ -43052,7 +43052,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фикус" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "смоковница":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	incir, açır {fig fruit}
-🇬🇧 English:	fig
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fig
 🇷🇺 Русский:	инжир [injir], фига [figa]
 🇹🇷 Türkçe:	incir
 🇦🇿 Türkcə:	əncir, incil (əncil, incir) {dial.}
@@ -43112,7 +43112,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "относительно" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "по поводу" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hakta":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	I. about {adj.}, approximately, roughly II. about ~ {prep.}
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. about {adj.}, approximately, roughly II. about ~ {prep.}
 🇷🇺 Русский:	I. примерно, приблизительно, где-то, около II. о (об, обо) ~, про ~
 🇹🇷 Türkçe:	I. yaklaşık ~, tahminen ~ II. ~ hakkında, ~ ile ilgili
 🇦🇿 Türkcə:	I. təxminən ~, hardasa ~ II. haqqında, barədə
@@ -43159,7 +43159,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "glutton" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "quickhatch" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "росомаший":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	wolverine (wolverene)
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	wolverine (wolverene)
 🇷🇺 Русский:	росомаха (россомаха)
 🇹🇷 Türkçe:	kutup porsuğu, ayı porsuğu, obur, volverin
 🇦🇿 Türkcə:	sibir porsuğu
@@ -43215,7 +43215,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "endişe" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qayğı":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qadğu (qaðğu, qayğu, qayğı)
-🇬🇧 English:	anxiety, sorrow, affliction, sadness, concern
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	anxiety, sorrow, affliction, sadness, concern
 🇷🇺 Русский:	беспокойство, тревожность, печаль, забота, горесть, огорчение, скорбь, тоска, уныние, грусть, волнение, переживание
 🇹🇷 Türkçe:	kaygı
 🇦🇿 Türkcə:	qayğı
@@ -43259,7 +43259,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taymeni" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taymeny" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "таймин":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	hucho, taimen
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hucho, taimen
 🇷🇺 Русский:	таймень [taymen]
 🏴 Uyghur:	chong qizil béliq
 🏴 Tatarça:	qızılbalıq, bil
@@ -43290,7 +43290,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "marmots" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "байбак":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	suğur (soğur)
-🇬🇧 English:	marmot
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	marmot
 🇷🇺 Русский:	сурок, сурки
 🇲🇳 Mongol: tarvaga
 🇹🇷 Türkçe:	marmot, dağ sıçanı
@@ -43333,7 +43333,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara sinek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "diptera":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	çibin
-🇬🇧 English:	fly, housefly
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fly, housefly
 🇷🇺 Русский:	муха
 🇹🇷 Türkçe:	sinek, karasinek
 🇦🇿 Türkcə:	çibin, milçək {Diptera}, çivin {dial.}
@@ -43379,7 +43379,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lotidae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lota" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lota lota":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	burbot (bubbot), mariah, freshwater cod, freshwater ling, rockling
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	burbot (bubbot), mariah, freshwater cod, freshwater ling, rockling
 🇷🇺 Русский:	налим [nalim]
 🇹🇷 Türkçe:	tatlısu gelinciği
 🇦🇿 Türkcə:	yayın balığı
@@ -43414,7 +43414,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gölge balığı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "thymallus arcticus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gölgebalığı":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	thymallus, grayling
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	thymallus, grayling
 🇷🇺 Русский:	хариус [kharius]
 🇹🇷 Türkçe:	gölge balığı
 🇦🇿 Türkcə:	kölgə balığı
@@ -43450,7 +43450,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bit yumurtası" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "louse egg":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	sirkä
-🇬🇧 English:	I. nit II. vinegar
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. nit II. vinegar
 🇷🇺 Русский:	I. гнида II. уксус [uksus]
 🇭🇺 Magyar: I. serke II. ecet
 🇲🇳 Mongol: I. sirke II. tsuu
@@ -43501,7 +43501,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "accipiter" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "goshawk":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qırğuy
-🇬🇧 English:	hawk
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hawk
 🇷🇺 Русский:	ястреб
 🇹🇷 Türkçe:	atmaca, çakır kuşu, şahin
 🇦🇿 Türkcə:	qırğı, şahin {+ kestrel, falcon}
@@ -43544,7 +43544,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black accipiter" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black goshawk":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qara qırğuy
-🇬🇧 English:	black hawk
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	black hawk
 🇷🇺 Русский:	чёрный ястреб
 🇹🇷 Türkçe:	kara şahin
 🇦🇿 Türkcə:	qara şahin, qara qırğı
@@ -43588,7 +43588,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black accipiters" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "black goshawks":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qara qırğuylar
-🇬🇧 English:	black hawks
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	black hawks
 🇷🇺 Русский:	чёрные ястребы
 🇹🇷 Türkçe:	kara şahinler
 🇦🇿 Türkcə:	qara şahinlər
@@ -43638,7 +43638,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dağ gelinciği" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vizon":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	küzün, gelincük
-🇬🇧 English:	mustela (weasel, ferret, mink)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	mustela (weasel, ferret, mink)
 🇷🇺 Русский:	mustela (ласка, хорёк, норка)
 🇹🇷 Türkçe:	gelincik (bayağı gelincik, dağgelinciği, vizon)
 🇦🇿 Türkcə:	gəlincik
@@ -43678,7 +43678,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "стол" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "desk":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tergi (tirki), şirä, tävsi {little}, işküm {royal}, tamğalıq {table of the Khan}
-🇬🇧 English:	table; desk
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	table; desk
 🇷🇺 Русский:	стол [stol]
 🇭🇺 Magyar: asztal
 🇲🇳 Mongol: shiree
@@ -43723,7 +43723,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iskoçiya":
         bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁳󠁣󠁴󠁿 Alba
 
-🇬🇧 English:	Scotland 
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Scotland 
 🇷🇺 Русский:	Шотландия [Shotlandiya]
 🇹🇷 Türkçe:	İskoçya
 🇦🇿 Türkcə:	Şotlandiya {North Az.T.} İskətlənd {South Az.T.}
@@ -43748,7 +43748,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "󠁧󠁢󠁳󠁣󠁴шотландка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "iskoç" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "шотландский":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Scottish
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Scottish
 🇷🇺 Русский:	шотландец, шотландский
 🇹🇷 Türkçe:	İskoç
 🇦🇿 Türkcə:	şotland {North Az.T.} iskətlənd {South Az.T.}
@@ -43775,7 +43775,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karadağ":
         bot.send_message(message.chat.id, '''🇲🇪 Crna Gora
 
-🇬🇧 English:	Montenegro
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Montenegro
 🇷🇺 Русский:	Черногория [Chernogoriya]
 🇹🇷 Türkçe:	Karadağ
 🇦🇿 Türkcə:	Qaradağ
@@ -43821,7 +43821,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nemse":
         bot.send_message(message.chat.id, '''🇦🇹 Österreich
 
-🇬🇧 English:	Austria
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Austria
 🇷🇺 Русский:	Австрия [Avsrtiya]
 🇭🇺 Magyar: Osztrák
 🇹🇷 Türkçe:	Avusturya, Nemçe {arch.}, Beç ülkesi {arch.}
@@ -43848,7 +43848,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dövme" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "наколка" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "портак":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	tattoo
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	tattoo
 🇷🇺 Русский:	тату, татуировка [tatu/tatuirovka]
 🇹🇷 Türkçe:	dövme
 🇦🇿 Türkcə:	döymə
@@ -43881,7 +43881,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каннибалы" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каннибальский" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "канибальский":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	cannibal
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cannibal
 🇷🇺 Русский:	каннибал [kannibal], людоед {man-eater}
 🇹🇷 Türkçe:	yamyam
 🇦🇿 Türkcə:	yamyam, adamyeyən {man-eater}
@@ -43924,7 +43924,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kanibalizm" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каннибальство" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cannibalization":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	cannibalism
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	cannibalism
 🇷🇺 Русский:	каннибализм [kannibalizm], людоедство {human cannibalism}
 🇹🇷 Türkçe:	yamyamlık
 🇦🇿 Türkcə:	yamyamlıq, adamyemə {human cannibalism}
@@ -43961,7 +43961,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yukarda" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "üstünde":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	I. yoqqaruda II. üstündä
-🇬🇧 English:	I. above {adj.} II. above {prep.}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. above {adj.} II. above {prep.}
 🇷🇺 Русский:	выше, свыше, наверху, вверху, на (чём-то), над, поверх
 🇰🇷 Hangug-eo: I. joguro (쪽으로) II. sandane (상단에)
 🇹🇷 Türkçe:	I. yukarıda II. üstünde
@@ -44004,7 +44004,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yukarı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yukari":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	yoqaru
-🇬🇧 English:	up, upward, upwards
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	up, upward, upwards
 🇷🇺 Русский:	верх, вверх, верхний
 🇰🇷 Hangug-eo: joguro (쪽으로)
 🇹🇷 Türkçe:	yukarı
@@ -44058,7 +44058,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lachyn" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "falco":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	laçın
-🇬🇧 English:	falcon, peregrine
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	falcon, peregrine
 🇷🇺 Русский:	сокол, сапсан
 🇲🇳 Mongol: nachin
 🇹🇷 Türkçe:	laçın
@@ -44115,7 +44115,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul etmek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul et" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul et!":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	accept! admit!
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	accept! admit!
 🇷🇺 Русский:	прими! признай!
 🇹🇷 Türkçe:	kabul et
 🇦🇿 Türkcə:	qəbul et
@@ -44158,7 +44158,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "допуск" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вступительный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kabul":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	acceptance, admission, admittance
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	acceptance, admission, admittance
 🇷🇺 Русский:	приём, принятие, допуск, вступительный
 🇹🇷 Türkçe:	kabul
 🇦🇿 Türkcə:	qəbul
@@ -44212,7 +44212,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "koşmak" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "просиединяй!":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qoş
-🇬🇧 English:	add! attach!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	add! attach!
 🇷🇺 Русский:	добавь! присоедини!
 🇭🇺 Magyar: hozzá
 🇹🇷 Türkçe:	ekle, koş {dial., "run, rush" in standart Turkish}
@@ -44252,7 +44252,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "прибавление" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toplama" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "additio":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	addition {math.}
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	addition {math.}
 🇷🇺 Русский:	сложение, прибавление
 🇹🇷 Türkçe:	toplama
 🇦🇿 Türkcə:	toplama
@@ -44294,7 +44294,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сифат" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sifat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sıfat":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	adjective
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	adjective
 🇷🇺 Русский:	прилагательное
 🇹🇷 Türkçe:	sıfat
 🇦🇿 Türkcə:	sifət, sıfat {dial.}
@@ -44339,7 +44339,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "икряной" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caviare" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "balık yumurtası":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	caviar, roe
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	caviar, roe
 🇷🇺 Русский:	икра [ikra]
 🇹🇷 Türkçe:	havyar, kürü
 🇦🇿 Türkcə:	kürü
@@ -44396,7 +44396,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "husband of sister" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "damat":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.): I. küdägü (küðagü) II. yeznä
-🇬🇧 English:	I. son-in-law, groom, bridegroom II. sister's husband
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. son-in-law, groom, bridegroom II. sister's husband
 🇷🇺 Русский:	I. зять, жених, муж дочери II. зять, муж сестры
 🇭🇺 Magyar: I. vő (vej), vőlegény II. sógor
 🇫🇮 Suomea: I. vävy II. lanko
@@ -44445,7 +44445,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arbalete" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arbalet" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cross bow":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	crossbow, arbalest
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	crossbow, arbalest
 🇷🇺 Русский:	арбалет [arbalet], лук-самострел
 🇹🇷 Türkçe:	tatar yayı, kundaklı yay, kurmalı yay, çark/çarh, zenberek/zenburek
 🇦🇿 Türkcə:	tatar yayı, qundaqlı yay-ox, çarx, zənbərək/zənburək
@@ -44491,7 +44491,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "буздуган" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buzdığan":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	çoxmar, topuz (toppuz), bozdoğan
-🇬🇧 English:	mace
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	mace
 🇷🇺 Русский:	булава
 🇭🇺 Magyar: buzogány
 🇹🇷 Türkçe:	topuz, gürz, bozdoğan
@@ -44542,7 +44542,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧞‍♀" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jinnee":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	cin
-🇬🇧 English:	jinn, genie
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	jinn, genie
 🇷🇺 Русский:	джинн [djynn]
 🇹🇷 Türkçe:	cin
 🇦🇿 Türkcə:	cin
@@ -44578,7 +44578,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hyaenidae" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "andık":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	sırtlan
-🇬🇧 English:	hyena
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hyena
 🇷🇺 Русский:	гиена [giyena]
 🇹🇷 Türkçe:	sırtlan
 🇦🇿 Türkcə:	kaftar, sırtlan, goreşən
@@ -44624,7 +44624,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "балабан" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "баламан":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	borğuy
-🇬🇧 English:	pipe (ex. duduk, balaban)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pipe (ex. duduk, balaban)
 🇷🇺 Русский:	дудка (напр. дудук, балабан)
 🇹🇷 Türkçe:	düdük, mey
 🇦🇿 Türkcə:	balaban, düdük (tütək), ney (mey)
@@ -44669,7 +44669,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "osetic" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "osete" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ossetic":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	Ossetian
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Ossetian
 🇷🇺 Русский:	осетин, осетинка, осетинский (-ая, -ое)
 🇹🇷 Türkçe:	Oset
 🏴 Qırımtatar:	oset
@@ -44699,7 +44699,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spermophilus" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "souslik":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	kelägü {+ striped field mouse}
-🇬🇧 English:	ground squirrel
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	ground squirrel
 🇷🇺 Русский:	суслик
 🇭🇺 Magyar: ürge
 🇲🇳 Mongol: ürge
@@ -44754,7 +44754,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tandır fırını" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тондир" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тандир":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	pit oven, tandoor
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	pit oven, tandoor
 🇷🇺 Русский:	тандыр [tandyr]
 🇹🇷 Türkçe:	tandır
 🇦🇿 Türkcə:	təndir
@@ -44804,7 +44804,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sciurus":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱅𐰘𐰭
 🐺 Old Turkic (bef. XV c.):	teyiŋ (tiyiŋ)
-🇬🇧 English:	squirrel
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	squirrel
 🇷🇺 Русский:	белка
 🇹🇷 Türkçe:	sincap, değin {dial.}, teyyun {arch.}
 🇦🇿 Türkcə:	sincab
@@ -44858,7 +44858,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "defder" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "note book":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	däftär (däptär)
-🇬🇧 English:	notebook, notepad, register, registry 📔🗒📓
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	notebook, notepad, register, registry 📔🗒📓
 🇷🇺 Русский:	тетрадь [tetrad], блокнот [bloknot], регистр; (реже: книга)
 🇲🇳 Mongol: devter
 🇹🇷 Türkçe:	defter
@@ -44915,7 +44915,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sodalı su" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aerated water" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "soda suyu":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	soda, carbonated drink
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	soda, carbonated drink
 🇷🇺 Русский:	газировка (газированная вода, газированный напиток, газированный сок), содовая
 🇹🇷 Türkçe:	gazoz
 🇦🇿 Türkcə:	qazlı su
@@ -44964,7 +44964,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кристальный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хрустальный":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	bolor (billäwr)
-🇬🇧 English:	crystal 💎
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	crystal 💎
 🇷🇺 Русский:	кристалл [kristall]
 🇹🇷 Türkçe:	kristal, billur (billûr)
 🇦🇿 Türkcə:	büllur
@@ -45005,7 +45005,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "любоваться":
         bot.send_message(message.chat.id, '''Below are the most popular verbs, however, there are 3-4 similar verbs in any Turkic language.
 
-🇬🇧 English:	admire!
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	admire!
 🇷🇺 Русский:	восхищайся! любуйся!
 🇹🇷 Türkçe:	hayran ol
 🇦🇿 Türkcə:	heyran ol
@@ -45046,7 +45046,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronzed" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aeris":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tuç
-🇬🇧 English:	bronze
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bronze
 🇷🇺 Русский:	бронза [bronza]
 🇲🇳 Mongol: khürel
 🇹🇷 Türkçe:	tunç
@@ -45095,7 +45095,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pallas' cat" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pallas cat":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	manu
-🇬🇧 English:	manul, Pallas's cat
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	manul, Pallas's cat
 🇷🇺 Русский:	манул, палласов кот
 🇲🇳 Mongol: manuul
 🇹🇷 Türkçe:	manul, Pallas kedisi
@@ -45138,7 +45138,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "argentum" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ag":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	kümiş (kümüş)
-🇬🇧 English:	silver
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	silver
 🇷🇺 Русский:	серебро
 🇲🇳 Mongol: möngö
 🇹🇷 Türkçe:	gümüş
@@ -45184,7 +45184,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "букварь" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "elifba":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	älifbey (älifbä, älifba)
-🇬🇧 English:	alphabet, ABC
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	alphabet, ABC
 🇷🇺 Русский:	алфавит [alfavit]
 🇹🇷 Türkçe:	alfabe, abece {neol.}, elifba {ottoman alph.}
 🇦🇿 Türkcə:	əlifba, əlippa/əlipba {arch. + dial.}
@@ -45249,7 +45249,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salwar" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shalwar":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	iştan/içton/ışton (اِشتُن), öm/üm (اُم), üträn/öträn (اُترَن), şalvar/şälvar (شلوار)
-🇬🇧 English:	trousers, pants
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	trousers, pants
 🇷🇺 Русский:	брюки, штаны, шаровары (шальвары)
 🇭🇺 Magyar: nadrág, salavári
 🇲🇳 Mongol: ömödö (ömd), shalbuur
@@ -45295,7 +45295,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "0" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нолевой" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нулевой":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	zero, null
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	zero, null
 🇷🇺 Русский:	ноль [nol], нуль [nul]
 🇹🇷 Türkçe:	sıfır
 🇦🇿 Türkcə:	sıfır
@@ -45340,7 +45340,7 @@ Other types of traditional or national sausages are listed below:
         bot.send_message(message.chat.id, '''
 🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖𐰴𐰀
 🐺 Old Turkic (bef. XV c.):	yaqa
-🇬🇧 English:	collar, rim
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	collar, rim
 🇷🇺 Русский:	воротник, край
 🇭🇺 Magyar: nyak
 🇲🇳 Mongol: zakh (zakha)
@@ -45385,7 +45385,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "erişkin" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зрелый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зрелая":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	adult
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	adult
 🇷🇺 Русский:	взрослый, совершеннолетний
 🇹🇷 Türkçe:	yetişkin
 🇦🇿 Türkcə:	yetkin
@@ -45429,7 +45429,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tüşünce" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "düşünce":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	saqış (saqınç)
-🇬🇧 English:	consciousness, conscious, reasoning, thought, thinking
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	consciousness, conscious, reasoning, thought, thinking
 🇷🇺 Русский:	размышление, раздумье, рассудок, сознание (осознание), понимание (понятие), дума, мысль
 🇹🇷 Türkçe:	bilinç, düşünce
 🇦🇿 Türkcə:	düşüncə
@@ -45474,7 +45474,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "avaze" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seda":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	ün, säs
-🇬🇧 English:	sound, voice, noise
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	sound, voice, noise
 🇷🇺 Русский:	звук, голос, шум
 🇹🇷 Türkçe:	ses, ün, avaz, seda
 🇦🇿 Türkcə:	səs, ün, səda, avaz
@@ -45533,7 +45533,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "биточки" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "биточек" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köfte":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	meatball, kofta
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	meatball, kofta
 🇷🇺 Русский:	тефтели, фрикадельки, котлеты, битки, кюфта
 🇹🇷 Türkçe:	köfte
 🇦🇿 Türkcə:	küftə (kiftə)
@@ -45567,7 +45567,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsey" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsey" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsie":
-        bot.send_message(message.chat.id, '''🇬🇧 English:	gypsy, romani
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	gypsy, romani
 🇷🇺 Русский:	цыган [cigan/tsygan], цыганка, цыганский (-ая, -ое)
 🇹🇷 Türkçe:	çingene
 🇦🇿 Türkcə:	qaraçı
@@ -45600,6 +45600,39 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	tsıgan''', reply_markup=markup_menu)
 # RUSRUS???
 # tyvrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romani" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çingene" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыган" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыганка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыганский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cigan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tsygan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sigan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsies" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsies" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çigan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "цыгане" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çingen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kıpti" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tzigane" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "romany" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gipsey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gypsie":
+        bot.send_message(message.chat.id, '''🇮🇪 Éire
+
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: Ireland
+🇷🇺 Русский:	Ирландия [Irlandiya]
+🇹🇷 Türkçe:	İrlanda
+🇦🇿 Türkcə:	İrlandiya {north azb.}, İrlənd {south azb.}
+🏴 Uyghur:	Irlandiye
+🏴 Çovaşla:	İrlandi	
+🏴 Salırça:	Ayarlan
+🏴 Gagauz:	İrlanda
+🇹🇲🇺🇿🇰🇿🇰🇬🏴: İrlandiya''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
