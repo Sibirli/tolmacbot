@@ -1044,7 +1044,7 @@ Tofalap: burhan''', reply_markup=markup_menu)
 🏴 Saqalí: buqatír, bátır (bótur)
 🏴 Dulgan-Hakalí: bukatír
 🏴 Tıvalap: maadır
-🏴 Salırça: qaramaŋ
+🏴 Salırça: batur
 🏴 Xakastap: matır, alıp
 🏴 Altaylap: baatır, alıp
 🏴 Şor: alıp
@@ -45647,6 +45647,47 @@ Other types of traditional or national sausages are listed below:
 🏴 Hakalí:	suruyúhut	
 🏴 Xakas:	xabarcı
 🇺🇿🏴: jurnalist''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hero" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "герой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "герои" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "heroe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kahraman" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaharman":
+        bot.send_message(message.chat.id, '''See also / См.также / Ayrıca bknz.: batır (baghatur), yiğit (jigit)
+
+🐺 Old Turkic (bef. XV c.): är, ärän, alp, alpär, alpağu (alpağut), batur, begi (bögä), sökmän, qaqız, toŋa
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hero
+🇷🇺 Русский:	герой [geroy]
+🇹🇷 Türkçe:	kahraman
+🇦🇿 Türkcə:	qəhrəman
+🇹🇲 Türkmen:	gahryman
+🇺🇿 Oʻzbek:	qahramon
+🇰🇿 Qazaq:	qaharman
+🇰🇬 Qırğız:	qaarman
+🏴 Uyghur:	qehriman
+🏴 Tatarça:	qaharman
+🏴 Başqort:	qaharman
+🏴 Çovaşla:	pattor
+🏴 Qaraqalpaq:	qaharman
+🏴 Qırımtatar:	qaraman
+🏴 Qumuq:	igit
+🏴 Alança:	jigit
+🏴 Noğay:	yigit
+🏴 Sıbırca:	qaharman
+🏴 Salırça:	qaramaŋ
+🏴 Gagauz:	kahraman
+🏴 Urumça:	xaraman
+🏴 Qarayçe:	qaraman
+🏴 Qırımçah:	qaraman
+🏴 Saqalí:	ńurgun, qohúner
+🏴 Hakalí:	mata, kohún
+🏴 Tıva:	maadır
+🏴 Altay:	qaza basqan kiji
+🏴 Xakas:	acaŋ
+🏴 Şor:	aydas
+🏴 Duha-Soyıt:	titim
+🏴 Tofa-Qarağas:	mergen''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
