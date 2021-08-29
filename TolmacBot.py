@@ -45622,6 +45622,32 @@ Other types of traditional or national sausages are listed below:
 🇹🇲🇺🇿🇰🇿🇰🇬🏴: İrlandiya''', reply_markup=markup_menu)
 # country
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "journalist" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "журналист" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jurnalist" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gazeteci" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gazeteçi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ирландия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "columnist" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "обозреватель" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "журналистка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "newsman":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	journalist
+🇷🇺 Русский:	журналист [jurnalist]
+🇹🇷 Türkçe:	gazeteci
+🇦🇿 Türkcə:	jurnalist, əxbar-nəvis {arch.}
+🇹🇲 Türkmen:	habarçy
+🇰🇿 Qazaq:	jornalşı
+🇰🇬 Qırğız:	qabarçı
+🏴 Uyghur:	axbaratchi
+🏴 Çovaşla:	şurnalco
+🏴 Sıbırca:	qäbärce
+🏴 Salırça:	cicı
+🏴 Qarayçe:	vaxtlıx yazuvçu
+🏴 Hakalí:	suruyúhut	
+🏴 Xakas:	xabarcı
+🇺🇿🏴: jurnalist''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
