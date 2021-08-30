@@ -45689,6 +45689,45 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	titim
 🏴 Tofa-Qarağas:	mergen''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "independence" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "независимость" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bağımsızlık" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "istiklal" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "istiklâl" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "independense":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	independence 
+🇷🇺 Русский:	независимость
+🇹🇷 Türkçe:	bağımsızlık
+🇦🇿 Türkcə:	müstəqillik, istiqlaliyyət
+🇹🇲 Türkmen:	garaşsyzlyk
+🇺🇿 Oʻzbek:	mustaqillik
+🇰🇿 Qazaq:	täwelsizdik
+🇰🇬 Qırğız:	köz qarandı emestik
+🏴 Uyghur:	musteqillik
+🏴 Tatarça:	möstäqıyllek, bäysezlek
+🏴 Başqort:	boyondoroqhoðloq
+🏴 Çovaşla:	poxonmanlox
+🏴 Qaraqalpaq:	gárezsizlik
+🏴 Qırımtatar:	mustaqillik
+🏴 Qumuq:	xarlısızlıq
+🏴 Alança:	başına erkinlik
+🏴 Noğay:	boysınmaslıq
+🏴 Sıbırca:	möstäqillek
+🏴 Salırça:	ezi iline
+🏴 Gagauz:	baamsızlık
+🏴 Urumça:	???
+🏴 Qarayçe:	erklänmä
+🏴 Qırımçah:	qadirlılık
+🏴 Saqalí:	tutuluga suoq buolú
+🏴 Hakalí:	tutuluga huok buolú
+🏴 Tıva:	xamaarışpas
+🏴 Altay:	qamaanı coqtuq
+🏴 Xakas:	pos alıncazı
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# uumrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
