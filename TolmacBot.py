@@ -45728,6 +45728,39 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
 # uumrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "irbis" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ilbars" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "irbiz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "snow leopard" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ounce" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "снежный барс" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "снежный леопард" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ирбис" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kar leoparı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kar parsı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uncia":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	irbis (ilbärs, irviz, irbiz)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	snow leopard, ounce (uncia uncia)
+🇷🇺 Русский:	снежный барс, снежный леопард, ирбис [irbis]
+🇲🇳 Mongol: irves
+🇹🇷 Türkçe:	kar leoparı, kar parsı
+🇺🇿 Oʻzbek:	ilvirs
+🇰🇿 Qazaq:	ilbis
+🇰🇬 Qırğız:	ilbirs
+🏴 Uyghur:	yilpiz
+🏴 Tatarça:	aq barıs (aq bars)
+🏴 Başqort:	barıþ
+🏴 Çovaşla:	akparos
+🏴 Sıbırca:	ilbis
+🏴 Saqalí:	bárıs
+🏴 Tıva:	irbiş
+🏴 Altay:	irbis
+🏴 Sarig-Yugur:	ärväs (arävs)
+🇦🇿🇹🇲🏴 : irbis {<- russian <- altai}''', reply_markup=markup_menu)
+# animal
+# RUSRUS??? azrus tkrus qqrus crhrus kumrus krcrus nogrus
+# slrcn gagrus uumrus kdrrus jctrus dlgrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
