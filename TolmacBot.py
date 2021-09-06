@@ -45761,6 +45761,39 @@ Other types of traditional or national sausages are listed below:
 # RUSRUS??? azrus tkrus qqrus crhrus kumrus krcrus nogrus
 # slrcn gagrus uumrus kdrrus jctrus dlgrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "student" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "talib" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "talibs" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "taliban" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "студент" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "талиб" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "талибы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "талибан" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "talebe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "telebe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "üniversite öğrencisi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "university student":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	university student
+🇷🇺 Русский:	студент [student]
+🇹🇷 Türkçe:	talebe, üniversite öğrencisi, softa {arch.}
+🇦🇿 Türkcə:	tələbə, talib {arch.}, suxtə (softa) {arch.}
+🇹🇲 Türkmen:	talyp
+🇺🇿 Oʻzbek:	talaba, tolib {arch.}
+🏴 Uyghur:	telebe, talip
+🏴 Başqort:	taläbä, talip
+🏴 Qaraqalpaq:	talaba
+🏴 Qırımtatar:	sohta, talebe
+🏴 Alança:	soxta, talaba
+🏴 Salırça:	daşüe
+🏴 Qarayçe:	universitet üränüvçüsü
+🏴 Qırımçah:	talebe
+🏴 Saqalí:	ustucuon
+🏴 Tıva:	surguul
+🏴 Şor:	universitet ürgençizi
+🇰🇿🇰🇬🏴: student''', reply_markup=markup_menu)
+# RUSRUS??? kzrus kgrus ttrus cvrus kumrus nogrus
+# styrus slrcn gagrus uumrus kdrrus sahrus dlgrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
