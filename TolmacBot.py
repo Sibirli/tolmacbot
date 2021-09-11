@@ -45757,7 +45757,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Altay:	irbis
 🏴 Sarig-Yugur:	ärväs (arävs)
 🇦🇿🇹🇲🏴 : irbis {<- russian <- altai}''', reply_markup=markup_menu)
-# animal
+# animal cameo
 # RUSRUS??? azrus tkrus qqrus crhrus kumrus krcrus nogrus
 # slrcn gagrus uumrus kdrrus jctrus dlgrus khakrus shorrus sytrus tofrus
 
@@ -45793,6 +45793,56 @@ Other types of traditional or national sausages are listed below:
 🇰🇿🇰🇬🏴: student''', reply_markup=markup_menu)
 # RUSRUS??? kzrus kgrus ttrus cvrus kumrus nogrus
 # styrus slrcn gagrus uumrus kdrrus sahrus dlgrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ılık" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ilık" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "теплый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тепло" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "теплая" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "теплое" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "теплые" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тепленький" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тепловатый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lukewarm" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "warm" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tepid" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "warmish":
+        bot.send_message(message.chat.id, '''❔ In Turkic languages this means "not warm, not cold". If you need to say "warm weather" then you need to use the word "hot".
+
+🐺 Old Turkic (bef. XV c.):	ılığ (yılığ)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	lukewarm (moderately warm - not cold), tepid, warmish
+🇷🇺 Русский:	тёплый (не холодный)
+🇭🇺 Magyar: meleg
+🇹🇷 Türkçe:	ılık
+🇦🇿 Türkcə:	ilıq
+🇹🇲 Türkmen:	ýyly
+🇺🇿 Oʻzbek:	iliq
+🇰🇿 Qazaq:	jılı
+🇰🇬 Qırğız:	jıluu
+🏴 Uyghur:	illiq
+🏴 Tatarça:	cılı
+🏴 Başqort:	yılı
+🏴 Çovaşla:	löp
+🏴 Qaraqalpaq:	jıllı
+🏴 Qırımtatar:	yılı
+🏴 Qumuq:	yılı
+🏴 Alança:	jılı
+🏴 Noğay:	yılı
+🏴 Sıbırca:	yılı
+🏴 Salırça:	yili
+🏴 Gagauz:	ılı
+🏴 Urumça:	cılı
+🏴 Qarayçe:	ilı (yılı, yıllı)
+🏴 Qırımçah:	yıllı
+🏴 Saqalí:	sılás, ılá
+🏴 Hakalí:	hılás, içiges
+🏴 Tıva:	çılıg
+🏴 Altay:	cılu
+🏴 Xakas:	çılığ
+🏴 Şor:	çılığ
+🏴 Duha-Soyıt:	çılığ (cılığ)
+🏴 Tofa-Qarağas:	çılığ''', reply_markup=markup_menu)
+# cameo
 
     else:
         bot.send_message(message.chat.id, hesbisey)
