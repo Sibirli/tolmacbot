@@ -45844,6 +45844,71 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	çılığ''', reply_markup=markup_menu)
 # cameo
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bok" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "boq" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "boh" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pok" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "poo" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crap" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "faeces" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "faece" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "какашка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "экскременты" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "помет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "испражнения" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "испражнение" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "экскремент" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "какашечка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "какашка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "какуля" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "какулька" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кака" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "feces" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fece" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shit" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кал" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фекалии" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "фекалия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "говно" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kaka" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дерьмо" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "poop" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dışkı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "turd" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "💩":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	boq (pox)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	poo, crap, faeces 💩
+🇷🇺 Русский:	какашка
+🇹🇷 Türkçe:	bok
+🇦🇿 Türkcə:	pox
+🇹🇲 Türkmen:	bok
+🇺🇿 Oʻzbek:	bo'q
+🇰🇿 Qazaq:	boq
+🇰🇬 Qırğız:	boq
+🏴 Uyghur:	poq
+🏴 Tatarça:	buq
+🏴 Başqort:	buq
+🏴 Çovaşla:	pox
+🏴 Qaraqalpaq:	boq
+🏴 Qırımtatar:	boq
+🏴 Qumuq:	poq
+🏴 Alança:	boq
+🏴 Noğay:	boq
+🏴 Sıbırca:	puq
+🏴 Salırça:	pox
+🏴 Gagauz:	bok
+🏴 Urumça:	box
+🏴 Qarayçe:	box
+🏴 Qırımçah:	boq
+🏴 Saqalí:	sáq
+🏴 Hakalí:	hák
+🏴 Tıva:	ödek
+🏴 Altay:	boq
+🏴 Xakas:	pox
+🏴 Şor:	poq
+🏴 Duha-Soyıt:	mınâq
+🏴 Tofa-Qarağas:	mıyaq''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
