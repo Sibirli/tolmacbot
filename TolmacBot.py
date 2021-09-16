@@ -45909,6 +45909,27 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	mınâq
 🏴 Tofa-Qarağas:	mıyaq''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kavkaz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kafkaz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кавказ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кавказский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кафказ" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kafkas" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kavkas" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kafkasya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kafkaslar" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caucasus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caucas" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caucasian" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "💩":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Caucasus
+🇷🇺 Русский:	Кавказ [Kavkaz]
+🇹🇷 Türkçe:	Kafkasya
+🇦🇿 Türkcə:	Qafqaz
+🇹🇲 Türkmen:	Kawkaz, Kapkaz {arch.}
+🏴 Saqalí:	Qapqás
+🇺🇿🇰🇿🇰🇬🏴: Kavkaz''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
