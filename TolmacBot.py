@@ -45930,6 +45930,56 @@ Other types of traditional or national sausages are listed below:
 🏴 Saqalí:	Qapqás
 🇺🇿🇰🇿🇰🇬🏴: Kavkaz''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "scales" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "libra" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "terazi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "terezi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "весы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tartı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "scale" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "безмен" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "weighing scale" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mass scales" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "weight scales" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mass balances" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "weight balances" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "terazi burcu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "terazi takımyıldzı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "♎️" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "⚖️":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	I. tarazuk (tärazu, täräzü) II. Qara quş
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. scales ⚖️ II. Libra ♎️
+🇷🇺 Русский:	весы
+🇹🇷 Türkçe:	terazi
+🇦🇿 Türkcə:	tərəzi {I, II}, çəki, qapan
+🇹🇲 Türkmen:	I. terezi, gapan II. Mizan
+🇺🇿 Oʻzbek:	I. tarozi II. Mezon
+🇰🇿 Qazaq:	I. tarazı II. Mıyzan
+🇰🇬 Qırğız:	taraza
+🏴 Uyghur:	I. taraza, jing II. Mizan
+🏴 Tatarça:	I. ülçäw II. Mizan
+🏴 Başqort:	I. ülsäw II. Miðan
+🏴 Çovaşla:	tarasa
+🏴 Qaraqalpaq:	I. tárezi II. Miyzan
+🏴 Qırımtatar:	I. teraze, qantar II. Mizan
+🏴 Qumuq:	I. tereze II. Mizan
+🏴 Alança:	bazman
+🏴 Noğay:	şekki
+🏴 Sıbırca:	I. ülcäw II. Misan
+🏴 Salırça:	I. olman, çin II. Mizan
+🏴 Gagauz:	terezä {I, II}, çeki, kantar
+🏴 Urumça:	terezi {I, II}, çeki, xantar
+🏴 Qarayçe:	terezi (tarazu, tarazuv) {I, II}, qantar
+🏴 Qırımçah:	teraze {I, II}, qantar
+🏴 Saqalí:	ıyáhın
+🏴 Hakalí:	ıyáhın
+🏴 Tıva:	teŋzi (deŋzi)
+🏴 Altay:	tereze
+🏴 Xakas:	ködirges, kender
+🏴 Şor:	pastırğış
+🏴 Duha-Soyıt:	hemcîîşkin
+🏴 Tofa-Qarağas:	hemnääşkin''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
