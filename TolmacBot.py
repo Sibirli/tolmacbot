@@ -45951,7 +45951,7 @@ Other types of traditional or national sausages are listed below:
 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. scales ⚖️ II. Libra ♎️
 🇷🇺 Русский:	весы
 🇹🇷 Türkçe:	terazi
-🇦🇿 Türkcə:	tərəzi {I, II}, çəki, qapan
+🇦🇿 Türkcə:	tərəzi {I, II}, çəki {I}, qapan {I}
 🇹🇲 Türkmen:	I. terezi, gapan II. Mizan
 🇺🇿 Oʻzbek:	I. tarozi II. Mezon
 🇰🇿 Qazaq:	I. tarazı II. Mıyzan
@@ -45967,10 +45967,10 @@ Other types of traditional or national sausages are listed below:
 🏴 Noğay:	şekki
 🏴 Sıbırca:	I. ülcäw II. Misan
 🏴 Salırça:	I. olman, çin II. Mizan
-🏴 Gagauz:	terezä {I, II}, çeki, kantar
-🏴 Urumça:	terezi {I, II}, çeki, xantar
-🏴 Qarayçe:	terezi (tarazu, tarazuv) {I, II}, qantar
-🏴 Qırımçah:	teraze {I, II}, qantar
+🏴 Gagauz:	terezä {I, II}, çeki {I}, kantar {I}
+🏴 Urumça:	terezi {I, II}, çeki {I}, xantar {I}
+🏴 Qarayçe:	terezi (tarazu, tarazuv) {I, II}, qantar {I}
+🏴 Qırımçah:	teraze {I, II}, qantar {I}
 🏴 Saqalí:	ıyáhın
 🏴 Hakalí:	ıyáhın
 🏴 Tıva:	teŋzi (deŋzi)
@@ -45979,6 +45979,56 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	pastırğış
 🏴 Duha-Soyıt:	hemcîîşkin
 🏴 Tofa-Qarağas:	hemnääşkin''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tall" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "high" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uzunboylu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uzunboy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uzun boylu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "uzun boy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yüksek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "высокий" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "высоко" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "высокая" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "высокое" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "высокие" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hündür":
+        bot.send_message(message.chat.id, '''See also: big, long, up; см.также: большой, длинный, вверх; ayrıca bknz: büyük, uzun, yukarı
+
+🐺 Old Turkic (bef. XV c.):	ediz (eðiz), bedük (beðük), yüksäk
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. tall II. high
+🇷🇺 Русский:	высокий
+🇲🇳 Mongol: öndör
+🇹🇷 Türkçe:	I. uzun boylu II. yüksek
+🇦🇿 Türkcə:	I. hündür II. yüksək
+🇹🇲 Türkmen:	beýik
+🇺🇿 Oʻzbek:	baland, novcha
+🇰🇿 Qazaq:	biyik
+🇰🇬 Qırğız:	biyik
+🏴 Uyghur:	I. égiz II. yüksek
+🏴 Tatarça:	I. biyek II. yuğarı
+🏴 Başqort:	I. beyek II. yuğarı
+🏴 Çovaşla:	I. cülö II. voyla
+🏴 Qaraqalpaq:	I. biyik II. joqarı
+🏴 Qırımtatar:	yüksek
+🏴 Qumuq:	biyik
+🏴 Alança:	miyik (biyik)
+🏴 Noğay:	I. biyik II. yoğarı
+🏴 Sıbırca:	I. peyek II. yuğarı
+🏴 Salırça:	bihi
+🏴 Gagauz:	I. balaban II. üüsek
+🏴 Urumça:	I. büyük II. yüksäk
+🏴 Qarayçe:	I. biyik II. yüksek
+🏴 Qırımçah:	yuksek
+🏴 Saqalí:	ürdük
+🏴 Hakalí:	huburú
+🏴 Tıva:	pedik
+🏴 Altay:	biyik
+🏴 Xakas:	pözik
+🏴 Şor:	mözük
+🏴 Duha-Soyıt:	bedik
+🏴 Tofa-Qarağas:	bedik''', reply_markup=markup_menu)
+# cameo
 
     else:
         bot.send_message(message.chat.id, hesbisey)
