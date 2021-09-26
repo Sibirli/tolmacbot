@@ -18377,8 +18377,6 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кирве" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kirva" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kirvo" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "siktutan" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sik tutan" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "godfather":
         bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: godfather
 🇷🇺 Русский: кум, крёстный отец✝️
@@ -46028,6 +46026,73 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	mözük
 🏴 Duha-Soyıt:	bedik
 🏴 Tofa-Qarağas:	bedik''', reply_markup=markup_menu)
+# cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tut" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tut!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tutmak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hold" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hold!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to hold" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "держи" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "держи!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "держать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "займи" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "займи!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "занимай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "занимай!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "занимать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лови" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "лови!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ловить" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поймай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поймай!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "поймать" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "занять" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "keep!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "keep" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to keep" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "catch!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "catch" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to catch" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "удержать":
+        bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐱃𐰆𐱃
+🐺 Old Turkic (bef. XV c.):	tut
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hold! catch!
+🇷🇺 Русский:	держи! лови!
+🇪🇪 Eesti: pead
+🇫🇮 Suomea: pitää
+🇰🇷 Hangug-eo: tuta (들다)
+🇭🇺 Magyar: tart
+🇹🇷 Türkçe:	tut
+🇦🇿 Türkcə:	tut
+🇹🇲 Türkmen:	tut
+🇺🇿 Oʻzbek:	tut
+🇰🇿 Qazaq:	tut
+🇰🇬 Qırğız:	tut
+🏴 Uyghur:	tut
+🏴 Tatarça:	tot
+🏴 Başqort:	tot
+🏴 Çovaşla:	tıt
+🏴 Qaraqalpaq:	tut
+🏴 Qırımtatar:	tut
+🏴 Qumuq:	tut
+🏴 Alança:	tut
+🏴 Noğay:	tut
+🏴 Sıbırca:	tot
+🏴 Salırça:	tut
+🏴 Gagauz:	tut
+🏴 Urumça:	tut
+🏴 Qarayçe:	tut
+🏴 Qırımçah:	tut
+🏴 Saqalí:	tut
+🏴 Hakalí:	tut
+🏴 Tıva:	tut
+🏴 Altay:	tut
+🏴 Xakas:	tut
+🏴 Şor:	tut
+🏴 Duha-Soyıt:	tut
+🏴 Tofa-Qarağas:	tut''', reply_markup=markup_menu)
 # cameo
 
     else:
