@@ -18655,7 +18655,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Salırça: şehit
 🏴 Gagauzça: şehit
 🏴 Urumça: martiros, şehit
-🏴 Karajče: učmachly, ystyrynhan uluslaryna
+🏴 Qarayçe: uçmaxlı, ıstırınğan uluslarına
 🏴 Qırımçahça: şeet
 🏴 Saqalí: muñnáq
 🏴 Dulgan-Hakalí: muñnák
