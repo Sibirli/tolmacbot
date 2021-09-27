@@ -46095,6 +46095,47 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	tut''', reply_markup=markup_menu)
 # cameo
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "memorial day" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "день памяти" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "день поминовения" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "памятный день" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anma günü" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "anım günü" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "день памяти павших":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Memorial Day
+🇷🇺 Русский:	день памяти, день поминовения
+🇹🇷 Türkçe:	anma günü
+🇦🇿 Türkcə:	anım günü
+🇹🇲 Türkmen:	hatyra güni
+🇺🇿 Oʻzbek:	xotira kuni
+🇰🇿 Qazaq:	eske alıw küni
+🇰🇬 Qırğız:	eskerme künü
+🏴 Uyghur:	xatire küni
+🏴 Tatarça:	xäter köne
+🏴 Başqort:	xäter könö
+🏴 Çovaşla:	asa ilü kunö
+🏴 Qaraqalpaq:	???
+🏴 Qırımtatar:	hatıra künü
+🏴 Qumuq:	???
+🏴 Alança:	???
+🏴 Noğay:	estelik küni
+🏴 Sıbırca:	qäter könö
+🏴 Salırça:	???
+🏴 Gagauz:	???
+🏴 Urumça:	???
+🏴 Qarayçe:	???
+🏴 Qırımçah:	???
+🏴 Saqalí:	???
+🏴 Hakalí:	???
+🏴 Tıva:	???
+🏴 Altay:	???
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# RUSRUS??? qqrus kumrus krcrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
