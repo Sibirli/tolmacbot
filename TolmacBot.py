@@ -46114,7 +46114,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Tatarça:	xäter köne
 🏴 Başqort:	xäter könö
 🏴 Çovaşla:	asa ilü kunö
-🏴 Qaraqalpaq:	???
+🏴 Qaraqalpaq:	eslew kúni
 🏴 Qırımtatar:	hatıra künü
 🏴 Qumuq:	???
 🏴 Alança:	???
@@ -46133,8 +46133,50 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	???
 🏴 Duha-Soyıt:	???
 🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
-# RUSRUS??? qqrus kumrus krcrus
+# RUSRUS??? kumrus krcrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "umut" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "umud" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ümit" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ümid" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ümüt" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hope" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "упование" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чаяние" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "надежда":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	umunç, umuğ, umdu, umut
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hope
+🇷🇺 Русский:	надежда
+🇹🇷 Türkçe:	umut (ümit)
+🇦🇿 Türkcə:	ümid, umud {dial.}
+🇹🇲 Türkmen:	umyt
+🇺🇿 Oʻzbek:	umid
+🇰🇿 Qazaq:	ümit
+🇰🇬 Qırğız:	ümüt
+🏴 Uyghur:	ümid
+🏴 Tatarça:	ömet
+🏴 Başqort:	ömöt
+🏴 Çovaşla:	ömöt
+🏴 Qaraqalpaq:	úmit
+🏴 Qırımtatar:	ümüt
+🏴 Qumuq:	umut
+🏴 Alança:	umut
+🏴 Noğay:	umıt
+🏴 Sıbırca:	ömöt
+🏴 Salırça:	umut
+🏴 Gagauz:	umut
+🏴 Urumça:	ümüt
+🏴 Qarayçe:	umut
+🏴 Qırımçah:	ümüt
+🏴 Saqalí:	erel, eremńi
+🏴 Hakalí:	erebil, erel
+🏴 Tıva:	idegel, ınanış, kordal, ümüt
+🏴 Altay:	ijemci, ijeniş
+🏴 Xakas:	izenis, umzu, izes
+🏴 Şor:	ijeniş
+🏴 Duha-Soyıt:	itegäl
+🏴 Tofa-Qarağas:	itegel''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
