@@ -46178,6 +46178,52 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	itegäl
 🏴 Tofa-Qarağas:	itegel''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "deşik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "teşik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "delik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hole" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дыра" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дырка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "отверстие" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "щель" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дырявая" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дырявое" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "full of holes" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "holey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "дырявый":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	teşik, telik (telük)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hole
+🇷🇺 Русский:	дыра
+🇹🇷 Türkçe:	delik
+🇦🇿 Türkcə:	deşik /blackhole - qara dəlik/
+🇹🇲 Türkmen:	deşik
+🇺🇿 Oʻzbek:	teshik
+🇰🇿 Qazaq:	tesik
+🇰🇬 Qırğız:	teşik
+🏴 Uyghur:	töshük
+🏴 Tatarça:	tişek
+🏴 Başqort:	tişek
+🏴 Çovaşla:	şotok
+🏴 Qaraqalpaq:	tesik
+🏴 Qırımtatar:	teşik
+🏴 Qumuq:	teşik
+🏴 Alança:	teşik
+🏴 Noğay:	teşik
+🏴 Sıbırca:	tişek
+🏴 Salırça:	tişüh (tişux)
+🏴 Gagauz:	delik
+🏴 Urumça:	teşik, delik
+🏴 Qarayçe:	teşik
+🏴 Qırımçah:	teşık
+🏴 Saqalí:	teheğes
+🏴 Hakalí:	teheges
+🏴 Tıva:	dejik
+🏴 Altay:	tejik
+🏴 Xakas:	tîzik
+🏴 Şor:	tejik
+🏴 Duha-Soyıt:	tehîk
+🏴 Tofa-Qarağas:	tehîk, delik''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
