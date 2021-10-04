@@ -46224,6 +46224,56 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	tehîk
 🏴 Tofa-Qarağas:	tehîk, delik''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tepe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hill" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "peak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "top of" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вершина" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "верхушка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "холм" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пик" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "макушка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "вершина холма" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "knap":
+        bot.send_message(message.chat.id, '''See also: head; См.также: голова; ayrıca bknz: baş
+
+🐺 Old Turkic (bef. XV c.):	täpä (töpe)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	hill, top, peak
+🇷🇺 Русский:	вершина, верхушка, холм, пик, макушка
+🇪🇪 Eesti: tipp
+🇲🇳 Mongol: deed (deede)
+🇭🇺 Magyar: tető
+🇹🇷 Türkçe:	tepe
+🇦🇿 Türkcə:	təpə
+🇹🇲 Türkmen:	depe
+🇺🇿 Oʻzbek:	tepa
+🇰🇿 Qazaq:	töbe
+🇰🇬 Qırğız:	töbö
+🏴 Uyghur:	töpe (tépe)
+🏴 Tatarça:	tübä
+🏴 Başqort:	tübä
+🏴 Çovaşla:	tüpe
+🏴 Qaraqalpaq:	tóbe
+🏴 Qırımtatar:	töpe
+🏴 Qumuq:	töbe
+🏴 Alança:	töppe
+🏴 Noğay:	töbe
+🏴 Sıbırca:	tübä
+🏴 Salırça:	başı
+🏴 Gagauz:	tepe
+🏴 Urumça:	tepe (töbe)
+🏴 Qarayçe:	töbä (tebe)
+🏴 Qırımçah:	töpe
+🏴 Saqalí:	töbö
+🏴 Hakalí:	töbö
+🏴 Tıva:	bajı
+🏴 Altay:	töbö
+🏴 Xakas:	tigey
+🏴 Şor:	tegey
+🏴 Duha-Soyıt:	başı
+🏴 Tofa-Qarağas:	tehek''', reply_markup=markup_menu)
+#cameo
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
