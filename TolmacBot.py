@@ -46274,6 +46274,49 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	tehek''', reply_markup=markup_menu)
 #cameo
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spotted nutcracker" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eurasian nutcracker" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nutcracker bird" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göknar kargası" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köknar kargası" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sedir kuşu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "servi kuşu" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кедровка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ореховка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nucifraga caryocatactes":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	spotted nutcracker, eurasian nutcracker, nutcracker
+🇷🇺 Русский:	кедровка, ореховка
+🇹🇷 Türkçe:	göknar kargası, sedir kuşu, servi kuşu
+🇦🇿 Türkcə:	şam qarğası
+🇹🇲 Türkmen:	???
+🇺🇿 Oʻzbek:	qaragʻay qargʻa
+🇰🇿 Qazaq:	balqarağay torğayı, samırkeş, samırsın
+🇰🇬 Qırğız:	çaar qarğa
+🏴 Uyghur:	???
+🏴 Tatarça:	erbetçe, erbet çıpçığı
+🏴 Başqort:	bayan qoş, sıbar hayıþqan, şırşı hıyıþqanı
+🏴 Çovaşla:	ketor kayokö
+🏴 Qaraqalpaq:	???
+🏴 Qırımtatar:	???
+🏴 Qumuq:	???
+🏴 Alança:	???
+🏴 Noğay:	???
+🏴 Sıbırca:	warapqoş
+🏴 Salırça:	???
+🏴 Gagauz:	???
+🏴 Urumça:	???
+🏴 Qarayçe:	???
+🏴 Qırımçah: ???
+🏴 Saqalí:	oŋolo
+🏴 Hakalí:	oŋolo
+🏴 Tıva:	keergen
+🏴 Altay:	taral
+🏴 Xakas:	keergen (kîîrgey), xaastas, çağırğa
+🏴 Şor:	kergen (körgän), quyuqpaş
+🏴 Duha-Soyıt:	keerhän (geerhän)
+🏴 Tofa-Qarağas:	keerhen''', reply_markup=markup_menu)
+# tkrus qqrus crhrus kumrus krcrus nogrus slrcn gagrus uumrus kdrrus jctrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
