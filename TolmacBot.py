@@ -23763,7 +23763,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "calamari":
         bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: squid 🦑
 🇷🇺 Русский: кальмар [kalmar]
-🇹🇷 Türkçe: kalamar, mürekkep balığı {+ cuttlefish}, bülbüliye {arch.}
+🇹🇷 Türkçe: kalamar, mürekkep balığı {+ cuttlefish}, bülbüliye {arch.}, qamış balığı {arch.}, sipya balığı {arch.}
 🇦🇿 Türkcə: kalmar, qalamar {arch.}
 🇹🇲 Türkmençe: kalmar
 🇺🇿 Oʻzbekcha: kalmar
