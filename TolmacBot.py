@@ -46325,8 +46325,9 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ведро" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bucketful" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бадья" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🪣" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ведерко":
-        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bucket, pail
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bucket, pail 🪣
 🇷🇺 Русский:	ведро [vedro]
 🇭🇺 Magyar: vödör, serleg
 🇹🇷 Türkçe:	kova
@@ -46367,7 +46368,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "varel" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fıçı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кадка":
-        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	barrel, cask
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	barrel, cask 🛢
 🇷🇺 Русский:	бочка
 🇹🇷 Türkçe:	varel, fıçı
 🇦🇿 Türkcə:	çəllək
