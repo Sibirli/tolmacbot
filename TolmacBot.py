@@ -15,15 +15,15 @@ db = Database(os.environ.get('DATABASE_URL'))  # !!!!!!!!!!!!!!!!!!!
 hesbisey = '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 Nothing found, write other word. You can ask author to add this word, you can also write me your suggestions and comments if you notice a mistake @sibirli
 Our channel: @tolmacchannel
 Our chat: @tolmacchat
-Donate: https://t.me/TolmacChannel/364
+Donate: https://t.me/TolmacChannel/616
 🇷🇺 Ничего не найдено, введите другое слово. Еще Вы можете попросить автора добавить это слово, также можете написать мне свои предложения и замечания если заметили ошибку @sibirli
 Наш канал: @tolmacchannel
 Наш чат: @tolmacchat
-Поддержать финансово: https://t.me/TolmacChannel/364
+Поддержать финансово: https://t.me/TolmacChannel/616
 🇹🇷 Hiçbirşey bulunamadı, başka bir kelime yazın. Bot yaratıcısından bu kelime eklemesini isteyebilirsiniz, ayrıca teklif ve hata hakkında bana yazabilirsiniz @sibirli
 Kanal: @tolmacchannel
 Sohbet: @tolmacchat
-Yatırım: https://t.me/TolmacChannel/364'''
+Yatırım: https://t.me/TolmacChannel/616'''
 
 
 # send_message
@@ -270,16 +270,7 @@ def help(message):
 
 @bot.message_handler(commands=['donate'])
 def donate(message):
-    bot.send_message(message.chat.id, '''🌐 PayPal: royalnagiyev@gmail.com
-💸 Yoo.Money: 41001451353877
-💳 Tinkoff Bank card (Russia, MasterCard): 5536 9138 7198 8115
-💳 Перевод по номеру: +7 912 816 65 15
-💎 Free TON: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
-💎 Etherium: 0x6943dD749Bb2B46d6B21275Fa9570cBd6A00d450
-💎 Bitcoin: 31juvN9wFoJLtihN4iFqHN2QZNxrZqErLF
-
-My referral links:
-Chatex crypto neobank: https://t.me/Chatex_bot?start=r_150763''')
+    bot.send_message(message.chat.id, '''https://t.me/TolmacChannel/616''')
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
@@ -475,16 +466,7 @@ E e = [e], [ɛ] (at the beginning of the word, and after T, D)
 ⚪️ Bazı Türk lehcelerinde Kiril alfabesinin özellikleri nedeniyle, “ya” ve “yä” sesleri arasındaki fark ortadan kalktı, çünkü ikisi de “я” harfiyle ifade edildi, ancak kalınlık-incelik kuralı nedeniyle, “yä”' ince kelimelerde (örnek: Törkiyä) “ya” ise kalın (örnek: qaya) kelimelerde kullanıldığı varsayılabilir. Ayrıca, Rusçada "yä" sesi olmaması nedeniyle ince sesler kullanılan bazı alınma kelimelerde, "ya" kullanılır.''')
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "donate":
-        bot.send_message(message.chat.id, '''🌐 PayPal: royalnagiyev@gmail.com
-💸 Yoo.Money: 41001451353877
-💳 Tinkoff Bank card (Russia, MasterCard): 5536 9138 7198 8115
-💳 Перевод по номеру: +7 912 816 65 15
-💎 Free TON: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
-💎 Etherium: 0x6943dD749Bb2B46d6B21275Fa9570cBd6A00d450
-💎 Bitcoin: 31juvN9wFoJLtihN4iFqHN2QZNxrZqErLF
-
-My referral links:
-Chatex crypto neobank: https://t.me/Chatex_bot?start=r_150763''')
+        bot.send_message(message.chat.id, '''https://t.me/TolmacChannel/616''')
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "привет" \
         or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hello"\
