@@ -270,7 +270,21 @@ def help(message):
 
 @bot.message_handler(commands=['donate'])
 def donate(message):
-    bot.send_message(message.chat.id, '''https://t.me/TolmacChannel/616''')
+    bot.send_message(message.chat.id, '''🌐 PayPal: royalnagiyev@gmail.com
+💳 Tinkoff Bank card (Russia, MasterCard): 5536 9138 7198 8115
+💳 Перевод по номеру: +7 912 816 65 15
+💎 FreeTON: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
+💎 BTC (Binance, BTC): 15oYLiqEgU7X4LqWhwnpDRkDLYhXQ4uT8v
+💎 ETH (Binance, ERC20): 0x0e363561a44560b6c7e564e20ae3a8958e8b78f3
+💎 BNB (BEP20/BSC): 0x0e363561a44560b6c7e564e20ae3a8958e8b78f3
+💎 Tron TRX (TRC20): TDi7QCNZ2s7KsNzfiJtqn2BvM7RBxTbWcR 
+💎 ETH (Chatex): 0x6943dD749Bb2B46d6B21275Fa9570cBd6A00d450
+💎 BTC (Chatex): 31juvN9wFoJLtihN4iFqHN2QZNxrZqErLF
+
+My referral links:
+🏦 Binance (Cryptobank #1): https://accounts.binance.com/ru/register?ref=123837078
+🧑‍🚀 MEXC Cryptoexchange: https://www.mxc.li/auth/signup?inviteCode=1DbKq
+🤖 Chatex crypto neobank: https://t.me/Chatex_bot?start=r_150763''')
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
@@ -466,7 +480,21 @@ E e = [e], [ɛ] (at the beginning of the word, and after T, D)
 ⚪️ Bazı Türk lehcelerinde Kiril alfabesinin özellikleri nedeniyle, “ya” ve “yä” sesleri arasındaki fark ortadan kalktı, çünkü ikisi de “я” harfiyle ifade edildi, ancak kalınlık-incelik kuralı nedeniyle, “yä”' ince kelimelerde (örnek: Törkiyä) “ya” ise kalın (örnek: qaya) kelimelerde kullanıldığı varsayılabilir. Ayrıca, Rusçada "yä" sesi olmaması nedeniyle ince sesler kullanılan bazı alınma kelimelerde, "ya" kullanılır.''')
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "donate":
-        bot.send_message(message.chat.id, '''https://t.me/TolmacChannel/616''')
+        bot.send_message(message.chat.id, '''🌐 PayPal: royalnagiyev@gmail.com
+💳 Tinkoff Bank card (Russia, MasterCard): 5536 9138 7198 8115
+💳 Перевод по номеру: +7 912 816 65 15
+💎 FreeTON: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
+💎 BTC (Binance, BTC): 15oYLiqEgU7X4LqWhwnpDRkDLYhXQ4uT8v
+💎 ETH (Binance, ERC20): 0x0e363561a44560b6c7e564e20ae3a8958e8b78f3
+💎 BNB (BEP20/BSC): 0x0e363561a44560b6c7e564e20ae3a8958e8b78f3
+💎 Tron TRX (TRC20): TDi7QCNZ2s7KsNzfiJtqn2BvM7RBxTbWcR 
+💎 ETH (Chatex): 0x6943dD749Bb2B46d6B21275Fa9570cBd6A00d450
+💎 BTC (Chatex): 31juvN9wFoJLtihN4iFqHN2QZNxrZqErLF
+
+My referral links:
+🏦 Binance (Cryptobank #1): https://accounts.binance.com/ru/register?ref=123837078
+🧑‍🚀 MEXC Cryptoexchange: https://www.mxc.li/auth/signup?inviteCode=1DbKq
+🤖 Chatex crypto neobank: https://t.me/Chatex_bot?start=r_150763''')
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "привет" \
         or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hello"\
@@ -46347,12 +46375,12 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cask" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kova" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бочка" \
-            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "varel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "varil" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fıçı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кадка":
         bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	barrel, cask 🛢
 🇷🇺 Русский:	бочка
-🇹🇷 Türkçe:	varel, fıçı
+🇹🇷 Türkçe:	varil, fıçı
 🇦🇿 Türkcə:	çəllək
 🇹🇲 Türkmen:	çelek
 🇺🇿 Oʻzbek:	bochka
