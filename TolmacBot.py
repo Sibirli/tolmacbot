@@ -46379,7 +46379,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fıçı" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кадка":
         bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	barrel, cask 🛢
-🇷🇺 Русский:	бочка
+🇷🇺 Русский:	бочка [bochka]
 🇹🇷 Türkçe:	varil, fıçı
 🇦🇿 Türkcə:	çəllək
 🇹🇲 Türkmen:	çelek
@@ -46401,7 +46401,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Urumça:	fıçı
 🏴 Qarayçe:	fıçı, metiy, çapçax
 🏴 Qırımçah:	fıçı
-🏴 Saqalí:	bioçuka, qolloğos
+🏴 Saqalí:	buoçuka, qolloğos
 🏴 Hakalí:	boçuku
 🏴 Tıva:	doskaar
 🏴 Altay:	boçko
