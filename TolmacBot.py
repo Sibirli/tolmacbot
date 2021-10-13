@@ -46272,7 +46272,7 @@ Other types of traditional or national sausages are listed below:
 🏴 Şor:	tegey
 🏴 Duha-Soyıt:	başı
 🏴 Tofa-Qarağas:	tehek''', reply_markup=markup_menu)
-#cameo
+# cameo
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spotted nutcracker" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eurasian nutcracker" \
@@ -46316,6 +46316,88 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	keerhän (geerhän)
 🏴 Tofa-Qarağas:	keerhen''', reply_markup=markup_menu)
 # tkrus qqrus crhrus kumrus krcrus nogrus slrcn gagrus uumrus kdrrus jctrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bucket" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pail" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kova" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vedro" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "vedre" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ведро" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bucketful" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бадья" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ведерко":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bucket, pail
+🇷🇺 Русский:	ведро [vedro]
+🇭🇺 Magyar: vödör, serleg
+🇹🇷 Türkçe:	kova
+🇦🇿 Türkcə:	vedrə, dol, dolça, satıl (sətil) {dial.}, çınqır (cığır) {dial.}, bədirə {dial.}
+🇹🇲 Türkmen:	bedre, sätil {arch.}
+🇺🇿 Oʻzbek:	chelak, paqir, satil
+🇰🇿 Qazaq:	şelek
+🇰🇬 Qırğız:	çaqa, çelek
+🏴 Uyghur:	chilek (chélek), küp, paqir
+🏴 Tatarça:	çiläk
+🏴 Başqort:	biðrä, künäk
+🏴 Çovaşla:	vitre
+🏴 Qaraqalpaq:	shelek
+🏴 Qırımtatar:	qopqa
+🏴 Qumuq:	pedire, çelek
+🏴 Alança:	çelek
+🏴 Noğay:	şelek
+🏴 Sıbırca:	ciläk, päträ
+🏴 Salırça:	sucax
+🏴 Gagauz:	bakır, vedrä, kofa
+🏴 Urumça:	çelek
+🏴 Qarayçe:	çäläk, qova
+🏴 Qırımçah:	qopqa
+🏴 Saqalí:	solúr, biedere
+🏴 Hakalí:	holúr, kokorók
+🏴 Tıva:	gedil, demir-xuuŋ, bödüree
+🏴 Altay:	könök, sabat
+🏴 Xakas:	könek
+🏴 Şor:	pedre
+🏴 Duha-Soyıt:	bîdruulga
+🏴 Tofa-Qarağas:	bîdroo (bîdruu)''', reply_markup=markup_menu)
+# cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "barrel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cask" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kova" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бочка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "varel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fıçı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "кадка":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	barrel, cask
+🇷🇺 Русский:	бочка
+🇹🇷 Türkçe:	varel, fıçı
+🇦🇿 Türkcə:	çəllək
+🇹🇲 Türkmen:	çelek
+🇺🇿 Oʻzbek:	bochka
+🇰🇿 Qazaq:	böşke
+🇰🇬 Qırğız:	çelek, böşke
+🏴 Uyghur:	küp, chilek, tung
+🏴 Tatarça:	kismäk, miçkä
+🏴 Başqort:	miskä
+🏴 Çovaşla:	piçke
+🏴 Qaraqalpaq:	bochka
+🏴 Qırımtatar:	çapçaq, metiy, fıçı
+🏴 Qumuq:	böçke, çerme
+🏴 Alança:	böçke
+🏴 Noğay:	bökşe
+🏴 Sıbırca:	mückä
+🏴 Salırça:	tuŋ
+🏴 Gagauz:	fıçı
+🏴 Urumça:	fıçı
+🏴 Qarayçe:	fıçı, metiy, çapçax
+🏴 Qırımçah:	fıçı
+🏴 Saqalí:	bioçuka, qolloğos
+🏴 Hakalí:	boçuku
+🏴 Tıva:	doskaar
+🏴 Altay:	boçko
+🏴 Xakas:	boçka
+🏴 Şor:	şapçaq
+🏴 Duha-Soyıt:	hap
+🏴 Tofa-Qarağas:	torho''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
