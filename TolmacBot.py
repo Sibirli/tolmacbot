@@ -46410,6 +46410,98 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	hap
 🏴 Tofa-Qarağas:	torho''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сaravanserai" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сaravan serai" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сaravan-serai" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "caravansary" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karavanserai" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сaravansarai" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karavansarai" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kervansaray" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kervan saray" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kervan-saray" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karvansaray" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karvan saray" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karvan-saray" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "каравансарай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карван-сарай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карвансарай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "караван сарай" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karavan-saray" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "караван-сарай":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	kârvansaray
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	сaravanserai (caravansary)
+🇷🇺 Русский:	караван-сарай [karavan-saray]
+🇪🇪 Eesti: karavanserai
+🇫🇮 Suomea: karavaaniseralji
+🇯🇵 Nihongo: kyarabansarai
+🇰🇷 Hangug-eo: kerobenseray
+🇭🇺 Magyar: karavánszeráj
+🇹🇷 Türkçe:	kervansaray
+🇦🇿 Türkcə:	karvansara (karvansaray)
+🇹🇲 Türkmen:	kerwensaraý
+🇺🇿 Oʻzbek:	karvonsaroy
+🇰🇿 Qazaq:	kerwen saray
+🇰🇬 Qırğız:	kerben-saray
+🏴 Uyghur:	karwan saray
+🏴 Tatarça:	kärwan-saray
+🏴 Başqort:	karwan-haray
+🏴 Çovaşla:	karavan-saray
+🏴 Qaraqalpaq:	kárwan saray
+🏴 Qırımtatar:	kervansaray
+🏴 Qumuq:	keriwansaray
+🏴 Alança:	keriwansaray
+🏴 Noğay:	kerwansaray
+🏴 Sıbırca:	karawan-saray
+🏴 Salırça:	karwan saray
+🏴 Gagauz:	kervansaray
+🏴 Urumça:	kervansaray
+🏴 Qarayçe:	kervansaray
+🏴 Qırımçah:	kervansaray''', reply_markup=markup_menu)
+# cameo sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сaravan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karavan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kervan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "караван" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карван" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "carawan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karawan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "караваны":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	arğış (arqış)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	caravan
+🇷🇺 Русский:	караван [karavan]
+🇹🇷 Türkçe:	kervan
+🇦🇿 Türkcə:	karvan
+🇹🇲 Türkmen:	kerwen
+🇺🇿 Oʻzbek:	karvon
+🇰🇿 Qazaq:	kerwen
+🇰🇬 Qırğız:	kerben
+🏴 Uyghur:	karwan
+🏴 Tatarça:	kärwan
+🏴 Başqort:	karwan
+🏴 Çovaşla:	karavan
+🏴 Qaraqalpaq:	kárwan, kósh
+🏴 Qırımtatar:	kervan
+🏴 Qumuq:	keriwan
+🏴 Alança:	keriwan
+🏴 Noğay:	kerwan
+🏴 Sıbırca:	karawan
+🏴 Salırça:	karwan
+🏴 Gagauz:	kervan
+🏴 Urumça:	kervan
+🏴 Qarayçe:	kervan
+🏴 Qırımçah:	kervan
+🏴 Saqalí:	kös, sele, suburğa
+🏴 Hakalí:	argıs
+🏴 Tıva:	ulag, şuuşkak koş, çin
+🏴 Altay:	karavan
+🏴 Xakas:	karavan
+🏴 Şor:	karavan
+🏴 Duha-Soyıt:	karavan
+🏴 Tofa-Qarağas:	çedeğ''', reply_markup=markup_menu)
+# altrus khakrus shorrus sytrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
