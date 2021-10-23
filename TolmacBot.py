@@ -46502,6 +46502,55 @@ Other types of traditional or national sausages are listed below:
 🏴 Tofa-Qarağas:	çedeğ''', reply_markup=markup_menu)
 # altrus khakrus shorrus sytrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧦" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "socks" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sock" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stocking" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hose" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hosiery" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hoses" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "носки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "носок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чулки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "чулок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çorap" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sox" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "corab" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "corap" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stockings":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	uyuq
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	🧦 socks, sock, stocking, hose
+🇷🇺 Русский:	носки, носок, чулки, чулок
+🇹🇷 Türkçe:	çorap
+🇦🇿 Türkcə:	corab
+🇹🇲 Türkmen:	jorap
+🇺🇿 Oʻzbek:	paypoq
+🇰🇿 Qazaq:	şulıq
+🇰🇬 Qırğız:	baypaq
+🏴 Uyghur:	paypaq
+🏴 Tatarça:	oyıqbaş
+🏴 Başqort:	oyoqbaş
+🏴 Çovaşla:	çolxa
+🏴 Qaraqalpaq:	jorap
+🏴 Qırımtatar:	çorap
+🏴 Qumuq:	çorap
+🏴 Alança:	çınday
+🏴 Noğay:	şorap
+🏴 Sıbırca:	käktä
+🏴 Salırça:	lioŋa
+🏴 Gagauz:	çorap
+🏴 Urumça:	çorap
+🏴 Qarayçe:	çorap
+🏴 Qırımçah:	çorap
+🏴 Saqalí:	ketinçe
+🏴 Hakalí:	cabıla
+🏴 Tıva:	uk
+🏴 Altay:	çuluq
+🏴 Xakas:	ux
+🏴 Şor:	çuluq
+🏴 Duha-Soyıt:	uq
+🏴 Tofa-Qarağas:	uq''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
