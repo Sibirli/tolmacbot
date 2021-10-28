@@ -46551,6 +46551,74 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	uq
 🏴 Tofa-Qarağas:	uq''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sırğa" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "earring" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "серьга" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "serga" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sirga" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "küpe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "серьги" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сережка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сережки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "earrings" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eardrop" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "eardrops" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "earing" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "earings":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	sırğa
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	earring
+🇷🇺 Русский:	серьга [serga]
+🇹🇷 Türkçe:	küpe
+🇦🇿 Türkcə:	sırğa
+🇹🇲 Türkmen:	syrga
+🇺🇿 Oʻzbek:	isirgʻa
+🇰🇿 Qazaq:	sırğa
+🇰🇬 Qırğız:	sırğa
+🏴 Uyghur:	yigine, halqa, sirgha {dial.}
+🏴 Tatarça:	sırğa
+🏴 Başqort:	hırğa
+🏴 Çovaşla:	alka
+🏴 Qaraqalpaq:	sırǵa
+🏴 Qırımtatar:	sırğa
+🏴 Qumuq:	sırğa
+🏴 Alança:	sırğa
+🏴 Noğay:	sırğa
+🏴 Sıbırca:	sırğa
+🏴 Salırça:	sırğa
+🏴 Gagauz:	küpä
+🏴 Urumça:	sırğa
+🏴 Qarayçe:	sırğa
+🏴 Qırımçah:	sırğa
+🏴 Saqalí:	ıtarğa
+🏴 Hakalí:	ıtırga
+🏴 Tıva:	sırga
+🏴 Altay:	sırğa
+🏴 Xakas:	ızırğa
+🏴 Şor:	ızırğa
+🏴 Duha-Soyıt:	sırğa
+🏴 Tofa-Qarağas:	sırğa''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seljuk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seljuq" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "seldzhuk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сельджук" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "selçuk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "selcuk" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сельджуки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сельджукский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сельчук":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	seljuk (seljuq)
+🇷🇺 Русский:	сельджук [seldjuk]
+🇹🇷 Türkçe:	selçuk
+🇦🇿 Türkcə:	səlcuq
+🇹🇲 Türkmen:	seljuk
+🇺🇿 Oʻzbek:	saljuq
+🇰🇿 Qazaq:	seljük (saljuq)
+🇰🇬 Qırğız:	seljuq
+🏴 Uyghur:	seljuq
+🏴 Tatarça:	sälcuq
+🏴 Başqort:	säljük''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
