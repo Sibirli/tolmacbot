@@ -46619,6 +46619,27 @@ Other types of traditional or national sausages are listed below:
 🏴 Tatarça:	sälcuq
 🏴 Başqort:	säljük''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mammoth" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mamont" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mamot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mammot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mamut" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mammut" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мамонт" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mammuth" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mammuthus":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	mammoth
+🇷🇺 Русский:	мамонт [mamont]
+🇲🇳 Mongol: arslan zaan
+🇹🇷 Türkçe:	mamut
+🇦🇿 Türkcə:	mamont, mamut {arch.}
+🏴 Salırça:	qıllı aslan
+🏴 Saqalí:	ú oğuha (ú oğusa), ú kíla, selî
+🏴 Altay:	toros, ker buqa
+🏴 Xakas:	arğılaŋ
+🏴 Şor:	tekke aŋ''', reply_markup=markup_menu)
+# dlgrus tyvrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
