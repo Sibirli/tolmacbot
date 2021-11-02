@@ -3947,6 +3947,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медвежья" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐻" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🧸" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐻‍❄️" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медведица":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰑𐰃𐰍
 🐺 Old Turkic (bef. 13th c.): adığ
@@ -5220,6 +5221,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "птица" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bird" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐦" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦤" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kuş":
         bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜: 𐰴𐰆𐰽
 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bird 🐦
@@ -7276,8 +7278,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "червяк" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kurt" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "solucan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🪱" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "червячек":
-        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: worm
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: worm 🪱
 🇷🇺 Русский: червь [cherv'], червяк [chervyak]
 🇹🇷 Türkçe: kurt, solucan
 🇦🇿 Türkcə: qurd, soxulcan, sazan (dialect)
@@ -23370,8 +23373,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "жестокрылые" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "coleoptera" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kın kanatlı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🪲" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "beettle":
-        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bug, beetle 🐞
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bug, beetle 🐞🪲
 🇷🇺 Русский: жук
 🇹🇷 Türkçe: böcek {ayrıca bakınız: haşere/haşerat}
 🇦🇿 Türkcə: böcək, cücü
@@ -24656,6 +24660,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
 🏴 Tofalap: flamîngo''', reply_markup=markup_menu)
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🐃" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦬" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bison" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "buffalo" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "буйвол" \
@@ -24681,7 +24686,7 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "буйволица" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "зубр" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бизоновый":
-        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bison, buffalo 🐃
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: bison 🦬, buffalo 🐃
 🇷🇺 Русский:	буйвол, бизон
 🇹🇷 Türkçe: manda, camız, kömüş, dombay, su sığırı
 🇦🇿 Türkcə: camış, gomuş, kəl ♂
@@ -25794,11 +25799,12 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобриный" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобровый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бобер" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦫" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "castor":
         bot.send_message(message.chat.id, '''See also "otter". См. также "выдра". Ayrıca bknz "su samuru"
 
 🐺 Old Turkic (bef. XV c.):	qunduz
-🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	beaver
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	beaver 🦫
 🇷🇺 Русский:	бобр
 🇹🇷 Türkçe:	kunduz
 🇦🇿 Türkcə:	qunduz
@@ -26298,8 +26304,9 @@ Tofalap: ooda uluğ''', reply_markup=markup_menu)
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тюлений" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тюленевый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "deniz köpeği" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦭" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ayı balığı":
-        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: seal
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: seal 🦭
 🇷🇺 Русский: тюлень
 🇹🇷 Türkçe: fok, denizköpeği, ayıbalığı
 🇦🇿 Türkcə: suiti
@@ -43339,9 +43346,10 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sinek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karasinek" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kara sinek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🪰" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "diptera":
         bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	çibin
-🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fly, housefly
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fly, housefly 🪰
 🇷🇺 Русский:	муха
 🇹🇷 Türkçe:	sinek, karasinek
 🇦🇿 Türkcə:	çibin, milçək {Diptera}, çivin {dial.}
@@ -46621,6 +46629,7 @@ Other types of traditional or national sausages are listed below:
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mammoth" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mamont" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🦣" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mamot" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mammot" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mamut" \
@@ -46628,7 +46637,7 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мамонт" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mammuth" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mammuthus":
-        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	mammoth
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	mammoth 🦣
 🇷🇺 Русский:	мамонт [mamont]
 🇲🇳 Mongol: arslan zaan
 🇹🇷 Türkçe:	mamut
@@ -46639,6 +46648,39 @@ Other types of traditional or national sausages are listed below:
 🏴 Xakas:	arğılaŋ
 🏴 Şor:	tekke aŋ''', reply_markup=markup_menu)
 # dlgrus tyvrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "olive" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "олива" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оливка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оливки" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оливковый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "маслина" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "zeytin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "zeytun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🫒":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	olive 🫒
+🇷🇺 Русский:	олива, оливка, оливки, оливковый, маслина
+🇹🇷 Türkçe:	zeytin
+🇦🇿 Türkcə:	zeytun
+🇹🇲 Türkmen:	zeýtun
+🇺🇿 Oʻzbek:	zaytun
+🇰🇿 Qazaq:	zäytün
+🇰🇬 Qırğız:	zaytun
+🏴 Uyghur:	zeytun
+🏴 Tatarça:	zäytün
+🏴 Başqort:	zäytün
+🏴 Çovaşla:	cu cırli
+🏴 Qaraqalpaq:	zeytun
+🏴 Qırımtatar:	zeytün (zeytin, zeytun)
+🏴 Qumuq:	zaytun
+🏴 Alança:	zeytun
+🏴 Noğay:	zeytun
+🏴 Sıbırca:	zäytün
+🏴 Salırça:	ganlan
+🏴 Gagauz:	zeytin
+🏴 Urumça:	zeytun (zeytin)
+🏴 Qarayçe:	zeytun (zaytin, zeytın)
+🏴 Qırımçah:	zeytın''', reply_markup=markup_menu)
 
     else:
         bot.send_message(message.chat.id, hesbisey)
