@@ -46646,7 +46646,8 @@ Other types of traditional or national sausages are listed below:
 🏴 Saqalí:	ú oğuha (ú oğusa), ú kíla, selî
 🏴 Altay:	toros, ker buqa
 🏴 Xakas:	arğılaŋ
-🏴 Şor:	tekke aŋ''', reply_markup=markup_menu)
+🏴 Şor:	tekke aŋ
+🇹🇲🇺🇿🇰🇿🇰🇬🏴 :	mamont''', reply_markup=markup_menu)
 # dlgrus tyvrus sytrus tofrus
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "olive" \
@@ -46681,6 +46682,50 @@ Other types of traditional or national sausages are listed below:
 🏴 Urumça:	zeytun (zeytin)
 🏴 Qarayçe:	zeytun (zaytin, zeytın)
 🏴 Qırımçah:	zeytın''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "translation" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "çeviri" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "перевод" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tercüme" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tercime" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tercüma":
+        bot.send_message(message.chat.id, '''Some languages use a literal translation from Russian word "transfer, translate".
+В некоторых языках используется дословный перевод с русского языка от слова "переводить".
+Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevirisi olarak kullanılmaktadır.
+
+🐺 Old Turkic (bef. XV c.):	evirmä
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	translation
+🇷🇺 Русский:	перевод {лингв.}
+🇹🇷 Türkçe:	çeviri, tercüme
+🇦🇿 Türkcə:	tərcümə
+🇹🇲 Türkmen:	terjime
+🇺🇿 Oʻzbek:	tarjima
+🇰🇿 Qazaq:	awdarma, tärjime
+🇰🇬 Qırğız:	qotormo
+🏴 Uyghur:	terjime
+🏴 Tatarça:	tärcemä
+🏴 Başqort:	tärjemä
+🏴 Çovaşla:	kucaru, kucarni
+🏴 Qaraqalpaq:	awdarma
+🏴 Qırımtatar:	tercime
+🏴 Qumuq:	tarcuma, göçürüw
+🏴 Alança:	köçürüw, köçürme
+🏴 Noğay:	awdaruw, köşirüw
+🏴 Sıbırca:	telmäcläw, tärjümä
+🏴 Salırça:	çüwüri
+🏴 Gagauz:	çevirmäk, çeviri
+🏴 Urumça:	tercüme
+🏴 Qarayçe:	çevirmä
+🏴 Qırımçah:	tercıme
+🏴 Saqalí:	tılbás
+🏴 Hakalí:	tulmás (tılbás)
+🏴 Tıva:	oçuldurar
+🏴 Altay:	köçürer
+🏴 Xakas:	tilbes
+🏴 Şor:	-
+🏴 Duha-Soyıt:	-
+🏴 Tofa-Qarağas:	-''', reply_markup=markup_menu)
+# shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
