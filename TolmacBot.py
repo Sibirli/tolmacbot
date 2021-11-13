@@ -46727,6 +46727,51 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 🏴 Tofa-Qarağas:	-''', reply_markup=markup_menu)
 # shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "globe" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "globus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "глобус" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yer küresi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yerküre" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yerküresi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yer küre" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "küre":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	globe
+🇷🇺 Русский:	глобус [globus]
+🇲🇳 Mongol: bömbörtsög {"ball-like, sphere-like"}
+🇪🇪 Eesti: gloobus
+🇫🇮 Suomea: karttapallo {"map" + "sphere"}
+🇯🇵 Nihongo: chikyūgi {🇹🇼 dìqiúyí: "earth" + "apparatus"}
+🇰🇷 Hangug-eo: jiguui {🇹🇼 dìqiúyí: "earth" + "apparatus"}
+🇭🇺 Magyar: földgömb {"earth" + "sphere"}
+🇹🇷 Türkçe:	yer küresi, yerküre, küre, küre-i arz {arch.}
+🇦🇿 Türkcə:	kürə, yer kürəsi, qlobus
+🏴 Salırça:	yer-yumax
+🏴 Tıva:	pömbürzek
+🇹🇲🇺🇿🇰🇿🇰🇬🏴: globus''', reply_markup=markup_menu)
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "operation" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "операция" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "operasion" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "operasyon" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ameliyat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ameliyyat":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	operation
+🇷🇺 Русский:	операция [operaciya]
+🇹🇷 Türkçe:	operasyon, ameliyat, harekât {milit.}, işlem {+ process}
+🇦🇿 Türkcə:	əməliyyat, hərəkat {milit.}
+🇹🇲 Türkmen:	amalyýet, hereket {milit.}
+🇺🇿 Oʻzbek:	amaliyot
+🇰🇿 Qazaq:	operatsıya, amal {math.}, äreket {tech.}
+🇰🇬 Qırğız:	araket
+🏴 Uyghur:	meshghuliyet, herket, emel {math.}
+🏴 Tatarça:	operatsıya, ğämäl
+🏴 Başqort:	operatsıya, ğämäl
+🏴 Çovaşla:	operatsi
+🏴 Qaraqalpaq:	operaciya
+🏴 Qırımtatar:	ameliyat, areket, amel {finance}
+🏴 Qumuq:	harakatlar
+🏴 Alança:	operatsiya, jarıw {medic.}''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
