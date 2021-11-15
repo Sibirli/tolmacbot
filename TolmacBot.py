@@ -46772,6 +46772,48 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 🏴 Qumuq:	harakatlar
 🏴 Alança:	operatsiya, jarıw {medic.}''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "refugee" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "refugees" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "беженец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "беженка" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "беженцы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sığınmacı" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mülteci":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tezkin
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	refugee
+🇷🇺 Русский:	беженец
+🇹🇷 Türkçe:	mülteci, sığınmacı
+🇦🇿 Türkcə:	qaçqın
+🇹🇲 Türkmen:	gaçgak, bosgun
+🇺🇿 Oʻzbek:	qochqin, qochoq
+🇰🇿 Qazaq:	qaşqın, bosqın
+🇰🇬 Qırğız:	qaçqın
+🏴 Uyghur:	qachqin
+🏴 Tatarça:	qaçaq
+🏴 Başqort:	qasaq
+🏴 Çovaşla:	tarkon
+🏴 Qaraqalpaq:	qashqın
+🏴 Qırımtatar:	qaçaq
+🏴 Qumuq:	qaçğın
+🏴 Alança:	qaçxınçı
+🏴 Noğay:	qaşqınşı
+🏴 Sıbırca:	qacaq
+🏴 Salırça:	???
+🏴 Gagauz:	kaçak
+🏴 Urumça:	xaçxın
+🏴 Qarayçe:	qaçuvçu
+🏴 Qırımçah:	qaçaq
+🏴 Saqalí:	kuotú con, teskiléççi
+🏴 Hakalí:	???
+🏴 Tıva:	desken
+🏴 Altay:	qaçqın
+🏴 Xakas:	xasxı, tîzigci, tîskin
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# RUSRUS???
+#  slrcn dlgrus shorrus sytrus tofrus
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
