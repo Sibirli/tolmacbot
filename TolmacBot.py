@@ -46748,6 +46748,7 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 🏴 Salırça:	yer-yumax
 🏴 Tıva:	pömbürzek
 🇹🇲🇺🇿🇰🇿🇰🇬🏴: globus''', reply_markup=markup_menu)
+# cameo
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "operation" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "операция" \
@@ -46813,6 +46814,153 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
 # RUSRUS???
 #  slrcn dlgrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "qalqan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kalkan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "щит" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "shield" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "🛡" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "щитовой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "щиты":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qalqan
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	shield 🛡
+🇷🇺 Русский:	щит
+🇲🇳 Mongol: bambay
+🇰🇷 Hangug-eo: baŋpe (방패)
+🇹🇷 Türkçe:	kalkan
+🇦🇿 Türkcə:	qalxan
+🇹🇲 Türkmen:	galkan
+🇺🇿 Oʻzbek:	qalqon
+🇰🇿 Qazaq:	qalqan
+🇰🇬 Qırğız:	qalqan
+🏴 Uyghur:	qalqan
+🏴 Tatarça:	qalqan
+🏴 Başqort:	qalqan
+🏴 Çovaşla:	xulkkan
+🏴 Qaraqalpaq:	qalqan
+🏴 Qırımtatar:	qalqan
+🏴 Qumuq:	qalqan
+🏴 Alança:	qalqan
+🏴 Noğay:	qalqan
+🏴 Sıbırca:	qalqan
+🏴 Salırça:	???
+🏴 Gagauz:	kalkan
+🏴 Urumça:	???
+🏴 Qarayçe:	qalqan
+🏴 Qırımçah:	???
+🏴 Saqalí:	qaqqa, kunaq
+🏴 Hakalí:	kalka
+🏴 Tıva:	galgan
+🏴 Altay:	quyaq
+🏴 Xakas:	xuyax
+🏴 Şor:	???
+🏴 Duha-Soyıt:	qalha
+🏴 Tofa-Qarağas:	qalha''', reply_markup=markup_menu)
+# cameo
+# RUSRUS???
+#  slrcn  uumrus jctrus shorrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tuğrul" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toğrul" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "turul" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "турул" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тогрул" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "тугрул" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tugrul" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toghrul" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tughrul" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "predatory bird" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bird of prey" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хищная птица" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "togrul":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	toğrul (toğrıl, tuğrıl, tuğrul)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	predatory bird, bird of prey, hawk, turul, toghrul (a bird of prey. He kills a thousand geese and eats one. The man's name Toghrul is after this.)
+🇷🇺 Русский:	хищная птица, тогрул, турул (хищная птица, которая убивает тысячу уток, а съедает лишь одну. Таким именем называют мужчин.)
+🇭🇺 Magyar: turul
+🇹🇷 Türkçe:	tuğrul
+🇦🇿 Türkcə:	toğrul
+🇹🇲 Türkmen:	togrul
+🇺🇿 Oʻzbek:	toʻgʻrul
+🇰🇿 Qazaq:	tuğırıl
+🇰🇬 Qırğız:	???
+🏴 Uyghur:	toghrul
+🏴 : ???''', reply_markup=markup_menu)
+# cameo
+# RUSRUS??? kgrus ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "goliath" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "goliaf" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "goliat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "golyat" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "calut" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "câlût" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "câlut" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "calût" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "jalut" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "goliathus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "голиаф":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Goliath
+🇷🇺 Русский:	Голиаф [Goliaf]
+🇹🇷 Türkçe:	Calut (Câlût)
+🇦🇿 Türkcə:	Calut
+🇹🇲 Türkmen:	Jalut
+🇺🇿 Oʻzbek:	Jolut
+🇰🇿 Qazaq:	Jalut
+🇰🇬 Qırğız:	Jaalut
+🏴 Uyghur:	Jalut
+🏴 Tatarça:	Calut
+🏴 Başqort:	Yalut
+🏴 Qaraqalpaq:	Jalut
+🏴 : ???''', reply_markup=markup_menu)
+# cvrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "revival" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "resurgence" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "возрождение" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "geri dönüş" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "geri dönme" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kusursuz duruma dönüş" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kusursuz duruma dönme" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yeniden canlanma" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "geridönme" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dirilince uyanış" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dirçeliş":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	toğum ajun
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	revival, resurgence
+🇷🇺 Русский:	возрождение
+🇹🇷 Türkçe:	geri dönüş, kusursuz duruma dönüş, yeniden canlanma, dirilince uyanış
+🇦🇿 Türkcə:	dirçəliş
+🇹🇲 Türkmen:	galkynyş, gaýtadan dikeltme
+🇺🇿 Oʻzbek:	tiklanish
+🇰🇿 Qazaq:	jaŋarıw, jandanıw, qayta damıw, qayta tuwıw, qayta örkendew
+🇰🇬 Qırğız:	qaytadan tuuluu, qalıbına kelüü
+🏴 Uyghur:	qayta güllinish, qayta köklesh
+🏴 Tatarça:	tergezü
+🏴 Başqort:	yaŋırıw
+🏴 Çovaşla:	çörölü
+🏴 Qaraqalpaq:	qayta tiklew, ekinshi tuwıw
+🏴 Qırımtatar:	ğayrıdan tiklenüv, yañıdan çıqma
+🏴 Qumuq:	yaŋırıw
+🏴 Alança:	jaŋırıw
+🏴 Noğay:	yaŋlanuw
+🏴 Sıbırca:	yaŋarış
+🏴 Salırça:	???
+🏴 Gagauz:	eniden duumak
+🏴 Urumça:	???
+🏴 Qarayçe:	tirgizilmäk
+🏴 Qırımçah:	???
+🏴 Saqalí:	çölgö tühű, saŋa törüö, qos törűr
+🏴 Hakalí:	???
+🏴 Tıva:	katap turgustunarı, katap sayzıraarı
+🏴 Altay:	ornığu
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Duha-Soyıt:	???
+🏴 Tofa-Qarağas:	???''', reply_markup=markup_menu)
+# RUSRUS???
+# slrcn  uumrus  jctrus  dlgrus   khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
