@@ -46962,6 +46962,63 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 # RUSRUS???
 # slrcn  uumrus  jctrus  dlgrus   khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kuru" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kurak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сухой" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сухая" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сухое" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сухие" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dry" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "arid":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	quruğ (quruq, qur), qaq, qurğaq (quruğ-qaq)
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	dry
+🇷🇺 Русский:	сухой
+🇲🇳 Mongol: khuuray
+🇪🇪 Eesti: kuiv
+🇫🇮 Suomea: kuiva
+🇹🇷 Türkçe:	kuru, kurak
+🇦🇿 Türkcə:	quru
+🇹🇲 Türkmen:	qury
+🇺🇿 Oʻzbek:	quruq, qurgʻoq
+🇰🇿 Qazaq:	qurğaq
+🇰🇬 Qırğız:	qurğaq
+🏴 Uyghur:	quruq
+🏴 Tatarça:	qorı
+🏴 Başqort:	qoro
+🏴 Çovaşla:	xorok
+🏴 Qaraqalpaq:	qurǵaq
+🏴 Qırımtatar:	quru
+🏴 Qumuq:	quru, qurğaq
+🏴 Alança:	qurğaq
+🏴 Noğay:	qurı, qurğaq
+🏴 Sıbırca:	qoro
+🏴 Salırça:	gurı
+🏴 Gagauz:	kuru
+🏴 Urumça:	xuru
+🏴 Qarayçe:	quru, qurğax
+🏴 Qırımçah:	qurı, qurğah
+🏴 Saqalí:	kuránaq, kurán
+🏴 Hakalí:	kurának
+🏴 Tıva:	kurgag
+🏴 Altay:	qurğaq
+🏴 Xakas:	xuruğ
+🏴 Şor:	quruğ
+🏴 Duha-Soyıt:	qurğağ
+🏴 Tofa-Qarağas:	qurğağ''', reply_markup=markup_menu)
+# cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "carthage" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "карфаген" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "karfagen" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kartaca" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kartac" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "carthaginian":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Carthage
+🇷🇺 Русский:	Карфаген [Karfagen]
+🇹🇷 Türkçe:	Kartaca
+🇦🇿 Türkcə:	Qartac [Qartaj] (قرطاج)''', reply_markup=markup_menu)
+# geo
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
