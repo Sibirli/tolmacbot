@@ -47019,6 +47019,59 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 🇦🇿 Türkcə:	Qartac [Qartaj] (قرطاج)''', reply_markup=markup_menu)
 # geo
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бояться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пугаться" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to fear" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "fear!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "be afraid of" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to be afraid" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to be afraid of" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "be afraid" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бойся!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бойся" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пугайся!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пугайся" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "korkmak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dread" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dread!" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "to dread" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kork":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	qorq
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	fear! (to be afraid of)
+🇷🇺 Русский:	бойся!
+🇪🇪 Eesti: kartma
+🇯🇵 Nihongo: kowagaru
+🇹🇷 Türkçe:	kork
+🇦🇿 Türkcə:	qorx
+🇹🇲 Türkmen:	gork
+🇺🇿 Oʻzbek:	qoʻrq
+🇰🇿 Qazaq:	qorq
+🇰🇬 Qırğız:	qorq
+🏴 Uyghur:	qorq
+🏴 Tatarça:	qurq
+🏴 Başqort:	qurq
+🏴 Çovaşla:	xora
+🏴 Qaraqalpaq:	qorq
+🏴 Qırımtatar:	qorq
+🏴 Qumuq:	qorq
+🏴 Alança:	qorq
+🏴 Noğay:	qorq
+🏴 Sıbırca:	qurq
+🏴 Salırça:	xorğa
+🏴 Gagauz:	kork
+🏴 Urumça:	xorx
+🏴 Qarayçe:	qorx
+🏴 Qırımçah:	qorh
+🏴 Saqalí:	kuttan
+🏴 Hakalí:	kuttan
+🏴 Tıva:	kork
+🏴 Altay:	qorqı
+🏴 Xakas:	xorıx
+🏴 Şor:	qoruq
+🏴 Duha-Soyıt:	qort
+🏴 Tofa-Qarağas:	qort''', reply_markup=markup_menu)
+# cameo
+    
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
