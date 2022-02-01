@@ -47071,7 +47071,48 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 🏴 Duha-Soyıt:	qort
 🏴 Tofa-Qarağas:	qort''', reply_markup=markup_menu)
 # cameo
-    
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orphan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сирота" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "öksüz" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "yetim" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "orphane" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "сиротский" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "an orphan":
+        bot.send_message(message.chat.id, '''🐺 𐰚𐰇𐰚𐱅𐰇𐰼𐰜 (.VIII-X c): 𐰖𐰃𐱃𐰀 (𐰖𐱃𐰀)
+🐺 Old Turkic (bef. XV c.):	yıta, yetim, esiz, ögsüz
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	orphan
+🇷🇺 Русский:	сирота
+🇹🇷 Türkçe:	öksüz, yetim
+🇦🇿 Türkcə:	yetim
+🇹🇲 Türkmen:	ýetim
+🇺🇿 Oʻzbek:	yetim
+🇰🇿 Qazaq:	jetim
+🇰🇬 Qırğız:	jetim
+🏴 Uyghur:	yétim
+🏴 Tatarça:	yätim ♂, yätimä ♀, üksez
+🏴 Başqort:	yetem (yätim)
+🏴 Çovaşla:	tolox
+🏴 Qaraqalpaq:	jetim
+🏴 Qırımtatar:	yetim, öksüz
+🏴 Qumuq:	yetim, öksüz
+🏴 Alança:	öksüz
+🏴 Noğay:	öksiz, yetim
+🏴 Sıbırca:	yätim
+🏴 Salırça:	yitim
+🏴 Gagauz:	üüsüz
+🏴 Urumça:	öksüz, yetim
+🏴 Qarayçe:	öksüz, yetim
+🏴 Qırımçah:	oksüz (öksız)
+🏴 Saqalí:	tuláyaq
+🏴 Hakalí:	tuláyak
+🏴 Tıva:	ösküs
+🏴 Altay:	ösküs
+🏴 Xakas:	ökis
+🏴 Şor:	öksüs
+🏴 Duha-Soyıt:	ösküs (öskîs)
+🏴 Tofa-Qarağas:	ösküs''', reply_markup=markup_menu)
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
