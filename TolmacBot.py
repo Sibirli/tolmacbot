@@ -45061,7 +45061,9 @@ Other types of traditional or national sausages are listed below:
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "бронзовый" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bronzed" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "aeris":
-        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	tuç
+        bot.send_message(message.chat.id, '''See also: brass; См.также: латунь; ayrıca bknz: pirinç alaşım
+
+🐺 Old Turkic (bef. XV c.):	tuç
 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	bronze
 🇷🇺 Русский:	бронза [bronza]
 🇲🇳 Mongol: khürel
@@ -45095,6 +45097,177 @@ Other types of traditional or national sausages are listed below:
 🏴 Duha-Soyıt:	hürîl
 🏴 Tofa-Qarağas:	hüler''', reply_markup=markup_menu)
 # cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pirinç alaşım" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "brass" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "латунь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "желтая медь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "latun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "латунный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "латун" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pirinç metal":
+        bot.send_message(message.chat.id, '''See also: bronze; См.также: бронза; ayrıca bknz: tunç
+        
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	brass
+🇷🇺 Русский:	латунь, желтая медь
+🇹🇷 Türkçe:	pirinç
+🇦🇿 Türkcə:	bürünc
+🇹🇲 Türkmen:	bürünç
+🇺🇿 Oʻzbek:	jez
+🇰🇿 Qazaq:	jez
+🇰🇬 Qırğız:	sarı jez
+🏴 Uyghur:	seriq mis
+🏴 Tatarça:	ciz
+🏴 Başqort:	yeð
+🏴 Çovaşla:	yös
+🏴 Qaraqalpaq:	jez
+🏴 Qırımtatar:	cez
+🏴 Qumuq:	cez
+🏴 Alança:	jez
+🏴 Noğay:	yez
+🏴 Sıbırca:	yes
+🏴 Salırça:	sarı tiş
+🏴 Gagauz:	pirinç
+🏴 Urumça:	cez (yez)
+🏴 Qarayçe:	yez
+🏴 Qırımçah:	yez
+🏴 Saqalí:	ces
+🏴 Hakalí:	???
+🏴 Tıva:	xola
+🏴 Altay:	quulı
+🏴 Xakas:	???
+🏴 Şor:	???
+🏴 Duha-Soyıt:	quulî
+🏴 Tofa-Qarağas:	quulî''', reply_markup=markup_menu)
+# russhor ruskjh ruskhak
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "copper" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bakır" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "красная медь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baqır" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медяной" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "медный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "cuprum":
+        bot.send_message(message.chat.id, '''See also: brass; См.также: латунь; ayrıca bknz: pirinç alaşım
+
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	copper
+🇷🇺 Русский:	медь, красная медь
+🇭🇺 Magyar: réz
+🇲🇳 Mongol: zes
+🇹🇷 Türkçe:	bakır
+🇦🇿 Türkcə:	mis
+🇹🇲 Türkmen:	mis
+🇺🇿 Oʻzbek:	mis
+🇰🇿 Qazaq:	mıs
+🇰🇬 Qırğız:	jez
+🏴 Uyghur:	mis
+🏴 Tatarça:	baqır
+🏴 Başqort:	baqır
+🏴 Çovaşla:	poxor
+🏴 Qaraqalpaq:	mıs
+🏴 Qırımtatar:	baqır
+🏴 Qumuq:	bağır
+🏴 Alança:	bağır
+🏴 Noğay:	baqır
+🏴 Sıbırca:	pağır
+🏴 Salırça:	tiş
+🏴 Gagauz:	bakır
+🏴 Urumça:	baxır
+🏴 Qarayçe:	baqır (bağır)
+🏴 Qırımçah:	baqır
+🏴 Saqalí:	altan
+🏴 Hakalí:	altan
+🏴 Tıva:	çes
+🏴 Altay:	ces
+🏴 Xakas:	çîs, pağır
+🏴 Şor:	çes
+🏴 Duha-Soyıt:	çes (ces)
+🏴 Tofa-Qarağas:	çes (ces)''', reply_markup=markup_menu)
+# cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lead" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "свинец" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "свинцовый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "свинцевый" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kurşun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kurguşun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "plumbum":
+        bot.send_message(message.chat.id, '''See also: tin; См.также: олово; ayrıca bknz: kalay
+
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	lead
+🇷🇺 Русский:	свинец
+🇹🇷 Türkçe:	kurşun
+🇦🇿 Türkcə:	qurğuşun
+🇹🇲 Türkmen:	gurşun
+🇺🇿 Oʻzbek:	qoʻrgʻoshin
+🇰🇿 Qazaq:	qorğasın
+🇰🇬 Qırğız:	qorğoşun
+🏴 Uyghur:	qoghushun
+🏴 Tatarça:	qurğaş
+🏴 Başqort:	qurğaş
+🏴 Çovaşla:	toxlan (xura toxlan)
+🏴 Qaraqalpaq:	qorǵasın
+🏴 Qırımtatar:	qurşun
+🏴 Qumuq:	qorğaşın
+🏴 Alança:	qorğaşın
+🏴 Noğay:	qorğasın
+🏴 Sıbırca:	qurğaş (qara qurğaş)
+🏴 Salırça:	ken (gara ken)
+🏴 Gagauz:	kurşum
+🏴 Urumça:	ğurğuşun (xurşum)
+🏴 Qarayçe:	qurğaşın
+🏴 Qırımçah:	qurşun
+🏴 Saqalí:	qara qorğolcun
+🏴 Hakalí:	???
+🏴 Tıva:	korgulçun
+🏴 Altay:	qorğolcın
+🏴 Xakas:	xorğamcıl (xara xorğamcıl)
+🏴 Şor:	qorğaçın (qara qorğaçın)
+🏴 Duha-Soyıt:	horğalcın (qara-horğalcın)
+🏴 Tofa-Qarağas:	qorğolçun (qara-qorğolçun)''', reply_markup=markup_menu)
+# rusdlg
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tin" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "олово" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оловяный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "оловянный" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kalay" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "stannum":
+        bot.send_message(message.chat.id, '''See also: lead; См.также: свинец; ayrıca bknz: kurşun
+
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	tin
+🇷🇺 Русский:	олово
+🇹🇷 Türkçe:	kalay
+🇦🇿 Türkcə:	qalay
+🇹🇲 Türkmen:	galaýy
+🇺🇿 Oʻzbek:	qalayi
+🇰🇿 Qazaq:	qalayı
+🇰🇬 Qırğız:	qalay
+🏴 Uyghur:	qalay
+🏴 Tatarça:	aqqurğaş
+🏴 Başqort:	aqqurğaş
+🏴 Çovaşla:	toxlan (şuro toxlan)
+🏴 Qaraqalpaq:	qalayı
+🏴 Qırımtatar:	qalay
+🏴 Qumuq:	qalay
+🏴 Alança:	tuturuq
+🏴 Noğay:	qola
+🏴 Sıbırca:	qurğaş (aq qurğaş)
+🏴 Salırça:	ken (ax ken)
+🏴 Gagauz:	kalay
+🏴 Urumça:	xalay
+🏴 Qarayçe:	qalay
+🏴 Qırımçah:	qalay
+🏴 Saqalí:	qorğolcun
+🏴 Hakalí:	???
+🏴 Tıva:	ak-korgulçun
+🏴 Altay:	qalay
+🏴 Xakas:	xorğamcıl (ax xorğamcıl)
+🏴 Şor:	qorğaçın (aq qorğaçın)
+🏴 Duha-Soyıt:	horğalcın (aq-horğalcın)
+🏴 Tofa-Qarağas:	qorğolçun (aq-qorğolçun)''', reply_markup=markup_menu)
+# rusdlg
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "манул" \
             or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "мануул" \
