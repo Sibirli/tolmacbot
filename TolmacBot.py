@@ -47511,8 +47511,12 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+#cd /Users/royalnagiyev/PycharmProjects/projectoglu
+#git add .
+#git commit -am "make it better"
+#git push heroku master
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
-# спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê
+# спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê 
 #tags
 # animal
 # bird
