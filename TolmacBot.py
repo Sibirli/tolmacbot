@@ -47505,7 +47505,7 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 🏴 Qarayçe:	kikil
 🏴 Qırımçah:	
 🏴 Saqalí:	köğül''', reply_markup=markup_menu)
-# cameo nation
+# cameo nation 
 
     else:
         bot.send_message(message.chat.id, hesbisey)
