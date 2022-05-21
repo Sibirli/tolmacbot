@@ -41887,7 +41887,7 @@ Other types of traditional or national sausages are listed below:
 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	Confucius
 🇷🇺 Русский:	Конфуций [Konfutsiy]
 🇹🇷 Türkçe:	Konfüçyüs
-🇦🇿 Türkcə:	Kon Fu Dzı, Konfutsi
+🇦🇿 Türkcə:	Kon Fu Dzı, Konfutsi, Qonfuçios {arch.}
 🇹🇲 Türkmen:	Konfusiý
 🇰🇿 Qazaq:	Quŋ-zı
 🇰🇬 Qırğız:	Quŋzı
@@ -45156,7 +45156,7 @@ Other types of traditional or national sausages are listed below:
 🇭🇺 Magyar: réz
 🇲🇳 Mongol: zes
 🇹🇷 Türkçe:	bakır
-🇦🇿 Türkcə:	mis
+🇦🇿 Türkcə:	mis, yez
 🇹🇲 Türkmen:	mis
 🇺🇿 Oʻzbek:	mis
 🇰🇿 Qazaq:	mıs
@@ -47286,6 +47286,227 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 🏴 Duha-Soyıt:	ösküs (öskîs)
 🏴 Tofa-Qarağas:	ösküs''', reply_markup=markup_menu)
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "academy" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "academia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "akademiya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "akademia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "akademi" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "академия":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English: academy
+🇷🇺 Русский:	академия [akademiya]
+🇹🇷 Türkçe:	akademi, encümen-i daniş {arch.}
+🇦🇿 Türkcə:	akademiya, darülülum {arch.}, fərhəngistan {south Azb.}
+🇹🇲 Türkmen:	akademiýa, darylylym {arch.}	
+🏴 Uyghur:	akadémiye
+🏴 Tatarça:	akadimiä
+🏴 Çovaşla:	akademi
+🏴 Salırça:	şüeşüyüen
+🏴 Saqalí:	akacıamıya
+🇺🇿🇰🇿🇰🇬🏴: akademiya ''', reply_markup=markup_menu)
+# edu
+# RUSRUS??? uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "institute" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "institut" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "enstitü" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "институт" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "enstitu":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	institute
+🇷🇺 Русский:	институт [institut]
+🇹🇷 Türkçe:	enstitü
+🇦🇿 Türkcə:	institut, darülmüəllimin {arch.}, ənstitü {dial.}, inistut {dial.}	
+🏴 Saqalí:	ünüstütűt
+🇹🇲🇺🇿🇰🇿🇰🇬🏴: institut ''', reply_markup=markup_menu)
+# edu
+#RUSRUS??? tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "университет" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "university" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "üniversite" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "darülfünun" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "universitet":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	university
+🇷🇺 Русский:	университет [universitet]
+🇹🇷 Türkçe:	üniversite {1933-}, darülfünun {-1933}
+🇦🇿 Türkcə:	universitet, darülfünun
+🇺🇿 Oʻzbek:	universitet, dorilfunun {arch.}
+🇰🇿 Qazaq:	universitet, darılpunıyn {arch.}
+🏴 Uyghur:	uniwérsitét, darilpunun, dashue
+🏴 Tatarça:	universitet, darelfönün {arch.}
+🏴 Başqort:	universitet, darelfönün {arch.}
+🏴 Qırımtatar:	universitet, darulfunun {arch.}
+🏴 Qumuq:	universitet, darulfunun {arch.}
+🏴 Salırça:	daşüe
+🇹🇲🇰🇬🏴: universitet ''', reply_markup=markup_menu)
+# edu
+#RUSRUS???  tkrus kgrus cvrus crhrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nushadir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nushadir salt" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salmiac" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salammoniac" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sal ammoniac" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "salmiak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ammonia solution" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "ammonia water" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "нашатырь" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amonyum hidroksit" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "amonyum klorür" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nişadir" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "nişadır":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	çatır, nuşadir, nuşatär
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	nushadir salt, salmiac (ammonium chloride, salammoniac, sal ammoniac, sal armagnac, ammonium muriate, salt armoniack, salmiak), ammonia solution (ammonia water, ammonium hydroxide, ammoniacal liquor, ammonia liquor, aqua ammonia, aqueous ammonia)
+🇷🇺 Русский:	нашатырь [našatyr']
+🇹🇷 Türkçe:	nişadır (amonyum hidroksit / amonyum klorür)
+🇦🇿 Türkcə:	nişadır
+🇹🇲 Türkmen:	nyşadyr
+🇺🇿 Oʻzbek:	novshadil
+🇰🇿 Qazaq:	müsätir
+🇰🇬 Qırğız:	noşotur
+🏴 Uyghur:	nöshüdür
+🏴 Tatarça:	nişatır
+🏴 Başqort:	nişatır
+🏴 Çovaşla:	naşator
+🏴 Qaraqalpaq:	nısatır
+🏴 Qırımtatar:	nişadır
+🏴 Qumuq:	nişatır
+🏴 Noğay:	nuşadır
+🏴 Gagauz:	naşadır
+🏴 Saqalí:	nahatír''', reply_markup=markup_menu)
+# chemical
+#RUSRUS??? krcrus
+# styrus slrcn uumrus kdrrus jctrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dynasty" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dynasti" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "династия" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dinastiya" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "dinastia" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hanedan" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sülale" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "sülâle":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	dynasty
+🇷🇺 Русский:	династия [dinastiya]
+🇹🇷 Türkçe:	hanedan, sülale (sülâle), silsile
+🇦🇿 Türkcə:	sülalə, xanədan
+🇹🇲 Türkmen:	nebere, handan
+🇺🇿 Oʻzbek:	sulola
+🇰🇿 Qazaq:	äwlet
+🇰🇬 Qırğız:	sulale
+🏴 Uyghur:	sulale, xanidan (xandan)
+🏴 Tatarça:	näsel
+🏴 Başqort:	näþel
+🏴 Çovaşla:	yox
+🏴 Qaraqalpaq:	úrim-putaq, áwlad
+🏴 Qırımtatar:	sülâle, hanedan
+🏴 Qumuq:	xanadan
+🏴 Alança:	tuqum
+🏴 Sıbırca:	pıwın
+🏴 Salırça:	çode
+🏴 Gagauz:	sensele
+🏴 Qarayçe:	biy doru
+🏴 Tıva:	xaan ducu
+🏴 Xakas:	ulus''', reply_markup=markup_menu)
+    # RUSRUS??? nogrus
+    # slrcn  uumrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "spear" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lance" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bayonet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bayonnet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bajonet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "bajonnet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baionnet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "baionet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "копье" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "süngü" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "mızrak" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "штык":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	süŋgü (süŋü, süŋüg), cıda
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	I. spear, lance II. bayonet
+🇷🇺 Русский:	I. копьё [kop'yo] II. штык
+🇭🇺 Magyar: dárda
+🇲🇳 Mongol: jada
+🇹🇷 Türkçe:	I. mızrak II. süngü
+🇦🇿 Türkcə:	I. mizraq, nizə, cida II. süngü
+🇹🇲 Türkmen:	naýza, süngi
+🇺🇿 Oʻzbek:	nayza
+🇰🇿 Qazaq:	nayza, süŋgi
+🇰🇬 Qırğız:	nayza
+🏴 Uyghur:	neyze
+🏴 Tatarça:	söŋge, näyzä (nayza, näyza)
+🏴 Başqort:	höŋgö, nayða
+🏴 Çovaşla:	sono
+🏴 Qaraqalpaq:	nayza
+🏴 Qırımtatar:	I. mızraq II. süngü
+🏴 Qumuq:	I. süŋgü, cıda II. sülçe
+🏴 Alança:	süŋgü
+🏴 Noğay:	süŋgi, nayza
+🏴 Sıbırca:	söŋkö {I, II}, yıda {I}, naysa {I}
+🏴 Salırça:	cida
+🏴 Gagauz:	mazdrak (mızrak) {I}, süngü {I, II}
+🏴 Urumça:	I. mızrax (muzdrax) II. süngü
+🏴 Qarayçe:	süngü {I, II}, buç {I}
+🏴 Qırımçah:	I. mızraq II. süngü
+🏴 Saqalí:	üŋű
+🏴 Hakalí:	batıya
+🏴 Tıva:	çıda
+🏴 Altay:	cıda
+🏴 Xakas:	çıda
+🏴 Şor:	I. soğan II. çıda
+🏴 Duha-Soyıt:	cıda (çıda)
+🏴 Tofa-Qarağas:	çıda''', reply_markup=markup_menu)
+# weapon cameo
+
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "forelock" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "topknot" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toupee" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "toupet" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "pappus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "tuft" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "crest" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "lock of hair" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хохол" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "khokhol" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kakül" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kekil" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хохолок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "perçem" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kahkül" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "какел" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "какл" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "хохлы" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kâkül":
+        bot.send_message(message.chat.id, '''🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	forelock, topknot, toupee, toupet, pappus, tuft, crest, lock of hair
+🇷🇺 Русский:	хохол [khokhol]
+🇲🇳 Mongol: khökhöl
+🇹🇷 Türkçe:	kâkül
+🇦🇿 Türkcə:	kəkil
+🇹🇲 Türkmen:	käkil
+🇺🇿 Oʻzbek:	kokil
+🇰🇿 Qazaq:	kekil
+🇰🇬 Qırğız:	kökül
+🏴 Uyghur:	kökül
+🏴 Tatarça:	käkel
+🏴 Başqort:	käkel
+🏴 Çovaşla:	
+🏴 Qaraqalpaq:	kekil
+🏴 Qırımtatar:	kökel
+🏴 Qumuq:	kekel
+🏴 Alança:	kekel
+🏴 Noğay:	kekel
+🏴 Sıbırca:	käkel
+🏴 Salırça:	
+🏴 Gagauz:	
+🏴 Urumça:	
+🏴 Qarayçe:	kikil
+🏴 Qırımçah:	
+🏴 Saqalí:	köğül''', reply_markup=markup_menu)
+# cameo nation
+
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
@@ -47295,7 +47516,8 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 #tags
 # animal
 # bird
-# cameo country catholic clothes
+# cameo country catholic clothes chemical
+# edu
 # food fruit furniture
 # geo
 # holiday insect islam
@@ -47305,4 +47527,5 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 # person
 # religion
 # slavic
+# weapon
 bot.polling()
