@@ -47492,30 +47492,27 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
 🏴 Uyghur:	kökül
 🏴 Tatarça:	käkel
 🏴 Başqort:	käkel
-🏴 Çovaşla:	
 🏴 Qaraqalpaq:	kekil
 🏴 Qırımtatar:	kökel
 🏴 Qumuq:	kekel
 🏴 Alança:	kekel
 🏴 Noğay:	kekel
 🏴 Sıbırca:	käkel
-🏴 Salırça:	
-🏴 Gagauz:	
-🏴 Urumça:	
 🏴 Qarayçe:	kikil
-🏴 Qırımçah:	
 🏴 Saqalí:	köğül''', reply_markup=markup_menu)
 # cameo nation 
+    # RUSRUS??? cvrus
+    #  slrcn gagrus uumrus  jctrus  dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
     else:
         bot.send_message(message.chat.id, hesbisey)
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
+# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 #cd /Users/royalnagiyev/PycharmProjects/projectoglu
 #git add .
 #git commit -am "make it better"
 #git push heroku master
-# styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 # спецсимволы Áá Éé Îî Íí Óó Őő Úú Űű Ŋŋ Êê 
 #tags
 # animal
