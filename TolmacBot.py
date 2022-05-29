@@ -270,21 +270,16 @@ def help(message):
 
 @bot.message_handler(commands=['donate'])
 def donate(message):
-    bot.send_message(message.chat.id, '''🌐 PayPal: royalnagiyev@gmail.com
-💳 Tinkoff Bank card (Russia, MasterCard): 5536 9138 7198 8115
-💳 Перевод по номеру: +7 912 816 65 15
-💎 FreeTON: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
-💎 BTC (Binance, BTC): 15oYLiqEgU7X4LqWhwnpDRkDLYhXQ4uT8v
-💎 ETH (Binance, ERC20): 0x0e363561a44560b6c7e564e20ae3a8958e8b78f3
-💎 BNB (BEP20/BSC): 0x0e363561a44560b6c7e564e20ae3a8958e8b78f3
-💎 Tron TRX (TRC20): TDi7QCNZ2s7KsNzfiJtqn2BvM7RBxTbWcR 
-💎 ETH (Chatex): 0x6943dD749Bb2B46d6B21275Fa9570cBd6A00d450
-💎 BTC (Chatex): 31juvN9wFoJLtihN4iFqHN2QZNxrZqErLF
+    bot.send_message(message.chat.id, '''💳 Tinkoff (Russia): 5536 9138 7198 8115
+💳 Ziraat IBAN: TR26 0001 0090 1007 6151 8050 01
+💳 Papara: 1221428142
+💸 Everscale: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
+💸 USDT (Tron TRC20): TDi7QCNZ2s7KsNzfiJtqn2BvM7RBxTbWcR
+💸 USDT (Solana): Hvpd3KwZujZsXF8NAP7Uh4ncXrHYpAnvP2FLEa1s26Xp
 
 My referral links:
 🏦 Binance (Cryptobank #1): https://accounts.binance.com/ru/register?ref=123837078
-🧑‍🚀 MEXC Cryptoexchange: https://www.mxc.li/auth/signup?inviteCode=1DbKq
-🤖 Chatex crypto neobank: https://t.me/Chatex_bot?start=r_150763''')
+🧑‍🚀 MEXC Cryptoexchange: https://www.mxc.li/auth/signup?inviteCode=1DbKq''')
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
@@ -480,21 +475,16 @@ E e = [e], [ɛ] (at the beginning of the word, and after T, D)
 ⚪️ Bazı Türk lehcelerinde Kiril alfabesinin özellikleri nedeniyle, “ya” ve “yä” sesleri arasındaki fark ortadan kalktı, çünkü ikisi de “я” harfiyle ifade edildi, ancak kalınlık-incelik kuralı nedeniyle, “yä”' ince kelimelerde (örnek: Törkiyä) “ya” ise kalın (örnek: qaya) kelimelerde kullanıldığı varsayılabilir. Ayrıca, Rusçada "yä" sesi olmaması nedeniyle ince sesler kullanılan bazı alınma kelimelerde, "ya" kullanılır.''')
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "donate":
-        bot.send_message(message.chat.id, '''🌐 PayPal: royalnagiyev@gmail.com
-💳 Tinkoff Bank card (Russia, MasterCard): 5536 9138 7198 8115
-💳 Перевод по номеру: +7 912 816 65 15
-💎 FreeTON: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
-💎 BTC (Binance, BTC): 15oYLiqEgU7X4LqWhwnpDRkDLYhXQ4uT8v
-💎 ETH (Binance, ERC20): 0x0e363561a44560b6c7e564e20ae3a8958e8b78f3
-💎 BNB (BEP20/BSC): 0x0e363561a44560b6c7e564e20ae3a8958e8b78f3
-💎 Tron TRX (TRC20): TDi7QCNZ2s7KsNzfiJtqn2BvM7RBxTbWcR 
-💎 ETH (Chatex): 0x6943dD749Bb2B46d6B21275Fa9570cBd6A00d450
-💎 BTC (Chatex): 31juvN9wFoJLtihN4iFqHN2QZNxrZqErLF
+        bot.send_message(message.chat.id, ''' 💳 Tinkoff (Russia): 5536 9138 7198 8115
+💳 Ziraat IBAN: TR26 0001 0090 1007 6151 8050 01
+💳 Papara: 1221428142
+💸 Everscale: 0:9ac7e55e91e84037b08871b5aebb85262c97bf8929f62c062865b6033865aa29
+💸 USDT (Tron TRC20): TDi7QCNZ2s7KsNzfiJtqn2BvM7RBxTbWcR
+💸 USDT (Solana): Hvpd3KwZujZsXF8NAP7Uh4ncXrHYpAnvP2FLEa1s26Xp
 
 My referral links:
 🏦 Binance (Cryptobank #1): https://accounts.binance.com/ru/register?ref=123837078
-🧑‍🚀 MEXC Cryptoexchange: https://www.mxc.li/auth/signup?inviteCode=1DbKq
-🤖 Chatex crypto neobank: https://t.me/Chatex_bot?start=r_150763''')
+🧑‍🚀 MEXC Cryptoexchange: https://www.mxc.li/auth/signup?inviteCode=1DbKq''')
 
     elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "привет" \
         or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "hello"\
@@ -47504,8 +47494,55 @@ Bazı lehcelerde Rusça "perevod" (köçürme, çevirme) kelimesinin harfi çevi
     # RUSRUS??? cvrus
     #  slrcn gagrus uumrus  jctrus  dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
 
+    elif message.text.replace('İ', 'i').lower().replace('ё', 'е') == "köbek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "göbek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "gobek" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "navel" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "belly button" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "umbilicus" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пуп" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пупок" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "kindik" \
+            or message.text.replace('İ', 'i').lower().replace('ё', 'е') == "пупочный":
+        bot.send_message(message.chat.id, '''🐺 Old Turkic (bef. XV c.):	köbäk {oghuz}, kindik {qipchaq}
+🏴󠁧󠁢󠁥󠁮󠁧󠁿 English:	navel, belly button, umbilicus
+🇷🇺 Русский:	пупок, пуп
+🇭🇺 Magyar: köldök
+🇲🇳 Mongol: khüy
+🇹🇷 Türkçe:	göbek
+🇦🇿 Türkcə:	göbək, kövəh {dial.}
+🇹🇲 Türkmen:	göbek
+🇺🇿 Oʻzbek:	kindik
+🇰🇿 Qazaq:	kindik
+🇰🇬 Qırğız:	kindik
+🏴 Uyghur:	kindik
+🏴 Tatarça:	kendek
+🏴 Başqort:	kendek
+🏴 Çovaşla:	kovapa (kopa)
+🏴 Qaraqalpaq:	kindik
+🏴 Qırımtatar:	köbek
+🏴 Qumuq:	ginnik
+🏴 Alança:	kindik
+🏴 Noğay:	kindik
+🏴 Sıbırca:	kentek
+🏴 Salırça:	gindih
+🏴 Gagauz:	göbek
+🏴 Urumça:	göbäk
+🏴 Qarayçe:	kindik
+🏴 Qırımçah:	göbek
+🏴 Saqalí:	kîn
+🏴 Hakalí:	kîn
+🏴 Tıva:	xin, xindik
+🏴 Altay:	kin, kindik
+🏴 Xakas:	kin, kindik
+🏴 Şor:	kin, kindik
+🏴 Duha-Soyıt:	hîn
+🏴 Tofa-Qarağas: hîn''', reply_markup=markup_menu)
+# cameo mn
+
     else:
         bot.send_message(message.chat.id, hesbisey)
+
 #если слово нет в словаре, то скорее всего используется русское слово, то лучше отметить это, чтобы в дальнейшем проверить другим словарем
 #RUSRUS??? azrus tkrus uzrus kzrus kgrus ugrus ugcn ttrus barus cvrus qqrus crhrus kumrus krcrus nogrus
 # styrus slrcn gagrus uumrus kdrrus jctrus sahrus dlgrus tyvrus altrus khakrus shorrus sytrus tofrus
